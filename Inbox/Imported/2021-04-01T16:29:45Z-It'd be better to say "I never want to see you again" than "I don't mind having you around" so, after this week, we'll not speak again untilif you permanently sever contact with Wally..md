@@ -1,0 +1,7 @@
+It'd be better to say "I never want to see you again" than "I don't mind having you around" so, after this week, we'll not speak again until/if you permanently sever contact with Wally.
+
+We won't speak again unless you find yourself wanting my presence more than Wally's
+
+Ya know, if I'm actually not helping you, there is literally no reason for me to stick around. I'm pretty sad about it, considering the effort I've put into you, but you warned that you didn't reciprocate, and I guess you're right. If you don't feel like our lives are intertwined at all, genuinely, friendship's what, then? I certainly don't want you if anyone can have you. (With that sentence, I'm not accusing you of anything but dishonesty with yourself.) There's nothing inherently wrong with a lack of preference, but I have no time for it and neither does someone like you, frankly. I don't know if you'll be able to realize it for awhile, but I'll never be able thank you enough for reviving me. The feelings I have for you are probably the most objectively precious thing in life. It's unlikely that either of us will encounter them again, but that's okay. It's just the truth.
+
+I can't invest any more if you're not going to. As much as I'd like to leave you with advice, it seems like it doesn't do much for you. So. Unless you one day find yourself actually wanting after me, we will not speak again. Goodbye. Good luck meeting a man like me again.

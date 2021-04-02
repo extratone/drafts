@@ -1,0 +1,378 @@
+{
+  "path" : "\/Library\/Scripts\/tadcon.json",
+  "lastDraft" : {
+    "version" : {
+      "number" : 2,
+      "createdAt" : "Thu Apr 01 2021 23:18:39 GMT-0500 (CDT)",
+      "uuid" : "51363755-FAD7-4C05-907F-0145B5AF296C"
+    },
+    "uuid" : "EADA8BBE-9B24-4C7C-A46E-07F81F19CB88"
+  },
+  "lastSaved" : "2021-04-01-23.19.11.509",
+  "log" : [
+    {
+      "code" : "WC02",
+      "stamp" : "2021-04-01-23.18.57.641",
+      "entry" : "I'm sleeping in the bath tub. [Marge Simpson]",
+      "type" : "WARN"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-04-01-23.18.57.929",
+      "entry" : "I live in a single room above a bowling alley...and below another bowling alley. [Frank Grimes]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-04-01-23.18.58.229",
+      "entry" : "I can't even say the word 'titmouse' without gigggling like a schoolgirl. [Homer Simpson]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-04-01-23.18.58.547",
+      "entry" : "Last night's 'Itchy and Scratchy' was, without a doubt, the worst episode ever. Rest assured that I was on the Internet within minutes, registering my disgust throughout the world. [Comic Book Guy]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "WC02",
+      "stamp" : "2021-04-01-23.18.58.880",
+      "entry" : "Oh Yeah! [Duffman]",
+      "type" : "WARN"
+    },
+    {
+      "code" : "EC01",
+      "stamp" : "2021-04-01-23.18.59.128",
+      "entry" : "Oh, so they have Internet on computers now! [Homer Simpson]",
+      "type" : "ERROR"
+    },
+    {
+      "code" : "WC03",
+      "stamp" : "2021-04-01-23.18.59.409",
+      "entry" : "Eat my shorts [Bart Simpson]",
+      "type" : "WARN"
+    },
+    {
+      "code" : "WC01",
+      "stamp" : "2021-04-01-23.18.59.594",
+      "entry" : "Oh, so they have Internet on computers now! [Homer Simpson]",
+      "type" : "WARN"
+    },
+    {
+      "code" : "EC03",
+      "stamp" : "2021-04-01-23.18.59.778",
+      "entry" : "I hope I didn't brain my damage. [Homer Simpson]",
+      "type" : "ERROR"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-04-01-23.18.59.999",
+      "entry" : "When I catch you, I'm gonna pull out your eyes and stick 'em down your pants so you can watch me kick the crap outta you, okay? Next I'm gonna use your tongue to paint my boat! [Moe Szyslak]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-04-01-23.19.00.232",
+      "entry" : "By chilling my loins I increase the chances of impregnating my wife. [Apu Nahasapeemapetilon]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-04-01-23.19.00.548",
+      "entry" : "Facts are meaningless. You could use facts to prove anything that's even remotely true. [Homer Simpson]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-04-01-23.19.00.878",
+      "entry" : "They taste like...burning. [Ralph Wiggum]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "WC04",
+      "stamp" : "2021-04-01-23.19.01.118",
+      "entry" : "My eyes! The goggles do nothing! [Rainier Wolfcastle]",
+      "type" : "WARN"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-04-01-23.19.01.409",
+      "entry" : "Eat my shorts [Bart Simpson]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-04-01-23.19.01.599",
+      "entry" : "Inflammable means flammable? What a country! [Dr. Nick]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "WC01",
+      "stamp" : "2021-04-01-23.19.01.839",
+      "entry" : "And this is the snack holder where I can put my beverage or, if you will, cupcake. [Homer Simpson]",
+      "type" : "WARN"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-04-01-23.19.02.073",
+      "entry" : "They taste like...burning. [Ralph Wiggum]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-04-01-23.19.02.320",
+      "entry" : "Eat my shorts [Bart Simpson]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-04-01-23.19.02.608",
+      "entry" : "Ahh! Sweet liquor eases the pain. [Troy McClure]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-04-01-23.19.02.793",
+      "entry" : "Oh, wow, windows. I don't think I could afford this place. [Otto]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-04-01-23.19.03.047",
+      "entry" : "By chilling my loins I increase the chances of impregnating my wife. [Apu Nahasapeemapetilon]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "WC02",
+      "stamp" : "2021-04-01-23.19.03.316",
+      "entry" : "I live in a single room above a bowling alley...and below another bowling alley. [Frank Grimes]",
+      "type" : "WARN"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-04-01-23.19.03.679",
+      "entry" : "They taste like...burning. [Ralph Wiggum]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-04-01-23.19.03.920",
+      "entry" : "Marriage is like a coffin and each kid is another nail. [Homer Simpson]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "WC04",
+      "stamp" : "2021-04-01-23.19.04.207",
+      "entry" : "Eat my shorts [Bart Simpson]",
+      "type" : "WARN"
+    },
+    {
+      "code" : "WC03",
+      "stamp" : "2021-04-01-23.19.04.399",
+      "entry" : "I used to be with it. But then they changed what it was. Now what I'm with isn't it, and what's it seems scary and wierd. It'll happen to you. [Abe Simpson]",
+      "type" : "WARN"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-04-01-23.19.04.616",
+      "entry" : "When I catch you, I'm gonna pull out your eyes and stick 'em down your pants so you can watch me kick the crap outta you, okay? Next I'm gonna use your tongue to paint my boat! [Moe Szyslak]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-04-01-23.19.04.796",
+      "entry" : "In theory, Communism works! In theory. [Homer Simpson]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-04-01-23.19.05.039",
+      "entry" : "Ahh! Sweet liquor eases the pain. [Troy McClure]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "EC03",
+      "stamp" : "2021-04-01-23.19.05.280",
+      "entry" : "Me fail English? That's unpossible. [Ralph Wiggum]",
+      "type" : "ERROR"
+    },
+    {
+      "code" : "WC01",
+      "stamp" : "2021-04-01-23.19.05.519",
+      "entry" : "When I look at people I don't see colors; I just see crackpot religions. [Chief Wiggum]",
+      "type" : "WARN"
+    },
+    {
+      "code" : "EC02",
+      "stamp" : "2021-04-01-23.19.05.791",
+      "entry" : "I'm sleeping in the bath tub. [Marge Simpson]",
+      "type" : "ERROR"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-04-01-23.19.05.992",
+      "entry" : "I can't even say the word 'titmouse' without gigggling like a schoolgirl. [Homer Simpson]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-04-01-23.19.06.177",
+      "entry" : "These are my only friends...grown-up nerds like Gore Vidal. And even he's kissed more boys than I ever will. [Lisa Simpson]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "WC03",
+      "stamp" : "2021-04-01-23.19.06.393",
+      "entry" : "My eyes! The goggles do nothing! [Rainier Wolfcastle]",
+      "type" : "WARN"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-04-01-23.19.06.577",
+      "entry" : "Shoplifting is a victimless crime, like punching someone in the dark. [Nelson Muntz]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-04-01-23.19.06.794",
+      "entry" : "I live in a single room above a bowling alley...and below another bowling alley. [Frank Grimes]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "WC02",
+      "stamp" : "2021-04-01-23.19.06.978",
+      "entry" : "Me fail English? That's unpossible. [Ralph Wiggum]",
+      "type" : "WARN"
+    },
+    {
+      "code" : "WC03",
+      "stamp" : "2021-04-01-23.19.07.194",
+      "entry" : "Marriage is like a coffin and each kid is another nail. [Homer Simpson]",
+      "type" : "WARN"
+    },
+    {
+      "code" : "WC01",
+      "stamp" : "2021-04-01-23.19.07.376",
+      "entry" : "Me fail English? That's unpossible. [Ralph Wiggum]",
+      "type" : "WARN"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-04-01-23.19.07.594",
+      "entry" : "Oh boy, sleep! That's where I'm a viking! [Ralph Wiggum]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-04-01-23.19.07.840",
+      "entry" : "Why are you pleople avoiding me? Does my withered face remind you of the grim specter of death? [Abe Simpson]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-04-01-23.19.08.020",
+      "entry" : "My eyes! The goggles do nothing! [Rainier Wolfcastle]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "EC02",
+      "stamp" : "2021-04-01-23.19.08.310",
+      "entry" : "Marriage is like a coffin and each kid is another nail. [Homer Simpson]",
+      "type" : "ERROR"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-04-01-23.19.08.489",
+      "entry" : "Well, I'm better than dirt. Well, most kinds of dirt. I mean not that fancy store bought dirt. That stuffs loaded with nutrients. I.. I can't compete with that stuff. [Moe Szyslak]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "WC02",
+      "stamp" : "2021-04-01-23.19.08.710",
+      "entry" : "Yeah. Call this an unfair generalization if you must.. but old people are no good at everything [Moe Szyslak]",
+      "type" : "WARN"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-04-01-23.19.08.888",
+      "entry" : "All I'm gonna use this bed for is sleeping, eating and maybe building a little fort. [Homer Simpson]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-04-01-23.19.09.117",
+      "entry" : "Marriage is like a coffin and each kid is another nail. [Homer Simpson]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-04-01-23.19.09.359",
+      "entry" : "Can't we have one meeting that doesn't end with us digging up a corpse? [Mayor Quimby]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-04-01-23.19.09.589",
+      "entry" : "All I'm gonna use this bed for is sleeping, eating and maybe building a little fort. [Homer Simpson]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "WC03",
+      "stamp" : "2021-04-01-23.19.09.769",
+      "entry" : "When I look at people I don't see colors; I just see crackpot religions. [Chief Wiggum]",
+      "type" : "WARN"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-04-01-23.19.09.998",
+      "entry" : "For once maybe someone will call me \"sir\" without adding, \"You're making a scene.\" [Homer Simpson]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "EC03",
+      "stamp" : "2021-04-01-23.19.10.199",
+      "entry" : "These are my only friends...grown-up nerds like Gore Vidal. And even he's kissed more boys than I ever will. [Lisa Simpson]",
+      "type" : "ERROR"
+    },
+    {
+      "code" : "WC04",
+      "stamp" : "2021-04-01-23.19.10.395",
+      "entry" : "I can't even say the word 'titmouse' without gigggling like a schoolgirl. [Homer Simpson]",
+      "type" : "WARN"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-04-01-23.19.10.579",
+      "entry" : "My eyes! The goggles do nothing! [Rainier Wolfcastle]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-04-01-23.19.10.795",
+      "entry" : "I'm sleeping in the bath tub. [Marge Simpson]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "EC03",
+      "stamp" : "2021-04-01-23.19.11.039",
+      "entry" : "Last night's \"Itchy & Scratchy\" was, without a doubt, the worst episode ever. Rest assured that I was on the Internet within minutes, registering my disgust throughout the world. [Comic Book Guy]",
+      "type" : "ERROR"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-04-01-23.19.11.280",
+      "entry" : "My eyes! The goggles do nothing! [Rainier Wolfcastle]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "WC03",
+      "stamp" : "2021-04-01-23.19.11.509",
+      "entry" : "I'm sleeping in the bath tub. [Marge Simpson]",
+      "type" : "WARN"
+    }
+  ],
+  "lastAction" : {
+    "name" : "TAD-Generate Fake Log",
+    "uuid" : "1AC58473-E707-4005-8A7C-904C70B23353"
+  }
+}

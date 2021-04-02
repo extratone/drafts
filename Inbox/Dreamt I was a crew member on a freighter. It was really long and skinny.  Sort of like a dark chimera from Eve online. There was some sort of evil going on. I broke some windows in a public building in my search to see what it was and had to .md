@@ -1,0 +1,1 @@
+Dreamt I was a crew member on a freighter. It was really long and skinny.  Sort of like a dark chimera from Eve online. There was some sort of evil going on. I broke some windows in a public building in my search to see what it was and had to confront a public official about it.

@@ -1,0 +1,127 @@
+{
+  "commands" : {
+    "url" : "OPEN_URL|<1>",
+    "wsc" : "RUN_FUNCTION|Workspace.TA_selectLoadWorkspaceByButton",
+    "actdir" : "OPEN_URL|https:\/\/actions.getdrafts.com",
+    "act" : "RUN_ACTION|<1>",
+    "tag" : "RUN_FUNCTION|draft.TA_tagAddCSV",
+    "ws" : "RUN_FUNCTION|app.TA_applyWorkspaceByName",
+    "cbdic" : "RUN_ACTION|TAD-Dictate-to-clipboard"
+  },
+  "testLibsListPath" : "\/Library\/Scripts\/tad-testlibs.txt",
+  "taskBasicSyntax" : "Simple List",
+  "duplicateLinesDefault" : 5,
+  "draft_markdown" : {
+    "extension" : "md",
+    "tags" : [
+
+    ],
+    "syntax" : "Markdown"
+  },
+  "dataPath" : "\/Library\/Scripts\/tad-data.json",
+  "msgTitleError" : "⛔️ ERROR ⛔️",
+  "templateFilter" : "archive",
+  "taskBasicStart" : "- [",
+  "testLibsEnable" : false,
+  "backlink_sectionstart" : "---\n**BACK LINKS**  \n  ",
+  "draft_taskpaper" : {
+    "extension" : "taskpaper",
+    "tags" : [
+
+    ],
+    "syntax" : "Taskpaper"
+  },
+  "backlink_prefix" : "- ",
+  "buttonLabelTruncation" : 32,
+  "draft_simple_list" : {
+    "extension" : "txt",
+    "tags" : [
+
+    ],
+    "syntax" : "Plain Text"
+  },
+  "encodeMap" : {
+    "*" : "%2A",
+    "!" : "%21",
+    "(" : "%28",
+    "~" : "%7E",
+    ")" : "%29",
+    "'" : "%27"
+  },
+  "actions" : {
+    "info" : {
+      "Display System & App Settings" : "TAD-Display Drafts and System Information",
+      "Display Library Settings" : "TAD-Display Settings"
+    }
+  },
+  "draft_multimarkdown" : {
+    "extension" : "mmd",
+    "tags" : [
+
+    ],
+    "syntax" : "MultiMarkdown"
+  },
+  "consoleSuccessMarker" : "✅️ ",
+  "runArea" : "inbox",
+  "consoleErrorMarker" : "⛔️ ",
+  "draft_javascript" : {
+    "extension" : "js",
+    "tags" : [
+      "javascript"
+    ],
+    "syntax" : "JavaScript"
+  },
+  "consoleInfoMarker" : "💡 ",
+  "backlink_delimiter" : "\n",
+  "consoleWarnMarker" : "⚠️ ",
+  "cryptoLibName" : "crypto-js",
+  "draft_discourse" : {
+    "extension" : "mmd",
+    "tags" : [
+      "Discourse"
+    ],
+    "syntax" : "MultiMarkdown"
+  },
+  "templateTags" : [
+    "template"
+  ],
+  "debugEnabled" : false,
+  "metaPath" : "\/Library\/Scripts\/tad-meta.json",
+  "beautifierURL" : "https:\/\/tadpole.thoughtasylum.com\/assets\/library\/beautifier.js",
+  "settingsPath" : "\/Library\/Scripts\/tad.json",
+  "taskBasicIncomplete" : " ",
+  "msgTitleWarn" : "⚠️ WARNING ⚠️",
+  "backlink_sectionend" : "---\n",
+  "msgTitleInfo" : "💡 INFORMATION 💡",
+  "separatorTimeStamp" : ".",
+  "separatorDateTimeStamp" : "-",
+  "taskBasicEnd" : "] ",
+  "backlink_suffix" : "",
+  "runTag" : "#run#",
+  "consoleDebugMarker" : "🐞 ",
+  "separatorDateStamp" : "-",
+  "testLibsAlert" : true,
+  "draft_github_markdown" : {
+    "extension" : "mmd",
+    "tags" : [
+
+    ],
+    "syntax" : "GitHub Markdown"
+  },
+  "taskBasicComplete" : "x",
+  "libName" : "tad",
+  "libSourceURL" : "https:\/\/tadpole.thoughtasylum.com\/assets\/library\/tad.js",
+  "runTagScript" : "javascript",
+  "msgTitleDebug" : "🐞 ⒹⒺⒷⓊⒼ 🐞",
+  "runSyntax" : "JavaScript",
+  "cryptoURL" : "https:\/\/tadpole.thoughtasylum.com\/assets\/library\/crypto-js.js",
+  "draft_plain_text" : {
+    "extension" : "txt",
+    "tags" : [
+
+    ],
+    "syntax" : "Plain Text"
+  },
+  "beautifierLibName" : "beautifier",
+  "beautifierSettings" : "beautifier.json"
+}
