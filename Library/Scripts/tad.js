@@ -3,8 +3,8 @@
  * @author Stephen Millard
  * @copyright 2018-2021, ThoughtAsylum
  * @licensing Please visit https://tadpole.thoughtasylum.com
- * @version 20210318
- * @lastgenerated 2021-03-18-19.25.06
+ * @version 20210402
+ * @lastgenerated 2021-04-02-14.53.19
  */
 
 //**SUB-MOD**//tad-action//
@@ -3039,6 +3039,42 @@ Draft.prototype.TA_getEmailAddresses = function()
     return this.content.TA_getEmailAddresses();
 }
 
+
+// Convenience function to post a public paste to Pastebin of the current draft with the paste being the body of the draft.
+Draft.prototype.TA_postBodyToPastebin = function()
+{
+    return this.TA_postToPasteBin(this.processTemplate("[[body]]"));
+}
+
+
+// Post to Pastebin based on current draft.
+Draft.prototype.TA_postToPastebin = function(p_strContent = "", p_strTitle = this.title, p_bCopyResult = true, p_intPrivacy = 0, p_strSyntax = "", p_strExpiry = "N", p_strFolderID = "")
+{
+    //Initialise
+    let pb = new TadPastebin();
+
+    //Default the content
+    let strContent = p_strContent;
+    if (p_strContent == "") strContent = this.content;
+
+    //Set the syntax if we have a known one
+    let strSyntax = p_strSyntax;
+    //We can only really deal with default syntaxes, but if you pass in a non-null syntax it won't be overridden
+    if (p_strSyntax == "")
+    {
+        if (this.syntax.name == "JavaScript") strSyntax = "javascript";
+        // We get an "invalid api_paste_format" error from Pastebin API if we try to use `markdown` as specified 
+        // Tried variations, but nothing worked. Seems to be an issue with the API :-(
+        //if (this.syntax.name == "Markdown") strSyntax = "markdown";
+        //if (this.syntax.name == "MultiMarkdown") strSyntax = "markdown";
+        //if (this.syntax.name == "Giuthub Markdown") strSyntax = "markdown";
+    }
+	
+    //Post
+    pb.TA_postToPastebin(strContent, p_strTitle, p_bCopyResult, p_intPrivacy, strSyntax, p_strExpiry, p_strFolderID);
+	
+}
+
 //**SUB-MOD**//tad-editor//
 
 // Loads a draft into the editor, and activates the editor.
@@ -5556,6 +5592,13 @@ editor.TA_selectionReduceToEnd = function()
 	return this.getSelectedRange()[0];
 }
 
+
+// Replace one text string with another in a text selection.
+editor.TA_replaceInSelection = function(p_strFind, p_strReplace)
+{
+	return editor.setSelectedText(editor.getSelectedText().replaceAll(p_strFind, p_strReplace));
+}
+
 //**SUB-MOD**//tad-filemanager//
 
 // Deletes a file.
@@ -6528,7 +6571,7 @@ class TadLibrary
     constructor()
     {
         //Use a constant for the version number so it is quick and easy to find and update.
-        const TADVER = "20210318";
+        const TADVER = "20210402";
 
         //Set the source library file location
         this.libSourceURL = "https://tadpole.thoughtasylum.com/assets/library/tad.js";
@@ -6978,6 +7021,28 @@ Math.TA_isOneIn = function(p_intMax)
 {
 	if(Math.floor(Math.random() * p_intMax) + 1 == 1) return true;
 	else return false;
+}
+
+
+// Convert an integer to a Roman numeral.
+Math.TA_integerToRoman = function(p_intValue, p_bupperCase = true)
+{
+	//Define numerals
+	const NUMERALS = ["", "c", "cc", "ccc", "cd", "d", "dc", "dcc",
+		"dccc", "cm", "", "x", "xx", "xxx", "xl", "l", "lx", 
+		"lxx", "lxxx", "xc", "", "i", "ii", "iii", "iv", "v", 
+		"vi", "vii", "viii", "ix"];
+	
+	//Initialise variables
+	let astrDigits = p_intValue.toString().split("");
+	let strOutput = "";
+	let intSplit = 3;
+
+	//Loop and return
+	while (intSplit--) strOutput = (NUMERALS[+astrDigits.pop() + (intSplit*10)] || "") + strOutput;
+	strOutput = Array(+astrDigits.join("") + 1).join("m") + strOutput;
+	if(p_bupperCase) strOutput = strOutput.toUpperCase();
+	return strOutput;
 }
 
 //**SUB-MOD**//tad-misc//
@@ -9447,7 +9512,7 @@ Workspace.TA_getAllWorkspaceNames = function ()
 	return strWS;
 };
 
-// Loads a named Workspace.
+// Prompt a user to select a workspace and then load it.
 Workspace.TA_selectWorkspace = function(p_strMessage)
 {
 	let astrWorkspaces = this.TA_getAllWorkspaceNames();
@@ -11575,5 +11640,102 @@ class TadGitHub
 		return astrContent.length;
 	}
 
+}
+
+//**SUB-MOD**//tad-pastebin//
+
+class TadPastebin
+{
+	//Create new instance of the TadPastebin class.
+	constructor(p_strID = "Pastebin")
+	{
+		//Initialise the access credentials
+		let credPB = Credential.create(p_strID, "Pastebin is an online service for posting content. Drafts needs some access credentials to be able to post content as you.");
+		credPB.addTextField("username", "User Name");
+		credPB.addPasswordField("password", "Password");
+		credPB.addPasswordField("apikey", "Developer API Key");
+		if(credPB.authorize()) this.cred = credPB;
+
+		//Store the API key as an instance property for later re-use.
+		this.apikey = credPB.getValue("apikey");
+
+		//Use the access credentials to get a session token
+		let http = HTTP.create();
+		let response = http.request(
+			{
+			"url": "https://pastebin.com/api/api_login.php",
+			"method": "POST",
+			"encoding" : "form",
+			"data":
+			{
+				"api_dev_key" : this.apikey,
+				"api_user_name" : credPB.getValue("username"),
+				"api_user_password" : credPB.getValue("password")
+			},
+			"headers":
+			{
+				"Content-Type": "application/x-www-form-urlencoded",
+				"charset" : "utf-8"
+			}
+		});
+	
+		//Store the session token in the `token` instance property.
+		if (response.success) this.token = response.responseText;
+		else
+		{
+			this.token = "";
+			console.log("PostToPastebin:Status Code:" + response.statusCode)
+			console.log("PostToPastebin:Response Error:" + response.error)
+	
+			app.displayErrorMessage("Failed to get Pastebin authorisation token")
+		}
+	}
+
+	//Post content to Pastebin as a new *paste*.
+	TA_postToPastebin(p_strContent, p_strTitle = "", p_bCopyResult = true, p_intPrivacy = 0, p_strSyntax = "", p_strExpiry = "N", p_strFolderID = "")
+	{
+		let http = HTTP.create();
+		let response = http.request(
+			{
+			"url": "https://pastebin.com/api/api_post.php",
+			"method": "POST",
+			"encoding" : "form",
+			"data":
+			{
+				"api_dev_key" : this.apikey,
+				"api_user_key" : this.token,
+				"api_paste_code" : p_strContent,
+				"api_paste_name" : p_strTitle,
+				"api_paste_private" : p_intPrivacy,
+				"api_option" : "paste",
+				"api_paste_format" : p_strSyntax,
+				"api_paste_expire_date" : p_strExpiry,
+				"api_folder_key" : p_strFolderID
+			},
+			"headers":
+			{
+				"Content-Type": "application/x-www-form-urlencoded",
+				"charset" : "utf-8"
+			}
+		});
+
+		if (response.success)
+		{
+			if(p_bCopyResult)
+			{
+				app.setClipboard(response.responseText);
+				app.displayInfoMessage("Pastebin note link copied to clipboard");
+			}
+			//Return the link
+			return(response.responseText);
+		}
+		else
+		{
+			console.log("PostToPastebin:Status Code:" + response.statusCode);
+			console.log("PostToPastebin:Response Error:" + response.error);
+			app.displayErrorMessage(response.statusCode + ":" + response.responseText);
+			return;
+		}
+	}
 }
 
