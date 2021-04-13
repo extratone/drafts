@@ -1,3 +1,0 @@
-Still haven't slept. Elated by the fact that it was *not* the timing chain tensioners. I had a fairly long conversation with Mom about the possibility that I was sexually abused by Dad as a toddler. It's mentionable because I think it was by far the most reasonable discussion we've had on the subject. I realized that Meagan is *actually* the only person on Earth that knows my one secret. I wonder if she even remembers.
-
-#legacy

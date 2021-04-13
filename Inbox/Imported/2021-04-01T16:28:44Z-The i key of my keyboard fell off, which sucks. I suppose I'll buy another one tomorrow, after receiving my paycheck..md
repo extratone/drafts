@@ -1,1 +1,0 @@
-The i key of my keyboard fell off, which sucks. I suppose I'll buy another one tomorrow, after receiving my paycheck.

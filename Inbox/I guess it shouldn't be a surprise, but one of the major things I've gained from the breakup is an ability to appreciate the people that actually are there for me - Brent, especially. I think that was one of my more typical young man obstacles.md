@@ -1,1 +1,0 @@
-I guess it shouldn't be a surprise, but one of the major things I've gained from the breakup is an ability to appreciate the people that actually are there for me - Brent, especially. I think that was one of my more typical young man obstacles and I'm glad it's over. What I wish most of all is that I could come to Meagan as the man I am now because I think we'd be great together.

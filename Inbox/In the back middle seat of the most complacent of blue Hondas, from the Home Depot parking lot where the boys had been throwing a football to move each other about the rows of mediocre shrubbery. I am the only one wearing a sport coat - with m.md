@@ -1,5 +1,0 @@
-In the back middle seat of the most complacent of blue Hondas, from the Home Depot parking lot where *the boys* had been throwing a football to move each other about the rows of mediocre shrubbery. I am the only one wearing a sport coat - with my skinny blue jeans, no less - to give myself a laugh, I guess. For some reason, I'd assumed we'd be taking Maya's car to Cincinnati, as we had to Chicago and Des Moines.
-
-Instead, I am crouching here between two fragrant young men; the blue collar one, who's body odor I would not fully escape for nearly sixteen hours, and Zack, who's disconcertingly-vain way of living happens to be serving me well; his cologne - together with mine - overwhelms the lesser odors occasionally, preventing me from getting any more sick.
-
-This moment must surely persuade the few remaining doubters: without Meagan, I truly have no reason to do (or refrain from) anything. My little infiltration was enabled by my complete lack of something to lose. So long had the absence set in that I had begun forgetting how investment felt.

@@ -1,3 +1,0 @@
-It's been made more clear to me recently that my nature as a fun-sucking singularity may be a result of genetics rather than environment. Remembering Jenny's shoe-tying story... Why is it that I don't enjoy challenging myself? Am I even capable of it?
-
-The construction of the "ideal partner" is a futile endeavor... I didn't realize this until after I lost Meagan. One of the best parts about relationships is getting to know each other more and more.

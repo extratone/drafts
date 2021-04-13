@@ -1,1 +1,0 @@
-Through this time in Eve, it seems inappropriate to waste journal paper with such digital thoughts. I've been listening to the unaccompanied choir music of Arvo Pärt.
