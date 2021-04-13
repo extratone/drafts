@@ -1,3 +1,0 @@
-I think Mom probably reached her low last night, when she took to insulting me and my work personally. As I joked on Twitter, she said plenty of phrases that one expects to see accused of an Ayn Rand protagonist. "You just do whatever you want, don't you?! You just live life on your own terms!"
-
-I have been watching Turn: Washington Spies, and have found it well-written and passionately irreverent.

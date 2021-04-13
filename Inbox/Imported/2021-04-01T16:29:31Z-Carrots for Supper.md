@@ -1,2 +1,0 @@
-# Carrots for Supper
-I'd never feel right in staking a claim to true poverty, but I have a few times realized, at least, the lack of anything to eat, and/or any imminent chances at acquiring relief for my hunger pains by *honest means*.

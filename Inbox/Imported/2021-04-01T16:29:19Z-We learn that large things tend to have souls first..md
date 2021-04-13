@@ -1,1 +1,0 @@
-We learn that large things tend to have souls first.

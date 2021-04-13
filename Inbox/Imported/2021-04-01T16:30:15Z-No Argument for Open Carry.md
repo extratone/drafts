@@ -1,1 +1,0 @@
-**No Argument for Open Carry**

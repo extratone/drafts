@@ -1,1 +1,0 @@
-It occurs to me that the zealoutous and extreme factions in Eve could be the perfect voices for me as a writer. I think I'd genuinely fit well at CCP, as well, but I'm sure I'm not qualified to work there.
