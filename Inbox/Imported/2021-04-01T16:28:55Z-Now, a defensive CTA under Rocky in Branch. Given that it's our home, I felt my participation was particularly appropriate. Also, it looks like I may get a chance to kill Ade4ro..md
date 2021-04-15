@@ -1,0 +1,1 @@
+Now, a defensive CTA under Rocky in Branch. Given that it's our home, I felt my participation was particularly appropriate. Also, it looks like I may get a chance to kill Ade4ro.

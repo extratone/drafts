@@ -1,0 +1,5 @@
+Attention deficit disorder is a convenient explanation; a brain, asking for work. Schizophrenia and psychosis are what we attribute to an impatient mind - one that makes its own work, seldom politely. Most human ones weave in themselves a quilt of *expectation* - a scruitably divine gift of occurrence. And we beings - consuming and converting - are propelled toward our beautifully happenstance abstractions.
+
+Sanity - an approximated diminutive of peace - is a popular ideal. Most of the many must be mostly sane, most of the time, lest our little givens abandon us to silence. But - in a most fascinating way - unquestionable sanity lends us to a particularly-dangerous genus of quiet, itself, which we nobly recognize quite often in our new era of profoundly-ambient information as *the mundane*.
+
+#legacy

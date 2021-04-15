@@ -1,0 +1,1 @@
+The no-data thing is becoming a bit of an issue. Last night, I was able to successfully online Maon, house of sin thanks to help from Collin, but I currently don't have enough corporation permissions to make it useful whatsoever. I think the screenshots I've gotten have been worth it, though.

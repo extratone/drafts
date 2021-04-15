@@ -1,0 +1,3 @@
+I showed up to Kaleb's graduation party only a few minutes after 1800, when it was scheduled to start on Facebook. I met two of his professors (husband and wife?) and eluded to some sort of in-house IT psychologist job at the University. (Basically, "give me a job you old fuckers.")
+
+Brent came around 2000, and we left for a party Justice invited him to around 2200. (It was very near Meagan's house and Meagan, actually. Her car was there.)

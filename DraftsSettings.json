@@ -1,0 +1,134 @@
+{
+  "libSourceURL": "https://tadpole.thoughtasylum.com/assets/library/tad.js",
+  "libName": "tad",
+  "settingsPath": "/Library/Scripts/tad.json",
+  "dataPath": "/Library/Scripts/tad-data.json",
+  "metaPath": "/Library/Scripts/tad-meta.json",
+  "runTag": "#run#",
+  "runArea": "inbox",
+  "runSyntax": "JavaScript",
+  "runTagScript": "javascript",
+  "beautifierURL": "https://tadpole.thoughtasylum.com/assets/library/beautifier.js",
+  "beautifierLibName": "beautifier",
+  "beautifierSettings": "beautifier.json",
+  "cryptoURL": "https://tadpole.thoughtasylum.com/assets/library/crypto-js.js",
+  "cryptoLibName": "crypto-js",
+  "taskBasicStart": "- [",
+  "taskBasicComplete": "x",
+  "taskBasicIncomplete": " ",
+  "taskBasicEnd": "] ",
+  "taskBasicSyntax": "Simple List",
+  "buttonLabelTruncation": 32,
+  "debugEnabled": false,
+  "consoleDebugMarker": "🐞 ",
+  "consoleInfoMarker": "💡 ",
+  "consoleWarnMarker": "⚠️ ",
+  "consoleErrorMarker": "⛔️ ",
+  "consoleSuccessMarker": "✅️ ",
+  "msgTitleInfo": "💡 INFORMATION 💡",
+  "msgTitleWarn": "⚠️ WARNING ⚠️",
+  "msgTitleError": "⛔️ ERROR ⛔️",
+  "msgTitleDebug": "🐞 ⒹⒺⒷⓊⒼ 🐞",
+  "separatorDateStamp": "-",
+  "separatorDateTimeStamp": "-",
+  "separatorTimeStamp": ".",
+  "templateFilter": "archive",
+  "templateTags": [
+    "template"
+  ],
+  "draft_discourse": {
+    "syntax": "MultiMarkdown",
+    "extension": "mmd",
+    "tags": [
+      "Discourse"
+    ]
+  },
+  "draft_javascript": {
+    "syntax": "JavaScript",
+    "extension": "js",
+    "tags": [
+      "javascript"
+    ]
+  },
+  "draft_markdown": {
+    "syntax": "Markdown",
+    "extension": "md",
+    "tags": [
+
+    ]
+  },
+  "draft_multimarkdown": {
+    "syntax": "MultiMarkdown",
+    "extension": "mmd",
+    "tags": [
+
+    ]
+  },
+  "draft_taskpaper": {
+    "syntax": "Taskpaper",
+    "extension": "taskpaper",
+    "tags": [
+
+    ]
+  },
+  "draft_plain_text": {
+    "syntax": "Plain Text",
+    "extension": "txt",
+    "tags": [
+
+    ]
+  },
+  "draft_simple_list": {
+    "syntax": "Plain Text",
+    "extension": "txt",
+    "tags": [
+
+    ]
+  },
+  "draft_github_markdown": {
+    "syntax": "GitHub Markdown",
+    "extension": "mmd",
+    "tags": [
+
+    ]
+  },
+  "backlink_sectionstart": "---\n**BACK LINKS**  \n  ",
+  "backlink_sectionend": "---\n",
+  "backlink_prefix": "- ",
+  "backlink_suffix": "",
+  "backlink_delimiter": "\n",
+  "duplicateLinesDefault": 5,
+  "encodeMap": {
+    "*": "%2A",
+    "!": "%21",
+    "(": "%28",
+    "~": "%7E",
+    ")": "%29",
+    "'": "%27"
+  },
+  "commands": {
+    "actdir": "OPEN_URL|https://actions.getdrafts.com",
+    "wsc": "RUN_FUNCTION|Workspace.TA_selectLoadWorkspaceByButton",
+    "act": "RUN_ACTION|<1>",
+    "cbdic": "RUN_ACTION|TAD-Dictate-to-clipboard",
+    "tag": "RUN_FUNCTION|draft.TA_tagAddCSV",
+    "ws": "RUN_FUNCTION|app.TA_applyWorkspaceByName",
+    "url": "OPEN_URL|<1>"
+  },
+  "actions": {
+    "info": {
+      "Display System & App Settings": "TAD-Display Drafts and System Information",
+      "Display Library Settings": "TAD-Display Settings"
+    }
+  },
+  "testLibsEnable": false,
+  "testLibsAlert": true,
+  "testLibsListPath": "/Library/Scripts/tad-testlibs.txt",
+  "version": "20210402",
+  "authors": [
+    "Stephen Millard"
+  ],
+  "source": "https://www.thoughtasylum.com/",
+  "copyrightPeriod": "2018 - 2021",
+  "copyright": "Copyright 2018 - 2021: Stephen Millard (ThoughtAsylum)."
+}

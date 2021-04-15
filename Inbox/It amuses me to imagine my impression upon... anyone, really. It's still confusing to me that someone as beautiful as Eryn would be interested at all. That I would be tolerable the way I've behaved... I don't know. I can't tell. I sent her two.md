@@ -1,0 +1,1 @@
+It amuses me to imagine my impression upon... anyone, really. It's still confusing to me that someone as beautiful as Eryn would be interested at all. That I would be tolerable the way I've behaved... I don't know. I can't tell. I sent her two poems last night.
