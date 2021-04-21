@@ -1,0 +1,56 @@
+# Drafts Keyboard Shortcuts
+2021-04-21-03.43.57
+- TAD-Load Action Group - ThoughtAsylum - Power User: ⌘5
+- TAD-Load Action Group - ThoughtAsylum - Export/Import/Share: ⌘6
+- TAD-Load Action Group - ThoughtAsylum - Management: ⌘2
+- TAD-Load Action Group - ThoughtAsylum - Writing: ⌘3
+- TAD-Load Action Group - ThoughtAsylum: ⌘4
+- TAD-Reload Draft: ⌘R
+- TAD-Action Menu: ⇧⌘K
+- TAD-Trash Note: ⌥⌘↓
+- TAD-Toggle Last Two Modified Drafts: ⌃⇥
+- TAD-Load Previous Workspace: ⌥⌘←
+- TAD-Load Next Workspace: ⌥⌘→
+- TAD-Select All Content: ⇧⌥A
+- TAD-Jump to End of Previous Line: ⌥↑
+- TAD-Jump to Start of Next Line: ⌥↓
+- TAD-Insert yyyy-mm-dd-HH.MM.ss: ⇧⌥T
+- TAD-Duplicate Draft and Load: ⌘D
+- TAD-Duplicate Draft in Background: ⌃⌥⌘D
+- TAD-New Draft from Selection: ⌃⌥N
+- TAD-Prime Preview MMD: ⌘P
+- TAD-Preview with Syntax Highlighting: ⌃P
+- TAD-Exploded Markdown Preview: ⇧⌥P
+- TAD-Preview Clipboard: ⌥Q
+- TAD-Replace with Synonym: ⇧⌥S
+- Find: ⇧⌥F
+- Tasks: ⌥⌘T
+- Indent: ⌘]
+- Outdent: ⌘[
+- Toggle Theme: ⌥/
+- Markdown Header (#): ⌃⌘H
+- Markdown Bold (**): ⌘B
+- Markdown Link: ⌘K
+- Preview: ⌥⌘P
+- Markdown Header (#): ⌃⌘H
+- Markdown Bold (**): ⌘B
+- Markdown Emphasis (_): ⌘I
+- Markdown List: ⇧⌘L
+- Markdown Link: ⌘K
+- Replace URLs by MD links: ⇧⌘U
+- Markdown Footnote: ⌥⌘F
+- TAD-Selection Word Count: ⌥⌘W
+- TAD-Show Draft Info: ⌥I
+- TAD-Toggle App Theme: ⌥\
+- TAD-Toggle Typewriter Mode: ⌥T
+- TAD-Search Actions: ⌘/
+- TAD-Fetch URL Content to New Draft: ⇧⌘D
+- TAD-Copy Draft Link: ⇧⌃C
+- TAD-Share as File: Markdown: ⌘S
+- TAD-File Import With Tags: ⌘O
+- Copy: ⌥C
+- Email to myself: ⇧⌥M
+- Save to Files as...: ⌥⌘S
+- Send to Bear: ⇧⌘B
+- Save to OneNote: ⇧⌥O
+- Clipboard…: ⌥C
