@@ -3,8 +3,8 @@
  * @author Stephen Millard
  * @copyright 2018-2021, ThoughtAsylum
  * @licensing Please visit https://tadpole.thoughtasylum.com
- * @version 20210402
- * @lastgenerated 2021-04-02-14.53.19
+ * @version 20210503
+ * @lastgenerated 2021-05-03-15.36.34
  */
 
 //**SUB-MOD**//tad-action//
@@ -1225,7 +1225,7 @@ Draft.prototype.TA_setSyntax = function(p_astrSyntaxes)
         
     if (promptSyntax.show())
     {
-        draft.languageGrammar = promptSyntax.buttonPressed;
+        draft.syntax.name = promptSyntax.buttonPressed;
         draft.update();
     }
     else
@@ -1252,7 +1252,7 @@ Draft.prototype.TA_draftNew_ContentSyntax = function(p_strSyntax)
     let objHTTP = HTTP.create();
 
     newDraft.content = objHTTP.TA_getSyntaxTest(p_strSyntax);
-    newDraft.languageGrammar = p_strSyntax;
+    newDraft.syntax.name = p_strSyntax;
 
     newDraft.update();
     editor.load(newDraft);
@@ -1314,7 +1314,7 @@ Draft.prototype.TA_duplicate = function()
     // Prepare the non-tag data
     let newDraft = Draft.create();
     newDraft.content = this.content;
-    newDraft.languageGrammar = this.languageGrammar;
+    newDraft.syntax.name = this.syntax.name;
 
     // Process tags if we have any
     if (this.tags.length > 0)
@@ -1382,7 +1382,7 @@ Draft.prototype.TA_dictateList = function(p_strGrammar = tadLib.taskBasicSyntax,
     if (newList.length > 0)
     {
         let newDraft = Draft.create();
-        newDraft.languageGrammar = p_strGrammar;
+        newDraft.syntax.name = p_strGrammar;
         newDraft.content = newList.replace(/^(.*)/gm, p_strMarker + '$1');
         newDraft.update();
         return newDraft;
@@ -1440,7 +1440,7 @@ Draft.prototype.TA_draftNew = function(p_strContent, p_strGrammar = "")
 {
     let draftNew = Draft.create();
     draftNew.content = p_strContent;
-    if(p_strGrammar !== "") draftNew.languageGrammar = p_strGrammar;
+    if(p_strGrammar !== "") draftNew.syntax.name = p_strGrammar;
     draftNew.update();
     editor.TA_loadAc(draftNew);
     return draftNew;
@@ -1815,7 +1815,7 @@ Draft.prototype.TA_shareFileBasedOnSyntax = function()
     //All standard Drafts syntaxes are non-HTML, so we can default that in until such time as 
     //drafts supports HTML formats as standard.
     //The file extension is read from the data in the library settings.
-    draft.TA_shareFile(tadLib["draft_" + draft.languageGrammar.toLowerCase().replace(" ", "_")].extension, false);
+    draft.TA_shareFile(tadLib["draft_" + draft.syntax.name.toLowerCase().replace(" ", "_")].extension, false);
     return;
 }
 
@@ -1826,7 +1826,7 @@ Draft.prototype.TA_draftSetUp = function(p_astrTags, p_strSyntax, p_bRemoveTags 
 {
     if (p_bRemoveTags) this.TA_tagRemoveAll();
     this.TA_tagAdd(p_astrTags);
-    this.languageGrammar = p_strSyntax;
+    this.syntax.name = p_strSyntax;
     this.update();
     editor.load(this);
     return;
@@ -1962,7 +1962,7 @@ Draft.prototype.TA_infoDump = function(p_strJSONDraftDataTagPrefix = "DATAID", p
         "uuid": this.uuid,
         "content": this.content,
         "title": this.title,
-        "languageGrammar": this.languageGrammar,
+        "syntaxName": this.syntax.name,
         "selectionStart": this.selectionStart,
         "selectionLength": this.selectionLength,
         "tags": this.tags,
@@ -2018,14 +2018,87 @@ Draft.prototype.TA_draftCountSummary = function()
 
     //Initialise the draft tag counts
     let arrAllTags = this.TA_tagFetchAll();
-    arrAllTagsInfo = [];
+    let arrAllTagsInfo = [];
     arrAllTags.forEach(function(strTag)
     {
         arrAllTagsInfo.push(draftX.TA_draftCountSummaryTag(strTag));
     });
     jsonCounts.tagHTML = arrAllTagsInfo.join("\n");
 
-    //Initialise the workspace tag counts
+    //Build the base JSON
+    let jsonSyntax = {};
+    let astrAllSyntaxes = Syntax.getAll().map((syn) => syn.name).sort();
+    astrAllSyntaxes.forEach(function(strSyntax)
+    {
+        jsonSyntax[strSyntax] = 0;
+        jsonSyntax[strSyntax + "Trash"] = 0;
+        jsonSyntax[strSyntax + "Total"] = 0;
+    });
+    jsonSyntax["_Undefined_"] = 0;
+    jsonSyntax["_Undefined_Trash"] = 0;
+    jsonSyntax["_Undefined_Total"] = 0;
+    jsonSyntax["All"] = 0;
+    jsonSyntax["Trash"] = 0;
+    jsonSyntax["Total"] = 0;
+    //Retrieve all of the non-trashed drafts and count the syntaxes
+    let arrDrafts = Draft.query('', "all", [], [], 'created', false, false);
+    jsonCounts.syntaxHTML = "";
+    arrDrafts.forEach(function(draftCurrent)
+    {
+        if (draftCurrent.syntax == undefined)
+        {
+            jsonSyntax["_Undefined_"] = jsonSyntax["_Undefined_"] + 1;
+            jsonSyntax["_Undefined_Total"] = jsonSyntax["_Undefined_Total"] + 1;
+        }
+        else
+        {
+            jsonSyntax[draftCurrent.syntax.name] = jsonSyntax[draftCurrent.syntax.name] + 1;
+            jsonSyntax[draftCurrent.syntax.name + "Total"] = jsonSyntax[draftCurrent.syntax.name + "Total"] + 1;
+        }
+        jsonSyntax["All"] = jsonSyntax["All"] + 1;
+        jsonSyntax["Total"] = jsonSyntax["Total"] + 1;
+    });
+    //Retrieve all trashed drafts and count the syntaxes
+    arrDrafts = Draft.query('', "trash", [], [], 'created', false, false);
+    arrDrafts.forEach(function(draftCurrent)
+    {
+        if (draftCurrent.syntax == undefined)
+        {
+            jsonSyntax["_Undefined_Trash"] = jsonSyntax["_Undefined_Trash"] + 1;
+            jsonSyntax["_Undefined_Total"] = jsonSyntax["_Undefined_Total"] + 1;
+        }
+        else
+        {
+            jsonSyntax[draftCurrent.syntax.name + "Trash"] = jsonSyntax[draftCurrent.syntax.name + "Trash"] + 1;
+            jsonSyntax[draftCurrent.syntax.name + "Total"] = jsonSyntax[draftCurrent.syntax.name + "Total"] + 1;
+        }
+        jsonSyntax["Trash"] = jsonSyntax["Trash"] + 1;
+        jsonSyntax["Total"] = jsonSyntax["Total"] + 1;
+    });
+    //Build the output HTML
+    astrAllSyntaxes.forEach(function(strSyntax)
+    {
+        jsonCounts.syntaxHTML = jsonCounts.syntaxHTML + `<tr>
+        <th>${strSyntax}</th>
+        <td>${jsonSyntax[strSyntax]}</td>
+        <td>${jsonSyntax[strSyntax + "Trash"]}</td>
+        <td>${jsonSyntax[strSyntax + "Total"]}</td>
+        </tr>\n`
+    });
+    if(jsonSyntax["_Undefined_Total"] > 0)
+    {
+        jsonCounts.syntaxHTML = jsonCounts.syntaxHTML + `<tr>
+        <th>&lt;Undefined&gt;</th>
+        <td>${jsonSyntax["_Undefined_"]}</td>
+        <td>${jsonSyntax["_Undefined_Trash"]}</td>
+        <td>${jsonSyntax["_Undefined_Total"]}</td>
+        </tr>\n`
+    }
+    jsonCounts.syntax_all = jsonSyntax["All"];
+    jsonCounts.syntax_trash = jsonSyntax["Trash"];
+    jsonCounts.syntax_total = jsonSyntax["Total"];
+    
+    //Initialise the workspace counts
     let awsAll = Workspace.getAll();
     let astrWorkspaceInfo = [];
     awsAll.forEach(function(wsNext)
@@ -2076,6 +2149,7 @@ Draft.prototype.TA_draftCountSummary = function()
         table td {border-bottom: 1px solid #ddd;display: block;font-size: .8em;text-align: right;}
         table td::before {content: attr(data-label);float: left;font-weight: bold;text-transform: uppercase;}
         table td:last-child {border-bottom: 0;}
+        table tfoot {border: none;clip: rect(0 0 0 0);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}
     }
     </style>
     <p>
@@ -2106,20 +2180,37 @@ Draft.prototype.TA_draftCountSummary = function()
                 <td>${jsonCounts.archive}</td>
             </tr>
             <tr>
+                <th>All</th>
+                <td>${jsonCounts.all_flagged}</td>
+                <td>${jsonCounts.all_notflagged}</td>
+                <td>${jsonCounts.all}</td>
+            </tr>
+            <tr>
                 <th>Trash</th>
                 <td>${jsonCounts.trash_flagged}</td>
                 <td>${jsonCounts.trash_notflagged}</td>
                 <td>${jsonCounts.trash}</td>
             </tr>
         </tbody>
-        <tfoot>
+        </table>
+        <br>
+        <table>
+        <thead>
+            <tr>
+                <th>&nbsp;</th>
+                <th>Flagged</th>
+                <th>Not Flagged</th>
+                <th>TOTAL</th>
+            </tr>
+        </thead>
+        <tbody>
             <tr>
                 <th>TOTAL</th>
-                <td>${jsonCounts.all_flagged}</td>
-                <td>${jsonCounts.all_notflagged}</td>
-                <td>${jsonCounts.all}</td>
+                <td>${jsonCounts.all_flagged + jsonCounts.trash_flagged}</td>
+                <td>${jsonCounts.all_notflagged + jsonCounts.trash_notflagged}</td>
+                <td>${jsonCounts.all + jsonCounts.trash}</td>
             </tr>
-        </tfoot>
+        </tbody>
     </table>
 
     <p>&nbsp;</p>
@@ -2140,6 +2231,42 @@ Draft.prototype.TA_draftCountSummary = function()
     <tbody>
        ${jsonCounts.tagHTML}
     </tbody>
+    </table>
+
+    <p>&nbsp;</p>
+
+    <h1>Drafts: Syntaxes</h1>
+    <table>
+    <thead>
+        <tr>
+            <th>&nbsp;</th>
+            <th>All</th>
+            <th>Trash</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+       ${jsonCounts.syntaxHTML}
+    </tbody>
+    </table>
+    <br>
+    <table>
+    <thead>
+        <tr>
+            <th>&nbsp;</th>
+            <th>All</th>
+            <th>Trash</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>TOTAL</th>
+            <td>${jsonCounts.syntax_all}</td>
+            <td>${jsonCounts.syntax_trash}</td>
+            <td>${jsonCounts.syntax_total}</td>
+        </tr>
+    </body>
     </table>
 
     <p>&nbsp;</p>
@@ -2273,6 +2400,7 @@ Draft.prototype.TA_draftCountSummaryTag = function(p_strTag)
             </tr>`;
 }
 
+
 // Create a new draft based on the URL on the clipboard.
 Draft.prototype.TA_draftNewFromClipboardURL = function()
 {
@@ -2358,7 +2486,7 @@ Draft.prototype.TA_draftNewFromTemplateDraft = function()
 		});
 
 		//Set the syntax type
-		newDraft.languageGrammar = draftTemplate.languageGrammar;
+		newDraft.syntax.name = draftTemplate.syntax.name;
 
 		//Update and load the template
 		newDraft.update();
@@ -5599,6 +5727,139 @@ editor.TA_replaceInSelection = function(p_strFind, p_strReplace)
 	return editor.setSelectedText(editor.getSelectedText().replaceAll(p_strFind, p_strReplace));
 }
 
+
+// Get the URL for the link under the cursor.
+editor.TA_getURLAtCursor = function()
+{
+	//Define a couple of internal functions
+	function isEnder(p_strInput)
+	{
+		return (!p_strInput || p_strInput.length === 0 || /^\s*$/.test(p_strInput) || p_strInput == "\n")
+	}
+	function validateURL(p_strURL)
+	{
+		let httpChecker = HTTP.create();
+
+		let respChecker = httpChecker.request(
+			{
+				"url": p_strURL,
+				"method": "GET"
+			});
+
+		if (respChecker.success) return true;
+		else return false;
+	}
+
+	//Initialise the starting position
+	let aintSel = this.getSelectedRange();
+
+	//Initialise the start and end markers
+	let intStart = aintSel[0];
+	let intEnd = aintSel[0];
+
+	//Initialise the start and end characters
+	let strStart = this.getTextInRange(intStart,1);
+	let strEnd = this.getTextInRange(intEnd,1);
+
+	//Extend back to the first whitespace, new line, or start of content
+	while (intStart > 0 && !isEnder(strStart))
+	{
+		intStart--;
+		strStart = this.getTextInRange(intStart,1);
+	}
+	intStart++;
+
+	//Extend forward to the first whitespace, new line, or end of content
+	while (intEnd < this.getText().length && !isEnder(strEnd))
+	{
+		intEnd++;
+		strEnd = this.getTextInRange(intEnd, 1);
+	}
+
+	//Grab what we've narrowed it down to
+	let strWorking = this.getTextInRange(intStart, intEnd - intStart);
+
+	//If this is a Markdown link and it has a character following the final closing bracket,
+	//we'll remove the final character (period, semicolon, colon, etc.)
+	if (strWorking.slice(0,-1).endsWith(")")) strWorking = strWorking.slice(0,-1)
+
+	//If the selected text contains double quotes, then we can reasonably assume that we
+	//are dealing with a URL contained in double quotes.
+	if(strWorking.includes('"')) strWorking = strWorking.split('"')[1];
+	//Likewise single quotes.
+	else if(strWorking.includes("'")) strWorking = strWorking.split("'")[1];
+	//If it is a markdown link we need to work a bit smarter
+	else if(strWorking.endsWith(")"))
+	{
+		let intFrom = strWorking.lastIndexOf("(") + 1;
+		let intTo = strWorking.length - 1;
+		strWorking = strWorking.substring(intFrom, intTo);
+	}
+
+	if(strWorking.includes("://")) return strWorking;
+	if(validateURL(strWorking)) return strWorking;
+	if(validateURL("https://" + strWorking)) return strWorking;
+	if(validateURL("http://" + strWorking)) return strWorking;
+	return;
+}
+
+
+// Open the URL for the link under the cursor.
+editor.TA_openURLAtCursor = function()
+{
+	let strURL = this.TA_getURLAtCursor();
+	if(strURL == undefined) app.displayErrorMessage("No valid URL found at cursor");
+	else app.openURL(strURL);
+	return strURL;
+}
+
+
+// Check if the current cursor position to the line start is a Markdown list or a blank.
+editor.TA_textToLineStartIsMDListOrBlank = function()
+{
+	const MDLISTREGEX = /^\s*[\-\+\*]\ ?$|^\s*\d+\.\ ?$|^\s*$/;
+	if(this.TA_textToLineStart().match(MDLISTREGEX) == null) return false;
+	else return true;
+}
+
+
+// Get the text between the cursor position and the start of the line.
+editor.TA_textToLineStart = function()
+{
+	let intLineStart = this.getSelectedLineRange()[0];
+	return this.getTextInRange(intLineStart, this.getSelectedRange()[0] - intLineStart);
+}
+
+
+// Get the text between the cursor position and the end of the line.
+editor.TA_textToLineEnd = function()
+{
+	let intLineEnd = this.getSelectedLineRange()[0] + this.getSelectedLineRange()[1] - 1;
+	let intCursorPos = this.getSelectedRange()[0] + this.getSelectedRange()[1];
+	return this.getTextInRange(intCursorPos, intLineEnd - intCursorPos);
+}
+
+
+// Insert an indentation.
+editor.TA_indent = function(p_strIndent)
+{
+	if(this.getSelectedText().includes("\n")) this.TA_prependLinesRetainSelection(p_strIndent);
+	else
+	{
+		if(this.TA_textToLineStartIsMDListOrBlank()) this.TA_prependLinesRetainSelection(p_strIndent);
+		else this.TA_insertTextPosAtEnd(p_strIndent);
+	}
+	return;
+}
+
+
+// Remove an indentation.
+editor.TA_unindent = function(p_strIndent)
+{
+	this.TA_unprependLinesRetainSelection(p_strIndent)
+	return;
+}
+
 //**SUB-MOD**//tad-filemanager//
 
 // Deletes a file.
@@ -5675,6 +5936,26 @@ FileManager.prototype.TA_fileMetaLoad = function()
     }
 }
 
+
+// List files in a directory matching a regular expression.
+FileManager.prototype.TA_listFilesRegex = function(p_strPath, p_strRegEx)
+{
+	let astrPaths = [];
+    //Output a processing message as this is typically Drafts is VERY slow at retrieving iCloud file data
+	app.displayInfoMessage("Retrieving matching files...");
+	this.listContents(p_strPath).forEach(function(strPath)
+	{
+		//Only process files
+		if(!strPath.endsWith("/"))
+		{
+			//Get the file name
+			let strFileName = strPath.split("/").slice(-1)[0];
+			//Now check for a regex match
+			if(strFileName.match(p_strRegEx) != null) astrPaths.push(strPath);
+		}
+	});
+	return astrPaths;
+}
 
 //**SUB-MOD**//tad-htmlprompt//
 
@@ -6571,7 +6852,7 @@ class TadLibrary
     constructor()
     {
         //Use a constant for the version number so it is quick and easy to find and update.
-        const TADVER = "20210402";
+        const TADVER = "20210503";
 
         //Set the source library file location
         this.libSourceURL = "https://tadpole.thoughtasylum.com/assets/library/tad.js";
@@ -7248,7 +7529,7 @@ class TadMiscellaneous
         });
     
         //Configure the current draft for running
-        draft.languageGrammar = tadLib.runSyntax;
+        draft.syntax.name = tadLib.runSyntax;
         
         //Set run & script tags
         draft.addTag(tadLib.runTag);
@@ -9496,6 +9777,20 @@ String.prototype.TA_getEmailAddresses = function()
 	if(astrEmails == null) return[];
 	else return astrEmails;
 }
+
+
+// Convert a MultiMarkdown string to a plain text string.
+String.prototype.TA_mdToText = function()
+{
+	let mmd = MultiMarkdown.create();
+	let strHTML = '<html><body>' + mmd.render(this) + '</body></html>';
+	let strClipboardTemp = app.getClipboard();
+	app.htmlToClipboard(strHTML);
+	let strOutput = app.getClipboard();
+	app.setClipboard(strClipboardTemp);
+	return strOutput;
+}
+
 
 //**SUB-MOD**//tad-workspace//
 
