@@ -3,8 +3,8 @@
  * @author Stephen Millard
  * @copyright 2018-2021, ThoughtAsylum
  * @licensing Please visit https://tadpole.thoughtasylum.com
- * @version 20210503
- * @lastgenerated 2021-05-03-15.36.34
+ * @version 20210508
+ * @lastgenerated 2021-05-08-22.19.19
  */
 
 //**SUB-MOD**//tad-action//
@@ -266,7 +266,7 @@ app.TA_trashUnflggedInboxDraftsTaggedDrafts = function(p_strTag)
 // Remove run tag from archived drafts
 app.TA_removeRunTagFromArchive = function()
 {
-    let intInstances = this.TA_removeTags(tadLib.tagRun, "archive")
+    let intInstances = this.TA_removeTags(tadLib.runTag, "archive")
     this.displayInfoMessage("Removed " + intInstances + " instance".TA_pluralise(intInstances) + " of run tag from archive.");
     return intInstances;
 }
@@ -771,7 +771,7 @@ app.TA_processCrossLink = function(p_strLink)
     //We should now have populated arrays if we had any matches.
 
     //If there is nothing in the arrays, there was no match and we need to create a draft
-    if ((adraftFullMatch.length + adraftPartialMatch) == 0)
+    if ((adraftFullMatch.length + adraftPartialMatch.length) == 0)
     {
         //We have no way of telling what should and should not be a heading vs. part of the title.
         //Therefore we just make everything the title.
@@ -1084,14 +1084,14 @@ const TA_DRAFTS_SYNTAX = ["Plain Text", "Markdown", "MultiMarkdown", "GitHub Mar
 // Counts the number of words in the draft.
 Draft.prototype.TA_wordCount = function()
 {
-    return this.content.TA_wordCount();
+    return this.content.TA_countWords();
 }
  
 
 // Counts the number of lines in the draft.
 Draft.prototype.TA_lineCount = function(p_intBase = 0)
 {
-    return this.content.TA_lineCount(p_intBase);
+    return this.content.TA_countLines(p_intBase);
 }
  
 
@@ -1184,7 +1184,7 @@ this.content.split("\n").map(someFunction);
 Draft.prototype.TA_trashInboxDraftsTagged = function(p_astrTags)
 {
     //Find the matching drafts
-    draftsTempList = Draft.query("", "inbox", p_astrTags, [], "created", true);
+    let draftsTempList = Draft.query("", "inbox", p_astrTags, [], "created", true);
 
     //Trash the matched drafts
     draftsTempList.forEach(function(draftMatch)
@@ -1201,7 +1201,7 @@ Draft.prototype.TA_trashInboxDraftsTagged = function(p_astrTags)
 Draft.prototype.TA_archiveInboxDraftsTagged = function(p_astrTags)
 {
     //Find the matching drafts
-    draftsTempList = Draft.query("", "inbox", p_astrTags, [], "created", true);
+    let draftsTempList = Draft.query("", "inbox", p_astrTags, [], "created", true);
 
     //Trash the matched drafts
     draftsTempList.forEach(function(draftMatch)
@@ -1225,7 +1225,7 @@ Draft.prototype.TA_setSyntax = function(p_astrSyntaxes)
         
     if (promptSyntax.show())
     {
-        draft.syntax.name = promptSyntax.buttonPressed;
+        draft.TA_setSyntaxByName(promptSyntax.buttonPressed);
         draft.update();
     }
     else
@@ -1252,7 +1252,7 @@ Draft.prototype.TA_draftNew_ContentSyntax = function(p_strSyntax)
     let objHTTP = HTTP.create();
 
     newDraft.content = objHTTP.TA_getSyntaxTest(p_strSyntax);
-    newDraft.syntax.name = p_strSyntax;
+    newDraft.TA_setSyntaxByName(p_strSyntax);
 
     newDraft.update();
     editor.load(newDraft);
@@ -1314,7 +1314,7 @@ Draft.prototype.TA_duplicate = function()
     // Prepare the non-tag data
     let newDraft = Draft.create();
     newDraft.content = this.content;
-    newDraft.syntax.name = this.syntax.name;
+    newDraft.syntax = this.syntax;
 
     // Process tags if we have any
     if (this.tags.length > 0)
@@ -1382,7 +1382,7 @@ Draft.prototype.TA_dictateList = function(p_strGrammar = tadLib.taskBasicSyntax,
     if (newList.length > 0)
     {
         let newDraft = Draft.create();
-        newDraft.syntax.name = p_strGrammar;
+        newDraft.TA_setSyntaxByName(p_strGrammar);
         newDraft.content = newList.replace(/^(.*)/gm, p_strMarker + '$1');
         newDraft.update();
         return newDraft;
@@ -1440,7 +1440,7 @@ Draft.prototype.TA_draftNew = function(p_strContent, p_strGrammar = "")
 {
     let draftNew = Draft.create();
     draftNew.content = p_strContent;
-    if(p_strGrammar !== "") draftNew.syntax.name = p_strGrammar;
+    if(p_strGrammar !== "") draftNew.TA_setSyntaxByName(p_strGrammar);
     draftNew.update();
     editor.TA_loadAc(draftNew);
     return draftNew;
@@ -1552,7 +1552,7 @@ Draft.prototype.TA_selectRecentTagRename = function(p_bInfo = false)
         {
             if (strFrom.length > 0)
             {
-                let strTo = TA_singleTextFieldPrompt("Tag Rename", "Enter the new name for the tag", "New Tag Name", strFrom[0]);
+                let strTo = Prompt.TA_singleTextFieldPrompt("Tag Rename", "Enter the new name for the tag", "New Tag Name", strFrom[0]);
                 this.TA_tagRename(strFrom[0], strTo, p_bInfo);
             }
         }
@@ -1686,17 +1686,6 @@ Draft.prototype.TA_deduplicateLines = function()
     return;
 }
 
-// Adds a set of tags defined as an array of strings to the draft.
-Draft.prototype.TA_tagAdd = function(p_astrTags)
-{
-    for (let intCounter = 0; intCounter < p_astrTags.length; intCounter++)
-    {
-        this.addTag(p_astrTags[intCounter]);
-    }
-    this.update();
-    return;
-}
-
 
 // Adds a set of tags defined as a comma separated string of tag names to the draft.
 Draft.prototype.TA_tagAddCSV = function(p_strTags)
@@ -1761,7 +1750,7 @@ Draft.prototype.TA_split = function(p_bLoadSecondDraft = false)
         secondDraft.content = secondDraftContent;
         
         //Add the tags from current draft to the new draft
-        if (this.tags.length > 0) secondDraft.TA_tagAdd(this.tags);
+        if (this.tags.length > 0) secondDraft.TA_tagAddArray(this.tags);
         
         //Ensure the second draft is up to date
         secondDraft.update();
@@ -1825,8 +1814,8 @@ Draft.prototype.TA_shareFileBasedOnSyntax = function()
 Draft.prototype.TA_draftSetUp = function(p_astrTags, p_strSyntax, p_bRemoveTags = false)
 {
     if (p_bRemoveTags) this.TA_tagRemoveAll();
-    this.TA_tagAdd(p_astrTags);
-    this.syntax.name = p_strSyntax;
+    this.TA_tagAddArray(p_astrTags);
+    this.TA_setSyntaxByName(p_strSyntax);
     this.update();
     editor.load(this);
     return;
@@ -2470,7 +2459,7 @@ Draft.prototype.TA_draftNewFromTemplateDraft = function()
 		let newDraft = Draft.create();
 
 		//Copy across the content
-		draftTemplate = Draft.query(promptTemplate.buttonPressed, tadLib.templateFilter, tadLib.templateTags)[0];
+		let draftTemplate = Draft.query(promptTemplate.buttonPressed, tadLib.templateFilter, tadLib.templateTags)[0];
 		newDraft.content = draftTemplate.content;
 
 		//Copy across all of the tags
@@ -2486,7 +2475,7 @@ Draft.prototype.TA_draftNewFromTemplateDraft = function()
 		});
 
 		//Set the syntax type
-		newDraft.syntax.name = draftTemplate.syntax.name;
+		newDraft.syntax = draftTemplate.syntax;
 
 		//Update and load the template
 		newDraft.update();
@@ -2818,9 +2807,9 @@ Draft.prototype.TA_backLinkAdHoc = function()
 		//Sort by the modified date
 		adLinked.sort(function(draftOne, draftTwo)
 		{
-			let dtOne = new Date(draftOne.release);
-			let dtTwo = new Date(draftTwo.release);
-			return dtOne - dtTwo;
+			let dtOne = new Date(draftOne.modifiedAt);
+			let dtTwo = new Date(draftTwo.modifiedAt);
+			return dtOne.getTime() - dtTwo.getTime();
 		});
 
 		//The only reliable way I could come up with to get uniqueness out of this without really convoluted code
@@ -3171,7 +3160,7 @@ Draft.prototype.TA_getEmailAddresses = function()
 // Convenience function to post a public paste to Pastebin of the current draft with the paste being the body of the draft.
 Draft.prototype.TA_postBodyToPastebin = function()
 {
-    return this.TA_postToPasteBin(this.processTemplate("[[body]]"));
+    return this.TA_postToPastebin(this.processTemplate("[[body]]"));
 }
 
 
@@ -3201,6 +3190,62 @@ Draft.prototype.TA_postToPastebin = function(p_strContent = "", p_strTitle = thi
     //Post
     pb.TA_postToPastebin(strContent, p_strTitle, p_bCopyResult, p_intPrivacy, strSyntax, p_strExpiry, p_strFolderID);
 	
+}
+
+
+// Set the syntax of a draft to an unknown type.
+Draft.prototype.TA_setSyntaxByName = function(p_strSyntax)
+{
+	let synFind = Syntax.find("builtIn", p_strSyntax);
+	if (synFind != "undefined") this.syntax = synFind;
+	else
+	{
+		synFind = Syntax.find("custom", p_strSyntax);
+		if (synFind != "undefined") this.syntax = synFind;
+		else
+		{
+			synFind = Syntax.find("file", p_strSyntax);
+			if (synFind != "undefined") this.syntax = synFind;
+			//Else leave syntax as is as we do not know what to change it to
+		}
+	}
+    this.update();
+	return;
+}
+
+
+// Set the syntax of a draft to a syntax of a specific type.
+Draft.prototype.TA_setSyntaxOfType = function(p_stType, p_strSyntax)
+{
+	let synFind = Syntax.find(p_stType, p_strSyntax);
+	if (synFind != "undefined") this.syntax = synFind;
+	//Else leave syntax as is as we do not know what to change it to
+	this.update();
+    return;
+}
+
+
+// Set the syntax of a draft to a built-in type.
+Draft.prototype.TA_setSyntaxBuiltIn = function(p_strSyntax)
+{
+	this.TA_setSyntaxOfType("builtIn", p_strSyntax);
+	return;
+}
+
+
+// Set the syntax of a draft to a custom type.
+Draft.prototype.TA_setSyntaxCustom = function(p_strSyntax)
+{
+	this.TA_setSyntaxOfType("custom", p_strSyntax);
+	return;
+}
+
+
+// Set the syntax of a draft to a file type.
+Draft.prototype.TA_setSyntaxFile = function(p_strSyntax)
+{
+	this.TA_setSyntaxOfType("file", p_strSyntax);
+	return;
 }
 
 //**SUB-MOD**//tad-editor//
@@ -3347,6 +3392,7 @@ editor.TA_loadRecentDraftLastMonth = function(p_astrTagsInclude, p_astrTagsExclu
 // Load the previously loaded draft.
 editor.TA_toggleLoadPreviousLoad = function()
 {
+    // @ts-ignore
     this.load(this.recentDrafts[1]);
     return;
 }
@@ -3480,7 +3526,7 @@ editor.TA_insertTextPosAtEnd = function(p_strText)
 }
 
 
-// Create and load a new draft
+// Create and load a new draft with specific content.
 editor.TA_loadNewDraftWithContent = function(p_strContent)
 {
     //This is here just in case it makes more sense to someone to call this from the
@@ -3512,7 +3558,7 @@ editor.TA_deleteNextChar = function()
 {
     //Get's the current text selection, extends it by one and then replaces that selection
     //with what was previously selected.
-    strInitial = this.getSelectedText();
+    let strInitial = this.getSelectedText();
 	this.setSelectedRange(this.getSelectedRange()[0], this.getSelectedRange()[1] + 1)
 	this.setSelectedText(strInitial);
 	this.activate();
@@ -3656,7 +3702,7 @@ editor.TA_sortAllNumeric = function()
 
 //Sort all editor lines based on reverse numeric value rather than reverse alphabetic sorting.
 editor.TA_sortAllReverseNumeric = function()
-{
+{          
 	this.TA_selectAll();
 	return this.TA_sortSelectionReverseNumeric();
 }
@@ -3683,7 +3729,7 @@ editor.TA_sortAllRandom = function()
 // Get the content of the line(s) the cursor/current selection is on.
 editor.TA_getCurrentLine = function()
 {
-    return strLine = this.getTextInRange(this.getSelectedLineRange()[0], this.getSelectedLineRange()[1]);
+    return this.getTextInRange(this.getSelectedLineRange()[0], this.getSelectedLineRange()[1]);
 }
 
 
@@ -3743,7 +3789,7 @@ editor.TA_repeatDuplicateCurrentLineAsk = function(p_intDefault = tadLib.duplica
 	//Capture the number of times to duplicate a line
 	let promptDupeLines = Prompt.create();
 	promptDupeLines.title = "Number of duplicate lines to create";
-	promptDupeLines.addTextField("numRepetitions", "Lines", p_intDefault, ["numberPad"]);
+	promptDupeLines.addTextField("numRepetitions", "Lines", p_intDefault.toString(), ["numberPad"]);
 	promptDupeLines.addButton("OK");
 	if (promptDupeLines.show())
 	{
@@ -3829,7 +3875,7 @@ editor.TA_loadLastModifiedDraftIncludeTrashed = function()
 // Inserts a yyyy-MM-dd-hh.mm.ss format timestamp at the current editor position.
 editor.TA_insertTimestampyyyyMMddhhmmss = function()
 {
-    this.TA_insertTextPosAtEnd(TA_getTimestampyyyyMMddhhmmss());
+    this.TA_insertTextPosAtEnd(tadMisc.TA_getTimestampyyyyMMddhhmmss());
     return;
 }
 
@@ -3837,7 +3883,8 @@ editor.TA_insertTimestampyyyyMMddhhmmss = function()
 // Inserts a markdown link with the page title as the text using a URL on the clipboard.
 editor.TA_mdTitleLinkFromClipboardURL = function()
 {
-	this.setSelectedText(TA_mdTitleLinkFromURL(app.getClipboard()));
+	let objHTTP = HTTP.create();
+	this.setSelectedText(objHTTP.TA_mdTitleLinkFromURL(app.getClipboard()));
     this.TA_cursorToSelectionEnd();
     return;
 }
@@ -3846,7 +3893,8 @@ editor.TA_mdTitleLinkFromClipboardURL = function()
 // Inserts a markdown link with the page title as the text using a URL selected in the editor.
 editor.TA_mdTitleLinkFromSelectedURL = function()
 {
-	this.setSelectedText(this.TA_mdTitleLinkFromURL(this.getSelectedText()));
+	let objHTTP = HTTP.create();
+	this.setSelectedText(objHTTP.TA_mdTitleLinkFromURL(this.getSelectedText()));
     this.TA_cursorToSelectionEnd();
     return;
 }
@@ -3856,7 +3904,7 @@ editor.TA_mdTitleLinkFromSelectedURL = function()
 editor.TA_discourseHideDetails = function()
 {
 	//Capture a title for the expansion section
-	strExpansionTitle = Prompt.TA_singleTextFieldPrompt("Discourse Hide Details Generator", "Enter the title for the expansion section", "Select to reveal...", "");
+	let strExpansionTitle = Prompt.TA_singleTextFieldPrompt("Discourse Hide Details Generator", "Enter the title for the expansion section", "Select to reveal...", "");
 
 	//Insert the content and place the cursor at the end
 	if (strExpansionTitle != "")
@@ -4843,7 +4891,7 @@ editor.TA_sectionGetContentByHeading = function(p_strSectionHeading, p_intIndex 
 {
     let anmMatches = editor.TA_sectionGetIndexesForHeading(p_strSectionHeading);
     if (p_intIndex == anmMatches.length) return;
-	else return editor.TA_sectionGetContentByIndex(anmMatches[p_intIndex]);
+	else return editor.TA_sectionGetContentByIndex(parseInt(anmMatches[p_intIndex]));
 }
 
 
@@ -4981,6 +5029,7 @@ editor.TA_processSelectedLinesFunctionRetain = function(p_funcCallback)
 // Process each line in the selection with a function and replace the selection with the result.
 editor.TA_processSelectedLinesFunctionReplace = function(p_funcCallback)
 {
+    // @ts-ignore
     this.setSelectedText(this.getSelectedText().TA_processLinesFunction(p_funcCallback));
     return;
 }
@@ -5292,6 +5341,7 @@ editor.TA_navigateToMarkerByName = function(p_strNavMarkerName)
         return;
     });
     editor.setSelectedRange(intLoc, 0);
+	return;
 }
 
 
@@ -5381,6 +5431,7 @@ editor.TA_processMDXLink = function()
 editor.TA_mergeSelectedLines = function(p_strSpacer = " ", p_bTrimLines = true, p_astrContinue = ["-", "—", "–", "/"], p_astrForce = [])
 {
 	let strOutput = this.getSelectedText().TA_mergeLines(p_strSpacer, p_bTrimLines, p_astrContinue, p_astrForce);
+	// @ts-ignore
 	this.setSelectedText(strOutput);
 	return strOutput;
 }
@@ -5478,14 +5529,14 @@ editor.TA_getNextLineContent = function()
 // Copy the previous line to the clipboard.
 editor.TA_copyPreviousLine = function()
 {
-	return app.setClipboard(thisTA_getPreviousLineContent());
+	return app.setClipboard(this.TA_getPreviousLineContent());
 }
 
 
 // Copy the next line to the clipboard.
 editor.TA_copyNextLine = function()
 {
-	return app.setClipboard(thisTA_getNextLineContent());
+	return app.setClipboard(this.TA_getNextLineContent());
 }
 
 
@@ -6768,6 +6819,11 @@ HTTP.prototype.TA_getContentToLocalFile = function(p_strURL, p_strFilePath)
 // Save a JavaScript library file to the Drafts library scripts folder.
 HTTP.prototype.TA_downloadLibrary = function(p_strURL, p_strLibraryName)
 {
+	//Ensure that we havethe scripting folder in place
+	let fmCloud = FileManager.createCloud();
+	fmCloud.createDirectory("Scripts", "/Library/");
+
+	//Fetch the library
 	let strLibraryName = p_strLibraryName;
 	if (strLibraryName.endsWith(".js") == false) strLibraryName = strLibraryName + ".js";
 	return this.TA_getContentToiCloudFile(p_strURL, "/Library/Scripts/" + strLibraryName);
@@ -6852,7 +6908,7 @@ class TadLibrary
     constructor()
     {
         //Use a constant for the version number so it is quick and easy to find and update.
-        const TADVER = "20210503";
+        const TADVER = "20210508";
 
         //Set the source library file location
         this.libSourceURL = "https://tadpole.thoughtasylum.com/assets/library/tad.js";
@@ -7529,7 +7585,7 @@ class TadMiscellaneous
         });
     
         //Configure the current draft for running
-        draft.syntax.name = tadLib.runSyntax;
+        draft.TA_setSyntaxByName(tadLib.runSyntax);
         
         //Set run & script tags
         draft.addTag(tadLib.runTag);
@@ -7736,7 +7792,7 @@ class TadMiscellaneous
                 let adraftMatches = Draft.query(re_strTitle, "all", [], [], "modified", true, false);
 
                 //Process matching drafts
-                if (adraftMatches.lenth != 0) 
+                if (adraftMatches.length != 0) 
                 {
                     for (let draftCheck of adraftMatches)
                     {
@@ -7764,7 +7820,7 @@ class TadMiscellaneous
                 let adraftMatches = Draft.query(re_strTitle, "all", [], [], "modified", true, false);
 
                 //Process matching drafts
-                if (adraftMatches.lenth != 0) 
+                if (adraftMatches.length != 0) 
                 {
                     for (let draftCheck of adraftMatches)
                     {
@@ -8686,6 +8742,7 @@ String.prototype.TA_regexLastIndexOf = function(p_objRegExMatch, p_intStartAt)
 	else intStartAt = p_intStartAt;
 
 	//Run the search on the defined sub-string - loop to find the highest position
+	let objMatch;
 	while ((objMatch = objRegExMatch.exec(this.substring(0, intStartAt + 1))) != null)
 	{
         intLastIndexOf = objMatch.index;
@@ -9094,7 +9151,7 @@ String.prototype.TA_mdTitleLinks = function()
 	astrMatches.forEach(function(strMatch)
 	{
 		//Just to ensure we have not picked up any rogue whitespace in the pattern match
-		strMatchTrimmed = strMatch.trim();
+		let strMatchTrimmed = strMatch.trim();
 
 		//Get the first two characters and the URL
 		let strStart = strMatchTrimmed.substring(0,2);
@@ -9177,7 +9234,7 @@ String.prototype.TA_mistypeSlip = function(p_intOneIn, p_jsonSlipDefinition, p_s
 String.prototype.TA_mistypeSlipQWERTY = function(p_intOneIn)
 {
 	//String of shiftable characters - keyboard keys we'll define mistypings for below.
-	strShiftable = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	let strShiftable = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 	//JSON describing what each shiftable character can be shifted to
 	//Based on a qwerty keyboard and lateral slips being approximmately three times as likely
@@ -9250,7 +9307,7 @@ String.prototype.TA_frontMatterIncluded = function()
 
 		//Clean blank lines and split to an array of what is potential data
 		strFrontMatter = strFrontMatter.TA_removeBlankLines();
-		astrFrontMatter = strFrontMatter.split("\n");
+		let astrFrontMatter = strFrontMatter.split("\n");
 
 		//Loop through the lines and check for simple front matter entries
 		astrFrontMatter.forEach(function(strLine)
@@ -9450,7 +9507,7 @@ String.prototype.TA_taskpaperModifyTask = function(p_bForceOn, p_bForceOff)
 String.prototype.TA_csvWrap = function(p_strPrefix, p_strSuffix, p_bForceQuoted = false, p_bForceNotQuoted = false)
 {
 	//If the function is set to return a CSV both forced and unforced for being quoted, just return the original string.
-	if ((p_bForceQuoted == true) && (p_bForceNotQuoted == true)) return strTemp;
+	if ((p_bForceQuoted == true) && (p_bForceNotQuoted == true)) return this;
 
 	//Carry out an independent check on if the string is using double quotes by checking the start of the first entry.
 	let bReturnQuoted = this.trim().startsWith(`"`);
@@ -9663,14 +9720,14 @@ String.prototype.TA_switchWordMarkers = function(p_strInitialPreWord, p_strIniti
 	//Replace the middle markers
 	if (p_strInitialInWord.length > 0)
 	{
-		re = new RegExp(`(\\w)\\` + p_strInitialInWord + `(\\w)`, strModifiers);
+		let re = new RegExp(`(\\w)\\` + p_strInitialInWord + `(\\w)`, strModifiers);
 		strOutput = strOutput.replace(re, `$1${p_strFinalInWord}$2`);
 	}
 
 	//Replace the final markers
 	if (p_strInitialPostWord.length > 0)
 	{
-		re = new RegExp(`\\b\\` + p_strInitialPostWord + `([^\\w])`, strModifiers);
+		let re = new RegExp(`\\b\\` + p_strInitialPostWord + `([^\\w])`, strModifiers);
 		strOutput = strOutput.replace(re, `${p_strFinalPostWord}$1`);
 	}
 	
@@ -9683,12 +9740,12 @@ String.prototype.TA_switchWordMarkers = function(p_strInitialPreWord, p_strIniti
 String.prototype.TA_boxer = function(p_strTop, p_strBottom, p_strLeft, p_strRight, p_strTopLeft, p_strTopRight, p_strBottomLeft, p_strBottomRight)
 {
 	//We may be boxing mofre than a single line, so we'll start by splitting it up into an array of lines
-	astrBoxedLines = this.split("\n");
+	let astrBoxedLines = this.split("\n");
 
 	//The max element width is the longest array element length
-	intMaxElementWidth = astrBoxedLines.TA_maxElementLength();
+	let intMaxElementWidth = astrBoxedLines.TA_maxElementLength();
 	//The max line width is the longest array element length plus the lengths of the box sides, plus the length of two spaces
-	intMaxLineWidth = intMaxElementWidth  + p_strLeft.length + p_strRight.length + 2;
+	let intMaxLineWidth = intMaxElementWidth  + p_strLeft.length + p_strRight.length + 2;
 
 	//Pad each array element out and put the sides on them
 	astrBoxedLines = astrBoxedLines.map(strElement => p_strLeft + " " + strElement.padEnd(intMaxElementWidth + 1, " ") + p_strRight);

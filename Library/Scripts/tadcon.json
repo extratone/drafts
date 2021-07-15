@@ -2,372 +2,372 @@
   "path" : "\/Library\/Scripts\/tadcon.json",
   "lastDraft" : {
     "version" : {
-      "number" : 2,
-      "createdAt" : "Thu Apr 01 2021 23:18:39 GMT-0500 (CDT)",
-      "uuid" : "51363755-FAD7-4C05-907F-0145B5AF296C"
+      "number" : 1,
+      "createdAt" : "Tue Jun 29 2021 03:54:57 GMT-0500 (CDT)",
+      "uuid" : "F7718384-0191-466E-B40F-F814674E7D92"
     },
-    "uuid" : "EADA8BBE-9B24-4C7C-A46E-07F81F19CB88"
+    "uuid" : "D4CEA680-7DF3-42ED-B93D-71F1AEA9CFE9"
   },
-  "lastSaved" : "2021-04-01-23.19.11.509",
+  "lastSaved" : "2021-06-29-07.24.11.253",
   "log" : [
     {
-      "code" : "WC02",
-      "stamp" : "2021-04-01-23.18.57.641",
-      "entry" : "I'm sleeping in the bath tub. [Marge Simpson]",
-      "type" : "WARN"
-    },
-    {
       "code" : "",
-      "stamp" : "2021-04-01-23.18.57.929",
-      "entry" : "I live in a single room above a bowling alley...and below another bowling alley. [Frank Grimes]",
-      "type" : "INFO"
-    },
-    {
-      "code" : "",
-      "stamp" : "2021-04-01-23.18.58.229",
-      "entry" : "I can't even say the word 'titmouse' without gigggling like a schoolgirl. [Homer Simpson]",
-      "type" : "INFO"
-    },
-    {
-      "code" : "",
-      "stamp" : "2021-04-01-23.18.58.547",
+      "stamp" : "2021-06-29-07.24.00.308",
       "entry" : "Last night's 'Itchy and Scratchy' was, without a doubt, the worst episode ever. Rest assured that I was on the Internet within minutes, registering my disgust throughout the world. [Comic Book Guy]",
       "type" : "INFO"
     },
     {
-      "code" : "WC02",
-      "stamp" : "2021-04-01-23.18.58.880",
-      "entry" : "Oh Yeah! [Duffman]",
-      "type" : "WARN"
-    },
-    {
-      "code" : "EC01",
-      "stamp" : "2021-04-01-23.18.59.128",
-      "entry" : "Oh, so they have Internet on computers now! [Homer Simpson]",
-      "type" : "ERROR"
-    },
-    {
-      "code" : "WC03",
-      "stamp" : "2021-04-01-23.18.59.409",
-      "entry" : "Eat my shorts [Bart Simpson]",
-      "type" : "WARN"
-    },
-    {
-      "code" : "WC01",
-      "stamp" : "2021-04-01-23.18.59.594",
-      "entry" : "Oh, so they have Internet on computers now! [Homer Simpson]",
-      "type" : "WARN"
-    },
-    {
-      "code" : "EC03",
-      "stamp" : "2021-04-01-23.18.59.778",
-      "entry" : "I hope I didn't brain my damage. [Homer Simpson]",
-      "type" : "ERROR"
-    },
-    {
       "code" : "",
-      "stamp" : "2021-04-01-23.18.59.999",
-      "entry" : "When I catch you, I'm gonna pull out your eyes and stick 'em down your pants so you can watch me kick the crap outta you, okay? Next I'm gonna use your tongue to paint my boat! [Moe Szyslak]",
+      "stamp" : "2021-06-29-07.24.00.468",
+      "entry" : "Doughnuts? I told you I don't like ethnic food [Mr. Burns]",
       "type" : "INFO"
     },
     {
       "code" : "",
-      "stamp" : "2021-04-01-23.19.00.232",
-      "entry" : "By chilling my loins I increase the chances of impregnating my wife. [Apu Nahasapeemapetilon]",
-      "type" : "INFO"
-    },
-    {
-      "code" : "",
-      "stamp" : "2021-04-01-23.19.00.548",
-      "entry" : "Facts are meaningless. You could use facts to prove anything that's even remotely true. [Homer Simpson]",
-      "type" : "INFO"
-    },
-    {
-      "code" : "",
-      "stamp" : "2021-04-01-23.19.00.878",
-      "entry" : "They taste like...burning. [Ralph Wiggum]",
-      "type" : "INFO"
-    },
-    {
-      "code" : "WC04",
-      "stamp" : "2021-04-01-23.19.01.118",
-      "entry" : "My eyes! The goggles do nothing! [Rainier Wolfcastle]",
-      "type" : "WARN"
-    },
-    {
-      "code" : "",
-      "stamp" : "2021-04-01-23.19.01.409",
-      "entry" : "Eat my shorts [Bart Simpson]",
-      "type" : "INFO"
-    },
-    {
-      "code" : "",
-      "stamp" : "2021-04-01-23.19.01.599",
-      "entry" : "Inflammable means flammable? What a country! [Dr. Nick]",
-      "type" : "INFO"
-    },
-    {
-      "code" : "WC01",
-      "stamp" : "2021-04-01-23.19.01.839",
-      "entry" : "And this is the snack holder where I can put my beverage or, if you will, cupcake. [Homer Simpson]",
-      "type" : "WARN"
-    },
-    {
-      "code" : "",
-      "stamp" : "2021-04-01-23.19.02.073",
-      "entry" : "They taste like...burning. [Ralph Wiggum]",
-      "type" : "INFO"
-    },
-    {
-      "code" : "",
-      "stamp" : "2021-04-01-23.19.02.320",
-      "entry" : "Eat my shorts [Bart Simpson]",
-      "type" : "INFO"
-    },
-    {
-      "code" : "",
-      "stamp" : "2021-04-01-23.19.02.608",
-      "entry" : "Ahh! Sweet liquor eases the pain. [Troy McClure]",
-      "type" : "INFO"
-    },
-    {
-      "code" : "",
-      "stamp" : "2021-04-01-23.19.02.793",
-      "entry" : "Oh, wow, windows. I don't think I could afford this place. [Otto]",
-      "type" : "INFO"
-    },
-    {
-      "code" : "",
-      "stamp" : "2021-04-01-23.19.03.047",
-      "entry" : "By chilling my loins I increase the chances of impregnating my wife. [Apu Nahasapeemapetilon]",
-      "type" : "INFO"
-    },
-    {
-      "code" : "WC02",
-      "stamp" : "2021-04-01-23.19.03.316",
-      "entry" : "I live in a single room above a bowling alley...and below another bowling alley. [Frank Grimes]",
-      "type" : "WARN"
-    },
-    {
-      "code" : "",
-      "stamp" : "2021-04-01-23.19.03.679",
-      "entry" : "They taste like...burning. [Ralph Wiggum]",
-      "type" : "INFO"
-    },
-    {
-      "code" : "",
-      "stamp" : "2021-04-01-23.19.03.920",
-      "entry" : "Marriage is like a coffin and each kid is another nail. [Homer Simpson]",
-      "type" : "INFO"
-    },
-    {
-      "code" : "WC04",
-      "stamp" : "2021-04-01-23.19.04.207",
-      "entry" : "Eat my shorts [Bart Simpson]",
-      "type" : "WARN"
-    },
-    {
-      "code" : "WC03",
-      "stamp" : "2021-04-01-23.19.04.399",
-      "entry" : "I used to be with it. But then they changed what it was. Now what I'm with isn't it, and what's it seems scary and wierd. It'll happen to you. [Abe Simpson]",
-      "type" : "WARN"
-    },
-    {
-      "code" : "",
-      "stamp" : "2021-04-01-23.19.04.616",
-      "entry" : "When I catch you, I'm gonna pull out your eyes and stick 'em down your pants so you can watch me kick the crap outta you, okay? Next I'm gonna use your tongue to paint my boat! [Moe Szyslak]",
-      "type" : "INFO"
-    },
-    {
-      "code" : "",
-      "stamp" : "2021-04-01-23.19.04.796",
-      "entry" : "In theory, Communism works! In theory. [Homer Simpson]",
-      "type" : "INFO"
-    },
-    {
-      "code" : "",
-      "stamp" : "2021-04-01-23.19.05.039",
-      "entry" : "Ahh! Sweet liquor eases the pain. [Troy McClure]",
-      "type" : "INFO"
-    },
-    {
-      "code" : "EC03",
-      "stamp" : "2021-04-01-23.19.05.280",
-      "entry" : "Me fail English? That's unpossible. [Ralph Wiggum]",
-      "type" : "ERROR"
-    },
-    {
-      "code" : "WC01",
-      "stamp" : "2021-04-01-23.19.05.519",
-      "entry" : "When I look at people I don't see colors; I just see crackpot religions. [Chief Wiggum]",
-      "type" : "WARN"
-    },
-    {
-      "code" : "EC02",
-      "stamp" : "2021-04-01-23.19.05.791",
-      "entry" : "I'm sleeping in the bath tub. [Marge Simpson]",
-      "type" : "ERROR"
-    },
-    {
-      "code" : "",
-      "stamp" : "2021-04-01-23.19.05.992",
-      "entry" : "I can't even say the word 'titmouse' without gigggling like a schoolgirl. [Homer Simpson]",
-      "type" : "INFO"
-    },
-    {
-      "code" : "",
-      "stamp" : "2021-04-01-23.19.06.177",
-      "entry" : "These are my only friends...grown-up nerds like Gore Vidal. And even he's kissed more boys than I ever will. [Lisa Simpson]",
-      "type" : "INFO"
-    },
-    {
-      "code" : "WC03",
-      "stamp" : "2021-04-01-23.19.06.393",
-      "entry" : "My eyes! The goggles do nothing! [Rainier Wolfcastle]",
-      "type" : "WARN"
-    },
-    {
-      "code" : "",
-      "stamp" : "2021-04-01-23.19.06.577",
-      "entry" : "Shoplifting is a victimless crime, like punching someone in the dark. [Nelson Muntz]",
-      "type" : "INFO"
-    },
-    {
-      "code" : "",
-      "stamp" : "2021-04-01-23.19.06.794",
-      "entry" : "I live in a single room above a bowling alley...and below another bowling alley. [Frank Grimes]",
-      "type" : "INFO"
-    },
-    {
-      "code" : "WC02",
-      "stamp" : "2021-04-01-23.19.06.978",
-      "entry" : "Me fail English? That's unpossible. [Ralph Wiggum]",
-      "type" : "WARN"
-    },
-    {
-      "code" : "WC03",
-      "stamp" : "2021-04-01-23.19.07.194",
-      "entry" : "Marriage is like a coffin and each kid is another nail. [Homer Simpson]",
-      "type" : "WARN"
-    },
-    {
-      "code" : "WC01",
-      "stamp" : "2021-04-01-23.19.07.376",
-      "entry" : "Me fail English? That's unpossible. [Ralph Wiggum]",
-      "type" : "WARN"
-    },
-    {
-      "code" : "",
-      "stamp" : "2021-04-01-23.19.07.594",
-      "entry" : "Oh boy, sleep! That's where I'm a viking! [Ralph Wiggum]",
-      "type" : "INFO"
-    },
-    {
-      "code" : "",
-      "stamp" : "2021-04-01-23.19.07.840",
-      "entry" : "Why are you pleople avoiding me? Does my withered face remind you of the grim specter of death? [Abe Simpson]",
-      "type" : "INFO"
-    },
-    {
-      "code" : "",
-      "stamp" : "2021-04-01-23.19.08.020",
-      "entry" : "My eyes! The goggles do nothing! [Rainier Wolfcastle]",
-      "type" : "INFO"
-    },
-    {
-      "code" : "EC02",
-      "stamp" : "2021-04-01-23.19.08.310",
-      "entry" : "Marriage is like a coffin and each kid is another nail. [Homer Simpson]",
-      "type" : "ERROR"
-    },
-    {
-      "code" : "",
-      "stamp" : "2021-04-01-23.19.08.489",
+      "stamp" : "2021-06-29-07.24.00.641",
       "entry" : "Well, I'm better than dirt. Well, most kinds of dirt. I mean not that fancy store bought dirt. That stuffs loaded with nutrients. I.. I can't compete with that stuff. [Moe Szyslak]",
       "type" : "INFO"
     },
     {
-      "code" : "WC02",
-      "stamp" : "2021-04-01-23.19.08.710",
-      "entry" : "Yeah. Call this an unfair generalization if you must.. but old people are no good at everything [Moe Szyslak]",
+      "code" : "WC04",
+      "stamp" : "2021-06-29-07.24.00.808",
+      "entry" : "Gah, stupid sexy Flanders! [Homer Simpson]",
       "type" : "WARN"
     },
     {
       "code" : "",
-      "stamp" : "2021-04-01-23.19.08.888",
-      "entry" : "All I'm gonna use this bed for is sleeping, eating and maybe building a little fort. [Homer Simpson]",
+      "stamp" : "2021-06-29-07.24.00.969",
+      "entry" : "They taste like...burning. [Ralph Wiggum]",
       "type" : "INFO"
     },
     {
       "code" : "",
-      "stamp" : "2021-04-01-23.19.09.117",
-      "entry" : "Marriage is like a coffin and each kid is another nail. [Homer Simpson]",
+      "stamp" : "2021-06-29-07.24.01.139",
+      "entry" : "Oh boy, sleep! That's where I'm a viking! [Ralph Wiggum]",
       "type" : "INFO"
     },
     {
-      "code" : "",
-      "stamp" : "2021-04-01-23.19.09.359",
-      "entry" : "Can't we have one meeting that doesn't end with us digging up a corpse? [Mayor Quimby]",
-      "type" : "INFO"
-    },
-    {
-      "code" : "",
-      "stamp" : "2021-04-01-23.19.09.589",
-      "entry" : "All I'm gonna use this bed for is sleeping, eating and maybe building a little fort. [Homer Simpson]",
-      "type" : "INFO"
-    },
-    {
-      "code" : "WC03",
-      "stamp" : "2021-04-01-23.19.09.769",
-      "entry" : "When I look at people I don't see colors; I just see crackpot religions. [Chief Wiggum]",
-      "type" : "WARN"
-    },
-    {
-      "code" : "",
-      "stamp" : "2021-04-01-23.19.09.998",
-      "entry" : "For once maybe someone will call me \"sir\" without adding, \"You're making a scene.\" [Homer Simpson]",
-      "type" : "INFO"
-    },
-    {
-      "code" : "EC03",
-      "stamp" : "2021-04-01-23.19.10.199",
-      "entry" : "These are my only friends...grown-up nerds like Gore Vidal. And even he's kissed more boys than I ever will. [Lisa Simpson]",
+      "code" : "EC04",
+      "stamp" : "2021-06-29-07.24.01.311",
+      "entry" : "That's where I saw the leprechaun...He told me to burn things. [Ralph Wiggum]",
       "type" : "ERROR"
     },
     {
-      "code" : "WC04",
-      "stamp" : "2021-04-01-23.19.10.395",
-      "entry" : "I can't even say the word 'titmouse' without gigggling like a schoolgirl. [Homer Simpson]",
+      "code" : "WC02",
+      "stamp" : "2021-06-29-07.24.01.472",
+      "entry" : "I think women and seamen don't mix [Waylon Smithers]",
+      "type" : "WARN"
+    },
+    {
+      "code" : "WC02",
+      "stamp" : "2021-06-29-07.24.01.649",
+      "entry" : "Facts are meaningless. You could use facts to prove anything that's even remotely true. [Homer Simpson]",
       "type" : "WARN"
     },
     {
       "code" : "",
-      "stamp" : "2021-04-01-23.19.10.579",
-      "entry" : "My eyes! The goggles do nothing! [Rainier Wolfcastle]",
+      "stamp" : "2021-06-29-07.24.01.810",
+      "entry" : "Doughnuts? I told you I don't like ethnic food [Mr. Burns]",
       "type" : "INFO"
     },
     {
       "code" : "",
-      "stamp" : "2021-04-01-23.19.10.795",
-      "entry" : "I'm sleeping in the bath tub. [Marge Simpson]",
+      "stamp" : "2021-06-29-07.24.01.971",
+      "entry" : "When I look at people I don't see colors; I just see crackpot religions. [Chief Wiggum]",
       "type" : "INFO"
     },
     {
-      "code" : "EC03",
-      "stamp" : "2021-04-01-23.19.11.039",
+      "code" : "EC05",
+      "stamp" : "2021-06-29-07.24.02.141",
       "entry" : "Last night's \"Itchy & Scratchy\" was, without a doubt, the worst episode ever. Rest assured that I was on the Internet within minutes, registering my disgust throughout the world. [Comic Book Guy]",
       "type" : "ERROR"
     },
     {
       "code" : "",
-      "stamp" : "2021-04-01-23.19.11.280",
-      "entry" : "My eyes! The goggles do nothing! [Rainier Wolfcastle]",
+      "stamp" : "2021-06-29-07.24.02.302",
+      "entry" : "Last night's \"Itchy & Scratchy\" was, without a doubt, the worst episode ever. Rest assured that I was on the Internet within minutes, registering my disgust throughout the world. [Comic Book Guy]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-06-29-07.24.02.468",
+      "entry" : "Doughnuts? I told you I don't like ethnic food [Mr. Burns]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "EC02",
+      "stamp" : "2021-06-29-07.24.02.631",
+      "entry" : "By chilling my loins I increase the chances of impregnating my wife. [Apu Nahasapeemapetilon]",
+      "type" : "ERROR"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-06-29-07.24.02.798",
+      "entry" : "Well, I'm better than dirt. Well, most kinds of dirt. I mean not that fancy store bought dirt. That stuffs loaded with nutrients. I.. I can't compete with that stuff. [Moe Szyslak]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "EC05",
+      "stamp" : "2021-06-29-07.24.02.964",
+      "entry" : "You're turning me into a criminal when all I want to be is a petty thug. [Bart Simpson]",
+      "type" : "ERROR"
+    },
+    {
+      "code" : "WC02",
+      "stamp" : "2021-06-29-07.24.03.134",
+      "entry" : "Thank you. Come again. [Apu Nahasapeemapetilon]",
+      "type" : "WARN"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-06-29-07.24.03.304",
+      "entry" : "Doughnuts? I told you I don't like ethnic food [Mr. Burns]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "WC01",
+      "stamp" : "2021-06-29-07.24.03.471",
+      "entry" : "I hope I didn't brain my damage. [Homer Simpson]",
+      "type" : "WARN"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-06-29-07.24.03.637",
+      "entry" : "For once maybe someone will call me \"sir\" without adding, \"You're making a scene.\" [Homer Simpson]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-06-29-07.24.04.082",
+      "entry" : "I believe the children are the future... Unless we stop them now! [Homer Simpson]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "EC03",
+      "stamp" : "2021-06-29-07.24.04.291",
+      "entry" : "I don't want to sound like a killjoy, but becuase this is not to my taste I don't think anyone else should be allowed to enjoy it. [Marge Simpson]",
+      "type" : "ERROR"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-06-29-07.24.04.451",
+      "entry" : "Last night's \"Itchy & Scratchy\" was, without a doubt, the worst episode ever. Rest assured that I was on the Internet within minutes, registering my disgust throughout the world. [Comic Book Guy]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "WC01",
+      "stamp" : "2021-06-29-07.24.04.623",
+      "entry" : "These are my only friends...grown-up nerds like Gore Vidal. And even he's kissed more boys than I ever will. [Lisa Simpson]",
+      "type" : "WARN"
+    },
+    {
+      "code" : "WC04",
+      "stamp" : "2021-06-29-07.24.04.818",
+      "entry" : "Back in Edinburg, we had a coal miners strike. All we wanted were hats with a wee light on top. Then one day the mine collapsed. No one made it out alive, not even Willie! [Groundskeeper Willie]",
+      "type" : "WARN"
+    },
+    {
+      "code" : "EC04",
+      "stamp" : "2021-06-29-07.24.04.978",
+      "entry" : "Last night's \"Itchy & Scratchy\" was, without a doubt, the worst episode ever. Rest assured that I was on the Internet within minutes, registering my disgust throughout the world. [Comic Book Guy]",
+      "type" : "ERROR"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-06-29-07.24.05.140",
+      "entry" : "Remember the time he ate my goldfish? And you lied and said I never had a goldfish. Then why did I have the bowl, Bart? Why did I have the bowl? [Milhouse Van Houten]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-06-29-07.24.05.302",
+      "entry" : "Thank you. Come again. [Apu Nahasapeemapetilon]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-06-29-07.24.05.469",
+      "entry" : "I believe the children are the future... Unless we stop them now! [Homer Simpson]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "EC02",
+      "stamp" : "2021-06-29-07.24.05.630",
+      "entry" : "Ahh! Sweet liquor eases the pain. [Troy McClure]",
+      "type" : "ERROR"
+    },
+    {
+      "code" : "WC02",
+      "stamp" : "2021-06-29-07.24.05.795",
+      "entry" : "Oh Yeah! [Duffman]",
+      "type" : "WARN"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-06-29-07.24.05.963",
+      "entry" : "When I catch you, I'm gonna pull out your eyes and stick 'em down your pants so you can watch me kick the crap outta you, okay? Next I'm gonna use your tongue to paint my boat! [Moe Szyslak]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-06-29-07.24.06.129",
+      "entry" : "Hi, Super Nintendo Chalmers! [Ralph Wiggum]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-06-29-07.24.06.303",
+      "entry" : "These are my only friends...grown-up nerds like Gore Vidal. And even he's kissed more boys than I ever will. [Lisa Simpson]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-06-29-07.24.06.478",
+      "entry" : "Ahh! Sweet liquor eases the pain. [Troy McClure]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-06-29-07.24.06.647",
+      "entry" : "Why are you pleople avoiding me? Does my withered face remind you of the grim specter of death? [Abe Simpson]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-06-29-07.24.07.358",
+      "entry" : "Last night's 'Itchy and Scratchy' was, without a doubt, the worst episode ever. Rest assured that I was on the Internet within minutes, registering my disgust throughout the world. [Comic Book Guy]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-06-29-07.24.07.666",
+      "entry" : "Facts are meaningless. You could use facts to prove anything that's even remotely true. [Homer Simpson]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "WC01",
+      "stamp" : "2021-06-29-07.24.07.895",
+      "entry" : "Ahh! Sweet liquor eases the pain. [Troy McClure]",
+      "type" : "WARN"
+    },
+    {
+      "code" : "WC01",
+      "stamp" : "2021-06-29-07.24.08.060",
+      "entry" : "Back in Edinburg, we had a coal miners strike. All we wanted were hats with a wee light on top. Then one day the mine collapsed. No one made it out alive, not even Willie! [Groundskeeper Willie]",
+      "type" : "WARN"
+    },
+    {
+      "code" : "WC03",
+      "stamp" : "2021-06-29-07.24.08.228",
+      "entry" : "Ahh! Sweet liquor eases the pain. [Troy McClure]",
+      "type" : "WARN"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-06-29-07.24.08.403",
+      "entry" : "I can't even say the word 'titmouse' without gigggling like a schoolgirl. [Homer Simpson]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "WC04",
+      "stamp" : "2021-06-29-07.24.08.575",
+      "entry" : "Oh boy, sleep! That's where I'm a viking! [Ralph Wiggum]",
+      "type" : "WARN"
+    },
+    {
+      "code" : "WC03",
+      "stamp" : "2021-06-29-07.24.08.743",
+      "entry" : "Oh Yeah! [Duffman]",
+      "type" : "WARN"
+    },
+    {
+      "code" : "WC03",
+      "stamp" : "2021-06-29-07.24.08.911",
+      "entry" : "Ahh! Sweet liquor eases the pain. [Troy McClure]",
+      "type" : "WARN"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-06-29-07.24.09.074",
+      "entry" : "Yeah. Call this an unfair generalization if you must.. but old people are no good at everything [Moe Szyslak]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-06-29-07.24.09.236",
+      "entry" : "Thank you. Come again. [Apu Nahasapeemapetilon]",
       "type" : "INFO"
     },
     {
       "code" : "WC03",
-      "stamp" : "2021-04-01-23.19.11.509",
-      "entry" : "I'm sleeping in the bath tub. [Marge Simpson]",
+      "stamp" : "2021-06-29-07.24.09.402",
+      "entry" : "Marriage is like a coffin and each kid is another nail. [Homer Simpson]",
+      "type" : "WARN"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-06-29-07.24.09.566",
+      "entry" : "Can't we have one meeting that doesn't end with us digging up a corpse? [Mayor Quimby]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "WC02",
+      "stamp" : "2021-06-29-07.24.09.732",
+      "entry" : "I can't even say the word 'titmouse' without gigggling like a schoolgirl. [Homer Simpson]",
+      "type" : "WARN"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-06-29-07.24.09.893",
+      "entry" : "Facts are meaningless. You could use facts to prove anything that's even remotely true. [Homer Simpson]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "WC04",
+      "stamp" : "2021-06-29-07.24.10.056",
+      "entry" : "In theory, Communism works! In theory. [Homer Simpson]",
+      "type" : "WARN"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-06-29-07.24.10.230",
+      "entry" : "Ahh! Sweet liquor eases the pain. [Troy McClure]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-06-29-07.24.10.416",
+      "entry" : "I don't want to sound like a killjoy, but becuase this is not to my taste I don't think anyone else should be allowed to enjoy it. [Marge Simpson]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-06-29-07.24.10.576",
+      "entry" : "Ahh! Sweet liquor eases the pain. [Troy McClure]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "WC01",
+      "stamp" : "2021-06-29-07.24.10.744",
+      "entry" : "When I catch you, I'm gonna pull out your eyes and stick 'em down your pants so you can watch me kick the crap outta you, okay? Next I'm gonna use your tongue to paint my boat! [Moe Szyslak]",
+      "type" : "WARN"
+    },
+    {
+      "code" : "WC04",
+      "stamp" : "2021-06-29-07.24.10.919",
+      "entry" : "You're turning me into a criminal when all I want to be is a petty thug. [Bart Simpson]",
+      "type" : "WARN"
+    },
+    {
+      "code" : "",
+      "stamp" : "2021-06-29-07.24.11.090",
+      "entry" : "Hello, Simpson. I'm riding the bus today becuase Mother hid my car keys to punish me for talking to a woman on the phone. She was right to do it. [Principal Skinner]",
+      "type" : "INFO"
+    },
+    {
+      "code" : "WC02",
+      "stamp" : "2021-06-29-07.24.11.252",
+      "entry" : "Oh, wow, windows. I don't think I could afford this place. [Otto]",
       "type" : "WARN"
     }
   ],
