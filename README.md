@@ -1,5 +1,7 @@
 # David Blue‘s Drafts Configs
 
+![DraftsTeal](https://user-images.githubusercontent.com/43663476/148675995-eaa6458a-f0af-4592-bc5e-798f72719576.png)
+
 Howdy!
 
 ## Themes
@@ -45,58 +47,62 @@ I did not originally intend to share this theme, but I sortof accidentally ended
 * [This theme’s Issue on my iOS-specific GitHub Repository](https://github.com/extratone/i/issues/50)
 
 ## Keyboard Shortcuts
-2021-04-21-03.43.57
-- TAD-Load Action Group - ThoughtAsylum - Power User: ⌘5
-- TAD-Load Action Group - ThoughtAsylum - Export/Import/Share: ⌘6
-- TAD-Load Action Group - ThoughtAsylum - Management: ⌘2
-- TAD-Load Action Group - ThoughtAsylum - Writing: ⌘3
-- TAD-Load Action Group - ThoughtAsylum: ⌘4
-- TAD-Reload Draft: ⌘R
-- TAD-Action Menu: ⇧⌘K
-- TAD-Trash Note: ⌥⌘↓
-- TAD-Toggle Last Two Modified Drafts: ⌃⇥
-- TAD-Load Previous Workspace: ⌥⌘←
-- TAD-Load Next Workspace: ⌥⌘→
-- TAD-Select All Content: ⇧⌥A
-- TAD-Jump to End of Previous Line: ⌥↑
-- TAD-Jump to Start of Next Line: ⌥↓
-- TAD-Insert yyyy-mm-dd-HH.MM.ss: ⇧⌥T
-- TAD-Duplicate Draft and Load: ⌘D
-- TAD-Duplicate Draft in Background: ⌃⌥⌘D
-- TAD-New Draft from Selection: ⌃⌥N
-- TAD-Prime Preview MMD: ⌘P
-- TAD-Preview with Syntax Highlighting: ⌃P
-- TAD-Exploded Markdown Preview: ⇧⌥P
-- TAD-Preview Clipboard: ⌥Q
-- TAD-Replace with Synonym: ⇧⌥S
-- Find: ⇧⌥F
-- Tasks: ⌥⌘T
-- Indent: ⌘]
-- Outdent: ⌘[
-- Toggle Theme: ⌥/
-- Markdown Header (#): ⌃⌘H
-- Markdown Bold (**): ⌘B
-- Markdown Link: ⌘K
-- Preview: ⌥⌘P
-- Markdown Header (#): ⌃⌘H
-- Markdown Bold (**): ⌘B
-- Markdown Emphasis (_): ⌘I
-- Markdown List: ⇧⌘L
-- Markdown Link: ⌘K
-- Replace URLs by MD links: ⇧⌘U
-- Markdown Footnote: ⌥⌘F
-- TAD-Selection Word Count: ⌥⌘W
-- TAD-Show Draft Info: ⌥I
-- TAD-Toggle App Theme: ⌥\
-- TAD-Toggle Typewriter Mode: ⌥T
-- TAD-Search Actions: ⌘/
-- TAD-Fetch URL Content to New Draft: ⇧⌘D
-- TAD-Copy Draft Link: ⇧⌃C
-- TAD-Share as File: Markdown: ⌘S
-- TAD-File Import With Tags: ⌘O
-- Copy: ⌥C
-- Email to myself: ⇧⌥M
-- Save to Files as...: ⌥⌘S
-- Send to Bear: ⇧⌘B
-- Save to OneNote: ⇧⌥O
-- Clipboard…: ⌥C
+
+```
+01092022-5555
+Drafts Version: 35
+```
+
+[Gist - I hope to properly maintain a public list of my keyboard shortcuts in Drafts.](https://gist.github.com/extratone/2e54243a2123ccfa6a37c6e8cc1057e2)
+
+## Internal
+
+| Action                            | Command |
+|:---------------------------------:|:-------:|
+| Markdown Header                   | ⌃⌘H     |
+| Markdown Bold                     | ⌘B      |
+| Code Block                        | ⌃⌘C     |
+| Preview                           | ⌥⌘P     |
+| Markdown Emphasis (*)             | ⌘I      |
+| Markdown List                     | ⌃L      |
+| Markdown Link                     | ⌘K      |
+| Replace URLs by MD links          | ⇧⌘U     |
+| Markdown Footnote (Variation)     | ⌃F      |
+| Send to Saved Messages (Telegram) | ⌃G      |
+| Strikethrough                     | ⌃S      |
+| Keyboard Shortcuts Export         | ⇧⌃K     |
+| Timestamp                         | ⇧⌃T     |
+| Selection Word Count              | ⌃W      |
+| Toggle Last                       | ⌃⇥      |
+| Drafts Link                       | ⇧⌃C     |
+| Draft Info                        | ⌃I      |
+| Dark/Light Toggle                 | ⇧⌃L     |
+| Typewriter Toggle                 | ⌥T      |
+| Load The Psalms                   | ⌥.      |
+| Preview MMD                       | ⌥⌘/     |
+| Copy                              | ⌃C      |
+| Clipboard…                        | ⌥C      |
+| Find                              | ⇧⌥F     |
+| Tasks                             | ⌃T      |
+| Copy Tags                         | ⌃⌥T     |
+| Written Workspace                 | ⌘2      |
+| Documentation Workspace           | ⌘3      |
+| Hole Workspace                    | ⌘9      |
+| Copy as Rich Text                 | ⌃⌥C     |
+| Share as File: Markdown           | ⇧⌃S     |
+| Push Draft to GitHub Repo         | ⇧⌃G     |
+| Trash Note                        | ⌃-      |
+| Search Actions                    | ⌘/      |
+| Duplicate Draft and Load          | ⌃D      |
+| Prime Preview MMD                 | ⌃P      |
+| Preview with Marked2              | ⇧⌃⌥P    |
+| Replace with Synonym              | ⌃⌥S     |
+
+## External 
+
+![External Drafts Keyboard Shortcuts](https://user-images.githubusercontent.com/43663476/148675845-54b1446d-50ea-4b55-89f0-8c769bcfd1fa.png)
+
+| Action                           | Command |
+|:--------------------------------:|:-------:|
+| Actions->Manage Actions...       | ⌥⌘A     |
+| Workspaces->Manage Workspaces... | ⌥⌘W     |

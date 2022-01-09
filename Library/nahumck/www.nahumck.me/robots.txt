@@ -1,0 +1,5 @@
+Sitemap: https://nahumck.me/sitemap.xml
+Sitemap: https://nahumck.me/news-sitemap.xml
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
