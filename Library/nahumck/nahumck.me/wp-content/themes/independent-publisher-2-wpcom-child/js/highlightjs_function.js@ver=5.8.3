@@ -1,2 +1,0 @@
-hljs.initHighlightingOnLoad();
-hljs.initLineNumbersOnLoad();
