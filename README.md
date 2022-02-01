@@ -4,6 +4,17 @@
 
 Howdy!
 
+## David Blue’s Drafts Action Directory Contributions
+- [Send Draft to Telegram Saved Messages | Drafts Directory](https://actions.getdrafts.com/a/1u5)
+- [Append to 7th Tot Dot | Drafts Directory](https://actions.getdrafts.com/a/1uL)
+- [List Action Shortcuts, Comma-Delimited | Drafts Directory](https://actions.getdrafts.com/a/1s7)
+- [Markdown Footnote (Variation) | Drafts Directory](https://actions.getdrafts.com/a/1q9)
+- [Markdown Emphasis (*) | Drafts Directory](https://actions.getdrafts.com/a/1pa)
+- [Embed &lt;audio&gt; Element | Drafts Directory](https://actions.getdrafts.com/a/1lM)
+- [NeoCities | Drafts Directory](https://actions.getdrafts.com/g/1uF)
+- [The Psalms | Drafts Directory](https://actions.getdrafts.com/t/1km)
+- [Windows Iowa | Drafts Directory](https://actions.getdrafts.com/t/1kY)
+
 ## Themes
 
 ### Windows Iowa
