@@ -1,46 +1,55 @@
 # Drafts Keyboard Shortcuts
-```
-2021-05-01 
-Version 26.2.4
-```
-- Embed <audio> Element: ⌥A
-- Strikethrough: ⌥S
-- The Psalms Custom Preview: ⌘P
-- TAD-Trash Note: ⌃-
-- TAD-Toggle Last Two Modified Drafts: ⌃⇥
-- TAD-Load Previous Workspace: ⌥⌘←
-- TAD-Load Next Workspace: ⌥⌘→
-- TAD-Link for Draft (Title): ⇧⌘K
-- Find: ⇧⌥F
-- Tasks: ⌃T
-- Indent: ⌘]
-- Outdent: ⌘[
-- Toggle Theme: ⌥/
-- Markdown Header (#): ⌃⌘H
-- Markdown Bold (**): ⌘B
-- Code Block (```): ⌃⌘C
-- Preview: ⌥⌘P
-- Markdown Emphasis (_): ⌘I
-- Markdown List: ⇧⌘L
-- Markdown Link: ⌘K
-- Replace URLs by MD links: ⇧⌘U
-- Markdown Footnote: ⌃F
-- TAD-Selection Word Count: ⌥⌘W
-- TAD-Show Draft Info: ⌥I
-- TAD-Toggle App Theme: ⌥\
-- TAD-Toggle Typewriter Mode: ⌥T
-- TAD-Search Actions: ⌘/
-- TAD-Fetch URL Content to New Draft: ⇧⌘D
-- TAD-Copy Draft Link: ⇧⌃C
-- TAD-File Import With Tags: ⌘O
-- Copy: ⌥C
-- Email to myself: ⇧⌥M
-- Save to Files as...: ⌘S
-- Send to Bear: ⇧⌘B
-- Save to OneNote: ⇧⌥O
-- Clipboard…: ⌥C
-- TAD-Move Checked to End: ⇧⌃↓
-- Switch to The Psalms’ Workplace Shortcut: ⌘2
-- Switch to Documentation Workplace: ⌘3
-- Workspace Shortcut ⌘4: ⌘4
-- Open Keys Workspace: ⌘5
+`02022022-081640`
+- Copy Draft Link as MD link - ⇧⌃C
+- Tot7 Draft Link as MD link - ⇧⌃E
+- Append to 7th Tot Dot - ⌥7
+- Send to Saved Messages (Telegram) (copy) - ⌃G
+- CJ Telegram - ⌃⌥G
+- Drakesville - ⌃M
+- Strikethrough - ⌃S
+- Insert DavodTime™  timestamp. - ⇧⌃T
+- GitHub Issue - ⌃⌥I
+- Keyboard Shortcuts Export - ⇧⌃K
+- Selection Word Count - ⌃W
+- Draft Info - ⌃I
+- Dark/Light Toggle - ⇧⌃L
+- Load The Psalms - ⌥.
+- Preview MMD - ⌥⌘/
+- TAD-Toggle Last Two Modified Drafts - ⇧⇥
+- Text Modifier… - ⇧⌥t
+- Markdown Header (#) - ⌃⌘H
+- Markdown Bold (**) - ⌘B
+- Markdown Quotation (>) - ⌃Q
+- Code Block (```) - ⌃⌘C
+- Markdown Emphasis (*) - ⌘I
+- Markdown List - ⌃L
+- Markdown Link - ⌘K
+- Replace URLs by MD links - ⇧⌘U
+- Markdown Footnote (Variation) - ⌃F
+- Copy - ⌃C
+- New Draft with Template - ⇧⌘N
+- Clipboard… - ⌥C
+- Find - ⇧⌥F
+- Tasks - ⌃T
+- Copy Tags - ⌃⌥T
+- Save Version - ⇧⌘S
+- Open NeoCities Workspace - ⇧⌃N
+- Format JavaScript - ⌥⌘F
+- Drafts 5 JavaScript API list - ⌘D
+- Refresh TextExpander Snippets - ⇧⌘R
+- TAD-Copy as Rich Text - ⌃⌥C
+- TAD-Share as File: Markdown - ⇧⌃S
+- TAD-Push Draft to GitHub Repo - ⇧⌃G
+- TAD-Trash Note - ⌃-
+- TAD-Load Previous Workspace - ⇧⌥⌘⇥
+- TAD-Load Next Workspace - ⌥⌘⇥
+- TAD-Search Actions - ⌘/
+- TAD-Duplicate Draft and Load - ⌃D
+- TAD-Prime Preview MMD - ⌃P
+- TAD-Prime Preview GFM - ⌥⌘P
+- TAD-Preview with Marked2 - ⇧⌃P
+- TAD-Update TextExpander - ⌥⌘R
+- TAD-Replace with Synonym - ⌃⌥S
+- Written Workspace - ⌘2
+- Documentation Workspace - ⌘3
+- Hole Workspace - ⌘9
