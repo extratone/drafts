@@ -4,6 +4,8 @@
 
 Howdy!
 
+⇨[David Blue on the Drafts Action Directory](https://actions.getdrafts.com/search?utf8=%E2%9C%93&q=David+Blue)
+
 ## David Blue’s Drafts Action Directory Contributions
 - [Send Draft to Telegram Saved Messages | Drafts Directory](https://actions.getdrafts.com/a/1u5)
 - [Append to 7th Tot Dot | Drafts Directory](https://actions.getdrafts.com/a/1uL)
@@ -20,6 +22,8 @@ Howdy!
 ### Windows Iowa
 
 ![image](https://user-images.githubusercontent.com/43663476/115518102-71c74b80-a24d-11eb-9b83-4538b198c98a.png)
+
+[**Drafts Directory Link**](https://actions.getdrafts.com/t/1kY)
 
 **Drafts Version:** 26.2.4
 **Drafts Subscription:** Pro
