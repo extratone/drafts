@@ -4,11 +4,35 @@
 
 Howdy!
 
+⇨[David Blue on the Drafts Action Directory](https://actions.getdrafts.com/search?utf8=%E2%9C%93&q=David+Blue)
+
+## David Blue’s Drafts Action Directory Contributions
+- [Send Draft to Telegram Saved Messages | Drafts Directory](https://actions.getdrafts.com/a/1u5)
+- [Append to 7th Tot Dot | Drafts Directory](https://actions.getdrafts.com/a/1uL)
+- [List Action Shortcuts, Comma-Delimited | Drafts Directory](https://actions.getdrafts.com/a/1s7)
+- [Markdown Footnote (Variation) | Drafts Directory](https://actions.getdrafts.com/a/1q9)
+- [Markdown Emphasis (*) | Drafts Directory](https://actions.getdrafts.com/a/1pa)
+- [Embed &lt;audio&gt; Element | Drafts Directory](https://actions.getdrafts.com/a/1lM)
+- [NeoCities | Drafts Directory](https://actions.getdrafts.com/g/1uF)
+- [The Psalms | Drafts Directory](https://actions.getdrafts.com/t/1km)
+- [Windows Iowa | Drafts Directory](https://actions.getdrafts.com/t/1kY)
+
+## Unlisted Drafts Directory Links
+- [The Psalms Action Group](https://actions.getdrafts.com/g/1tq)
+- [Markdown Action Group](https://actions.getdrafts.com/g/1ui)
+- [🅒🅞🅡🅔 Action Group](https://actions.getdrafts.com/g/1ud)
+- [Social Web Action Group](https://actions.getdrafts.com/g/1uf)
+- [TEST Action Group](https://actions.getdrafts.com/g/1ug)
+- [Automation Action Group](https://actions.getdrafts.com/g/1uh)
+- [Switcher Action Group](https://actions.getdrafts.com/g/1ue)
+
 ## Themes
 
 ### Windows Iowa
 
 ![image](https://user-images.githubusercontent.com/43663476/115518102-71c74b80-a24d-11eb-9b83-4538b198c98a.png)
+
+[**Drafts Directory Link**](https://actions.getdrafts.com/t/1kY)
 
 **Drafts Version:** 26.2.4
 **Drafts Subscription:** Pro
