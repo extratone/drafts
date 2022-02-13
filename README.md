@@ -2,11 +2,28 @@
 
 ![DraftsTeal](https://user-images.githubusercontent.com/43663476/148675995-eaa6458a-f0af-4592-bc5e-798f72719576.png)
 
+## Where Text Starts™ and David Blue Ends. 
+
 Howdy!
+
+**This is my repository for [AgileTortoise's Drafts](https://getdrafts.com), of which I've been a customer/user for the majority of my adult life.**
+
+Please feel free to use/distribute anything in here - including original content - as per the terms of "[The Unlicense, Dave Edition](https://github.com/extratone/drafts/blob/main/LICENSE.md)."
+
+### Contact
+
+* [Contact Card](https://davidblue.wtf/db.vcf)
+* [Telegram](https://t.me/extratone)
+* [Email](mailto:davidblue@extratone.com) 
+* [Twitter](https://twitter.com/NeoYokel)
+* [Mastodon](https://mastodon.social/@DavidBlue)
+* [Discord](https://discord.gg/0b9KQUKP858b0iZF)
+* [*Everywhere*](https://raindrop.io/davidblue/social-directory-21059174)...
 
 ⇨[David Blue on the Drafts Action Directory](https://actions.getdrafts.com/search?utf8=%E2%9C%93&q=David+Blue)
 
 ## David Blue’s Drafts Action Directory Contributions
+
 - [Send Draft to Telegram Saved Messages | Drafts Directory](https://actions.getdrafts.com/a/1u5)
 - [Append to 7th Tot Dot | Drafts Directory](https://actions.getdrafts.com/a/1uL)
 - [List Action Shortcuts, Comma-Delimited | Drafts Directory](https://actions.getdrafts.com/a/1s7)
