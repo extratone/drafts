@@ -47,7 +47,6 @@ Version 1.0
 
 `https://actions.getdrafts.com/t/1uk`
 
-
 ### Windows Iowa
 
 ![Windows Iowa](https://user-images.githubusercontent.com/43663476/115518102-71c74b80-a24d-11eb-9b83-4538b198c98a.png)
@@ -74,6 +73,8 @@ _See: “[Windows Iowa Startup Theme](https://soundcloud.com/chordoslut/windowsi
 
 ![image](https://user-images.githubusercontent.com/43663476/115521804-23b44700-a251-11eb-84da-77b446e59c37.png)
 
+**Replicating the reading experience of [bilge.world](https://bilge.world/colophon).**
+
 [**Drafts Directory Link**](https://actions.getdrafts.com/t/1km)
 
 **Drafts Version:** 26.2.4
@@ -83,8 +84,6 @@ _See: “[Windows Iowa Startup Theme](https://soundcloud.com/chordoslut/windowsi
 **OS Build:** 14.5
 
 `Version 0.1`
-
-## Replicating the reading experience of [bilge.world](https://bilge.world/colophon).
 
 I did not originally intend to share this theme, but I sortof accidentally ended up with a configuration I’m extremely happy with.
 
