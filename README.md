@@ -30,6 +30,7 @@ Please feel free to use/distribute anything in here - including original content
 - [RoutineHub • Capture Web Page to Drafts](https://routinehub.co/shortcut/8994/)
 - [RoutineHub • Overcast Show Notes ⇨ Drafts](https://routinehub.co/shortcut/8944/)
 - [RoutineHub • Safari Tabs List to Drafts](https://routinehub.co/shortcut/11024/)
+- [RoutineHub • Capture Webpage to Drafts (macOS)](https://routinehub.co/shortcut/11078/)
 
 ⇨[**David Blue on the Drafts Action Directory**](https://actions.getdrafts.com/search?utf8=%E2%9C%93&q=David+Blue)
 
