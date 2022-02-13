@@ -1,0 +1,770 @@
+<!DOCTYPE html>  
+<html lang="US">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>David Blue‘s Drafts Configs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style id="mkstylesheet">
+/*
+This document has been created with Marked.app <http://marked2app.com>
+Content is property of the document author
+Please leave this notice in place, along with any additional credits below.
+---------------------------------------------------------------
+Title: BearSys
+Author: David Blue
+Description: A very minor modification of Brett Terpstra's Bear theme - Avenir is replaced with SF Pro Text and Georgia is replaced with New York.
+---
+*/
+
+body {
+	-webkit-font-smoothing: antialiased;
+	font-family: SF Pro Text, sans-serif;
+	margin: 25px 0 0;
+	padding: 0;
+	background: #fff;
+	color: #303030;
+	font-size: 14px;
+	line-height: 1.6
+}
+
+#wrapper {
+	padding: 14px;
+	margin: 0 auto;
+}
+
+li {
+	font-size: 110%
+}
+
+li li {
+	font-size: 100%
+}
+
+li p {
+	font-size: 100%;
+	margin: .5em 0;
+	line-height: 1.4;
+}
+
+.task-list-item-checkbox {
+	top: 0!important;
+}
+
+h1 {
+	color: #000
+}
+
+h2 {
+	color: #111
+}
+
+h3 {
+	color: #111
+}
+
+h4 {
+	color: #111
+}
+
+h5 {
+	color: #111
+}
+
+h6 {
+	color: #111;
+	font-style: italic
+}
+
+p, td, div {
+	color: #111;
+	font-family: SF Pro Text, sans-serif;
+	word-wrap: break-word
+}
+
+a {
+	color: rgb(222, 84, 86);
+	text-decoration: none;
+	-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out
+}
+
+a:hover {
+	color: #3593d9
+}
+
+h1, h2, h3, h4, h5 {
+	margin: 2.75rem 0 2rem;
+	font-weight: 500;
+	line-height: 1.15
+}
+
+h1 {
+	margin-top: 0;
+	font-size: 2em
+}
+
+h2 {
+	font-size: 1.7em
+}
+
+h3 {
+	font-size: 1.2em
+}
+
+h4 {
+	font-size: 1.563em
+}
+
+h5 {
+	font-size: 1.25em
+}
+
+ul, ol, pre, table, blockquote {
+	margin-top: 2em;
+	margin-bottom: 2em
+}
+
+mark {
+	background: rgb(211, 255, 164);
+}
+
+blockquote {
+	padding: 0 0 0 1.5em;
+	margin: 2em 0 0 -1.5em;
+	border-left: 1px solid rgb(222, 84, 86);
+}
+
+hr {
+	border: none;
+	border-bottom: 1px solid #ddd;
+	margin: 3em 0;
+}
+
+ul ul, ol ol, ul ol, ol ul {
+	margin-top: 0;
+	margin-bottom: 0
+}
+
+b, strong, em, small, code {
+	line-height: 1
+}
+
+.footnote {
+	color: #0d6ea1;
+	font-size: .8em;
+	vertical-align: super
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted #aaa
+}
+
+#wrapper img {
+	max-width: 100%;
+	height: auto
+}
+
+dd {
+	font-size: 1em;
+	margin-bottom: 1em
+}
+
+li>p:first-of-type {
+	margin: 0
+}
+
+li p+p {
+	margin-top: 16px
+}
+
+ul, ol {
+	list-style-position: outside;
+	padding-left: 0;
+}
+
+
+ul ul, ul ol, ol ul, ol ol {
+	margin-bottom: .4em;
+	padding-left:  2em;
+}
+
+ul li {
+	list-style-type: none;
+	position: relative;
+}
+
+ul li:not(.task-list-item)::before {
+	color: rgb(222, 84, 86);
+	content: '●';
+	display: inline;
+	font-size: 11px;
+	left: -20px;
+	position: absolute;
+	top: 2px;
+}
+
+ol {
+  counter-reset: list;
+}
+
+ol li {
+  counter-increment: list;
+  list-style-type: none;
+  position: relative;
+}
+ol li:before {
+  color: rgb(222, 84, 86);
+  content: counter(list) ".";
+  left:-32px;
+  position: absolute;
+  text-align: right;
+  width: 26px;
+}
+
+caption, col, colgroup, table, tbody, td, tfoot, th, thead, tr {
+	border-spacing: 0
+}
+
+table {
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	border-collapse: collapse;
+	display: table;
+	empty-cells: hide;
+	margin: -1px 0 1.3125em;
+	padding: 0;
+	table-layout: fixed
+}
+
+caption {
+	display: table-caption;
+	font-weight: 700
+}
+
+col {
+	display: table-column
+}
+
+colgroup {
+	display: table-column-group
+}
+
+tbody {
+	display: table-row-group
+}
+
+tfoot {
+	display: table-footer-group
+}
+
+thead {
+	display: table-header-group
+}
+
+td, th {
+	display: table-cell
+}
+
+tr {
+	display: table-row
+}
+
+table th, table td {
+	font-size: 1.1em;
+	line-height: 1.3;
+	padding: .5em 1em 0
+}
+
+table thead {
+	background: rgba(0, 0, 0, 0.15);
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+}
+
+table tbody {
+	background: rgba(0, 0, 0, 0.05)
+}
+
+table tfoot {
+	background: rgba(0, 0, 0, 0.15);
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	border-top: 1px solid rgba(0, 0, 0, 0.2)
+}
+
+figure {
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	margin: 1em 0 2em
+}
+
+figcaption {
+	font-style: italic;
+	text-align: center;
+	background: white;
+	color: #666
+}
+
+.poetry pre {
+	display: block;
+	font-family: NewYork-Regular, serif !important;
+	font-size: 110% !important;
+	font-style: italic;
+	line-height: 1.6em;
+	margin-left: 1em
+}
+
+.poetry pre code {
+	font-family: NewYork-Regular, serif !important;
+	word-break: break-all;
+	word-break: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+	white-space: pre-wrap
+}
+
+blockquote p {
+
+}
+
+sup, sub, a.footnote {
+	font-size: 1.4ex;
+	height: 0;
+	line-height: 1;
+	position: relative;
+	vertical-align: super
+}
+
+sub {
+	vertical-align: sub;
+	top: -1px
+}
+
+p {
+	font-size: 1.1429em;
+	line-height: 1.72em;
+	margin: 1.3125em 0
+}
+
+dt, th {
+	font-weight: 700
+}
+
+table tr:nth-child(odd), table th:nth-child(odd), table td:nth-child(odd) {
+	background: rgba(255, 255, 255, 0.06)
+}
+
+table tr:nth-child(even), table td:nth-child(even) {
+	background: rgba(200, 200, 200, 0.25)
+}
+
+@media print {
+	img, table, figure {
+		page-break-inside: avoid
+	}
+
+	#wrapper {
+		background: #fff;
+		color: #303030;
+		padding: 10px;
+		position: relative;
+		text-indent: 0
+	}
+
+}
+
+@media screen {
+	.inverted {
+		background: #252a2a
+	}
+
+	.inverted #wrapper {
+		background: #252a2a;
+		color: #eee
+	}
+
+	.inverted hr {
+		border-color: #333f40 !important
+	}
+
+	.inverted p, .inverted td, .inverted li, .inverted h1, .inverted h2, .inverted h3, .inverted h4, .inverted h5, .inverted h6, .inverted th, .inverted .math, .inverted caption, .inverted dt, .inverted dd {
+		color: #eee
+	}
+
+	.inverted pre {
+		background: #ccc;
+		color: #111
+	}
+
+	.inverted table {
+		background: none
+	}
+
+	.inverted table tr:nth-child(odd), .inverted table td:nth-child(odd) {
+		background: none
+	}
+
+
+	::selection {
+		background: rgba(157, 193, 200, 0.5)
+	}
+
+	h1::selection {
+		background-color: rgba(45, 156, 208, 0.3)
+	}
+
+	h2::selection {
+		background-color: rgba(90, 182, 224, 0.3)
+	}
+
+	h3::selection, h4::selection, h5::selection, h6::selection, li::selection, ol::selection {
+		background-color: rgba(133, 201, 232, 0.3)
+	}
+
+	code::selection {
+		background-color: rgba(0, 0, 0, 0.7);
+		color: #eee
+	}
+
+	code span::selection {
+		background-color: rgba(0, 0, 0, 0.7) !important;
+		color: #eee !important
+	}
+
+	a::selection {
+		background-color: rgba(255, 230, 102, 0.2)
+	}
+
+	.inverted a::selection {
+		background-color: rgba(255, 230, 102, 0.6)
+	}
+
+	td::selection, th::selection, caption::selection {
+		background-color: rgba(180, 237, 95, 0.5)
+	}
+
+}
+
+.mkstyle--swiss #wrapper aside.blurb:before {
+	margin-top: .7em
+}#mkreplaced-toc{list-style-position:inside;padding:0;margin:0 0 0 1rem;list-style-type:none}#mkreplaced-toc li::before{content:''}#mkreplaced-toc li{font-size:1rem;line-height:1.25;font-weight:normal}#mkreplaced-toc li ul{font-size:1.3rem;font-weight:300;padding:.5rem 0;margin:0 0 0 1rem}#mkreplaced-toc li.missing{list-style-type:none !important}#mkreplaced-toc.max-1 ul,#mkreplaced-toc.max1 ul{display:none}#mkreplaced-toc.max-2 ul ul,#mkreplaced-toc.max2 ul ul{display:none}#mkreplaced-toc.max-3 ul ul ul,#mkreplaced-toc.max3 ul ul ul{display:none}#mkreplaced-toc.max-4 ul ul ul ul,#mkreplaced-toc.max4 ul ul ul ul{display:none}#mkreplaced-toc.max-5 ul ul ul ul ul,#mkreplaced-toc.max5 ul ul ul ul ul{display:none}.mk-rtl{direction:rtl;text-align:right}body.mkkatex-number-equations{counter-reset:eqnum}body.mkkatex-number-equations .katex-display{position:relative}body.mkkatex-number-equations .katex-display::after{counter-increment:eqnum;content:"(" counter(eqnum) ")";position:absolute;left:0;top:25%}body.mkkatex-number-equations.mkkatex-number-equations-right .katex-display::after{right:0;left:auto}.mkprinting,.mkprinting #wrapper{height:auto;margin-bottom:0;padding-bottom:0}.hideProgress #generated-toc,.hideProgress #firstdiff,.hideProgress #toc-title,.hideProgress #mkdocumentprogress,.hideProgress #mkincludechart,.hideProgress #mkprogressbar1,.hideProgress #mkprogressbar2,.hideProgress b.bookmark,.hideProgress .mkscrollmeter,.hideProgress #alllinks,.hideProgress #criticnav,.hideProgress .popup,.hideProgress #progressindicator,.hideProgress #mkautoscroll,.mkprinting #generated-toc,.mkprinting #firstdiff,.mkprinting #toc-title,.mkprinting #mkdocumentprogress,.mkprinting #mkincludechart,.mkprinting #mkprogressbar1,.mkprinting #mkprogressbar2,.mkprinting b.bookmark,.mkprinting .mkscrollmeter,.mkprinting #alllinks,.mkprinting #criticnav,.mkprinting .popup,.mkprinting #progressindicator,.mkprinting #mkautoscroll{display:none !important}.hideProgress .mkstyledtag,.mkprinting .mkstyledtag{display:none}.mkcolor-grammar-error,.mkcolor-spell-error{background:none;border-bottom:none}.mkprinting.mkshowcomments .mkstyledtag{display:inline;background:#ccc;padding:3px 9px;border-radius:20px;font-size:1}@media print{body{background:white;line-height:1.4}html,body,#wrapper{-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;-webkit-perspective:none !important;-webkit-text-size-adjust:none;border:0;box-sizing:border-box;float:none;margin:0;max-width:100%;padding:0;margin-top:0;width:auto}.critic #wrapper mark.crit{background-color:#fffd38 !important;text-decoration:none;color:#000}h1,h2,h3,h4,h5,h6{page-break-after:avoid}p,h2,h3{orphans:3;widows:3}section{page-break-before:avoid}pre>code{white-space:pre;word-break:break-word}#generated-toc,#firstdiff,#toc-title,#mkdocumentprogress,#mkincludechart,#mkprogressbar1,#mkprogressbar2,.mkscrollmeter,#alllinks,.popup{display:none !important}.suppressprintlinks a{border-bottom:none !important;color:inherit !important;cursor:default !important;text-decoration:none !important}.hrefafterlinktext #wrapper a:link:after,.hrefafterlinktext #wrapper a:visited:after{content:" (" attr(href) ") ";font-size:90%;opacity:.9}.nocodebreak pre{page-break-inside:avoid}img,table,figure{page-break-inside:avoid}.breakfootnotes .footnotes{page-break-before:always}.breakfootnotes .footnotes hr{display:none}#mktoctitle{display:block}#print-title{border-bottom:solid 1px #666;display:block}#wrapper pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}#wrapper #generated-toc-clone,#wrapper #mkreplaced-toc{display:block}.task-list{padding-left:3.3rem}.mkstyle--ink .task-list,.mkstyle--swiss .task-list{padding-left:3.3rem !important}.mkstyle--upstandingcitizen .task-list,.mkstyle--github .task-list{padding-left:3.6rem !important}.mkstyle--manuscript .task-list{padding-left:2.4rem !important}.mkstyle--amblin .task-list{padding-left:2.1rem !important}.mkstyle--grump .task-list{padding-left:1rem !important}.mkstyle--grump .task-list .task-list-item-checkbox{left:0 !important}.task-list .task-list-item{list-style-type:none !important;left:auto}.task-list .task-list-item .task-list-item-checkbox{-webkit-appearance:none;position:relative;left:auto}.task-list .task-list-item .task-list-item-checkbox:before{border:solid 1px #aaa;border-radius:2px;color:white;content:' ';display:block;font-weight:bold;height:1em;left:-1rem;line-height:1;position:absolute;text-align:center;top:-.75em;width:1em}.task-list .gh-complete.task-list-item .task-list-item-checkbox:before{background:#838387;content:'\2713'}}
+#wrapper #generated-toc-clone,#wrapper #mkreplaced-toc,#wrapper #generated-toc-clone ul,#wrapper #mkreplaced-toc ul{list-style-position:inside}#wrapper #generated-toc-clone li.missing,#wrapper #mkreplaced-toc li.missing{list-style-type: none!important}#wrapper #generated-toc-clone ul,#wrapper #mkreplaced-toc ul{list-style-type: upper-roman}#wrapper #generated-toc-clone>ul>li>ul,#wrapper #mkreplaced-toc>li>ul {list-style-type: decimal}#wrapper #generated-toc-clone>ul>li>ul>li>ul,#wrapper #mkreplaced-toc>li>ul>li>ul{list-style-type: decimal-leading-zero}#wrapper #generated-toc-clone>ul>li>ul>li>ul>li>ul,#wrapper #mkreplaced-toc>li>ul>li>ul>li>ul{list-style-type: lower-greek}#wrapper #generated-toc-clone>ul>li>ul>li>ul>li>ul>li>ul,#wrapper #mkreplaced-toc>li>ul>li>ul>li>ul>li>ul{list-style-type: disc}#wrapper #generated-toc-clone>ul>li>ul>li>ul>li>ul>li>ul>li>ul,#wrapper #mkreplaced-toc>li>ul>li>ul>li>ul>li>ul>li>ul{list-style-type: square}#wrapper #generated-toc-clone,#wrapper #mkreplaced-toc{}
+line-height: 2em;
+
+</style>
+
+<style id="mkprintstyles">@media print{#wrapper #generated-toc-clone,#generated-toc{display:none!important}
+html,body,#wrapper{font-size:12pt!important}
+}
+</style>
+
+<style>#wrapper { max-width:660px; margin:0 auto }</style>
+  </head>
+<body class="normal mkshowcomments">
+  <div id="wrapper">
+<h1 id="davidblue%E2%80%98sdraftsconfigs">David Blue‘s Drafts Configs</h1>
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/148675995-eaa6458a-f0af-4592-bc5e-798f72719576.png" alt="DraftsTeal" />
+<figcaption>DraftsTeal</figcaption>
+</figure>
+
+<h2 id="wheretextstarts%E2%84%A2anddavidblueends.">Where Text Starts™ and David Blue Ends.</h2>
+
+<p>Howdy!</p>
+
+<p><strong>This is my repository for <a href="https://getdrafts.com">AgileTortoise&#8217;s Drafts</a>, of which I&#8217;ve been a customer/user for the majority of my adult life.</strong></p>
+
+<p>Please feel free to use/distribute anything in here - including original content - as per the terms of &#8220;<a href="https://github.com/extratone/drafts/blob/main/LICENSE.md">The Unlicense, Dave Edition</a>.&#8221;</p>
+
+<h3 id="contact">Contact</h3>
+
+<ul>
+<li><a href="https://davidblue.wtf/db.vcf">Contact Card</a></li>
+<li><a href="https://t.me/extratone">Telegram</a></li>
+<li><a href="mailto:davidblue@extratone.com">Email</a></li>
+<li><a href="https://twitter.com/NeoYokel">Twitter</a></li>
+<li><a href="https://mastodon.social/@DavidBlue">Mastodon</a></li>
+<li><a href="https://discord.gg/0b9KQUKP858b0iZF">Discord</a></li>
+<li><a href="https://raindrop.io/davidblue/social-directory-21059174"><em>Everywhere</em></a>&#8230;</li>
+</ul>
+
+<h2 id="writtenwork">Written Work</h2>
+
+<ul>
+<li><a href="https://bilge.world/automating-writeas-posts">Automating Write.as Posts on macOS | The Psalms</a></li>
+<li><a href="https://bilge.world/drafts-zalgo-action">Zalgo Text in a Keyboard Shortcut | The Psalms</a></li>
+</ul>
+
+<h2 id="sirishortcuts">Siri Shortcuts</h2>
+
+<ul>
+<li><a href="https://routinehub.co/shortcut/8994/">RoutineHub • Capture Web Page to Drafts</a></li>
+<li><a href="https://routinehub.co/shortcut/8944/">RoutineHub • Overcast Show Notes ⇨ Drafts</a></li>
+<li><a href="https://routinehub.co/shortcut/11024/">RoutineHub • Safari Tabs List to Drafts</a></li>
+</ul>
+
+<p>⇨<a href="https://actions.getdrafts.com/search?utf8=%E2%9C%93&amp;q=David+Blue"><strong>David Blue on the Drafts Action Directory</strong></a></p>
+
+<h2 id="davidblue%E2%80%99sdraftsactiondirectorycontributions">David Blue’s Drafts Action Directory Contributions</h2>
+
+<ul>
+<li><a href="https://actions.getdrafts.com/a/1u5">Send Draft to Telegram Saved Messages | Drafts Directory</a></li>
+<li><a href="https://actions.getdrafts.com/a/1uL">Append to 7th Tot Dot | Drafts Directory</a></li>
+<li><a href="https://actions.getdrafts.com/a/1s7">List Action Shortcuts, Comma-Delimited | Drafts Directory</a></li>
+<li><a href="https://actions.getdrafts.com/a/1q9">Markdown Footnote (Variation) | Drafts Directory</a></li>
+<li><a href="https://actions.getdrafts.com/a/1pa">Markdown Emphasis (*) | Drafts Directory</a></li>
+<li><a href="https://actions.getdrafts.com/a/1lM">Embed &lt;audio&gt; Element | Drafts Directory</a></li>
+<li><a href="https://actions.getdrafts.com/g/1uF">NeoCities | Drafts Directory</a></li>
+<li><a href="https://actions.getdrafts.com/t/1km">The Psalms | Drafts Directory</a></li>
+<li><a href="https://actions.getdrafts.com/t/1kY">Windows Iowa | Drafts Directory</a></li>
+</ul>
+
+<h2 id="unlisteddraftsdirectorylinks">Unlisted Drafts Directory Links</h2>
+
+<h3 id="actions">Actions</h3>
+
+<ul>
+<li><a href="https://actions.getdrafts.com/a/1vP">Clear Clipboard</a></li>
+</ul>
+
+<h3 id="actiongroups">Action Groups</h3>
+
+<ul>
+<li><a href="https://actions.getdrafts.com/g/1tq">The Psalms Action Group</a></li>
+<li><a href="https://actions.getdrafts.com/g/1ui">Markdown Action Group</a></li>
+<li><a href="https://actions.getdrafts.com/g/1ud">🅒🅞🅡🅔 Action Group</a></li>
+<li><a href="https://actions.getdrafts.com/g/1uf">Social Web Action Group</a></li>
+<li><a href="https://actions.getdrafts.com/g/1ug">TEST Action Group</a></li>
+<li><a href="https://actions.getdrafts.com/g/1vQ">Dev Action Group</a></li>
+<li><a href="https://actions.getdrafts.com/g/1uh">Automation Action Group</a></li>
+<li><a href="https://actions.getdrafts.com/g/1ue">Switcher Action Group</a></li>
+<li><a href="https://actions.getdrafts.com/g/1us">KEYS Action Group</a></li>
+<li><a href="https://actions.getdrafts.com/g/1vO">GitHub Action Group</a></li>
+</ul>
+
+<h3 id="workspaces">Workspaces</h3>
+
+<ul>
+<li><a href="https://actions.getdrafts.com/w/1vR">Hole Workspace</a></li>
+<li><a href="https://actions.getdrafts.com/w/1vS">Written Workspace</a></li>
+<li><a href="https://actions.getdrafts.com/w/1vT">Documentation Workspace</a></li>
+<li><a href="https://actions.getdrafts.com/w/1vU">Local Workspace</a></li>
+<li><a href="https://actions.getdrafts.com/w/1vV">NeoCities Workspace</a></li>
+<li><a href="https://actions.getdrafts.com/w/1vW">Dev Workspace</a></li>
+<li><a href="https://actions.getdrafts.com/w/1vX">Library Workspace</a></li>
+<li><a href="https://actions.getdrafts.com/w/1vY">KEYS Workspace</a></li>
+<li><a href="https://actions.getdrafts.com/w/1vZ">Correspondence Workspace</a></li>
+<li><a href="https://actions.getdrafts.com/w/1v1">Social Workspace</a></li>
+<li><a href="https://actions.getdrafts.com/w/1v2">Small Workspace</a></li>
+<li><a href="https://actions.getdrafts.com/w/1v3">Publish Workspace</a></li>
+<li><a href="https://actions.getdrafts.com/w/1vN">Templates Workspace</a></li>
+</ul>
+
+<h2 id="themes">Themes</h2>
+
+<h3 id="greyhound">Greyhound</h3>
+
+<p><img src="https://user-images.githubusercontent.com/43663476/152304057-7d37b8bd-d6c9-4995-8bb6-081f9e03b5e7.png" alt="Greyhound on iOS" /><br/>
+<img src="https://user-images.githubusercontent.com/43663476/152304149-24fdb181-230f-4895-8d16-067fb088b476.png" alt="Greyhound macOS" /></p>
+
+<p><strong>Inspired by a Telegram Theme.</strong><br/>
+Version 1.0<br/>
+<code>02032022-020741</code><br/>
+- <a href="https://github.com/extratone/drafts/issues/19">Greyhound Drafts Theme · Issue #19 · extratone/drafts</a><br/>
+- <a href="https://actions.getdrafts.com/t/1uk"><strong>Themes Directory Link</strong></a></p>
+
+<p><code>https://actions.getdrafts.com/t/1uk</code></p>
+
+<h3 id="windowsiowa">Windows Iowa</h3>
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/115518102-71c74b80-a24d-11eb-9b83-4538b198c98a.png" alt="Windows Iowa" />
+<figcaption>Windows Iowa</figcaption>
+</figure>
+
+<p><a href="https://actions.getdrafts.com/t/1kY"><strong>Drafts Directory Link</strong></a></p>
+
+<p><strong>Drafts Version:</strong> 26.2.4<br/>
+<strong>Drafts Subscription:</strong> Pro<br/>
+<strong>Device:</strong> iPhone<br/>
+<strong>Operating System:</strong> iOS<br/>
+<strong>OS Build:</strong> 14.5</p>
+
+<p><code>Version 0.2</code></p>
+
+<p>(A variant of the “<a href="https://actions.getdrafts.com/t/1jK">BSOD</a>” theme by <strong>kimonostereo</strong>.)</p>
+
+<p>Color radicalized version of the source inspired by a <em>fictional</em> alpha version of Windows (Windows Iowa.)</p>
+
+<p><em>See: “<a href="https://soundcloud.com/chordoslut/windowsiowa">Windows Iowa Startup Theme</a>”</em></p>
+
+<p><a href="https://github.com/extratone/i/issues/45">The Theme&#8217;s Issue on my iOS GitHub Repo</a></p>
+
+<h3 id="thepsalms">The Psalms</h3>
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/115521804-23b44700-a251-11eb-84da-77b446e59c37.png" alt="image" />
+<figcaption>image</figcaption>
+</figure>
+
+<p><strong>Replicating the reading experience of <a href="https://bilge.world/colophon">bilge.world</a>.</strong></p>
+
+<p><a href="https://actions.getdrafts.com/t/1km"><strong>Drafts Directory Link</strong></a></p>
+
+<p><strong>Drafts Version:</strong> 26.2.4<br/>
+<strong>Drafts Subscription:</strong> Pro<br/>
+<strong>Device:</strong> iPhone<br/>
+<strong>Operating System:</strong> iOS<br/>
+<strong>OS Build:</strong> 14.5</p>
+
+<p><code>Version 0.1</code></p>
+
+<p>I did not originally intend to share this theme, but I sortof accidentally ended up with a configuration I’m extremely happy with.</p>
+
+<ul>
+<li><a href="https://github.com/extratone/i/issues/50">This theme’s Issue on my iOS-specific GitHub Repository</a></li>
+</ul>
+
+<h2 id="keyboardshortcuts">Keyboard Shortcuts</h2>
+<pre class="mknohighlight"><code>01092022-5555
+Drafts Version: 35</code></pre>
+
+<p><a href="https://gist.github.com/extratone/2e54243a2123ccfa6a37c6e8cc1057e2">Gist - I hope to properly maintain a public list of my keyboard shortcuts in Drafts.</a></p>
+
+<h2 id="draftskeyboardshortcutsiosexport">Drafts Keyboard Shortcuts (iOS Export)</h2>
+
+<p><code>02122022-185802</code><br/>
+- Markdown Capture Selected URL - ⌥O<br/>
+- Copy Body - ⇧⌃⌥C<br/>
+- Copy Draft Link as MD link - ⇧⌃C<br/>
+- Tot7 Draft Link as MD link - ⇧⌃E<br/>
+- Append Selection to 7th Tot Dot - ⌃⌥7<br/>
+- Append to 7th Tot Dot - ⌥7<br/>
+- Prepend to 7th Tot Dot - ⇧⌥7<br/>
+- Tweetbot Selection - ⌥P<br/>
+- DraftsBot - ⇧⌃⌥P<br/>
+- Post Selection to Mastodon - ⇧⌥P<br/>
+- DraftsImage - ⇧⌃I<br/>
+- Telegram Extratone with Rich Text Copied - ⇧⌥G<br/>
+- Send to Saved Messages (Telegram) (copy) - ⌃G<br/>
+- Drakesville - ⌃M<br/>
+- SMS Drakesville - ⌥M<br/>
+- Strikethrough - ⌃S<br/>
+- Text to Gladys - ⌥G<br/>
+- Insert DavodTime™ timestamp. - ⇧⌃T<br/>
+- Simplenote - ⇧⌃W<br/>
+- Export Psalms Notes - ⇧⌃⌥E<br/>
+- Export Psalms Drafts - ⇧⌃⌥S<br/>
+- GitHub Issue - ⌃⌥I<br/>
+- Keyboard Shortcuts Export - ⇧⌃K<br/>
+- Selection Word Count - ⌃W<br/>
+- Draft Info - ⌃I<br/>
+- Dark/Light Toggle - ⇧⌃L<br/>
+- Load The Psalms - ⌥.<br/>
+- Preview MMD - ⌥⌘/<br/>
+- TAD-Toggle Last Two Modified Drafts - ⇧⇥<br/>
+- Zalgos - ⇧⌃Z<br/>
+- Text Modifier… - ⇧⌥t<br/>
+- Store Page URLs - ⇧⌥S<br/>
+- Save to Written folder as .md - ⌥⌘S<br/>
+- Markdown Header (#) - ⌃⌘H<br/>
+- Markdown Bold (*<em>) - ⌘B<br/>
+- Markdown Quotation (&gt;) - ⌃Q<br/>
+- Code Block (```) - ⌃⌘C<br/>
+- Markdown Emphasis (</em>) - ⌘I<br/>
+- Markdown List - ⌃L<br/>
+- Markdown Link - ⌘K<br/>
+- Replace URLs by MD links - ⇧⌘U<br/>
+- Markdown Footnote (Variation) - ⌃F<br/>
+- Copy - ⌃C<br/>
+- Print - ⌃⌥P<br/>
+- New Draft with Template - ⇧⌘N<br/>
+- Clipboard… - ⌥C<br/>
+- Find - ⇧⌥F<br/>
+- Tasks - ⌃T<br/>
+- Copy Tags - ⌃⌥T<br/>
+- Save Version - ⇧⌘S<br/>
+- Copy Draft Open Link - ⇧⌘E<br/>
+- Open URL - ⇧⌃O<br/>
+- Open NeoCities Workspace - ⇧⌃N<br/>
+- Format JavaScript - ⌥⌘F<br/>
+- Drafts 5 JavaScript API list - ⌘D<br/>
+- Refresh TextExpander Snippets - ⇧⌘R<br/>
+- TAD-Clear Clipboard - ⌥⇥<br/>
+- TAD-Trash Note - ⌃-<br/>
+- TAD-Load Previous Workspace - ⇧⌥⌘⇥<br/>
+- TAD-Load Next Workspace - ⌥⌘⇥<br/>
+- TAD-Search Actions - ⌘/<br/>
+- TAD-Duplicate Draft and Load - ⌃D<br/>
+- TAD-Prime Preview MMD - ⌃P<br/>
+- TAD-Prime Preview GFM - ⌥⌘P<br/>
+- TAD-Preview with Marked2 - ⇧⌃P<br/>
+- TAD-Update TextExpander - ⌥⌘R<br/>
+- TAD-Replace with Synonym - ⌃⌥S<br/>
+- Written Workspace - ⌘2<br/>
+- Documentation Workspace - ⌘3<br/>
+- Hole Workspace - ⌘9<br/>
+- Instrument Panel - ⌥0<br/>
+- Testing - ⌥9<br/>
+- Current Work Draft - ⌥1<br/>
+- Current Work Notes - ⌥2<br/>
+- Three - ⌥3<br/>
+- Four - ⌥4<br/>
+- Five - ⌥5<br/>
+- Six - ⌥6<br/>
+- Seven - ⇧⌥1<br/>
+- Eight - ⇧⌥2<br/>
+- Nine - ⇧⌥3<br/>
+- Ten - ⇧⌥4<br/>
+- Copy as Rich Text - ⌃⌥C<br/>
+- Share as File: Markdown - ⇧⌃S<br/>
+- Push Draft to GitHub Repo - ⇧⌃G</p>
+
+<h2 id="external">External</h2>
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/148675845-54b1446d-50ea-4b55-89f0-8c769bcfd1fa.png" alt="External Drafts Keyboard Shortcuts" />
+<figcaption>External Drafts Keyboard Shortcuts</figcaption>
+</figure>
+
+<table>
+<colgroup>
+<col style="text-align:center;"/>
+<col style="text-align:center;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:center;">Action</th>
+	<th style="text-align:center;">Command</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:center;">Actions-&gt;Manage Actions&#8230;</td>
+	<td style="text-align:center;">⌥⌘A</td>
+</tr>
+<tr>
+	<td style="text-align:center;">Workspaces-&gt;Manage Workspaces&#8230;</td>
+	<td style="text-align:center;">⌥⌘W</td>
+</tr>
+</tbody>
+</table>
+
+<!-- ##END MARKED WRAPPER## -->
+    </div>
+
+
+
+<script>!function(e){"function"==typeof define&&define.amd?define("bidi_helpers",[],e):window.bidi_helpers=e()}(function(){var c={Dir:{RTL:-1,UNKNOWN:0,LTR:1},Format:{LRE:"‪",RLE:"‫",PDF:"‬",LRM:"‎",RLM:"‏"},ltrChars_:"A-Za-zÀ-ÖØ-öø-ʸ̀-֐ࠀ-῿Ⰰ-﬜︀-﹯﻽-￿",rtlChars_:"֑-߿יִ-﷿ﹰ-ﻼ"};return c.ltrDirCheckRe_=new RegExp("^[^"+c.rtlChars_+"]*["+c.ltrChars_+"]"),c.ltrCharReg_=new RegExp("["+c.ltrChars_+"]"),c.hasAnyLtr=function(e){return c.ltrCharReg_.test(e)},c.rtlDirCheckRe_=new RegExp("^[^"+c.ltrChars_+"]*["+c.rtlChars_+"]"),c.rtlRe=c.rtlDirCheckRe_,c.isRtlText=function(e){return c.rtlDirCheckRe_.test(e)},c.isLtrText=function(e){return c.ltrDirCheckRe_.test(e)},c.isRequiredLtrRe_=/^http:\/\/.*/,c.hasNumeralsRe_=/\d/,c.estimateDirection=function(e,t){for(var r=0,n=0,s=!1,i=e.split(/\s+/),l=0;l<i.length;l++){var o=i[l];c.isRtlText(o)?(r++,n++):c.isRequiredLtrRe_.test(o)?s=!0:c.hasAnyLtr(o)?n++:c.hasNumeralsRe_.test(o)&&(s=!0)}return 0==n?s?c.Dir.LTR:c.Dir.UNKNOWN:t<r/n?c.Dir.RTL:c.Dir.LTR},c}),function(e){"function"==typeof define&&define.amd?define("bidiweb",["bidi_helpers"],e):window.bidiweb=e(bidi_helpers)}(function(l){var s={};s.processors={css:function(t){return{makeRtl:function(e){e.classList.add(t.rtl)},makeLtr:function(e){e.classList.add(t.ltr)}}},style:function(t){return{makeRtl:function(e){e.style.direction="rtl",t&&(e.style.textAlign="right")},makeLtr:function(e){e.style.direction="ltr",t&&(e.style.textAlign="left")}}}};return s.process=function(e,t){var r,n;return e instanceof NodeList?r=e:e instanceof Node?((n=[e]).item=function(e){return n[e]},r=n):r=document.querySelectorAll(e),s.process_elements(r,t),r},s.process_elements=function(e,t){for(var r=0;r<e.length;r++){var n=e.item(r),s=n.textContent||n.value||n.placeholder||"",i=l.estimateDirection(s,.4);i==l.Dir.RTL?t.makeRtl(n):i==l.Dir.LTR&&t.makeLtr(n)}},s.process_css=function(e,t){var r=s.processors.css(t);return s.process(e,r)},s.process_style=function(e,t){var r=s.processors.style(t);return s.process(e,r)},s.style=function(e){return s.process_style(e,!0)},s.css=function(e){return s.process_css(e,{rtl:"mk-rtl",ltr:"mk-ltr"})},s.htmlToElement=function(e){var t=document.createElement("div");return t.innerHTML=e,t},s.html_css=function(e){var t=s.htmlToElement(e),r=t.querySelectorAll("*");return s.css(r),t.innerHTML},s.html_style=function(e){var t=s.htmlToElement(e),r=t.querySelectorAll("*");return s.style(r),t.innerHTML},s});</script>
+
+<script>bidiweb.css('#wrapper *');</script>
+
+</body>
+</html>
