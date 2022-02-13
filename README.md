@@ -151,29 +151,26 @@ Drafts Version: 35
 [Gist - I hope to properly maintain a public list of my keyboard shortcuts in Drafts.](https://gist.github.com/extratone/2e54243a2123ccfa6a37c6e8cc1057e2)
 
 ## Drafts Keyboard Shortcuts (iOS Export)
-`02122022-185802`
+`02132022-035528`
 - Markdown Capture Selected URL - ⌥O
 - Copy Body - ⇧⌃⌥C
 - Copy Draft Link as MD link - ⇧⌃C
-- Tot7 Draft Link as MD link - ⇧⌃E
+- Tot5 Draft Link as MD link - ⇧⌃E
 - Append Selection to 7th Tot Dot - ⌃⌥7
 - Append to 7th Tot Dot - ⌥7
 - Prepend to 7th Tot Dot - ⇧⌥7
 - Tweetbot Selection - ⌥P
-- DraftsBot - ⇧⌃⌥P
 - Post Selection to Mastodon - ⇧⌥P
 - DraftsImage - ⇧⌃I
-- Telegram Extratone with Rich Text Copied - ⇧⌥G
+- Telegram Extratone with Rich Text Copied - ⇧⌃T
 - Send to Saved Messages (Telegram) (copy) - ⌃G
 - Drakesville - ⌃M
 - SMS Drakesville - ⌥M
-- Strikethrough - ⌃S
 - Text to Gladys - ⌥G
-- Insert DavodTime™  timestamp. - ⇧⌃T
+- Insert DavodTime™  timestamp. - ⇧⌃⌥T
 - Simplenote - ⇧⌃W
 - Export Psalms Notes - ⇧⌃⌥E
 - Export Psalms Drafts - ⇧⌃⌥S
-- GitHub Issue - ⌃⌥I
 - Keyboard Shortcuts Export - ⇧⌃K
 - Selection Word Count - ⌃W
 - Draft Info - ⌃I
@@ -194,6 +191,7 @@ Drafts Version: 35
 - Markdown Link - ⌘K
 - Replace URLs by MD links - ⇧⌘U
 - Markdown Footnote (Variation) - ⌃F
+- Strikethrough - ⌃S
 - Copy - ⌃C
 - Print - ⌃⌥P
 - New Draft with Template - ⇧⌘N
@@ -204,11 +202,12 @@ Drafts Version: 35
 - Save Version - ⇧⌘S
 - Copy Draft Open Link - ⇧⌘E
 - Open URL - ⇧⌃O
+- Tweet Selection - ⇧⌃⌥P
 - Open NeoCities Workspace - ⇧⌃N
 - Format JavaScript - ⌥⌘F
 - Drafts 5 JavaScript API list - ⌘D
+- GitHub Issue - ⌃⌥I
 - Refresh TextExpander Snippets - ⇧⌘R
-- TAD-Clear Clipboard - ⌥⇥
 - TAD-Trash Note - ⌃-
 - TAD-Load Previous Workspace - ⇧⌥⌘⇥
 - TAD-Load Next Workspace - ⌥⌘⇥
@@ -222,7 +221,6 @@ Drafts Version: 35
 - Written Workspace - ⌘2
 - Documentation Workspace - ⌘3
 - Hole Workspace - ⌘9
-- Instrument Panel - ⌥0
 - Testing - ⌥9
 - Current Work Draft - ⌥1
 - Current Work Notes - ⌥2
@@ -234,6 +232,7 @@ Drafts Version: 35
 - Eight - ⇧⌥2
 - Nine - ⇧⌥3
 - Ten - ⇧⌥4
+- Clear Clipboard - ⌥⇥
 - Copy as Rich Text - ⌃⌥C
 - Share as File: Markdown - ⇧⌃S
 - Push Draft to GitHub Repo - ⇧⌃G
