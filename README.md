@@ -18,21 +18,23 @@ Howdy!
 - [Windows Iowa | Drafts Directory](https://actions.getdrafts.com/t/1kY)
 
 ## Unlisted Drafts Directory Links
+### Actions
+- [Clear Clipboard](https://actions.getdrafts.com/a/1vP)
+
 ### Action Groups
 - [The Psalms Action Group](https://actions.getdrafts.com/g/1tq)
 - [Markdown Action Group](https://actions.getdrafts.com/g/1ui)
 - [🅒🅞🅡🅔 Action Group](https://actions.getdrafts.com/g/1ud)
 - [Social Web Action Group](https://actions.getdrafts.com/g/1uf)
 - [TEST Action Group](https://actions.getdrafts.com/g/1ug)
+- [Dev Action Group](https://actions.getdrafts.com/g/1vQ)
 - [Automation Action Group](https://actions.getdrafts.com/g/1uh)
 - [Switcher Action Group](https://actions.getdrafts.com/g/1ue)
 - [KEYS Action Group](https://actions.getdrafts.com/g/1us)
 - [GitHub Action Group](https://actions.getdrafts.com/g/1vO)
 
 ### Workspaces
-- [Templates Workspace](https://actions.getdrafts.com/w/1vN)
-
-## Themes
+- [Templates Workspace](https://actions.getdrafts.com/w/1vN)## Themes
 
 ### Greyhound
 
@@ -98,48 +100,93 @@ Drafts Version: 35
 
 [Gist - I hope to properly maintain a public list of my keyboard shortcuts in Drafts.](https://gist.github.com/extratone/2e54243a2123ccfa6a37c6e8cc1057e2)
 
-## Internal
-
-| Action                            | Command |
-|:---------------------------------:|:-------:|
-| Markdown Header                   | ⌃⌘H     |
-| Markdown Bold                     | ⌘B      |
-| Code Block                        | ⌃⌘C     |
-| Preview                           | ⌥⌘P     |
-| Markdown Emphasis (*)             | ⌘I      |
-| Markdown List                     | ⌃L      |
-| Markdown Link                     | ⌘K      |
-| Replace URLs by MD links          | ⇧⌘U     |
-| Markdown Footnote (Variation)     | ⌃F      |
-| Send to Saved Messages (Telegram) | ⌃G      |
-| Strikethrough                     | ⌃S      |
-| Keyboard Shortcuts Export         | ⇧⌃K     |
-| Timestamp                         | ⇧⌃T     |
-| Selection Word Count              | ⌃W      |
-| Toggle Last                       | ⌃⇥      |
-| Drafts Link                       | ⇧⌃C     |
-| Draft Info                        | ⌃I      |
-| Dark/Light Toggle                 | ⇧⌃L     |
-| Typewriter Toggle                 | ⌥T      |
-| Load The Psalms                   | ⌥.      |
-| Preview MMD                       | ⌥⌘/     |
-| Copy                              | ⌃C      |
-| Clipboard…                        | ⌥C      |
-| Find                              | ⇧⌥F     |
-| Tasks                             | ⌃T      |
-| Copy Tags                         | ⌃⌥T     |
-| Written Workspace                 | ⌘2      |
-| Documentation Workspace           | ⌘3      |
-| Hole Workspace                    | ⌘9      |
-| Copy as Rich Text                 | ⌃⌥C     |
-| Share as File: Markdown           | ⇧⌃S     |
-| Push Draft to GitHub Repo         | ⇧⌃G     |
-| Trash Note                        | ⌃-      |
-| Search Actions                    | ⌘/      |
-| Duplicate Draft and Load          | ⌃D      |
-| Prime Preview MMD                 | ⌃P      |
-| Preview with Marked2              | ⇧⌃⌥P    |
-| Replace with Synonym              | ⌃⌥S     |
+## Drafts Keyboard Shortcuts (iOS Export)
+`02122022-185802`
+- Markdown Capture Selected URL - ⌥O
+- Copy Body - ⇧⌃⌥C
+- Copy Draft Link as MD link - ⇧⌃C
+- Tot7 Draft Link as MD link - ⇧⌃E
+- Append Selection to 7th Tot Dot - ⌃⌥7
+- Append to 7th Tot Dot - ⌥7
+- Prepend to 7th Tot Dot - ⇧⌥7
+- Tweetbot Selection - ⌥P
+- DraftsBot - ⇧⌃⌥P
+- Post Selection to Mastodon - ⇧⌥P
+- DraftsImage - ⇧⌃I
+- Telegram Extratone with Rich Text Copied - ⇧⌥G
+- Send to Saved Messages (Telegram) (copy) - ⌃G
+- Drakesville - ⌃M
+- SMS Drakesville - ⌥M
+- Strikethrough - ⌃S
+- Text to Gladys - ⌥G
+- Insert DavodTime™  timestamp. - ⇧⌃T
+- Simplenote - ⇧⌃W
+- Export Psalms Notes - ⇧⌃⌥E
+- Export Psalms Drafts - ⇧⌃⌥S
+- GitHub Issue - ⌃⌥I
+- Keyboard Shortcuts Export - ⇧⌃K
+- Selection Word Count - ⌃W
+- Draft Info - ⌃I
+- Dark/Light Toggle - ⇧⌃L
+- Load The Psalms - ⌥.
+- Preview MMD - ⌥⌘/
+- TAD-Toggle Last Two Modified Drafts - ⇧⇥
+- Zalgos - ⇧⌃Z
+- Text Modifier… - ⇧⌥t
+- Store Page URLs - ⇧⌥S
+- Save to Written folder as .md - ⌥⌘S
+- Markdown Header (#) - ⌃⌘H
+- Markdown Bold (**) - ⌘B
+- Markdown Quotation (>) - ⌃Q
+- Code Block (```) - ⌃⌘C
+- Markdown Emphasis (*) - ⌘I
+- Markdown List - ⌃L
+- Markdown Link - ⌘K
+- Replace URLs by MD links - ⇧⌘U
+- Markdown Footnote (Variation) - ⌃F
+- Copy - ⌃C
+- Print - ⌃⌥P
+- New Draft with Template - ⇧⌘N
+- Clipboard… - ⌥C
+- Find - ⇧⌥F
+- Tasks - ⌃T
+- Copy Tags - ⌃⌥T
+- Save Version - ⇧⌘S
+- Copy Draft Open Link - ⇧⌘E
+- Open URL - ⇧⌃O
+- Open NeoCities Workspace - ⇧⌃N
+- Format JavaScript - ⌥⌘F
+- Drafts 5 JavaScript API list - ⌘D
+- Refresh TextExpander Snippets - ⇧⌘R
+- TAD-Clear Clipboard - ⌥⇥
+- TAD-Trash Note - ⌃-
+- TAD-Load Previous Workspace - ⇧⌥⌘⇥
+- TAD-Load Next Workspace - ⌥⌘⇥
+- TAD-Search Actions - ⌘/
+- TAD-Duplicate Draft and Load - ⌃D
+- TAD-Prime Preview MMD - ⌃P
+- TAD-Prime Preview GFM - ⌥⌘P
+- TAD-Preview with Marked2 - ⇧⌃P
+- TAD-Update TextExpander - ⌥⌘R
+- TAD-Replace with Synonym - ⌃⌥S
+- Written Workspace - ⌘2
+- Documentation Workspace - ⌘3
+- Hole Workspace - ⌘9
+- Instrument Panel - ⌥0
+- Testing - ⌥9
+- Current Work Draft - ⌥1
+- Current Work Notes - ⌥2
+- Three - ⌥3
+- Four - ⌥4
+- Five - ⌥5
+- Six - ⌥6
+- Seven - ⇧⌥1
+- Eight - ⇧⌥2
+- Nine - ⇧⌥3
+- Ten - ⇧⌥4
+- Copy as Rich Text - ⌃⌥C
+- Share as File: Markdown - ⇧⌃S
+- Push Draft to GitHub Repo - ⇧⌃G
 
 ## External 
 
