@@ -19,9 +19,11 @@ Howdy!
 
 ## Unlisted Drafts Directory Links
 ### Actions
+
 - [Clear Clipboard](https://actions.getdrafts.com/a/1vP)
 
 ### Action Groups
+
 - [The Psalms Action Group](https://actions.getdrafts.com/g/1tq)
 - [Markdown Action Group](https://actions.getdrafts.com/g/1ui)
 - [🅒🅞🅡🅔 Action Group](https://actions.getdrafts.com/g/1ud)
@@ -34,7 +36,22 @@ Howdy!
 - [GitHub Action Group](https://actions.getdrafts.com/g/1vO)
 
 ### Workspaces
-- [Templates Workspace](https://actions.getdrafts.com/w/1vN)## Themes
+
+- [Hole Workspace](https://actions.getdrafts.com/w/1vR)
+- [Written Workspace](https://actions.getdrafts.com/w/1vS)
+- [Documentation Workspace](https://actions.getdrafts.com/w/1vT)
+- [Local Workspace](https://actions.getdrafts.com/w/1vU)
+- [NeoCities Workspace](https://actions.getdrafts.com/w/1vV)
+- [Dev Workspace](https://actions.getdrafts.com/w/1vW)
+- [Library Workspace](https://actions.getdrafts.com/w/1vX)
+- [KEYS Workspace](https://actions.getdrafts.com/w/1vY)
+- [Correspondence Workspace](https://actions.getdrafts.com/w/1vZ)
+- [Social Workspace](https://actions.getdrafts.com/w/1v1)
+- [Small Workspace](https://actions.getdrafts.com/w/1v2)
+- [Publish Workspace](https://actions.getdrafts.com/w/1v3)
+- [Templates Workspace](https://actions.getdrafts.com/w/1vN)
+
+## Themes
 
 ### Greyhound
 
