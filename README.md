@@ -22,8 +22,9 @@ Please feel free to use/distribute anything in here - including original content
 
 ## Written Work
 
-- [Automating Write.as Posts on macOS | The Psalms](https://bilge.world/automating-writeas-posts)
-- [Zalgo Text in a Keyboard Shortcut | The Psalms](https://bilge.world/drafts-zalgo-action)
+- [**Using Drafts with NeoCities**](https://bilge.world/using-drafts-with-neocities)
+- [Automating Write.as Posts on macOS](https://bilge.world/automating-writeas-posts)
+- [Zalgo Text in a Keyboard Shortcut](https://bilge.world/drafts-zalgo-action)
 
 ## Siri Shortcuts
 
