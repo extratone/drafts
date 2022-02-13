@@ -50,6 +50,8 @@ Please feel free to use/distribute anything in here - including original content
 ### Actions
 
 - [Clear Clipboard](https://actions.getdrafts.com/a/1vP)
+- [Open URL](https://actions.getdrafts.com/a/1v4)
+- [Copy Drafts Link as MD link](https://actions.getdrafts.com/a/1v5)
 
 ### Action Groups
 
