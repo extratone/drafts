@@ -20,7 +20,18 @@ Please feel free to use/distribute anything in here - including original content
 * [Discord](https://discord.gg/0b9KQUKP858b0iZF)
 * [*Everywhere*](https://raindrop.io/davidblue/social-directory-21059174)...
 
-⇨[David Blue on the Drafts Action Directory](https://actions.getdrafts.com/search?utf8=%E2%9C%93&q=David+Blue)
+## Written Work
+
+- [Automating Write.as Posts on macOS | The Psalms](https://bilge.world/automating-writeas-posts)
+- [Zalgo Text in a Keyboard Shortcut | The Psalms](https://bilge.world/drafts-zalgo-action)
+
+## Siri Shortcuts
+
+- [RoutineHub • Capture Web Page to Drafts](https://routinehub.co/shortcut/8994/)
+- [RoutineHub • Overcast Show Notes ⇨ Drafts](https://routinehub.co/shortcut/8944/)
+- [RoutineHub • Safari Tabs List to Drafts](https://routinehub.co/shortcut/11024/)
+
+⇨[**David Blue on the Drafts Action Directory**](https://actions.getdrafts.com/search?utf8=%E2%9C%93&q=David+Blue)
 
 ## David Blue’s Drafts Action Directory Contributions
 
