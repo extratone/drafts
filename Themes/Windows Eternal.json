@@ -503,63 +503,43 @@
     },
     "color.blue": {
       "name": "Blue color",
-      "settings": {
-
-      }
+      "settings": {}
     },
     "color.indigo": {
       "name": "Blue color",
-      "settings": {
-
-      }
+      "settings": {}
     },
     "color.purple": {
       "name": "Purple color",
-      "settings": {
-
-      }
+      "settings": {}
     },
     "color.pink": {
       "name": "Pink color",
-      "settings": {
-
-      }
+      "settings": {}
     },
     "color.red": {
       "name": "Red color",
-      "settings": {
-
-      }
+      "settings": {}
     },
     "color.orange": {
       "name": "Orange color",
-      "settings": {
-
-      }
+      "settings": {}
     },
     "color.yellow": {
       "name": "Yellow color",
-      "settings": {
-
-      }
+      "settings": {}
     },
     "color.green": {
       "name": "Green color",
-      "settings": {
-
-      }
+      "settings": {}
     },
     "color.black": {
       "name": "Black color",
-      "settings": {
-
-      }
+      "settings": {}
     },
     "color.white": {
       "name": "White color",
-      "settings": {
-
-      }
+      "settings": {}
     },
     "color.gray": {
       "name": "Gray color",
@@ -623,8 +603,8 @@
       "tagRemoveHighlight": "#72d5fd",
       "border": "#327c7d",
       "messageForeground": "#cecece",
-      "messageSuccess": "#3fc33b",
-      "messageInfo": "#cecece",
+      "messageSuccess": "#327c7d",
+      "messageInfo": "#327c7d",
       "messageWarning": "#ffe438",
       "messageError": "#fe3824",
       "tintGray": "#808080",
@@ -637,7 +617,7 @@
       "tintBlue": "#0874a0",
       "tintViolet": "#1c0021",
       "widgetBackground": "#bfc0c1",
-      "widgetForeground": "#327c7d",
+      "widgetForeground": "#00006b",
       "widgetForegroundAlternate": "#000da6",
       "widgetBackgroundAlternate": "#cecece"
     }
