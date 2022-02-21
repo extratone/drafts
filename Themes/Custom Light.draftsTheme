@@ -1,0 +1,827 @@
+{
+  "name": "Custom Light",
+  "description": "Modified Drafts default light theme",
+  "author": "Sl's Repository Ltd",
+  "isDark": false,
+  "scopes": {
+    "text.normal": {
+      "name": "Normal Text",
+      "settings": {
+        "foreground": "foreground",
+        "fontStyle": "normal"
+      }
+    },
+    "text.normal.large": {
+      "name": "Large Text",
+      "settings": {
+        "foreground": "foreground",
+        "fontSize": "large"
+      }
+    },
+    "text.normal.extraLarge": {
+      "name": "Extra Large Text",
+      "settings": {
+        "foreground": "foreground",
+        "fontSize": "extraLarge"
+      }
+    },
+    "text.normal.small": {
+      "name": "Small Text",
+      "settings": {
+        "foreground": "foreground",
+        "fontSize": "small"
+      }
+    },
+    "text.normal.extraSmall": {
+      "name": "Extra Small Text",
+      "settings": {
+        "foreground": "foreground",
+        "fontSize": "extraSmall"
+      }
+    },
+    "text.header": {
+      "name": "Header",
+      "settings": {
+        "fontWeight": "bold"
+      }
+    },
+    "text.heading": {
+      "name": "Heading",
+      "settings": {
+        "fontWeight": "bold"
+      }
+    },
+    "text.heading01": {
+      "name": "Level 1 Heading",
+      "settings": {
+        "fontSize": "extraLarge",
+        "fontWeight": "bold",
+        "foreground": "heading"
+      }
+    },
+    "text.heading02": {
+      "name": "Level 2 Heading",
+      "settings": {
+        "fontSize": "large",
+        "fontWeight": "bold",
+        "foreground": "heading"
+      }
+    },
+    "text.heading03": {
+      "name": "Level 3 Heading",
+      "settings": {
+        "fontSize": "normal",
+        "fontWeight": "bold",
+        "foreground": "heading"
+      }
+    },
+    "text.heading04": {
+      "name": "Level 4 Heading",
+      "settings": {
+        "fontSize": "normal",
+        "fontWeight": "bold",
+        "foreground": "heading"
+      }
+    },
+    "text.heading05": {
+      "name": "Level 5 Heading",
+      "settings": {
+        "fontSize": "normal",
+        "fontWeight": "bold",
+        "foreground": "heading"
+      }
+    },
+    "text.heading06": {
+      "name": "Level 6 Heading",
+      "settings": {
+        "fontSize": "normal",
+        "fontWeight": "bold",
+        "foreground": "heading"
+      }
+    },
+    "text.bold": {
+      "name": "Bold",
+      "settings": {
+        "fontWeight": "bold"
+      }
+    },
+    "text.bold.large": {
+      "name": "Large Bold",
+      "settings": {
+        "fontWeight": "bold",
+        "fontSize": "large"
+      }
+    },
+    "text.bold.extraLarge": {
+      "name": "Extra Large Bold",
+      "settings": {
+        "fontWeight": "bold",
+        "fontSize": "extraLarge"
+      }
+    },
+    "text.bold.small": {
+      "name": "Small Bold",
+      "settings": {
+        "fontWeight": "bold",
+        "fontSize": "small"
+      }
+    },
+    "text.bold.extraSmall": {
+      "name": "Extra Small Bold",
+      "settings": {
+        "fontWeight": "bold",
+        "fontSize": "extraSmall"
+      }
+    },
+    "text.italic": {
+      "name": "Italic",
+      "settings": {
+        "fontStyle": "italic"
+      }
+    },
+    "text.italic.large": {
+      "name": "Large Italic",
+      "settings": {
+        "fontStyle": "italic",
+        "fontSize": "large"
+      }
+    },
+    "text.italic.extraLarge": {
+      "name": "Extra Large Italic",
+      "settings": {
+        "fontStyle": "italic",
+        "fontSize": "extraLarge"
+      }
+    },
+    "text.italic.small": {
+      "name": "Small Italic",
+      "settings": {
+        "fontStyle": "italic",
+        "fontSize": "small"
+      }
+    },
+    "text.italic.extraSmall": {
+      "name": "Extra Small Italic",
+      "settings": {
+        "fontStyle": "italic",
+        "fontSize": "extraSmall"
+      }
+    },
+    "text.bolditalic": {
+      "name": "Bold, Italic",
+      "settings": {
+        "fontStyle": "italic",
+        "fontWeight": "bold"
+      }
+    },
+    "text.bolditalic.large": {
+      "name": "Large Bold, Italic",
+      "settings": {
+        "fontStyle": "italic",
+        "fontWeight": "bold",
+        "fontSize": "large"
+      }
+    },
+    "text.bolditalic.extraLarge": {
+      "name": "Extra Large Bold, Italic",
+      "settings": {
+        "fontStyle": "italic",
+        "fontWeight": "bold",
+        "fontSize": "extraLarge"
+      }
+    },
+    "text.bolditalic.small": {
+      "name": "Small Bold, Italic",
+      "settings": {
+        "fontStyle": "italic",
+        "fontWeight": "bold",
+        "fontSize": "small"
+      }
+    },
+    "text.bolditalic.extraSmall": {
+      "name": "Extra Small Bold, Italic",
+      "settings": {
+        "fontStyle": "italic",
+        "fontWeight": "bold",
+        "fontSize": "extraSmall"
+      }
+    },
+    "text.monospace": {
+      "name": "Monospace",
+      "settings": {
+        "fontStyle": "monospace"
+      }
+    },
+    "text.monospace.large": {
+      "name": "Large Monospace",
+      "settings": {
+        "fontStyle": "monospace",
+        "fontSize": "large"
+      }
+    },
+    "text.monospace.extraLarge": {
+      "name": "Extra Large Monospace",
+      "settings": {
+        "fontStyle": "monospace",
+        "fontSize": "extraLarge"
+      }
+    },
+    "text.monospace.small": {
+      "name": "Small Monospace",
+      "settings": {
+        "fontStyle": "monospace",
+        "fontSize": "small"
+      }
+    },
+    "text.monospace.extraSmall": {
+      "name": "Extra Small Monospace",
+      "settings": {
+        "fontStyle": "monospace",
+        "fontSize": "extraSmall"
+      }
+    },
+    "text.monospace.bold": {
+      "name": "Monospace Bold",
+      "settings": {
+        "fontStyle": "monospace",
+        "fontWeight": "bold"
+      }
+    },
+    "text.monospace.bold.large": {
+      "name": "Large Monospace Bold",
+      "settings": {
+        "fontStyle": "monospace",
+        "fontWeight": "bold",
+        "fontSize": "large"
+      }
+    },
+    "text.monospace.bold.extraLarge": {
+      "name": "Extra Large Monospace Bold",
+      "settings": {
+        "fontStyle": "monospace",
+        "fontWeight": "bold",
+        "fontSize": "extraLarge"
+      }
+    },
+    "text.monospace.bold.small": {
+      "name": "Small Monospace Bold",
+      "settings": {
+        "fontStyle": "monospace",
+        "fontWeight": "bold",
+        "fontSize": "small"
+      }
+    },
+    "text.monospace.bold.extraSmall": {
+      "name": "Extra Small Monospace Bold",
+      "settings": {
+        "fontStyle": "monospace",
+        "fontWeight": "bold",
+        "fontSize": "small"
+      }
+    },
+    "text.monospace.italic": {
+      "name": "Monospace Italic",
+      "settings": {
+        "fontStyle": "monospace",
+        "foreground": "foreground"
+      }
+    },
+    "text.monospace.italic.large": {
+      "name": "Large Monospace Italic",
+      "settings": {
+        "fontStyle": "monospace,italic",
+        "fontSize": "large"
+      }
+    },
+    "text.monospace.italic.extraLarge": {
+      "name": "Extra Large Monospace Italic",
+      "settings": {
+        "fontStyle": "monospace,italic",
+        "fontSize": "extraLarge"
+      }
+    },
+    "text.monospace.italic.small": {
+      "name": "Small Monospace Italic",
+      "settings": {
+        "fontStyle": "monospace,italic",
+        "fontSize": "small"
+      }
+    },
+    "text.monospace.italic.extraSmall": {
+      "name": "Extra Small Monospace Italic",
+      "settings": {
+        "fontStyle": "monospace,italic",
+        "fontSize": "extraSmall"
+      }
+    },
+    "text.underline": {
+      "name": "Underline",
+      "settings": {
+        "fontStyle": "underline"
+      }
+    },
+    "text.strikethrough": {
+      "name": "Strikethrough",
+      "settings": {
+        "fontStyle": "strikethrough",
+        "foreground": "strikethrough"
+      }
+    },
+    "text.invisibles": {
+      "name": "Invisible characters",
+      "settings": {
+        "foreground": "invisibles"
+      }
+    },
+    "text.quotation": {
+      "name": "Quotation block",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "blockquote",
+        "background": "codeBackground"
+      }
+    },
+    "text.list": {
+      "name": "List",
+      "settings": {
+        "foreground": "list",
+        "background": "background",
+        "fontStyle": "normal"
+      }
+    },
+    "text.link": {
+      "name": "Link",
+      "settings": {
+        "foreground": "link"
+      }
+    },
+    "text.url": {
+      "name": "URL",
+      "settings": {
+        "foreground": "markup"
+      }
+    },
+    "text.linkModeLink": {
+      "name": "Link Mode Link",
+      "settings": {
+        "foreground": "link",
+        "fontStyle": "underline"
+      }
+    },
+    "text.activeLink": {
+      "name": "Link which is tap/clickable",
+      "settings": {
+        "foreground": "activeLink"
+      }
+    },
+    "markup": {
+      "name": "Markup",
+      "settings": {
+        "foreground": "markup"
+      }
+    },
+    "markup.heading": {
+      "name": "Heading Markup",
+      "settings": {
+        "fontWeight": "bold",
+        "foreground": "headingMarkup"
+      }
+    },
+    "markup.heading01": {
+      "name": "Level 1 Heading Markup",
+      "settings": {
+        "fontSize": "extraLarge",
+        "fontWeight": "bold",
+        "foreground": "headingMarkup"
+      }
+    },
+    "markup.heading02": {
+      "name": "Level 2 Heading Markup",
+      "settings": {
+        "fontSize": "large",
+        "fontWeight": "bold",
+        "foreground": "headingMarkup"
+      }
+    },
+    "markup.heading03": {
+      "name": "Level 3 Heading Markup",
+      "settings": {
+        "fontSize": "regular",
+        "fontWeight": "bold",
+        "foreground": "headingMarkup"
+      }
+    },
+    "markup.heading04": {
+      "name": "Level 4 Heading Markup",
+      "settings": {
+        "fontSize": "regular",
+        "fontWeight": "bold",
+        "foreground": "headingMarkup"
+      }
+    },
+    "markup.heading05": {
+      "name": "Level 5 Heading Markup",
+      "settings": {
+        "fontSize": "regular",
+        "fontWeight": "bold",
+        "foreground": "headingMarkup"
+      }
+    },
+    "markup.heading06": {
+      "name": "Level 6 Heading Markup",
+      "settings": {
+        "fontSize": "regular",
+        "fontWeight": "bold",
+        "foreground": "headingMarkup"
+      }
+    },
+    "markup.link": {
+      "name": "Link Markup",
+      "settings": {
+        "foreground": "markup"
+      }
+    },
+    "markup.list": {
+      "name": "List Markup",
+      "settings": {
+        "foreground": "markup"
+      }
+    },
+    "markup.quotation": {
+      "name": "Quotation Markup",
+      "settings": {
+        "foreground": "blockquote",
+        "background": "codeBackground"
+      }
+    },
+    "markup.code": {
+      "name": "Code Markup",
+      "settings": {
+        "fontStyle": "monospace",
+        "foreground": "code",
+        "background": "codeBackground"
+      }
+    },
+    "markup.addition": {
+      "name": "Addition",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "addition"
+      }
+    },
+    "markup.deletion": {
+      "name": "Deletion",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "deletion"
+      }
+    },
+    "markup.substitution": {
+      "name": "Substitution",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "substitution"
+      }
+    },
+    "markup.highlight": {
+      "name": "Highlight",
+      "settings": {
+        "background": "highlight",
+        "foreground": "#FFFFFF"
+      }
+    },
+    "code.comment": {
+      "name": "Comment",
+      "settings": {
+        "foreground": "comment"
+      }
+    },
+    "code.inline": {
+      "name": "Inline code",
+      "settings": {
+        "fontStyle": "monospace",
+        "foreground": "code",
+        "background": "codeBackground"
+      }
+    },
+    "code.block": {
+      "name": "Code block",
+      "settings": {
+        "fontStyle": "monospace",
+        "foreground": "code",
+        "background": "codeBackground"
+      }
+    },
+    "code.literal": {
+      "name": "Code block",
+      "settings": {
+        "foreground": "literal"
+      }
+    },
+    "code.keyword": {
+      "name": "Keyword",
+      "settings": {
+        "foreground": "keyword"
+      }
+    },
+    "code.operator": {
+      "name": "Operator",
+      "settings": {
+        "foreground": "markup"
+      }
+    },
+    "code.punctuation": {
+      "name": "Operator",
+      "settings": {
+        "foreground": "comment"
+      }
+    },
+    "color.accent01": {
+      "name": "First accent color level",
+      "settings": {
+        "foreground": "accent01"
+      }
+    },
+    "color.accent02": {
+      "name": "Second accent color level",
+      "settings": {
+        "foreground": "accent02"
+      }
+    },
+    "color.accent03": {
+      "name": "Third accent color level",
+      "settings": {
+        "foreground": "accent03"
+      }
+    },
+    "color.accent04": {
+      "name": "Fourth accent color level",
+      "settings": {
+        "foreground": "accent04"
+      }
+    },
+    "color.accent05": {
+      "name": "Fifth accent color level",
+      "settings": {
+        "foreground": "accent05"
+      }
+    },
+    "color.accent06": {
+      "name": "Sixth accent color level",
+      "settings": {
+        "foreground": "accent06"
+      }
+    },
+    "color.blue": {
+      "name": "Blue color",
+      "settings": {
+        "foreground": "#007BFF"
+      }
+    },
+    "color.indigo": {
+      "name": "Indigo color",
+      "settings": {
+        "foreground": "#6C00FA"
+      }
+    },
+    "color.purple": {
+      "name": "Purple color",
+      "settings": {
+        "foreground": "#A550A6"
+      }
+    },
+    "color.pink": {
+      "name": "Pink color",
+      "settings": {
+        "foreground": "#F6509E"
+      }
+    },
+    "color.red": {
+      "name": "Red color",
+      "settings": {
+        "foreground": "#FF5157"
+      }
+    },
+    "color.orange": {
+      "name": "Orange color",
+      "settings": {
+        "foreground": "#F7821C"
+      }
+    },
+    "color.yellow": {
+      "name": "Yellow color",
+      "settings": {
+        "foreground": "#FFC601"
+      }
+    },
+    "color.green": {
+      "name": "Green color",
+      "settings": {
+        "foreground": "#61B946"
+      }
+    },
+    "color.black": {
+      "name": "Black color",
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    "color.white": {
+      "name": "White color",
+      "settings": {
+        "foreground": "#FFFFFF"
+      }
+    },
+    "color.gray": {
+      "name": "Gray color",
+      "settings": {
+        "foreground": "#8C8C8C"
+      }
+    },
+
+    "text.multimarkdown.hr": {
+      "name": "Horizontal Rule",
+      "settings": {
+        "foreground": "hr"
+      }
+    },
+    "text.multimarkdown.metadata": {
+      "name": "Metadata",
+      "settings": {
+        "foreground": "metadata",
+        "background": "background",
+        "fontStyle": "normal"
+      }
+    },
+    "text.multimarkdown.definitionList": {
+      "name": "Definition List",
+      "settings": {
+        "foreground": "definitionList",
+        "background": "background",
+        "fontStyle": "normal"
+      }
+    },
+    "text.multimarkdown.abbreviation": {
+      "name": "Abbreviation",
+      "settings": {
+        "foreground": "abbreviation"
+      }
+    },
+    "text.multimarkdown.citation": {
+      "name": "Citation",
+      "settings": {
+        "foreground": "citation"
+      }
+    },
+    "text.multimarkdown.glossary": {
+      "name": "Glossary",
+      "settings": {
+        "foreground": "glossary"
+      }
+    },
+    "text.multimarkdown.image": {
+      "name": "Image",
+      "settings": {
+        "foreground": "image"
+      }
+    },
+    "text.multimarkdown.variable": {
+      "name": "Variable",
+      "settings": {
+        "foreground": "variable"
+      }
+    },
+    "text.multimarkdown.footnote": {
+      "name": "Footnote",
+      "settings": {
+        "foreground": "footnote"
+      }
+    },
+    "text.multimarkdown.table": {
+      "name": "Table",
+      "settings": {
+        "foreground": "table"
+      }
+    },
+    "text.multimarkdown.table.header": {
+      "name": "Table Header",
+      "settings": {
+        "foreground": "table",
+        "fontWeight": "bold"
+      }
+    },
+    "text.multimarkdown.math": {
+      "name": "Math",
+      "settings": {
+        "foreground": "math"
+      }
+    },
+    "text.multimarkdown.superscript": {
+      "name": "Superscript",
+      "settings": {
+        "foreground": "superscript"
+      }
+    },
+    "text.multimarkdown.subscript": {
+      "name": "Subscript",
+      "settings": {
+        "foreground": "subscript"
+      }
+    },
+    "text.multimarkdown.toc": {
+      "name": "TOC",
+      "settings": {
+        "foreground": "toc"
+      }
+    }
+  },
+  "colors": {
+    "editor": {
+      "foreground": "#000000",
+      "background": "#FFFFFF",
+      "header": "#000000",
+      "heading": "#000000",
+      "headingMarkup": "#CCCCCC",
+      "strikethrough": "#444444",
+      "comment": "#2F5DA8",
+      "link": "#0074B8",
+      "activeLink": "#7586E4",
+      "code": "#000000",
+      "codeBackground": "#F1F1F1",
+      "literal": "#32812B",
+      "keyword": "#813631",
+      "markup": "#CCCCCC",
+      "addition": "#48BE66",
+      "deletion": "#E6424B",
+      "substitution": "#67878E",
+      "highlight": "#DBC81E",
+      "invisibles": "#CCCCCC",
+      "accent01": "#00D6E7",
+      "accent02": "#6AE4B7",
+      "accent03": "#6BE471",
+      "accent04": "#E4B56A",
+      "accent05": "#E4725B",
+      "accent06": "#E46288",
+
+      "blockquote": "#666666",
+      "hr": "#8B86C9",
+      "list": "#3E3E3E",
+      "metadata": "#68778E",
+      "definitionList": "#C69375",
+      "abbreviation": "#F1B38E",
+      "citation": "#2AA198",
+      "glossary": "#9D755D",
+      "image": "#8874E0",
+      "variable": "#CC74E0",
+      "footnote": "#004D7D",
+      "table": "#759EC6",
+      "math": "#1D54AD",
+      "superscript": "#2567D1",
+      "subscript": "#344F7C",
+      "toc": "#9E4B03"
+    },
+    "interface": {
+      "tint": "#004D7D",
+      "tintAlternate": "#255552",
+      "textCaret": "#004D7D",
+      "textSelection": "#004D7D",
+      "textHighlight": "#F7F7F7",
+      "textBackground": "#FFFFFF",
+      "textForeground": "#000000",
+      "background": "#FFFFFF",
+      "foreground": "#000000",
+      "backgroundCollection": "#F6F6F6",
+      "promptBackground": "#F2F2F2",
+      "promptButtonBackground": "#004D7D",
+      "promptButtonForeground": "#FFFFFF",
+      "promptButtonDestructiveBackground": "#C42429",
+      "promptButtonDestructiveForeground": "#FFFFFF",
+      "actionBarBackground": "#DEE2EA",
+      "actionBarKeyBackground": "#EFEFEF",
+      "actionBarKeyForeground": "#666666",
+      "tagForeground": "#0946a1",
+      "tagBackground": "#F6F6F6",
+      "tagAddHighlight": "#E9FFF4",
+      "tagRemoveHighlight": "#FFD5E1",
+      "messageForeground": "#FFFFFF",
+      "messageSuccess": "#83D58B",
+      "messageInfo": "#A4ACB5",
+      "messageWarning": "#F7EF76",
+      "messageError": "#EE6462",
+      "border": "#c2c2c2",
+      "caption": "#666666",
+      "flagged": "#FF8400",
+      "move": "#42B8FF",
+      "delete": "#CA2E26",
+      "tintGray": "#808080",
+      "tintRed": "#C42429",
+      "tintPink": "#F64F9D",
+      "tintOrange": "#E59A28",
+      "tintYellow": "#E8D21E",
+      "tintGreen": "#46C138",
+      "tintIndigo": "#38CAD3",
+      "tintBlue": "#0874A0",
+      "tintViolet": "#734A8D"
+    }
+  }
+}
