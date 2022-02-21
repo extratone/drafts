@@ -1,0 +1,68 @@
+{
+  "name": "Twitter Workspace",
+  "description": "A syntax specifically for the Twitter Workspace. Based on Tim Nahumcks syntax for Tweets.",
+  "author": "Chris Grieser",
+  "sampleText": "This sentence contains #hashtags and @mentions. Also an URL: https://chris-grieser.de/ and... \n==\n ... a seperator for Tweet Storms.",
+  "scopeName": "text.rainbow",
+  "listCompletionDefinitions": [
+
+  ],
+  "rangeExtensionType": {
+    "default": "lineExtended"
+  },
+  "listCompletion": "none",
+  "fileExtensions": [
+
+  ],
+  "patterns": [
+    {
+      "match": "(\\B#\\w[\\w-]+)",
+      "exclusive": true,
+      "comment": "Match #hashtags",
+      "captures": {
+        "1": {
+          "scope": "color.purple"
+        }
+      }
+    },
+    {
+      "match": "(\\B@\\w[\\w-]+)",
+      "exclusive": true,
+      "comment": "Match @mentions",
+      "captures": {
+        "1": {
+          "scope": "text.bold, color.purple"
+        }
+      }
+    },
+    {
+      "match": "(\n==\n)",
+      "exclusive": true,
+      "comment": "Match the Tweet Storm Seperator '==' ",
+      "captures": {
+        "1": {
+          "scope": "text.bold, color.orange"
+        }
+      }
+    },
+    {
+      "match": "((https?):\\/\\/([\\w_-]+(?:(?:\\.[\\w_-]+)+))([\\w.,@?^=%&:\\/~+#-]*[\\w@?^=%&\\/~+#-])?)",
+      "exclusive": true,
+      "comment": "Match http:// and https:// links",
+      "captures": {
+        "1": {
+          "scope": "color.blue"
+        }
+      }
+    }
+  ],
+  "navigationPatterns": [
+
+  ],
+  "indentationPatterns": [
+
+  ],
+  "taskMarkDefinitions": [
+
+  ]
+}

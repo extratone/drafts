@@ -1,0 +1,151 @@
+{
+  "name": "JavaScript",
+  "description": "Basic JavaScript keyword and markup highlighting",
+  "sampleText": "// JavaScript Syntax\nconst n = 100;\nlet s = \"string value\";\n\nif (n < 1000) {\n\tconsole.log(\"hello\");\n}",
+  "author": "Agile Tortoise, Inc.",
+  "scopeName": "text.javascript",
+  "rangeExtensionType": {
+    "default": "lookAround1000"
+  },
+  "listCompletionDefinitions": [
+    {
+      "comment": "",
+      "enabled": true,
+      "match": "(^[  |\\t]+)()(.*)",
+      "sequencePadding": "0",
+      "captures": {
+        "indent": "1",
+        "prefix": "2",
+        "line": "3",
+        "sequence": ""
+      },
+      "replacements": {
+      }
+    }
+  ],
+  "fileExtensions": [
+    "js",
+    "javascript",
+    "json"
+  ],
+  "patterns": [
+    {
+      "match": "(\\/\\*[\\S\\s]*?\\*\\/)",
+      "exclusive": true,
+      "comment": "Block comment",
+      "captures": {
+        "1": {
+          "scope": "code.comment"
+        }
+      }
+    },
+    {
+      "match": "(?:^|\\s)(\\/\\/.+?)$",
+      "exclusive": true,
+      "comment": "Inline comment",
+      "captures": {
+        "1": {
+          "scope": "code.comment"
+        }
+      }
+    },
+    {
+      "match": "([`])(?:(?!(?:\\\\|\\1)).|\\\\.|\\n)*\\1",
+      "exclusive": true,
+      "comment": "Template strings",
+      "captures": {
+        "0": {
+          "scope": "code.literal"
+        }
+      }
+    },
+    {
+      "match": "(['\"])(?:(?!(?:\\\\|\\1)).|\\\\.)*\\1",
+      "exclusive": true,
+      "comment": "String literal",
+      "captures": {
+        "0": {
+          "scope": "code.literal"
+        }
+      }
+    },
+    {
+      "match": "([\\/])(?:(?!(?:\\\\|\\1)).|\\\\.)*\\1([gmi]*)",
+      "exclusive": true,
+      "comment": "Regex literal",
+      "captures": {
+        "0": {
+          "scope": "code.literal"
+        }
+      }
+    },
+    {
+      "match": "\\b(true|false)\\b",
+      "exclusive": true,
+      "comment": "Boolean literal",
+      "captures": {
+        "0": {
+          "scope": "code.literal"
+        }
+      }
+    },
+    {
+      "match": "\\b-?(?:0x[\\da-f]+|\\d*\\.?\\d+(?:e[+-]?\\d+)?)\\b",
+      "exclusive": true,
+      "comment": "Number",
+      "captures": {
+        "0": {
+          "scope": "code.literal"
+        }
+      }
+    },
+    {
+      "match": "--?|\\+\\+?|!=?=?|<=?|>=?|==?=?|&&?|\\|\\|?|\\?|\\*|\\/|~|\\^|%",
+      "exclusive": true,
+      "comment": "Operator",
+      "captures": {
+        "0": {
+          "scope": "code.operator"
+        }
+      }
+    },
+    {
+      "match": "([{}\\[\\];(),.:])",
+      "exclusive": true,
+      "comment": "Punctuation",
+      "captures": {
+        "1": {
+          "scope": "code.punctuation"
+        }
+      }
+    },
+    {
+      "match": "(?<!\\w|\\$|\\%|\\@|>)(and|or|xor|for|do|while|foreach|as|return|die|exit|if|then|else|elseif|new|delete|try|throw|catch|finally|class|function|string|array|object|resource|var|bool|boolean|int|integer|float|double|real|string|array|global|const|let|static|public|private|protected|published|extends|switch|true|false|null|void|this|self|struct|char|signed|unsigned|short|long)(?!\\w|=\")",
+      "exclusive": true,
+      "comment": "Javascript keyword",
+      "captures": {
+        "1": {
+          "scope": "code.keyword"
+        }
+      }
+    }
+  ],
+  "navigationPatterns": [
+    {
+      "match": "^\\/\\/ ?#region ?(.*)$",
+      "comment": "Region comments",
+      "rangeCapture": "0",
+      "labelCapture": "1",
+      "prefix": "#region",
+      "level": 0
+    },
+    {
+      "match": "^function (.*) \\{",
+      "comment": "Function",
+      "rangeCapture": "0",
+      "labelCapture": "1",
+      "prefix": "function",
+      "level": 1
+    }
+  ]
+}

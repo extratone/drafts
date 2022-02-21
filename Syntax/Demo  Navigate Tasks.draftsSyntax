@@ -1,0 +1,109 @@
+{
+  "name": "Demo: Navigate Tasks",
+  "description": "Demonstrate use of navigation patterns. This syntax uses navigation patterns to display incomplete tasks in the draft, meaning any line that starts with `- [ ]`. Navigation does not need to be just for headings!\n\n**NOTE:** This is not a complete syntax. It is an example intended to demonstrate specific techniques in the creation of custom syntaxes. See [syntax format documentation](https://docs.getdrafts.com/extending/development) for details.",
+  "author": "Agile Tortoise, Inc.",
+  "sampleText": "# Navigate Tasks\n\n- [ ] Incomplete Task 1\n- [ ] Incomplete Task 2\n- [x] Complete Task (not in navigation)",
+  "scopeName": "text.rainbow",
+  "listCompletionDefinitions": [
+    {
+      "comment": "",
+      "enabled": true,
+      "match": "(^[ |\\t]*)((\\* \\[[ x]\\]|- \\[[ x]\\]|\\+ \\[[ x]\\]|\\*|-|\\+|>) )(.*)",
+      "captures": {
+        "indent": "1",
+        "prefix": "2",
+        "line": "4",
+        "sequence": ""
+      },
+      "replacements": {
+        "[x]": "[ ]",
+        "{x}": "{ }",
+        "{-}": "{ }"
+      }
+    },
+    {
+      "comment": "",
+      "enabled": true,
+      "match": "(^[ |\\t]*)((\\d+)\\. (\\[[ x]\\] )?)(.*)",
+      "sequencePadding": "0",
+      "captures": {
+        "indent": "1",
+        "prefix": "2",
+        "line": "5",
+        "sequence": "3"
+      },
+      "replacements": {
+        "[x]": "[ ]",
+        "{x}": "{ }",
+        "{-}": "{ }"
+      }
+    }
+  ],
+  "rangeExtensionType": {
+    "default": "lineExtended"
+  },
+  "listCompletion": "none",
+  "fileExtensions": [
+  ],
+  "patterns": [
+    {
+      "match": "([rR])([aA])([iI])([nN])([Bb])([oO])([wW])",
+      "exclusive": true,
+      "comment": "Match word \"rainbow\"",
+      "captures": {
+        "1": {
+          "scope": "text.bold,color.red"
+        },
+        "2": {
+          "scope": "text.bold,color.orange"
+        },
+        "3": {
+          "scope": "text.bold,color.yellow"
+        },
+        "4": {
+          "scope": "text.bold,color.green"
+        },
+        "5": {
+          "scope": "text.bold,color.blue"
+        },
+        "6": {
+          "scope": "text.bold,color.indigo"
+        },
+        "7": {
+          "scope": "text.bold,color.purple"
+        }
+      }
+    }
+  ],
+  "navigationPatterns": [
+    {
+      "match": "^([-\\*\\+] \\[ \\] )(.*)",
+      "comment": "Incomplete task line starting with `- [ ]`, `* [ ]` or `+ [ ]`",
+      "prefix": "[ ]",
+      "rangeCapture": "0",
+      "labelCapture": "2",
+      "identifierCapture": "2",
+      "level": 1
+    }
+  ],
+  "indentationPatterns": [
+  ],
+  "taskMarkDefinitions": [
+    {
+      "match": "(\\[[ xX]\\])",
+      "states": [
+        "[ ]",
+        "[x]"
+      ],
+      "enabled": true,
+      "rangeType": "task",
+      "captures": {
+        "state": "1",
+        "interactive": "1"
+      },
+      "scopes": {
+        "interactive": "text.monospace.bold"
+      }
+    }
+  ]
+}

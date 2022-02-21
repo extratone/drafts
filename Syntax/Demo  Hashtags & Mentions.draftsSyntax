@@ -1,0 +1,43 @@
+{
+  "name": "Demo: Hashtags & Mentions",
+  "description": "A simple demonstration syntax that highlights Twitter-style #hashtags and @mentions in the text.\n\n**NOTE:** This is not a complete syntax. It is an example intended to demonstrate specific techniques in the creation of custom syntaxes. See [syntax format documentation](https://docs.getdrafts.com/extending/development) for details.",
+  "author": "Agile Tortoise, Inc.",
+  "sampleText": "This sentence contains #hashtags and @mentions. #drafts #syntax-demo",
+  "scopeName": "text.rainbow",
+  "listCompletionDefinitions": [
+  ],
+  "rangeExtensionType": {
+    "default": "lineExtended"
+  },
+  "listCompletion": "none",
+  "fileExtensions": [
+  ],
+  "patterns": [
+    {
+      "match": "(\\B#\\w[\\w-]+)",
+      "exclusive": true,
+      "comment": "Match #hashtags",
+      "captures": {
+        "1": {
+          "scope": "text.bold,color.blue"
+        }
+      }
+    },
+    {
+      "match": "(\\B@\\w[\\w-]+)",
+      "exclusive": true,
+      "comment": "Match @mentions",
+      "captures": {
+        "1": {
+          "scope": "text.bold,color.green"
+        }
+      }
+    }
+  ],
+  "navigationPatterns": [
+  ],
+  "indentationPatterns": [
+  ],
+  "taskMarkDefinitions": [
+  ]
+}

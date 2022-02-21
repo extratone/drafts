@@ -1,0 +1,173 @@
+{
+  "name": "TaskPaper",
+  "author": "Agile Tortoise, Inc.",
+  "description": "TaskPaper plain text project/task markup syntax. For details, visit the [TaskPaper Reference](https://guide.taskpaper.com/reference/). Supports projects, tasks, tags, and allows tapping of lines to toggle @done status.",
+  "sampleText": "TaskPaper Syntax:\n- Item @tag-name\n- Completed item @done\nComment about item",
+  "scopeName": "text.taskpaper",
+  "rangeExtensionType": {
+    "default": "lineExtended",
+    "macOS": "fullText"
+  },
+  "listCompletionDefinitions": [
+    {
+      "comment": "",
+      "enabled": true,
+      "match": "(^[ |\\t]*)(- )(.*)",
+      "captures": {
+        "indent": "1",
+        "prefix": "2",
+        "line": "3",
+        "sequence": ""
+      },
+      "replacements": {
+      }
+    }
+  ],
+  "fileExtensions": [
+    "todo",
+    "taskpaper",
+    "tasks"
+  ],
+  "patterns": [
+    {
+      "match": "^(?![\\t ]*-)(.+)(:)(\\s?@.*)?$",
+      "scope": "task.project",
+      "exclusive": true,
+      "comment": "Projects",
+      "captures": {
+        "1": {
+          "scope": "text.heading01"
+        },
+        "2": {
+          "scope": "markup.heading"
+        },
+        "3": {
+          "scope": "markup.heading"
+        }
+      }
+    },
+    {
+      "match": "^(\\s*)(- ?)(.*)(\\({1}@done.*\\){1}|[^\\(]@done.*).*$",
+      "scope": "task.completed",
+      "exclusive": true,
+      "comment": "Completed tasks",
+      "captures": {
+        "1": {
+          "scope": "text.normal"
+        },
+        "2": {
+          "scope": "markup.list"
+        },
+        "3": {
+          "scope": "text.strikethrough"
+        },
+        "4": {
+          "scope": "markup"
+        }
+      }
+    },
+    {
+      "match": "^\\s*(- ?)(.*)$",
+      "scope": "task.task",
+      "exclusive": false,
+      "comment": "Task lines",
+      "captures": {
+        "1": {
+          "scope": "markup"
+        },
+        "2": {
+          "scope": "text.normal"
+        }
+      }
+    },
+    {
+      "match": "^(?![\\t ]*-)(.+)$",
+      "scope": "note",
+      "exclusive": false,
+      "comment": "Notes",
+      "captures": {
+        "1": {
+          "scope": "text.italic"
+        }
+      }
+    },
+    {
+      "match": "(@)([\\w-]*)(\\()([^\\)]*)(\\)?)",
+      "scope": "task.tag",
+      "exclusive": true,
+      "comment": "Tags with value",
+      "captures": {
+        "1": {
+          "scope": "markup"
+        },
+        "2": {
+          "scope": "markup"
+        },
+        "3": {
+          "scope": "markup"
+        },
+        "4": {
+          "scope": "markup"
+        },
+        "5": {
+          "scope": "markup"
+        }
+      }
+    },
+    {
+      "match": "(@)([\\w-]*)",
+      "scope": "task.tag",
+      "exclusive": true,
+      "comment": "Tags",
+      "captures": {
+        "1": {
+          "scope": "markup"
+        },
+        "2": {
+          "scope": "markup"
+        }
+      }
+    }
+  ],
+  "navigationPatterns": [
+    {
+      "match": "^(?![\\t ]*-)(.+)(:)(\\s?@.*)?$",
+      "comment": "Project",
+      "rangeCapture": "0",
+      "labelCapture": "1",
+      "identifierCapture": "1",
+      "prefix": "P",
+      "level": 0
+    }
+  ],
+  "indentationPatterns": [
+    {
+      "match": "(^\\h*\\* |^\\h*\\- |^\\h*\\+ |^\\h*\\d+\\. |^\\h*>+ ).*",
+      "exclusive": true,
+      "comment": "Indent Markdown lists beginning with -,+,*",
+      "captures": {
+        "1": {
+          "scope": "style.indentString"
+        }
+      }
+    }
+  ],
+  "taskMarkDefinitions": [
+    {
+      "enabled": true,
+      "match": "^([\\t ]*?)(- )(?:(?! @done).)*(@done|.*)",
+      "rangeType": "line",
+      "captures": {
+        "interactive": "2",
+        "state": "3"
+      },
+      "states": [
+        "",
+        " @done"
+      ],
+      "scopes": {
+        "interactive": "text.monospace.bold.large"
+      }
+    }
+  ]
+}

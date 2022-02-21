@@ -1,0 +1,350 @@
+{
+  "name": "AsciiDoc",
+  "description": "Basic AsciiDoc markup. For details, visit [AsciiDoc](https://asciidoc.org/index.html)\n\n**NOTE:** This is an example syntax which is not exhaustive, and written by someone with no prior knowledge of AsciiDoc. It may not be complete.",
+  "author": "Agile Tortoise, Inc.",
+  "sampleText": "= AsciiDoc =\n\nEmphasis: 'like this' or _this_\nStrong: *like this* or *thie*\nMono: +mono text+ or `mono text`\nSuperscript: ^super^\nSubscript: ~sub~\n\n[red]#Obvious# and [big red yellow-background]*very obvious*.\n[underline]#Underline text#, [overline]#overline text# and\n[blue line-through]*bold blue and line-through*.\n\n= Document Title (level 0) =\n== Section title (level 1) ==\n=== Section title (level 2) ===\n==== Section title (level 3) ====\n===== Section title (level 4) =====\n\nLevel One Section Title\n-----------------------\n\nLevel 2 Subsection Title\n~~~~~~~~~~~~~~~~~~~~~~~~\n\nLevel 3\n~~~~~~~\n\n[float]\nLevel 4\n^^^^^^^\n\nLevel 5\n+++++++\n\n.Block Title\n\n[[terms]]\n[glossary]\nList of Terms\n-------------\n\n[\"glossary\",id=\"terms\"]\nList of Terms\n-------------\n\n[template=\"glossary\",id=\"terms\"]\nList of Terms\n-------------\n\n\n",
+  "scopeName": "text.asciidoc",
+  "rangeExtensionType": {
+    "default": "lookAround1000"
+  },
+  "fileExtensions": [
+    "asciidoc"
+  ],
+  "listCompletionDefinitions": [
+  ],
+  "patterns": [
+    {
+      "match": "^(\\[\\[.*\\]\\]\\n|)(\\[.*\\]\\n|)(.*)\\n(=+)\\n",
+      "exclusive": true,
+      "comment": "Multiline titles - Level 0",
+      "captures": {
+        "1": {
+          "scope": "markup"
+        },
+        "2": {
+          "scope": "markup"
+        },
+        "3": {
+          "scope": "text.heading01"
+        },
+        "4": {
+          "scope": "markup"
+        }
+      }
+    },
+    {
+      "match": "^(\\[\\[.*\\]\\]\\n|)(\\[.*\\]\\n|)(.*)\\n(-+)\\n",
+      "exclusive": true,
+      "comment": "Multiline titles - Level 1",
+      "captures": {
+        "1": {
+          "scope": "markup"
+        },
+        "2": {
+          "scope": "markup"
+        },
+        "3": {
+          "scope": "text.heading02"
+        },
+        "4": {
+          "scope": "markup"
+        }
+      }
+    },
+    {
+      "match": "^(\\[\\[.*\\]\\]\\n|)(\\[.*\\]\\n|)(.*)\\n(~+)\\n",
+      "exclusive": true,
+      "comment": "Multiline titles - Level 2",
+      "captures": {
+        "1": {
+          "scope": "markup"
+        },
+        "2": {
+          "scope": "markup"
+        },
+        "3": {
+          "scope": "text.heading03"
+        },
+        "4": {
+          "scope": "markup"
+        }
+      }
+    },
+    {
+      "match": "^(\\[\\[.*\\]\\]\\n|)(\\[.*\\]\\n|)(.*)\\n(\\^+)\\n",
+      "exclusive": true,
+      "comment": "Multiline titles - Level 3",
+      "captures": {
+        "1": {
+          "scope": "markup"
+        },
+        "2": {
+          "scope": "markup"
+        },
+        "3": {
+          "scope": "text.heading04"
+        },
+        "4": {
+          "scope": "markup"
+        }
+      }
+    },
+    {
+      "match": "^(\\[\\[.*\\]\\]\\n|)(\\[.*\\]\\n|)(.*)\\n(\\++)\\n",
+      "exclusive": true,
+      "comment": "Multiline titles - Level 4",
+      "captures": {
+        "1": {
+          "scope": "markup"
+        },
+        "2": {
+          "scope": "markup"
+        },
+        "3": {
+          "scope": "text.heading05"
+        },
+        "4": {
+          "scope": "markup"
+        }
+      }
+    },
+    {
+      "match": "^(=)( [^=\\n]+) ?(\\1)?",
+      "exclusive": true,
+      "comment": "Single line titles, Level 0",
+      "captures": {
+        "1": {
+          "scope": "markup"
+        },
+        "2": {
+          "scope": "text.heading01"
+        },
+        "3": {
+          "scope": "markup"
+        }
+      }
+    },
+    {
+      "match": "^(==)( [^=\\n]+) ?(\\1)?",
+      "exclusive": true,
+      "comment": "Single line titles, Level 1",
+      "captures": {
+        "1": {
+          "scope": "markup"
+        },
+        "2": {
+          "scope": "text.heading02"
+        },
+        "3": {
+          "scope": "markup"
+        }
+      }
+    },
+    {
+      "match": "^(===)( [^=\\n]+) ?(\\1)?",
+      "exclusive": true,
+      "comment": "Single line titles, Level 2",
+      "captures": {
+        "1": {
+          "scope": "markup"
+        },
+        "2": {
+          "scope": "text.heading03"
+        },
+        "3": {
+          "scope": "markup"
+        }
+      }
+    },
+    {
+      "match": "^(====)( [^=\\n]+) ?(\\1)?",
+      "exclusive": true,
+      "comment": "Single line titles, Level 3",
+      "captures": {
+        "1": {
+          "scope": "markup"
+        },
+        "2": {
+          "scope": "text.heading04"
+        },
+        "3": {
+          "scope": "markup"
+        }
+      }
+    },
+    {
+      "match": "^(=====)( [^=\\n]+) ?(\\1)?",
+      "exclusive": true,
+      "comment": "Single line titles, Level 4",
+      "captures": {
+        "1": {
+          "scope": "markup"
+        },
+        "2": {
+          "scope": "text.heading05"
+        },
+        "3": {
+          "scope": "markup"
+        }
+      }
+    },
+    {
+      "match": "^(\\.)(\\S.*)",
+      "exclusive": true,
+      "comment": "Block titles, like .Title",
+      "captures": {
+        "1": {
+          "scope": "markup"
+        },
+        "2": {
+          "scope": "text.heading01"
+        }
+      }
+    },
+    {
+      "match": "((?<![\\\\\\'_])(\\'|_)(?![\\\\\\'_])([\\S?].*?)(?<![\\\\|\\*])(\\2)(?![\\\\|\\*]))",
+      "exclusive": false,
+      "comment": "Emphasis like 'italic' or _italic_",
+      "captures": {
+        "2": {
+          "scope": "markup"
+        },
+        "3": {
+          "scope": "text.italic"
+        },
+        "4": {
+          "scope": "markup"
+        }
+      }
+    },
+    {
+      "match": "(\\[[^\\]]+\\])([#\\*_\\+])(.*?)(\\2)",
+      "exclusive": false,
+      "comment": "Constrained quotes like [attr]#text#, [attr]*text*",
+      "captures": {
+        "1": {
+          "scope": "markup"
+        },
+        "2": {
+          "scope": "markup"
+        },
+        "3": {
+          "scope": "text.normal"
+        },
+        "4": {
+          "scope": "markup"
+        }
+      }
+    },
+    {
+      "match": "((?<![\\\\\\*])(\\*)(?![\\\\\\*])([\\S?].*?)(?<![\\\\|\\*])(\\2)(?![\\\\|\\*]))",
+      "exclusive": false,
+      "comment": "Strong like *bold*",
+      "captures": {
+        "2": {
+          "scope": "markup"
+        },
+        "3": {
+          "scope": "text.bold"
+        },
+        "4": {
+          "scope": "markup"
+        }
+      }
+    },
+    {
+      "match": "((?<![\\\\\\+`])(\\+|`)(?![\\\\\\+`])([\\S?].*?)(?<![\\\\|\\+`])(\\2)(?![\\\\|\\*]))",
+      "exclusive": false,
+      "comment": "Monospace text like +text+ or `text`",
+      "captures": {
+        "2": {
+          "scope": "markup"
+        },
+        "3": {
+          "scope": "text.monospace"
+        },
+        "4": {
+          "scope": "markup"
+        }
+      }
+    },
+    {
+      "match": "(\\^)([^\\^\\s]+)(\\1)",
+      "exclusive": false,
+      "comment": "Superscript, like ^text^",
+      "captures": {
+        "1": {
+          "scope": "markup"
+        },
+        "2": {
+          "scope": "text.normal"
+        },
+        "3": {
+          "scope": "markup"
+        }
+      }
+    },
+    {
+      "match": "(~)([^~\\s]+)(\\1)",
+      "exclusive": false,
+      "comment": "Subscript, like ~text~",
+      "captures": {
+        "1": {
+          "scope": "markup"
+        },
+        "2": {
+          "scope": "text.normal.small"
+        },
+        "3": {
+          "scope": "markup"
+        }
+      }
+    }
+  ],
+  "navigationPatterns": [
+    {
+      "match": "^(=)( .+ )(\\1)",
+      "comment": "= Document Title =",
+      "rangeCapture": "0",
+      "labelCapture": "2",
+      "prefix": "T1",
+      "level": 0
+    },
+    {
+      "match": "^(==)( .+ )(\\1)",
+      "comment": "== Section Title (level 1) ==",
+      "rangeCapture": "0",
+      "labelCapture": "2",
+      "prefix": "S1",
+      "level": 1
+    },
+    {
+      "match": "^(===)( .+ )(\\1)",
+      "comment": "=== Section Title (level 2) ===",
+      "rangeCapture": "0",
+      "labelCapture": "2",
+      "prefix": "S2",
+      "level": 2
+    },
+    {
+      "match": "^(====)( .+ )(\\1)",
+      "comment": "==== Section Title (level 3) ====",
+      "rangeCapture": "0",
+      "labelCapture": "2",
+      "prefix": "S3",
+      "level": 3
+    },
+    {
+      "match": "^(=====)( .+ )(\\1)",
+      "comment": "===== Section Title (level 4) =====",
+      "rangeCapture": "0",
+      "labelCapture": "2",
+      "prefix": "S4",
+      "level": 4
+    }
+  ],
+  "indentationPatterns": [
+  ],
+  "taskMarkDefinitions": [
+  ]
+}

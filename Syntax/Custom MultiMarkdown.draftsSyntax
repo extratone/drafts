@@ -1,0 +1,1029 @@
+{
+  "name": "Custom MultiMarkdown",
+  "scopeName": "text.multimarkdown",
+  "description": "Markdown syntax with extended support for [MultiMarkdown](https://fletcherpenney.net/multimarkdown/) extensions, like footnotes, definitions lists and Critic Markup. This version includes support for custom colors for abbreviations, definition lists, glossary items, variables, metadata and other MultiMarkdown features not supported in the default MultiMarkdown syntax (images, bold italic, tables and more) while keeping it compatible with the default themes.",
+  "author": "Sl's Repository Ltd",
+  "sampleText": "---\ntitle: Custom MultiMarkdown Syntax\nauthor: Sl's Repository Ltd\nExplanation: This is an example of Metadata.\nHTML Header:    <script type=\"text/javascript\"\n\t\t\t\tsrc=\"http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML\">\n\t\t\t\t</script>\n---\n\n{{TOC}}\n\n# MultiMarkdown Syntax\n\nSupports **bold**, _italic_, ***bold italic*** and other Markdown syntax.\n\n* Lists\n* Lists\n\n> Quotations\n\n```\nFenced code block\n```\n\n`inline code`\n\nThis is {--is --}an example of Critic Markup Deletions.\n\nThis {++is ++}an example of Critic Markup Additions.\n\nThis {~~isn't~>is~~} an example of Critic Markup Substitutions.\n\nThis is an {==example==} of Critic Markup Highlights.\n\nThis is an example {>>of Critic Markup Comments<<}.\n\nHere is a footnote. [^footnote]\n\n[^footnote]: Here is the text of the footnote itself.\n\nHere is a citation.[#citation]\n\n[#citation]: Here is the source of this citation, Sl's Repository Ltd, 2021, p. 1.\n\nHere is a glossary definition [?glossary]\n\n[?glossary]: Here is the text with the actual definition - an alphabetical list of words related to a specific subject, text or dialects with explanations; a brief dictionary.\n\n[>abbr]: this is an abbreviation.\n\nHere is a definition list:\n\nApple\n:   Pomaceous fruit of plants of the genus Malus in \n\tthe family Rosaceae.\n:   An american computer company.\n\nDefinition\n: 1 a statement of the exact meaning of a word, especially in a dictionary: a dictionary definition of the verb.\n:    • an exact statement or description of the nature, scope, or meaning of something: our definition of what constitutes poetry.\n:    [mass noun] the action or process of defining something: a question of definition | issues of methodology and definition.\n: 2 [mass noun] the degree of distinctness in outline of an object, image, or sound: the clarity and definition of pictures can be aided by using computer graphics.\n:   • the capacity of a device to make images distinct in outline: we've been pleased with the definition of this TV.\n\n[Hello](https://inlinelink.drafts)\n[referencelink]\n\n![alt text][image1]\n\n![image2][]\n\n![images]\n\n![alt text](https://inlineimage.drafts/)\n\n[referencelink]: https://linkreferenceurl.drafts/\n\n[image1]: https://ImageReference.drafts/\n\n[image2]: This also works.\n\n[image3]: And this too.\n\nAn example of math within a paragraph --- \\\\({e}^{ipi }+1=0\\\\)\n--- easy enough.\n\nAnd an equation on it's own:\n\n\\\\[ {x}_{1,2}=\\frac{-bpm sqrt{{b}^{2}-4ac}}{2a} \\\\]\n\nSome subscripts and superscripts:\n\ny^(a+b)^\nx~y,z~\n\n2^2 = 4~10\n\n4~10a\n\n4~10 x 2~10 = 2^3\n\nHello\n======\n\nHello\n-----\n\nHorizontal rules:\n\n****\n\nAnd with this metadata variable, we conclude our tour.\n\nThanks for viewing this sample by [%author].\n\nHope you'll enjoy using this syntax :)\n\n**THE END**\n\n",
+  "taskMarkDefinitions": [{
+    "match": "(\\[[ xX]\\])",
+    "states": ["[ ]", "[x]"],
+    "enabled": true,
+    "rangeType": "task",
+    "captures": {
+      "state": "1",
+      "interactive": "1"
+    },
+    "scopes": {
+      "interactive": "text.monospace.bold"
+    }
+  }],
+  "listCompletionDefinitions": [{
+      "comment": "",
+      "enabled": true,
+      "match": "(^[ |\\t]*)((\\* \\[[ x]\\]|- \\[[ x]\\]|\\+ \\[[ x]\\]|\\*|-|\\+|>) )(.*)",
+      "captures": {
+        "indent": "1",
+        "prefix": "2",
+        "line": "4",
+        "sequence": ""
+      },
+      "replacements": {
+        "[x]": "[ ]",
+        "{x}": "{ }",
+        "{-}": "{ }"
+      }
+    },
+    {
+      "comment": "",
+      "enabled": true,
+      "match": "(^[ |\\t]*)((\\d+)\\. (\\[[ x]\\] )?)(.*)",
+      "sequencePadding": "0",
+      "captures": {
+        "indent": "1",
+        "prefix": "2",
+        "line": "5",
+        "sequence": "3"
+      },
+      "replacements": {
+        "[x]": "[ ]",
+        "{x}": "{ }",
+        "{-}": "{ }"
+      }
+    }
+  ],
+  "indentationPatterns": [{
+    "match": "(^\\h*\\* |^\\h*\\- |^\\h*\\+ |^\\h*\\d+\\. |^\\h*>[> ]+).*",
+    "exclusive": true,
+    "comment": "Indent Markdown lists beginning with -,+,*,:",
+    "captures": {
+      "1": {
+        "scope": "style.indentString"
+      },
+      "indentCapture": "1",
+      "indentScope": "text.normal"
+    }
+  }],
+  "fileTypes": ["markdown", "mkdown", "md", "mdown"],
+  "rangeExtensionType": {
+    "default": "lookAround1000",
+    "macOS": "lookAround1000"
+  },
+  "patterns": [{
+      "match": "(?m)(\\A[\\p{Zs}\\t]*(---)?[\\p{Zs}\\t]?\\n^[\\w -]+:.+\\n(.+\\n)*\\n*?)+",
+      "exclusive": true,
+      "comment": "Metadata",
+      "captures": {
+        "0": {
+          "scope": "markup, color.accent03, text.multimarkdown.metadata"
+        }
+      }
+    },
+    
+    {
+      "match": "(?s)(^`{3,5})(\\w*$)(.+?)(?=^`{3,5})(^`{3,5})",
+      "exclusive": true,
+      "comment": "Fenced code blocks using ```",
+      "captures": {
+        "1": {
+          "scope": "markup, markup.code"
+        },
+        "2": {
+          "scope": "markup, markup.code"
+        },
+        "3": {
+          "scope": "code.block"
+        },
+        "4": {
+          "scope": "markup, markup.code"
+        }
+      }
+    },
+    {
+      "match": "^(#{1,6}) ([^\\n]+?)(#*)$",
+      "exclusive": false,
+      "comment": "Markdown header like ###",
+      "captures": {
+        "1": {
+          "scope": "markup, markup.heading"
+        },
+        "2": {
+          "scope": "text.heading"
+        },
+        "3": {
+          "scope": "markup, markup.heading"
+        }
+      }
+    },
+    {
+      "match": "^(#) ([^\\n]+?)(#*)$",
+      "exclusive": true,
+      "comment": "H1 Markdown header like #",
+      "captures": {
+        "1": {
+          "scope": "markup, markup.heading, markup.heading01"
+        },
+        "2": {
+          "scope": "text.heading, text.heading01"
+        },
+        "3": {
+          "scope": "markup, markup.heading, markup.heading01"
+        }
+      }
+    },
+    {
+      "match": "^(##) ([^\\n]+?)(#*)$",
+      "exclusive": true,
+      "comment": "H2 Markdown header like ##",
+      "captures": {
+        "1": {
+          "scope": "markup, markup.heading, markup.heading02"
+        },
+        "2": {
+          "scope": "text.heading, text.heading02"
+        },
+        "3": {
+          "scope": "markup, markup.heading, markup.heading02"
+        }
+      }
+    },
+    {
+      "match": "^(###) ([^\\n]+?)(#*)$",
+      "exclusive": true,
+      "comment": "H3 Markdown header like ###",
+      "captures": {
+        "1": {
+          "scope": "markup, markup.heading, markup.heading03"
+        },
+        "2": {
+          "scope": "text.heading, text.heading03"
+        },
+        "3": {
+          "scope": "markup, markup.heading, markup.heading03"
+        }
+      }
+    },
+    {
+      "match": "^(####) ([^\\n]+?)(#*)$",
+      "exclusive": true,
+      "comment": "H4 Markdown header like ####",
+      "captures": {
+        "1": {
+          "scope": "markup, markup.heading, markup.heading04"
+        },
+        "2": {
+          "scope": "text.heading, text.heading04"
+        },
+        "3": {
+          "scope": "markup, markup.heading, markup.heading04"
+        }
+      }
+    },
+    {
+      "match": "^(#####) ([^\\n]+?)(#*)$",
+      "exclusive": true,
+      "comment": "H5 Markdown header like #####",
+      "captures": {
+        "1": {
+          "scope": "markup, markup.heading, markup.heading05"
+        },
+        "2": {
+          "scope": "text.heading, text.heading05"
+        },
+        "3": {
+          "scope": "markup, markup.heading, markup.heading05"
+        }
+      }
+    },
+    {
+      "match": "^(######) ([^\\n]+?)(#*)$",
+      "exclusive": true,
+      "comment": "H6 Markdown header like ######",
+      "captures": {
+        "1": {
+          "scope": "markup, markup.heading, markup.heading06"
+        },
+        "2": {
+          "scope": "text.heading, text.heading06"
+        },
+        "3": {
+          "scope": "markup, markup.heading, markup.heading06"
+        }
+      }
+    },
+    {
+      "match": "^( {4,}(?![->\\*\\+] )(?!\\d\\. )|\\t{1,}(?![->\\*\\+] )(?!\\d\\. ))(\\S+.*)",
+      "exclusive": false,
+      "comment": "Markdown code blocks starting with 4 spaces or tab",
+      "captures": {
+        "1": {
+          "scope": "code.block"
+        },
+        "2": {
+          "scope": "code.block"
+        }
+      }
+    },
+    {
+      "match": "^([*\\-_]{3,})$",
+      "exclusive": false,
+      "comment": "Horizontal rule like *** or ---",
+      "captures": {
+        "1": {
+          "scope": "markup, text.multimarkdown.hr"
+        }
+      }
+    },
+    {
+      "match": "^\\h*(:|\\*|\\-|\\+|\\d+\\.) ",
+      "exclusive": false,
+      "comment": "Markdown list lines starting with whitespace and -,+,*,:",
+      "captures": {
+        "1": {
+          "scope": "markup, markup.list"
+        }
+      }
+    },
+    {
+      "match": "^(\\h*>[> ]+)(.*)",
+      "exclusive": false,
+      "comment": "Markdown quotes starting with > ",
+      "captures": {
+        "1": {
+          "scope": "markup, markup.quotation"
+        },
+        "2": {
+          "scope": "text.quotation"
+        }
+      }
+    },
+    {
+      "match": "((?<!\\\\)\\{)(\\+\\+)(.*?)(\\2)(\\})",
+      "exclusive": true,
+      "comment": "Critic Markup additions",
+      "captures": {
+        "1": {
+          "scope": "markup, markup.addition"
+        },
+        "2": {
+          "scope": "markup, markup.addition"
+        },
+        "3": {
+          "scope": "markup.addition"
+        },
+        "4": {
+          "scope": "markup, markup.addition"
+        },
+        "5": {
+          "scope": "markup, markup.addition"
+        }
+      }
+    },
+    {
+      "match": "((?<!\\\\)\\{)(--)(.*?)(\\2)(\\})",
+      "exclusive": true,
+      "comment": "Critic Markup deletions",
+      "captures": {
+        "1": {
+          "scope": "markup, markup.deletion"
+        },
+        "2": {
+          "scope": "markup, markup.deletion"
+        },
+        "3": {
+          "scope": "markup.deletion"
+        },
+        "4": {
+          "scope": "markup, markup.deletion"
+        },
+        "5": {
+          "scope": "markup, markup.deletion"
+        }
+      }
+    },
+    {
+      "match": "((?<!\\\\)\\{)(==)(.*?)(\\2)(\\})",
+      "exclusive": true,
+      "comment": "Critic Markup highlight",
+      "captures": {
+        "3": {
+          "scope": "markup.highlight"
+        },
+        "1": {
+          "scope": "markup, markup.highlight"
+        },
+        "4": {
+          "scope": "markup, markup.highlight"
+        },
+        "2": {
+          "scope": "markup, markup.highlight"
+        },
+        "5": {
+          "scope": "markup, markup.highlight"
+        }
+      }
+    },
+    {
+      "match": "((?<!\\\\)\\{)(>>)(.*?)(<<)(\\})",
+      "exclusive": true,
+      "comment": "Critic Markup comments",
+      "captures": {
+        "1": {
+          "scope": "markup, code.comment"
+        },
+        "2": {
+          "scope": "markup, code.comment"
+        },
+        "3": {
+          "scope": "code.comment"
+        },
+        "4": {
+          "scope": "markup, code.comment"
+        },
+        "5": {
+          "scope": "markup, code.comment"
+        }
+      }
+    },
+    {
+      "match": "((?<!\\\\)\\{)(~~)(.*?)(~>)(.*?)(\\2)(\\})",
+      "exclusive": true,
+      "comment": "Critic Markup substitution",
+      "captures": {
+        "1": {
+          "scope": "markup, markup.substitution"
+        },
+        "2": {
+          "scope": "markup, markup.substitution"
+        },
+        "3": {
+          "scope": "markup.substitution, markup.deletion"
+        },
+        "4": {
+          "scope": "markup, markup.substitution"
+        },
+        "5": {
+          "scope": "markup.substitution, markup.addition"
+        },
+        "6": {
+          "scope": "markup, markup.substitution"
+        },
+        "7": {
+          "scope": "markup, markup.substitution"
+        }
+      }
+    },
+    {
+      "match": "((?<![\\\\`])(`)(?![`])([\\S?].*?)(?<![`])(`)(?![\\\\`]))",
+      "exclusive": true,
+      "comment": "Markdown inline code like `code`",
+      "captures": {
+        "2": {
+          "scope": "markup, markup.code"
+        },
+        "3": {
+          "scope": "code.inline"
+        },
+        "4": {
+          "scope": "markup, markup.code"
+        }
+      }
+    },
+    {
+      "match": "(\\\\\\\\\\[|\\\\\\\\\\(|\\$\\$)(.*)(\\\\\\\\\\]|\\\\\\\\\\)|\\$\\$)",
+      "exclusive": true,
+      "comment": "Embedded LaTeX markup wrapped in \\\\[ \\\\], \\\\( \\\\) or $$ $$",
+      "captures": {
+        "1": {
+          "scope": "markup, markup.code, text.multimarkdown.math"
+        },
+        "2": {
+          "scope": "code.inline"
+        },
+        "3": {
+          "scope": "markup, markup.code, text.multimarkdown.math"
+        }
+      }
+    },
+    {
+      "match": "(((?<!\\\\)\\*\\*\\*|___)([\\S?].*?)(\\2))",
+      "exclusive": false,
+      "comment": "Markdown bold emphasis ***boldemphasis*** or ___bold___",
+      "captures": {
+        "2": {
+          "scope": "markup",
+          "exclusive": true
+        },
+        "3": {
+          "scope": "text.bolditalic"
+        },
+        "4": {
+          "scope": "markup",
+          "exclusive": true
+        }
+      }
+    },
+    {
+      "match": "((?<![\\\\\\*_])(\\*|_)(?![\\\\\\*_])([\\S?].*?)(?<![\\\\|\\*])(\\2)(?![\\\\|\\*]))",
+      "exclusive": false,
+      "comment": "Markdown emphasis like *italic* or _italic_",
+      "captures": {
+        "2": {
+          "scope": "markup"
+        },
+        "3": {
+          "scope": "text.italic"
+        },
+        "4": {
+          "scope": "markup"
+        }
+      }
+    },
+    {
+      "match": "(((?<!\\\\)\\*\\*|__)([\\S?].*?)(\\2))",
+      "exclusive": false,
+      "comment": "Markdown bold like **bold** or __bold__",
+      "captures": {
+        "2": {
+          "scope": "markup"
+        },
+        "3": {
+          "scope": "text.bold"
+        },
+        "4": {
+          "scope": "markup"
+        }
+      }
+    },
+    
+    {
+      "match": "(\\[)([^\\[]+)(\\])(\\()([^\\)]+)(\\))",
+      "exclusive": false,
+      "comment": "Markdown links like [text](link)",
+      "captures": {
+        "1": {
+          "scope": "markup, markup.link"
+        },
+        "2": {
+          "scope": "text.link"
+        },
+        "3": {
+          "scope": "markup, markup.link"
+        },
+        "4": {
+          "scope": "markup, markup.link"
+        },
+        "5": {
+          "scope": "text.url",
+          "exclusive": true
+        },
+        "6": {
+          "scope": "markup, markup.link"
+        }
+      }
+    },
+    {
+      "match": "(\\[)([^\\[]*)(\\])( )?(\\[)([^\\]]*)(\\])",
+      "exclusive": false,
+      "comment": "Markdown reference links like [text][id]",
+      "captures": {
+        "1": {
+          "scope": "markup, markup.link"
+        },
+        "2": {
+          "scope": "text.link"
+        },
+        "3": {
+          "scope": "markup, markup.link"
+        },
+        "4": {
+          "scope": "markup, markup.link"
+        },
+        "5": {
+          "scope": "markup, markup.link"
+        },
+        "6": {
+          "scope": "markup, markup.link"
+        },
+        "7": {
+          "scope": "markup, markup.link"
+        }
+      }
+    },
+    {
+      "match": "(\\[)([^\\[]+)(\\]) ?(\\[)([^\\[]+)(\\])",
+      "exclusive": false,
+      "comment": "Markdown reference links like [text][ref]",
+      "captures": {
+        "1": {
+          "scope": "markup, markup.link"
+        },
+        "2": {
+          "scope": "text.link"
+        },
+        "3": {
+          "scope": "markup, markup.link"
+        },
+        "4": {
+          "scope": "markup, markup.link"
+        },
+        "5": {
+          "scope": "markup, markup.link"
+        },
+        "6": {
+          "scope": "markup, markup.link"
+        }
+      }
+    },
+    {
+      "match": "^(\\[)([^\\[]+)(\\]:) (.*)",
+      "exclusive": false,
+      "comment": "Markdown reference like [id]: link",
+      "captures": {
+        "1": {
+          "scope": "markup, markup.link"
+        },
+        "2": {
+          "scope": "text.link"
+        },
+        "3": {
+          "scope": "markup, markup.link"
+        },
+        "4": {
+          "scope": "markup, markup.link"
+        }
+      }
+    },
+    {
+      "match": "(\\[)([^\\^\\?#>%][^\\[]+)(\\])",
+      "exclusive": false,
+      "comment": "Markdown link reference like [link]",
+      "captures": {
+        "1": {
+          "scope": "markup, markup.link"
+        },
+        "2": {
+          "scope": "text.link"
+        },
+        "3": {
+          "scope": "markup, markup.link"
+        }
+      }
+    },
+    {
+      "match": "(!\\[)([^\\[]+)(\\])",
+      "exclusive": true,
+      "comment": "Markdown Image reference like ![image]",
+      "captures": {
+        "1": {
+          "scope": "markup, markup.link"
+        },
+        "2": {
+          "scope": "text.link, text.multimarkdown.image"
+        },
+        "3": {
+          "scope": "markup, markup.link"
+        }
+      }
+    },
+    {
+      "match": "(\\[)(\\^[^\\[]+)(\\])",
+      "exclusive": true,
+      "comment": "Markdown footnote reference like [^foot]",
+      "captures": {
+        "1": {
+          "scope": "markup, markup.link"
+        },
+        "2": {
+          "scope": "text.link, text.multimarkdown.footnote"
+        },
+        "3": {
+          "scope": "markup, markup.link"
+        }
+      }
+    },
+    {
+      "match": "((?<![\\\\\\<])<[^>|<|\\n]{1,300}>)",
+      "exclusive": false,
+      "comment": "html tags",
+      "captures": {
+        "1": {
+          "scope": "markup"
+        }
+      }
+    },
+    {
+      "match": "\\w([\\^])(\\w+)",
+      "exclusive": false,
+      "comment": "Superscript markers",
+      "captures": {
+        "1": {
+          "scope": "markup, text.multimarkdown.superscript"
+        },
+        "2": {
+          "scope": "markup, text.multimarkdown.superscript"
+        }
+      }
+    },
+
+    {
+      "match": "\\w([\\~])(\\w+)",
+      "exclusive": false,
+      "comment": "Subscript markers",
+      "captures": {
+        "1": {
+          "scope": "markup, text.multimarkdown.subscript"
+        },
+        "2": {
+          "scope": "markup, text.multimarkdown.subscript"
+        }
+      }
+    },
+    {
+      "match": "^(?!\\s+)(.+?)[\\p{Zs}\\t]*\\n(=+)[\\p{Zs}\\t]*(?=\\n+)",
+      "exclusive": true,
+      "comment": "H1 Setext (Underlined, with =) Header",
+      "captures": {
+        "1": {
+          "scope": "text.heading, text.heading01"
+        },
+        "2": {
+          "scope": "markup, markup.heading, markup.heading01"
+        }
+      }
+    },
+    {
+      "match": "^(?!\\s+)(.+?)[\\p{Zs}\\t]*\\n(-+)[\\p{Zs}\\t]*(?=\\n+)",
+      "exclusive": true,
+      "comment": "H2 Setext (Underlined, with -) Header",
+      "captures": {
+        "1": {
+          "scope": "text.heading, text.heading02"
+        },
+        "2": {
+          "scope": "markup, markup.heading, markup.heading02"
+        }
+      }
+    },
+    {
+      "match": "^([\\p{Zs}]{0,2}([\\p{Zs}]?[\\*\\-_][\\p{Zs}]?){3,}[\\p{Zs}\\t]*)$",
+      "exclusive": true,
+      "comment": "Horizontal Rules - *** --- ___",
+      "captures": {
+        "1": {
+          "scope": "markup, text.multimarkdown.hr"
+        }
+      }
+    },
+    {
+      "match": "((\\p{Zs}\\p{Zs}){2,}\\n)|((\\\\)\\n)",
+      "exclusive": false,
+      "comment": "Escaped Line Breaks - \\",
+      "captures": {
+        "1": {
+          "scope": "markup, text.invisibles"
+        },
+        "2": {
+          "scope": "markup, text.invisibles"
+        },
+        "3": {
+          "scope": "markup, text.invisibles"
+        },
+        "4": {
+          "scope": "markup, text.invisibles"
+        }
+      }
+    },
+    {
+      "match": "(\\\\\\\\\\[)(.+?)(?:\\[(.+)\\])?(\\\\\\\\\\])|(\\$\\$)(.+?)(?:\\[(.+)\\])?(\\$\\$)|(\\\\\\\\\\()(.+?)(?:\\[(.+)\\])?(\\\\\\\\\\))|(\\$)(.+?)(?:\\[(.+)\\])?(\\$)",
+      "exclusive": false,
+      "comment": "Math - $$ 1+2=3 $$, \\( 1+2=3 \\), \\[ 1+2=3 \\]",
+      "captures": {
+        "1": {
+          "scope": "markup, text.multimarkdown.math"
+        },
+        "2": {
+          "scope": "code.inline"
+        },
+        "3": {
+          "scope": "markup, text.multimarkdown.math"
+        }
+      }
+    },
+    {
+      "match": "(([\\^]{1})(?!\\^)(?:[\\p{L}\\p{P}\\p{S}\\d]+?)([\\^]{1}))|(([\\^]{1})(?:[^\\p{P}\\p{S}\\s]+)(?!^))",
+      "exclusive": false,
+      "comment": "Superscript - 2^superscript",
+      "captures": {
+        "1": {
+          "scope": "markup, text.multimarkdown.superscript"
+        }
+      }
+    },
+    {
+      "match": "(([~]{1})(?!~)(?:[\\p{L}\\p{P}\\p{Sm}\\d]+?)([~]{1}))|(([~]{1})(?:[^\\p{P}\\p{S}\\s]+)(?!^))",
+      "exclusive": false,
+      "comment": "Subscript - 2~subscript",
+      "captures": {
+        "1": {
+          "scope": "markup, text.multimarkdown.subscript"
+        }
+      }
+    },
+    {
+      "match": "^[\\p{Zs}]{0,3}(\\[)(>.+?)(\\]:)[\\p{Zs}\\t]*(.*?)$\\n",
+      "exclusive": true,
+      "comment": "Abbrevation - [>Abbr]: Abbrevation",
+      "captures": {
+        "1": {
+          "scope": "markup, markup.link"
+        },
+        "2": {
+          "scope": "text.link, color.accent06, text.multimarkdown.abbreviation"
+        },
+        "3": {
+          "scope": "markup, markup.link"
+        },
+        "4": {
+          "scope": "text.multimarkdown.abbreviation, markup.link"
+        }
+      }
+    },
+    {
+      "match": "^[\\p{Zs}]{0,3}(\\[)(\\?.+?)(\\]:)[\\p{Zs}\\t]*(.*?)$\\n",
+      "exclusive": true,
+      "comment": "Glossary - [?Glossary]: Glossary",
+      "captures": {
+        "1": {
+          "scope": "markup, markup.link"
+        },
+        "2": {
+          "scope": "text.link, color.accent05, text.multimarkdown.glossary"
+        },
+        "3": {
+          "scope": "markup, markup.link"
+        },
+        "4": {
+          "scope": "text.multimarkdown.glossary, markup, markup.link"
+        }
+      }
+    },
+    {
+      "match": "(\\[)(\\?[^\\[]+)(\\])",
+      "exclusive": true,
+      "comment": "Glossary - [?glossary]",
+      "captures": {
+        "1": {
+          "scope": "markup, markup.link"
+        },
+        "2": {
+          "scope": "text.link, color.accent05, text.multimarkdown.glossary"
+        },
+        "3": {
+          "scope": "markup, markup.link"
+        }
+      }
+    },
+    {
+      "match": "^[\\p{Zs}]{0,3}(\\[)(\\#[^\\[]+)(\\]):[\\p{Zs}\\t]*(.*?)$\\n",
+      "exclusive": true,
+      "comment": "Citation Reference - [#citation]: Citation",
+      "captures": {
+        "1": {
+          "scope": "markup, markup.link"
+        },
+        "2": {
+          "scope": "text.link, color.accent04, text.multimarkdown.citation"
+        },
+        "3": {
+          "scope": "markup, markup.link"
+        },
+        "4": {
+          "scope": "text.multimarkdown.citation, markup, markup.link"
+        }
+      }
+    },
+    {
+      "match": "(\\[)(\\#[^\\[]+)(\\])",
+      "exclusive": true,
+      "comment": "Citation - [#citation]",
+      "captures": {
+        "1": {
+          "scope": "markup, markup.link"
+        },
+        "2": {
+          "scope": "text.link, color.accent04, text.multimarkdown.citation"
+        },
+        "3": {
+          "scope": "markup, markup.link"
+        }
+      }
+    },
+    {
+      "match": "^[\\p{Zs}]{0,3}(\\[)(\\^[^\\[]+)(\\]):[\\p{Zs}\\t]*(.*?)$\\n",
+      "exclusive": true,
+      "comment": "Footnote Reference - [^footnote]: Footnote",
+      "captures": {
+        "1": {
+          "scope": "markup, markup.link"
+        },
+        "2": {
+          "scope": "text.link, text.multimarkdown.footnote"
+        },
+        "3": {
+          "scope": "markup, markup.link"
+        },
+        "4": {
+          "scope": "text.multimarkdown.footnote, markup, markup.link"
+        }
+      }
+    },
+    {
+      "match": "(\\{\\{TOC[\\:]?[\\d]?[-]?[\\d]?\\}\\})",
+      "exclusive": true,
+      "comment": "Table of Contents - {{TOC}}",
+      "captures": {
+        "1": {
+          "scope": "markup, code.literal, text.multimarkdown.toc"
+        }
+      }
+    },
+    {
+      "match": "([ ]{0,3}\\[.*?\\][ \\t]*\\n)?([ ]{0,3}\\S+.*?\\|.*?\\n([^\\n]*?\\|[^\\n]*?\\n)*?)?([ ]{0,3}[\\|\\-\\+\\:\\.][ \\-\\+\\|\\:\\.]* \\| [ \\-\\+\\|\\:\\.]*)(\\n?[^\\n]*?\\|[^\\n]*?\\n)+([ ]{0,3}\\[.*?\\][ \\t]*\\n)?",
+      "exclusive": false,
+      "comment": "Table",
+      "captures": {
+        "0": {
+          "scope": "markup, color.accent02, text.multimarkdown.table"
+        },
+        "1": {
+          "scope": "markup, color.accent02, text.multimarkdown.table, text.multimarkdown.table.caption"
+        },
+        "2": {
+          "scope": "markup, color.accent02, text.multimarkdown.table, text.bold, text.multimarkdown.table.head"
+        },
+        "3": {
+          "scope": "markup, color.accent02, text.multimarkdown.table, text.bold, text.multimarkdown.table.header"
+        },
+        "4": {
+          "scope": "markup, color.accent02, text.multimarkdown.table, text.multimarkdown.table.divider"
+        },
+        "5": {
+          "scope": "markup, color.accent02, text.multimarkdown.table"
+        },
+        "6": {
+          "scope": "markup, color.accent02, text.multimarkdown.table, text.multimarkdown.table.caption"
+        }
+      }
+    },
+    {
+      "match": "((?>\\A\\n?|(?<=\\n\\n))[^\\s:]+\\n)(?>(([\\p{Zs}]{0,3}((?>.*\\S.*\\n)+)\\n?[\\p{Zs}]{0,3}:[\\p{Zs}]+\\s?.+?)(\\z|\\n{2,}(?=\\S)(?![\\p{Zs}]{0,3}(?: \\S.*\\n )+?\\n?[\\p{Zs}]{0,3}:[\\p{Zs}]+)(?![\\p{Zs}]{0,3}:[\\p{Zs}]+))))",
+      "exclusive": true,
+      "comment": "Definition List",
+      "captures": {
+        "1": {
+          "scope": "markup, color.accent03, text.multimarkdown.definitionList, text.bold, text.multimarkdown.definitionList.term"
+        },
+        "2": {
+          "scope": "markup, color.accent03, text.multimarkdown.definitionList, text.multimarkdown.definitionList.definition"
+        }
+      }
+    },
+    {
+      "match": "(!\\[)(.*?)(\\])[\\p{Zs}]?(?:\\n[\\p{Zs}]*)?(\\[(.*?)\\])",
+      "exclusive": true,
+      "comment": "Image Reference",
+      "captures": {
+        "1": {
+          "scope": "markup, markup.link"
+        },
+        "2": {
+          "scope": "text.link, color.accent01, text.multimarkdown.image"
+        },
+        "3": {
+          "scope": "markup, markup.link"
+        },
+        "4": {
+          "scope": "markup, markup.link"
+        }
+      }
+    },
+    {
+      "match": "(!\\[)(.*?)(\\])\\s?(\\([\\p{Zs}\\t]*(.+?)[\\p{Zs}\\t]*((['\"])(.*?)\\5[\\p{Zs}\\t]*)?\\))",
+      "exclusive": true,
+      "comment": "Image Inline Link - ![alt text](url)",
+      "captures": {
+        "1": {
+          "scope": "markup, markup.link"
+        },
+        "2": {
+          "scope": "text.link, color.accent01, text.multimarkdown.image"
+        },
+        "3": {
+          "scope": "markup, markup.link"
+        },
+        "4": {
+          "scope": "markup, markup.link"
+        }
+      }
+    },
+    {
+      "match": "(\\[)(\\%[^\\[]+)(\\])",
+      "exclusive": true,
+      "comment": "Variable Link - [%author]",
+      "captures": {
+        "1": {
+          "scope": "markup, markup.link"
+        },
+        "2": {
+          "scope": "text.link, code.keyword, text.multimarkdown.variable"
+        },
+        "3": {
+          "scope": "markup, markup.link"
+        }
+      }
+    }
+  ],
+  "linkDefinitions": [{
+    "match": "(\\[\\[)(((d|u|s|w|google|wikipedia|bear|url):)?([^\\[]+?))(\\]\\])",
+    "templates": {
+      "": "drafts://open?title=[[value]]&allowCreate=true",
+      "google": "https://www.google.com/search?q=[[value]]",
+      "wikipedia": "https://en.wikipedia.org/wiki/[[value]]",
+      "u": "drafts://open?uuid=[[value]]",
+      "d": "drafts://open?title=[[value]]&allowCreate=true",
+      "bear": "bear://x-callback-url/open-note?title=[[value]]",
+      "w": "drafts://workspace?name=[[value]]",
+      "s": "drafts://quickSearch?query=[[value]]",
+      "url": "[[value_unencoded]]"
+    },
+    "enabled": true,
+    "captures": {
+      "value": "5",
+      "key": "4",
+      "prefix": "1",
+      "suffix": "6",
+      "link": "2"
+    },
+    "scopes": {
+      "value": "text.italic",
+      "key": "text.bold",
+      "prefix": "markup, markup.link",
+      "suffix": "markup, markup.link"
+    }
+  }],
+  "navigationPatterns": [{
+      "match": "^# (.*)$",
+      "rangeCapture": "0",
+      "comment": "H1 level markdown headers with #",
+      "prefix": "H1",
+      "labelCapture": "1",
+      "identifierCapture": "1",
+      "level": 0
+    },
+    {
+      "match": "^## (.*)$",
+      "comment": "H2 level markdown headers with ##",
+      "prefix": "H2",
+      "rangeCapture": "0",
+      "labelCapture": "1",
+      "identifierCapture": "1",
+      "level": 1
+    },
+    {
+      "match": "^### (.*)$",
+      "comment": "H3 level markdown headers with ###",
+      "prefix": "H3",
+      "rangeCapture": "0",
+      "labelCapture": "1",
+      "identifierCapture": "1",
+      "level": 2
+    },
+    {
+      "match": "^#### (.*)$",
+      "comment": "H4 level markdown headers with ####",
+      "prefix": "H4",
+      "rangeCapture": "0",
+      "labelCapture": "1",
+      "identifierCapture": "1",
+      "level": 3
+    },
+    {
+      "match": "^##### (.*)$",
+      "comment": "H5 level markdown headers with #####",
+      "prefix": "H5",
+      "rangeCapture": "0",
+      "labelCapture": "1",
+      "identifierCapture": "1",
+      "level": 4
+    },
+    {
+      "match": "^###### (.*)$",
+      "comment": "H6 level markdown headers with ######",
+      "prefix": "H6",
+      "rangeCapture": "0",
+      "labelCapture": "1",
+      "identifierCapture": "1",
+      "level": 5
+    }
+  ]
+}

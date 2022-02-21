@@ -1,0 +1,289 @@
+{
+  "name": "Simple List",
+  "description": "Simplified Markdown-style syntax with support for tappable [ ] task marks, list-completion, bold-italics and headers, but not other Markdown styling.",
+  "sampleText": "# Simple List\n\n- [ ] Task\n- [x] Completed\n- { } {-} {x} Three state tasks",
+  "author": "Agile Tortoise, Inc.",
+  "scopeName": "text.simplelist",
+  "rangeExtensionType": {
+    "default": "lineExtended"
+  },
+  "listCompletionDefinitions": [
+    {
+      "comment": "",
+      "enabled": true,
+      "match": "(^[ |\\t]*)((\\* \\{[ -x]\\}|- \\{[ -x]\\}|\\+ \\{[ -x]\\}|\\* \\[[ -x]\\]|- \\[[ x]\\]|\\+ \\[[ x]\\]|\\*|-|\\+|>) )(.*)",
+      "captures": {
+        "indent": "1",
+        "prefix": "2",
+        "line": "4",
+        "sequence": ""
+      },
+      "replacements": {
+        "[x]": "[ ]",
+        "{x}": "{ }",
+        "{-}": "{ }"
+      }
+    },
+    {
+      "comment": "",
+      "enabled": true,
+      "match": "(^[ |\\t]*)((\\d+)\\.( \\{[ -x]\\} | \\{[ -x]\\} | \\{[ -x]\\} | \\[[ -x]\\] | \\[[ x]\\] | \\[[ x]\\] | ))(.*)",
+      "sequencePadding": "0",
+      "captures": {
+        "indent": "1",
+        "prefix": "2",
+        "line": "5",
+        "sequence": "3"
+      },
+      "replacements": {
+        "[x]": "[ ]",
+        "{x}": "{ }",
+        "{-}": "{ }"
+      }
+    }
+  ],
+  "fileExtensions": [
+  ],
+  "patterns": [
+    {
+      "match": "^(#) ([^\\n]+?)(\\1?)$",
+      "exclusive": true,
+      "comment": "Markdown heading like #",
+      "captures": {
+        "1": {
+          "scope": "markup.heading"
+        },
+        "2": {
+          "scope": "text.heading01"
+        },
+        "3": {
+          "scope": "markup.heading"
+        }
+      }
+    },
+    {
+      "match": "^(##) ([^\\n]+?)(\\1?)$",
+      "exclusive": true,
+      "comment": "Markdown heading like ##",
+      "captures": {
+        "1": {
+          "scope": "markup.heading"
+        },
+        "2": {
+          "scope": "text.heading02"
+        },
+        "3": {
+          "scope": "markup.heading"
+        }
+      }
+    },
+    {
+      "match": "^(###) ([^\\n]+?)(\\1?)$",
+      "exclusive": true,
+      "comment": "Markdown heading like ###",
+      "captures": {
+        "1": {
+          "scope": "markup.heading"
+        },
+        "2": {
+          "scope": "text.heading03"
+        },
+        "3": {
+          "scope": "markup.heading"
+        }
+      }
+    },
+    {
+      "match": "^(####) ([^\\n]+?)(\\1?)$",
+      "exclusive": true,
+      "comment": "Markdown heading like ####",
+      "captures": {
+        "1": {
+          "scope": "markup.heading"
+        },
+        "2": {
+          "scope": "text.heading04"
+        },
+        "3": {
+          "scope": "markup.heading"
+        }
+      }
+    },
+    {
+      "match": "^(#####) ([^\\n]+?)(\\1?)$",
+      "exclusive": true,
+      "comment": "Markdown heading like #####",
+      "captures": {
+        "1": {
+          "scope": "markup.heading"
+        },
+        "2": {
+          "scope": "text.heading05"
+        },
+        "3": {
+          "scope": "markup.heading"
+        }
+      }
+    },
+    {
+      "match": "^(######) ([^\\n]+?)(\\1?)$",
+      "exclusive": true,
+      "comment": "Markdown heading like ######",
+      "captures": {
+        "1": {
+          "scope": "markup.heading"
+        },
+        "2": {
+          "scope": "text.heading06"
+        },
+        "3": {
+          "scope": "markup.heading"
+        }
+      }
+    },
+    {
+      "match": "^\\h*(\\*|\\-|\\+|\\d+\\.) ",
+      "exclusive": false,
+      "comment": "Markdown list lines starting with whitespace and -,+,*",
+      "captures": {
+        "1": {
+          "scope": "markup.list"
+        }
+      }
+    },
+    {
+      "match": "((?<![\\\\\\*_])(\\*|_)(?![\\\\\\*_])([\\S?].*?)(?<![\\\\|\\*])(\\2)(?![\\\\|\\*]))",
+      "exclusive": false,
+      "comment": "Markdown emphasis like *italic* or _italic_",
+      "captures": {
+        "2": {
+          "scope": "markup"
+        },
+        "3": {
+          "scope": "text.italic"
+        },
+        "4": {
+          "scope": "markup"
+        }
+      }
+    },
+    {
+      "match": "(((?<!\\\\)\\*\\*|__)([\\S?].*?)(\\2))",
+      "exclusive": false,
+      "comment": "Markdown bold like **bold** or __bold__",
+      "captures": {
+        "2": {
+          "scope": "markup"
+        },
+        "3": {
+          "scope": "text.bold"
+        },
+        "4": {
+          "scope": "markup"
+        }
+      }
+    }
+  ],
+  "navigationPatterns": [
+    {
+      "match": "^# (.*)$",
+      "rangeCapture": "0",
+      "comment": "H1 level markdown headers with #",
+      "prefix": "H1",
+      "labelCapture": "1",
+      "identifierCapture": "1",
+      "level": 0
+    },
+    {
+      "match": "^## (.*)$",
+      "comment": "H2 level markdown headers with ##",
+      "prefix": "H2",
+      "rangeCapture": "0",
+      "labelCapture": "1",
+      "identifierCapture": "1",
+      "level": 1
+    },
+    {
+      "match": "^### (.*)$",
+      "comment": "H3 level markdown headers with ###",
+      "prefix": "H3",
+      "rangeCapture": "0",
+      "labelCapture": "1",
+      "identifierCapture": "1",
+      "level": 2
+    },
+    {
+      "match": "^#### (.*)$",
+      "comment": "H4 level markdown headers with ####",
+      "prefix": "H4",
+      "rangeCapture": "0",
+      "labelCapture": "1",
+      "identifierCapture": "1",
+      "level": 3
+    },
+    {
+      "match": "^##### (.*)$",
+      "comment": "H5 level markdown headers with #####",
+      "prefix": "H5",
+      "rangeCapture": "0",
+      "labelCapture": "1",
+      "identifierCapture": "1",
+      "level": 4
+    },
+    {
+      "match": "^###### (.*)$",
+      "comment": "H6 level markdown headers with ######",
+      "prefix": "H6",
+      "rangeCapture": "0",
+      "labelCapture": "1",
+      "identifierCapture": "1",
+      "level": 5
+    }
+  ],
+  "indentationPatterns": [
+    {
+      "match": "(^\\h*\\* |^\\h*\\- |^\\h*\\+ |^\\h*\\d+\\. |^\\h*>[> ]+).*",
+      "exclusive": true,
+      "comment": "Indent Markdown lists and blockquotes",
+      "indentCapture": "1",
+      "indentScope": "text.normal"
+    }
+  ],
+  "taskMarkDefinitions": [
+    {
+      "enabled": true,
+      "match": "(\\[[ xX]\\])",
+      "comment": "Markdown-style [ ] [x] tasks",
+      "rangeType": "task",
+      "captures": {
+        "interactive": "1",
+        "state": "1"
+      },
+      "states": [
+        "[ ]",
+        "[x]"
+      ],
+      "scopes": {
+        "interactive": "text.monospace.bold"
+      }
+    },
+    {
+      "enabled": true,
+      "comment": "Three state marks, like { ], {-}, {x}",
+      "match": "(\\{[ -xX]\\})",
+      "rangeType": "task",
+      "captures": {
+        "interactive": "1",
+        "state": "1"
+      },
+      "states": [
+        "{ }",
+        "{-}",
+        "{x}"
+      ],
+      "scopes": {
+        "interactive": "text.monospace.bold"
+      }
+    }
+  ]
+}
