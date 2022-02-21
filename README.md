@@ -28,6 +28,7 @@ Please feel free to use/distribute anything in here - including original content
 
 ## Siri Shortcuts
 
+- [RoutineHub • List .md Drafts Open Links by Tag](https://routinehub.co/shortcut/11085/)
 - [RoutineHub • Capture Web Page to Drafts](https://routinehub.co/shortcut/8994/)
 - [RoutineHub • Overcast Show Notes ⇨ Drafts](https://routinehub.co/shortcut/8944/)
 - [RoutineHub • Safari Tabs List to Drafts](https://routinehub.co/shortcut/11024/)
@@ -37,6 +38,8 @@ Please feel free to use/distribute anything in here - including original content
 
 ## David Blue’s Drafts Action Directory Contributions
 
+- [Error | Drafts Directory](https://actions.getdrafts.com/a/1wV)
+- [Fetch contents of # Tot Dot | Drafts Directory](https://actions.getdrafts.com/a/1ub)
 - [Send Draft to Telegram Saved Messages | Drafts Directory](https://actions.getdrafts.com/a/1u5)
 - [Append to 7th Tot Dot | Drafts Directory](https://actions.getdrafts.com/a/1uL)
 - [List Action Shortcuts, Comma-Delimited | Drafts Directory](https://actions.getdrafts.com/a/1s7)
@@ -48,6 +51,7 @@ Please feel free to use/distribute anything in here - including original content
 - [Windows Iowa | Drafts Directory](https://actions.getdrafts.com/t/1kY)
 
 ## Unlisted Drafts Directory Links
+
 ### Actions
 
 - [Clear Clipboard](https://actions.getdrafts.com/a/1vP)
@@ -91,6 +95,23 @@ Please feel free to use/distribute anything in here - including original content
 
 ## Themes
 
+### Windows Eternal
+
+![WindowsEternal-iPadPro](https://user-images.githubusercontent.com/43663476/154896941-f15cfe59-dd8f-4310-b4be-fe55ee4e4bc7.PNG)
+
+- [Windows Eternal Theme · Issue #26 · extratone/drafts](https://github.com/extratone/drafts/issues/26)
+- [**Drafts Directory Link**](https://actions.getdrafts.com/t/1wT)
+- [Blog Post](https://bilge.world/windows-eternal)
+- [Shortlink](https://bit.ly/windowseternal) - `https://bit.ly/windowseternal`
+- [Tilde](https://tilde.town/~extratone/windowseternal)
+- [WTF](https://davidblue.wtf/windowseternal/)
+
+A celebration of The Winders™ Aesthetic. Based on [one of my favorite Telegram themes](https://t.me/addtheme/windowseternal).
+
+- [Source](https://github.com/extratone/drafts/blob/main/Themes/Windows%20Eternal.json)
+- [Corresponding GitHub Issue in my Drafts-specific repository](https://github.com/extratone/drafts/issues/26)
+- [A wee blog post](https://bilge.world/windows-eternal)
+
 ### Greyhound
 
 ![Greyhound on iOS](https://user-images.githubusercontent.com/43663476/152304057-7d37b8bd-d6c9-4995-8bb6-081f9e03b5e7.png)
@@ -106,29 +127,25 @@ Version 1.0
 
 ### Windows Iowa
 
+![Windows Iowa - iPad Pro](https://davidblue.wtf/frames/WindowsIowa-iPadPro.png)
+
 ![Windows Iowa](https://user-images.githubusercontent.com/43663476/115518102-71c74b80-a24d-11eb-9b83-4538b198c98a.png)
 
 [**Drafts Directory Link**](https://actions.getdrafts.com/t/1kY)
-
-**Drafts Version:** 26.2.4
-**Drafts Subscription:** Pro
-**Device:** iPhone
-**Operating System:** iOS 
-**OS Build:** 14.5
-
-`Version 0.2`
 
 (A variant of the “[BSOD](https://actions.getdrafts.com/t/1jK)” theme by **kimonostereo**.)
 
 Color radicalized version of the source inspired by a _fictional_  alpha version of Windows (Windows Iowa.)
 
-_See: “[Windows Iowa Startup Theme](https://soundcloud.com/chordoslut/windowsiowa)”_
+*See: “[Windows Iowa Startup Theme](https://soundcloud.com/chordoslut/windowsiowa)”*
 
 [The Theme's Issue on my iOS GitHub Repo](https://github.com/extratone/i/issues/45)
 
 ### The Psalms
 
-![image](https://user-images.githubusercontent.com/43663476/115521804-23b44700-a251-11eb-84da-77b446e59c37.png)
+![ThePsalms-iPadPro](https://user-images.githubusercontent.com/43663476/154920101-73064c67-5786-482c-a434-cbaf8af585e1.PNG)
+
+![Four Portrait](https://user-images.githubusercontent.com/43663476/115521804-23b44700-a251-11eb-84da-77b446e59c37.png)
 
 **Replicating the reading experience of [bilge.world](https://bilge.world/colophon).**
 
@@ -156,9 +173,10 @@ Drafts Version: 35
 [Gist - I hope to properly maintain a public list of my keyboard shortcuts in Drafts.](https://gist.github.com/extratone/2e54243a2123ccfa6a37c6e8cc1057e2)
 
 ## Drafts Keyboard Shortcuts (iOS Export)
-`02132022-035528`
-- Markdown Capture Selected URL - ⌥O
-- Copy Body - ⇧⌃⌥C
+`02202022-162808`
+- **Quick Search** - ⌘ ⇧ F
+- **Quick Navigation** - ⌘ \
+- **Markdown Capture Selected** URL - ⌥O
 - Copy Draft Link as MD link - ⇧⌃C
 - Tot5 Draft Link as MD link - ⇧⌃E
 - Append Selection to 7th Tot Dot - ⌃⌥7
@@ -166,67 +184,75 @@ Drafts Version: 35
 - Prepend to 7th Tot Dot - ⇧⌥7
 - Tweetbot Selection - ⌥P
 - Post Selection to Mastodon - ⇧⌥P
+- DraftsImageSmall - ⇧⌃⌥I
+- Post to Mastodon - ⇧⌃⌥M
 - DraftsImage - ⇧⌃I
-- Telegram Extratone with Rich Text Copied - ⇧⌃T
+- Telegram Extratone with Rich Text Copied - ⇧⌃G
 - Send to Saved Messages (Telegram) (copy) - ⌃G
 - Drakesville - ⌃M
 - SMS Drakesville - ⌥M
-- Text to Gladys - ⌥G
+- Post to Write.as Blog - ⇧⌃⌥W
+- ~ Town Copy HTML - ⇧⌃⌥C
 - Insert DavodTime™  timestamp. - ⇧⌃⌥T
 - Simplenote - ⇧⌃W
-- Export Psalms Notes - ⇧⌃⌥E
-- Export Psalms Drafts - ⇧⌃⌥S
+- Export Psalms Notes - ⇧⌃⌥N
+- Export Psalms Drafts - ⇧⌃⌥D
 - Keyboard Shortcuts Export - ⇧⌃K
-- Selection Word Count - ⌃W
+- **Selection Word Count** - ⌃W
 - Draft Info - ⌃I
 - Dark/Light Toggle - ⇧⌃L
-- Load The Psalms - ⌥.
-- Preview MMD - ⌥⌘/
-- TAD-Toggle Last Two Modified Drafts - ⇧⇥
+- **Load The Psalms** - ⌥.
+- **Preview MMD** - ⌥⌘/
+- **TAD-Toggle Last Two Modified Drafts** - ⇧⇥
+- **Store Page URLs** - ⇧⌃U
+- Print Text - ⌃⌥P
+- **Lookup in Terminology** - ⇧⌃D
+- **Text Modifier…** - ⇧⌥t
 - Zalgos - ⇧⌃Z
-- Text Modifier… - ⇧⌥t
-- Store Page URLs - ⇧⌥S
+- **RandoDraft** - ⇧⌃⌥R
 - Save to Written folder as .md - ⌥⌘S
-- Markdown Header (#) - ⌃⌘H
+- **Create Bear Note From Webpage** - ⇧⌃B
+- **Markdown Header (#)** - ⌃⌘H
 - Markdown Bold (**) - ⌘B
-- Markdown Quotation (>) - ⌃Q
-- Code Block (```) - ⌃⌘C
+- **Markdown Quotation (>)** - ⌃Q
+- **Code Block (```)** - ⌃⌘C
 - Markdown Emphasis (*) - ⌘I
 - Markdown List - ⌃L
 - Markdown Link - ⌘K
 - Replace URLs by MD links - ⇧⌘U
 - Markdown Footnote (Variation) - ⌃F
-- Strikethrough - ⌃S
+- **Strikethrough** - ⌃S
 - Copy - ⌃C
-- Print - ⌃⌥P
 - New Draft with Template - ⇧⌘N
-- Clipboard… - ⌥C
-- Find - ⇧⌥F
+- **Clipboard…** - ⌥C
+- ~~Find - ⇧⌥F~~
 - Tasks - ⌃T
-- Copy Tags - ⌃⌥T
+- **Copy Tags** - ⌃⌥T
 - Save Version - ⇧⌘S
-- Copy Draft Open Link - ⇧⌘E
+- **Copy Draft Open Link** - ⇧⌘E
 - Open URL - ⇧⌃O
+- **Synonym** - ⌃⌥S
 - Tweet Selection - ⇧⌃⌥P
+- NeoCities HTML Preview - ⌥⌘P
 - Open NeoCities Workspace - ⇧⌃N
-- Format JavaScript - ⌥⌘F
-- Drafts 5 JavaScript API list - ⌘D
-- GitHub Issue - ⌃⌥I
+- ~~Format JavaScript - ⌥⌘F~~
+- ~~Drafts 5 JavaScript API list - ⌘D~~
+- **Clipboard Folder as txt** - ⇧⌃⌥⌘C
+- Error - ⇧⌃⌥↓
+- **GitHub Issue** - ⌃⌥I
 - Refresh TextExpander Snippets - ⇧⌘R
 - TAD-Trash Note - ⌃-
 - TAD-Load Previous Workspace - ⇧⌥⌘⇥
 - TAD-Load Next Workspace - ⌥⌘⇥
 - TAD-Search Actions - ⌘/
 - TAD-Duplicate Draft and Load - ⌃D
-- TAD-Prime Preview MMD - ⌃P
-- TAD-Prime Preview GFM - ⌥⌘P
+- **TAD-Prime Preview MMD** - ⌃P
 - TAD-Preview with Marked2 - ⇧⌃P
-- TAD-Update TextExpander - ⌥⌘R
-- TAD-Replace with Synonym - ⌃⌥S
+- ~~TAD-Update TextExpander - ⌥⌘R~~
 - Written Workspace - ⌘2
 - Documentation Workspace - ⌘3
 - Hole Workspace - ⌘9
-- Testing - ⌥9
+- Testing - ⌥0
 - Current Work Draft - ⌥1
 - Current Work Notes - ⌥2
 - Three - ⌥3
@@ -237,10 +263,12 @@ Drafts Version: 35
 - Eight - ⇧⌥2
 - Nine - ⇧⌥3
 - Ten - ⇧⌥4
+- Eleven - ⇧⌥5
+- Twelve - ⇧⌥6
 - Clear Clipboard - ⌥⇥
 - Copy as Rich Text - ⌃⌥C
-- Share as File: Markdown - ⇧⌃S
-- Push Draft to GitHub Repo - ⇧⌃G
+- **Share as File: Markdown** - ⇧⌃S
+- **Push Draft to GitHub Repo** - ⌥G
 
 ## External 
 
@@ -248,5 +276,4 @@ Drafts Version: 35
 
 | Action                           | Command |
 |:--------------------------------:|:-------:|
-| Actions->Manage Actions...       | ⌥⌘A     |
-| Workspaces->Manage Workspaces... | ⌥⌘W     |
+| Actions->Manage Actions...       |  ^A     |
