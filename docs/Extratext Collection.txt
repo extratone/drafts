@@ -1,0 +1,15 @@
+# Extratext Collection
+[[TextExpander Wish List/Todos]]
+![Extratext iFrame](https://user-images.githubusercontent.com/43663476/142076514-f4de56d6-a8de-43e8-a56d-55a7a76498a2.png)
+
+Title: Extratext
+Author: David Blue
+Categories: `General`
+Info URL: https://github.com/extratone/TextExpander/issues/1
+[**Share Link**]([https://app.textexpander.com/public/14093096578d4f40eeea15649f5cefbb](https://app.textexpander.com/public/14093096578d4f40eeea15649f5cefbb)): `[https://app.textexpander.com/public/14093096578d4f40eeea15649f5cefbb](https://app.textexpander.com/public/14093096578d4f40eeea15649f5cefbb)`
+
+## Description
+
+*Please be advised: a few of these are quite disruptive.*
+
+Most of this set is very personal to me, which should be considered as a *template for your own potential use*. This is my first TextExpander collection. I've been meaning to get around to learning for years, and I'm finally here!`

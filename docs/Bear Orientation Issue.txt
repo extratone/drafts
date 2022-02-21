@@ -1,0 +1,29 @@
+# Bear Orientation Issue
+- [The Line Width Slider: any chance I’ll see it again? - Feedback - Bear Beta](https://beta.bear.app/t/the-line-width-slider-any-chance-i-ll-see-it-again/1945/6)
+- [["The Line Width Slider: any chance I’ll see it again? - Feedback - Bear Beta"]]
+
+Hey folks, it’s me again… The Line Width Slider Guy… I’m back with gobs more knowledge about iPhone Keyboarding in general (it’s sorta [become my whole life somehow](https://uikeycommand.com),) and I thought it might be an appropriate time to bring this up again (hopefully not too late!) given where Panda is at. I’ve also had the privilege of using Bear for macOS for the first time, recently, after being an iPhone Bear user for virtually my whole adult life. (What a special, special thiing you have built, folks! I am forever in awe.)
+
+However - in the past 18th months of using my iPhone for absolutely everything (more than ever,) I’m sad to say I had to move away from Bear as my primary text composition space largely because of this issue and returned to Drafts. Despite the fact that I’ve embedded so many screenshots of both in landscape view, I don’t actually spend any real composition time in that orientation, anymore. It’s honestly the default width of the *portrait* view on my [12 Pro Max](https://support.apple.com/kb/SP832) (1284x2778.)
+
+![BearPortrait](https://user-images.githubusercontent.com/43663476/153967720-4998916f-d188-490d-ad57-96b34fb76e4d.png)
+
+![BearLandscapePreview](https://user-images.githubusercontent.com/43663476/153967645-dcd2a69d-cbed-4260-871d-e4dbfbd2bb80.png)
+
+![BearLandscape](https://user-images.githubusercontent.com/43663476/153967681-1946c567-ad8d-4c8f-8f92-0e42ea81b84a.png)
+
+I thought it warranted speaking up again because this level of horizontal constraint is bordering on “objectively” excessive in Bear 1, which is entirely understandable given your recent focus on Panda *and especially* how much more well-considered spacing is there in both orientations, even just in its defaults. (I absolutely adore the word stats placement, which I just now noticed lol.)
+
+![PandaPortrait](https://user-images.githubusercontent.com/43663476/153970578-2028b0d0-ba28-4a2d-823f-72ee71110958.png)
+
+![PandaLandscape](https://user-images.githubusercontent.com/43663476/153970885-bce49c80-ab29-42b0-860b-d59b66fdf0e4.png)
+
+I guess I’m really just here to advocate for as much line width control for users as you can possibly  Bear (lol) to give us in Bear 2.0. I know and love that Bear is not Drafts, but its default Editor Options shouldn’t be a deterrent - one would think - for potential users interested in as little configuration as possible, given the proliferation of Configuration Culture in writing apps right now, while those of us superficial enough to truly care about the way our writing experiences feel would benefit from it, greatly.
+
+![DraftsLandscapeView](https://user-images.githubusercontent.com/43663476/153968314-ca550459-958d-4136-a1dc-52437e48e704.png)
+
+![DraftsPortraitPreview](https://user-images.githubusercontent.com/43663476/153968788-8f12f4a9-cad5-4eac-ba1e-ee790aac5112.png)
+
+I thought I’d toss in some mockups of my current Drafts config since I took them. Below is the editor configuration I’ve stuck with for years now in Drafts, but I’m very glad I was able to whittle my way there in the first place. Perhaps something between this level of configurability and what Bear 1 has now?
+
+![DraftsEditorOptions](https://user-images.githubusercontent.com/43663476/153968816-93cbce50-84be-410e-b8ee-752f40d4cbc4.png)

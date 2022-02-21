@@ -1,0 +1,15 @@
+# Notes-Paste Shortcuts for Mac and iOS
+- [[Paste Shortcuts for Mac and iOS]]
+- [Paste Shortcuts for Mac and iOS · Issue #305 · extratone/bilge](https://github.com/extratone/bilge/issues/305)
+- ![PasteIcon](https://user-images.githubusercontent.com/43663476/153737242-0211b5b3-2ade-431b-9ac5-013b13f44efa.png)
+
+[[Paste to Clipboard Shortcut]]
+[[Paste to Jar Shortcut]]
+[[Paste to Apple Note Shortcut]]
+
+- [RoutineHub • Paste to Apple Note](https://routinehub.co/shortcut/11079/)
+- [RoutineHub • Paste to Clipboard](https://routinehub.co/shortcut/11077/)
+- [RoutineHub • Paste to Jar](https://routinehub.co/shortcut/11049/)
+
+## Social
+- [Telegram](https://t.me/extratone/10193)

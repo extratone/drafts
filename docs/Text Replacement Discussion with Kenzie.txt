@@ -1,0 +1,12 @@
+# Text Replacement Discussion with Kenzie
+
+@vital876 @Simplicity_teal next time, you might want to try Text Replacement. I turned off autocorrection and autosuggestions entirely like two weeks after that gosh darned button menu came out lol. my list of declared terms ain’t long, but it *is* fucking useful. here's a shortcut I've made that opens that menu real quick. https://www.icloud.com/shortcuts/e6d56b3fe8bc40639a60f166315f255b
+
+Apple’s documentation would have you believe that this feature performs only one of the respective two functions represented by the entires in this screenshot.
+
+setting the same value for `Phrase`and `Shortcut` basically achieves the same thing as “Learn Spelling.”
+
+==
+
+lmao this video is the perfect demonstration of what this looks like! and the perfect demonstration of me crashing Panda!
+

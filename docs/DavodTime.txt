@@ -1,0 +1,12 @@
+# DavodTime
+[DavodTime - my personal time/date format.](https://gist.github.com/extratone/0540718c80734fd6ec7e2c974c7a9e70)
+
+`MMDDYYYY-hhmmss`
+
+I decided to create my own standardized time format because I was getting tired of getting confused by my own timestamps.
+
+Ex:
+01152022-135757
+
+- [Siri Shortcut](https://www.icloud.com/shortcuts/5a4ebd4ed057415b8915c535951c1059)
+- [RoutineHub Page](https://routinehub.co/shortcut/10872/)

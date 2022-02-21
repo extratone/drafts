@@ -1,0 +1,30 @@
+# Speedy Frames Shortcut Documentation
+
+### Imgur
+
+```
+I’ve done it folks… I do believe I have devised the speediest means of rendering single-capture iPhone mockups.
+
+I took Federico Viticci’s [Apple Frames 2.0](https://www.macstories.net/ios/apple-frames-2-0-faster-lighter-and-featuring-support-for-iphone-13-ipad-mini-ipad-10-2-imac-24-macbook-air-and-multiple-languages/) and made the following modifications:
+
+1. I deleted all of the annotations in `Comment` form. They’re a testament to Federico’s diligence and huge contribution to personal automation with iOS… but they’re also just extra text.
+2. I replaced the `Find Photos Where` action with `Get Latest Photos` with the `Include Screenshots` toggle ON and the retrieval limit set to just one. 
+3. I deleted the entire export preferences menu and replaced it with actions that save the result both to a specific Photos folder for frames and a corresponding iCloud Drive folder.
+
+The [resulting shortcut](https://www.icloud.com/shortcuts/d70654c055ee41bd8f72ebf0c29e0fa5) takes around 5-7 seconds to produce a single mocked up frame on my iPhone 12 Pro Max running iOS 15.3 beta after it’s triggered, and I think most of that is spent displaying the requisite notifications. 
+
+See my post coming soon to https://bilge.world if you’d like to know how I rigged it up with Back Tap :)
+```
+
+## Short description.
+
+- [RoutineHub Page](https://routinehub.co/shortcut/8994/)
+- [iCloud Share Link](https://www.icloud.com/shortcuts/4fdcc3607df54d86abac85214b10acdc)
+
+---
+
+## About
+
+Up until now I hadn’t timed Federico’s shortcut, but across a couple of tests today on the same device in its default configuration (aside from the initial language selection,) it required **90 seconds or more** to produce the same result.
+
+This isn’t a new development, actually, but - now that finally understand how to physically trigger Back Tap :)

@@ -1,6 +1,8 @@
 # jamiejenkins Drafts Configs
+- [jamiejenkins Drafts Configs · Issue #21 · extratone/drafts](https://github.com/extratone/drafts/issues/21)
 - [Search URL](https://actions.getdrafts.com/search?utf8=✓&q=jamiejenkins)
 - [Telegram](https://t.me/extratone/10194)
+- [Wiki](https://github.com/extratone/drafts/wiki/jamiejenkins-Drafts-Configs)
 
 - [Dots | Drafts Directory](https://actions.getdrafts.com/g/1hw)
 - [DarkBlueDot | Drafts Directory](https://actions.getdrafts.com/t/1iQ)
@@ -31,5 +33,5 @@
 - [Orange | Drafts Directory](https://actions.getdrafts.com/w/1iA)
 - [Pink | Drafts Directory](https://actions.getdrafts.com/w/1hy)
 - [Red | Drafts Directory](https://actions.getdrafts.com/w/1hz)
-- [Violet | Drafts Directory]([undefined](https://actions.getdrafts.com/w/1iF))
-- [Yellow | Drafts Directory]([undefined](https://actions.getdrafts.com/w/1iB))
+- [Violet | Drafts Directory](https://actions.getdrafts.com/w/1iF)
+- [Yellow | Drafts Directory](https://actions.getdrafts.com/w/1iB)

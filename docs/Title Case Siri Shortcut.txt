@@ -1,0 +1,10 @@
+# Title Case Siri Shortcut
+[[Title Case Siri Shortcut Documentation]]
+
+I have another real simple Siri Shortcut for you. I think it could be useful especially for those of you in school!
+
+This shortcut changes text you've copied to "Title Case" - as in, it capitalizes the first letter of the appropriate words you need for a title.
+
+Ex. "i wish I knew what school of english apple's 'title case' uses" ⇨ "I Wish I Knew What School of English Apple's 'Title Case' Uses"
+
+To be clear, all you need to do is copy (or cut) the text you want capitalized, run this shortcut, and then paste the result. https://www.icloud.com/shortcuts/be7659dff0894949aa8f702bab929801

@@ -1,0 +1,31 @@
+# Generate Shortcuts x-callback Links (macOS)
+
+- [**RoutineHub Page**](https://routinehub.co/shortcut/8994/)
+- [iCloud Share Link]()
+- GitHub Issue
+---
+
+## Short description.
+
+This shortcut makes markdown-formatted links to run all of your siri shortcuts the Shortcuts x-callback url scheme: `shortcuts://x-callback-url/run-shortcut?name=`
+
+It stores each of these link in a Data Jar List of your specification (at install.)
+
+### Steps
+1. A `Run Shell Script` action runs `shortcuts list` to generate a full list of your shortcuts titles.
+2. A [Split Text](https://www.matthewcassinelli.com/actions/split-text) action parses the result of Step 1 into individual titles.
+3. A [Repeat With Each](https://www.matthewcassinelli.com/actions/repeat-with-each) flow contains the steps below.
+4. The results are formatted as such: `[{ShortcutName}](shortcuts://x-callback-url/run-shortcut?name={ShortcutName})`
+5. The result of step 4 is added to the Data Jar List specified at install as well as a variable entitled `shortcutslinks`.
+
+---
+
+## Contact
+
+- [Contact Card](https://davidblue.wtf/db.vcf)
+- [Telegram](https://t.me/extratone)
+- [Email](mailto:davidblue@extratone.com) 
+- [Twitter](https://twitter.com/NeoYokel)
+- [Mastodon](https://mastodon.social/@DavidBlue)
+- [Discord](https://discord.gg/0b9KQUKP858b0iZF)
+- [-Everywhere-](https://raindrop.io/davidblue/social-directory-21059174)...

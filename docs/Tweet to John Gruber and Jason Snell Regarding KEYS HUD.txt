@@ -1,0 +1,4 @@
+# Tweet to John Gruber and Jason Snell Regarding KEYS HUD
+- [URL](https://twitter.com/NeoYokel/status/1495086506108727298)
+
+@gruber @jsnell regarding the “beautiful heads up display” one gets when holding the ⌘ key on an iPad - you ever wonder why the same display isn’t accessible to those doing so on an *iPhone*? or why `⌘TAB` doesn’t switch between apps on that device? because that’s somehow become my whole life @UIKeyCommand

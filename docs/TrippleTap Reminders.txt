@@ -1,0 +1,5 @@
+# TrippleTap Reminders
+
+One of the more useful applications of [Back Tap](https://support.apple.com/en-us/HT211781) on our iPhones can be pairing it with a *Remind Me About This Later* shortcut. My version - which I call [TrippleTap Reminders](https://www.icloud.com/shortcuts/d17211cfac484c7f87ebd16b164ebce3) -  
+
+so I have this shortcut set to the trippletap setting for Back Tap. it grabs any link I have copied, prompts me to set a name for a reminder, and then adds said reminder to my Reminders with the link(s) in the URL section and sets the alert to be 6 hours from the present. https://www.icloud.com/shortcuts/d17211cfac484c7f87ebd16b164ebce3

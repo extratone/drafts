@@ -1,0 +1,23 @@
+# Drag Safari Tab Group Links Demo
+- [Drag Safari Tab Group Links Demo · Issue #125 · extratone/i](https://github.com/extratone/i/issues/125)
+- [Drafts Link](drafts://open?uuid=4FBF3BCC-2F65-4C8B-9486-839E118B4B3A)
+
+
+> To quickly email the links in a Tab Group to others, drag the Tab Group from the Safari sidebar to an email message.
+ [Group tabs in Safari on Mac - Apple Support](https://support.apple.com/guide/safari/group-tabs-ibrwa2d73908/mac)
+
+A rich text, bulleted list of tabs open in a Safari Tab Group can be *dragged out of the application*. This doesn't *just* work with the native apps, either.
+
+<video controls>
+  <source src="https://user-images.githubusercontent.com/43663476/150300955-2cac0aa9-237c-47a2-8a64-00398048a760.mp4">
+</video>
+
+<video controls>
+  <source src="https://user-images.githubusercontent.com/43663476/150300955-2cac0aa9-237c-47a2-8a64-00398048a760.mp4">
+</video>
+
+https://user-images.githubusercontent.com/43663476/150301043-6dd6afce-beb3-4eee-87ae-ca18013df14f.mp4
+
+<video controls>
+  <source src="https://user-images.githubusercontent.com/43663476/150301043-6dd6afce-beb3-4eee-87ae-ca18013df14f.mp4">
+</video>

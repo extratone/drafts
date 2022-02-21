@@ -1,0 +1,16 @@
+# Accessibility Default (All Off) Shortcut
+
+- [GitHub Issue](https://github.com/extratone/i/issues/154)
+- [**RoutineHub Page**](https://routinehub.co/shortcut/11130)
+- [iCloud Share Link](https://www.icloud.com/shortcuts/1f860256b0e34c41b512621295862bd8)
+
+## Social
+- [Siri Shortcuts Community](https://twitter.com/neoyokel/status/1495140826866929669)
+- [Tweet](https://twitter.com/NeoYokel/status/1495140757589610497)
+- [r/Shortcuts](https://reddit.com/r/shortcuts/comments/swjtec/a_handy_shortcut_that_resets_all_ios/)
+
+A handy shortcut that resets all iOS Accessibility options to their default state (which is off.) https://routinehub.co/shortcut/11130
+
+---
+
+This shortcut resets all iOS Accessibility options (Settings ⇨ Accessibility) to their defaults.

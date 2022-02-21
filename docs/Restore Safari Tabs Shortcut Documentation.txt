@@ -1,0 +1,32 @@
+# Restore Safari Tabs Shortcut Documentation
+
+## Opens URLs from a Data Jar List in Safari.
+
+- [**RoutineHub Page**](https://routinehub.co/shortcut/10869)
+- [iCloud Share Link](https://www.icloud.com/shortcuts/3210fb87a1b54202914ac9895bb10697)
+
+---
+
+## About
+
+This shortcut ideally works as a companion to [Safari Tabs Jar](https://routinehub.co/shortcut/10868/), but will function with any Data Jar List of URLs.
+
+### Steps
+1. Prompts you for the Key Path of the target Data Jar list.
+2. Counts "children" (number of values) in target Data Jar list.
+3. Retrieves said values and extracts URLs using a [Get URLs from Input action](https://www.matthewcassinelli.com/actions/get-urls-from-input/).
+4. Uses a [Split Text action](https://www.matthewcassinelli.com/actions/split-text/) to further tidy the passed list of links.
+5. A [Show Alert](https://www.matthewcassinelli.com/actions/show-alert/) action including the total number of links you're about to open in Safari displays.
+6. If `OK` is selected in said alert, all of the URLs will be opened in Safari.
+
+---
+
+## Contact
+
+- [Contact Card](https://davidblue.wtf/db.vcf)
+- [Telegram](https://t.me/extratone)
+- [Email](mailto:davidblue@extratone.com) 
+- [Twitter](https://twitter.com/NeoYokel)
+- [Mastodon](https://mastodon.social/@DavidBlue)
+- [Discord](https://discord.gg/0b9KQUKP858b0iZF)
+- [-Everywhere-](https://raindrop.io/davidblue/social-directory-21059174)...

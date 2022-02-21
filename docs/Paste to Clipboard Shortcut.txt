@@ -1,0 +1,23 @@
+# Paste to Clipboard Shortcut
+
+- [**RoutineHub Page**](https://routinehub.co/shortcut/11077)
+- [iCloud Share Link](https://www.icloud.com/shortcuts/381d219c347540739d4fc4a7bccf2e30)
+- [GitHub Issue](https://github.com/extratone/i/issues/142)
+- [Showcuts](https://showcuts.app/share/view/381d219c347540739d4fc4a7bccf2e30)
+
+## Social
+- [Telegram](https://t.me/extratone/10183)
+- [r/Shortcuts](https://www.reddit.com/r/shortcuts/comments/sr94c0/paste_to_clipboard_copy_a_set_number_of_items/)
+- [Tweet](https://twitter.com/NeoYokel/status/1492704573672370178)
+---
+
+## Copy a set number of items from Paste as a list.
+
+![Paste to Clipboard](https://user-images.githubusercontent.com/43663476/153737116-24b5f266-a499-4741-8226-54001b3af8c6.png)
+
+## Requirements
+- [Paste](https://apps.apple.com/us/app/paste-clipboard-manager/id967805235) (macOS and/or iOS)
+
+This shortcut will copy a set number of items from Paste to the clipboard as a list. You will asked to specify the default number of items to copy upon installation. 
+
+It should function on both macOS and iOS.

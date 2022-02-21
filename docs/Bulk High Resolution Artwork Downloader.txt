@@ -1,0 +1,37 @@
+# Bulk High Resolution Artwork Downloader
+-[Bulk High Resolution Artwork Downloader · Issue #119 · extratone/i](https://github.com/extratone/i/issues/119)
+
+## Social
+- [Tweet](https://twitter.com/NeoYokel/status/1475064933830344707)
+- [Telegram](https://t.me/extratone/9384)
+
+
+## Video
+[Raw URL](https://user-images.githubusercontent.com/43663476/147406563-3e00d60b-1a1d-4c7f-809b-c388fd7c246a.mp4)
+`https://user-images.githubusercontent.com/43663476/147406563-3e00d60b-1a1d-4c7f-809b-c388fd7c246a.mp4`
+
+<video controls>
+  <source src="https://user-images.githubusercontent.com/43663476/147406563-3e00d60b-1a1d-4c7f-809b-c388fd7c246a.mp4">
+</video>
+
+## Short description.
+
+- [RoutineHub Page](https://routinehub.co/shortcut/8994/)
+- [iCloud Share Link](https://www.icloud.com/shortcuts/5bd639a8c8894d32ba7f2a1d8fcc971b)
+
+---
+
+## About
+I figured I may as well share my personal Drafts web page capture Shortcut, which reliably returns Markdown-formatted Drafts headed by a given web page’s featured image (if present,) byline, and timestamp, followed by a correctly-hyperlinked source URL between quotation marks.
+
+---
+
+## Contact
+
+- [Contact Card](https://davidblue.wtf/db.vcf)
+- [Telegram](https://t.me/extratone)
+- [Email](mailto:davidblue@extratone.com) 
+- [Twitter](https://twitter.com/NeoYokel)
+- [Mastodon](https://mastodon.social/@DavidBlue)
+- [Discord](https://discord.gg/0b9KQUKP858b0iZF)
+- [-Everywhere-](https://raindrop.io/davidblue/social-directory-21059174)...

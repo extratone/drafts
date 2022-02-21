@@ -1,0 +1,30 @@
+# Title Case Siri Shortcut Documentation
+- [Title Case · Issue #122 · extratone/i](https://github.com/extratone/i/issues/122)
+
+## Reformats text in the clipboard to Title Case.
+
+- [**RoutineHub Page**](https://routinehub.co/shortcut/10866)
+- [iCloud Share Link](https://www.icloud.com/shortcuts/be7659dff0894949aa8f702bab929801)
+- [Showcuts](https://showcuts.app/share/view/be7659dff0894949aa8f702bab929801)
+- [ShareShortcuts](https://shareshortcuts.com/shortcuts/1605-title-case.html)
+
+---
+
+## About
+
+Still haven't figured out which set of title capitalization rules the [Change Case action](https://www.matthewcassinelli.com/actions/change-case/) uses, but this quick, 3-action Shortcut simply changes text currently in the clipboard to Title case.
+
+Ex:
+what will academia say about this siri shortcuts hack? ⇨ What Will Academia Say About This Siri Shortcuts Hack? 
+
+---
+
+## Contact
+
+- [Contact Card](https://davidblue.wtf/db.vcf)
+- [Telegram](https://t.me/extratone)
+- [Email](mailto:davidblue@extratone.com) 
+- [Twitter](https://twitter.com/NeoYokel)
+- [Mastodon](https://mastodon.social/@DavidBlue)
+- [Discord](https://discord.gg/0b9KQUKP858b0iZF)
+- [-Everywhere-](https://raindrop.io/davidblue/social-directory-21059174)...

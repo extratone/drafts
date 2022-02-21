@@ -1,0 +1,10 @@
+# Safari Tabs List to Drafts Shortcut
+
+- [**RoutineHub Page**](https://routinehub.co/shortcut/11024)
+- [iCloud Share Link](https://www.icloud.com/shortcuts/f50474c6f7424b088f3994d9712cc3e4)
+- [GitHub Issue](https://github.com/extratone/i/issues/137)
+---
+
+## Save a list of links from a Safari Tab Group on iOS.
+
+This shortcut operates as a sort of replacement to the Applescript-based, mac-only "[New Draft with Safari Tabs](https://actions.getdrafts.com/a/16h)" action in Drafts. It expects a rich text list of links in the clipboard, which it converts to Markdown and saves as a new Draft with the tag "tabs."

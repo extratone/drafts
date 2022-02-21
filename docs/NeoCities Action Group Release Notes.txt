@@ -1,0 +1,6 @@
+# NeoCities Action Group Release Notes
+
+`02032022-035747`
+- Add separators.
+- Fixed template tag in Open/{title}
+- Added `NeoCities List`, which requires [the NeoCities CLI](https://neocities.org/cli) and [this Siri Shortcut](https://www.icloud.com/shortcuts/2fd3a863343246f88a09f0c7749a1c94). Can only be run on macOS.

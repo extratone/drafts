@@ -1,0 +1,68 @@
+# Speedy Frames Shortcut Documentation
+![SpeedyFramesBanner](https://user-images.githubusercontent.com/43663476/147857864-28345864-2f32-4422-9676-68f5d0f7b8b7.png)
+- [[Speedy Frames Share Meta]]
+- [Speedy Frames · Issue #117 · extratone/i](https://github.com/extratone/i/issues/117)
+- [iCloud Share Link](https://www.icloud.com/shortcuts/0f089f2719824fffbf7d565f93df481d)
+- [RoutineHub Page](https://routinehub.co/shortcut/10775/)
+- [Showcuts](https://showcuts.app/share/view/0f089f2719824fffbf7d565f93df481d)
+- [ShareShortcuts](https://shareshortcuts.com/shortcuts/1557-speedy-frames.html)
+- [Tweet](https://twitter.com/NeoYokel/status/1477408365999501314)
+- [Reddit](https://www.reddit.com/r/shortcuts/comments/rtut17/the_speediest_iphone_mockups_in_the_world_via_a/)
+
+## Video
+- [Short Demo](https://user-images.githubusercontent.com/43663476/147857501-a00835cc-f623-4b5b-804f-44c2c6a490ec.mov)
+- [YouTube](https://youtu.be/zEoXIF3gPnw)
+- [Imgur](https://imgur.com/gallery/dwn4CnX)
+
+## Social
+
+### Imgur
+
+I’ve done it folks… I do believe I have devised the speediest means of rendering single-capture iPhone mockups.
+
+I took Federico Viticci’s [Apple Frames 2.0](https://www.macstories.net/ios/apple-frames-2-0-faster-lighter-and-featuring-support-for-iphone-13-ipad-mini-ipad-10-2-imac-24-macbook-air-and-multiple-languages/) and made the following modifications:
+
+1. I deleted all of the annotations in `Comment` form. They’re a testament to Federico’s diligence and huge contribution to personal automation with iOS… but they’re also just extra text.
+2. I replaced the `Find Photos Where` action with `Get Latest Photos` with the `Include Screenshots` toggle ON and the retrieval limit set to just one. 
+3. I deleted the entire export preferences menu and replaced it with actions that save the result both to a specific Photos album for frames and a corresponding iCloud Drive folder.
+
+https://www.icloud.com/shortcuts/d70654c055ee41bd8f72ebf0c29e0fa5
+
+The resulting shortcut takes around 5-7 seconds to produce a single mocked up frame on my iPhone 12 Pro Max running iOS 15.3 beta after it’s triggered, and I think most of that is spent displaying the requisite notifications. 
+
+See my post coming soon to https://bilge.world if you’d like to know how I rigged it up with Back Tap :)
+```
+
+- [Twitter Video/Thread](https://twitter.com/neoyokel/status/1471883295042510859)
+
+``` 
+hey y’all I had to share this with you… by far the quickest setup for creating iPhone screen mockups *I’ve* ever come up with, certainly. 
+
+@viticci’s Apple Frames 2 Shortcuts but set to grab the last screenshot (no selection,) and triggered by a double Back Tap.
+
+I’ll be documenting and sharing shortly! if you need more details, this Issue is where they’ll be coming first. https://github.com/extratone/i/issues/117
+```
+```
+<video controls>
+  <source src="https://user-images.githubusercontent.com/43663476/146576763-f640a6ad-fc74-44cd-8437-8e3e5007406c.MOV">
+</video>
+```
+
+- [--RoutineHub Page--](https://routinehub.co/shortcut/8994/)
+- [iCloud Share Link](https://www.icloud.com/shortcuts/5bd639a8c8894d32ba7f2a1d8fcc971b)
+- [Back Tap Quick Frames · Issue #117 · extratone/i](https://github.com/extratone/i/issues/117)
+---
+## About
+I figured I may as well share my personal Drafts web page capture Shortcut, which reliably returns Markdown-formatted Drafts headed by a given web page’s featured image (if present,) byline, and timestamp, followed by a correctly-hyperlinked source URL between quotation marks.
+
+---
+
+## Contact
+
+- [Contact Card](https://davidblue.wtf/db.vcf)
+- [Telegram](https://t.me/extratone)
+- [Email](mailto:davidblue@extratone.com) 
+- [Twitter](https://twitter.com/NeoYokel)
+- [Mastodon](https://mastodon.social/@DavidBlue)
+- [Discord](https://discord.gg/0b9KQUKP858b0iZF)
+- [-Everywhere-](https://raindrop.io/davidblue/social-directory-21059174)...

@@ -1,0 +1,18 @@
+# Clipboard ⇨ Mastodon Shortcut
+
+- [**RoutineHub Page**](https://routinehub.co/shortcut/10980)
+- [iCloud Share Link](https://www.icloud.com/shortcuts/0cb38607276c4b23b320443c216c374b)
+- [GitHub Issue](https://github.com/extratone/i/issues/134)
+---
+
+## Share text from the clipboard to Mastodon.
+
+This shortcut creates a public post with text content from the clipboard from your currently-selected account in [Mastodon for iPhone](https://apps.apple.com/us/app/mastodon-for-iphone/id1571998974).
+ 
+## Social
+
+it’s been a while!
+
+a new Siri Shortcut for Mastodon for iPhone!
+
+this one simply posts text content from your clipboard. https://routinehub.co/shortcut/10980

@@ -1,0 +1,28 @@
+# URL List ⇨ Telegram Shortcut
+
+## Send URLs in separate messages to a specified contact in Telegram.
+
+- [URL List ⇨ Telegram · Issue #128 · extratone/i](https://github.com/extratone/i/issues/128)
+- [Video Demo File](https://user-images.githubusercontent.com/43663476/150978342-38480311-2275-4153-91aa-1e13640802ad.MOV)
+- [Video Demo YouTube](https://youtu.be/r7PMAWSbnY0)
+- [**RoutineHub Page**](https://routinehub.co/shortcut/10926)
+- [iCloud Share Link](https://www.icloud.com/shortcuts/dc4d33295ea64d3a90a26ea5c3b15264)
+- [ShareShortcuts](https://shareshortcuts.com/shortcuts/1693-url-list-telegram.html)
+- [Telegram Link](https://t.me/extratone/9899)
+- [r/Telegram Thread](https://reddit.com/r/Telegram/comments/scddqf/siri_shortcut_url_list_telegram/)
+- [Telegram iOS Talk](https://t.me/TelegramiOStalk/112655)
+- [Telegram Beta Chat](https://t.me/tgbetachat/1009204)
+
+---
+
+<video controls>
+  <source src="https://user-images.githubusercontent.com/43663476/150978342-38480311-2275-4153-91aa-1e13640802ad.MOV">
+</video>
+
+## About
+
+[Video Demo](https://youtu.be/r7PMAWSbnY0)
+
+Note: I have only been able to get Telegram for iOS’ shortcut actions to work when using my full 10-digit number + international code (+15738234380.) My own number is the only one I’ve actually tried (I originally created this shortcut for my own use, which is excusively within my “Saved Messages” chat.)
+
+Using a [Get URLs from Input](https://www.matthewcassinelli.com/actions/get-urls-from-input/) action, this shortcut sends a list of links as single-message-per-URL messages to a contact of your specification via Telegram. It can be added to the share sheet to receieve Text, Rich Text, and URLs. Otherwise, it will retrieve a list of links from the clipboard. 

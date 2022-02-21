@@ -1,0 +1,7 @@
+# Paste Shortcuts for Mac and iOS
+
+![PasteIcon](https://user-images.githubusercontent.com/43663476/153737242-0211b5b3-2ade-431b-9ac5-013b13f44efa.png)
+
+I’ve been working on [a post](https://github.com/extratone/bilge/issues/291) lamenting our loss of Copied for iOS and macOS - perhaps the most-loved Clipboard Manager of a previous Mac generation. 
+
+https://twitter.com/NeoYokel/status/1492552970491375623

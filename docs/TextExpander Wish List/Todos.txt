@@ -1,0 +1,25 @@
+# TextExpander Wish List/Todos
+
+[[Extratext Collection]] 
+
+### Pandoc
+> If multiple input files are given, pandoc will concatenate them all (with blank lines between them) before parsing. -- from Pandoc website
+`pandoc -s input1.md input2.md input3.md -o output.html`
+
+Use pandoc to merge e.g. all html-files in the current directory:
+`pandoc -s *.html -o output.html`
+
+### Labman
+
+## Reading
+- [ ] [Use TextExpander to Launch Applications and More](http://www.applematters.com/article/use-textexpander-to-launch-applications-and-more/)
+
+```applescript
+tell application "Safari"
+	
+	activate
+	
+	open location "http://www.twitter.com/"
+	
+end tell
+```

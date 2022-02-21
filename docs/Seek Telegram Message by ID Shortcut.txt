@@ -1,0 +1,28 @@
+# Seek Telegram Message by ID Shortcut
+
+- [**RoutineHub Page**](https://routinehub.co/shortcut/10930)
+- [iCloud Share Link](https://www.icloud.com/shortcuts/59f960484c6b4a719014c00f40e5c8f8)
+- [GitHub Issue](https://github.com/extratone/i/issues/131)
+---
+
+## Open Telegram message by specified channel(or)group/messageID.
+
+![TelegramShortcuts](https://user-images.githubusercontent.com/43663476/151065307-88e3eaa0-ce93-4a89-b91c-c50fb649cc4d.png)
+
+This shortcut constructs the standard URL to a specific Telegram message in a public channel or group via two [Ask for Input](https://www.matthewcassinelli.com/actions/ask-for-input/) actions: 
+1. The @ name of the subject channel/group (without the @.) Ex: `extratone`
+2. The numeric message ID of the subject message. Ex: `9911`
+The two are then combined: `https://t.me/extratone/9911`, which is copied to the clipboard and opened in Telegram via an [Open URLs](https://www.matthewcassinelli.com/actions/open-urls) action.
+
+Upon installation, you’ll be prompted to set default values for both, but neither are required.
+---
+
+## Contact
+
+- [Contact Card](https://davidblue.wtf/db.vcf)
+- [Telegram](https://t.me/extratone)
+- [Email](mailto:davidblue@extratone.com) 
+- [Twitter](https://twitter.com/NeoYokel)
+- [Mastodon](https://mastodon.social/@DavidBlue)
+- [Discord](https://discord.gg/0b9KQUKP858b0iZF)
+- [-Everywhere-](https://raindrop.io/davidblue/social-directory-21059174)...

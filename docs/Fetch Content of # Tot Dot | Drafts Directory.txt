@@ -1,0 +1,9 @@
+# Fetch Content of # Tot Dot | Drafts Directory
+- [Fetch contents of # Tot Dot | Drafts Directory](https://actions.getdrafts.com/a/1ub)
+`https://actions.getdrafts.com/a/1ub`
+
+## Description
+
+Fetches content from the specified Dot in Tot via Applescript to a new draft.
+
+`tell application "Tot" to open location "tot://[#]/content”`

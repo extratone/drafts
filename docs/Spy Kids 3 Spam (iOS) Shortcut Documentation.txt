@@ -1,0 +1,24 @@
+# Spy Kids 3 Spam (iOS) Shortcut Documentation
+
+![Juni Warning](https://user-images.githubusercontent.com/43663476/149655618-67b3ac6a-50d6-4eb6-aeca-370eddef670f.png)
+
+## Send one of cinema's great screenplays, line-by-line, to a recipient of your choice. 
+
+- [**RoutineHub Page**](https://routinehub.co/shortcut/10919)
+- [iCloud Share Link](https://www.icloud.com/shortcuts/2992a73be74b436697c7aeb3fca93d42)
+
+## About
+
+![Juni Warning](https://user-images.githubusercontent.com/43663476/149655618-67b3ac6a-50d6-4eb6-aeca-370eddef670f.png)
+
+It feels blasphemous to say so, but I believe I may have actually outdone the Original Masterpiece, [Bee Movie Spam](https://routinehub.co/shortcut/2623/)...
+
+This shortcut sends the entirety of the [*Spy Kids 3* screenplay](https://gist.github.com/extratone/f9dfce369140a17b251bf8d09b07787c), line-by-line to a specified phone number or iMessage email address via Messages. 
+
+By my count, the screenplay text totals 6937 words in 1559 lines, which means 1559 messages total. I've tested it once all the way through just to confirm the cycle will complete, but didn't think to set a timer. It was more than 10 minutes, less than 30, I'd say.
+
+I left my own phone number - +15738234380 - in the `Default Number` field of the [Ask for Input](https://www.matthewcassinelli.com/actions/ask-for-input/) action very much on purpose - I promise it'll make my day if you use me as a test subject.
+- [Source Files](https://github.com/extratone/i/tree/main/shortcuts/Spy%20Kids%203%20Spam)
+
+drafts://open?uuid=91AE0A80-CC72-4387-8545-96030CAD6338
+ 01282022-035227 01282022-035228 01282022-035229

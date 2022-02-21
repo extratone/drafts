@@ -1,0 +1,17 @@
+# Action Directory Shortcut Documentation 
+
+## Quick open and copy links to entries in Matthew Cassinelli's Action Directory.
+
+- [**RoutineHub Page**](https://routinehub.co/shortcut/10921)
+- [iCloud Share Link](https://www.icloud.com/shortcuts/84ea7854bb35435cae167c424e9db088)
+- [ShareShortcuts](https://shareshortcuts.com/shortcuts/1692-action-directory.html)
+
+---
+
+## About
+
+A tool for opening an action’s listing in [Matthew Cassinelli’s Action Directory](https://www.matthewcassinelli.com/actions). 
+
+Action titles should be provided in the format `{word1}-{word2}`. (Ex: `choose-from-menu`.)
+
+Upon providing the action's title, the URL for its action directory entry will be opened in Safari and copied to the clipboard.

@@ -1,0 +1,677 @@
+# Testing
+CFFIXED_USER_HOME=/private/var/mobile/Containers/Data/Application/30E48920-402E-4F66-90B4-DE4AD12868B7
+HOME=/private/var/mobile/Containers/Data/Application/30E48920-402E-4F66-90B4-DE4AD12868B7
+TMPDIR=/private/var/mobile/Containers/Data/Application/30E48920-402E-4F66-90B4-DE4AD12868B7/tmp/
+XPC_SERVICE_NAME=UIKitApplication:AsheKube.app.a-Shell[c2e9][rb-legacy]
+PATH=/var/mobile/Containers/Data/Application/30E48920-402E-4F66-90B4-DE4AD12868B7/Documents/perl5/bin:/private/var/containers/Bundle/Application/1BB43944-4D91-4882-A4B0-A84DB80581A0/a-Shell.app/bin:/private/var/containers/Bundle/Application/1BB43944-4D91-4882-A4B0-A84DB80581A0/a-Shell.app/Library/bin:/private/var/containers/Bundle/Application/1BB43944-4D91-4882-A4B0-A84DB80581A0/a-Shell.app/Library/bin3:/var/mobile/Containers/Data/Application/30E48920-402E-4F66-90B4-DE4AD12868B7/Library/bin:/var/mobile/Containers/Data/Application/30E48920-402E-4F66-90B4-DE4AD12868B7/Documents/bin:/usr/bin:/bin:/usr/sbin:/sbin
+XPC_FLAGS=0x0
+LOGNAME=mobile
+USER=mobile
+SHELL=/bin/sh
+__CF_USER_TEXT_ENCODING=0x1F5:0:0
+APPDIR=/private/var/containers/Bundle/Application/1BB43944-4D91-4882-A4B0-A84DB80581A0/a-Shell.app
+PATH_LOCALE=/var/mobile/Containers/Data/Application/30E48920-402E-4F66-90B4-DE4AD12868B7/Documents
+TERM=xterm
+CLICOLOR=1
+LSCOLORS=ExFxBxDxCxegedabagacad
+SSH_HOME=/var/mobile/Containers/Data/Application/30E48920-402E-4F66-90B4-DE4AD12868B7/Documents
+DIG_HOME=/var/mobile/Containers/Data/Application/30E48920-402E-4F66-90B4-DE4AD12868B7/Documents
+CURL_HOME=/var/mobile/Containers/Data/Application/30E48920-402E-4F66-90B4-DE4AD12868B7/Documents
+SSL_CERT_FILE=/private/var/containers/Bundle/Application/1BB43944-4D91-4882-A4B0-A84DB80581A0/a-Shell.app/cacert.pem
+PYTHONHOME=/private/var/containers/Bundle/Application/1BB43944-4D91-4882-A4B0-A84DB80581A0/a-Shell.app/Library
+XDG_CACHE_HOME=/var/mobile/Containers/Data/Application/30E48920-402E-4F66-90B4-DE4AD12868B7/Library/Caches
+XDG_CONFIG_HOME=/var/mobile/Containers/Data/Application/30E48920-402E-4F66-90B4-DE4AD12868B7/Library/Preferences
+XDG_DATA_HOME=/var/mobile/Containers/Data/Application/30E48920-402E-4F66-90B4-DE4AD12868B7/Library
+PYTHONEXECUTABLE=python3
+PYZMQ_BACKEND=cffi
+JUPYTER_CONFIG_DIR=/var/mobile/Containers/Data/Application/30E48920-402E-4F66-90B4-DE4AD12868B7/Documents/.jupyter
+IPYTHONDIR=/var/mobile/Containers/Data/Application/30E48920-402E-4F66-90B4-DE4AD12868B7/Documents/.ipython
+MPLCONFIGDIR=/var/mobile/Containers/Data/Application/30E48920-402E-4F66-90B4-DE4AD12868B7/Documents/.config/matplotlib
+HGRCPATH=/var/mobile/Containers/Data/Application/30E48920-402E-4F66-90B4-DE4AD12868B7/Documents/.hgrc
+VIMRUNTIME=/private/var/containers/Bundle/Application/1BB43944-4D91-4882-A4B0-A84DB80581A0/a-Shell.app/vim
+TERM_PROGRAM=a-Shell
+MAGIC=/private/var/containers/Bundle/Application/1BB43944-4D91-4882-A4B0-A84DB80581A0/a-Shell.app/usr/share/magic.mgc
+SHORTCUTS=/private/var/mobile/Containers/Shared/AppGroup/E15328C2-34D2-4581-8F6A-5136FC7AE831
+GROUP=/private/var/mobile/Containers/Shared/AppGroup/E15328C2-34D2-4581-8F6A-5136FC7AE831
+MANPATH=/private/var/containers/Bundle/Application/1BB43944-4D91-4882-A4B0-A84DB80581A0/a-Shell.app/man:/var/mobile/Containers/Data/Application/30E48920-402E-4F66-90B4-DE4AD12868B7/Library/man:/var/mobile/Containers/Data/Application/30E48920-402E-4F66-90B4-DE4AD12868B7/Documents/perl5/man
+PAGER=less
+MAGICK_HOME=/private/var/containers/Bundle/Application/1BB43944-4D91-4882-A4B0-A84DB80581A0/a-Shell.app/ImageMagick-7
+MAGICK_CONFIGURE_PATH=/private/var/containers/Bundle/Application/1BB43944-4D91-4882-A4B0-A84DB80581A0/a-Shell.app/ImageMagick-7/config
+TZ=America/Chicago
+AWS_SHARED_CREDENTIALS_FILE=/var/mobile/Containers/Data/Application/30E48920-402E-4F66-90B4-DE4AD12868B7/Documents/.aws/credentials
+AWS_CONFIG_FILE=/var/mobile/Containers/Data/Application/30E48920-402E-4F66-90B4-DE4AD12868B7/Documents/.aws/config
+YARL_NO_EXTENSIONS=1
+MULTIDICT_NO_EXTENSIONS=1
+DISABLE_SQLALCHEMY_CEXT=1
+SYSROOT=/var/mobile/Containers/Data/Application/30E48920-402E-4F66-90B4-DE4AD12868B7/Library/usr
+CCC_OVERRIDE_OPTIONS=#^--target=wasm32-wasi
+MAKESYSPATH=/private/var/containers/Bundle/Application/1BB43944-4D91-4882-A4B0-A84DB80581A0/a-Shell.app/usr/share/mk
+PERL5LIB=/var/mobile/Containers/Data/Application/30E48920-402E-4F66-90B4-DE4AD12868B7/Documents/perl5/lib/perl5:/private/var/containers/Bundle/Application/1BB43944-4D91-4882-A4B0-A84DB80581A0/a-Shell.app/Perl
+PERL_LOCAL_LIB_ROOT=/var/mobile/Containers/Data/Application/30E48920-402E-4F66-90B4-DE4AD12868B7/Documents/perl5
+PERL_CPANM_HOME=/var/mobile/Containers/Data/Application/30E48920-402E-4F66-90B4-DE4AD12868B7/Documents/.cpanm
+PERL_MM_OPT='INSTALL_BASE=/var/mobile/Containers/Data/Application/D42942D5-B559-4F6D-95B3-90E266A7C3A7/Documents/perl5'
+PERL_MB_OPT=--install_base "/var/mobile/Containers/Data/Application/30E48920-402E-4F66-90B4-DE4AD12868B7/Documents/perl5"
+CPAN_OPTS=-T
+PYTHONPYCACHEPREFIX=/var/mobile/Containers/Data/Application/30E48920-402E-4F66-90B4-DE4AD12868B7/Library/__pycache__
+PYTHONUSERBASE=/var/mobile/Containers/Data/Application/30E48920-402E-4F66-90B4-DE4AD12868B7/Library
+CLASSIC_OVERRIDE=0
+ActivePrewarm=0
+COLORFGBG=15;0
+LINES=46
+COLUMNS=45
+LC_CTYPE=UTF-8
+
+===
+# Writeas-cli Help
+
+NAME:
+   writeas - Publish text quickly
+
+USAGE:
+   writeas [global options] command [command options] [arguments...]
+
+VERSION:
+   2.0
+
+AUTHOR:
+   Write.as <hello@write.as>
+
+COMMANDS:
+     post     Alias for default action: create post from stdin
+     new      Compose a new post from the command-line and publish
+     publish  Publish a file to Write.as
+     delete   Delete a post
+     update   Update (overwrite) a post
+     get      Read a raw post
+     add      Add an existing post locally
+     posts    List all of your posts
+     blogs    List blogs
+     claim    Claim local unsynced posts
+     auth     Authenticate with Write.as
+     logout   Log out of Write.as
+     help, h  Shows a list of commands or help for one command
+
+GLOBAL OPTIONS:
+   -c value, -b value  Optional blog to post to
+   --tor, -t           Perform action on Tor hidden service
+   --tor-port value    Use a different port to connect to Tor (default: 9150)
+   --code              Specifies this post is code
+   --md                Returns post URL with Markdown enabled
+   --verbose, -v       Make the operation more talkative
+   --font value        Sets post font to given value (default: "mono")
+   --lang value        Sets post language to given ISO 639-1 language code
+   --user-agent value  Sets the User-Agent for API requests
+   --help, -h          show help
+   --version, -V       print the version
+
+===
+# a-Shell Commands
+2to3
+2to3-3.9
+alias
+amstex
+apropos
+ar
+awk
+bc
+bibtex
+black
+black-primer
+blackd
+bookmark
+calc
+cat
+cd
+chflags
+chmod
+cksum
+clang
+clang++
+clear
+compare
+composite
+compress
+config
+conjure
+convert
+corelist
+cowsay
+cp
+cpan
+credits
+cslatex
+csplain
+ctags
+curl
+cygdb
+cython
+cythonize
+date
+dc
+deactivate
+deletemark
+diff
+dig
+downloadFile
+downloadFolder
+du
+dvilualatex
+dviluatex
+ebong
+echo
+ed
+egrep
+enc2xs
+encguess
+env
+eplain
+etex
+exit
+export
+f2py
+f2py3
+f2py3.9
+ffmpeg
+ffprobe
+fgrep
+file
+find
+fmtutil
+fonttools
+gallery-dl
+grep
+gunzip
+gzip
+h2ph
+h2xs
+head
+help
+hideKeyboard
+hideToolbar
+history
+host
+identify
+idle3
+idle3.9
+ifconfig
+import
+instmodsh
+iptest
+iptest3
+ipython
+ipython3
+isympy
+jadetex
+jlpm
+jsc
+jsi
+json_pp
+jsonschema
+jump
+jupyter
+jupyter-bundlerextension
+jupyter-console
+jupyter-dejavu
+jupyter-execute
+jupyter-kernel
+jupyter-kernelspec
+jupyter-lab
+jupyter-labextension
+jupyter-labhub
+jupyter-migrate
+jupyter-nbclassic
+jupyter-nbconvert
+jupyter-nbextension
+jupyter-notebook
+jupyter-qtconsole
+jupyter-retro
+jupyter-run
+jupyter-server
+jupyter-serverextension
+jupyter-troubleshoot
+jupyter-trust
+==keepDirectoryAfterShortcut==
+kpsewhich
+l4p-tmpl
+latex
+ld
+ld.lld
+ld64.lld
+less
+lessecho
+lex
+lg2
+libnetcfg
+link
+llc
+lld
+lld-link
+lli
+llvm-dis
+llvm-link
+ln
+ls
+lua
+luac
+luahbtex
+lualatex
+luatex
+m2r
+magick-script
+make
+makeindex
+man
+mandoc
+mandocdb
+markdown-toc
+md5
+mex
+mkdir
+mktexfmt
+mktexlsr
+mllatex
+mltex
+mogrify
+montage
+more
+mv
+nc
+newWindow
+nltk
+normalizer
+nslookup
+open
+openurl
+opt
+pbcopy
+pbpaste
+pdfcslatex
+pdfcsplain
+pdfetex
+pdfjadetex
+pdflatex
+pdfmex
+pdftex
+pdfxmltex
+perl
+perl5
+perlA
+perlB
+perlbug
+perldoc
+perlivp
+pickFolder
+piconv
+ping
+pip
+pip3
+pip3.9
+pl2pm
+play
+pod2html
+printenv
+prove
+ptar
+ptardiff
+ptargrep
+pwd
+pybabel
+pydoc3
+pydoc3.9
+pyftmerge
+pyftsubset
+pygmentize
+pyjson5
+python
+python3
+python3-config
+python3.9
+python3.9-config
+pythonA
+ranlib
+readlink
+readtags
+renamemark
+rlogin
+rm
+rmdir
+rst2html.py
+rst2html4.py
+rst2html5.py
+rst2latex.py
+rst2man.py
+rst2odt.py
+rst2odt_prepstyles.py
+rst2pseudoxml.py
+rst2s5.py
+rst2xetex.py
+rst2xml.py
+rstpep2html.py
+say
+scp
+sed
+send2trash
+setenv
+sftp
+sh
+shasum
+showToolbar
+showmarks
+sleep
+sort
+source
+splain
+ssh
+ssh-keygen
+stat
+stream
+streamzip
+sum
+sw_vers
+tail
+tar
+task
+tee
+telnet
+tex
+texlua
+texluac
+texsis
+tlmgr
+touch
+tqdm
+tr
+tree
+true
+ttx
+type
+unalias
+uname
+uncompress
+uniq
+unlink
+unrar
+unsetenv
+updmap
+updmap-sys
+uptime
+utf8mex
+view
+vim
+wasm
+wasm-ld
+wc
+whatis
+wheel
+whoami
+whois
+wol
+wordcloud_cli
+wsdump
+xargs
+xmltex
+xsubpp
+xxd
+xz
+xzdec
+youtube-dl
+yt-dlp
+zipdetails
+
+===
+usage: jupyter [-h] [--version]
+               [--config-dir] [--data-dir]
+               [--runtime-dir] [--paths]
+               [--json] [--debug]
+               [subcommand]
+
+Jupyter: Interactive Computing
+
+positional arguments:
+  subcommand     the subcommand to launch
+
+optional arguments:
+  -h, --help     show this help message and
+                 exit
+  --version      show the versions of core
+                 jupyter packages and exit
+  --config-dir   show Jupyter config dir
+  --data-dir     show Jupyter data dir
+  --runtime-dir  show Jupyter runtime dir
+  --paths        show all Jupyter paths.
+                 Add --json for machine-
+                 readable format.
+  --json         output paths as machine-
+                 readable json
+  --debug        output debug information
+                 about paths
+
+Available subcommands: bundlerextension
+console dejavu execute kernel kernelspec
+lab labextension labhub migrate nbclassic
+nbconvert nbextension notebook qtconsole
+retro run server serverextension
+troubleshoot trust
+
+===
+usage: gallery-dl [OPTION]... URL...
+
+General Options:
+  -h, --help           Print this help
+                       message and exit
+  --version            Print program
+                       version and exit
+  -d, --dest DEST      Destination
+                       directory
+  -i, --input-file FILE
+                       Download URLs found
+                       in FILE ('-' for
+                       stdin). More than
+                       one --input-file can
+                       be specified
+  --cookies FILE       File to load
+                       additional cookies
+                       from
+  --proxy URL          Use the specified
+                       proxy
+  --clear-cache MODULE
+                       Delete cached login
+                       sessions, cookies,
+                       etc. for MODULE (ALL
+                       to delete
+                       everything)
+
+Output Options:
+  -q, --quiet          Activate quiet mode
+  -v, --verbose        Print various
+                       debugging
+                       information
+  -g, --get-urls       Print URLs instead
+                       of downloading
+  -G, --resolve-urls   Print URLs instead
+                       of downloading;
+                       resolve intermediary
+                       URLs
+  -j, --dump-json      Print JSON
+                       information
+  -s, --simulate       Simulate data
+                       extraction; do not
+                       download anything
+  -E, --extractor-info
+                       Print extractor
+                       defaults and
+                       settings
+  -K, --list-keywords  Print a list of
+                       available keywords
+                       and example values
+                       for the given URLs
+  --list-modules       Print a list of
+                       available extractor
+                       modules
+  --list-extractors    Print a list of
+                       extractor classes
+                       with description,
+                       (sub)category and
+                       example URL
+  --write-log FILE     Write logging output
+                       to FILE
+  --write-unsupported FILE
+                       Write URLs, which
+                       get emitted by other
+                       extractors but
+                       cannot be handled,
+                       to FILE
+  --write-pages        Write downloaded
+                       intermediary pages
+                       to files in the
+                       current directory to
+                       debug problems
+
+Downloader Options:
+  -r, --limit-rate RATE
+                       Maximum download
+                       rate (e.g. 500k or
+                       2.5M)
+  -R, --retries N      Maximum number of
+                       retries for failed
+                       HTTP requests or -1
+                       for infinite retries
+                       (default: 4)
+  --http-timeout SECONDS
+                       Timeout for HTTP
+                       connections
+                       (default: 30.0)
+  --sleep SECONDS      Number of seconds to
+                       sleep before each
+                       download
+  --filesize-min SIZE  Do not download
+                       files smaller than
+                       SIZE (e.g. 500k or
+                       2.5M)
+  --filesize-max SIZE  Do not download
+                       files larger than
+                       SIZE (e.g. 500k or
+                       2.5M)
+  --no-part            Do not use .part
+                       files
+  --no-skip            Do not skip
+                       downloads; overwrite
+                       existing files
+  --no-mtime           Do not set file
+                       modification times
+                       according to Last-
+                       Modified HTTP
+                       response headers
+  --no-download        Do not download any
+                       files
+  --no-check-certificate
+                       Disable HTTPS
+                       certificate
+                       validation
+
+Configuration Options:
+  -c, --config FILE    Additional
+                       configuration files
+  -o, --option OPT     Additional
+                       '<key>=<value>'
+                       option values
+  --ignore-config      Do not read the
+                       default
+                       configuration files
+
+Authentication Options:
+  -u, --username USER  Username to login
+                       with
+  -p, --password PASS  Password belonging
+                       to the given
+                       username
+  --netrc              Enable .netrc
+                       authentication data
+
+Selection Options:
+  --download-archive FILE
+                       Record all
+                       downloaded files in
+                       the archive file and
+                       skip downloading any
+                       file already in it
+  -A, --abort N        Stop current
+                       extractor run after
+                       N consecutive file
+                       downloads were
+                       skipped
+  -T, --terminate N    Stop current and
+                       parent extractor
+                       runs after N
+                       consecutive file
+                       downloads were
+                       skipped
+  --range RANGE        Index-range(s)
+                       specifying which
+                       images to download.
+                       For example '5-10'
+                       or '1,3-5,10-'
+  --chapter-range RANGE
+                       Like '--range', but
+                       applies to manga-
+                       chapters and other
+                       delegated URLs
+  --filter EXPR        Python expression
+                       controlling which
+                       images to download.
+                       Files for which the
+                       expression evaluates
+                       to False are
+                       ignored. Available
+                       keys are the
+                       filename-specific
+                       ones listed by '-K'.
+                       Example: --filter
+                       "image_width >= 1000
+                       and rating in ('s',
+                       'q')"
+  --chapter-filter EXPR
+                       Like '--filter', but
+                       applies to manga-
+                       chapters and other
+                       delegated URLs
+
+Post-processing Options:
+  --zip                Store downloaded
+                       files in a ZIP
+                       archive
+  --ugoira-conv        Convert Pixiv Ugoira
+                       to WebM (requires
+                       FFmpeg)
+  --ugoira-conv-lossless
+                       Convert Pixiv Ugoira
+                       to WebM in VP9
+                       lossless mode
+  --write-metadata     Write metadata to
+                       separate JSON files
+  --write-infojson     Write gallery
+                       metadata to a
+                       info.json file
+  --write-tags         Write image tags to
+                       separate text files
+  --mtime-from-date    Set file
+                       modification times
+                       according to 'date'
+                       metadata
+  --exec CMD           Execute CMD for each
+                       downloaded file.
+                       Example: --exec
+                       'convert {} {}.png
+                       && rm {}'
+  --exec-after CMD     Execute CMD after
+                       all files were
+                       downloaded
+                       successfully.
+                       Example: --exec-
+                       after 'cd {} &&
+                       convert *
+                       ../doc.pdf'
+  -P, --postprocessor NAME
+                       Activate the
+                       specified post
+                       processor

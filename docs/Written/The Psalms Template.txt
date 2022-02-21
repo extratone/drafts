@@ -1,0 +1,2 @@
+# The Psalms Template
+-[ISSUENUMBER](https://github.com/extratone/bilge/issues/<l>)

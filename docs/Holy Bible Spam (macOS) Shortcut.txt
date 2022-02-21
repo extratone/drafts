@@ -1,0 +1,22 @@
+# Holy Bible Spam (macOS) Shortcut
+
+## Send the entire text of the Old and New Testaments to a recipient of your choice via imessage-ruby. 
+
+- [**RoutineHub Page**](https://routinehub.co/shortcut/10924)
+- [iCloud Share Link](https://www.icloud.com/shortcuts/6a3d1ef359ed48b8abc4f38851a0fa56)
+- [Holy Bible Spam (macOS) · Issue #127 · extratone/i](https://github.com/extratone/i/issues/127)
+
+## Requirements
+[**imessage-ruby**](https://formulae.brew.sh/formula/imessage-ruby)
+
+`brew install imessage-ruby`
+
+## About
+
+This shortcut uses a `Run Shell Script` action commanding [iMessage-ruby](https://formulae.brew.sh/formula/imessage-ruby) on macOS to send the entirety of [this Gist](https://gist.github.com/extratone/f9df50ca0810f7ea9624037e9de1ff15) split by each occurrence of the term "BOOKS."
+
+The command itself:
+
+`imessage --text "Repeat Item" --contacts "Provided Input"`
+
+I left my own phone number - +15738234380 - in the `Default Number` field of the [Ask for Input](https://www.matthewcassinelli.com/actions/ask-for-input/) action very much on purpose - I promise it'll make my day if you use me as a test subject.

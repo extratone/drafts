@@ -1,0 +1,31 @@
+# Notes-Fresh Eyes on macOS
+[[Fresh Eyes on macOS]]
+- [Anecdotes: Fresh Eyes on macOS after 10+ Years · Issue #292 · extratone/bilge](https://github.com/extratone/bilge/issues/292)
+- [MacOS Raindrop Collection](https://raindrop.io/davidblue/mac-os-21957274)
+
+## General
+- [ ] Rebooting is uh… well. It’s not only a fix, but *very disruptive* to reboot macOS often, it turns out. 
+- [ ] The "walled garden" has gotten fucking huge.
+- [ ] Why the fuck y'all abandon Automator?
+- [ ] [CPU Result - MacBook Pro (15-inch Retina Mid 2015) - Geekbench Browser](https://browser.geekbench.com/v5/cpu/11570453)
+- [ ] [Compute Result - MacBook Pro (15-inch Retina Mid 2015) - Geekbench Browser](https://browser.geekbench.com/v5/compute/3898172)
+
+## Software
+- [ ] [Telegram for macOS](https://macos.telegram.org/)
+- [ ] [PowerShell/PowerShell: PowerShell for every system!](https://github.com/PowerShell/PowerShell)
+- [ ] [TextBuddy – retina studio](https://retina.studio/textbuddy/)
+
+## Tweets
+- [ ] [The last time I was a Mac user](https://twitter.com/NeoYokel/status/1480490353245528069)
+- [ ] [Remote logging iPhone](https://twitter.com/NeoYokel/status/1482214422676480000)
+
+## Reference
+- [ ] [How to Upgrade MacBook Hard Drive (Unibody 2008)](https://everymac.com/systems/apple/macbook/macbook-unibody-faq/macbook-unibody-13-non-pro-how-to-upgrade-hard-drive.html) | *EveryMac.com*
+- [ ] [How to get icons in Safari favorites (aka favicons) to display correctly? - Ask Different](https://apple.stackexchange.com/questions/294606/how-to-get-icons-in-safari-favorites-aka-favicons-to-display-correctly#294633)
+- [ ] [10 of the Best Mac Apps on the Planet](https://www.dancounsell.com/10-of-the-best-mac-apps-on-the-planet/)
+- [ ] [Very Nice Websites | tyler.io](https://tyler.io/very-nice-websites/)
+- [ ] [Home Page - The Tao of Mac](https://taoofmac.com/)
+
+## Images
+- [ ] `![MacEyes](https://i.snap.as/vaWsy03P.jpg)`
+- [ ] `![MacEyes](https://i.snap.as/yN0grBXT.png)`

@@ -1,0 +1,16 @@
+# LookUp Collection ⇨ Clipboard
+
+- [**RoutineHub Page**](https://routinehub.co/shortcut/11076/)
+- [iCloud Share Link](https://www.icloud.com/shortcuts/a6aaf079a66e44e6906e0a4edc593b4a)
+- [GitHub Issue](https://github.com/extratone/i/issues/141)
+
+## Social
+- [r/Shortcuts](https://www.reddit.com/r/shortcuts/comments/sr8gc2/a_shortcut_to_copy_a_lookup_collection_as_an/)
+- [Tweet](https://twitter.com/NeoYokel/status/1492694801543745539)
+---
+
+## Copy a collection from LookUp to your Clipboard.
+
+![LookUpIcon](https://user-images.githubusercontent.com/43663476/153735758-977f73c0-b151-45af-8d8b-1404dcb67401.png)
+
+This shortcut copies an alphabetized list of terms with their definitions from a [LookUp](https://apps.apple.com/us/app/lookup-english-dictionary/id872564448) collection of your specification to the clipboard.

@@ -1,0 +1,110 @@
+# Convert a Chrome Extension to Safari Web Extension
+Last Update: 2021-01-12
+
+**Part A: Safari Web Extension Development**
+
+Here we use [Simple Gmail Notes](https://chrome.google.com/webstore/detail/simple-gmail-notes/jfjkcbkgjohminidbpendlodpfacgmlm?hl=en) ( [Source Code](https://github.com/bartsolutions/simple-gmail-notes.chrome) ) for the example.
+
+1. Make sure you have Safari 14 and Xcode 12 installed
+
+2. In the terminal, use Xcode command for the conversion
+
+2. `xcrun safari-web-extension-converter <your extension folder>`
+
+2. (click Yes for default options)
+
+![](Convert%20a%20Chrome%20Extension%20to%20Safari%20Web%20Extension/1__CBbsbXl6SQMT0XwsqSVhg.png)
+
+3. A brand new Xcode project folder will be created, and Xcode will be automatically launched to open the new project.
+
+3. **The Xcode project will be linked to the source web extension folder**, so you need to make sure both source and generated folder exist and have a consistent relative path.
+
+![](Convert%20a%20Chrome%20Extension%20to%20Safari%20Web%20Extension/1_nyn86xrO3GAPmaCbqsi3MQ.png)
+
+4. Without doing anything further in Xcode, just click run to launch the extension
+
+![](Convert%20a%20Chrome%20Extension%20to%20Safari%20Web%20Extension/1_DosAhhL5NhDF9HXMob1ctw.png)
+
+5. Safari will be opened, yet extension will not appear at first sight. You need to do the following steps first: a. safari -> preferences -> enable development menu
+
+![](Convert%20a%20Chrome%20Extension%20to%20Safari%20Web%20Extension/1_jj8e5xo5pbIEo3fWPf07uw.png)
+5. b. safari -> develop menu -> click allow unsigned extension (need to do this every time safari is restarted)
+
+![](Convert%20a%20Chrome%20Extension%20to%20Safari%20Web%20Extension/1_IEtQu72j26N8jIO5Wx2SUA.png)
+5. c: safari -> preferences -> extensions tab -> click the extension
+
+![](Convert%20a%20Chrome%20Extension%20to%20Safari%20Web%20Extension/1_emZPRoHUXbdc2ElGMje-Fw.png)
+5. d: open the web site, click the icon near the address bar, and allow the access
+
+![](Convert%20a%20Chrome%20Extension%20to%20Safari%20Web%20Extension/1_RuDTgJkiWzWglW68oE3zYw.png)
+
+6. Now the extension should be able to be launched, and you could see the content script in the Safari debug console.
+
+![](Convert%20a%20Chrome%20Extension%20to%20Safari%20Web%20Extension/1_OQ5OSpAwrW1CBTYUD5hX_w.png)
+
+7. To check the background script, in the Safari, click Develop -> Web Extension Background Pages
+
+![](Convert%20a%20Chrome%20Extension%20to%20Safari%20Web%20Extension/1_Q-PT2K0Syj9RgapsyptoNA.png)
+
+8. Tip: while [WebExtensions API](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API) is an open standard, Apple has not (yet) implemented the full spec. You could find [limitations of current phase here](https://developer.apple.com/documentation/safariservices/safari_web_extensions/assessing_your_safari_web_extension_s_browser_compatibility).
+
+**Part B: Distribute Safari Web Extension to App Store**
+
+1. Go to App Store Connect, create an identity via [https://developer.apple.com/account/resources/identifiers/list/bundleId](https://developer.apple.com/account/resources/identifiers/list/bundleId)
+
+![](Convert%20a%20Chrome%20Extension%20to%20Safari%20Web%20Extension/1_xwzbX2Ny1ZtPB-z0i94F5w.png)
+
+2. In App store connect, create an app of ‘macApp’ [https://appstoreconnect.apple.com/apps](https://appstoreconnect.apple.com/apps) In the bundle ID drop down, just select the one newly created
+
+![](Convert%20a%20Chrome%20Extension%20to%20Safari%20Web%20Extension/1_bVO2qsEulT_G44DXd2KH1g.png)
+
+![](Convert%20a%20Chrome%20Extension%20to%20Safari%20Web%20Extension/1_MVOM6H0RD4je_nNrIk_Ajg.png)
+2. \
+
+3. Go to Xcode, click Project -> target -> app target, update app category and bundle identifier (use the one in the App Store)
+
+![](Convert%20a%20Chrome%20Extension%20to%20Safari%20Web%20Extension/1_NQJEH-Km9X9crvuTT0-TjA.png)
+
+4. Click extension target of project, update bundle identifier. Note the the project identifier should prefix the extension identifier. E.g. if project identifier is ‘hk.com.bart.simplegmailnotes’, then extension identifier should be something like ‘hk.com.bart.simplegmailnotes.extension’
+
+![](Convert%20a%20Chrome%20Extension%20to%20Safari%20Web%20Extension/1_LGUVUhVz3WD2KDVVHyQK6g.png)
+
+5. In Xcode -> assets -> make sure all icons are provided
+
+![](Convert%20a%20Chrome%20Extension%20to%20Safari%20Web%20Extension/1_JfhkvwLcgxES-2aX9i4PEA.png)
+
+6. Update the extension name in the swift file of app
+
+![](Convert%20a%20Chrome%20Extension%20to%20Safari%20Web%20Extension/story-board-change.png)
+
+7. In Xcode click Product -> Archive
+
+8. Distribute window should automatically appear after the archive action. (If not, click Window -> Organize -> Distribute App)
+
+![](Convert%20a%20Chrome%20Extension%20to%20Safari%20Web%20Extension/1_iAcgMEl4ThfgutKtFKqsxg.png)
+
+9. Select App Store Connect
+
+![](Convert%20a%20Chrome%20Extension%20to%20Safari%20Web%20Extension/1_bdtXGyYhWTdgOoDVMNF2bg.png)
+
+10. Open a browser, go to App store connect, click the app, and now you should be able to select the build
+
+![](Convert%20a%20Chrome%20Extension%20to%20Safari%20Web%20Extension/1_1Dv4lovtS5m5Ck67AqLfGg.png)
+
+![](Convert%20a%20Chrome%20Extension%20to%20Safari%20Web%20Extension/1_pyl8mgUqkzlEsM53D-eDVg.png)
+
+10. (If the build is not available, check your App Store email and see if there are any error reports.)
+
+11. Upload all the screenshots and add descriptions to App Store Connect
+
+12. You are now good to start a review process, good luck :)
+
+**Update 2020-12-30:** After a few weeks of back and forth, we finally launched the app into [Mac Extension Store](https://apps.apple.com/hk/app/simple-notes-for-gmail/id1541594492?l=en&amp;mt=12). Some major comments from Apple:
+
+1. Cannot have any donation related content, unless you are a non-profit organization
+2. Cannot have any payment, unless via Apple gateway
+3. Cannot mention COVID 19, unless you are officially granted
+4. Extension name must be changed from ‘Simple Gmail Notes’ to ‘Simple Notes for Gmail’
+
+[Convert a Chrome Extension to Safari Web Extension](https://bartsolutions.github.io/2020/11/20/safari-extension/)
+#documentation #dev

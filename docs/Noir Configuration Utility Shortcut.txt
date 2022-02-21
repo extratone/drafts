@@ -1,0 +1,23 @@
+# Noir Configuration Utility Shortcut
+
+## Short description.
+
+- [**RoutineHub Page**](https://routinehub.co/shortcut/8994/)
+- [iCloud Share Link](https://www.icloud.com/shortcuts/5ce7b81f705942d18ac98b46f16cf976)
+
+The popular "Dark Mode" Safari Extension, Noir,
+
+This shortcut expects a rich text list of Safari Tab Group Links in the clipboard. For more details/help/etc, visit this shortcut's GitHub Issue: https://github.com/extratone/i/issues/124
+
+
+```
+https://user-images.githubusercontent.com/43663476/150327072-def1edd2-12c9-451d-854d-433fd1f2fcb1.png
+https://user-images.githubusercontent.com/43663476/150327091-b6f0b4fd-165f-4cdb-abc2-8e2725bded6a.png
+https://user-images.githubusercontent.com/43663476/150327093-64c87dd1-8657-48ac-ad0b-059e3f9c37ee.png
+https://user-images.githubusercontent.com/43663476/150327097-501c4b08-ba25-4945-9f7f-8f772a23f787.png
+https://user-images.githubusercontent.com/43663476/150327102-e98cff9c-d050-456d-a1a0-f1dbe48101a7.png
+https://user-images.githubusercontent.com/43663476/150328455-f64b8d20-9aed-412b-a356-7ab24a647eec.png
+https://user-images.githubusercontent.com/43663476/150328464-cf28c657-d454-4078-8896-fccf4ceae077.png
+https://user-images.githubusercontent.com/43663476/150328468-7bfe418f-b2f8-483c-8d72-e9cb01bf222f.png
+https://user-images.githubusercontent.com/43663476/150328472-a7cf6af5-d575-46b3-a772-7d03da35a946.png
+```

@@ -1,0 +1,8 @@
+# Can you create a shortcut to send a message to a Telegram group every hour?
+Hi I wanted to know if you could help me create a shortcut to send a message to a telegram group every 1 hour
+
+===
+
+Unfortunately, that’s not gonna be possible. The native action doesn’t support sending to groups. If you wanted to send a message to yourself or another phone number-based contact every hour, you could do so, but it’d be pretty tedious.
+
+- [Tweet](https://twitter.com/NeoYokel/status/1491095688071028738)

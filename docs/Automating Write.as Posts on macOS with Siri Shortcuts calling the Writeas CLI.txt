@@ -1,0 +1,30 @@
+# Automating Write.as Posts on macOS with Siri Shortcuts calling the Writeas CLI
+- [Discuss dot Write.as](https://discuss.write.as/t/automating-write-as-posts-on-macos-with-siri-shortcuts-calling-the-writeas-cli/4484)
+
+Having recently learned how to *truly* make use of the [Write.as CLI](https://write.as/apps/cli), I've been working on a set of Siri Shortcuts for macOS that call it via the new `Run Shell Script` action. 
+
+Here's my first example:
+
+![Post to Write.as Blog](https://user-images.githubusercontent.com/43663476/152090534-4b0724b4-4f6c-48c2-aa16-b3271ad040f6.png)
+
+### [Post to Write.as Blog](https://www.icloud.com/shortcuts/90fd0010f9c24a20bd0216accad5612a) 
+
+This shortcut uses [the Write.as CLI](https://write.as/apps/cli) to post the current clipboard contents to a writeas blog specified at install.
+
+I wanted to start a thread here in case anyone has requests/suggestions and/or has done similar work of their own. 
+
+Ideas?
+
+===
+
+## Update
+
+![Post to Writeas Blog](https://user-images.githubusercontent.com/43663476/152098127-6408d6fc-8afd-482c-86aa-0bee8c1b0027.png)
+
+I added the option to specify the post's format and [uploaded the result to RoutineHub](https://routinehub.co/shortcut/10981).
+
+## Reply to [mnml](https://discuss.write.as/t/automating-write-as-posts-on-macos-with-siri-shortcuts-calling-the-writeas-cli/4484/5)
+
+I'm working on it! In theory, I should already have a working shortcut for iOS that calls the CLI on your Mac over SSH, but for whatever reason, I can't get it to respond. I could've sworn I once had the CLI working perfectly in [iSH](https://apps.apple.com/us/app/ish-shell/id1436902243) for iOS at one point in time, but of course, now I can't figure out how to install it either there or in [a-Shell](https://apps.apple.com/us/app/a-shell/id1473805438) lol.
+
+On the subject of write.as and iOS though, I would put money on myself as a contender against anybody. I've gotten to the point where I go to my phone even to publish stuff I've written on a desktop hehe. Let me know if I can be of further assistance/if you'd like to chat some time about solutions! 

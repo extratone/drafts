@@ -1,0 +1,14 @@
+# Removing Specific Text from Text in Siri Shortcuts
+- [MacStories Discord](https://canary.discord.com/channels/836622115435184162/837346027144347700/929538296957272064)
+- [Cassinelli's Discord](https://canary.discord.com/channels/551914015131959308/551962196138000386/929538225666662430)
+
+I may just be a complete idiot but...
+
+I'm working on a combo automator workflow + shortcut to extract markdown from Safari web pages and save it in Drafts (since `Safari Reader` is still broken in Shortcuts on macOS,) and I'm encountering a certain two lines of text at the beginning of the results which I'd like to remove:
+```
+Skip to content
+Main Navigation
+```
+and for the life of me, I can't figure out how lol.
+
+to say it another way: how would I go about removing specific text from text in Shortcuts?

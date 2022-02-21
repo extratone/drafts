@@ -1,0 +1,24 @@
+# Safari Tabs Jar Shortcut Documentation
+
+## Extracts raw URLs from rich text link list and saves them in Data Jar.
+
+- [**RoutineHub Page**](https://routinehub.co/shortcut/10868)
+- [iCloud Share Link](https://www.icloud.com/shortcuts/5bd639a8c8894d32ba7f2a1d8fcc971b)
+
+---
+
+## About
+This shortcut assumes you’ve used Safari 15’s “copy links” feature to copy the rich text links of your open tabs to the clipboard. It extracts the raw URLs from said links via [Make Markdown from Rich Text](https://www.matthewcassinelli.com/actions/make-markdown-from-rich-text/) followed by a [Get URLs from Input](https://www.matthewcassinelli.com/actions/get-urls-from-input/) action and stores said URLs in the Data Jar list specified at install.
+
+The companion shortcut - [Restore Safari Tabs](https://routinehub.co/shortcut/10869) - can be used to reopen the links you've stored in Safari.
+
+===
+
+## Share
+[ Storing/Restoring Safari 15 Tabs in Data Jar : shortcuts](https://www.reddit.com/r/shortcuts/comments/s4le1m/storingrestoring_safari_15_tabs_in_data_jar/)
+
+Making use of Safari 15's somewhat hidden `Copy Links` button and [Data Jar](https://datajar.app), I've found this pair of shortcuts extremely useful in my own browsing life.
+
+[Safari Tab Jar](https://routinehub.co/shortcut/10868) 
+
+[Restore Safari Tabs](https://routinehub.co/shortcut/10869)
