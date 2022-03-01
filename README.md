@@ -113,6 +113,16 @@ A celebration of The Winders™ Aesthetic. Based on [one of my favorite Telegram
 - [Corresponding GitHub Issue in my Drafts-specific repository](https://github.com/extratone/drafts/issues/26)
 - [A wee blog post](https://bilge.world/windows-eternal)
 
+### ENCOM
+
+![ENCOM Span](https://user-images.githubusercontent.com/43663476/156084447-9cb6b071-853f-4b7b-8590-ee243b58ff75.png)
+![CDCD8EEA-8046-4D2B-A302-AA5A29A06544](https://user-images.githubusercontent.com/43663476/156097365-fc9b75f0-d9b6-4f43-a84d-b1f9e8d12c77.png)
+
+- [**Drafts Directory**](https://directory.getdrafts.com/t/1wg)
+- [GitHub Issue](https://github.com/extratone/drafts/issues/29)
+- [Source](https://github.com/extratone/drafts/blob/main/Themes/JSON/ENCOM.json)
+- [Tilde](https://tilde.town/~extratone/encom)
+
 ### Greyhound
 
 ![Greyhound on iOS](https://user-images.githubusercontent.com/43663476/152304057-7d37b8bd-d6c9-4995-8bb6-081f9e03b5e7.png)
@@ -164,17 +174,14 @@ I did not originally intend to share this theme, but I sortof accidentally ended
 
 * [This theme’s Issue on my iOS-specific GitHub Repository](https://github.com/extratone/i/issues/50)
 
-## Keyboard Shortcuts
-
-```
-01092022-5555
-Drafts Version: 35
-```
+---
 
 [Gist - I hope to properly maintain a public list of my keyboard shortcuts in Drafts.](https://gist.github.com/extratone/2e54243a2123ccfa6a37c6e8cc1057e2)
 
 ## Drafts Keyboard Shortcuts (iOS Export)
-`02202022-162808`
+`03012022-025847`
+- **Toggle Editing Mode** - ⌘ Return
+- **Toggle Flagged** - ⌘ ⇧ L
 - **Quick Search** - ⌘ ⇧ F
 - **Quick Navigation** - ⌘ \
 - **Markdown Capture Selected** URL - ⌥O
