@@ -23,6 +23,7 @@ Please feel free to use/distribute anything in here - including original content
 ## Written Work
 
 - [**Using Drafts with NeoCities**](https://bilge.world/using-drafts-with-neocities)
+- [On Drafts and Obsidian](https://tilde.town/~extratone/draftsidian) (WIP)
 - [Automating Write.as Posts on macOS](https://bilge.world/automating-writeas-posts)
 - [Zalgo Text in a Keyboard Shortcut](https://bilge.world/drafts-zalgo-action)
 
