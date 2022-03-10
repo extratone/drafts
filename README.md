@@ -38,6 +38,7 @@ Please feel free to use/distribute anything in here - including original content
 
 ## David Blue’s Drafts Action Directory Contributions
 
+- [Run Shortcut | Drafts Directory](https://directory.getdrafts.com/a/1xP)
 - [Clear Clipboard | Drafts Directory](https://directory.getdrafts.com/a/1vP)
 - [Linky Selection | Drafts Directory](https://directory.getdrafts.com/a/1wa)
 - [Error | Drafts Directory](https://actions.getdrafts.com/a/1wV)
@@ -56,6 +57,7 @@ Please feel free to use/distribute anything in here - including original content
 
 ### Actions
 
+- [Clear Clipboard](https://actions.getdrafts.com/a/1vP)
 - [Open URL](https://actions.getdrafts.com/a/1v4)
 - [Copy Drafts Link as MD link](https://actions.getdrafts.com/a/1v5)
 - [Tweet Selection](https://actions.getdrafts.com/a/1v6)
