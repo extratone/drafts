@@ -38,6 +38,7 @@ Please feel free to use/distribute anything in here - including original content
 
 ## David Blue’s Drafts Action Directory Contributions
 
+- [Query SnippetsLab | Drafts Directory](https://directory.getdrafts.com/a/1xe)
 - [Run Shortcut | Drafts Directory](https://directory.getdrafts.com/a/1xP)
 - [Clear Clipboard | Drafts Directory](https://directory.getdrafts.com/a/1vP)
 - [Linky Selection | Drafts Directory](https://directory.getdrafts.com/a/1wa)
