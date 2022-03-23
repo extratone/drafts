@@ -177,6 +177,39 @@ I did not originally intend to share this theme, but I sortof accidentally ended
 
 * [This theme’s Issue on my iOS-specific GitHub Repository](https://github.com/extratone/i/issues/50)
 
+## Autocomplete
+
+- [**wtf**](x-drafts://importautocompleteitem?data=%7B%22value%22:%22New%20Item%22,%22label%22:%22New%20Item%22,%22prefix%22:%22%22,%22suffix%22:%22%22,%22includesSuffix%22:true,%22identifier%22:%22302904BD-7B48-44DE-94F7-62BA6131627C%22%7D)
+`https://davidblue.wtf/drafts/\[[uuid]].html`
+
+- [**x**](x-drafts://importautocompleteitem?data=%7B%22value%22:%22%5B%5B%5Bdisplay_title%5D%5D%5D(%5B%5Bdraft_open_url%5D%5D)%22,%22label%22:%22x%22,%22prefix%22:%22%22,%22suffix%22:%22%22,%22includesSuffix%22:true,%22identifier%22:%2223CB503F-8578-4F2D-AC21-5CAB5B73B4C3%22%7D)
+`[\[[display_title]]](\[[draft_open_url]])`
+
+- [**latlong**](x-drafts://importautocompleteitem?data=%7B%22value%22:%22%60%5B%5Blatitude%5D%5D-%5B%5Blongitude%5D%5D-%5B%5Bdate%7C%25m%25d%25Y-%25H%25M%25S%5D%5D%60%22,%22label%22:%22latlong%22,%22prefix%22:%22%22,%22suffix%22:%22%22,%22includesSuffix%22:true,%22identifier%22:%2239E973FC-5E2D-4112-AC59-E9504127F9FA%22%7D)
+``[[latitude]]-[[longitude]]-[[date|%m%d%Y-%H%M%S]]``
+
+- [**img**](x-drafts://importautocompleteitem?data=%7B%22value%22:%22!%5B%5D(%5B%5Bclipboard%5D%5D)%22,%22label%22:%22img%22,%22prefix%22:%22%22,%22suffix%22:%22%22,%22includesSuffix%22:true,%22identifier%22:%2233AE9B3A-FD6E-44D8-BC21-7F444FBDF62B%22%7D)
+`![]([[clipboard]])`
+
+- [**code**](x-drafts://importautocompleteitem?data=%7B%22value%22:%22%60%60%60%5Cn%5B%5Bclipboard%5D%5D%5Cn%60%60%60%22,%22label%22:%22code%22,%22prefix%22:%22%22,%22suffix%22:%22%22,%22includesSuffix%22:true,%22identifier%22:%226B95C6F5-CB4A-4322-BA97-BDE0AD1F17E2%22%7D)
+````
+[[clipboard]]
+````
+- [**snap**](x-drafts://importautocompleteitem?data=%7B%22value%22:%22%60%5B%5Bclipboard%5D%5D%60%22,%22label%22:%22snap%22,%22prefix%22:%22%22,%22suffix%22:%22%22,%22includesSuffix%22:true,%22identifier%22:%22584A94FE-1275-434F-A773-F01A675B7566%22%7D)
+``[[clipboard]]``
+
+- [**video**](x-drafts://importautocompleteitem?data=%7B%22value%22:%22%3Cvideo%20controls%3E%5Cn%20%20%3Csource%20src%3D%5C%22%5B%5Bclipboard%5D%5D%5C%22%3E%5Cn%3C%5C/video%3E%22,%22label%22:%22video%22,%22prefix%22:%22%22,%22suffix%22:%22%22,%22includesSuffix%22:true,%22identifier%22:%2227B0332E-3B19-49C2-BE36-514338C8596D%22%7D)
+`<video controls>
+  <source src="[[clipboard]]">
+</video>`
+
+- [**audio**](x-drafts://importautocompleteitem?data=%7B%22value%22:%22%3Caudio%20controls%3E%5Cn%20%20%3Csource%20src%3D%5C%22%5B%5Bclipboard%5D%5D%5C%22%3E%5Cn%3C%5C/audio%3E%22,%22label%22:%22audio%22,%22prefix%22:%22%22,%22suffix%22:%22%22,%22includesSuffix%22:true,%22identifier%22:%223365709F-0899-4EDC-80B1-BD42DCB219EC%22%7D)
+`<audio controls>
+  <source src="[[clipboard]]">
+</audio>`
+
+
+
 ---
 
 [Gist - I hope to properly maintain a public list of my keyboard shortcuts in Drafts.](https://gist.github.com/extratone/2e54243a2123ccfa6a37c6e8cc1057e2)
