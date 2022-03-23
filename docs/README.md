@@ -20,9 +20,34 @@ Please feel free to use/distribute anything in here - including original content
 * [Discord](https://discord.gg/0b9KQUKP858b0iZF)
 * [*Everywhere*](https://raindrop.io/davidblue/social-directory-21059174)...
 
+---
+
+## Index
+
+  * [Written Work](#written-work)
+  * [Siri Shortcuts](#siri-shortcuts)
+  * [David Blue’s Drafts Action Directory Contributions](#david-blue-s-drafts-action-directory-contributions)
+  * [Unlisted Drafts Directory Links](#unlisted-drafts-directory-links)
+    + [Actions](#actions)
+    + [Themes](#themes)
+    + [Action Groups](#action-groups)
+    + [Workspaces](#workspaces)
+  * [Themes](#themes-1)
+    + [Windows Eternal](#windows-eternal)
+    + [ENCOM](#encom)
+    + [Greyhound](#greyhound)
+    + [Windows Iowa](#windows-iowa)
+    + [The Psalms](#the-psalms)
+  * [Autocompletes](#autocompletes)
+      - [Install](#install)
+  * [Drafts Keyboard Shortcuts (iOS Export)](#drafts-keyboard-shortcuts--ios-export-)
+  * [External](#external)
+
 ## Written Work
 
 - [**Using Drafts with NeoCities**](https://bilge.world/using-drafts-with-neocities)
+- [Run Siri Shortcuts with Hyperlinks](https://bilge.world/run-siri-shortcuts-with-hyperlinks)
+- [Windows Eternal Drafts Theme](https://bilge.world/windows-eternal)
 - [Automating Write.as Posts on macOS](https://bilge.world/automating-writeas-posts)
 - [Zalgo Text in a Keyboard Shortcut](https://bilge.world/drafts-zalgo-action)
 
@@ -182,6 +207,8 @@ I did not originally intend to share this theme, but I sortof accidentally ended
 ## Autocompletes
 - [GitHub Issue](https://github.com/extratone/drafts/issues/31)
 - [Directory of install URLS in the repo](https://github.com/extratone/drafts/blob/main/autocomplete)
+- [Tilde](https://tilde.town/~extratone/drafts/autocompletes/)
+- [WTF](https://davidblue.wtf/drafts/D7135FD0-C2C5-4AB4-B0DD-DAAE7E70BA64.html)
 
 This is a collection of my personal “[Autocomplete Suggestions](https://docs.getdrafts.com/docs/editor/autocomplete)” (identical to what [TextExpander](https://apps.apple.com/us/app/textexpander-keyboard/id1075927186) calls “snippets”) for Drafts, and they *are* installable, if you’d like.
 
@@ -190,7 +217,11 @@ This is a collection of my personal “[Autocomplete Suggestions](https://docs.g
 #### Install
 The hyperlinks on the expansion triggers will take you a corresponding plain text file containing the installation URL (which is, of course, the entire contents of each, encoded in a string.) Copy the full text of the URL, paste it in your web browser, and tap/click “Go” (or your equivalent)/key `RETURN` or `ENTER`. Regardless of platform, you should receive a prompt asking if you’d like to open it in Drafts.
 
-Here’s a wee demo video:
+Here’s a wee [demo video](https://user-images.githubusercontent.com/43663476/159810974-fa1531df-c0a5-4f1b-82f8-3fe11e31f36d.MOV):
+
+<video controls>
+  <source src="https://user-images.githubusercontent.com/43663476/159810974-fa1531df-c0a5-4f1b-82f8-3fe11e31f36d.MOV">
+</video>
 
 --- 
 
