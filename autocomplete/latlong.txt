@@ -1,0 +1,1 @@
+x-drafts://importautocompleteitem?data=%7B%22value%22:%22%60%5B%5Blatitude%5D%5D-%5B%5Blongitude%5D%5D-%5B%5Bdate%7C%25m%25d%25Y-%25H%25M%25S%5D%5D%60%22,%22label%22:%22latlong%22,%22prefix%22:%22%22,%22suffix%22:%22%22,%22includesSuffix%22:true,%22identifier%22:%2239E973FC-5E2D-4112-AC59-E9504127F9FA%22%7D
