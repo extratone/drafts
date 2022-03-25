@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>ThoughtAsylum - Trove</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: #000056;
+      --main-color: #ffe8bd;
+      --alternate-bg-color: #1c0021;
+      --alternate-color: #fff4e6;
+      --main-border-color: #f43f32;
+        --link-color: #36fd63;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #fff4e6;
+        --main-color: #00006b;
+        --alternate-bg-color: #fffdeb;
+        --alternate-color: #1c0021;
+        --main-border-color: #f43f32;
+          --link-color: #ff0000;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>ThoughtAsylum - Trove</h2>
+
+<h3>Instructions</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong><br />
+<strong>Colour:</strong> none<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 0<br />
+<strong>Unique ID:</strong> FEEA468A-30F5&#8211;4C25-AD75-A0FE8FDC58BF<br />
+<strong>Description:</strong></p>
+
+<h3>TAD-Instructions (Trove)</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> info<br />
+<strong>Colour:</strong> violet<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> None<br />
+<strong>Log Level:</strong> None<br />
+<strong>Number of Steps:</strong> 3<br />
+<strong>Unique ID:</strong> 6F6C9016&#8211;8D2E-4507&#8211;8512&#8211;03BA1731B6F9<br />
+<strong>Description:</strong><br />
+Information about The ThoughtAsylum Action Group and the TADpoLe Library
+VERSION:20210508</p>
+
+<h3>Dictation</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong><br />
+<strong>Colour:</strong> none<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 0<br />
+<strong>Unique ID:</strong> 3D8E2CD7-F656&#8211;45C0-BEEF-3ED6323BF499<br />
+<strong>Description:</strong></p>
+
+<h3>TAD-Dictate to Clipboard</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> btn_dictate<br />
+<strong>Colour:</strong> red<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> A9997CE8&#8211;876E-45F4&#8211;99E4-DB23FAFCE042<br />
+<strong>Description:</strong><br />
+Use Drafts to capture dictated text, and then place that text on the system clipboard when ‘create’ is selected. Note, this action does not create a new draft.</p>
+
+<h3>TAD-Dictate Log Entry</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> btn_dictate<br />
+<strong>Colour:</strong> orange<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> 58181C1F-ECA5&#8211;412B-8A47&#8211;661A8E0A245A<br />
+<strong>Description:</strong><br />
+Use Drafts to capture dictated text, to a time stamped log entry at the current cursor position.</p>
+
+<h3>TAD-Dictate Simple List</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 429-checkmark2<br />
+<strong>Colour:</strong> blue<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> A2353E42&#8211;2C16&#8211;4121-AE27-BC090B63E2F8<br />
+<strong>Description:</strong><br />
+Dictate entries to a new simple list format in a new draft, which is loaded into the editor. You can use the dictation phrase “newline” to splt entries.</p>
+
+<h3>TAD-Dictate Taskpaper List</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 427-todo-list<br />
+<strong>Colour:</strong> blue<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> 85E9DA14-F086&#8211;4AAB-B831-A0A9153DFEB2<br />
+<strong>Description:</strong><br />
+Dictate entries to a new Taskpaper format in a new draft, which is loaded into the editor. You can use the dictation phrase “newline” to splt entries.</p>
+
+<h3>TAD-Dictate Markdown List</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> action_reminders<br />
+<strong>Colour:</strong> blue<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> 1C4D2916-DD5D-4EA0-AB0D-AF35D5CFED85<br />
+<strong>Description:</strong><br />
+Dictate entries to a new Drafts Markdown list format in a new draft, which is loaded into the editor. You can use the dictation phrase “newline” to splt entries.</p>
+
+<h3>Reader Mode</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong><br />
+<strong>Colour:</strong> none<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 0<br />
+<strong>Unique ID:</strong> BAF760B5-DF83&#8211;48E6&#8211;8EA2&#8211;349B0133EEF0<br />
+<strong>Description:</strong></p>
+
+<h3>TAD-Enable Reading Mode</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 534-eye<br />
+<strong>Colour:</strong> yellow<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> 6320A206&#8211;4304&#8211;41E3-B119-DB0CEABF73B8<br />
+<strong>Description:</strong><br />
+Enable reading mode.</p>
+
+<h3>TAD-Disable Reading Mode</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 534-eye<br />
+<strong>Colour:</strong> blue<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> BEB4B4CA-605C-4881&#8211;8373-BFF5D229E70D<br />
+<strong>Description:</strong><br />
+Disable reading mode.
+This action is set to turn all options off (the implicit defaults), but you could duplicate to create your own to keep your preferred settings. The options are link mode, focus mode, and idle disabled mode.</p>
+
+<h3>TAD-Display Reading Mode Settings</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 534-eye<br />
+<strong>Colour:</strong> gray<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> 6A80B3E2-E450&#8211;4194&#8211;8846&#8211;1CBD3F53A78E<br />
+<strong>Description:</strong><br />
+Display details of the settings for reader mode.</p>
+
+<h3>Mac Audio</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong><br />
+<strong>Colour:</strong> none<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 0<br />
+<strong>Unique ID:</strong> E45538EA-045C-437A-B4DF-D56B9F0C2DC8<br />
+<strong>Description:</strong></p>
+
+<h3>TAD-Play MP3 From Data</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 615-sound-2<br />
+<strong>Colour:</strong> orange<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 4<br />
+<strong>Unique ID:</strong> 156D1859&#8211;1829&#8211;4B5B-9B64&#8211;5A95BAF41B8B<br />
+<strong>Description:</strong><br />
+Plays a base64 encoded MP3 using a preview window. The base64 content of the sound has been specified in a tag definition.</p>
+
+<h3>TAD-Play System Sound</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 615-sound-2<br />
+<strong>Colour:</strong> indigo<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 4<br />
+<strong>Unique ID:</strong> 124C7D4C-4766&#8211;49A2&#8211;9A2A-BF5CEBE9A0EB<br />
+<strong>Description:</strong><br />
+Play a local audio file using a shell script. The file path is specified by defining a template tag.</p>
+
+<h3>App Control</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong><br />
+<strong>Colour:</strong> none<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 0<br />
+<strong>Unique ID:</strong> 80243CE9&#8211;92B0&#8211;4224-AA22&#8211;7D1A0766AA95<br />
+<strong>Description:</strong></p>
+
+<h3>TAD-Quit Drafts</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> cancel<br />
+<strong>Colour:</strong> none<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> 994902F7-E666&#8211;4E72-AE7E-8394DE5F952E<br />
+<strong>Description:</strong><br />
+Close the Drafts app.
+Mac only as uses AppleScript.</p>
+
+<h3>TAD-Toggle App Theme</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 336-reloop<br />
+<strong>Colour:</strong> blue<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> 2280E03D-92C8&#8211;4224&#8211;832F-CD0B5AE7CE8C<br />
+<strong>Description:</strong><br />
+Switch the app theme to light or dark, changing the theme it is in now. This will switch the theme out of system/automatic.</p>
+
+<h3>TAD-Toggle Typewriter Mode</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 341-keyboard<br />
+<strong>Colour:</strong> blue<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 6372097B-EAC1&#8211;47FC-A53F-1F41BF459E19<br />
+<strong>Description:</strong><br />
+Toggle the typewriter mode on and off</p>
+
+<h3>TAD-Toggle Idle</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 393-sofa<br />
+<strong>Colour:</strong> blue<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> FBC96171&#8211;7CD6&#8211;42BB-B5CA-8A80AAB0772B<br />
+<strong>Description:</strong><br />
+Toggle Drafts’ idle mode. This will not have any effect on macOS.</p>
+
+<h3>TAD-Search Actions</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong> ⌘/<br />
+<strong>Icon:</strong> 359-binoculars<br />
+<strong>Colour:</strong> blue<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 251EAD82-E6A9&#8211;4004-A20D-11AFC6E533FE<br />
+<strong>Description:</strong><br />
+Opens a URL to search the actions list, placing the cursor in the search field. Link to this and assign it a keyboard shortcut.</p>
+
+<h3>App Info</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong><br />
+<strong>Colour:</strong> none<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 0<br />
+<strong>Unique ID:</strong> BE35AF42&#8211;0316&#8211;4BA6-A556-F638426E2910<br />
+<strong>Description:</strong></p>
+
+<h3>Draft Info</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong><br />
+<strong>Colour:</strong> none<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 0<br />
+<strong>Unique ID:</strong> 9B23682B-93E3&#8211;43E1-BD08&#8211;2D3DB47494BE<br />
+<strong>Description:</strong></p>
+
+<h3>TAD-Display Random Line</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 623-dice-3<br />
+<strong>Colour:</strong> orange<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 3<br />
+<strong>Unique ID:</strong> E8D0C963&#8211;9BD4&#8211;442D-9183-E876F508CB2A<br />
+<strong>Description:</strong><br />
+Display a randomly selected line from the current draft. It will ignore blank lines (lines that have no content or just whitespace), and will notify you if your draft has no displayable content.</p>
+
+<h3>Web</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong><br />
+<strong>Colour:</strong> none<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 0<br />
+<strong>Unique ID:</strong> B6FF0234-C8AE-454C-8479-F103E74A33C9<br />
+<strong>Description:</strong></p>
+
+<h3>TAD-Fetch URL Content to New Draft</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 401-globe<br />
+<strong>Colour:</strong> green<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> 800726DC-242A-45B4&#8211;9189&#8211;86FCF9992835<br />
+<strong>Description:</strong><br />
+Fetches the content of the URL on the clipboard and puts the content into a new draft.</p>
+
+<h3>TAD-Fetch &amp; Load URL Content to New Draft</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 401-globe<br />
+<strong>Colour:</strong> blue<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> 5F3BE766-C042&#8211;4326-A695&#8211;5E01E0CDBBA2<br />
+<strong>Description:</strong><br />
+Fetches the content of the URL on the clipboard, puts the content into a new draft, and loads the draft into the editor.</p>
+
+<h3>TAD-Google Selected Text</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> search<br />
+<strong>Colour:</strong> red<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> D197FB85&#8211;462B-4C93&#8211;8252-F7563B400E1D<br />
+<strong>Description:</strong><br />
+Open a Google search using the selected text.</p>
+
+<h3>Online Information</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong><br />
+<strong>Colour:</strong> none<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 0<br />
+<strong>Unique ID:</strong> 7EC9A111-A0DE-4B4A-A463-A6CCB9BA1C2A<br />
+<strong>Description:</strong></p>
+
+<h3>TA-Display External IP</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 552-flag-1<br />
+<strong>Colour:</strong> blue<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> 7734DDFF-8FDE-4BD2&#8211;9D9D-E90B20096E6F<br />
+<strong>Description:</strong><br />
+Displays the external IPv4 address.</p>
+
+<h3>TA-Insert CSNRG Number</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 625-dice-5<br />
+<strong>Colour:</strong> blue<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> 37CFE0B9&#8211;9364&#8211;4653-B653&#8211;59C5C538148E<br />
+<strong>Description:</strong><br />
+Insers a random whole number between 1 and 500 (inclusive) based on an API call to csrng.net, a NIST FIPS 140&#8211;2 certified random number generator.</p>
+
+<p>CSRNG = Cryptographically Secure Random Number Generator</p>
+
+<h3>Control Bear</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong><br />
+<strong>Colour:</strong> none<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 0<br />
+<strong>Unique ID:</strong> A4F6EEC2&#8211;0839&#8211;4155-AE57-A1765D6F5AA2<br />
+<strong>Description:</strong></p>
+
+<h3>TAD-Bear Set Font</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> typography<br />
+<strong>Colour:</strong> red<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> 962E6B8E-0D53&#8211;4AF3&#8211;9A7B-293F21174406<br />
+<strong>Description:</strong><br />
+Set the font in Bear.</p>
+
+<h3>TAD-Bear Set Theme</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 568-photo<br />
+<strong>Colour:</strong> red<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> 6A5668B8&#8211;39A9&#8211;43A7&#8211;98FD-FEB2447F5008<br />
+<strong>Description:</strong><br />
+Set the theme in Bear.</p>
+
+<h3>TAD-Bear Select Locked</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 381-locked<br />
+<strong>Colour:</strong> red<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> 4B9ADD6C-05B1&#8211;487E-B18C-4EB46ACEAA9E<br />
+<strong>Description:</strong><br />
+Set the sidebar selection in Bear to locked notes.</p>
+
+<h3>TAD-Bear Select Today</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> calendar-date<br />
+<strong>Colour:</strong> red<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> 0F2BD264&#8211;965C-44D7&#8211;9DEF-EE57DA319BC3<br />
+<strong>Description:</strong><br />
+Set the sidebar selection in Bear to today’s notes.</p>
+
+<h3>TAD-Bear Select Todo</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> checkbox-active<br />
+<strong>Colour:</strong> red<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> 1168827E-FB92&#8211;4517-AECA-0FEFEA40AEBC<br />
+<strong>Description:</strong><br />
+Set the sidebar selection in Bear to todo notes.</p>
+
+<h3>TAD-Bear Select Untagged</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> inbox-full<br />
+<strong>Colour:</strong> red<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> B690EA76-CDA9&#8211;4558-A0F9&#8211;099D085C4EC3<br />
+<strong>Description:</strong><br />
+Set the sidebar selection in Bear to untagged notes.</p>
+
+<h3>TAD-Bear Select Archive</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 351-bankers-box<br />
+<strong>Colour:</strong> red<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> 53885C17&#8211;8080&#8211;41B0&#8211;8F60-D5DDC9D09184<br />
+<strong>Description:</strong><br />
+Set the sidebar selection in Bear to archived notes.</p>
+
+<h3>TAD-Bear Select Trash</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 636-trash<br />
+<strong>Colour:</strong> red<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> 7EF9A289&#8211;4E2B-42D1&#8211;8BA5-CFDD4C4E50B6<br />
+<strong>Description:</strong><br />
+Set the sidebar selection in Bear to trashed notes.</p>
+
+<h3>TAD-Delete Bear Tag</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 433-x<br />
+<strong>Colour:</strong> red<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> 86E78B60-BE62&#8211;4C29&#8211;9A69&#8211;192667A7CB8E<br />
+<strong>Description:</strong><br />
+Select and delete a Bear tag in the Bear app. Notes tagged with this will be left in place, but if the tag belongs to any locked notes, the tag cannot be deleted.</p>
+
+<h3>TAD-Rename Bear Tag</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> type-rotate<br />
+<strong>Colour:</strong> red<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> 7312B7EE-A5DF-4DDC-81E8-EDC0F20D4D19<br />
+<strong>Description:</strong><br />
+Select and rename a Bear tag in the Bear app.</p>
+
+<h3>TAD-Show Tag in Bear</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> page-search-alt<br />
+<strong>Colour:</strong> red<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> AED880D1&#8211;6C19&#8211;49A2-AB31-F8EA517FE9F5<br />
+<strong>Description:</strong><br />
+Open the Bear app and select the tag.</p>
+
+<h3>Conversion</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong><br />
+<strong>Colour:</strong> none<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 0<br />
+<strong>Unique ID:</strong> 8115B83F-F636&#8211;4E2E-8035&#8211;60F47547FFE5<br />
+<strong>Description:</strong></p>
+
+</body>
+
+<footer>
+<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="drafts://open?uuid=8B2C71B7-5A2B-4A60-AFFC-28C07127F849">Local</a></p>
+</footer>
+</html>

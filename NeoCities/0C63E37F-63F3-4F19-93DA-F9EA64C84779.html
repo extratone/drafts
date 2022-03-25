@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>SYSTEM COLORS Telegram Themes</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: #000056;
+      --main-color: #ffe8bd;
+      --alternate-bg-color: #1c0021;
+      --alternate-color: #fff4e6;
+      --main-border-color: #f43f32;
+        --link-color: #36fd63;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #fff4e6;
+        --main-color: #00006b;
+        --alternate-bg-color: #fffdeb;
+        --alternate-color: #1c0021;
+        --main-border-color: #f43f32;
+          --link-color: #ff0000;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>SYSTEM COLORS Telegram Themes</h1>
+
+<figure>
+<img src="https://i.snap.as/W0JHUEKM.png" alt="SYSTEM COLORS" />
+<figcaption>SYSTEM COLORS</figcaption>
+</figure>
+
+<p>Make no mistake - I did virtually nothing to create the following themes, nor do I know anything about Telegram theme development, generally. Frankly, I shouldn’t have even taken the time to whip <em>these</em> up, but I wanted to at least dip my toe in the experience for <a href="https://github.com/extratone/bilge/issues/228">a strangely sentimental essay I’ve been working on</a> about the service’s service in my working life.</p>
+
+<p>https://t.me/extratone/6496</p>
+
+<p>The one thing I <em>did</em> do is track down the most accurate translation of <a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/color/">iOS’ core system colors</a> in hex I could find, which I spammed in each reasonably-generateable format all over every dead end group chat and channel I once created and have (shamefully) subsequently neglected and forgotten on this service.</p>
+
+<pre><code>--color-pink: #ff2d55;
+--color-purple: #5856d6;
+--color-orange: #ff9500;
+--color-yellow: #ffcc00;
+--color-red: #ff3b30;
+--color-teal-blue: #5ac8fa;
+--color-blue: #007aff;
+--color-green: #4cd964;
+</code></pre>
+
+<p>I originally started using the <a href="https://themes.contest.com">Big Boy Editor</a> and immediately realized that there is no apparent means of translating the iOS themes I’d found recently into .tdesktop themes without 1.) implementing an unofficial, but highly tedious translation matrix between the entirely different formats, or just 2.) fuckin eyeballing it.</p>
+
+<ul>
+<li><a href="https://t.me/addtheme/systemblue">SYSTEM BLUE</a></li>
+<li><a href="https://t.me/addtheme/systempink">SYSTEM PINK</a></li>
+<li><a href="https://t.me/addtheme/systempurple">SYSTEM PURPLE</a></li>
+<li><a href="https://t.me/addtheme/systemred">SYSTEM RED</a></li>
+<li><a href="https://t.me/addtheme/systemgreen">SYSTEM GREEN</a></li>
+<li><a href="https://t.me/addtheme/systemorange">SYSTEM ORANGE</a></li>
+</ul>
+
+<p>I started with <a href="https://t.me/addtheme/tgbetacore">perhaps the best light theme for this app I’ve ever found</a> in terms of ultimate legibility in blinding sunlight, loading its (apparently early iOS-inspired?) style as a duplicate in the Bitch Mode “editor” found within the iOS app, itself. Then, I simply replaced its singular hex color asset with the equivalents you see above in the three classes to which it was assigned…</p>
+
+<figure>
+<img src="https://i.snap.as/Y3fNeQP6.png" alt="SYSTEM COLORS Horizontal" />
+<figcaption>SYSTEM COLORS Horizontal</figcaption>
+</figure>
+
+<p>…and now I’m a real life Software Developer™! How amazing is tech in 2021, right???</p>
+
+<hr />
+
+<p>Please do feel free to act upon literally any sort of compulsion to contact me however you wish. <a href="https://bit.ly/whoisdavidblue">This link</a> will pull up my full VCF contact card on a mobile device.</p>
+
+</body>
+
+<footer>
+<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="drafts://open?uuid=0C63E37F-63F3-4F19-93DA-F9EA64C84779">Local</a></p>
+</footer>
+</html>

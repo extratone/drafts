@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>The Psalms Action Group</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: #000056;
+      --main-color: #ffe8bd;
+      --alternate-bg-color: #1c0021;
+      --alternate-color: #fff4e6;
+      --main-border-color: #f43f32;
+        --link-color: #36fd63;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #fff4e6;
+        --main-color: #00006b;
+        --alternate-bg-color: #fffdeb;
+        --alternate-color: #1c0021;
+        --main-border-color: #f43f32;
+          --link-color: #ff0000;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>The Psalms Action Group</h1>
+
+<h3>Action Search</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> search<br />
+<strong>Colour:</strong> gray<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 079FAC47&#8211;6520&#8211;4AE9&#8211;89DF-0474063ECAC7<br />
+<strong>Description:</strong></p>
+
+<h3>Send to Saved Messages (Telegram)</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong> ⌃G<br />
+<strong>Icon:</strong> chat-message<br />
+<strong>Colour:</strong> blue<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> E804AA1D-DA2A-4A17-ACB5&#8211;3AEB870B3380<br />
+<strong>Description:</strong><br />
+Send draft to Telegram, opens my personal Saved Messages chat via my phone number.</p>
+
+<h3>To Raindrop via Telegram</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> chat-message<br />
+<strong>Colour:</strong> blue<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 39EF4050-F835&#8211;43EE-B185&#8211;558875CBFB04<br />
+<strong>Description:</strong><br />
+Send draft to Telegram, opens my personal Saved Messages chat via my phone number.</p>
+
+<h3>Tweet with Tweetbot</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> action_twitter_filled<br />
+<strong>Colour:</strong> blue<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 72DB584D-B507&#8211;4C5D-B4DC-41F61BF6B0CB<br />
+<strong>Description:</strong><br />
+Send to Tweetbot compose window.</p>
+
+<h3>Embed <audio> Element</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 565-cassette-tape<br />
+<strong>Colour:</strong> violet<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 14A40371&#8211;7C9C-472C-9DC5-E844A26B81D8<br />
+<strong>Description:</strong><br />
+<code>Version 0.1</code>
+Assuming the URL to an audio file is in your clipboard, this action uses said URL as the source file for an embedded audio player using the <code>&lt;audio&gt;</code> element.</p>
+
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio"><code>&lt;audio&gt;</code> Element Documentation</a></li>
+</ul>
+
+<h2>Steps</h2>
+
+<ol>
+<li>Insert Text:</li>
+</ol>
+
+<pre><code>&lt;audio controls&gt;
+  &lt;source src=&quot;&quot;&gt;
+&lt;/audio&gt;
+</code></pre>
+
+<h2>Contact/Feedback</h2>
+
+<ul>
+<li><a href="https://forums.getdrafts.com/u/blue">My profile on the Drafts Community Forums</a></li>
+<li><a href="https://github.com/extratone/i/issues/51">This Action’s Issue on my iOS-specific GitHub Repository</a></li>
+</ul>
+
+<h3>Extra Details</h3>
+
+<ul>
+<li><strong>Drafts Version:</strong> 26.2.4</li>
+<li><strong>Drafts Subscription:</strong> Pro</li>
+<li><strong>Device:</strong> iPhone</li>
+<li><strong>Operating System:</strong> iOS</li>
+<li><strong>OS Build:</strong> 14.5</li>
+</ul>
+
+<h3>iDocs</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> format-italic<br />
+<strong>Colour:</strong> indigo<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> A68F960D-5EDC-45D8&#8211;9898-E68B173AAFC0<br />
+<strong>Description:</strong><br />
+Sends to my iCloud email address from Outlook.</p>
+
+<h3>iDocs (copy)</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> format-italic<br />
+<strong>Colour:</strong> indigo<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 38EB1260&#8211;84A3&#8211;4112-B9AB-CA2B6F4338F3<br />
+<strong>Description:</strong><br />
+Sends to my iCloud email address from Outlook.</p>
+
+<h3>Strikethrough</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong> ⌃S<br />
+<strong>Icon:</strong> format-strikethrough<br />
+<strong>Colour:</strong> red<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 7FD88B8E-AB4F-4839-A395&#8211;9444974A2D1C<br />
+<strong>Description:</strong><br />
+Markdown for striking text out. Adds “~~” to the beginning of a line or the beginning and end of a selected block of text.</p>
+
+<h3>Append comment to Todoist task</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> commit<br />
+<strong>Colour:</strong> orange<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 3BE24787-AA7C-4387&#8211;9FE9&#8211;3EFB1250E365<br />
+<strong>Description:</strong></p>
+
+<h1>&#8220;Drafts Directory: Append comment to Todoist task&#8221;</h1>
+
+<p>//heavily borrowing from AgileTortoise&#8217;s Import Project script //Draft appends as comment to an existing task in Todoist // utility function let mapIds = (arr, key, valKey) =&gt; { let result = {}; arr.forEach(o =&gt; { result[o[key]] = o[valKey]; }) return result; } let f = () =&gt; { // create Todoist object and load projects let todoist = Todoist.create(); let projects = todoist.getProjects(); if (!projects) { console.log(&#8220;Unable to retreive data from Todoist.&#8221;); return false; } // create prompt let p = Prompt.create(); p.title = &#8220;Select Project&#8221;; // add projects let projectLookup = mapIds(projects, &#8220;name&#8221;, &#8220;id&#8221;); let projectNames = Object.keys(projectLookup); p.addPicker(&#8220;project&#8221;, &#8220;Project&#8221;, [projectNames], [0]); p.addButton(&#8220;Select&#8221;); if (!p.show()) { context.cancel(); return true; } // read values from prompt let projectIndex = p.fieldValues[&#8220;project&#8221;][0]; let projectName = projectNames[projectIndex]; let projectID = projectLookup[projectName]; let tasks = todoist.getTasks({ &#8220;project_id&#8221;: projectID }); if (!tasks) { alert(&#8220;No tasks in this project&#8221;); return false; } //create tasks prompt let pTasks = Prompt.create(); pTasks.title = &#8220;Select Task&#8221;; //add tasks let taskLookup = mapIds(tasks, &#8220;content&#8221;, &#8220;id&#8221;); let taskNames = Object.keys(taskLookup); pTasks.addPicker(&#8220;task&#8221;, &#8220;Task&#8221;, [taskNames], [0]); pTasks.addButton(&#8220;Select&#8221;); if (!pTasks.show()) { context.cancel(); return true; } //read values from task prompt let taskIndex = pTasks.fieldValues[&#8220;task&#8221;][0]; let taskName = taskNames[taskIndex]; let taskID = taskLookup[taskName]; //add comment let comment = todoist.createComment({ &#8220;task_id&#8221;: taskID, &#8220;content&#8221;: draft.content }); console.log(<code>Comment added to ${taskName} in ${projectName}</code>); } if (!f()) { context.fail(); }</p>
+
+<p>-&#8220;<a href="https://actions.getdrafts.com/a/1aR">Drafts Directory: Append comment to Todoist task</a>&#8221;</p>
+
+<h3>Workspace Switcher (copy)</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong><br />
+<strong>Colour:</strong> none<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 0<br />
+<strong>Unique ID:</strong> FA2FE221&#8211;18DA-4A8A-99E8-ED496D6B8A11<br />
+<strong>Description:</strong></p>
+
+<h3>The Psalms Custom Preview</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> action_preview<br />
+<strong>Colour:</strong> blue<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> F7E0CA10&#8211;02A1&#8211;4469-A940-CE3E10BB18CE<br />
+<strong>Description:</strong><br />
+Read CSS file named “markdown-style.css” in the iCloud “Drafts5” folder, and use it as the style for a Markdown preview.</p>
+
+<h3>TAD-Insert yyyy-mm-dd</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> calendar-date<br />
+<strong>Colour:</strong> orange<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 25637BED-D8FA-4483&#8211;9132&#8211;68F6DA426F22<br />
+<strong>Description:</strong><br />
+Insert a date stamp in the format yyyy-mm-dd</p>
+
+<h3>TAD-Insert Drafts Version</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> info<br />
+<strong>Colour:</strong> gray<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> F9CFBB2C-882E-4723-A65E-D06FD0213191<br />
+<strong>Description:</strong><br />
+Insert the Drafts app version.</p>
+
+<h3>TAD-Deduplicate All (Lines)</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> arrow-merge<br />
+<strong>Colour:</strong> red<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> FA6BAA77&#8211;07F3&#8211;4EF7-A0AC-9EB172C24083<br />
+<strong>Description:</strong><br />
+Deduplicates lines in the order they occur. i.e. only the first instance of the line will be retained.
+This action does <em>not</em> sort the content.</p>
+
+<h3>Send to Telegram</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> chat-message<br />
+<strong>Colour:</strong> blue<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 87D854F8-DE94&#8211;4FA8&#8211;8A40-E11C486CA831<br />
+<strong>Description:</strong><br />
+Send draft to Telegram, opens the contacts page, pick a contact and draft will be on the input field.</p>
+
+<h3>Create Gist</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 488-github<br />
+<strong>Colour:</strong> orange<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> E4C2CEA6&#8211;283F-46FB-915C-41E39218BD9C<br />
+<strong>Description:</strong><br />
+TAD-Create GitHub Gist from Draft</p>
+
+<blockquote>
+<p>Create a new GitHub gist from the current draft. You can run this action stand alone, but you can also include it and call it with a template action step set for the GitHub user ID (<code>account</code>).</p>
+</blockquote>
+
+<h3>Fetch Gists</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 488-github<br />
+<strong>Colour:</strong> violet<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 487226D3-BDD7&#8211;4F70&#8211;9A12-F4153319AB7E<br />
+<strong>Description:</strong><br />
+Fetch the content of a GitHub gist to new drafts - one draft per file. You can run this action stand alone, but you can also include it and call it with a template action step to set for the GitHub user ID (<code>account</code>). The action includes a window that lets you select a gist by description.</p>
+
+<h3>Drafts 5 Scripting API Documentation</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 460-api2<br />
+<strong>Colour:</strong> violet<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> A9ABDF69&#8211;8D55&#8211;4404-A5DC-112D285955A9<br />
+<strong>Description:</strong><br />
+Displays a menu for selecting Documentation page and opens an in app web browser to display selected page.</p>
+
+<h3>Keyboard Shortcuts Export</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong> ⇧⌃K<br />
+<strong>Icon:</strong> 341-keyboard<br />
+<strong>Colour:</strong> gray<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 50C15556&#8211;3561&#8211;443D-BB49-F7FC1245DE3A<br />
+<strong>Description:</strong></p>
+
+<h3>List Action Shortcuts, Comma-Delimited</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 356-signpost<br />
+<strong>Colour:</strong> green<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> 8F2BF88E-825E-4954-B958-B5AA4C7D63D1<br />
+<strong>Description:</strong><br />
+A modified version of TAD-List Action Shortcuts that exports a <strong>comma-delimited</strong> list of keyboard shortcuts instead of using <code>:</code>.</p>
+
+<p>Original description:</p>
+
+<p>Ouput details of all actions with keyboard shortcuts to a new draft. Action name is followed by a colon, a space, and then the keyboard shortcut. Also deals with special key triggers (arrow keys and tab).</p>
+
+<h3>Timestamp</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong> ⇧⌃T<br />
+<strong>Icon:</strong> 598-clock<br />
+<strong>Colour:</strong> blue<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> F9A840DA-C465&#8211;4E7A-B173&#8211;1E537F6A9010<br />
+<strong>Description:</strong><br />
+TAD-Insert yyyy-mm-dd</p>
+
+<h3>Selection Word Count</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong> ⌃W<br />
+<strong>Icon:</strong> 585-calculator<br />
+<strong>Colour:</strong> none<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> ADD2D656&#8211;8E11&#8211;4466-BEB7-FD02C03AC9DF<br />
+<strong>Description:</strong><br />
+TAD-Selection Word Count</p>
+
+<h3>Trash</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 636-trash<br />
+<strong>Colour:</strong> gray<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> AB369272-D52E-486D-A87F-84E244D7DEFB<br />
+<strong>Description:</strong><br />
+TAD-Trash Note</p>
+
+<h3>Toggle Last</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong> ⌃#TAB<br />
+<strong>Icon:</strong> 477-skip-backward2<br />
+<strong>Colour:</strong> orange<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> F2C3C05F-AD1C-4FE5&#8211;8112&#8211;04F822A63DF6<br />
+<strong>Description:</strong><br />
+TAD-Toggle Last Two Modified Drafts</p>
+
+<h3>Search Actions</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> search<br />
+<strong>Colour:</strong> indigo<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 229A9C12&#8211;0850&#8211;4443-ABBF-646096D0A6BB<br />
+<strong>Description:</strong><br />
+TAD-Search Actions</p>
+
+<h3>Drafts Link</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong> ⇧⌃C<br />
+<strong>Icon:</strong> action_url<br />
+<strong>Colour:</strong> indigo<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 9782726D-C842&#8211;4682-A71E-43BC465FE234<br />
+<strong>Description:</strong><br />
+TAD-Copy Draft Link</p>
+
+<h3>Last Workspace</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> clipboard-back<br />
+<strong>Colour:</strong> gray<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 7A48C342-E889&#8211;423A-8B6D-7507528C826C<br />
+<strong>Description:</strong><br />
+TAD-Load Previous Workspace</p>
+
+<h3>Next Workspace</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> briefcase-next<br />
+<strong>Colour:</strong> green<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 02C9F9C8&#8211;9652&#8211;4095-B210&#8211;548FD19B58DA<br />
+<strong>Description:</strong><br />
+TAD-Load Next Workspace</p>
+
+<h3>Draft Info</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong> ⌃I<br />
+<strong>Icon:</strong> 442-information-symbol1<br />
+<strong>Colour:</strong> gray<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> D6051232&#8211;53DB-4159&#8211;8045&#8211;2C776E28D39E<br />
+<strong>Description:</strong><br />
+TAD-Show Draft Info</p>
+
+<h3>Dark/Light Toggle</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong> ⇧⌃L<br />
+<strong>Icon:</strong> lighter<br />
+<strong>Colour:</strong> yellow<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> B45E79C6-FEA0&#8211;4E5A-9DAC-897040071A17<br />
+<strong>Description:</strong><br />
+TAD-Toggle App Theme</p>
+
+<h3>Typewriter Toggle</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong> ⌥T<br />
+<strong>Icon:</strong> typewriter<br />
+<strong>Colour:</strong> indigo<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 0<br />
+<strong>Unique ID:</strong> DC48EDE7&#8211;8B92&#8211;4B6E-832D-43B386D2748D<br />
+<strong>Description:</strong><br />
+TAD-Toggle Typewriter Mode</p>
+
+<h3>Fetch URL Content to New Draft</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> caret-down-double<br />
+<strong>Colour:</strong> none<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> C49A4147&#8211;5478&#8211;430C-AB8C-F6B2E0B0B546<br />
+<strong>Description:</strong><br />
+TAD-Fetch URL Content to New Draft</p>
+
+<h3>Import File</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> file-badge<br />
+<strong>Colour:</strong> red<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 5ABCC386&#8211;0CF7&#8211;489B-8037-CBBF82E021AA<br />
+<strong>Description:</strong><br />
+TAD-File Import With Tags</p>
+
+<h3>Load The Psalms</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong> ⌥.<br />
+<strong>Icon:</strong> checkbox<br />
+<strong>Colour:</strong> pink<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> B24FAC3A-CEE8&#8211;4BA4-AC65&#8211;3365DDEC0846<br />
+<strong>Description:</strong><br />
+<code>app.TA_loadActionListByName(&quot;ThoughtAsylum - Power User&quot;);</code></p>
+
+<h3>Draft Link</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> link<br />
+<strong>Colour:</strong> green<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 19A9B6E4&#8211;42C5&#8211;45FF-8908&#8211;849C25C4995C<br />
+<strong>Description:</strong><br />
+TAD-Link for Draft (Title)</p>
+
+<h3>Preview MMD</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong> ⌥⌘/<br />
+<strong>Icon:</strong> branch<br />
+<strong>Colour:</strong> gray<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 7FF25B9B-A198&#8211;49E8&#8211;930F-B5E11BF74936<br />
+<strong>Description:</strong><br />
+TAD-Prime Preview MMD</p>
+
+<h3>Load Most Changed Draft</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> ribbon<br />
+<strong>Colour:</strong> orange<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> C2BCAF85&#8211;15FE-4103&#8211;901D-2D816CCBE444<br />
+<strong>Description:</strong><br />
+TAD-Load Most Changed Draft</p>
+
+<h3>Restore Psalms Action Group</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> cancel<br />
+<strong>Colour:</strong> none<br />
+<strong>Confirm to Run:</strong> true<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> A80E0256&#8211;7756&#8211;4A2C-A3AB-533DB97D4902<br />
+<strong>Description:</strong><br />
+Sortof a potential recovery method for this Action Group, I suppose.</p>
+
+<pre><code>
+drafts5://actionGroup?data=%7B%22name%22:%22The%20Psalms%22,%22hidden%22:false,%22tintColor%22:%22blue%22,%22actions%22:%5B%7B%22uuid%22:%2214A40371-7C9C-472C-9DC5-E844A26B81D8%22,%22steps%22:%5B%7B%22platforms%22:3,%22data%22:%7B%22template%22:%22%3Caudio%20controls%3E%5Cn%20%20%3Csource%20src%3D%5C%22%5B%5Bclipboard%5D%5D%5C%22%3E%5Cn%3C%5C/audio%3E%22%7D,%22type%22:%22insertText%22,%22isEnabled%22:true,%22uuid%22:%225C5CE284-9E32-41B1-B6A9-A1AB095D1720%22%7D%5D,%22backingPlatforms%22:3,%22shortName%22:%22%22,%22shouldConfirm%22:false,%22disposition%22:3,%22keyCommand%22:%7B%22optionKey%22:false,%22input%22:%22A%22,%22controlKey%22:true,%22commandKey%22:false,%22type%22:%22action%22,%22discoverabilityTitle%22:%22Embed%20%3Caudio%3E%20Element%22,%22shiftKey%22:true%7D,%22logLevel%22:2,%22groupDisposition%22:0,%22notificationType%22:2,%22tintColor%22:%22violet%22,%22actionDescription%22:%22%60Version%200.1%60%5CnAssuming%20the%20URL%20to%20an%20audio%20file%20is%20in%20your%20clipboard,%20this%20action%20uses%20said%20URL%20as%20the%20source%20file%20for%20an%20embedded%20audio%20player%20using%20the%20%60%3Caudio%3E%60%20element.%5Cn%5Cn*%20%5B%60%3Caudio%3E%60%20Element%20Documentation%5D(https:%5C/%5C/developer.mozilla.org%5C/en-US%5C/docs%5C/Web%5C/HTML%5C/Element%5C/audio)%5Cn%23%23%20Steps%5Cn1.%20Insert%20Text:%5Cn%60%60%60%5Cn%3Caudio%20controls%3E%5Cn%20%20%3Csource%20src%3D%5C%22%5C%22%3E%5Cn%3C%5C/audio%3E%5Cn%60%60%60%5Cn%23%23%20Contact%5C/Feedback%5Cn*%20%5BMy%20profile%20on%20the%20Drafts%20Community%20Forums%5D(https:%5C/%5C/forums.getdrafts.com%5C/u%5C/blue)%5Cn*%20%5BThis%20Action%E2%80%99s%20Issue%20on%20my%20iOS-specific%20GitHub%20Repository%5D(https:%5C/%5C/github.com%5C/extratone%5C/i%5C/issues%5C/51)%5Cn%5Cn%23%23%23%20Extra%20Details%5Cn-%20**Drafts%20Version:**%2026.2.4%5Cn-%20**Drafts%20Subscription:**%20Pro%5Cn-%20**Device:**%20iPhone%5Cn-%20**Operating%20System:**%20iOS%20%5Cn-%20**OS%20Build:**%2014.5%22,%22keyUseIcon%22:true,%22icon%22:%22565-cassette-tape%22,%22visibility%22:480,%22backingIsSeparator%22:false,%22groupUUID%22:%2216A2B316-FD3E-4266-913B-4A343EC3122A%22,%22assignTags%22:%5B%5D,%22name%22:%22Embed%20%3Caudio%3E%20Element%22%7D,%7B%22uuid%22:%22A68F960D-5EDC-45D8-9898-E68B173AAFC0%22,%22steps%22:%5B%7B%22platforms%22:3,%22data%22:%7B%22oauthIdentifier%22:%22%22,%22ccRecipients%22:%22ihadtopee@gmail.com%22,%22toRecipients%22:%22asphaltapostle@icloud.com%22,%22subject%22:%22%E2%80%9C%5B%5Btitle%5D%5D%E2%80%9D%20%7C%20%5B%5Bdate%5D%5D,%5B%5Btime%5D%5D%22,%22bccRecipients%22:%22%22,%22sendAsHTML%22:%22true%22,%22body%22:%22%5B%5Btitle%5D%5D%5Cn%5Cn%5B%5Bbody%5D%5D%5Cn%5Cn%3E%20%5B%5Bselection%5D%5D%5Cn%5Cn***%5Cn%5B%5Btags%5D%5D%5Cn%5B%5Buuid%5D%5D%22%7D,%22type%22:%22outlook%22,%22isEnabled%22:true,%22uuid%22:%22A1284106-73DB-482D-86E9-DBFD8F1C4EE0%22%7D%5D,%22backingPlatforms%22:3,%22shortName%22:%22%22,%22shouldConfirm%22:false,%22disposition%22:3,%22keyCommand%22:%7B%22optionKey%22:false,%22input%22:%22%22,%22controlKey%22:false,%22commandKey%22:false,%22type%22:%22action%22,%22discoverabilityTitle%22:%22iDocs%22,%22shiftKey%22:false%7D,%22logLevel%22:2,%22groupDisposition%22:0,%22notificationType%22:2,%22tintColor%22:%22indigo%22,%22actionDescription%22:%22Sends%20to%20my%20iCloud%20email%20address%20from%20Outlook.%22,%22keyUseIcon%22:false,%22icon%22:%22format-italic%22,%22visibility%22:480,%22backingIsSeparator%22:false,%22groupUUID%22:%2216A2B316-FD3E-4266-913B-4A343EC3122A%22,%22assignTags%22:%5B%5D,%22name%22:%22iDocs%22%7D,%7B%22uuid%22:%227FD88B8E-AB4F-4839-A395-9444974A2D1C%22,%22steps%22:%5B%7B%22platforms%22:3,%22data%22:%7B%22script%22:%22%5C/%5C/%20See%20online%20documentation%20for%20examples%5Cn%5C/%5C/%20http:%5C/%5C/getdrafts.com%5C/scripting%5Cn%5Cn%5C/%5C/%20Apply%20Markdown%20strike%20to%20selection,%20or%20insert%20~~%20if%20no%20selection%5Cnlet%20markup%20%3D%20%5C%22~~%5C%22;%5Cn%5Cnvar%20sel%20%3D%20editor.getSelectedText();%5Cnvar%20selRange%20%3D%20editor.getSelectedRange();%5Cn%5Cnif%20(!sel%20%7C%7C%20sel.length%20%3D%3D%200)%20%7B%5Cn%20%20editor.setSelectedText(markup);%5Cn%20%20editor.setSelectedRange(selRange%5B0%5D+markup.length,0);%5Cn%7D%5Cnelse%20%7B%5Cn%20%20editor.setSelectedText(markup+sel+markup);%5Cn%20%20editor.setSelectedRange(selRange%5B0%5D+selRange%5B1%5D+(markup.length*2),0);%5Cn%7D%22%7D,%22type%22:%22script%22,%22isEnabled%22:true,%22uuid%22:%22E9E83376-D73D-4657-B694-6D13568E3574%22%7D%5D,%22backingPlatforms%22:3,%22shortName%22:%22%22,%22shouldConfirm%22:false,%22disposition%22:0,%22keyCommand%22:%7B%22optionKey%22:true,%22input%22:%22S%22,%22controlKey%22:true,%22commandKey%22:false,%22type%22:%22action%22,%22discoverabilityTitle%22:%22Strikethrough%22,%22shiftKey%22:false%7D,%22logLevel%22:1,%22groupDisposition%22:0,%22notificationType%22:1,%22tintColor%22:%22red%22,%22actionDescription%22:%22Markdown%20for%20striking%20text%20out.%20%20Adds%20%E2%80%9C~~%E2%80%9D%20to%20the%20beginning%20of%20a%20line%20or%20the%20beginning%20and%20end%20of%20a%20selected%20block%20of%20text.%20%22,%22keyUseIcon%22:true,%22icon%22:%22format-strikethrough%22,%22visibility%22:480,%22backingIsSeparator%22:false,%22groupUUID%22:%2216A2B316-FD3E-4266-913B-4A343EC3122A%22,%22assignTags%22:%5B%5D,%22name%22:%22Strikethrough%22%7D,%7B%22uuid%22:%22FA2FE221-18DA-4A8A-99E8-ED496D6B8A11%22,%22steps%22:%5B%5D,%22backingPlatforms%22:3,%22shortName%22:%22%22,%22shouldConfirm%22:false,%22disposition%22:3,%22keyCommand%22:%7B%22optionKey%22:false,%22input%22:%22%22,%22controlKey%22:false,%22commandKey%22:false,%22type%22:%22empty%22,%22discoverabilityTitle%22:%22Invalid%22,%22shiftKey%22:false%7D,%22logLevel%22:2,%22groupDisposition%22:0,%22notificationType%22:2,%22tintColor%22:%22none%22,%22actionDescription%22:%22%22,%22keyUseIcon%22:false,%22icon%22:%22%22,%22visibility%22:480,%22backingIsSeparator%22:true,%22groupUUID%22:%2216A2B316-FD3E-4266-913B-4A343EC3122A%22,%22assignTags%22:%5B%5D,%22name%22:%22Workspace%20Switcher%20(copy)%22%7D,%7B%22uuid%22:%22F7E0CA10-02A1-4469-A940-CE3E10BB18CE%22,%22steps%22:%5B%7B%22platforms%22:3,%22data%22:%7B%22script%22:%22%5C/%5C/%20read%20stylesheet%20from%20file%20in%20iCloud%5Cnvar%20fm%20%3D%20FileManager.create(false);%5Cnvar%20css%20%3D%20fm.read(%5C%22markdown-style.css%5C%22);%5Cn%5Cn%5C/%5C/%20place%20in%20template%20tag%5Cndraft.setTemplateTag(%5C%22css%5C%22,%20css);%5Cn%22,%22allowAsync%22:%22false%22%7D,%22type%22:%22script%22,%22isEnabled%22:true,%22uuid%22:%22DC783629-4418-4068-8256-EBD1E360D30A%22%7D,%7B%22platforms%22:3,%22data%22:%7B%22template%22:%22%3C!DOCTYPE%20html%3E%5Cn%3Chtml%20dir%3D%5C%22auto%5C%22%3E%5Cn%3Chead%3E%5Cn%3Ctitle%3EPreview%3C%5C/title%3E%5Cn%3Cmeta%20name%3D%5C%22viewport%5C%22%20content%3D%5C%22width%3Ddevice-width,%20initial-scale%3D1%5C%22%3E%5Cn%3Cstyle%3E%5Cn%5B%5Bcss%5D%5D%5Cn%3C%5C/style%3E%5Cn%3C%5C/head%3E%5Cn%3Cbody%3E%5Cn%20%20%25%25%5B%5Bdraft%5D%5D%25%25%5Cn%3C%5C/body%3E%5Cn%3C%5C/html%3E%5Cn%22,%22hideInterface%22:%22true%22%7D,%22type%22:%22htmlpreview%22,%22isEnabled%22:true,%22uuid%22:%22BDDD58CB-0811-4F17-B5A1-449FF157EC6D%22%7D%5D,%22backingPlatforms%22:3,%22shortName%22:%22Preview%22,%22shouldConfirm%22:false,%22disposition%22:0,%22keyCommand%22:%7B%22optionKey%22:false,%22input%22:%22P%22,%22controlKey%22:true,%22commandKey%22:false,%22type%22:%22action%22,%22discoverabilityTitle%22:%22The%20Psalms%20Custom%20Preview%22,%22shiftKey%22:true%7D,%22logLevel%22:1,%22groupDisposition%22:0,%22notificationType%22:1,%22tintColor%22:%22blue%22,%22actionDescription%22:%22Read%20CSS%20file%20named%20%E2%80%9Cmarkdown-style.css%E2%80%9D%20in%20the%20iCloud%20%E2%80%9CDrafts5%E2%80%9D%20folder,%20and%20use%20it%20as%20the%20style%20for%20a%20Markdown%20preview.%20%22,%22keyUseIcon%22:false,%22icon%22:%22action_preview%22,%22visibility%22:480,%22backingIsSeparator%22:false,%22groupUUID%22:%2216A2B316-FD3E-4266-913B-4A343EC3122A%22,%22assignTags%22:%5B%5D,%22name%22:%22The%20Psalms%20Custom%20Preview%22%7D,%7B%22uuid%22:%2225637BED-D8FA-4483-9132-68F6DA426F22%22,%22steps%22:%5B%7B%22platforms%22:3,%22data%22:%7B%22template%22:%22%5B%5Bdate%7C%20%25Y-%25m-%25d%5D%5D%22%7D,%22type%22:%22insertText%22,%22isEnabled%22:true,%22uuid%22:%22BC769CE6-6C81-4360-A42D-F0B06A482473%22%7D%5D,%22backingPlatforms%22:3,%22shortName%22:%22%22,%22shouldConfirm%22:false,%22disposition%22:3,%22keyCommand%22:%7B%22optionKey%22:false,%22input%22:%22%22,%22controlKey%22:false,%22commandKey%22:false,%22type%22:%22action%22,%22discoverabilityTitle%22:%22TAD-Insert%20yyyy-mm-dd%22,%22shiftKey%22:false%7D,%22logLevel%22:1,%22groupDisposition%22:0,%22notificationType%22:1,%22tintColor%22:%22orange%22,%22actionDescription%22:%22Insert%20a%20date%20stamp%20in%20the%20format%20yyyy-mm-dd%22,%22keyUseIcon%22:false,%22icon%22:%22calendar-date%22,%22visibility%22:480,%22backingIsSeparator%22:false,%22groupUUID%22:%2216A2B316-FD3E-4266-913B-4A343EC3122A%22,%22assignTags%22:%5B%5D,%22name%22:%22TAD-Insert%20yyyy-mm-dd%22%7D,%7B%22uuid%22:%22F9CFBB2C-882E-4723-A65E-D06FD0213191%22,%22steps%22:%5B%7B%22platforms%22:3,%22data%22:%7B%22script%22:%22draft.setTemplateTag(%5C%22version%5C%22,%20app.version);%22,%22allowAsync%22:%22false%22%7D,%22type%22:%22script%22,%22isEnabled%22:true,%22uuid%22:%224A209E56-08C7-4029-A783-AA8FE9C10406%22%7D,%7B%22platforms%22:3,%22data%22:%7B%22template%22:%22%5B%5Bversion%5D%5D%22%7D,%22type%22:%22insertText%22,%22isEnabled%22:true,%22uuid%22:%22160757F2-4D01-4CB7-99BD-291BC914F38F%22%7D%5D,%22backingPlatforms%22:3,%22shortName%22:%22%22,%22shouldConfirm%22:false,%22disposition%22:0,%22keyCommand%22:%7B%22optionKey%22:false,%22input%22:%22%22,%22controlKey%22:false,%22commandKey%22:false,%22type%22:%22action%22,%22discoverabilityTitle%22:%22TAD-Insert%20Drafts%20Version%22,%22shiftKey%22:false%7D,%22logLevel%22:1,%22groupDisposition%22:0,%22notificationType%22:1,%22tintColor%22:%22gray%22,%22actionDescription%22:%22Insert%20the%20Drafts%20app%20version.%22,%22keyUseIcon%22:true,%22icon%22:%22info%22,%22visibility%22:480,%22backingIsSeparator%22:false,%22groupUUID%22:%2216A2B316-FD3E-4266-913B-4A343EC3122A%22,%22assignTags%22:%5B%5D,%22name%22:%22TAD-Insert%20Drafts%20Version%22%7D,%7B%22uuid%22:%22FA6BAA77-07F3-4EF7-A0AC-9EB172C24083%22,%22steps%22:%5B%7B%22platforms%22:3,%22data%22:%7B%22name%22:%22TAD%22%7D,%22type%22:%22includeAction%22,%22isEnabled%22:true,%22uuid%22:%2237341FCD-D3D3-4412-ADA2-57A70F775BE9%22%7D,%7B%22platforms%22:3,%22data%22:%7B%22script%22:%22draft.TA_deduplicateLines();%22,%22allowAsync%22:%22false%22%7D,%22type%22:%22script%22,%22isEnabled%22:true,%22uuid%22:%2210D57B6A-A015-4B7D-A224-98E8E5EDB55E%22%7D%5D,%22backingPlatforms%22:3,%22shortName%22:%22%22,%22shouldConfirm%22:false,%22disposition%22:3,%22keyCommand%22:%7B%22optionKey%22:false,%22input%22:%22%22,%22controlKey%22:false,%22commandKey%22:false,%22type%22:%22action%22,%22discoverabilityTitle%22:%22TAD-Deduplicate%20All%20(Lines)%22,%22shiftKey%22:false%7D,%22logLevel%22:1,%22groupDisposition%22:0,%22notificationType%22:1,%22tintColor%22:%22red%22,%22actionDescription%22:%22Deduplicates%20lines%20in%20the%20order%20they%20occur.%20%20i.e.%20only%20the%20first%20instance%20of%20the%20line%20will%20be%20retained.%5CnThis%20action%20does%20*not*%20sort%20the%20content.%22,%22keyUseIcon%22:true,%22icon%22:%22arrow-merge%22,%22visibility%22:480,%22backingIsSeparator%22:false,%22groupUUID%22:%2216A2B316-FD3E-4266-913B-4A343EC3122A%22,%22assignTags%22:%5B%5D,%22name%22:%22TAD-Deduplicate%20All%20(Lines)%22%7D,%7B%22uuid%22:%22E4C2CEA6-283F-46FB-915C-41E39218BD9C%22,%22steps%22:%5B%7B%22platforms%22:3,%22data%22:%7B%22name%22:%22TAD-Create%20GitHub%20Gist%20from%20Draft%22%7D,%22type%22:%22includeAction%22,%22isEnabled%22:true,%22uuid%22:%22BEB094A7-BB8C-4E70-8CED-9F66AA845B4F%22%7D%5D,%22backingPlatforms%22:3,%22shortName%22:%22%22,%22shouldConfirm%22:false,%22disposition%22:3,%22keyCommand%22:%7B%22optionKey%22:false,%22input%22:%22%22,%22controlKey%22:false,%22commandKey%22:false,%22type%22:%22action%22,%22discoverabilityTitle%22:%22Create%20Gist%22,%22shiftKey%22:false%7D,%22logLevel%22:1,%22groupDisposition%22:0,%22notificationType%22:1,%22tintColor%22:%22orange%22,%22actionDescription%22:%22TAD-Create%20GitHub%20Gist%20from%20Draft%5Cn%5Cn%3E%20Create%20a%20new%20GitHub%20gist%20from%20the%20current%20draft.%20You%20can%20run%20this%20action%20stand%20alone,%20but%20you%20can%20also%20include%20it%20and%20call%20it%20with%20a%20template%20action%20step%20set%20for%20the%20GitHub%20user%20ID%20(%60account%60).%22,%22keyUseIcon%22:false,%22icon%22:%22488-github%22,%22visibility%22:480,%22backingIsSeparator%22:false,%22groupUUID%22:%2216A2B316-FD3E-4266-913B-4A343EC3122A%22,%22assignTags%22:%5B%5D,%22name%22:%22Create%20Gist%22%7D,%7B%22uuid%22:%22487226D3-BDD7-4F70-9A12-F4153319AB7E%22,%22steps%22:%5B%7B%22platforms%22:3,%22data%22:%7B%22name%22:%22TAD-Fetch%20GitHub%20Gist%20Files%22%7D,%22type%22:%22includeAction%22,%22isEnabled%22:true,%22uuid%22:%22F6E06C19-7DEB-4665-8A97-8145C15A72D6%22%7D%5D,%22backingPlatforms%22:3,%22shortName%22:%22%22,%22shouldConfirm%22:false,%22disposition%22:3,%22keyCommand%22:%7B%22optionKey%22:false,%22input%22:%22%22,%22controlKey%22:false,%22commandKey%22:false,%22type%22:%22action%22,%22discoverabilityTitle%22:%22Fetch%20Gists%22,%22shiftKey%22:false%7D,%22logLevel%22:1,%22groupDisposition%22:0,%22notificationType%22:1,%22tintColor%22:%22violet%22,%22actionDescription%22:%22Fetch%20the%20content%20of%20a%20GitHub%20gist%20to%20new%20drafts%20-%20one%20draft%20per%20file.%20You%20can%20run%20this%20action%20stand%20alone,%20but%20you%20can%20also%20include%20it%20and%20call%20it%20with%20a%20template%20action%20step%20to%20set%20for%20the%20GitHub%20user%20ID%20(%60account%60).%20The%20action%20includes%20a%20window%20that%20lets%20you%20select%20a%20gist%20by%20description.%22,%22keyUseIcon%22:false,%22icon%22:%22488-github%22,%22visibility%22:480,%22backingIsSeparator%22:false,%22groupUUID%22:%2216A2B316-FD3E-4266-913B-4A343EC3122A%22,%22assignTags%22:%5B%5D,%22name%22:%22Fetch%20Gists%22%7D,%7B%22uuid%22:%22A9ABDF69-8D55-4404-A5DC-112D285955A9%22,%22steps%22:%5B%7B%22platforms%22:3,%22data%22:%7B%22script%22:%22%5C/%5C/%20See%20online%20documentation%20for%20examples%5Cn%5C/%5C/%20https:%5C/%5C/reference.getdrafts.com%5C/%5Cn%5Cnvar%20base%20%3D%20%5C%22https:%5C/%5C/reference.getdrafts.com%5C/objects%5C/%5C%22;%5Cn%5Cnvar%20opts%20%3D%20%5B%5C%22Action%5C%22,%20%5C%22ActionGroup%5C%22,%20%5C%22Alarm%5C%22,%20%5C%22App%5C%22,%20%5C%22Box%5C%22,%20%5C%22Calendar%5C%22,%20%5C%22CallbackURL%5C%22,%20%5C%22Console%5C%22,%20%5C%22Context%5C%22,%20%5C%22Credential%5C%22,%20%5C%22Device%5C%22,%20%5C%22Draft%5C%22,%20%5C%22Dropbox%5C%22,%20%5C%22Editor%5C%22,%20%5C%22Event%5C%22,%20%5C%22FileManager%5C%22,%20%5C%22Global%5C%22,%20%5C%22GoogleDrive%5C%22,%20%5C%22HTTP%5C%22,%20%5C%22HTTPResponse%5C%22,%20%5C%22Mail%5C%22,%20%5C%22Message%5C%22,%20%5C%22MultiMarkdown%5C%22,%20%5C%22OneDrive%5C%22,%20%5C%22Prompt%5C%22,%20%5C%22Reminder%5C%22,%20%5C%22ReminderList%5C%22,%20%5C%22Things%5C%22,%20%5C%22Todoist%5C%22,%20%5C%22Twitter%5C%22,%20%5C%22Wordpress%5C%22,%20%5C%22Workspace%5C%22,%20%5C%22XMLRPC%5C%22,%20%5C%22XMLRPCResponse%5C%22%5D;%5Cn%5Cnvar%20p%20%3D%20Prompt.create();%5Cn%5Cnp.title%20%3D%20%5C%22Drafts%205%5C%22;%5Cnp.message%20%3D%20%5C%22Scripting%20documentation%20index%5C%22;%5Cn%5Cnvar%20i%20%3D%200;%5Cnwhile%20(i%20%3C%20opts.length)%7B%5Cn%5Ctp.addButton(opts%5Bi%5D);%5Cn%5Cti++;%5Cn%7D;%5Cn%5Cnvar%20didSelect%20%3D%20p.show();%5Cn%5Cnvar%20url%20%3D%20base%20+%20p.buttonPressed%20+%20%5C%22.html%5C%22;%5Cn%5Cnif%20(didSelect)%20%7B%5Cn%20%20%20%20app.setClipboard(url);%5Cn%7D%20else%20%7B%5Cn%20%20%20%20context.cancel();%5Cn%7D;%22%7D,%22type%22:%22script%22,%22isEnabled%22:true,%22uuid%22:%22B2BBC06F-E8A1-4AF3-8236-8A8EB264DF7C%22%7D,%7B%22platforms%22:3,%22data%22:%7B%22template%22:%22%5B%5Bclipboard%5D%5D%22,%22useSafari%22:%22true%22,%22encodeTags%22:%22false%22%7D,%22type%22:%22url%22,%22isEnabled%22:true,%22uuid%22:%22BF2069E2-1E0D-4EC0-A3FC-D504C847B2A5%22%7D%5D,%22backingPlatforms%22:3,%22shortName%22:%22API%20Docs%22,%22shouldConfirm%22:false,%22disposition%22:0,%22keyCommand%22:%7B%22optionKey%22:false,%22input%22:%22%22,%22controlKey%22:false,%22commandKey%22:false,%22type%22:%22action%22,%22discoverabilityTitle%22:%22Drafts%205%20Scripting%20API%20Documentation%22,%22shiftKey%22:false%7D,%22logLevel%22:1,%22groupDisposition%22:0,%22notificationType%22:1,%22tintColor%22:%22violet%22,%22actionDescription%22:%22Displays%20a%20menu%20for%20selecting%20Documentation%20page%20and%20opens%20an%20in%20app%20web%20browser%20to%20display%20selected%20page.%20%22,%22keyUseIcon%22:true,%22icon%22:%22460-api2%22,%22visibility%22:480,%22backingIsSeparator%22:false,%22groupUUID%22:%2216A2B316-FD3E-4266-913B-4A343EC3122A%22,%22assignTags%22:%5B%5D,%22name%22:%22Drafts%205%20Scripting%20API%20Documentation%22%7D,%7B%22uuid%22:%2250C15556-3561-443D-BB49-F7FC1245DE3A%22,%22steps%22:%5B%7B%22platforms%22:3,%22data%22:%7B%22name%22:%22TAD-List%20Action%20Shortcuts%22%7D,%22type%22:%22includeAction%22,%22isEnabled%22:true,%22uuid%22:%224531949E-5B2A-4195-ABBF-715D87E2D00E%22%7D%5D,%22backingPlatforms%22:3,%22shortName%22:%22%22,%22shouldConfirm%22:false,%22disposition%22:3,%22keyCommand%22:%7B%22optionKey%22:false,%22input%22:%22%22,%22controlKey%22:false,%22commandKey%22:false,%22type%22:%22action%22,%22discoverabilityTitle%22:%22Keyboard%20Shortcuts%20Export%22,%22shiftKey%22:false%7D,%22logLevel%22:2,%22groupDisposition%22:0,%22notificationType%22:2,%22tintColor%22:%22gray%22,%22actionDescription%22:%22%22,%22keyUseIcon%22:false,%22icon%22:%22341-keyboard%22,%22visibility%22:480,%22backingIsSeparator%22:false,%22groupUUID%22:%2216A2B316-FD3E-4266-913B-4A343EC3122A%22,%22assignTags%22:%5B%5D,%22name%22:%22Keyboard%20Shortcuts%20Export%22%7D,%7B%22uuid%22:%22F9A840DA-C465-4E7A-B173-1E537F6A9010%22,%22steps%22:%5B%7B%22platforms%22:3,%22data%22:%7B%22name%22:%22TAD-Insert%20yyyy-mm-dd%22%7D,%22type%22:%22includeAction%22,%22isEnabled%22:true,%22uuid%22:%22F8A1E5BC-F328-4D5B-BDC5-B1248F2C585A%22%7D%5D,%22backingPlatforms%22:3,%22shortName%22:%22%22,%22shouldConfirm%22:false,%22disposition%22:3,%22keyCommand%22:%7B%22optionKey%22:false,%22input%22:%22%22,%22controlKey%22:false,%22commandKey%22:false,%22type%22:%22action%22,%22discoverabilityTitle%22:%22Timestamp%22,%22shiftKey%22:false%7D,%22logLevel%22:1,%22groupDisposition%22:0,%22notificationType%22:1,%22tintColor%22:%22blue%22,%22actionDescription%22:%22TAD-Insert%20yyyy-mm-dd%22,%22keyUseIcon%22:false,%22icon%22:%22598-clock%22,%22visibility%22:480,%22backingIsSeparator%22:false,%22groupUUID%22:%2216A2B316-FD3E-4266-913B-4A343EC3122A%22,%22assignTags%22:%5B%5D,%22name%22:%22Timestamp%22%7D,%7B%22uuid%22:%22ADD2D656-8E11-4466-BEB7-FD02C03AC9DF%22,%22steps%22:%5B%7B%22platforms%22:3,%22data%22:%7B%22name%22:%22TAD-Selection%20Word%20Count%22%7D,%22type%22:%22includeAction%22,%22isEnabled%22:true,%22uuid%22:%2235630167-2D64-4989-949C-4DEA9D297BF0%22%7D%5D,%22backingPlatforms%22:3,%22shortName%22:%22%22,%22shouldConfirm%22:false,%22disposition%22:3,%22keyCommand%22:%7B%22optionKey%22:true,%22input%22:%22W%22,%22controlKey%22:false,%22commandKey%22:true,%22type%22:%22action%22,%22discoverabilityTitle%22:%22Word%20Count%22,%22shiftKey%22:false%7D,%22logLevel%22:1,%22groupDisposition%22:0,%22notificationType%22:1,%22tintColor%22:%22none%22,%22actionDescription%22:%22TAD-Selection%20Word%20Count%22,%22keyUseIcon%22:false,%22icon%22:%22585-calculator%22,%22visibility%22:480,%22backingIsSeparator%22:false,%22groupUUID%22:%2216A2B316-FD3E-4266-913B-4A343EC3122A%22,%22assignTags%22:%5B%5D,%22name%22:%22Word%20Count%22%7D,%7B%22uuid%22:%22AB369272-D52E-486D-A87F-84E244D7DEFB%22,%22steps%22:%5B%7B%22platforms%22:3,%22data%22:%7B%22name%22:%22TAD-Trash%20Note%22%7D,%22type%22:%22includeAction%22,%22isEnabled%22:true,%22uuid%22:%22ACA417A1-FB82-43FA-AFBA-955F332E8100%22%7D%5D,%22backingPlatforms%22:3,%22shortName%22:%22%22,%22shouldConfirm%22:false,%22disposition%22:0,%22keyCommand%22:%7B%22optionKey%22:false,%22input%22:%22-%22,%22controlKey%22:true,%22commandKey%22:false,%22type%22:%22action%22,%22discoverabilityTitle%22:%22Trash%22,%22shiftKey%22:false%7D,%22logLevel%22:2,%22groupDisposition%22:0,%22notificationType%22:2,%22tintColor%22:%22gray%22,%22actionDescription%22:%22TAD-Trash%20Note%22,%22keyUseIcon%22:false,%22icon%22:%22636-trash%22,%22visibility%22:480,%22backingIsSeparator%22:false,%22groupUUID%22:%2216A2B316-FD3E-4266-913B-4A343EC3122A%22,%22assignTags%22:%5B%5D,%22name%22:%22Trash%22%7D,%7B%22uuid%22:%22F2C3C05F-AD1C-4FE5-8112-04F822A63DF6%22,%22steps%22:%5B%7B%22platforms%22:3,%22data%22:%7B%22name%22:%22TAD-Toggle%20Last%20Two%20Modified%20Drafts%22%7D,%22type%22:%22includeAction%22,%22isEnabled%22:true,%22uuid%22:%220A01BB52-574D-4885-8EF1-66E65CDF57C9%22%7D%5D,%22backingPlatforms%22:3,%22shortName%22:%22%22,%22shouldConfirm%22:false,%22disposition%22:3,%22keyCommand%22:%7B%22optionKey%22:false,%22input%22:%22%23TAB%22,%22controlKey%22:true,%22commandKey%22:false,%22type%22:%22action%22,%22discoverabilityTitle%22:%22Toggle%20Last%22,%22shiftKey%22:false%7D,%22logLevel%22:1,%22groupDisposition%22:0,%22notificationType%22:1,%22tintColor%22:%22orange%22,%22actionDescription%22:%22TAD-Toggle%20Last%20Two%20Modified%20Drafts%22,%22keyUseIcon%22:false,%22icon%22:%22477-skip-backward2%22,%22visibility%22:480,%22backingIsSeparator%22:false,%22groupUUID%22:%2216A2B316-FD3E-4266-913B-4A343EC3122A%22,%22assignTags%22:%5B%5D,%22name%22:%22Toggle%20Last%22%7D,%7B%22uuid%22:%22229A9C12-0850-4443-ABBF-646096D0A6BB%22,%22steps%22:%5B%7B%22platforms%22:3,%22data%22:%7B%22name%22:%22TAD-Search%20Actions%22%7D,%22type%22:%22includeAction%22,%22isEnabled%22:true,%22uuid%22:%225E2AC5EB-7920-459A-8722-F2D70A7DC6DF%22%7D%5D,%22backingPlatforms%22:3,%22shortName%22:%22%22,%22shouldConfirm%22:false,%22disposition%22:0,%22keyCommand%22:%7B%22optionKey%22:false,%22input%22:%22%5C/%22,%22controlKey%22:false,%22commandKey%22:true,%22type%22:%22action%22,%22discoverabilityTitle%22:%22Search%20Actions%22,%22shiftKey%22:false%7D,%22logLevel%22:1,%22groupDisposition%22:0,%22notificationType%22:1,%22tintColor%22:%22indigo%22,%22actionDescription%22:%22TAD-Search%20Actions%22,%22keyUseIcon%22:false,%22icon%22:%22search%22,%22visibility%22:480,%22backingIsSeparator%22:false,%22groupUUID%22:%2216A2B316-FD3E-4266-913B-4A343EC3122A%22,%22assignTags%22:%5B%5D,%22name%22:%22Search%20Actions%22%7D,%7B%22uuid%22:%229782726D-C842-4682-A71E-43BC465FE234%22,%22steps%22:%5B%7B%22platforms%22:3,%22data%22:%7B%22name%22:%22TAD-Copy%20Draft%20Link%22%7D,%22type%22:%22includeAction%22,%22isEnabled%22:true,%22uuid%22:%224A39DCDC-2BB1-4E65-A491-8144FEB70635%22%7D%5D,%22backingPlatforms%22:3,%22shortName%22:%22%22,%22shouldConfirm%22:false,%22disposition%22:3,%22keyCommand%22:%7B%22optionKey%22:false,%22input%22:%22C%22,%22controlKey%22:true,%22commandKey%22:false,%22type%22:%22action%22,%22discoverabilityTitle%22:%22Drafts%20Link%22,%22shiftKey%22:true%7D,%22logLevel%22:2,%22groupDisposition%22:0,%22notificationType%22:2,%22tintColor%22:%22indigo%22,%22actionDescription%22:%22TAD-Copy%20Draft%20Link%22,%22keyUseIcon%22:false,%22icon%22:%22action_url%22,%22visibility%22:480,%22backingIsSeparator%22:false,%22groupUUID%22:%2216A2B316-FD3E-4266-913B-4A343EC3122A%22,%22assignTags%22:%5B%5D,%22name%22:%22Drafts%20Link%22%7D,%7B%22uuid%22:%227A48C342-E889-423A-8B6D-7507528C826C%22,%22steps%22:%5B%7B%22platforms%22:1,%22data%22:%7B%22name%22:%22TAD-Load%20Previous%20Workspace%22%7D,%22type%22:%22includeAction%22,%22isEnabled%22:true,%22uuid%22:%2283CABD9B-497A-4863-A73B-00265DC4D281%22%7D%5D,%22backingPlatforms%22:3,%22shortName%22:%22%22,%22shouldConfirm%22:false,%22disposition%22:3,%22keyCommand%22:%7B%22optionKey%22:true,%22input%22:%22%23LEFT%22,%22controlKey%22:false,%22commandKey%22:true,%22type%22:%22action%22,%22discoverabilityTitle%22:%22Last%20Workspace%22,%22shiftKey%22:false%7D,%22logLevel%22:2,%22groupDisposition%22:0,%22notificationType%22:2,%22tintColor%22:%22gray%22,%22actionDescription%22:%22TAD-Load%20Previous%20Workspace%22,%22keyUseIcon%22:false,%22icon%22:%22clipboard-back%22,%22visibility%22:480,%22backingIsSeparator%22:false,%22groupUUID%22:%2216A2B316-FD3E-4266-913B-4A343EC3122A%22,%22assignTags%22:%5B%5D,%22name%22:%22Last%20Workspace%22%7D,%7B%22uuid%22:%2202C9F9C8-9652-4095-B210-548FD19B58DA%22,%22steps%22:%5B%7B%22platforms%22:1,%22data%22:%7B%22name%22:%22TAD-Load%20Next%20Workspace%22%7D,%22type%22:%22includeAction%22,%22isEnabled%22:true,%22uuid%22:%225B18B932-97A6-4D55-A417-8FAAB5DDC5D2%22%7D%5D,%22backingPlatforms%22:3,%22shortName%22:%22%22,%22shouldConfirm%22:false,%22disposition%22:3,%22keyCommand%22:%7B%22optionKey%22:true,%22input%22:%22%23RIGHT%22,%22controlKey%22:false,%22commandKey%22:true,%22type%22:%22action%22,%22discoverabilityTitle%22:%22Next%20Workspace%22,%22shiftKey%22:false%7D,%22logLevel%22:2,%22groupDisposition%22:0,%22notificationType%22:2,%22tintColor%22:%22green%22,%22actionDescription%22:%22TAD-Load%20Next%20Workspace%22,%22keyUseIcon%22:false,%22icon%22:%22briefcase-next%22,%22visibility%22:480,%22backingIsSeparator%22:false,%22groupUUID%22:%2216A2B316-FD3E-4266-913B-4A343EC3122A%22,%22assignTags%22:%5B%5D,%22name%22:%22Next%20Workspace%22%7D,%7B%22uuid%22:%22D6051232-53DB-4159-8045-2C776E28D39E%22,%22steps%22:%5B%7B%22platforms%22:3,%22data%22:%7B%22name%22:%22TAD-Show%20Draft%20Info%22%7D,%22type%22:%22includeAction%22,%22isEnabled%22:true,%22uuid%22:%227F4B4B0F-CED8-410B-A916-D7BEA852659F%22%7D%5D,%22backingPlatforms%22:3,%22shortName%22:%22%22,%22shouldConfirm%22:false,%22disposition%22:3,%22keyCommand%22:%7B%22optionKey%22:false,%22input%22:%22%22,%22controlKey%22:false,%22commandKey%22:false,%22type%22:%22action%22,%22discoverabilityTitle%22:%22Draft%20Info%22,%22shiftKey%22:false%7D,%22logLevel%22:2,%22groupDisposition%22:0,%22notificationType%22:2,%22tintColor%22:%22gray%22,%22actionDescription%22:%22TAD-Show%20Draft%20Info%22,%22keyUseIcon%22:false,%22icon%22:%22442-information-symbol1%22,%22visibility%22:480,%22backingIsSeparator%22:false,%22groupUUID%22:%2216A2B316-FD3E-4266-913B-4A343EC3122A%22,%22assignTags%22:%5B%5D,%22name%22:%22Draft%20Info%22%7D,%7B%22uuid%22:%22B45E79C6-FEA0-4E5A-9DAC-897040071A17%22,%22steps%22:%5B%7B%22platforms%22:3,%22data%22:%7B%22name%22:%22TAD-Toggle%20App%20Theme%22%7D,%22type%22:%22includeAction%22,%22isEnabled%22:true,%22uuid%22:%226F5E8189-84AE-4987-B751-52D4D25BF329%22%7D%5D,%22backingPlatforms%22:3,%22shortName%22:%22%22,%22shouldConfirm%22:false,%22disposition%22:3,%22keyCommand%22:%7B%22optionKey%22:false,%22input%22:%22L%22,%22controlKey%22:true,%22commandKey%22:false,%22type%22:%22action%22,%22discoverabilityTitle%22:%22Dark%5C/Light%20Toggle%22,%22shiftKey%22:true%7D,%22logLevel%22:2,%22groupDisposition%22:0,%22notificationType%22:2,%22tintColor%22:%22yellow%22,%22actionDescription%22:%22TAD-Toggle%20App%20Theme%22,%22keyUseIcon%22:false,%22icon%22:%22lighter%22,%22visibility%22:480,%22backingIsSeparator%22:false,%22groupUUID%22:%2216A2B316-FD3E-4266-913B-4A343EC3122A%22,%22assignTags%22:%5B%5D,%22name%22:%22Dark%5C/Light%20Toggle%22%7D,%7B%22uuid%22:%22DC48EDE7-8B92-4B6E-832D-43B386D2748D%22,%22steps%22:%5B%5D,%22backingPlatforms%22:3,%22shortName%22:%22%22,%22shouldConfirm%22:false,%22disposition%22:3,%22keyCommand%22:%7B%22optionKey%22:true,%22input%22:%22T%22,%22controlKey%22:false,%22commandKey%22:false,%22type%22:%22action%22,%22discoverabilityTitle%22:%22Typewriter%20Toggle%22,%22shiftKey%22:false%7D,%22logLevel%22:2,%22groupDisposition%22:0,%22notificationType%22:2,%22tintColor%22:%22indigo%22,%22actionDescription%22:%22TAD-Toggle%20Typewriter%20Mode%22,%22keyUseIcon%22:false,%22icon%22:%22typewriter%22,%22visibility%22:480,%22backingIsSeparator%22:false,%22groupUUID%22:%2216A2B316-FD3E-4266-913B-4A343EC3122A%22,%22assignTags%22:%5B%5D,%22name%22:%22Typewriter%20Toggle%22%7D,%7B%22uuid%22:%22C49A4147-5478-430C-AB8C-F6B2E0B0B546%22,%22steps%22:%5B%7B%22platforms%22:3,%22data%22:%7B%22name%22:%22TAD-Fetch%20URL%20Content%20to%20New%20Draft%22%7D,%22type%22:%22includeAction%22,%22isEnabled%22:true,%22uuid%22:%22A7EB51EE-D022-4200-863F-13CCDBD46068%22%7D%5D,%22backingPlatforms%22:3,%22shortName%22:%22%22,%22shouldConfirm%22:false,%22disposition%22:3,%22keyCommand%22:%7B%22optionKey%22:false,%22input%22:%22%22,%22controlKey%22:false,%22commandKey%22:false,%22type%22:%22action%22,%22discoverabilityTitle%22:%22Fetch%20URL%20Content%20to%20New%20Draft%22,%22shiftKey%22:false%7D,%22logLevel%22:2,%22groupDisposition%22:0,%22notificationType%22:2,%22tintColor%22:%22none%22,%22actionDescription%22:%22TAD-Fetch%20URL%20Content%20to%20New%20Draft%22,%22keyUseIcon%22:false,%22icon%22:%22caret-down-double%22,%22visibility%22:480,%22backingIsSeparator%22:false,%22groupUUID%22:%2216A2B316-FD3E-4266-913B-4A343EC3122A%22,%22assignTags%22:%5B%5D,%22name%22:%22Fetch%20URL%20Content%20to%20New%20Draft%22%7D,%7B%22uuid%22:%225ABCC386-0CF7-489B-8037-CBBF82E021AA%22,%22steps%22:%5B%7B%22platforms%22:3,%22data%22:%7B%22name%22:%22TAD-File%20Import%20With%20Tags%22%7D,%22type%22:%22includeAction%22,%22isEnabled%22:true,%22uuid%22:%2258F20F45-D9F9-44DC-AAD3-3C6B12DB4B9E%22%7D%5D,%22backingPlatforms%22:3,%22shortName%22:%22%22,%22shouldConfirm%22:false,%22disposition%22:3,%22keyCommand%22:%7B%22optionKey%22:false,%22input%22:%22%22,%22controlKey%22:false,%22commandKey%22:false,%22type%22:%22action%22,%22discoverabilityTitle%22:%22Import%20File%22,%22shiftKey%22:false%7D,%22logLevel%22:2,%22groupDisposition%22:0,%22notificationType%22:2,%22tintColor%22:%22red%22,%22actionDescription%22:%22TAD-File%20Import%20With%20Tags%22,%22keyUseIcon%22:false,%22icon%22:%22file-badge%22,%22visibility%22:480,%22backingIsSeparator%22:false,%22groupUUID%22:%2216A2B316-FD3E-4266-913B-4A343EC3122A%22,%22assignTags%22:%5B%5D,%22name%22:%22Import%20File%22%7D,%7B%22uuid%22:%22B24FAC3A-CEE8-4BA4-AC65-3365DDEC0846%22,%22steps%22:%5B%7B%22platforms%22:3,%22data%22:%7B%22template%22:%22drafts:%5C/%5C/x-callback-url%5C/loadActionGroup?name%3DGROUP-NAME%22,%22encodeTags%22:%22true%22,%22waitForResponse%22:%22false%22%7D,%22type%22:%22callbackUrl%22,%22isEnabled%22:true,%22uuid%22:%2225B7AA15-0CD5-4FF4-B9A9-94D3A40F99F2%22%7D%5D,%22backingPlatforms%22:3,%22shortName%22:%22%22,%22shouldConfirm%22:false,%22disposition%22:3,%22keyCommand%22:%7B%22optionKey%22:true,%22input%22:%22.%22,%22controlKey%22:false,%22commandKey%22:false,%22type%22:%22action%22,%22discoverabilityTitle%22:%22Load%20The%20Psalms%22,%22shiftKey%22:false%7D,%22logLevel%22:2,%22groupDisposition%22:0,%22notificationType%22:2,%22tintColor%22:%22pink%22,%22actionDescription%22:%22%60app.TA_loadActionListByName(%5C%22ThoughtAsylum%20-%20Power%20User%5C%22);%60%22,%22keyUseIcon%22:false,%22icon%22:%22checkbox%22,%22visibility%22:480,%22backingIsSeparator%22:false,%22groupUUID%22:%2216A2B316-FD3E-4266-913B-4A343EC3122A%22,%22assignTags%22:%5B%5D,%22name%22:%22Load%20The%20Psalms%22%7D,%7B%22uuid%22:%2219A9B6E4-42C5-45FF-8908-849C25C4995C%22,%22steps%22:%5B%7B%22platforms%22:3,%22data%22:%7B%22name%22:%22TAD-Link%20for%20Draft%20(Title)%22%7D,%22type%22:%22includeAction%22,%22isEnabled%22:true,%22uuid%22:%223828AA43-B720-45EC-8C53-E35BD7B5A33A%22%7D%5D,%22backingPlatforms%22:3,%22shortName%22:%22%22,%22shouldConfirm%22:false,%22disposition%22:3,%22keyCommand%22:%7B%22optionKey%22:false,%22input%22:%22%22,%22controlKey%22:false,%22commandKey%22:false,%22type%22:%22action%22,%22discoverabilityTitle%22:%22Draft%20Link%22,%22shiftKey%22:false%7D,%22logLevel%22:2,%22groupDisposition%22:0,%22notificationType%22:2,%22tintColor%22:%22green%22,%22actionDescription%22:%22TAD-Link%20for%20Draft%20(Title)%22,%22keyUseIcon%22:false,%22icon%22:%22link%22,%22visibility%22:480,%22backingIsSeparator%22:false,%22groupUUID%22:%2216A2B316-FD3E-4266-913B-4A343EC3122A%22,%22assignTags%22:%5B%5D,%22name%22:%22Draft%20Link%22%7D,%7B%22uuid%22:%227FF25B9B-A198-49E8-930F-B5E11BF74936%22,%22steps%22:%5B%7B%22platforms%22:3,%22data%22:%7B%22name%22:%22TAD-Prime%20Preview%20MMD%22%7D,%22type%22:%22includeAction%22,%22isEnabled%22:true,%22uuid%22:%22F31F05A6-DE09-49D5-A324-A5DF0035FE36%22%7D%5D,%22backingPlatforms%22:3,%22shortName%22:%22%22,%22shouldConfirm%22:false,%22disposition%22:3,%22keyCommand%22:%7B%22optionKey%22:false,%22input%22:%22%22,%22controlKey%22:false,%22commandKey%22:false,%22type%22:%22action%22,%22discoverabilityTitle%22:%22Preview%20MMD%22,%22shiftKey%22:false%7D,%22logLevel%22:2,%22groupDisposition%22:0,%22notificationType%22:2,%22tintColor%22:%22gray%22,%22actionDescription%22:%22TAD-Prime%20Preview%20MMD%22,%22keyUseIcon%22:false,%22icon%22:%22branch%22,%22visibility%22:480,%22backingIsSeparator%22:false,%22groupUUID%22:%2216A2B316-FD3E-4266-913B-4A343EC3122A%22,%22assignTags%22:%5B%5D,%22name%22:%22Preview%20MMD%22%7D,%7B%22uuid%22:%22C2BCAF85-15FE-4103-901D-2D816CCBE444%22,%22steps%22:%5B%7B%22platforms%22:3,%22data%22:%7B%22name%22:%22TAD-Load%20Most%20Changed%20Draft%22%7D,%22type%22:%22includeAction%22,%22isEnabled%22:true,%22uuid%22:%22D94578B7-38CC-440C-A9E8-89EC9DE3AFEA%22%7D%5D,%22backingPlatforms%22:3,%22shortName%22:%22%22,%22shouldConfirm%22:false,%22disposition%22:3,%22keyCommand%22:%7B%22optionKey%22:false,%22input%22:%22%22,%22controlKey%22:false,%22commandKey%22:false,%22type%22:%22action%22,%22discoverabilityTitle%22:%22Load%20Most%20Changed%20Draft%22,%22shiftKey%22:false%7D,%22logLevel%22:2,%22groupDisposition%22:0,%22notificationType%22:2,%22tintColor%22:%22orange%22,%22actionDescription%22:%22TAD-Load%20Most%20Changed%20Draft%22,%22keyUseIcon%22:false,%22icon%22:%22ribbon%22,%22visibility%22:480,%22backingIsSeparator%22:false,%22groupUUID%22:%2216A2B316-FD3E-4266-913B-4A343EC3122A%22,%22assignTags%22:%5B%5D,%22name%22:%22Load%20Most%20Changed%20Draft%22%7D%5D,%22modifiedAt%22:641338420.61343801,%22disposition%22:0,%22uuid%22:%2216A2B316-FD3E-4266-913B-4A343EC3122A%22,%22visibility%22:480,%22createdAt%22:641338420.61343706,%22icon%22:%22532-tractor%22,%22changeTag%22:%22eg7%22%7D
+</code></pre>
+
+<p>As I understand it, the entirety of this Action Group’s data as it appeared on</p>
+
+<h3>Add To Notion</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> special-alert<br />
+<strong>Colour:</strong> yellow<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> D3ECAF73-FE2F-4435&#8211;8768&#8211;9022F5F88D74<br />
+<strong>Description:</strong><br />
+Set of functions for Notion API + action that adds current draft to Notion in the page you use as your inbox. If it’s a single line, it’s added as a note, if it’s multiple lines, it’s a page. Currently text is added as one block and it doesn’t convert markdown.</p>
+
+<h3>DupeLoad</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 511-copy-documents<br />
+<strong>Colour:</strong> blue<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> E2CD38A1-F3EC-4DC7-BA85-E8E274B98D84<br />
+<strong>Description:</strong><br />
+TAD-Duplicate Draft and Load</p>
+
+<h3>Lines to * List</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> action_star1<br />
+<strong>Colour:</strong> pink<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 89D931EB-2D23&#8211;4213-A8E5&#8211;3A2DC23C9CE4<br />
+<strong>Description:</strong><br />
+TAD-MD-Lines to Bullet List (*)</p>
+
+<h3>DIFF</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> action_preview<br />
+<strong>Colour:</strong> green<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> C58D1F93-E3BB-47EE-AC04-A4128A239849<br />
+<strong>Description:</strong><br />
+Marks up changes (insertions, deletions) between current draft and a previous version (prompts for selection).</p>
+
+<p>Preview respects tab indents without invoking code blocks (by design).</p>
+
+<p>Diff code from: https://johnresig.com/projects/javascript-diff-algorithm/
+CSS styles for ins/del tags adapted from: Yuanchuan (https://yuanchuan.name/)
+via https://freefrontend.com/html-del-ins-css/</p>
+
+<h3>fetch</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 401-globe<br />
+<strong>Colour:</strong> green<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> None<br />
+<strong>Log Level:</strong> None<br />
+<strong>Number of Steps:</strong> 4<br />
+<strong>Unique ID:</strong> 58EE3EA8-C139&#8211;451C-9409&#8211;2C10B88C8DEB<br />
+<strong>Description:</strong><br />
+Fetches the content of the URL on the clipboard and puts the content into a new draft.</p>
+
+<h3>Edit Markdown Table</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> border-all<br />
+<strong>Colour:</strong> gray<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> A892D5D5&#8211;9F2D-4AF2-A966&#8211;9891C561F265<br />
+<strong>Description:</strong><br />
+Demonstration action that uses the <a href="https://github.com/stevecat/table-magic">Table Magic</a> Markdown table editing library to modify Markdown tables in an advanced HTML Preview.</p>
+
+<p>This tools allows editing of table in forms, CSV, etc. Select an existing Markdown table in the draft before running the action to pre-populate the editor.</p>
+
+<h3>Synonym</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> signs-alt<br />
+<strong>Colour:</strong> indigo<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 8584909D-7811&#8211;4275-BE68-FE6411AD4FAE<br />
+<strong>Description:</strong><br />
+TAD-Replace with Synonym</p>
+
+<h3>Copy to Notion</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 319-shipping-crate<br />
+<strong>Colour:</strong> gray<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> 92B6883A-329D-4B98&#8211;814B-7FC9A103CF5C<br />
+<strong>Description:</strong><br />
+Copy draft and open Notion app to be pasted</p>
+
+<h3>APPLE NOTES</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> apple-bite<br />
+<strong>Colour:</strong> red<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> 780692BD-989B-433D-A400&#8211;9A3E95D6C779<br />
+<strong>Description:</strong><br />
+Create a new note in Apple Notes converting the Markdown in Drafts to HTML.</p>
+
+<p>Action uses AppleScript and is only compatible with Mac.</p>
+
+<h3>Fantastically Good Event Parser</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> calendar-dates<br />
+<strong>Colour:</strong> red<br />
+<strong>Confirm to Run:</strong> true<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> 7FB51E0D-A578&#8211;4A89-A747&#8211;08196942D12F<br />
+<strong>Description:</strong><br />
+Split draft into lines and create events for each using Fantastical-style syntax.</p>
+
+<h3>Tweet and Toot</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 343-scribble<br />
+<strong>Colour:</strong> blue<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> CE48F720&#8211;0CAA-4F1E-BF92-FEA80112982D<br />
+<strong>Description:</strong><br />
+This is the same as the built in micro.blog script, but you can add a post title by adding a line with “# ” (include the space) in the first line of the draft. The first line will be the title (minus the pound sign and space) and everything below that will be the content.</p>
+
+<p>If there is no “# “ on the first line, the entire draft is assumed to be the content and no title will be added.</p>
+
+<h3>Mac Safari Tab Links (MD)</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> action_url<br />
+<strong>Colour:</strong> yellow<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 4<br />
+<strong>Unique ID:</strong> 16901BFF-02A7&#8211;4026&#8211;8790-E2BB8727CBA5<br />
+<strong>Description:</strong><br />
+A Mac only action that inserts the URLs for all of the open Safari tabs at the current cursor position. The content is formatted as a Markdown list of links.</p>
+
+<h3>Save images in Drafts' Previews folder</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 568-photo<br />
+<strong>Colour:</strong> blue<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> 7930D729&#8211;6C35&#8211;4D85&#8211;9C79&#8211;44C486DD0107<br />
+<strong>Description:</strong><br />
+This Drafts action + shortcut does the following:</p>
+
+<ol>
+<li> Let the user select the image files and save them in the Drafts Previews folder (iCloud Drive / Drafts / Library / Previews /).</li>
+<li> Insert those image links into the draft.</li>
+</ol>
+
+<p>Shortcut
+　https://www.icloud.com/shortcuts/567d5d896af24343ac736cb40b0647c2</p>
+
+<p>https://sorashima.hatenablog.com/entry/ObsidianImagePreviewOnDrafts</p>
+
+<h3>Current Inbox Count</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> hashtag<br />
+<strong>Colour:</strong> none<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 488BA16F-4E48&#8211;466C-82D9&#8211;28F3952A3F8E<br />
+<strong>Description:</strong><br />
+Display an alert with a count of drafts in the inbox currently displayed in the draft list.</p>
+
+<h3>Zalgo?</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong><br />
+<strong>Colour:</strong> yellow<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 40D66F07&#8211;4AB0&#8211;4FF7-A085&#8211;04B2F3996A1B<br />
+<strong>Description:</strong></p>
+
+<h3>Template</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> folder-upload<br />
+<strong>Colour:</strong> none<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 79C84C3D-35B6&#8211;49F8-B012&#8211;7D3538CED417<br />
+<strong>Description:</strong><br />
+Runs New Draft with Template</p>
+
+</body>
+
+<footer>
+<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="drafts://open?uuid=C7CAD549-741E-482E-B698-01C1BF6D9189">Local</a></p>
+</footer>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>Periscope Preservation</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: #000056;
+      --main-color: #ffe8bd;
+      --alternate-bg-color: #1c0021;
+      --alternate-color: #fff4e6;
+      --main-border-color: #f43f32;
+        --link-color: #36fd63;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #fff4e6;
+        --main-color: #00006b;
+        --alternate-bg-color: #fffdeb;
+        --alternate-color: #1c0021;
+        --main-border-color: #f43f32;
+          --link-color: #ff0000;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Periscope Preservation</h1>
+
+<h2>An ongoing document for (former) Periscope users detailing all available means of preserving/scraping data and media from psp.tv.</h2>
+
+<p>The <a href="https://periscope.medium.com/farewell-periscope-164db2742b7c">official announcement of Periscope&#8217;s demise</a> was posted on their Medium blog on December 15th, 2020.</p>
+
+<p>It states:</p>
+
+<blockquote>
+<p>Broadcasts that were shared to Twitter will live on as replays, and all broadcasters will be able to download an archive of their Periscope broadcasts and data before the app is removed in March 2021.</p>
+</blockquote>
+
+<p>Thanks to <a href="https://twitter.com/twittersupport/status/1367173142188335114">a brief series of Tweets</a> from @TwitterSupport, we know <strong>the app is going to be removed from the app store on March 31st</strong>. (Which is in 8 days, atm.)</p>
+
+<p><em>However</em>, the hyperlink referenced for users to find &#8220;more info… about what will happen to your Super Hearts and broadcasts, how you can go live on Twitter going forward, and more&#8221; (https://help.twitter.com/using-twitter/periscope-faq) is *<em>currently broken</em>- as of Mar 24, 2021 at 08:20 (CST.) I have posted replies on both <a href="https://extratone.medium.com/periscope-twitter-public-policy-5305341a9043">Medium</a> and <a href="https://twitter.com/NeoYokel/status/1374680479874568194">Twitter</a> pinging the relevant accounts I could find.</p>
+
+<p>Given the above pullquote from the blog post, this means Twitter/Periscope has 8 days to enable users to download &#8220;an archive of their Periscope broadcasts and data,&#8221; but…</p>
+
+<h2>The method for downloading &#8220;broadcasts and data&#8221; as documented by Twitter/Periscope does not currently work</h2>
+
+<ul>
+<li><a href="http://ytdl-org.github.io/youtube-dl/">Youtube-dl</a> supports downloading Periscope broadcasts and is by far the best method I have discovered. (It even saves them as a .mp4 file with 0 configuration, at the moment.)</li>
+<li><a href="https://downloadperiscopevideos.com">Scopedown</a> is another, tried-and-true method of scraping full Periscope broadcasts in their native format, but will eventually obstruct you with a paywall.</li>
+<li>The page all current Periscope documentation eventually points you to (https://www.pscp.tv/account/your-data) in order to &#8220;download your data&#8221; *<em>currently results only in a virtually useless .JSON file</em>- (it only includes broadcast IDs and some bewildering timestamp-related data.)</li>
+</ul>
+
+<hr />
+
+<p>Any/all thoughts/feedback/corrections/updates would be deeply appreciated here on Github, <a href="mailto:davidblue@extratone.com">by email</a>, <a href="https://twitter.com/NeoYokel">Twitter</a>, or <a href="https://www.notion.so/rotund/Social-Directory-aea1bee51a64461b91bf4de241a4a16d">any other social platform</a>.</p>
+
+</body>
+
+<footer>
+<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="drafts://open?uuid=1FDCC2C0-AD18-4ADB-98F0-94A863B8E4F4">Local</a></p>
+</footer>
+</html>

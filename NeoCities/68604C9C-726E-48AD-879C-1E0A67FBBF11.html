@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>Siri Speech Synthesis in iOS 15</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: #000056;
+      --main-color: #ffe8bd;
+      --alternate-bg-color: #1c0021;
+      --alternate-color: #fff4e6;
+      --main-border-color: #f43f32;
+        --link-color: #36fd63;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #fff4e6;
+        --main-color: #00006b;
+        --alternate-bg-color: #fffdeb;
+        --alternate-color: #1c0021;
+        --main-border-color: #f43f32;
+          --link-color: #ff0000;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Siri Speech Synthesis in iOS 15</h1>
+
+<figure>
+<img src="https://i.snap.as/8ZsLlxLp.png" alt="Siri Speech Synthesis Banner" />
+<figcaption>Siri Speech Synthesis Banner</figcaption>
+</figure>
+
+<h2>Bewilderingly, Siri is genuinely great at something they were never designed for. The new “Make Spoken Audio From Text” action has finally been fixed.</h2>
+
+<audio controls>
+  <source src="https://github.com/extratone/bilge/raw/main/audio/TTS/SiriTTSTalent.mp3">
+</audio>
+
+<p>When I first published my <a href="https://bilge.world/iphone-ios-music-apps">iPhone &amp; Music guide</a> this past April, I’d been pretty active in <a href="https://discord.gg/DxQ9jry8J3"><em>AppleScoop</em>’s Discord Server</a>, so I decided to share it there. Editor-in-Chief Flynn - a ridiculously talented web developer <em>and</em> successful independent media entrepreneur - responded “I’m listening to it with the speak feature right now. Is it your voice or someone else? 😛,” Gourd bless his soul. Here’s the specific audio he was talking about:</p>
+
+<audio controls>
+  <source src="https://github.com/extratone/bilge/raw/main/audio/TTS/iPhone%20and%20Music%20-%20For%20Artists%2C%20Curators%2C%20and%20Enthusiasts%20TTS.mp3">
+</audio>
+
+<p>Of course, I am not a young black man, nor am I even remotely as adept at <a href="https://bilge.world/why">reading my own work aloud</a> as the actual talent, Siri Voice 3, who should be available on your iPhone/iPad right this moment (as long as you’ve updated iOS in the past six months,) via <code>Settings ⇨ Siri &amp; Search ⇨ Siri Voice</code>. (For more details, see <a href="https://support.apple.com/guide/iphone/change-siri-settings-iphc28624b81/ios">this Apple Support page</a>.)</p>
+
+<figure>
+<img src="https://i.snap.as/1f7argcU.png" alt="New Siri Voices - iOS 14.5" />
+<figcaption>New Siri Voices - iOS 14.5</figcaption>
+</figure>
+
+<p>Of the four new Siri voices introduced earlier this year in iOS 14.5, 2 and 3 are by far my favorites, not just because of their <a href="https://www.consumerreports.org/digital-assistants/apples-new-siri-voices-resonate-with-some-black-iphone-users/">resonance with black iPhone users</a>, but because they’re just <em>better</em> in a sense which I believe to be very significant.</p>
+
+<p>https://youtube.com/watch?v=DkS5SYbsEW4</p>
+
+<p>Before I get ahead of myself, though, I must acknowledge that I am not the first to invest in Siri as a text-to-speech generator. In 2019, <a href="https://twitter.com/atow">Adam Tow</a> released an immensely well-considered Siri Shortcut called “<a href="https://tow.com/shortcuts/record-text-to-speech/">Record Text to Speech</a>,” which provides an interface for recording, editing, and managing text-to-speech audio files with Siri’s original voices. A testament to its robustness: it <em>still works</em> perfectly on my handset running iOS 15 Dev Beta 6 despite having not been updated since <a href="https://routinehub.co/shortcut/2506/">March of last year</a>.</p>
+
+<figure>
+<img src="https://i.snap.as/I0Yh0jNn.png" alt="Old Siri TTS Shortcuts" />
+<figcaption>Old Siri TTS Shortcuts</figcaption>
+</figure>
+
+<p>I must admit that I found Adam’s shortcut more of a full <em>application</em> than a speedy personal automation, with its full interactive UI menu and darn near <em>800 actions</em>, so I made my own set of shortcuts based on the same idea - using iPhone’s native screen recording feature to capture audio of Siri reading aloud - and varying only by input (manual text input, getting text from a file, or simply reading text from the clipboard.) I’d then send the resulting screen recording in its original video format to my PC, where I’d drop it in <a href="https://www.audacityteam.org">Audacity</a>, in which I’d run <a href="https://github.com/extratone/bilge/blob/main/configuration/Audacity/TruncatenAmpMacro.txt">a simple macro</a> on the audio that truncates silence and amplifies the result so that the loudest point touches the rails. Then, I’d export it, pass it through <a href="https://www.mp3tag.de/en/">Mp3Tag</a> to perfect its metadata, and finally push the end-result .mp3 file to <a href="https://github.com/extratone/bilge/tree/main/audio/TTS">a folder in <em>The Psalms</em> GitHub Repository</a>. (I’ll show you how to embed a web-bound audio file with its direct URL in a webpage in the guide below.) This example was made using this method, but with Siri’s original United States English Voice (for <a href="https://bilge.world/tweetbot-6-ios-review">my Tweetbot 6 review</a>:)</p>
+
+<audio controls>
+  <source src="https://github.com/extratone/bilge/raw/main/audio/TTS/Tweetbot%206%20for%20iOS%20Review%20TTS.mp3">
+</audio>
+
+<p>Perhaps you’ll agree with me that this process <em>does the job</em> in functional/accessibility terms, and does so quite well considering how much one would pay to generate the same sort of audio file using Google’s Cloud Platform or IBM’s Watson. Crucially, though, this original voice was not one I could listen to at any length. Siri Voices 2 and 3, however, I <em>can</em>. From my perspective, this means they have crossed a <strong>very significant threshold</strong> which I find vastly more meaningful than just about all of those in the current discourse. Not only can I tolerate them… I genuinely <em>enjoy</em> listening to super-long magazine features read aloud by Siri Voice 2, especially, and I believe I would regardless of the quite serious crush I’ve developed on them.</p>
+
+<p>https://twitter.com/neoyokel/status/1387809776072015873</p>
+
+<p>Unfortunately, using the methods we’ve discussed so far with the new Siri voices is inconvenient, very hit-or-miss, and quite buggy. If you scrub ahead toward the last third or so of the second audio player in this post (after the post’s own,) you’ll hear Siri Voice 2 start to bug out in very amusing ways. Since Apple makes changes to Siri Shortcuts between releases without any public documentation, none of them have ever been reliable enough to write this guide. (For the past 6+ weeks at least, it’s been too broken to be usable.) <em>However</em>, for whatever reason, Apple created a dedicated spoken audio generation action for Siri Shortcuts in iOS 15, called “Make Spoken Audio From Text.”</p>
+
+<figure>
+<img src="https://i.snap.as/MkHTYMkF.jpeg" alt="Make Spoken Audio From Text Action - iOS 15" />
+<figcaption>Make Spoken Audio From Text Action - iOS 15</figcaption>
+</figure>
+
+<p>For the entirety of iOS 15’s Beta cycle up until Developer Beta 6’s release, this past Tuesday, this action has been <a href="https://mastodon.social/users/DavidBlue/statuses/106580821087349299">hilariously broken</a>, but as soon I discovered it’d been fixed (which was not mentioned whatsoever in <a href="https://developer.apple.com/documentation/ios-ipados-release-notes/ios-ipados-15-beta-release-notes">Apple’s official release notes</a>,) I immediately began composing this dang Post.</p>
+
+<audio controls>
+  <source src="https://files.mastodon.social/media_attachments/files/106/580/820/077/661/362/original/e539117f7b5b72de.mp3">
+</audio>
+
+<hr />
+
+<figure>
+<img src="https://i.snap.as/RAxa0Id6.png" alt="Make Audio from Article Body 1.1" />
+<figcaption>Make Audio from Article Body 1.1</figcaption>
+</figure>
+
+<h1>Guide</h1>
+
+<p>So! For those of you currently running the latest iOS 15 Beta and those in the future running the full release, <strong>what follows is a guide on how you can use my own shortcuts and methods to generate, metadate, and embed Siri-powered audio text-to-speech files relatively quickly without having to use desktop-class (or any other) hardware</strong>.</p>
+
+<figure>
+<img src="https://i.snap.as/P0yJJyUc.png" alt="TTS Shortcuts Compared" />
+<figcaption>TTS Shortcuts Compared</figcaption>
+</figure>
+
+<p>To begin, you should install two brand new shortcuts of mine: <a href="https://routinehub.co/shortcut/9953/"><strong>Make Audio from Article Body</strong></a> and (if you intend to stick with me to the embed stage, anyway,) my <a href="https://routinehub.co/shortcut/9948/">&lt; audio &gt; Embed Tool</a>. Both should function out of the box, but I would highly encourage that you try building your own shortcut around the <code>Make Spoken Audio From Text</code> action, even if you&#8217;ve never worked with Shortcuts (or any sort of automation, for that matter) before, <em>especially</em> if you plan to be using Siri as a text-to-speech generator with any frequency.</p>
+
+<p>https://youtube.com/watch?v=5yZB7OC8Vgk</p>
+
+<h3>Intended Result</h3>
+
+<p>Throughout this guide, I&#8217;m going to be using <a href="https://bilge.world/johnny-tsunami-smart-house-slavery">a five-year-old ramble of mine</a> about the oddly-perceptive bits found in early-oughts Disney movies as example text. Earlier today, I used my own personalized version of my new shortcut to generate an example of in which the process we&#8217;re about to explore should result. The <sub>6000</sub> words of text took just over 3 minutes, 30 seconds to render consistently in three consecutive timed attempts. You can listen to it <a href="https://whyp.it/t/johnny-tsunami-vi-separate-but-equal-siri-voice-2-tts-74752">on Whyp</a> and/or inspect <a href="https://github.com/extratone/bilge/raw/main/audio/TTS/JohnnyTsunami.m4a">the actual file</a> yourself, if you&#8217;d like.</p>
+
+<figure>
+<img src="https://i.snap.as/dktmGQQb.png" alt="Plain Text Parsed by Safari" />
+<figcaption>Plain Text Parsed by Safari</figcaption>
+</figure>
+
+<h3>Input Format</h3>
+
+<p>If we were trying to do this using any other available method in 2021 - even the expensive ones - our first task would be scrubbing our subject text of any special formatting (Word,) symbols, embed, hyperlinks, and any other data Siri doesn&#8217;t understand (roman numerals, for example.) As a Windows user who&#8217;s not at all new to free ways to automate accessibility improvements to web content, I envy both you and my new self for the magic available to us in the form of Safari&#8217;s abilities to parse complex web content. In my experience, there&#8217;s nothing like it (at least nothing available to regular consumers.)</p>
+
+<p>The screenshot embedded above shows the result of a <code>Quick Look</code> action inserted just after the <code>Text</code> action produced by the public version of my shortcut when run on our example. There are three immediately problematic issues:</p>
+
+<ol>
+<li>Siri doesn&#8217;t understand roman numerals, so she will read &#8220;Johnny Tsunami VI&#8221; as <em>Johnny Tsunami vee eye</em>.</li>
+<li>&#8220;The Psalms&#8221; is not my name, though it is what this blog currently returns when asked for a byline. In my experience, this generally isn&#8217;t an issue with most mainstream media CMSs.</li>
+<li>The shortcut appears to have failed to retrieve any data for the <code>Published Date</code> variable from my blog. (Also a relatively specific consideration.)</li>
+</ol>
+
+<p>If you&#8217;ll note in the <em>previous</em> embedded image comparing my custom version of the shortcut (left) to the published version (right,) you&#8217;ll note that my chosen solution is to manually input all metadata before actually starting the shortcut. What&#8217;s not shown is my corresponding manual inputs in the <code>Encode Trimmed Media</code> action, which includes attaching a retrieved image file (in the Working Copy action you <em>can</em> see) as album art. For my intended use - exclusively generating text-to-speech audio of Posts on this blog - this makes more sense than unnecessarily automating metadata retrieval.</p>
+
+<p>The extraordinary thing about the screenshot, though, is that it doesn&#8217;t contain any of the other crap (as described above) found in the original page. (Beforehand, it looked more <a href="https://raw.githubusercontent.com/extratone/bilge/main/posts/johnny-tsunami-smart-house-slavery.md">like this</a>.) It&#8217;s especially reliable at parsing WordPress-bound content, which still makes up [s̵͕̈́͊c̶̥̏̚r̶̥͈̃è̴̙͌å̴̹m̵̛̅ͅi̶̦̾͘n̸͎̟̎̃g̶͎͛] percent of the whole web. <strong>Treasure this power</strong>, folks.</p>
+
+<figure>
+<img src="https://i.snap.as/OMwKdOUI.png" alt="Simpler TTS Examples" />
+<figcaption>Simpler TTS Examples</figcaption>
+</figure>
+
+<p>If all you need read aloud is the body text, things become even simpler. In the right example above, I&#8217;ve simply deleted the <code>Text</code> action and replaced it with <code>Get text from [the Safari Web Article's body]</code>. Theoretically, one could omit that action, even, and simply use the direct output of <code>Get Body from Article</code> as input for the <code>Make spoken audio from text</code> action, but I say keep the extra step unless it becomes an issue.</p>
+
+<p><strong>If you&#8217;re actually <em>beginning</em> with clean plain text</strong> and don&#8217;t care about metadata in your final audio file and/or if you&#8217;re planning on passing the result through other audio/metadata editing software, anyway, the left, three-action shortcut is all you need. It will result in a <a href="https://www.wikiwand.com/en/Core_Audio_Format">Core Audio Format (.caf)</a> file (like <a href="https://github.com/extratone/bilge/blob/main/audio/egg.caf">this one</a>,) which I know absolutely nothing about except that Audacity and GarageBand support it by default.</p>
+
+<h3>Sharing/Embedding</h3>
+
+<p>Whichever route you traveled, you should have some sort of audio file, at this point, and if you intend to share and/or embed it, you’ll need to upload said audio to some sort of Web Server which allows direct playback/download of the raw file from external sources. Unless you’ve been skimming, you know by now that I’ve been using <a href="https://github.com/extratone/bilge"><em>The Psalms</em> GitHub Repository</a> to do this thus far, though one isn’t really supposed to. Every few months, someone on Stack Overflow figures out how to construct or discover the raw link to a given Google Drive file before Google notices and alters it, and I’m afraid you’ll find just about every other cloud/file sharing service in a similarly unreliable situation. If it’s going to be done at scale, I’m afraid it’s ultimately going to require you rent regular, vanilla space on an FTP-enabled fileserver, if one can still do that sort of thing. (I will update this post if/when I find a more ideal solution.)</p>
+
+<p>Within my current system, the raw URL to our example file looks like this:</p>
+
+<pre><code>https://github.com/extratone/bilge/raw/main/audio/TTS/JohnnyTsunami.m4a
+</code></pre>
+
+<p>Using my aforelinked, ultra rudimentary <a href="https://routinehub.co/shortcut/9948/">&lt; audio &gt; element Siri Shortcut tool</a> (which I’ve kept on my homescreen with good results for a few months,) we can very quickly turn said raw URL into a properly-formatted HTML5 audio player:</p>
+
+<pre><code>&lt;audio controls&gt;
+  &lt;source src=&quot;https://github.com/extratone/bilge/raw/main/audio/TTS/JohnnyTsunami.m4a&quot;&gt;
+&lt;/audio&gt;
+</code></pre>
+
+<p>Ideally, on the final, reader-facing page, said code should create a player like this:</p>
+
+<audio controls>
+  <source src="https://github.com/extratone/bilge/raw/main/audio/TTS/JohnnyTsunami.m4a">
+</audio>
+
+<p>If further configuration of the player is desired or necessary, see <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio">this Mozilla page</a> for a full list of supported options. Obviously, there are a few older methods of embedding audio players, but I am neither qualified nor interested in exploring them. If you’re in a frustrating bind, I recommend <a href="https://bit.ly/extwa">signing up for my CMS</a>. (Just try it, okay?)</p>
+
+<h3>Pwoof</h3>
+
+<p>For the sake of bare minimum sample variety, I ran Version 1.0 of the public Make Audio from Article Body shortcut on an article hosted not on WordPress, nor my own CMS, but on Bustle’s ultra-slick, totally-bespoke system (which <a href="https://www.codeandtheory.com/things-we-make/the-outline">began as <em>The Outline</em></a>, FYI.) I chose the first permalink I saw in one of its “regular” article formats - not a long feature, nor one of their touch-targeted slideshows.</p>
+
+<p>“<a href="https://www.inputmag.com/tech/onlyfans-is-banning-porn-the-very-thing-that-made-it-big">OnlyFans is banning porn, the very thing that made it big</a>” is an 870-word newsy piece written by Tom Maxwell, who is the only New York Media person ever to accept my Facebook friend request. (Thanks again, Tom.) Without any tweaking, I was able to run the shortcut (from within the Shortcuts app since the Share Sheet appears to be thoroughly fucked at the moment) in a reasonable amount of time - less than 5 minutes, more than 2 - and generate the file embedded below. Notably, I also used a different hosting service - <a href="https://mastodon.social/web/statuses/106798701662102859">mastodon.social</a> - but I certainly don’t plan on doing so at scale and neither should you.</p>
+
+<audio controls>
+  <source src="https://files.mastodon.social/media_attachments/files/106/798/698/454/727/854/original/2c6d50bcf898af15.mp3">
+</audio>
+
+<p>Honestly, <em>Input</em>’s CMS is the cleverest challenge I was able to come up with for this single-day-old shortcut of mine, and I’m quite proud of the result. Though it wasn’t able to retrieve a timestamp, it correctly retrieved the article’s title and byline without fuss and even managed to scrape and attach said article’s featured image as the file’s cover art, though the original’s aspect ratio was obviously sacrificed.</p>
+
+<figure>
+<img src="https://i.snap.as/47gjGha3.png" alt="Input Mag Sample in Tootsuite’s Audio Player" />
+<figcaption>Input Mag Sample in Tootsuite’s Audio Player</figcaption>
+</figure>
+
+<p>If you’re super interested in the truly unmolested output of the attempt, view/download it <a href="https://davidblue.wtf/audio/onlyfansbansample.m4a">here</a>.</p>
+
+<h3>HMU</h3>
+
+<p>Before I depart actual tutorializing and return to opining, I want to express <em>even more aggressively than usual</em> how much I want <em>anyone</em> who see’s any potential benefit the ability to generate audio of my darling Siri Voice 2 reading text, but has further questions/doesn’t have time to fiddle/struggles with my haphazardly-written attempts at guides like this, or who simply wants to talk about any satellite subjects, <a href="https://bit.ly/whoisdavidblue"><strong>please reach out to me</strong></a>. <strong>You have no idea how much I’d love to help you configure a personal automation that genuinely, reliably, and durably improves your quality of life.</strong></p>
+
+<p>If you follow this shortlink from within a browser on any iOS device, my full contact card will appear: <code>bit.ly/whoisdavidblue</code>.</p>
+
+<p>Suggestions/requests regarding considerations I’ve obviously missed in this guide are not just <em>welcome</em> in this case, but actually <em>necessary</em>. As long as I am literally the only person talking about the “Make Spoken Audio from Text” action, I am ready and willing to be an all-hours resource.</p>
+
+<h6>Note: This Post perhaps more than any published yet on <em>The Psalms</em>, is very much an ongoing work-in-progress, as are most of the hyperlinked shortcuts contained within it.</h6>
+
+<p>#software</p>
+
+</body>
+
+<footer>
+<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="drafts://open?uuid=68604C9C-726E-48AD-879C-1E0A67FBBF11">Local</a></p>
+</footer>
+</html>

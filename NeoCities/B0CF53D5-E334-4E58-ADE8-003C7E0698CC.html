@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>NeoCities</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: #000056;
+      --main-color: #ffe8bd;
+      --alternate-bg-color: #1c0021;
+      --alternate-color: #fff4e6;
+      --main-border-color: #f43f32;
+        --link-color: #36fd63;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #fff4e6;
+        --main-color: #00006b;
+        --alternate-bg-color: #fffdeb;
+        --alternate-color: #1c0021;
+        --main-border-color: #f43f32;
+          --link-color: #ff0000;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>NeoCities</h1>
+
+<h3>Root</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong><br />
+<strong>Colour:</strong> none<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 0<br />
+<strong>Unique ID:</strong> 69B625EC-D9E2&#8211;41B7&#8211;9767&#8211;3532666E7C97<br />
+<strong>Description:</strong></p>
+
+<h3>Push Draft to Root as HTML</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 383-keyhole<br />
+<strong>Colour:</strong> orange<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 81C89DC8-F26E-4644&#8211;87D7-BF454B345C24<br />
+<strong>Description:</strong><br />
+Push the current draft to the /drafts directory as an HTML file by the draft’s <code>safe_title</code>.</p>
+
+<h3>Draft to Root as UUID.html</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> binary<br />
+<strong>Colour:</strong> yellow<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> ABAA6A02&#8211;806F-4B45-BEA6-E9D5F8D32236<br />
+<strong>Description:</strong><br />
+Push the current draft to the root directory as an HTML file titled by its UUID.</p>
+
+<h3>Draft to Root as Text Timestamp</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> alarm<br />
+<strong>Colour:</strong> orange<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> EFF08ADA-81B6&#8211;49C3-B132&#8211;5DB477A95685<br />
+<strong>Description:</strong><br />
+Push the current draft to the root directory as a .txt file titled by timestamp.</p>
+
+<h3>Draft to /{title} as index.html</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> indent<br />
+<strong>Colour:</strong> red<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 15401CFC-114E-429C-B747&#8211;054E19C46911<br />
+<strong>Description:</strong><br />
+Push the current draft to /NeoCities as index.html</p>
+
+<h3>Open /{title}</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> idea<br />
+<strong>Colour:</strong> green<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 34630C90&#8211;6180&#8211;4394-A296-C2A5018DFEFB<br />
+<strong>Description:</strong><br />
+Open /drafts/[Current Draft UUID].html.</p>
+
+<h3>/path</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong><br />
+<strong>Colour:</strong> none<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 0<br />
+<strong>Unique ID:</strong> 6F0BE49F-3B6F-49AF-ABA7&#8211;04BA7F437C1A<br />
+<strong>Description:</strong></p>
+
+<h3>Push Draft to /drafts as HTML</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 383-keyhole<br />
+<strong>Colour:</strong> orange<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 34A59A1C-95A8&#8211;42A9&#8211;9C23&#8211;677E9731EFC8<br />
+<strong>Description:</strong><br />
+Push the current draft to the /drafts directory as an HTML file by the draft’s <code>safe_title</code>.</p>
+
+<h3>Draft to /drafts as UUID.html</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> binary<br />
+<strong>Colour:</strong> none<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 9C9FCDA8&#8211;687C-475A-8213-A8185CEFEE4D<br />
+<strong>Description:</strong><br />
+Push the current draft to the /drafts directory as an HTML file titled by its UUID.</p>
+
+<h3>Open pushed /drafts file by UUID.</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> idea<br />
+<strong>Colour:</strong> green<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> BADE45C1-AEC4&#8211;46A6-B4BE-7B88B2357C04<br />
+<strong>Description:</strong><br />
+Open /drafts/[Current Draft UUID].html.</p>
+
+<h3>Draft to /drafts/{title} as index.html</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> indent<br />
+<strong>Colour:</strong> violet<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 5555699A-B3A6&#8211;432D-9A20-ECA78F6A5D88<br />
+<strong>Description:</strong><br />
+Push the current draft to drafts/NeoCities as index.html</p>
+
+<h3>Open /drafts/{title}</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> idea<br />
+<strong>Colour:</strong> green<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 1E5CB9D6-B8FE-4934&#8211;8AEC-E795A651C45A<br />
+<strong>Description:</strong><br />
+Open /drafts/{title}</p>
+
+<h3>Draft to Specified Path as index.html</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> signs-alt<br />
+<strong>Colour:</strong> orange<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> A7D5BE00&#8211;36D3&#8211;4E08&#8211;9058&#8211;7923571189AA<br />
+<strong>Description:</strong><br />
+Push Draft to specified directory as index.html.</p>
+
+<p>/[input]/index.html</p>
+
+<h3>Misc</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong><br />
+<strong>Colour:</strong> none<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 0<br />
+<strong>Unique ID:</strong> 06296787-B9EE-4759&#8211;9B9C-5F994CAA894A<br />
+<strong>Description:</strong></p>
+
+<h3>Push clipboard .txt to clipboard/timestamp</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> clipboard-content<br />
+<strong>Colour:</strong> blue<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 98AF9E4B-1D48&#8211;4F95&#8211;8D2D-C879FE16BE40<br />
+<strong>Description:</strong><br />
+Push contents of the clipboard to the /clipboard directory as a .txt file.</p>
+
+<h3>Open NeoCities Workspace</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong> ⇧⌃N<br />
+<strong>Icon:</strong> cat-face<br />
+<strong>Colour:</strong> gray<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 4B8E95CE-F6A3&#8211;4F53&#8211;88CB-B01C8398A990<br />
+<strong>Description:</strong><br />
+Open workspace entitled “NeoCities.”</p>
+
+<h3>NeoCities list / (macOS-Only)</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> directions-merge<br />
+<strong>Colour:</strong> gray<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> 898038F4-E5E4&#8211;4BDA-B15A-D2ED2D388D82<br />
+<strong>Description:</strong><br />
+Calls a shortcut entitled “NeoCitiesRoot” with a <code>Run Shell Script</code> action containing the following:</p>
+
+<p><code>neocities list /</code></p>
+
+<p>Can only be run on macOS and requires the NeoCities CLI.</p>
+
+</body>
+
+<footer>
+<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="drafts://open?uuid=B0CF53D5-E334-4E58-ADE8-003C7E0698CC">Local</a></p>
+</footer>
+</html>

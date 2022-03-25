@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>Tweetbot 6 for iOS Review</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: #000056;
+      --main-color: #ffe8bd;
+      --alternate-bg-color: #1c0021;
+      --alternate-color: #fff4e6;
+      --main-border-color: #f43f32;
+        --link-color: #36fd63;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #fff4e6;
+        --main-color: #00006b;
+        --alternate-bg-color: #fffdeb;
+        --alternate-color: #1c0021;
+        --main-border-color: #f43f32;
+          --link-color: #ff0000;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Tweetbot 6 for iOS Review</h1>
+
+<figure>
+<img src="https://i.snap.as/OgxERkXE.png" alt="Various - Tweetbot 6" />
+<figcaption>Various - Tweetbot 6</figcaption>
+</figure>
+
+<h2>In the bleak face of Twitter’s centralization, Tapbots refuses to give up on its mobile client.</h2>
+
+<p>Were it just I who came to you with only my voice on this cold night, proclaiming the imminent release of a whole numerical version of a third-party mobile Twitter client in 2021, you really would have no choice but to send for the laws, for you’d be left no consideration other than my comprehensive descent into absolute insanity. <a href="https://bilge.world/tweetbot-5-ios-review">807 days ago</a>, I told you lots about the history surrounding the development of Tweetbot 5, which I confidently described as “likely the last com­pet­i­tive third-par­ty Twit­ter app for iOS.” After spending the past few months diving deep into iOS in preparation to <a href="https://github.com/extratone/bilge/issues/45">review and reflect</a> upon Apple’s current flagship handset, my eyes have been opened to the exponentially-increasing pace of the whole environment’s metamorphosis during the course of my lapsed attention. In the name of progress, I’ve done my best to make a point of looking back, too, yet something astonishingly personally relevant managed to slip past me until just last week: <strong>there is a sixth version of the Tweetbot app</strong>. At this moment, <a href="https://apps.apple.com/us/app/tweetbot-6-for-twitter/id1527500834">it is listed on the App Store</a> as an “Early Release” version, though its predecessor can still be downloaded by those who’ve already purchased it in the past, like me. <code>Footnote: Though I was still able to find [a share link](https://apps.apple.com/us/app/tweetbot-5-for-twitter/id1018355599), it appears to be unopenable in a regular web browser, which will simply prompt you to open iTunes.</code> This is an unusual practice - usually, pre-release versions of iOS apps can only be distributed through Apple’s developer beta testing infrastructure, though Testflight. Notably, Tweetbot developer company Tapbots was <a href="https://twitter.com/tapbot_paul/status/1354145779494100992?s=21">apparently required</a> to take down Tweetbot 5’s store listing 30 days before releasing Tweetbot 6. <code>Footnote: I can’t think of any innocuous reason for Apple to do so. A month’s absence of a given software company’s flagship application sounds like a nerve-wracking punishment, nothing more. Discussed at length in this blog post written by someone I don’t have the time to look up, right now: https://mjtsai.com/blog/2021/01/26/tweetbot-6-for-ios/)</code></p>
+
+<p>https://soundcloud.com/compaqclub/macstories-on-tweetbot-6</p>
+
+<p>I can’t remember exactly why - though I suspect I was just fucking around on my phone before bed, bleary-eyed - but the implications of this next numeral passed me by the first time I saw and downloaded Tweetbot 6, two weeks ago. Perhaps it’s because the app didn’t appear to have any new features - in fact, it’s technically got <em>less</em> than 5, though those that have been removed - user-specified URL shortening, image hosting, and video hosting services - haven’t worked in a good while anyway. As my old fav, <em>The Verge</em> noted in <a href="https://www.theverge.com/2021/1/26/22250899/tweetbot-6-tapbots-ios-app-update-subscription-service-twitter-api">their coverage of 6</a>, blame for these omissions rests solely on Twitter, Inc., itself, who’s continued to hold its API development inordinately close-to-chest. I didn’t bother to find out about this, though, because my first assumptions upon poking around the new app - especially after encountering its new subscription requirement in order to use any of its substantive features - was that its developers had ceased any actual time investment into the app long ago, and that 6 was a new version in number and rudimentary visual updates, only, shoved out in hopes of peaking old, loyal users like myself enough to get us to download it, at least. In the disappointment I’d already expected, I closed and immediately deleted the app.</p>
+
+<p>I’ve paused everything else to write you on this, though, because the story is actually much bigger. Had I investigated any further that first time, I would have discovered an odd amount of buzz coming from even the most mainstream of tech media in a simple search. (Yes, I am ashamed about it.) You’re still reading, but perhaps - as I was, originally - you are doing so from an appropriately-jaded, well-read perspective on software, generally, in 2021. Perhaps you’re looking at the search results, yourself, and wondering if you’re dreaming. <em>Dedicated coverage of a fucking third-party Twitter client iteration??? At this point in history? What in fuck?</em> I’m fairly certainly neither of us are, though: fucking Tweetbot made headlines on <a href="https://www.engadget.com/tweebot-6-tapbots-twitter-app-subscription-model-launch-110526052.html">Engadget</a>, <a href="https://techcrunch.com/2021/01/26/tweetbot-6-released-with-new-subscription-pricing/">TechCrunch</a>, <a href="https://9to5mac.com/2021/01/26/tweetbot-6-new-features-subscription-model/">9to5Mac</a>, <a href="https://www.macstories.net/news/tweetbot-6-moves-to-subscription-pricing/">MacStories</a>, <a href="https://www.imore.com/tweetbot-6-update-popular-twitter-app-and-it-brings-subscription-model">iMore</a>, <a href="https://www.macrumors.com/2021/01/26/tweetbot-6-subscription-pricing-change/">MacRumors</a>, and others. No, it’s not 2010 again. In fact, <em>The Verge</em>, at least, has never given up on Tweetbot. If my long term memory had been functioning, I would have remembered noticing its spot in “<a href="https://www.theverge.com/platform/amp/22187376/best-iphone-apps-2020-apple-ios">12 great apps for your new iPhone in 2020</a>:”</p>
+
+<blockquote>
+<p>Twitter is a vaguely terrible way to spend your time these days, but if you (like me) can’t tear yourself away from the social media service / entryway into hell, you’ll want Tweetbot, which actually makes using Twitter far less painful. Tweetbot shows you the tweets of the people you follow, in the order that they tweeted them. There are no ads or promoted tweets, powerful mute filters to block out unwanted noise, and (thanks to Twitter’s unfriendly API changes) no notifications to constantly ping you to come back to the app.</p>
+</blockquote>
+
+<p>Here’s to Chaim for exposing me to a perspective I never would have otherwise considered: Tweetbot’s lack of push notifications as a <em>positive</em>. If you’re wondering, no, this new app does not <sub>yet</sub> include any additional notification integration, and it’s not clear whether or not it’s on Tapbots future roadmap for the app, or where. As for the reality of integrating Tweetbot 6 into your current Twitter use, I stand by my argument	that deleting the native Twitter app isn’t really an option if you plan to ever view your notifications on your phone. The popular assumption (I assume) if you’re still reading is that you are a “poweruser,” meaning details about my own configuration are probably irrelevant. If by chance you’ve just downloaded Tweetbot for the first time, you should take the time to disable notifications for Tweetbot entirely, but leave them on for the native Twitter app, even if you decide to banish it to your App Library. Before I began any work on this review, I made sure to swap in Tweetbot 6 where the native app had been in my dock for several years, now. I originally pushed the native app all the way to page 6, but immediately found this extreme. Instead, I put it in the bottom-right corner in my second screen, as you can see in the screenshot below (which also serves as proof, if you needed it.)</p>
+
+<p>[image:2CD36C54&#8211;0638&#8211;4286-A552-BD9F009087E9&#8211;13270&#8211;000005C082255A03/Photo Feb 10, 2021 at 150834.jpg]
+<img src="https://i.snap.as/WMyY9kLc.png" alt="Tweetbot vs Native Twitter Proof" /></p>
+
+<p>I should also note how much my own engagement on Twitter has diminished in the past 3&#8211;5 years. Not to manifest tiny violins - in turn, my engagement on (and investment in) <a href="http://bit.ly/dbmasto">Mastodon</a> has increased exponentially, and it’s of a <em>much</em> higher quality. I bring it up for context’s sake: I can afford to prioritize Tweetbot in my Twitter use because of how few daily notifications I get - a number which is unusual for someone who uses Twitter as much as I do. Inevitably, my own use is once again going to factor heavily in this work, as is the significance of my relationship with Twitter, generally, in my life. If you didn’t already know, I’ve met basically all of my friends since high school through Twitter. As of this moment, my private “Friends” Twitter List includes 149 accounts, and I’ve spent more than 10 years, now, reading almost every single one of their Tweets. I have been as critical of the service as anyone, but - whether or not either of us are willing to acknowledge it, wholly - I believe the intimacy of this arrangement to exceed that of any in-person relationship <em>I</em> have ever had. <code>Footnote: Though I have been trying unsuccessfully to write more on this dynamic for years, I still intend to do so, one day.</code> Reading the random thoughts of these people seconds or minutes after they’ve popped into their heads for all this time has been an experience unique to the format Twitter pioneered, if not to the service, itself. I have no choice but to acknowledge that I am <em>deeply</em> invested in not just Twitter, but Twitter’s less-than-visible Lists feature, emotionally and intellectually. When I hit my <a href="https://twitter.com/neoyokel/status/1281646353102147584">follow limit</a>, several years ago, Lists also became my single means of acquiring new connections on the network. If it were to be removed, I would lose this ability, entirely, as well as any reasonable means of communicating with any of my friends.</p>
+
+<p>https://www.youtube.com/watch?v=IO-ZSD-vymc</p>
+
+<p>Perhaps you understand, now, why I have <a href="https://bilge.world/twitter-lists">written</a> and <a href="https://twitter.com/i/events/996616971880882176">Tweeted</a> so extensively about Lists. You should also understand just how miraculous the possibility of Tweetbot’s new future now seems, personally, unless you’re new to all of these ideas and don’t feel like reading that big olé Tweetbot 5 review of mine (which is fine.) Before I go into the history of Tweetbot, let me first share the single most telling feature in Tweetbot of Tapbots’ belief in using Lists and share some evidence of <em>others’</em> present day belief in Tweetbot. Shamefully, I’ve spent several years - tens, if not hundreds of thousands of hours - using Lists in Tweetbot, oblivious to its upmost Lists integration: “<a href="https://tapbots.com/support/tweetbot6/tips/list.php">Use Lists as Timeline</a>.” Had I actually bothered to look at the support docs at any point, I would have discovered this long ago, which would have almost certainly made my given year. <strong>If you use Tweetbot and Lists, for the love of Gourd, please take a look</strong>. Here’s what those docs currently say, in full:</p>
+
+<blockquote>
+<p>One long time Tweetbot feature is the ability to use any of your lists as your main timeline. To do this, all you have to do is hold down on the “Timeline” label in the navigation bar (in the timeline tab) and a menu populated with your lists will appear. Select one and that will become your current timeline. You can switch to another list or back to your main timeline any time by performing the same action.</p>
+</blockquote>
+
+<p>Even after reading this multiple times, it still was not obvious to me what it was talking about, and I was unable to find precisely <em>zero</em> visuals on The World Wide Web of this action taking place, so I recorded and uploaded <a href="https://youtu.be/IO-ZSD-vymc">the video embedded above</a>. Good God, how I wish I’d been a more detail-oriented young man! I’ll be privatizing my self-punishment from here on out, though, so bear with me.</p>
+
+<p>[image:0D92D630-B045&#8211;4C2D-8890&#8211;37936ED81221&#8211;20653&#8211;000006DB7C9AFB41/Photo Feb 11, 2021 at 141603.jpg]
+<img src="https://i.snap.as/oZ5u34QP.png" alt="Lists Integration | Tweetbot 6" /></p>
+
+<p>The discourse surrounding Tapbots’ recent announcement has already reached a higher decibel count than I would have ever expected, so it’s obvious there are plenty of <em>users</em> who still <a href="https://twitter.com/neoyokel/status/1064579914538602496">love Tweetbot</a>, and you already know from the beforelinked stories that <em>The Verge</em> has also stood firmly by it as the preferred Twitter experience. It takes a wee bit of digging, though, to discover the subtle bets on both Tweetbots and Lists from no less than Apple, Inc., itself. In the official Apple Shortcuts Gallery, a curated list entitled “Twitter Better” includes “<a href="https://www.icloud.com/shortcuts/161bb19df7ee47fa8b31a0c0fb43307b">Open Twitter Lists</a>” at number 1. In 5th position is “<a href="https://www.icloud.com/shortcuts/c148d4f0dfbc45d6bf8bad6bb67d519c">Open in Tweetbot</a>,” and “<a href="https://www.icloud.com/shortcuts/c45206139b9e47eb8de780e686350022">Open in Twitter App</a>” (3rd,) is configured <em>by default</em> to first ask you to choose between Tweetbot and Twitter’s native app, despite its title.</p>
+
+<p>[image:20E8F15C-30C2&#8211;408C-92E6&#8211;4D04C3851D7C-312&#8211;00000001450A8C7C/Photo Feb 11, 2021 at 143957.jpg]
+<img src="https://i.snap.as/sZXfdk8L.png" alt="Tweetbot Bets in Shortcuts" /></p>
+
+<p>As for App Store rankings, the fact that Tweetbot 5 was forcibly removed from public listings makes it impossible to meaningfully judge recent popularity of Tweetbot on iPhone/iPad. Its MacOS-based sibling, though (called Tweetbot 3,) was the <em>second most popular</em> paid app <a href="https://apps.apple.com/us/app/tweetbot-3-for-twitter/id1384080005">on the Mac App Store</a> as of <a href="https://i.snap.as/Uq8bRMF8.png">February 6th, 2020</a>. That’s the day I borrowed my Mom’s MacBook Pro for a short while to check up on MacOS Big Sur, when I downloaded the current version (3.5.2, if you wanted to know) of Tapbots’ desktop Twitter client and <a href="https://www.youtube.com/watch?t=219&amp;v=vHDNdMux16g">messed around with it</a> enough to tell you that it’s as wonderful as ever. (Had I not switched back to Windows as my primary desktop OS a decade ago, I would use it every single day.)</p>
+
+<p>[image:60337ED6&#8211;0F07&#8211;4C86&#8211;95AA-1F4779A3EE74&#8211;312&#8211;0000000A8CCEFD02/Photo Feb 11, 2021 at 150738.jpg]
+<img src="https://i.snap.as/1bbw5iFH.png" alt="Tweetbot 3 for MacOS Version 3.5.2" /></p>
+
+<p>I suspect most active Twitter users in 2021 would be even more surprised to discover Tweetbot’s remaining, discreet hold on today’s Twitter experience than I was, assuming most of them joined more recently than myself and those I regularly interact with. For the sake of this Post, I reached out to Tapbots with an interview request about “Tweetbot’s roadmap, Apple’s requirement that [they] remove 5 from the App Store 30 days beforehand, and why [they’ve] decided to take this (risky, imo) bet on making our lives better,” though I don’t expect a reply, which is fine. They <em>did</em> respond to my support request regarding hardware keyboard shortcut support very quickly, saying they’ll look into it. (Without being verbose, I’ll just tell you that if a near future update to the app fixes the F and ⌘ + R
+shortcuts, I <em>will</em> shit out my whole ass.)</p>
+
+<p>[image:6C3FC3E9-DC98&#8211;4938-A437&#8211;6DF949DB5C0E-1377&#8211;0000004F6CECA7A3/Photo Feb 11, 2021 at 191851.jpg]
+<img src="https://i.snap.as/kCCCZzh5.png" alt="Poll Support in Tweetbot 6" /></p>
+
+<h2>Present</h2>
+
+<p>Before I dig into the controversy and hypotheticals surrounding what Tweetbot 6 might become, let’s take a moment to qualify it vs all of one’s options to interact with Twitter on iOS <em>currently</em> (as in, Feb 11, 2021 at 19:24.) It’s almost certainly premature to do so, but skeptical readers would note, I’m sure, that its listing on the App Store is “early release” in name only, that I have just spent money on this specific version, which should therefore render inert the normal exceptions a review would make for beta or pre-release software.</p>
+
+<p>[image:D25D8893&#8211;2D04&#8211;4C2E-9D33&#8211;948FA41EBDB5&#8211;1070&#8211;0000003A02AFE409/Photo Feb 11, 2021 at 181459.jpg]
+<img src="https://i.snap.as/W884QXpS.png" alt="All Tweetbot Themes" /></p>
+
+<h2>The Subscription Issue</h2>
+
+<p>For as long as I can remember, both the MacOS and iOS versions of Tweetbot have always possessed a more-or-less undefinable (perhaps Apple Development- specific) quality that’s noticeably set them apart from their direct competitors. I didn’t fully understand why they “feel” so much more “right” until I started making my way through this <a href="https://github.com/extratone/bilge/issues/59#issuecomment-778762784">list of all the interviews/podcast appearances</a> by Tapbots’ iOS code wizard, <a href="https://twitter.com/tapbot_paul">Paul Haddad</a>, who comments in variations the same argument for a <em>very</em> deliberate developmental pace. The first time, with a <em>MacWorld</em> journalist on some steps outside WWDC 2013, I assumed he was just tossing some self-deprecation around to casualize the interview:</p>
+
+<p><em>Frankly, we’re slow at doing stuff.</em></p>
+
+<p>Yes, you are, Tapbot… From a returning user’s perspective, it’s hard to understand what in Gourd’s name they’ve been doing. I listened and read through every Tapbots interview I could find - all but one with Paul, who has through the years continued to come across as a sensitive, well-read, even <em>wise</em> professional developer with a healthy, professional outlook on the work of his little (relatively) weathered company and its place within the warp speed nightmare that is the mobile software industry. I suppose I was expecting to find an explanation for what I saw initially as a minimal regard for Tweetbot’s history, in contrast to 6’s announcement. I wouldn’t find it, though, because in truth, I was sure I already knew it: Twitter made it clear over a decade ago - just after they’d purchased Tweetie and slapped their own name on it - that they had no intention of competing in the client space, so <a href="https://www.macstories.net/stories/twitter-to-developers-enough-with-the-twitter-clients/">third-party developers were no longer welcome</a>.</p>
+
+<blockquote>
+<p>Developers have told us that they’d like more guidance from us about the best opportunities to build on Twitter. More specifically, developers ask us if they should build client apps that mimic or reproduce the mainstream Twitter consumer client experience. The answer is no.</p>
+
+<p>As we point out above, we need to move to a less fragmented world, where every user can experience Twitter in a consistent way.</p>
+</blockquote>
+
+<p>I’ve spent enough time in The App Space (read: Phone Dude Hell) to expect a lot of melodrama, largely without judgement, considering how generally awful the big vendors have made the whole situation. The business legality of the story was <a href="https://www.nytimes.com/2020/06/19/opinion/apple-app-store-hey.html">spiked into the mainstream conversation</a> last year by <a href="https://reddit.com/r/extratown/comments/hbncn6/news_surrounding_hey_the_upcoming_email_service/">controversy</a> encouraged by Basecamp following some pretty toxic, retaliatory correspondence from Apple regarding their plan to subsidize their new email service, HEY. Frankly, I’ve found such stories - about clashes between big software companies over mediocre, uninspiring, and sometimes just downright <em>bad</em> software - ridiculously exhausting and less and less interesting, lately, as I’ve realized that the most innovative, quality work I have experienced has basically all come from the tiniest teams. The most groundbreaking projects and products I’ve bothered to show and tell, here - <a href="https://bilge.world/unichar-for-ios-app-review">Unichar</a>, <a href="https://bilge.world/zalgo-generator-ios-app-review">Zalgo Generator</a>, <a href="https://bilge.world/poweruser-tips-software-shortcuts">Bear</a>, <a href="https://youtu.be/LdBFMibyh3Y">Toot!</a>, <a href="https://youtu.be/k7KDk-VV6wc">Mastonaut</a>, <a href="https://youtu.be/8Sss0gzpoeQ">Mast</a>, etc. - were all built by individual developers except for Shiny Frog’s Bear. (Their team currently numbers 16, by my count.) Each one of those hyperlinks eventually leads to a form of my same rant: <strong>why the fuck won’t tech media talk about genuine innovation anymore</strong>. <a href="#fn:1" id="fnref:1" title="see footnote" class="footnote"><sup>1</sup></a></p>
+
+<p>[Founder’s Talk Episode Embed]</p>
+
+<p>As I read and listened through Tweetbot’s history for this work, it occurred to me that I might be neglecting to acknowledge an age old divide in development philosophy across platforms. In the singular instance both Tweetbot devs appeared together in a podcast interview - a <a href="https://changelog.com/founderstalk/21">Founder’s Talk episode from 10 whole years ago</a><a href="#fn:2" id="fnref:2" title="see footnote" class="footnote"><sup>2</sup></a> - Paul Haddad addressed the <em>when is it gonna be done</em> question in a comprehensive and particularly illuminating way:</p>
+
+<blockquote>
+<p>I personally hate that question because, you know… it just will get done when it gets done… We’re definitely slow. We go over every screen, every detail over and over again until we get it right. That takes time, which is why we don’t talk about upcoming projects.</p>
+</blockquote>
+
+<p><em>Every screen, every detail, over and over again.</em> This sort of deliberateness (which I have personally been working on appreciating, as of late) is actually - as I have come to realize - Tweetbot’s defining feature, especially going forward. Out of all the third-party Twitter clients to come and go, Tweetbot has been overwhelmingly singled out as the favorite because of how aligned it is with the traditional priorities of the Apple space: thoughtful, deeply-considered robustness. Pardon the cliché, but it is the only one that has always felt <em>native</em> - as if it could have been published by Apple, itself. The <em>iOS Poweruser Community</em> has been “allowed”<a href="#fn:3" id="fnref:3" title="see footnote" class="footnote"><sup>3</sup></a> to drift away from these principles <a href="https://bilge.world/siri-shortcuts-ios12-review">since iOS 12</a>, especially, and its Pandora’s box-like integration of Siri Shortcuts (Workflow, by another name.) You may or may not be aware of the jailbreaking community’s continued efforts - <em>I</em> was certainly surprised to discover that the <a href="https://reddit.com/r/Jailbreak">r/Jailbreak subreddit</a> has nearly 600,000 subscribers.<a href="#fn:4" id="fnref:4" title="see footnote" class="footnote"><sup>4</sup></a></p>
+
+<div class="footnotes">
+<hr />
+<ol>
+
+<li id="fn:1">
+<p>Let me acknowledge the very real possibility that tech media has <em>never</em> really been interested in what I’m referring to as “genuine innovation.” <a href="#fnref:1" title="return to body" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:2">
+<p>Here’s <a href="https://whyp.it/t/mark-jardine-and-paul-haddad-from-tapbots-on-deliberate-ios-development-74881">an audio clip</a> of the bit I’m talking about, made just for you. <a href="#fnref:2" title="return to body" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:3">
+<p>Some might say “encouraged,” though I still have no idea what Apple expected folks like myself to do with Shortcuts and even <em>less</em> of an idea what it expected the average iOS user to do with them. <a href="#fnref:3" title="return to body" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:4">
+<p>I decided <em>not</em> to go in&#8211;depth to catch up on what I’ve missed in the Jailbreaking space since <a href="https://www.notion.so/My-iOS-Jailbreaking-Experience-73d5ae9d02dc4bf595988940504c0b1c?v=528b601d5a334e5bb6cd6ea7eeccaba4">my own brief experience</a>, 10 years ago, but I found <a href="https://link.medium.com/vNIklrzpceb">this Medium post</a> to be an interesting skim in that direction, if you’re interested. <a href="#fnref:4" title="return to body" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+
+</body>
+
+<footer>
+<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="drafts://open?uuid=106010E8-EF6F-4C6E-AEF2-04A8C7A4BBDC">Local</a></p>
+</footer>
+</html>

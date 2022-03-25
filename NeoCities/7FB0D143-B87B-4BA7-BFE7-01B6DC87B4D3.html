@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>Per-Browser Keyboard Shortcut Behaviors ~~Inconsistencies~~</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: #000056;
+      --main-color: #ffe8bd;
+      --alternate-bg-color: #1c0021;
+      --alternate-color: #fff4e6;
+      --main-border-color: #f43f32;
+        --link-color: #36fd63;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #fff4e6;
+        --main-color: #00006b;
+        --alternate-bg-color: #fffdeb;
+        --alternate-color: #1c0021;
+        --main-border-color: #f43f32;
+          --link-color: #ff0000;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Per-Browser Keyboard Shortcut Behaviors <sub><sub>Inconsistencies</sub></sub></h1>
+
+<p>On the surface, it feels like Web Browsers have never been better - and certainly that we’ve never had so many choices among them</p>
+
+<p>Expectedly, Apple’s own Safari has remained definitively the most accommodating of hardware keyboard shortcuts use among the comparatively. At this point, I have become so dependent on <code>⌘ + L</code> and <code>Alt + L</code> that it’s basically the only deciding factor</p>
+
+<pre><code>@viticci I’m really enjoying the new Safari on iOS and the better reachability.
+The animation to see all open tabs is so slick (UI bugs notwithstanding).
+Have you seen you can long-press the elements in the bottom bar? Totally unintuitive &amp; hidden but glad they’re there! https://twitter.com/mralexhay/status/1411223817276506112/video/11
+</code></pre>
+
+<h2>Firefox</h2>
+
+<p>Firefox has some very bizarre responses/behaviors regarding scrolling. Upon arriving at and receiving 100% of a webpage with the cursor in the address bar, no amount of any keyboard inputs will</p>
+
+<p>⌘ + r
+⌘ + [
+⌘ + ]
+⌘ + f
+⌘ + l
+⌘ + t
+⌘ + shift + t
+⌘ + shift + p
+⌘ + w</p>
+
+</body>
+
+<footer>
+<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="drafts://open?uuid=7FB0D143-B87B-4BA7-BFE7-01B6DC87B4D3">Local</a></p>
+</footer>
+</html>

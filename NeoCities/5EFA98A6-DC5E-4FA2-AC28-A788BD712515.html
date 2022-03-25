@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>Preface</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: #000056;
+      --main-color: #ffe8bd;
+      --alternate-bg-color: #1c0021;
+      --alternate-color: #fff4e6;
+      --main-border-color: #f43f32;
+        --link-color: #36fd63;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #fff4e6;
+        --main-color: #00006b;
+        --alternate-bg-color: #fffdeb;
+        --alternate-color: #1c0021;
+        --main-border-color: #f43f32;
+          --link-color: #ff0000;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Preface</h1>
+
+<p>[image:99C46E63-D0C7&#8211;40A1-A932&#8211;880B499B5C52&#8211;849&#8211;0000003C144B538A/image.png]
+The overwhelming odds are that you’re reading this in digital form, right now, specifically on a non-“desktop class” web browser, running on a system which does not “conform” to the “Personal Computer paradigm” clearly established, (yet far from <strong>loathed</strong> or anything,) before that ever-more-irrritatingly-relevant event in January 2007, when Steve Jobs unveiled the first-generation iPhone. I believe it was within that very same sun cycle, in fact, that then-Microsoft CEO Bitch Balmer was <a href="https://youtu.be/eywi0h_Y5_U">captured in almost certainly his most famous monologue</a> predicting very directly that business customers would not any fundamental interest in the iPhone specifically because of its lack of a physical keyboard.</p>
+
+<blockquote>
+<p>$500, fully-subsidized, with a plan! … That is the most expensive phone in the world, and it doesn’t appeal to business customers because it doesn’t have a keyboard, which makes it not a very good email machine.<br />
+Balmer appears in the 240p YouTube video as the classic, bald, unquestionably villainous-looking executive with a truly icky smile that has no trouble traversing the extreme compression from the past. Read into the comments, and you’ll find nothing but amused condescension, but even the most enthusiastic first reviewers of the iPhone couldn’t help but acknowledge its omission of a hardware keyboard as “controversial.” Note this excerpt from <a href="https://allthingsd.com/20070626/the-iphone-is-breakthrough-handheld-computer/">perhaps the most infamous of those original reviews</a>, cowritten by then-<strong>AllThingsD</strong>’s Walt Mossberg and Katherine Boehret:
+The iPhone’s most controversial feature, the omission of a physical keyboard in favor of a virtual keyboard on the screen, turned out in our tests to be a nonissue, despite our deep initial skepticism. After five days of use, Walt — who did most of the testing for this review — was able to type on it as quickly and accurately as he could on the Palm Treo he has used for years. This was partly because of smart software that corrects typing errors on the fly.<br />
+I don’t think it would be unreasonable to describe the first-generation iPhone’s 2007 introduction as the beginning of The Touch Era in personal computing, yet I doubt any technologist’s vision of the present would have included such continued user investment in physical keyboarding. In 2021, entire online communities dedicated solely to “mechanical” keyboards thrive, while Apple, Inc., itself, is still accountable <a href="https://arstechnica.com/information-technology/2021/03/judge-grants-class-action-status-to-macbook-butterfly-keyboard-suit/">to the point of legal action</a> for missteps in the design of hardware keyboards in its best-selling Mac lineup, which are still sold notably absent touch-capable displays. When the word “Pro” was first attached to an iOS device with the November 2015 reveal of the iPad Pro, it was accompanied by the parallel introduction of a new hardware keyboard attachment - the “Smart Keyboard for iPad” - as if even Apple felt the “Professional” label necessitated the option, at least, of interfacing with a physical keyboard. (<strong>Balmer, is that you?</strong>)
+Where are you sitting with a keyboard that you don’t have access to a computer or iPad?<br />
+-<a href="https://twitter.com/joethephish/status/1418668594041339909">@joethephish</a>
+From a certain perspective - namely, the one from which I wrote this volume - the idea of the smartphone in its most abstract form is inextricably linked with the equally abstract idea of a physical keyboard. While Apple hardly acknowledges the iPhone’s support for Bluetooth keyboard inputs in any public or developer-facing documents, it is also <strong>actively developing</strong> within said support as I write this. I can declare with all but 100% certainty that we’ll never see any promotional media from Apple depicting a human typing to an iPhone on a physical keyboard or even a spy shot of an Apple executive doing so in the wild.
+I thought it might be helpfully explanatory to include the full text of a thread I started on the Apple Developer Forums around mid-July 2021 (I would cite the specific date, but Apple’s forum software uses relative timestamps) entitled “<a href="https://developer.apple.com/forums/thread/685201">Complete documentation for native Bluetooth Keyboard support/shortcuts on <strong>iPhone</strong>?</a>:”
+[[Complete documentation for native Bluetooth Keyboard shortcuts support on iPhone?]]
+I know it’s a lot, but I find it very telling, as have a few other, breathing, non-illusory human beings.</p>
+</blockquote>
+
+<p>#keys</p>
+
+</body>
+
+<footer>
+<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="drafts://open?uuid=5EFA98A6-DC5E-4FA2-AC28-A788BD712515">Local</a></p>
+</footer>
+</html>

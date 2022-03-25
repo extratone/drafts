@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>Run Siri Shortcuts with Hyperlinks</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: #000056;
+      --main-color: #ffe8bd;
+      --alternate-bg-color: #1c0021;
+      --alternate-color: #fff4e6;
+      --main-border-color: #f43f32;
+        --link-color: #36fd63;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #fff4e6;
+        --main-color: #00006b;
+        --alternate-bg-color: #fffdeb;
+        --alternate-color: #1c0021;
+        --main-border-color: #f43f32;
+          --link-color: #ff0000;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Run Siri Shortcuts with Hyperlinks</h1>
+
+<p>[[Notes-Run Siri Shortcuts with Hyperlinks]]</p>
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/155768732-03ca73a9-9b18-414f-ae86-a27bbe01ce04.png" alt="Shortcuts Run Links" />
+<figcaption>Shortcuts Run Links</figcaption>
+</figure>
+
+<h2>Imagine running shortcuts from anywhere you can place a link.</h2>
+
+<!--more-->
+
+<p>There seemed to be a bit of confusion regarding a shortcut I posted on RoutineHub a few days ago entitled “<a href="https://routinehub.co/shortcut/11143"><strong>Generate Shortcuts Run Links List</strong></a>,” so I thought I’d attempt to overview how I’ve come to use Shortcuts’ URL scheme as my primary method of calling shortcuts across both iOS and macOS.</p>
+
+<p>The basis of the whole shit is <code>shortcuts://run-shortcut?name=</code> and <code>shortcuts://x-callback-url/run-shortcut?name=</code>. Using these along with URL-encoded shortcuts titles (for those containing a space,) we can create links that will run shortcuts from anywhere on iOS or macOS as hyperlinks. These days, this is how I run most of my even semi-regular-use shortcuts, largely from my first Dot in Iconfactory’s <a href="https://apps.apple.com/us/app/tot-pocket/id1498235191">Tot</a>.</p>
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/155801898-e6c74cee-c26a-458c-a915-c3f969c6f3fd.png" alt="Tot" />
+<figcaption>Tot</figcaption>
+</figure>
+
+<p>With a few exceptions, all the links you see in the above screenshot above “Drafts Instrument Panel” are shortcuts run links of the same type. Most of these, I typed out by hand with <a href="https://app.textexpander.com/public/14093096578d4f40eeea15649f5cefbb">a TextExpander snippet</a>. Here’s what the mess looks like underneath:</p>
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/155803031-436d36a3-c0be-4da1-9df4-72a9d6e8e350.png" alt="Tot Code" />
+<figcaption>Tot Code</figcaption>
+</figure>
+
+<p>I had a bit of an issue creating the shortcut, itself. Though Shortcuts includes a native <a href="https://www.matthewcassinelli.com/actions/url-encode/">URL Encode action</a>, I couldn’t seem to get it to reliably generate URL-encoded shortcuts names, which is why I inserted the <a href="https://apps.apple.com/us/app/text-case/id1492174677">Text Case</a> action, instead.</p>
+
+<p>#automation #software #configuration</p>
+
+</body>
+
+<footer>
+<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="drafts://open?uuid=A5A987C6-8978-4F4B-9FE1-D7C5408E1FD2">Local</a></p>
+</footer>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>Keyboard Shortcuts Bug Feedback Report</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: #000056;
+      --main-color: #ffe8bd;
+      --alternate-bg-color: #1c0021;
+      --alternate-color: #fff4e6;
+      --main-border-color: #f43f32;
+        --link-color: #36fd63;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #fff4e6;
+        --main-color: #00006b;
+        --alternate-bg-color: #fffdeb;
+        --alternate-color: #1c0021;
+        --main-border-color: #f43f32;
+          --link-color: #ff0000;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Keyboard Shortcuts Bug Feedback Report</h1>
+
+<p>Feb 4, 2021 at 13:40
+Note: this issue has occurred with Full Keyboard Access turned <sub>OFF</sub>.
+During the course of normal usage in Safari, Bear, Drafts, and Tweetbot, I have experienced four instances now (seemingly untriggered,) where keyboard shortcuts have ceased working. (Example shortcuts: ⌘ + Up and Down arrows, Unmodified Up and Down arrows to scroll, ⌘ + [ and ], ⌘+L. I can list more examples if it’d be useful.)
+I have tried toggling the handset’s Bluetooth function on/off both in the Command Center and in Settings with no effect. Keyboard reconnects but the shortcuts are still unresponsive. The same goes for switching the keyboard itself on and off. The only solution appears to be rebooting the handset.
+At this time, I don’t know what causes this issue. It’s happened seemingly at random.</p>
+
+<hr />
+
+<p>Feb 4, 2021 at 23:56
+The issue occurred again just a few minutes ago, so I searched out and installed the Bluetooth Logging Profile from the Developer website and (apparently) successfully triggered a syslog using the [both volume buttons + side button] command, though <strong>I DID NOT REBOOT THE DEVICE</strong> between installing the profile and triggering the syslog because it would have corrected the issue before I could log it.
+I have attached both the syslog file and a short screen recording (including my audio commentary) of the shortcuts not working in Safari. If it’s important, I believe the device was still capturing this log while I was recording this screen recording.
+[file:2819673C-5BEC-47D5&#8211;8526-B03251A6AB86&#8211;478&#8211;000000120FA7E3E0/IMG_1618.MP4]
+[file:765B6DE4&#8211;0B3E-487B-8686-A2AE95A61FE8&#8211;478&#8211;000000123075C505/sysdiagnose_2021.02.04_23&#8211;36&#8211;44&#8211;0600_iPhone-OS_iPhone_18D52.tar.gz]
+#documentation #keys</p>
+
+</body>
+
+<footer>
+<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="drafts://open?uuid=477AC428-42C3-4184-9390-DBC653549989">Local</a></p>
+</footer>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>David Blue Styleguide</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: #000056;
+      --main-color: #ffe8bd;
+      --alternate-bg-color: #1c0021;
+      --alternate-color: #fff4e6;
+      --main-border-color: #f43f32;
+        --link-color: #36fd63;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #fff4e6;
+        --main-color: #00006b;
+        --alternate-bg-color: #fffdeb;
+        --alternate-color: #1c0021;
+        --main-border-color: #f43f32;
+          --link-color: #ff0000;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>David Blue Styleguide</h1>
+
+<p>-<code>Mon, 06 Dec 2021 09:00:58</code></p>
+
+<h2>David Blue&#8217;s personal style guide across writing, social posts, etc.</h2>
+
+<h2>Index</h2>
+
+<ul>
+<li><a href="https://davidblue.wtf/styleguide">WTF</a></li>
+<li><a href="https://www.icloud.com/shortcuts/3a2d212cc2614202be37b0beb8276e9b">style Siri Shortcut</a></li>
+<li><a href="https://davidblue.wtf/audio/style.m4a">Siri Voice 2 Read Aloud on WTF</a></li>
+</ul>
+
+<p>In a desire to quantify/document my own personal preferences in composition, I have contemplated writing a style guide like this for a very long time.</p>
+
+<blockquote>
+<p>The English language is no more than a tool for our use, and grammar should not be revered as an immalleable, Holy absolute which we must venerate and obey. Rather, it should be irreverently and liberally manipulated to perform as desired.</p>
+</blockquote>
+
+<p>⸎ Footnotes and Endnotes come <em>after</em> both <strong>punctuation</strong> <em>and</em> <strong>quotation marks</strong>.</p>
+
+<h3>spelling</h3>
+
+<ul>
+<li>&#8220;WiFi&#8221;</li>
+<li>“sortof”</li>
+<li>“featureset”</li>
+<li>“Web Site”</li>
+<li>&#8220;poweruser&#8221;</li>
+<li>&#8220;end user&#8221;</li>
+<li>&#8220;<a href="https://www.icloud.com/shortcuts/18eb1e77ab0b455f82da4c4c6e521368">undercovered</a>&#8221; - [[Define: UNDERCOVERED]]</li>
+<li>&#8220;Siri Shortcut&#8221;</li>
+</ul>
+
+<h2>Do Not</h2>
+
+<ul>
+<li>&#8220;I&#8217;d be <em>remiss</em>&#8230;&#8221;</li>
+<li>&#8220;Really <em>struck</em> me.&#8221;</li>
+<li>&#8220;At the end of the day&#8230;&#8221;</li>
+<li>&#8220;When it&#8217;s all said and done&#8230;&#8221;</li>
+<li>&#8220;In the final hour&#8230;&#8221;</li>
+<li>&#8220;Out of all the __, __ really stood out to me&#8230;&#8221;</li>
+<li>&#8220;In my book&#8230;&#8221;</li>
+<li>&#8220;In my estimation&#8230;&#8221;</li>
+<li><strong>All idioms</strong>.</li>
+<li><strong>All platitudes</strong>.</li>
+<li>The “tldr” school of thought.</li>
+</ul>
+
+<h2><em>I will write what I have not read.</em></h2>
+
+<h3>Scribam Quid Non Legerim</h3>
+
+<blockquote>
+<p>Scribam quid non legerim is possibly grammatically incorrect to a scholar, but it’s the best possible translation I came up with in my Latin research of “I will write what I have not read.” It’s cheesy, yes, and a bit cringey in the middle of just any old day when it happens to catch my eye where it’s proudly displayed, all-caps, in the footer of our CMS, and – I’ll be honest – I don’t know if I could explain it over coffee to a stranger without turning red and covering my face, as I once could, but it’s (sincerely, in this one case) real gravestone material. (As in, if someone were to read this after my death, they would be encouraged to receive it as a bonafide last wish.)
+-&#8220;<a href="https://bilge.world/inmunis-extratone-history-david-blue">A Brief, Unedited Reflection on the History of my Failed Media Projects</a>&#8221;</p>
+</blockquote>
+
+<blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">there’s this thing in like every piece of writing on Medium where sentences are begun with But or And constantly. And it’s really not clever at all.</p>&mdash; ※ David Blue ※ (@NeoYokel) <a href="https://twitter.com/NeoYokel/status/1009130842130530305?ref_src=twsrc%5Etfw">June 19, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote>
+<p>I want to be deafened by the penultimate death rattle of a circuit bent sacrificial ritual and indiscriminately punched in the throat at a First Friday show.</p>
+</blockquote>
+
+<p><strong>Here’s what I know</strong>: the worthwhile publications have <em>not</em> been crucified on the Cross of “Readability,” the genre-busting song talent has <em>not</em> been given up in the face of the streaming service-afflicted music industry.</p>
+
+<hr />
+
+<h2><em>Extratone</em>&#8217;s Styleguide in Full</h2>
+
+<h1>Extratone Style Guide</h1>
+
+<p><em>This Style Guide exists for the purposes of both technical and editorial reference for internal and external use when composing, editing, citing, quoting, capturing, or otherwise manipulating or displaying any/all Extratone content.</em></p>
+
+<audio controls>
+  <source src="https://davidblue.wtf/audio/style.m4a">
+</audio>
+
+<h1>Editorially</h1>
+
+<p>As an independent, youth-oriented publication it is both our privilege and our duty to seek out innovative methods of communication. In written composition, this means all possible avoidance of unnecessary cliche and/or overused terms (for instance: use of the term “struck” in a metaphor - e.g. <em>what</em> <strong><em>struck</em></strong> <em>me</em>) except where they are critically portrayed. It is essential to remember that <strong>the English language is no more than a tool for our use</strong>, and grammar should not be revered as an immalleable, Holy absolute which we must venerate and obey. Rather, it should be irreverently and liberally manipulated to perform as desired. <strong>Grammar should never be an obstacle</strong> or burden ****in our writing or editing, and should always be discarded in favor of innovative and/or contextual verse.</p>
+
+<p>In general, we write, speak, and publish under the assumption of an intelligent, discerning audience, meaning that we are unafraid of traversing obscure, unusual, or extraordinary detail (technical or otherwise,) that we do not patronize beyond the reasonable ability of a modern reader’s search engine, and <em>especially</em> that <strong>we format copy independently of common web standard “readability</strong>.<strong>”</strong> Our vocabulary and syntax are diverse (though we do not sacrifice <em>undue time</em> to unearthing bizarre, senseless synonyms,) fluid, and occasionally difficult, but written as such for the purpose of colorful, substantial delivery in acknowledgement of the vast resources instantly available to the modern reader. In other words: <em>do not tell what can simply and easily be looked up</em>. With search engines as they are, this is a quickly verifiable/quantifiable factor with a given definition, summary, or abstract. If a writer is in conflict regarding the redundancy of a given bit of information, they can painlessly search for it themselves and observe the same results as the reader would within milliseconds to observe what would and would not be immediately evident. Not only is this approach respectful of the readership’s intellect, it is also a comparatively democratic means of regarding information.</p>
+
+<h2>Specifics of Note</h2>
+
+<ul>
+<li>Donald Trump’s last name is to be spelled T-U-M-P. (e.g. <em>The 45th President of the United States, Donald</em> <strong><em>Tump</em></strong>.)</li>
+<li>The term “struck” is to be avoided if at all possible, especially in metaphoric context (e.g. <em>what</em> <strong><em>struck</em></strong> <em>me</em>.)</li>
+<li>Use of the more unnecessary compositional terms from both lower and post-secondary academia should be avoided. (e.g. <em>in conclusion, in summary,</em> and <a href="http://writingcenter.unc.edu/cliches/">other cliches</a>.)</li>
+</ul>
+
+</body>
+
+<footer>
+<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="drafts://open?uuid=2EB3DF66-8154-4201-ADC7-4F200D7A8A2F">Local</a></p>
+</footer>
+</html>

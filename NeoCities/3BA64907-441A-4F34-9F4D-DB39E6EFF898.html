@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>Notes-Using Drafts with NeoCities</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: #000056;
+      --main-color: #ffe8bd;
+      --alternate-bg-color: #1c0021;
+      --alternate-color: #fff4e6;
+      --main-border-color: #f43f32;
+        --link-color: #36fd63;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #fff4e6;
+        --main-color: #00006b;
+        --alternate-bg-color: #fffdeb;
+        --alternate-color: #1c0021;
+        --main-border-color: #f43f32;
+          --link-color: #ff0000;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Notes-Using Drafts with NeoCities</h1>
+
+<ul>
+<li><a href="https://github.com/extratone/bilge/issues/297">GitHub Issue</a></li>
+<li><a href="https://actions.getdrafts.com/g/1uF">Drafts Directory</a></li>
+<li><a href="https://github.com/extratone/drafts/issues/13">NeoCities/WebDAV Action Group · Issue #13 · extratone/drafts</a></li>
+<li>[[WebDAV Service - Drafts User Guide]]</li>
+<li><a href="https://telegra.ph/Using-Drafts-with-NeoCities-02-13">Telegraph</a></li>
+<li><a href="https://medium.com/handset/using-drafts-with-neocities-8aac2a9100">Medium</a></li>
+</ul>
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/150894801-5e536946-969f-4910-a22a-24cde4c4c6e1.png" alt="NeoCitiesActionGroupPreview" />
+<figcaption>NeoCitiesActionGroupPreview</figcaption>
+</figure>
+
+<h2>Individual Action Links</h2>
+
+<ul>
+<li><a href="https://actions.getdrafts.com/a/1v9">Push Draft to Root as HTML | Drafts Directory</a></li>
+<li><a href="https://actions.getdrafts.com/a/1v0">Draft to Root as UUID.html | Drafts Directory</a></li>
+<li><a href="https://actions.getdrafts.com/a/1va">Draft to Root as Text Timestamp | Drafts Directory</a></li>
+<li><a href="https://actions.getdrafts.com/a/1vb">Draft to /{title} as index.html | Drafts Directory</a></li>
+<li><a href="https://actions.getdrafts.com/a/1vc">Open /{title} | Drafts Directory</a></li>
+<li><a href="https://actions.getdrafts.com/a/1vd">Push Draft to /drafts as HTML | Drafts Directory</a></li>
+<li><a href="https://actions.getdrafts.com/a/1ve">Draft to /drafts as UUID.html | Drafts Directory</a></li>
+<li><a href="https://actions.getdrafts.com/a/1vf">Open pushed /drafts file by UUID. | Drafts Directory</a></li>
+<li><a href="https://actions.getdrafts.com/a/1vg">Draft to /drafts/{title} as index.html | Drafts Directory</a></li>
+<li><a href="https://actions.getdrafts.com/a/1vh">Open /drafts/{title} | Drafts Directory</a></li>
+<li><a href="https://actions.getdrafts.com/a/1vi">Draft to Specified Path as index.html | Drafts Directory</a></li>
+<li><a href="https://actions.getdrafts.com/a/1vj">Push clipboard .txt to clipboard/timestamp | Drafts Directory</a></li>
+<li><a href="https://actions.getdrafts.com/a/1vk">Open NeoCities Workspace | Drafts Directory</a></li>
+<li><a href="https://actions.getdrafts.com/a/1vl">NeoCities list / (macOS-Only) | Drafts Directory</a></li>
+</ul>
+
+<h2>General</h2>
+
+<ul>
+<li>[ ] <a href="https://davidblue.wtf/drafts/8700B562-8716-489A-B554-641549B6B3E5.html">NeoCities HTML Template</a></li>
+</ul>
+
+<h2>Images</h2>
+
+<ul>
+<li><code>![toDraft-UUID](https://user-images.githubusercontent.com/43663476/153755878-5b40147a-040b-4e8f-83ae-ce187d40ec0d.png)</code></li>
+</ul>
+
+<h2>Social</h2>
+
+<ul>
+<li><a href="https://canary.discord.com/channels/763850583823482880/763850583823482883/935415154022187038">NeoCities Chatroom Discord Message Link</a></li>
+<li><a href="x-apple-reminderkit://REMCDReminder/D89261F2-BDA9-4A5E-AC12-BFF14F04FF61">Reminder</a></li>
+<li><a href="https://www.reddit.com/r/neocities/comments/si7ydf/a_set_of_drafts_actions_for_interacting_with_your/">(2) A set of Drafts Actions for interacting with your NeoCities site via WebDAV. : neocities</a></li>
+<li><a href="https://www.reddit.com/r/neocities/comments/srlf31/using_drafts_with_neocities_how_to_use_my_action/">r/NeoCities 2</a></li>
+<li><a href="https://twitter.com/NeoYokel/status/1492886575277129732">Tweet</a></li>
+</ul>
+
+<h3>Suggestions/Requests for a WebDAV (NeoCities, in my case) Action Group</h3>
+
+<p><a href="https://forums.getdrafts.com/t/suggestions-requests-for-a-webdav-neocities-in-my-case-action-group/11994">Suggestions/Requests for a WebDAV (NeoCities, in my case) Action Group - Actions - Share What You&#8217;ve Made - Drafts Community</a></p>
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/150894801-5e536946-969f-4910-a22a-24cde4c4c6e1.png" alt="NeoCitiesActionGroupPreview" />
+<figcaption>NeoCitiesActionGroupPreview</figcaption>
+</figure>
+
+<p>Howdy folks! After discovering that Drafts includes <a href="https://docs.getdrafts.com/docs/actions/steps/services#webdav">a WebDAV service</a> a few days ago, I&#8217;ve been toying around with my first attempt at Action development from scratch. I&#8217;ve long fantasized about a more direct way to interact with my NeoCities site(s) - (NeoCities supports WebDAV as its exclusive means of remote file management.) The end goal for the Action Group would be to utilize Drafts' WebDAV support to its absolute fullest extent to interact with/manage files on a web server over WebDAV.</p>
+
+<p>So far, I&#8217;ve been able to push drafts to the server successfully but only when titled by UUID or Timestamp. (<code>3BA64907-441A-4F34-9F4D-DB39E6EFF898.html/2022-03-24-13-52-46.html</code>) When I try to use <code># Notes-Using Drafts with NeoCities</code> or <code>Notes-Using Drafts with NeoCities</code>, the resulting path is unreadable for some reason.</p>
+
+<p>Anywho, I thought I&#8217;d open a thread here. Any suggestions/tips from those of you with more experience developing actions are more than welcome!</p>
+
+<p>Here&#8217;s <a href="https://actions.getdrafts.com/g/1uF">the (unlisted) Action Directory link</a> for those with the time/curiosity to check on my progress.</p>
+
+</body>
+
+<footer>
+<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="drafts://open?uuid=3BA64907-441A-4F34-9F4D-DB39E6EFF898">Local</a></p>
+</footer>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>Drafts 15 Review  Multiwindow, Shortcuts, and More</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: #000056;
+      --main-color: #ffe8bd;
+      --alternate-bg-color: #1c0021;
+      --alternate-color: #fff4e6;
+      --main-border-color: #f43f32;
+        --link-color: #36fd63;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #fff4e6;
+        --main-color: #00006b;
+        --alternate-bg-color: #fffdeb;
+        --alternate-color: #1c0021;
+        --main-border-color: #f43f32;
+          --link-color: #ff0000;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>&#8220;Drafts 15 Review: Multiwindow, Shortcuts, and More&#8221;</h1>
+
+<p><code>Sep 24, 2019 at 12:50</code>
+<img src="https://11871fcab73b16b159f4-523f3db6935396cef915b4800253ab62.ssl.cf1.rackcdn.com/d15-hero-image1569195540434.png" alt="" />
+One of my favorite things about <a href="https://apps.apple.com/us/app/drafts/id1236254471?uo=4">Drafts</a> is its quick adoption of the new OS features that come year-over-year. Not only are they quickly adopted, but they are well implemented, carefully considered, and provide increased capability for both existing and new users alike.
+This year with the release of iOS 13, iPadOS 13, and macOS Catalina, Drafts gains an updated look, improvements to the interface and navigation, full iPadOS support, and greatly improved Shortcuts integration. While this may not seem like a big list, I can assure you that the new features of the app are fantastic, and have made a monumental improvement to my daily workflows.
+Let’s dive in to what <a href="https://forums.getdrafts.com/t/drafts-15-0-ios-released-huge-ios-13-update/5561">version 15 of Drafts</a> has to offer.</p>
+
+<h2>Updated Interface and Navigation</h2>
+
+<p>The Drafts 5 interface was already great – the app opens to the blank draft, and I’m off capturing. The iconography in this update has been slightly tweaked, along with the location of a few menus in the action and draft lists. For both of those, the menu icon for each is now located toward the bottom of the list, which enables you to swap workspaces or action groups, along with providing a way to manage them as well. I like this change because it works better on the iPhone, but it also helps when I need to reach up from my iPad’s keyboard to tap them. These icons, along with many other interface elements, support the new context menus of iOS 13: this is much better in terms of quickly switching between elements. Context menus also work on individual drafts and actions. Drafts always had other ways to get to most options in these new menus, so they’re simply a convenient additional layer. I’m starting to put context menus more into my muscle memory, as they enable additional features on iPadOS which I will cover more later.
+<img src="https://11871fcab73b16b159f4-523f3db6935396cef915b4800253ab62.ssl.cf1.rackcdn.com/d15-contextual-menus1569185609208.png" alt="The draft and action list menus are now at the bottom, and are even more powerful with context menus." />
+The draft and action list menus are now at the bottom, and are even more powerful with context menus.
+In addition to those menus, toward the bottom of the action/draft lists is a new indicator on the iPad: this is where you can close the list, or pin it to keep it open. I appreciate this visual distinction, as the old indicator wasn’t fantastic. I can finally have both the action and draft drawers pinned at the same time to have everything at my fingertips. The pinned state is remembered as you load the workspace: when I first load Drafts, it is in the new Default workspace, which is a configurable workspace that can be adjusted to your preferences. These preferences now include the option to remove the date as well, allowing for only the draft title to be shown, which is preferred for much of what I do; it makes the interface very minimal, especially with both the draft and action lists pinned.
+<img src="https://11871fcab73b16b159f4-523f3db6935396cef915b4800253ab62.ssl.cf1.rackcdn.com/d15-pinned-lists1569185916391.png" alt="It is now possible to have both the draft and action drawers pinned, which is fantastic on the iPad Pro." />
+It is now possible to have both the draft and action drawers pinned, which is fantastic on the iPad Pro.
+The underlying code which controls the main user and gesture interfaces has been completely rewritten, which is more prominent on iPadOS. This not only helps with the responsiveness, but has enabled easier pinning of the side panels as well as remembering the pinned state. With the way <a href="https://www.macstories.net/reviews/drafts-5-the-macstories-review/#drafts-as-a-modular-interface">modules</a> work on the iPad, and having the draft list pinned on the side with Drafts remembering the pinned state, it is easier than ever to jump into Drafts and find it ready for the way you work.
+While there are no new themes in this release, the automatic light and dark switching in iOS 13 is now supported. This replaces the iOS 12 system, which was tied to the screen brightness. I’m not sure yet how I feel about this change: I would have preferred both options, allowing the user to better control it to their liking.
+Other small improvements have been made throughout the app’s design, like support for native font selection panels. Thanks to the <a href="https://dialogpodcast.net/season/1/episode/6/">two-part</a> <a href="https://dialogpodcast.net/season/1/episode/7/">Dialog episode</a> with <a href="https://johnaugust.com/">John August</a>, I have updated the font I use to <a href="https://quoteunquoteapps.com/courierprime/">Courier Prime</a>, which I’m really enjoying in the editor. Also within the editor, when text is selected, the character count of the selection can be found by the existing character and word count in the top-right corner of the window, denoted by an <code>s</code> after it.
+With the visual changes in this release, Agile Tortoise also is launching new <a href="https://docs.getdrafts.com">User Guide</a>, <a href="http://scripting.getdrafts.com/index.html">Scripting Reference</a>, and <a href="https://actions.getdrafts.com/">Action Directory</a> versions on Drafts’ website. These are notably improved over the previous versions, providing better examples for how to use the various scripting objects. The entire interface is clean, smooth, and very welcome. I find the flow of the new design much easier to understand for the average user. I look forward to the entire site adopting this design aesthetic.</p>
+
+<h2>Enhancements for Capture &amp; Export</h2>
+
+<p>This update brings some solid improvements to both capture and exporting. The existing action extension has been further enhanced, permitting a few built-in shortcuts to be utilized for tagging, cut, copy, and paste; I would really have loved some additional formatting keyboard shortcuts like bold, italic, and underline to make it even more versatile. In addition to the existing action extension, there is now a quick action extension too: this extension won’t provide a window but will instead just save the desired text without a pop-up. I use this a lot for research or capturing a quick item via Twitter or Safari. For most things, I’m still using the regular share extension, especially since it has the basic keyboard shortcut support to add some additional information or append it to an existing draft.
+<img src="https://11871fcab73b16b159f4-523f3db6935396cef915b4800253ab62.ssl.cf1.rackcdn.com/d15-dictation-interface1569185616852.PNG" alt="The dictation interface of Drafts." />
+The dictation interface of Drafts.
+For dictation capture, there is a new option to have an optional silence time-out. This change allows the draft to be captured after a short time, which some might find useful working in tandem with Shortcuts.
+There is now an option to select multiple drafts to combine and provide a file extension, which then opens a share sheet to send it where you need. The supported extension types are <code>.txt</code>, <code>.json</code>, and <code>.csv</code>. I would like to see further extended support for other file types like <code>.md</code>, <code>.html</code>, <code>.css</code>, and <code>.js</code>. Even though I have an action to export a draft as a specific file type, it would be nice to do this natively with the operations in the draft list.</p>
+
+<h2>Multitasking through Multiwindow</h2>
+
+<p>With the big changes that came to the iPad with the introduction of iPadOS and <a href="https://www.macstories.net/stories/ios-and-ipados-13-the-macstories-review/21/#multitasking-and-multiwindow">multiwindow support</a>, Drafts has now been elevated as a productivity workhorse. Make no mistake about it: this system-wide feature adopted by Drafts is the single biggest change to the way you will work with Drafts since <a href="https://www.macstories.net/reviews/drafts-5-the-macstories-review/">Drafts 5 was released</a>.
+<img src="https://11871fcab73b16b159f4-523f3db6935396cef915b4800253ab62.ssl.cf1.rackcdn.com/d15-drafts-multiwindow1569185734141.PNG" alt="I can have instances of Drafts everywhere. Drafts on drafts on drafts." />
+I can have instances of Drafts everywhere. Drafts on drafts on drafts.
+Drafts enables several different methods of <a href="https://www.macstories.net/stories/ios-and-ipados-13-the-macstories-review/21/#multiple-app-windows">creating multiple windows</a>: drag and drop from multiple places including the dock, draft list, and action list; using context menus, found throughout the app; and loading auxiliary windows like HTML previews (more on that later).
+As I covered earlier, the draft and action lists have improved menus throughout, especially with context menus. This feature, added in iOS and iPadOS 13, provides greater functionality for items in the draft list, action list, menu icons, and links. And while these context menus are available on iOS, they are more powerful for the way I work on the iPad because they facilitate better interactions with various interface elements. Where this is the most beneficial is the ability to pop a draft or action into a Split View window.
+<img src="https://11871fcab73b16b159f4-523f3db6935396cef915b4800253ab62.ssl.cf1.rackcdn.com/d15-action-edit-using-contextual-menu1569187090074.PNG" alt="Using the context menu on an action loads another instance in Split View." />
+Using the context menu on an action loads another instance in Split View.
+I really appreciate the use of the context menu when it comes to editing actions. I like the interaction better than swiping on an action to edit it. And because the app supports multiwindow, you can now have actions side-by-side for better editing between them. Additionally, you can edit an action on one side and have a draft on another; as you save, you can use the second window containing a draft to more quickly see the results of your changes. I’ve had to change a few of my scripts based on the apps I’m using, but this process makes it a lot easier.
+At the bottom of the editor, there is an icon in the lower-left set which will pop open an auxiliary window containing a <a href="https://docs.getdrafts.com/docs/editor/previews">live preview of your draft</a>. This can use not only one of the built-in styles, but you can run a custom style as well. Templates can be created from your own custom CSS, or by modifying an existing style in a preview action; you can export that style from the action, which is then saved into a specific folder on iCloud Drive. Once created, the custom style can be selected at the bottom of the preview window along with the built-in style, and will be remembered the next time it is loaded. This preview “live” updates: there is a small delay after you’re done typing, but the preview will load the new content as you’re going. When you tap the <code>done</code> button, the window will close and the draft will go back to full screen.
+I’m not sure if it’s technically possible, but it would be very nice if when I used the navigation feature at the top-right of the editor to scroll to a specific header section, that the preview would jump automatically with it. I’m sure this is a lot harder to do in practice, but it’s a future refinement I’d like to see added so that I can keep the two side-by-side and follow along with what I’m writing. I don’t always have the two views up at the same time, but when I do, I would really love an option to keep them paired in the same manner.
+When <a href="https://www.macstories.net/reviews/drafts-5-4-siri-shortcuts-wordpress-and-more/">Drafts 5.4</a> was released, I finally had my ultimate blogging tool. Or so I thought. With these improvements in iPadOS, I’m able to do even more with a single app: research, side-by-side comparisons, and live previews to adjust formatting are all possible on the iPad. I absolutely love the transformation that makes this feel less like a single, modular app but rather a modular, actionable writing <em>system</em> that is unparalleled on this platform.
+There are a number of possibilities now that I can have multiple windows side-by-side. I can load two instances of the app in Split View from the dock, simply by using drag and drop; if you have multiple instances running, you can use Exposé to select one from the picker. Each window can also utilize its own workspace, with the extended rows and actions being different in each, giving you greater power between two windows. I can also drag a draft from the draft list into a separate Split View or Slide Over app.</p>
+
+<h3>Multiwindow Meal Planning</h3>
+
+<p>As a working single dad of two boys, I have more to do in a given day and less time to do it in. One of the biggest things I’m trying to take care of while maintaining my sanity1 is planning for the week(s) ahead with meals. I’m always trying to make this as seamless a process as I can. Generally, I try to plan two weeks ahead. So let’s say I’m doing some meal planning for the third week of the month: during the first week of the month I’m gathering different recipes from various sources: cookbooks, online, or specific apps like <a href="https://apps.apple.com/us/app/kitchen-stories-recipes/id771068291?uo=4">Kitchen Stories</a> or my database in <a href="https://apps.apple.com/us/app/devonthink-to-go/id395722470?uo=4&amp;at=1001l4VZ">DEVONthink</a>. I’ll save these into Drafts using the regular share extension most often, capturing the links so that I can refer to them later. I save all of these links to a specific “Meal Plan” draft which I’ve kept for well over a year. And, thanks to version history, I can grab the old recipes at any time.2
+The second week, I’ll use arrange mode to move lines around and set each day’s dinner; using context menus, I can remind myself of what the linked recipe may be all about so that I can decide what makes the most sense on a given day. Then, I’ll bring up two instances of Drafts side-by-side, in a 66/33 split. On the larger side I’ll have my meal planning draft, and on the smaller is a blank draft, which I use for creating a grocery list. To grab the items from the recipes, I can put the Meal Plan draft into link mode, tap a link, and load it via Safari View Controller within Drafts. This allows me to remain in Drafts, and copy/paste items to the other Drafts window to compile the grocery list. Once I’m all set with that, I might add a few more odds and ends items for the week, then <a href="https://actions.getdrafts.com/a/1Ys">save it to my Grocery list</a> in <a href="https://apps.apple.com/us/app/things-3/id904237743?uo=4">Things</a>.3
+I could previously do this using another app in my workflow, but this gives me the ability to utilize only one app, saving yet another subscription. I have gotten rid of a couple of different apps thanks to this workflow alone. With a single app I can now do all my planning and list making, then send it over to my task manager to complete my order.4 The addition of multiwindow support has really streamlined this weekly workflow for me.</p>
+
+<h3>An Improved Writing Setup</h3>
+
+<p>I’ve been doing all kinds of written work in Drafts for a long time, using it for my writing, journaling, scripting, and more. I’ve adapted my writing setup over the years, but with the improvements via multiwindow and Slide Over multitasking, I now have even more power available to me.
+<img src="https://11871fcab73b16b159f4-523f3db6935396cef915b4800253ab62.ssl.cf1.rackcdn.com/d15-initial-writing-setup1569185777244.png" alt="The initial stage of writing." />
+The initial stage of writing.
+As I start out a new post, I will typically have Drafts and <a href="https://apps.apple.com/us/app/mindnode-6-mind-map/id1218718027?uo=4">MindNode</a> in Split View, writing down small snippets and laying out what I want to do. When I’m solely focused on writing for blogging or reviewing, I typically will have Drafts open as a single app, with MindNode in Slide Over. It supports my focused mindset so that I can concentrate on the task at hand while still referring to my mind map. But as the post progresses, I might change the windows up. As I write, I might want to see how the post will look. This is when I can use the HTML preview in an auxiliary window, making sure that the formatting of my writing markup is correct.
+<img src="https://11871fcab73b16b159f4-523f3db6935396cef915b4800253ab62.ssl.cf1.rackcdn.com/d15-html-preview-window1569185746629.png" alt="I can now have a live preview of what my posts will look like posted to my site." />
+I can now have a live preview of what my posts will look like posted to my site.
+As I’m working toward the final version of the post, I will put Drafts and Files side-by-side, with photos available via Slide Over for screenshots; thanks to multitasking in Slide Over, I can quickly bounce among the different apps I need – like Photos, Safari, Shortcuts, and MindNode. When I’m getting ready to publish, I’ll switch my setup again by dragging around windows to have Safari and Files in Split View, so that I can drag and drop images over, while keeping my post in Drafts via Slide Over along with other useful apps like <a href="https://apps.apple.com/us/app/working-copy-git-client/id896694807?uo=4&amp;at=1001l4VZ">Working Copy</a>.
+<img src="https://11871fcab73b16b159f4-523f3db6935396cef915b4800253ab62.ssl.cf1.rackcdn.com/d15-writing-setup1569185934374.png" alt="Everything I need for writing is here at my disposal, no matter what stage of writing I'm in." />
+Everything I need for writing is here at my disposal, no matter what stage of writing I’m in.
+Drafts 15’s changes take the central app of my writing and makes it more modular for the way I need to work. I can change this writing setup to be a journaling setup by changing the apps I have loaded: I can simply add DEVONthink to bring up previous journal entries. I can do the same for scripting. And you, dear reader, can do the same for your own setups involving text. The iPad is no longer hindered by only working within three applications: you can work in any of them that you need to accomplish what you’re setting out to do.</p>
+
+<h3>Weekly Review</h3>
+
+<p>The other main thing for which I use Drafts is task management. There is no shortage of different hooks I can have for capture and export to get things done. But what is different now with the iPad is the ability to have enough flexibility now to do a thorough weekly review. I’m going to share my setup for the weekly review here, but realize that this can be tailored to your task manager of choice and your own apps.
+<img src="https://11871fcab73b16b159f4-523f3db6935396cef915b4800253ab62.ssl.cf1.rackcdn.com/d15-weekly-review-setup1569185924476.png" alt="I can see so much more of the things I need to get done all at my fingertips." />
+I can see so much more of the things I need to get done all at my fingertips.
+I’ll start off by having Things and Calendar in Split View, in a 66/33 split respectively. This lets me review what I have coming up in the next few weeks. I’ll then load the following in Slide Over: Messages, for when I need to talk to someone about an upcoming event or reach out to them about a task; Mail, so that I can capture any tasks which haven’t yet been captured; Safari, as a way to have my work calendar using Google Calendar and look up any additional information; and finally, for a very specific reason I’ll add Drafts last. This gives me all that I need to review and capture everything in my life.
+The reason I add Drafts last is simple: it’s the app that’s available to me first in Slide Over. This makes it possible for the user to let Drafts be what it is at its core: the place where text starts. I can simply swipe over when conducting my review and have my digital, extensible scratchpad available to capture everything that comes to my mind. When I’m done, I can use my various Drafts actions to move that captured text where it needs to go, as I have always done.</p>
+
+<hr />
+
+<p>As you can tell from the different setups, they do not all rely on Drafts as the central app within them. However, I think these examples highlight the usefulness of Drafts within setups that you could not have had before. Having multiple apps in Slide Over with its own multitasking has a profound impact on what’s available at your fingertips, and therefore gives you more use cases for employing Drafts in the future. This is not dissimilar to multiple desktops or spaces on a Mac: each setup created can bring new life to your daily workflows, and having Drafts available at all times further cements it as the most important app for me.</p>
+
+<h2>Shortcuts</h2>
+
+<p>The most popular way to get items into Drafts, aside from the action extension, has been Shortcuts. But with iOS 13 and the new Shortcuts APIs, Drafts now has <a href="https://docs.getdrafts.com/docs/automation/shortcuts.html">improved capability</a>. There is a full set of shortcuts, each with parameter support, which yields greater flexibility and higher productivity. The added support will let you create, add to, search for, and run actions on drafts. I could explain the little details here, but as is the case with Shortcuts, it’s often better to be shown rather than told.</p>
+
+<h3>Review Backup</h3>
+
+<p>I’m not going to re-hash it all here, but during the early stages of Federico’s <a href="https://www.macstories.net/stories/ios-and-ipados-13-the-macstories-review/">iOS and iPadOS 13 review</a>, he utilized Drafts for his writing, just as he did for the <a href="https://www.macstories.net/stories/ios-12-the-macstories-review/">iOS 12 Review</a>. Using Shortcuts and the new parameter support, he was able to create a shortcut which backed up his workspace.
+You can see this in action in the <a href="https://www.macstories.net/stories/ios-and-ipados-13-the-macstories-review/18/#shortcut-examples">Shortcut Examples</a> section of his review, complete with a video. And, if you’re a <a href="https://club.macstories.net/?utm_source=ms&amp;utm_medium=Drafts15review">Club MacStories member</a>, issue 192 of the MacStories Weekly newsletter has the shortcut you can download. I’ve created a version of this to export this very review as well.</p>
+
+<h3>Journal Start</h3>
+
+<p>I’ve been journaling for a long time, even if sporadically when life gets busy. But I like having the ability to quickly enter what I need to start my journal entry. I’ve been using a <a href="https://www.icloud.com/shortcuts/d842fc60f3244e0a8b41c5f8c0514fe7">Journal • Start</a> shortcut, which runs exclusively on iPhone due to the pulling in of information from <a href="https://apps.apple.com/us/app/autosleep-tracker-for-watch/id1164801111?uo=4">AutoSleep</a>, which is tied into HealthKit and not available on the iPad.5 This shortcut uses my <a href="https://www.icloud.com/shortcuts/b80b105971f040748ad030b58ad2fe84">Journal • Forecast</a> shortcut as well, which I might revamp at a later date due to the improvements with Shortcuts and <a href="https://apps.apple.com/us/app/carrot-weather/id961390574?uo=4">CARROT Weather</a>, the best weather app on the platform. But I digress…
+<img src="https://11871fcab73b16b159f4-523f3db6935396cef915b4800253ab62.ssl.cf1.rackcdn.com/d15-journal-start-shortcut1569242926144.PNG" alt="The Journal • Start shortcut, along with the personal automation I use." />
+The Journal • Start shortcut, along with the personal automation I use.
+This shortcut remains mostly unchanged from iOS 12 to iOS 13, with one exception: the “Update Draft” action now available in Shortcuts. Previously, my “Journal • Start” shortcut required the use of a URL scheme to apply a <code>journal</code> tag to the draft. But with support for this natively in Shortcuts, I no longer need that to create the journal entry. I can choose to either continue the entry in Drafts, or simply have Shortcuts create it for me in the background. I’m honestly not sure which I’m going to use going forward, as there are merits to each; simply having the option there is enough for me.
+The real reason that I bring this up: personal automations. In iOS 13.1 it is now possible to have this shortcut kick off at a specific time – in my case, 6:30 AM – so that I don’t forget to start a journal entry. This is helpful in two ways: first, it’s a way to remind myself without having to create an item in my task manager; also, the pop-up is persistent just like a Reminders notification would be, requiring that I take action on it to run or clear it. This small removal of friction for remembering to journal has actually increased my journaling over the past few months, something I greatly missed.</p>
+
+<h3>On This Day</h3>
+
+<p>There are times when I want to remember what it was like on a given day via my journal. I use <a href="https://apps.apple.com/us/app/devonthink-to-go/id395722470?uo=4">DEVONthink To Go</a> as the main storage for my text as well as any other data (images, files, recordings, etc.), but I do also archive the draft instead of deleting it, which lets me use this next shortcut.
+With the new abilities of parameters in Shortcuts and the way that Drafts interfaces with them, I can remember what it was like “<a href="https://www.icloud.com/shortcuts/ab8abdc7e07f483f80a863a513942dc0">on this day</a>” in years prior. This shortcut searches all of my drafts within the Archive folder and tagged <code>journal</code>, using the month and day in a <code>MM-dd</code> format. The matching drafts are returned, and I can select one. The content of the draft is then converted from Markdown to rich text to HTML in <strike>too many</strike> steps, then is loaded into a text block to compile the formatted HTML I would like to preview. I set a name for this text to <code>Post.html</code>, then preview it utilizing the “Show Webpage” action, which can open the HTML file.
+<img src="https://11871fcab73b16b159f4-523f3db6935396cef915b4800253ab62.ssl.cf1.rackcdn.com/d15-on-this-day-shortcut1569185909039.png" alt="The On This Day shortcut allows me to reminisce." />
+The On This Day shortcut allows me to reminisce.
+This isn’t perfect: any emoji or special characters don’t typically come through. Any images, files, or recordings I have attached aren’t shown. But it does give me the option to look up what was important on this day back a few years ago; if I need to really look at it, I can always go into DEVONthink and look at what happened. My hope is that in the future, Drafts will support images and iCloud Drive will provide links to files and folders so that I can move all of this into iCloud Drive. While I do like DEVONthink’s approach to privacy and will likely keep it all within there, the possibility to move it is right around the corner.</p>
+
+<h3>Append to List</h3>
+
+<p>One of my many uses for Drafts is the storage of simple lists. Most of the time I’ll simply open a new draft, type in what I want to add to a list, and then tap the “<a href="https://actions.getdrafts.com/a/1Ga">add to list</a>” action. This will provide me a prompt for which list – denoted by the <code>lists</code> tag – I wish to append the item to.
+But what about something faster or something for when my hands aren’t free? Thanks to the improvements made in Drafts to work with Shortcuts, I can now do this via the widget or Siri <em>without</em> entering Drafts itself. Using Siri, I can say “<a href="https://www.icloud.com/shortcuts/01712a44873f480692a44f2841ee27ae">Append to List</a>”, speak what I want to add, then select the draft I want it to go in, all within the Siri conversational interface.
+<img src="https://11871fcab73b16b159f4-523f3db6935396cef915b4800253ab62.ssl.cf1.rackcdn.com/d15-append-to-list-shortcut1569185567455.PNG" alt="The Append to List shortcut is great when used via Siri for conversational shortcuts." />
+The Append to List shortcut is great when used via Siri for conversational shortcuts.
+I use this for all sorts of lists: movies, TV shows, books, places to visit, quotes, etc. I’ve also made it so that I can grab text from anywhere as well, and have it used in the share sheet; if no text is passed, then it defaults to dictated text. Even though I’m not adding text directly in Drafts, using Shortcuts in tandem with it further extends Drafts not only as the place text starts, but as a place that it can remain.</p>
+
+<h3>I Am Writing</h3>
+
+<p>During the writing of this review and others before it, I needed to have as much of a distraction-free environment as possible. I had manually done this before, but it’s now possible to set up not only my environment, but also select which piece I’m continuing to write.
+In making this shortcut, I decided to steal inspiration from <a href="https://nanowrimo.org/">NaMoWriMo</a>, and called this “<a href="https://www.icloud.com/shortcuts/732f00457fc84222835cf9ea2d5e6e2d">I Am Writing</a>”. This shortcut turns on DND for 1 hour and starts playing “<a href="https://music.apple.com/us/album/the-martian-original-motion-picture-score/1043613134?uo=4">The Martian (Original Motion Picture Score)</a>” on repeat; if music isn’t your thing, I’d suggest the fantastic <a href="https://apps.apple.com/us/app/dark-noise/id1465439395?uo=4">Dark Noise</a> app, which gives you <a href="https://www.macstories.net/reviews/dark-noise-review-ambient-noise-never-looked-so-good/">great Shortcuts support</a> to add ambient noise. I am then presented with a list of titles from my Writing workspace to select: the Writing workspace is then applied to Drafts, along with opening directly to the selected draft, with all of my actions waiting right there for me.
+<img src="https://11871fcab73b16b159f4-523f3db6935396cef915b4800253ab62.ssl.cf1.rackcdn.com/d15-i-am-writing-shortcut1569185767587.PNG" alt="Make no mistake: I Am Writing was used often for this review." />
+Make no mistake: I Am Writing was used often for this review.
+My only wish for a shortcut like this is that it could include new shortcut actions to add apps in Split View and Slide Over automatically. This would elevate the platform to another level. Apps like Drafts have modularity built in, but having such control over multitasking on iPadOS would be a game changer.</p>
+
+<hr />
+
+<p>These shortcut examples weren’t fully possible before, and bring an important concept back into the forefront: creating activity-based shortcuts to coordinate several tasks or apps to set up the way in which I work. The end result is that I’m picking a bit of writing back up where I left off, and can continue doing so. The writing is what’s important, not the automation of how I got there. As I delve further into all that is <a href="https://www.macstories.net/stories/ios-and-ipados-13-the-macstories-review/13/#shortcuts">new in Shortcuts</a> for iOS and iPadOS 13, the importance of context and activities will be the central ideas by which I develop my shortcuts.</p>
+
+<h2>macOS</h2>
+
+<p>For Drafts’ Mac update, much of the visual interface carries over from iOS. The custom dictation interface now joins the Mac for the first time, as well as some improvements to the extensions and settings. You can find a full list of the nuances <a href="https://docs.getdrafts.com/docs/misc/changelog-mac.html">here</a>.
+The biggest thing I’m sure you’re thinking – where are the actions? They’re coming. From the release notes:</p>
+
+<blockquote>
+<p>We are also hard at work on a release of Drafts for Mac with full support for the automation actions available on the iOS version of Drafts. This version is expected to go into beta soon after this release.
+<a href="https://itunes.apple.com/app/id1435957248?mt=12">Drafts for Mac</a> was never a <a href="https://www.macstories.net/news/project-catalyst-enables-bringing-ipad-apps-to-the-mac/">Catalyst app</a>. It was written from the ground up as a new app and <a href="https://www.macstories.net/reviews/drafts-5-mac/">released last fall</a>. When actions do come along, they are going to be specific to the way the Mac works. Sure, there are many apps that will carry the same functionality, but expect to see them behaving differently from their iOS counterpart depending on the application.
+I’m excited to see this coming, even as someone who doesn’t really use a Mac at all. It will empower those that rely on both iOS and macOS to finally use Drafts as it was meant to be: a powerful text editor, extensible to other apps and services.</p>
+</blockquote>
+
+<h2>Conclusion</h2>
+
+<p>Drafts 15’s improvements on iPadOS are nothing short of profound; they will fundamentally change the way you work with Drafts every day. Having Drafts available at any time via multiwindow and multitasking is as close to getting a menu bar version on iOS as we will get. The ability to capture with a single app through every avenue – drag and drop, share and action extensions, Shortcuts, and URL schemes – is unmatched on iOS and iPadOS, as is Drafts’ ability to manipulate and export to any app via actions. With the improvements to the way shortcuts now work, Drafts can turn from a simple yet complex text editor into more than ever before.
+As <a href="https://apps.apple.com/us/app/drafts/id1236254471?uo=4">Drafts</a> moves forward, I see a single app being at the center of many users’ workflows on iOS, iPadOS, and macOS. It will be the solid foundation on which you can build an infinite number of ways to work. This update of Drafts lays the foundation for the future of its own platform: the modular app, everywhere you need it to be.</p>
+
+<hr />
+
+<ol>
+<li> This is called parenting, apparently. ↩︎</li>
+<li> You can do this by tapping the info button at the top of the editor, and looking through the different versions of a single draft. ↩︎</li>
+<li> Yes, I’m using Things as my task manager again. ↩︎</li>
+<li> Whoever invented online grocery ordering, you have my thanks. This has saved me so much time in the past year. ↩︎</li>
+<li> Which <em>needs</em> to be addressed in iOS 14. The ability to pull data from the iPad in a larger, well laid out format would be better for everyone. ↩︎
+-&#8220;<a href="https://www.macstories.net/reviews/drafts-15-review-multiwindow-shortcuts-and-more/">Drafts 15 Review: Multiwindow, Shortcuts, and More</a>&#8221;</li>
+</ol>
+
+</body>
+
+<footer>
+<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="drafts://open?uuid=BAE737F4-B66E-43C1-9B0E-5B0842D50131">Local</a></p>
+</footer>
+</html>

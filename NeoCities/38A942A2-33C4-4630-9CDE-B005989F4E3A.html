@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>David Blue‘s Drafts Configs</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: #000056;
+      --main-color: #ffe8bd;
+      --alternate-bg-color: #1c0021;
+      --alternate-color: #fff4e6;
+      --main-border-color: #f43f32;
+        --link-color: #36fd63;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #fff4e6;
+        --main-color: #00006b;
+        --alternate-bg-color: #fffdeb;
+        --alternate-color: #1c0021;
+        --main-border-color: #f43f32;
+          --link-color: #ff0000;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>David Blue‘s Drafts Configs</h1>
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/148675995-eaa6458a-f0af-4592-bc5e-798f72719576.png" alt="DraftsTeal" />
+<figcaption>DraftsTeal</figcaption>
+</figure>
+
+<h2>Where Text Starts™ and David Blue Ends.</h2>
+
+<p>Howdy!</p>
+
+<p><strong>This is my repository for <a href="https://getdrafts.com">AgileTortoise&#8217;s Drafts</a>, of which I&#8217;ve been a customer/user for the majority of my adult life.</strong></p>
+
+<p>Please feel free to use/distribute anything in here - including original content - as per the terms of &#8220;<a href="https://github.com/extratone/drafts/blob/main/LICENSE.md">The Unlicense, Dave Edition</a>.&#8221;</p>
+
+<h3>Contact</h3>
+
+<ul>
+<li><a href="https://davidblue.wtf/db.vcf">Contact Card</a></li>
+<li><a href="https://t.me/extratone">Telegram</a></li>
+<li><a href="mailto:davidblue@extratone.com">Email</a></li>
+<li><a href="https://twitter.com/NeoYokel">Twitter</a></li>
+<li><a href="https://mastodon.social/@DavidBlue">Mastodon</a></li>
+<li><a href="https://discord.gg/0b9KQUKP858b0iZF">Discord</a></li>
+<li><a href="https://raindrop.io/davidblue/social-directory-21059174"><em>Everywhere</em></a>&#8230;</li>
+</ul>
+
+<hr />
+
+<h2>Index</h2>
+
+<ul>
+<li> <a href="#written-work">Written Work</a></li>
+<li> <a href="#siri-shortcuts">Siri Shortcuts</a></li>
+<li> <a href="#david-blue-s-drafts-action-directory-contributions">David Blue’s Drafts Action Directory Contributions</a></li>
+<li> <a href="#unlisted-drafts-directory-links">Unlisted Drafts Directory Links</a>
+
+<ul>
+<li><a href="#actions">Actions</a></li>
+<li><a href="#themes">Themes</a></li>
+<li><a href="#action-groups">Action Groups</a></li>
+<li><a href="#workspaces">Workspaces</a></li>
+</ul></li>
+<li> <a href="#themes-1">Themes</a>
+
+<ul>
+<li><a href="#windows-eternal">Windows Eternal</a></li>
+<li><a href="#encom">ENCOM</a></li>
+<li><a href="#greyhound">Greyhound</a></li>
+<li><a href="#windows-iowa">Windows Iowa</a></li>
+<li><a href="#the-psalms">The Psalms</a></li>
+</ul></li>
+<li> <a href="#autocompletes">Autocompletes</a>
+
+<ul>
+<li> <a href="#install">Install</a></li>
+</ul></li>
+<li> <a href="#drafts-keyboard-shortcuts--ios-export-">Drafts Keyboard Shortcuts (iOS Export)</a></li>
+<li> <a href="#external">External</a></li>
+</ul>
+
+<h2>Written Work</h2>
+
+<ul>
+<li><a href="https://bilge.world/using-drafts-with-neocities"><strong>Using Drafts with NeoCities</strong></a></li>
+<li><a href="https://bilge.world/run-siri-shortcuts-with-hyperlinks">Run Siri Shortcuts with Hyperlinks</a></li>
+<li><a href="https://bilge.world/windows-eternal">Windows Eternal Drafts Theme</a></li>
+<li><a href="https://bilge.world/automating-writeas-posts">Automating Write.as Posts on macOS</a></li>
+<li><a href="https://bilge.world/drafts-zalgo-action">Zalgo Text in a Keyboard Shortcut</a></li>
+</ul>
+
+<h2>Siri Shortcuts</h2>
+
+<ul>
+<li><a href="https://routinehub.co/shortcut/11085/">RoutineHub • List .md Drafts Open Links by Tag</a></li>
+<li><a href="https://routinehub.co/shortcut/8994/">RoutineHub • Capture Web Page to Drafts</a></li>
+<li><a href="https://routinehub.co/shortcut/8944/">RoutineHub • Overcast Show Notes ⇨ Drafts</a></li>
+<li><a href="https://routinehub.co/shortcut/11024/">RoutineHub • Safari Tabs List to Drafts</a></li>
+<li><a href="https://routinehub.co/shortcut/11078/">RoutineHub • Capture Webpage to Drafts (macOS)</a></li>
+</ul>
+
+<p>⇨<a href="https://actions.getdrafts.com/search?utf8=%E2%9C%93&amp;q=David+Blue"><strong>David Blue on the Drafts Action Directory</strong></a></p>
+
+<h2>David Blue’s Drafts Action Directory Contributions</h2>
+
+<ul>
+<li><a href="https://directory.getdrafts.com/a/1xe">Query SnippetsLab | Drafts Directory</a></li>
+<li><a href="https://directory.getdrafts.com/a/1xP">Run Shortcut | Drafts Directory</a></li>
+<li><a href="https://directory.getdrafts.com/a/1vP">Clear Clipboard | Drafts Directory</a></li>
+<li><a href="https://directory.getdrafts.com/a/1wa">Linky Selection | Drafts Directory</a></li>
+<li><a href="https://actions.getdrafts.com/a/1wV">Error | Drafts Directory</a></li>
+<li><a href="https://actions.getdrafts.com/a/1ub">Fetch contents of # Tot Dot | Drafts Directory</a></li>
+<li><a href="https://actions.getdrafts.com/a/1u5">Send Draft to Telegram Saved Messages | Drafts Directory</a></li>
+<li><a href="https://actions.getdrafts.com/a/1uL">Append to 7th Tot Dot | Drafts Directory</a></li>
+<li><a href="https://actions.getdrafts.com/a/1s7">List Action Shortcuts, Comma-Delimited | Drafts Directory</a></li>
+<li><a href="https://actions.getdrafts.com/a/1q9">Markdown Footnote (Variation) | Drafts Directory</a></li>
+<li><a href="https://actions.getdrafts.com/a/1pa">Markdown Emphasis (*) | Drafts Directory</a></li>
+<li><a href="https://actions.getdrafts.com/a/1lM">Embed &lt;audio&gt; Element | Drafts Directory</a></li>
+<li><a href="https://actions.getdrafts.com/g/1uF">NeoCities | Drafts Directory</a></li>
+<li><a href="https://actions.getdrafts.com/t/1km">The Psalms | Drafts Directory</a></li>
+<li><a href="https://actions.getdrafts.com/t/1kY">Windows Iowa | Drafts Directory</a></li>
+</ul>
+
+<h2>Unlisted Drafts Directory Links</h2>
+
+<h3>Actions</h3>
+
+<ul>
+<li><a href="https://actions.getdrafts.com/a/1vP">Clear Clipboard</a></li>
+<li><a href="https://actions.getdrafts.com/a/1v4">Open URL</a></li>
+<li><a href="https://actions.getdrafts.com/a/1v5">Copy Drafts Link as MD link</a></li>
+<li><a href="https://actions.getdrafts.com/a/1v6">Tweet Selection</a></li>
+<li><a href="https://actions.getdrafts.com/a/1uG">Insert DavodTime™ timestamp</a></li>
+</ul>
+
+<h3>Themes</h3>
+
+<ul>
+<li><a href="https://actions.getdrafts.com/t/1vm">Black &amp; Yellow</a> (Not mine!)</li>
+</ul>
+
+<h3>Action Groups</h3>
+
+<ul>
+<li><a href="https://actions.getdrafts.com/g/1tq">The Psalms Action Group</a></li>
+<li><a href="https://actions.getdrafts.com/g/1ui">Markdown Action Group</a></li>
+<li><a href="https://actions.getdrafts.com/g/1ud">🅒🅞🅡🅔 Action Group</a></li>
+<li><a href="https://actions.getdrafts.com/g/1uf">Social Web Action Group</a></li>
+<li><a href="https://actions.getdrafts.com/g/1ug">TEST Action Group</a></li>
+<li><a href="https://actions.getdrafts.com/g/1vQ">Dev Action Group</a></li>
+<li><a href="https://actions.getdrafts.com/g/1uh">Automation Action Group</a></li>
+<li><a href="https://actions.getdrafts.com/g/1ue">Switcher Action Group</a></li>
+<li><a href="https://actions.getdrafts.com/g/1us">KEYS Action Group</a></li>
+<li><a href="https://actions.getdrafts.com/g/1vO">GitHub Action Group</a></li>
+</ul>
+
+<h3>Workspaces</h3>
+
+<ul>
+<li><a href="https://actions.getdrafts.com/w/1vR">Hole Workspace</a></li>
+<li><a href="https://actions.getdrafts.com/w/1vS">Written Workspace</a></li>
+<li><a href="https://actions.getdrafts.com/w/1vT">Documentation Workspace</a></li>
+<li><a href="https://actions.getdrafts.com/w/1vU">Local Workspace</a></li>
+<li><a href="https://actions.getdrafts.com/w/1vV">NeoCities Workspace</a></li>
+<li><a href="https://actions.getdrafts.com/w/1vW">Dev Workspace</a></li>
+<li><a href="https://actions.getdrafts.com/w/1vX">Library Workspace</a></li>
+<li><a href="https://actions.getdrafts.com/w/1vY">KEYS Workspace</a></li>
+<li><a href="https://actions.getdrafts.com/w/1vZ">Correspondence Workspace</a></li>
+<li><a href="https://actions.getdrafts.com/w/1v1">Social Workspace</a></li>
+<li><a href="https://actions.getdrafts.com/w/1v2">Small Workspace</a></li>
+<li><a href="https://actions.getdrafts.com/w/1v3">Publish Workspace</a></li>
+<li><a href="https://actions.getdrafts.com/w/1vN">Templates Workspace</a></li>
+</ul>
+
+<h2>Themes</h2>
+
+<h3>Windows Eternal</h3>
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/154896941-f15cfe59-dd8f-4310-b4be-fe55ee4e4bc7.PNG" alt="WindowsEternal-iPadPro" />
+<figcaption>WindowsEternal-iPadPro</figcaption>
+</figure>
+
+<ul>
+<li><a href="https://github.com/extratone/drafts/issues/26">Windows Eternal Theme · Issue #26 · extratone/drafts</a></li>
+<li><a href="https://actions.getdrafts.com/t/1wT"><strong>Drafts Directory Link</strong></a></li>
+<li><a href="https://bilge.world/windows-eternal">Blog Post</a></li>
+<li><a href="https://bit.ly/windowseternal">Shortlink</a> - <code>https://bit.ly/windowseternal</code></li>
+<li><a href="https://tilde.town/~extratone/windowseternal">Tilde</a></li>
+<li><a href="https://davidblue.wtf/windowseternal/">WTF</a></li>
+</ul>
+
+<p>A celebration of The Winders™ Aesthetic. Based on <a href="https://t.me/addtheme/windowseternal">one of my favorite Telegram themes</a>.</p>
+
+<ul>
+<li><a href="https://github.com/extratone/drafts/blob/main/Themes/Windows%20Eternal.json">Source</a></li>
+<li><a href="https://github.com/extratone/drafts/issues/26">Corresponding GitHub Issue in my Drafts-specific repository</a></li>
+<li><a href="https://bilge.world/windows-eternal">A wee blog post</a></li>
+</ul>
+
+<h3>ENCOM</h3>
+
+<p><img src="https://user-images.githubusercontent.com/43663476/156084447-9cb6b071-853f-4b7b-8590-ee243b58ff75.png" alt="ENCOM Span" />
+<img src="https://user-images.githubusercontent.com/43663476/156097365-fc9b75f0-d9b6-4f43-a84d-b1f9e8d12c77.png" alt="CDCD8EEA-8046-4D2B-A302-AA5A29A06544" /></p>
+
+<ul>
+<li><a href="https://directory.getdrafts.com/t/1wg"><strong>Drafts Directory</strong></a></li>
+<li><a href="https://github.com/extratone/drafts/issues/29">GitHub Issue</a></li>
+<li><a href="https://github.com/extratone/drafts/blob/main/Themes/JSON/ENCOM.json">Source</a></li>
+<li><a href="https://tilde.town/~extratone/encom">Tilde</a></li>
+</ul>
+
+<h3>Greyhound</h3>
+
+<p><img src="https://user-images.githubusercontent.com/43663476/152304057-7d37b8bd-d6c9-4995-8bb6-081f9e03b5e7.png" alt="Greyhound on iOS" />
+<img src="https://user-images.githubusercontent.com/43663476/152304149-24fdb181-230f-4895-8d16-067fb088b476.png" alt="Greyhound macOS" /></p>
+
+<p><strong>Inspired by a Telegram Theme.</strong>
+Version 1.0
+<code>02032022-020741</code></p>
+
+<ul>
+<li><a href="https://github.com/extratone/drafts/issues/19">Greyhound Drafts Theme · Issue #19 · extratone/drafts</a></li>
+<li><a href="https://actions.getdrafts.com/t/1uk"><strong>Themes Directory Link</strong></a></li>
+</ul>
+
+<p><code>https://actions.getdrafts.com/t/1uk</code></p>
+
+<h3>Windows Iowa</h3>
+
+<figure>
+<img src="https://davidblue.wtf/frames/WindowsIowa-iPadPro.png" alt="Windows Iowa - iPad Pro" />
+<figcaption>Windows Iowa - iPad Pro</figcaption>
+</figure>
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/115518102-71c74b80-a24d-11eb-9b83-4538b198c98a.png" alt="Windows Iowa" />
+<figcaption>Windows Iowa</figcaption>
+</figure>
+
+<p><a href="https://actions.getdrafts.com/t/1kY"><strong>Drafts Directory Link</strong></a></p>
+
+<p>(A variant of the “<a href="https://actions.getdrafts.com/t/1jK">BSOD</a>” theme by <strong>kimonostereo</strong>.)</p>
+
+<p>Color radicalized version of the source inspired by a <em>fictional</em> alpha version of Windows (Windows Iowa.)</p>
+
+<p><em>See: “<a href="https://soundcloud.com/chordoslut/windowsiowa">Windows Iowa Startup Theme</a>”</em></p>
+
+<p><a href="https://github.com/extratone/i/issues/45">The Theme&#8217;s Issue on my iOS GitHub Repo</a></p>
+
+<h3>The Psalms</h3>
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/154920101-73064c67-5786-482c-a434-cbaf8af585e1.PNG" alt="ThePsalms-iPadPro" />
+<figcaption>ThePsalms-iPadPro</figcaption>
+</figure>
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/115521804-23b44700-a251-11eb-84da-77b446e59c37.png" alt="Four Portrait" />
+<figcaption>Four Portrait</figcaption>
+</figure>
+
+<p><strong>Replicating the reading experience of <a href="https://bilge.world/colophon">bilge.world</a>.</strong></p>
+
+<p><a href="https://actions.getdrafts.com/t/1km"><strong>Drafts Directory Link</strong></a></p>
+
+<p><strong>Drafts Version:</strong> 26.2.4
+<strong>Drafts Subscription:</strong> Pro
+<strong>Device:</strong> iPhone
+<strong>Operating System:</strong> iOS
+<strong>OS Build:</strong> 14.5</p>
+
+<p><code>Version 0.1</code></p>
+
+<p>I did not originally intend to share this theme, but I sortof accidentally ended up with a configuration I’m extremely happy with.</p>
+
+<ul>
+<li><a href="https://github.com/extratone/i/issues/50">This theme’s Issue on my iOS-specific GitHub Repository</a></li>
+</ul>
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/159809109-ef35410c-d052-4ed4-9388-aa7895d1c434.png" alt="Drafts Autocompletes" />
+<figcaption>Drafts Autocompletes</figcaption>
+</figure>
+
+<h2>Autocompletes</h2>
+
+<ul>
+<li><a href="https://github.com/extratone/drafts/issues/31">GitHub Issue</a></li>
+<li><a href="https://github.com/extratone/drafts/blob/main/autocomplete">Directory of install URLS in the repo</a></li>
+<li><a href="https://tilde.town/~extratone/drafts/autocompletes/">Tilde</a></li>
+<li><a href="https://davidblue.wtf/drafts/D7135FD0-C2C5-4AB4-B0DD-DAAE7E70BA64.html">WTF</a></li>
+</ul>
+
+<p>This is a collection of my personal “<a href="https://docs.getdrafts.com/docs/editor/autocomplete">Autocomplete Suggestions</a>” (identical to what <a href="https://apps.apple.com/us/app/textexpander-keyboard/id1075927186">TextExpander</a> calls “snippets”) for Drafts, and they <em>are</em> installable, if you’d like.</p>
+
+<p><em>Definitely read <a href="https://nahumck.me/drafts-29-autocomplete/">Tim Nahumck’s work on this feature</a> if you’re curious about it.</em></p>
+
+<h4>Install</h4>
+
+<p>The hyperlinks on the expansion triggers will take you a corresponding plain text file containing the installation URL (which is, of course, the entire contents of each, encoded in a string.) Copy the full text of the URL, paste it in your web browser, and tap/click “Go” (or your equivalent)/key <code>RETURN</code> or <code>ENTER</code>. Regardless of platform, you should receive a prompt asking if you’d like to open it in Drafts.</p>
+
+<p>Here’s a wee <a href="https://user-images.githubusercontent.com/43663476/159810974-fa1531df-c0a5-4f1b-82f8-3fe11e31f36d.MOV">demo video</a>:</p>
+
+<video controls>
+  <source src="https://user-images.githubusercontent.com/43663476/159810974-fa1531df-c0a5-4f1b-82f8-3fe11e31f36d.MOV">
+</video>
+
+<hr />
+
+<ul>
+<li><a href="https://raw.githubusercontent.com/extratone/drafts/main/snippets/wtf.txt"><strong>wtf</strong></a></li>
+</ul>
+
+<pre><code>https://davidblue.wtf/drafts/38A942A2-33C4-4630-9CDE-B005989F4E3A.html
+</code></pre>
+
+<ul>
+<li><a href="https://raw.githubusercontent.com/extratone/drafts/main/snippets/x.txt"><strong>x</strong></a></li>
+</ul>
+
+<pre><code>[David Blue‘s Drafts Configs]([[draft_open_url]])
+</code></pre>
+
+<ul>
+<li><a href="https://raw.githubusercontent.com/extratone/drafts/main/snippets/latlong.txt"><strong>latlong</strong></a></li>
+</ul>
+
+<pre><code>`[[latitude]]-[[longitude]]-[[date|%m%d%Y-%H%M%S]]`
+</code></pre>
+
+<ul>
+<li><a href="https://raw.githubusercontent.com/extratone/drafts/main/snippets/img.txt"><strong>img</strong></a></li>
+</ul>
+
+<pre><code>![]()
+</code></pre>
+
+<ul>
+<li><a href="https://raw.githubusercontent.com/extratone/drafts/main/snippets/code.txt"><strong>code</strong></a></li>
+</ul>
+
+<pre><code>[[clipboard]]
+</code></pre>
+
+<ul>
+<li><a href="https://raw.githubusercontent.com/extratone/drafts/main/snippets/snap.txt"><strong>snap</strong></a></li>
+</ul>
+
+<pre><code>[[clipboard]]
+</code></pre>
+
+<ul>
+<li><a href="https://raw.githubusercontent.com/extratone/drafts/main/snippets/video.txt"><strong>video</strong></a></li>
+</ul>
+
+<pre><code>&lt;video controls&gt;
+  &lt;source src=“[[clipboard]]”&gt;
+&lt;/video&gt;
+</code></pre>
+
+<ul>
+<li><a href="https://raw.githubusercontent.com/extratone/drafts/main/snippets/audio.txt"><strong>audio</strong></a></li>
+</ul>
+
+<pre><code>&lt;audio controls&gt;
+  &lt;source src=“”&gt;
+&lt;/audio&gt;
+</code></pre>
+
+<hr />
+
+<p><a href="https://gist.github.com/extratone/2e54243a2123ccfa6a37c6e8cc1057e2">Gist - I hope to properly maintain a public list of my keyboard shortcuts in Drafts.</a></p>
+
+<h2>Drafts Keyboard Shortcuts (iOS Export)</h2>
+
+<p><code>03012022-025847</code></p>
+
+<ul>
+<li><strong>Toggle Editing Mode</strong> - ⌘ Return</li>
+<li><strong>Toggle Flagged</strong> - ⌘ ⇧ L</li>
+<li><strong>Quick Search</strong> - ⌘ ⇧ F</li>
+<li><strong>Quick Navigation</strong> - ⌘ </li>
+<li><strong>Markdown Capture Selected</strong> URL - ⌥O</li>
+<li>Copy Draft Link as MD link - ⇧⌃C</li>
+<li>Tot5 Draft Link as MD link - ⇧⌃E</li>
+<li>Append Selection to 7th Tot Dot - ⌃⌥7</li>
+<li>Append to 7th Tot Dot - ⌥7</li>
+<li>Prepend to 7th Tot Dot - ⇧⌥7</li>
+<li>Tweetbot Selection - ⌥P</li>
+<li>Post Selection to Mastodon - ⇧⌥P</li>
+<li>DraftsImageSmall - ⇧⌃⌥I</li>
+<li>Post to Mastodon - ⇧⌃⌥M</li>
+<li>DraftsImage - ⇧⌃I</li>
+<li>Telegram Extratone with Rich Text Copied - ⇧⌃G</li>
+<li>Send to Saved Messages (Telegram) (copy) - ⌃G</li>
+<li>Drakesville - ⌃M</li>
+<li>SMS Drakesville - ⌥M</li>
+<li>Post to Write.as Blog - ⇧⌃⌥W</li>
+<li>~ Town Copy HTML - ⇧⌃⌥C</li>
+<li>Insert DavodTime™ timestamp. - ⇧⌃⌥T</li>
+<li>Simplenote - ⇧⌃W</li>
+<li>Export Psalms Notes - ⇧⌃⌥N</li>
+<li>Export Psalms Drafts - ⇧⌃⌥D</li>
+<li>Keyboard Shortcuts Export - ⇧⌃K</li>
+<li><strong>Selection Word Count</strong> - ⌃W</li>
+<li>Draft Info - ⌃I</li>
+<li>Dark/Light Toggle - ⇧⌃L</li>
+<li><strong>Load The Psalms</strong> - ⌥.</li>
+<li><strong>Preview MMD</strong> - ⌥⌘/</li>
+<li><strong>TAD-Toggle Last Two Modified Drafts</strong> - ⇧⇥</li>
+<li><strong>Store Page URLs</strong> - ⇧⌃U</li>
+<li>Print Text - ⌃⌥P</li>
+<li><strong>Lookup in Terminology</strong> - ⇧⌃D</li>
+<li><strong>Text Modifier…</strong> - ⇧⌥t</li>
+<li>Zalgos - ⇧⌃Z</li>
+<li><strong>RandoDraft</strong> - ⇧⌃⌥R</li>
+<li>Save to Written folder as .md - ⌥⌘S</li>
+<li><strong>Create Bear Note From Webpage</strong> - ⇧⌃B</li>
+<li><strong>Markdown Header (#)</strong> - ⌃⌘H</li>
+<li>Markdown Bold (**) - ⌘B</li>
+<li><strong>Markdown Quotation (&gt;)</strong> - ⌃Q</li>
+<li><strong>Code Block (```)</strong> - ⌃⌘C</li>
+<li>Markdown Emphasis (*) - ⌘I</li>
+<li>Markdown List - ⌃L</li>
+<li>Markdown Link - ⌘K</li>
+<li>Replace URLs by MD links - ⇧⌘U</li>
+<li>Markdown Footnote (Variation) - ⌃F</li>
+<li><strong>Strikethrough</strong> - ⌃S</li>
+<li>Copy - ⌃C</li>
+<li>New Draft with Template - ⇧⌘N</li>
+<li><strong>Clipboard…</strong> - ⌥C</li>
+<li>~~Find - ⇧⌥F~~</li>
+<li>Tasks - ⌃T</li>
+<li><strong>Copy Tags</strong> - ⌃⌥T</li>
+<li>Save Version - ⇧⌘S</li>
+<li><strong>Copy Draft Open Link</strong> - ⇧⌘E</li>
+<li>Open URL - ⇧⌃O</li>
+<li><strong>Synonym</strong> - ⌃⌥S</li>
+<li>Tweet Selection - ⇧⌃⌥P</li>
+<li>NeoCities HTML Preview - ⌥⌘P</li>
+<li>Open NeoCities Workspace - ⇧⌃N</li>
+<li>~~Format JavaScript - ⌥⌘F~~</li>
+<li>~~Drafts 5 JavaScript API list - ⌘D~~</li>
+<li><strong>Clipboard Folder as txt</strong> - ⇧⌃⌥⌘C</li>
+<li>Error - ⇧⌃⌥↓</li>
+<li><strong>GitHub Issue</strong> - ⌃⌥I</li>
+<li>Refresh TextExpander Snippets - ⇧⌘R</li>
+<li>TAD-Trash Note - ⌃-</li>
+<li>TAD-Load Previous Workspace - ⇧⌥⌘⇥</li>
+<li>TAD-Load Next Workspace - ⌥⌘⇥</li>
+<li>TAD-Search Actions - ⌘/</li>
+<li>TAD-Duplicate Draft and Load - ⌃D</li>
+<li><strong>TAD-Prime Preview MMD</strong> - ⌃P</li>
+<li>TAD-Preview with Marked2 - ⇧⌃P</li>
+<li>~~TAD-Update TextExpander - ⌥⌘R~~</li>
+<li>Written Workspace - ⌘2</li>
+<li>Documentation Workspace - ⌘3</li>
+<li>Hole Workspace - ⌘9</li>
+<li>Testing - ⌥0</li>
+<li>Current Work Draft - ⌥1</li>
+<li>Current Work Notes - ⌥2</li>
+<li>Three - ⌥3</li>
+<li>Four - ⌥4</li>
+<li>Five - ⌥5</li>
+<li>Six - ⌥6</li>
+<li>Seven - ⇧⌥1</li>
+<li>Eight - ⇧⌥2</li>
+<li>Nine - ⇧⌥3</li>
+<li>Ten - ⇧⌥4</li>
+<li>Eleven - ⇧⌥5</li>
+<li>Twelve - ⇧⌥6</li>
+<li>Clear Clipboard - ⌥⇥</li>
+<li>Copy as Rich Text - ⌃⌥C</li>
+<li><strong>Share as File: Markdown</strong> - ⇧⌃S</li>
+<li><strong>Push Draft to GitHub Repo</strong> - ⌥G</li>
+</ul>
+
+<h2>External</h2>
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/148675845-54b1446d-50ea-4b55-89f0-8c769bcfd1fa.png" alt="External Drafts Keyboard Shortcuts" />
+<figcaption>External Drafts Keyboard Shortcuts</figcaption>
+</figure>
+
+<table>
+<colgroup>
+<col style="text-align:center;"/>
+<col style="text-align:center;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:center;"> Action       </th>
+	<th style="text-align:center;"> Command </th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:center;"> Actions-&gt;Manage Actions&#8230;  </td>
+	<td style="text-align:center;"> <sup>A</sup>  </td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<p><a href="shortcuts://run-shortcut?name=Drafts%20README%20Update">dREADME</a></p>
+
+</body>
+
+<footer>
+<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="drafts://open?uuid=38A942A2-33C4-4630-9CDE-B005989F4E3A">Local</a></p>
+</footer>
+</html>

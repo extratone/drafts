@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>I Bought a Desktop</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: #000056;
+      --main-color: #ffe8bd;
+      --alternate-bg-color: #1c0021;
+      --alternate-color: #fff4e6;
+      --main-border-color: #f43f32;
+        --link-color: #36fd63;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #fff4e6;
+        --main-color: #00006b;
+        --alternate-bg-color: #fffdeb;
+        --alternate-color: #1c0021;
+        --main-border-color: #f43f32;
+          --link-color: #ff0000;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>I Bought a Desktop</h1>
+
+<figure>
+<img src="https://i.snap.as/M42wH2VG.png" alt="Hildur" />
+<figcaption>Hildur</figcaption>
+</figure>
+
+<h2>I bought a desktop tower for the first time since 2010 and spent an embarrassingly long time struggling with Bluetooth shit.</h2>
+
+<p>As with my <a href="https://bilge.world/hp-spectre-x360-review">entire history</a> of computer purchases, my acquisition of an <a href="https://support.hp.com/us-en/document/c06443577">HP ENVY Desktop tower</a>, today, was last-minute, ill-informed, and certainly irrational. You &#8220;PC master race&#8221; folk: please spare me the <em>dude, you could&#8217;ve just built your own pc so much cheaper</em> shit.<a href="#fn:1" id="fnref:1" title="see footnote" class="footnote"><sup>1</sup></a> Yes, I realize the sensible course of action would&#8217;ve begun with a two hour trip West to the closest Microcenter, where I&#8217;m sure the staff would&#8217;ve made PC shopping an absolute blast and I would&#8217;ve come away with a more powerful, much cheaper machine. However, after I managed to <a href="https://www.davidblue.wtf/finally-broke-windows/">break Windows</a> on my only machine this weekend (and subsequently failed to reset it,) I was getting especially behind on schoolwork and had <em>absolutely no desire</em> to complete any of it on my iPhone.</p>
+
+<p>And so&#8230; I&#8217;ve just returned from picking up said HP Tower along with a <a href="https://store.hp.com/us/en/pdp/hp-27f-27-inch-display#!">27&quot; HP LED display</a>, and am writing you after having set up the machine physically and installed most of my &#8220;essential software&#8221; list (at least all that I could remember.) As per my favorite tradition of new computer acquisition, I have named the machine after <a href="https://fortitude.fandom.com/wiki/Hildur_Odegard">Hildur Odegard</a> from <em>Fortitude</em>.</p>
+
+<h2>&#8220;First Impressions&#8221;</h2>
+
+<p>It&#8217;s been exactly 10 years since I last bought a desktop tower - since I first set hands on the Dell XPS Studio desktop with which I would create the majority of my intellectual property - and I was immediately surprised by how much smaller (6.12 x 11.93 x 13.28 inches) and lighter (13.12 lbs.) this tower was than my expectations. The display, too, is remarkably light and thin. Rationally, I should not have been surprised by this, but I&#8217;m not going to punish myself for continuing to find any sort of magic in technology.</p>
+
+<p>In the box were a Bluetooth keyboard - specifically, an HP model <a href="https://fccid.io/EMJKHSA-P003K">4251a-khsap003k</a> - and mouse set, the latter of which I will hopefully never have to use, thanks to my <a href="https://youtu.be/oIAY1-aW8Es">Logitech G203</a> - and was perplexed by the process of how to pair the former with the tower while it was in setup mode for far too long. I was just about to give up entirely when I revisited the packaging and noticed what I&#8217;d previously assumed was an anti-theft device, but was actually the fucking dongle for the pair. I continue to despise Bluetooth peripherals, obviously, but the multimedia function keys of the product led to some important realizations: I now had reason to use Windows Desktop Switching <em>and</em> have a calculator application again! However, I have yet to figure out how to alter the Function key&#8217;s behavior (I&#8217;m not even sure it&#8217;s possible:) in order to input <strong>Alt+F4</strong>, I have to input <strong>Fn+Alt+F4</strong>, which is far too clunky to depend on. The issue did lead to a revelation which I may or may not integrate permanently: I mapped <strong>Alt+F4</strong> to the previously-unused button on the very top of the G203. So far, it&#8217;s been pretty nifty.</p>
+
+<figure>
+<img src="https://i.snap.as/2kLqJ1uB.jpg" alt="HP 4251a-khsap003k" />
+<figcaption>HP 4251a-khsap003k</figcaption>
+</figure>
+
+<p><em>The HP 4251a-khsap003k included in the box with my new HP desktop.</em></p>
+
+<p>That said, a component of my intention to create an intentional, static, upright-sitting desktop workspace included an allotment for a quality mechanical keyboard - my justification was that any professional in a particular craft makes a point to have the best possible tools for the job, so a high-quality keyboard has actually been <em>very</em> long overdue, in my case. So, I sought out <a href="https://www.nytimes.com/wirecutter/reviews/our-favorite-mechanical-keyboards/">a single <em>Wirecutter</em> recommendations list</a> and even attempted to disseminate <a href="https://www.reddit.com/r/MechanicalKeyboards/">r/MechanicalKeyboards</a>.<a href="#fn:2" id="fnref:2" title="see footnote" class="footnote"><sup>2</sup></a> After a brief jaunt, I concluded that no reasonable person would be able to make heads or tails of the forum or <a href="https://www.reddit.com/r/MechanicalKeyboards/wiki/index">its seemingly endless wikis</a> without considerable indoctrination so I more or less threw a dart and landed on the <a href="https://mechanicalkeyboards.com/shop/index.php?l=product_detail&amp;p=3504">Varmilo VA108M</a>, which I ordered. All I know is that it&#8217;s fairly highly-reviewed on the marketplaces I checked (though hardly mentioned on the subreddit, actually,) and that it has the <em>Cherry Switches</em>, which are&#8230; <a href="https://www.reddit.com/r/MechanicalKeyboards/comments/d3hmw3/my_new_baby_varmilo_108m_cherry_mx_blues_the/">The good ones</a>.</p>
+
+<p>A concern I originally had with taking over the tertiary guest room - by far the smallest allotted living space in the house - as my office was its distance from our wireless router, two floors down. The last time I used the room as a workspace (five years ago,) my old tower&#8217;s integrated WiFi card often struggled to maintain a reliable connection. The adapter included in this desktop, though, actually managed to clock <a href="https://www.speedtest.net/result/10021332678">the fastest download speed on my SpeedTest.net records</a> just now.</p>
+
+<figure>
+<img src="https://www.speedtest.net/result/10021332678.png" alt="SpeedTest Results" />
+<figcaption>SpeedTest Results</figcaption>
+</figure>
+
+<p>Somehow, I just managed to clock the <a href="https://www.speedtest.net/result/10021332678">highest download speed on my record</a> from two floors up!</p>
+
+<h2>Bad(ish)</h2>
+
+<p>It&#8217;s almost painful even to write this but&#8230; As beautiful as this $250 display is to behold, I&#8217;ve grown accustomed to my <a href="https://www.microsoft.com/en-us/surface/business/surface-laptop-2">Surface Laptop 2</a>&#8217;s <strong>2256 x 1504 13&quot;</strong> display after years of hard, daily use. Apparently, those dimensions mean the little machine&#8217;s display has a pixel density of <strong>201 Pixels-Per-Inch</strong>. Filling a <strong>27&quot;</strong> display with just <strong>1920 x 1080</strong> means a pixel density of just <strong>81.6 Pixels-Per-Inch</strong>,<a href="#fn:3" id="fnref:3" title="see footnote" class="footnote"><sup>3</sup></a> and the disparity was glaring to my eyes, even from the setup screen. After a few hours of regular use, I&#8217;m not sure I notice it anymore, but I suspect I will again when I&#8217;ve got the laptop running again. Please do indicate whether or not you think such a complaint makes me awful in the <a href="https://poll.fm/10603399">Crowdsignal poll</a> below.</p>
+
+<p>https://twitter.com/NeoYokel/status/1301337431887708162</p>
+
+<p>I&#8217;ve also already had trouble connecting my <a href="https://www.bose.com/en_us/support/products/bose_headphones_support/bose_around_ear_headphones_support/soundlink-around-ear-wireless-headphones-ii.html">Bose SoundLink headphones</a> correctly via Bluetooth. On my Surface Laptop, it registered as two separate devices - &#8220;Stereo Headphones&#8221; and &#8220;Headset&#8221; - which allowed me to use them as both the primary audio output <em>and</em> the primary audio input. For whatever reason, I have been unable to accomplish such a simultaneous connection on this machine: I can either connect them as headphones or as a headset, but not both. <a href="https://youtu.be/55yn-zF_dZY">This video</a> provided some help - I know now that I have to open Sound Settings and manually connect the headphones every time I re-connect them. Hopefully, I&#8217;ll figure out another solution soon.</p>
+
+<p>Returning to the webcam issue: I discovered that absolutely <em>zero</em> local stores keep add-on webcams in stock anymore, which makes sense. I resorted to searching Amazon for webcams and found a gargantuan list of brands I had never heard of. When I filtered by the one I <em>did</em> recognize - Logitech - I saw barely-facelifted versions of the camera my stepdad bought in 2008 and none were in stock. Unwilling to further investigate or research more, I set the price filter for under $40, sorted by customer ratings, and bought the first product which had even remotely legitimate-looking reviews: <a href="https://www.amazon.com/gp/product/B08BQZT4N8/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&amp;psc=1">this 1080p <em>thing</em></a> branded with &#8220;Mersuii.&#8221;</p>
+
+<p>After returning to the order invoice hours later for this post, I got curious enough to Google search the company name and discovered a dead-end url, zero Wikipedia page, and <a href="https://trademarks.justia.com/863/53/mersuii-86353116.html">this Trademark registration</a>, on which I spotted some very interesting information. Entered in the second &#8220;Goods &amp; Services&#8221; row is the following text:</p>
+
+<blockquote>
+<p>Adult sexual stimulation aids, namely, devices for massaging or vibrating external and internal portions of the body, vibrating and non-vibrating reproductions of parts of the male and female anatomies, male sex toys, masturbators, penis pumps, electrical penis cyclone pumps, rings, clamps, stimulators, vibrators, dildos, dongs, butt plugs, anal beads, rings to be worn about the penis; Adult sexual stimulation kit comprised primarily of adult sexual stimulation aids and a workbook
+-<a href="https://trademarks.justia.com/863/53/mersuii-86353116.html">MERSUii Trademark Registration</a> - &#8220;Goods &amp; Services&#8221;</p>
+</blockquote>
+
+<p>To hell with that keyboard! Now I am immensely curious as to what I&#8217;ll be receiving in the mail this coming <strong>Monday</strong>, the <strong>7th</strong>.</p>
+
+<p><a href="https://poll.fm/10603399"><strong><u>Take my Display Resolution Poll</u></strong></a></p>
+
+<p>#hardware #meta</p>
+
+<p>[1] Or don&#8217;t. Whatever.
+[2] I haven&#8217;t even started self-harming yet, so my stomach is definitely strengthening!
+[3] I suppose I should not have been surprised to immediately discover a <a href="https://www.calculatorsoup.com/calculators/technology/ppi-calculator.php">dedicated online tool</a> for calculating pixel density.</p>
+
+<div class="footnotes">
+<hr />
+<ol>
+
+<li id="fn:1">
+<p>1 <a href="#fnref:1" title="return to body" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:2">
+<p>2 <a href="#fnref:2" title="return to body" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:3">
+<p>3 <a href="#fnref:3" title="return to body" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+
+</body>
+
+<footer>
+<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="drafts://open?uuid=6F3E65B1-D198-49E2-A764-F22F3B99172D">Local</a></p>
+</footer>
+</html>

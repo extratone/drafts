@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>[Release Notes](https   docs.getdrafts.com changelog )</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: #000056;
+      --main-color: #ffe8bd;
+      --alternate-bg-color: #1c0021;
+      --alternate-color: #fff4e6;
+      --main-border-color: #f43f32;
+        --link-color: #36fd63;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #fff4e6;
+        --main-color: #00006b;
+        --alternate-bg-color: #fffdeb;
+        --alternate-color: #1c0021;
+        --main-border-color: #f43f32;
+          --link-color: #ff0000;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>&#8220;<a href="https://docs.getdrafts.com/changelog/">Release Notes</a>&#8221;</h1>
+
+<hr />
+
+<p>Drafts updates often. Keep up with the latest additions and fixes below. You can also always get highlights of the latest additions in the app via “What’s New” (Settings on iOS, Help menu on Mac).</p>
+
+<h1>28.0</h1>
+
+<h4>What’s New</h4>
+
+<h2>Ready for iOS 15 and macOS 12</h2>
+
+<figure>
+<img src="/images/releases/r28.png" alt="r28" />
+<figcaption>r28</figcaption>
+</figure>
+
+<p>Drafts is ready for iOS 15 and macOS 12! Updated for compatibility, of course, but also to take advantage of some of the great new features. New details below, but Drafts works great with “Live Text” to capture text from images, has full support for Shortcuts on the Mac, and brings great new iPad features, like powerful external keyboard menus.</p>
+
+<h2>New Apple Watch App</h2>
+
+<figure>
+<img src="/images/releases/r28-2.png" alt="r28-2" />
+<figcaption>r28&#8211;2</figcaption>
+</figure>
+
+<p>We have re-written the Drafts Apple Watch app from the ground up to use the latest watchOS technologies. It’s still the best, easiest way to capture ideas on the go, but has a few new tricks:</p>
+
+<ul>
+<li> Multiple complication types to capture, capture with options, or see your inbox or flagged draft count.</li>
+<li> Inbox drafts synced to watch now reflect your default workspace options on the phone.</li>
+<li> Flagged drafts now also synced to the watch.</li>
+<li> Requires watchOS 7.1 or greater.</li>
+</ul>
+
+<p>Note that you may need to reconfigure your complication options after upgrade, especially if you want auto-capture, which was previously a setting and not based on the complication used.</p>
+
+<p><em><a href="https://docs.getdrafts.com/docs/extensions/applewatch">Learn More About Drafts on Apple Watch →</a></em></p>
+
+<h2>Shortcuts Support on macOS 12</h2>
+
+<p>We’re ready for Shortcuts on the Mac! It’s just not quite ready for us. Look for full, cross-platform support for all of Drafts’ Shortcuts actions when macOS 12 (Monterey) is released in the coming weeks!</p>
+
+<p>In the meantime, enjoy these new shortcut actions on iOS:</p>
+
+<ul>
+<li> <strong>Get Current Draft</strong>: Retrieves the draft object for the draft currently open in the editor.</li>
+<li> <strong>Open Draft Enhancements</strong>: The “Open Draft” shortcut action now has a bunch of additional optional parameters to configure Drafts while opening - to load a workspace, actions groups, hide/show the drafts and action lists, etc. Great for bookmarking a specific set of options in a Shortcut.</li>
+</ul>
+
+<p><em><a href="https://docs.getdrafts.com/docs/automation/shortcuts">Learn More About Shortcuts →</a></em></p>
+
+<h2>Folder Bookmarks</h2>
+
+<p>Up to now, Drafts file actions and scripts have been limited to working with files in the “Drafts” folder in iCloud Drive (or by working directly with cloud-provider APIs, like Dropbox and Google Drive). With folder bookmarks, it is now possible to grant permissions to additional folders outside the Drafts App Sandbox, making it easier to integrate with other apps and services, to, say, export a draft content to another system - like an Obsidian Vault, etc.</p>
+
+<p><em><a href="https://docs.getdrafts.com/docs/settings/bookmarks">Learn More About Bookmarks →</a></em></p>
+
+<h2>Document Scanning and Live Text Support</h2>
+
+<p>Drafts has been tested and works great with the new “Live Text” features in iOS 15 and macOS 12. In addition, we have incorporated document scanning to OCR directly in the iOS app. Tap and hold the “+” and select “Scan Document” to open the document scanning camera. It supports scanning multi-page documents, and directly runs the results through OCR to create a new draft with the result text.</p>
+
+<p><em><a href="https://docs.getdrafts.com/docs/editor/document-scanning">Learn More About Live Text &amp; Scanning →</a></em></p>
+
+<h2>Share Extension and Capture Window Updates</h2>
+
+<p>Drafts capture flow used in the iOS Share extension and the “Capture” window on Mac, has received a number of updates:</p>
+
+<ul>
+<li> Both now remember your recently used selections for appending and prepending to existing drafts, to make it easier to re-use active drafts.</li>
+<li> The Mac Share extension now displays in a new capture window, allow preview/editing of captured text as well as appending-prepending to other drafts - more like the iOS Share extension.</li>
+<li> Mac Services menu now contains “Capture to Drafts” and “Capture to Drafts with Options” services to send text selections to Drafts from anywhere in the system. The “with Options” version displays a capture window, while the other version capture silently as a new draft.</li>
+<li> New <code>/capture</code> URL scheme, and Shortcut “Show Capture” action, allow you display the capture window in app, optionally pre-filled with text and tags. This is useful in capture workflows from other apps, as well as web bookmarklets.</li>
+</ul>
+
+<p><em>Learn more about the <a href="https://docs.getdrafts.com/docs/extensions/share">iOS Share Extension</a> and <a href="https://docs.getdrafts.com/docs/extensions/capture-window">Mac Capture Window</a></em></p>
+
+<h2>General Improvements</h2>
+
+<ul>
+<li> New tag suggestion interface on iOS to make it easier to tag your drafts with just the right tags.</li>
+<li> On iOS, long press on links to other drafts now generates a preview and several command options for the draft. This includes <code>[[wiki-style]]</code> links, or <code>drafts://open</code> links in link mode.</li>
+<li> On Mac, <code>command-click</code> on links to other drafts to open them in a new window.</li>
+<li> Tags in the tag filter pane now have contextual menu (tap and hold) with “rename” and “delete” commands to bulk manage tags. These options already existed in the draft list “Operations” commands, but these versions pre-fill the tag value for better accuracy.</li>
+</ul>
+
+<h4>Other Updates and Fixes</h4>
+
+<h3>All Platforms</h3>
+
+<ul>
+<li> New “What’s New” screen accessible via Settings &gt; What’s New (iOS) or Help &gt; What’s New (macOS)</li>
+<li> “Run Shortcut” action step has new “Return to Drafts” option. If disabled, Drafts will not include callback parameters to return to Drafts after completing the Shortcut. If you do not care about a result from Shortcuts, and wish to end up in a different app when the shortcut finishes, disable this option.</li>
+<li> <code>#drafts</code> template tag. Returns assigned tags as comma-separated list, with each tag prefixed with a “#”. Convenience tag to remove the need to script this conversion when exporting to systems that use hash tags.</li>
+<li> Estimated read time now calculated and displayed in draft detail <code>(i)</code> screen.</li>
+<li> <strong>Fix:</strong> Markdown syntaxes not recognizing [ref][links] with space.</li>
+<li> <strong>Fix:</strong> After success “Trash” would not load next draft properly in focus mode.</li>
+</ul>
+
+<h3>iOS</h3>
+
+<ul>
+<li> Refactor the next-previous button logic because it was not updating properly in some cases.</li>
+<li> A few new app icon options.</li>
+<li> Require iOS 14.1 or greater.</li>
+<li> Remove pre-iOS 14 “Today” widgets.</li>
+</ul>
+
+<h3>Mac</h3>
+
+<ul>
+<li> More toolbar options to customize your toolbar. Focus, link modes, preview, arrange buttons now available.</li>
+<li> List types returned from AppleScript not converted properly to JavaScript arrays.</li>
+</ul>
+
+<h3>Scripting, Shortcuts, and URL Schemes</h3>
+
+<ul>
+<li> <code>version.delete()</code> function to allow scripted deletion of versions in the version history. (<a href="https://scripting.getdrafts.com/classes/version#delete">docs</a>)</li>
+<li> <code>ActionLog</code> script object used to read and manipulation entries in the Action Log. Generally accessed from the <code>draft.actionLogs</code> property. (<a href="https://scripting.getdrafts.com/classes/actionlog">docs</a>)</li>
+<li> <code>/scandocument</code> URL scheme. (<a href="https://docs.getdrafts.com/docs/automation/urlschemes#scandocument">docs</a>)</li>
+<li> <code>editor.scanDocument() -&gt; string</code> function. Also similar to <code>editor.dictate()</code> function, opens the document scanner and returns any OCR results as a string which you can do with as you please. (<a href="https://scripting.getdrafts.com/classes/editor#scandocument">docs</a>)</li>
+<li> New “Get Current Draft” shortcut action retreives the draft currently open in the main editor.</li>
+<li> “Open Draft” shortcut action has additional options to configure state of window (show/hide side panes, load workspace, etc. - <a href="https://docs.getdrafts.com/docs/automation/shortcuts#open-draft">docs</a>)</li>
+<li> <code>/open</code> and <code>/create</code> URL schemes now support several additional parameters to configure the environment (<a href="https://docs.getdrafts.com/docs/automation/urlschemes#open">docs</a>):
+
+<ul>
+<li><code>showDraftList</code> [true/false]</li>
+<li><code>showActionList</code> [true/false]</li>
+<li><code>loadWorkspace</code>, <code>loadActionGroup</code>, <code>loadActionBarGroup</code>: take names of valid group/workspaces and applies them</li>
+</ul></li>
+</ul>
+
+<h1>27.0</h1>
+
+<h4>What’s New</h4>
+
+<h2>Custom Theme Support for Widgets + New Action Icons</h2>
+
+<p>It is now possible to select custom light and dark themes for Home Screen (iOS) and Notification Center (macOS) widgets from the built-in and <a href="https://docs.getdrafts.com/docs/extending/themes">custom themes</a> you have installed in Drafts. To make changes, tap and hold on a widget, select “Edit Widget”, and make changes in the widget configuration.</p>
+
+<figure>
+<img src="/images/releases/r27.png" alt="r27" />
+<figcaption>r27</figcaption>
+</figure>
+
+<p>We have also added dozens of new icons for actions/workspaces in categories like Health, Animals, Education, Email, and more.</p>
+
+<p>If you create custom themes, you may wish to add the following new keys in <code>colors.interface</code>: <code>widgetBackground</code>, <code>widgetBackgroundAlternate</code>, <code>widgetForeground</code>, <code>widgetForegroundAlternate</code>. If not present, these values will fall back to existing related keys: <code>background</code>, <code>backgroundCollection</code>, <code>foreground</code>, so existing themes should work out of the box without updates.</p>
+
+<h2>Google Tasks and Microsoft To Do Integration</h2>
+
+<p>Extensive integration with two of the most popular task managers: Google Tasks and Microsoft To Do. This version adds new action steps which can create individual tasks, or add each line of draft as a task, to lists in either Google Tasks or Microsoft To Do.</p>
+
+<figure>
+<img src="/images/releases/r27-2.png" alt="r27-2" />
+<figcaption>r27&#8211;2</figcaption>
+</figure>
+
+<p>Both services are available via scripting, with powerful script objects with convenience methods for creating and updated tasks and lists, while also exposing the full APIs to advanced users.</p>
+
+<p>For sample actions and details:</p>
+
+<ul>
+<li> **<a href="https://forums.getdrafts.com/t/using-drafts-with-google-task/10575">Using Drafts with Google Tasks**</a></li>
+<li> **<a href="https://forums.getdrafts.com/t/using-drafts-with-microsoft-to-do/10574">Using Drafts with Microsoft To Do**</a></li>
+</ul>
+
+<h2>Arrange Mode Improvements</h2>
+
+<p><a href="https://docs.getdrafts.com/docs/editor/arrangemode">Arrange mode</a> has better external keyboard support, especially on iOS, including: - <code>Esc</code> and <code>⌘-return</code> to cancel or accept changes - Arrow keys navigate up-down in the list - <code>⌘-up/down</code> move the selected line up and down in the list.</p>
+
+<h4>Other Updates and Fixes</h4>
+
+<ul>
+<li> <strong>Change (iOS):</strong> iOS 12 no longer supported.</li>
+<li> <strong>Fix (iOS):</strong> URL scheme could be called twice on cold start of app.</li>
+<li> <strong>Fix:</strong> Better support for import of exported files from Drafts 3 or earlier</li>
+<li> Script changes:
+
+<ul>
+<li><code>Event</code> object properties:</li>
+<li> <code>identifier</code></li>
+<li> <code>attendees</code> array to access (readonly) attendee list.</li>
+<li> <code>availability</code> string with values <code>busy</code>, <code>free</code>, <code>tentative</code>, <code>unavailable</code>, <code>notSupported</code></li>
+<li><code>Reminder</code> object properties:</li>
+<li> <code>identifier</code></li>
+</ul></li>
+<li> <strong>Fix:</strong> Drafts set in the editor via <code>editor.load</code> should get added to recent drafts list.</li>
+<li> <strong>Fix (iOS):</strong> Messages app background in dark mode had issues.</li>
+<li> <strong>Fix (macOS):</strong> <code>loadActionGroup</code> and <code>loadActionBar</code> URLs were not supported on Mac.</li>
+<li> <strong>Fix (macOS):</strong> Possible fix case where “Undo” would stop working in the editor until the app was restarted.</li>
+<li> Refactor assets to save on binary size.</li>
+</ul>
+
+<hr />
+
+<blockquote>
+<h4>Changelog Archive</h4>
+
+<p>Starting with version 27, the iOS and Mac changelogs were merged on this page. For previous release notes, see archives below.</p>
+</blockquote>
+
+<hr />
+
+<h2>Table of contents</h2>
+
+<ul>
+<li> <a href="/changelog/changelog-ios.html">iOS Release Notes Archive (pre-v27)</a></li>
+<li> <a href="/changelog/changelog-mac.html">Mac Release Notes Archive (pre-v27)</a></li>
+</ul>
+
+<hr />
+
+<p><a href="https://itunes.apple.com/app/id1236254471?ls=1&amp;mt=8&amp;at=11l4Cf&amp;ct=site"> <img src="/images/appstore.svg" alt="Download on App Store" /> </a> <a href="https://itunes.apple.com/app/id1435957248?mt=12&amp;at=11l4Cf&amp;ct=site"> <img src="/images/macappstore.svg" alt="Download on Mac App Store" /> </a></p>
+
+<p>© 2012&#8211;2021 by Agile Tortoise, Inc.<br />
+Drafts is a registered Trademark of Agile Tortoise, Inc.<br />
+<a href="https://getdrafts.com/support/privacy">Privacy</a> | <a href="https://getdrafts.com/support/terms">Terms</a></p>
+
+<p>-&#8220;<a href="https://docs.getdrafts.com/changelog/">Release Notes</a>&#8221;</p>
+
+</body>
+
+<footer>
+<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="drafts://open?uuid=A6DE3754-F684-4BEB-AE39-76985699F49E">Local</a></p>
+</footer>
+</html>

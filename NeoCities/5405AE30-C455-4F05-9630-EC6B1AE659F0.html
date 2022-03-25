@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>Town Help</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: #000056;
+      --main-color: #ffe8bd;
+      --alternate-bg-color: #1c0021;
+      --alternate-color: #fff4e6;
+      --main-border-color: #f43f32;
+        --link-color: #36fd63;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #fff4e6;
+        --main-color: #00006b;
+        --alternate-bg-color: #fffdeb;
+        --alternate-color: #1c0021;
+        --main-border-color: #f43f32;
+          --link-color: #ff0000;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Town Help</h1>
+
+<p>Run commands unique to tilde.town</p>
+
+<p>Usage:
+town [command]</p>
+
+<p>Available Commands:
+asciifarm  a multiplayer ascii farming adventure
+aup   view the town&#8217;s acceptable use policy
+battilde  a multiplayer, ascii, zombie wave shooting game
+bbj   a command line forum
+birthday  show townies with a given birthday
+botany   tend to a little plant
+bunnysay  say something as a bunny
+cats   generate a random cat
+chat   connect to the town&#8217;s local real time chat
+chin   play a betting game
+da    a chill, minimal adventure game
+dcss   play Dungeon Crawler Stone Soup
+feels   read and write little blogs
+ferengisay  say something as a ferengi
+graffiti  edit https://tilde.town/graffiti
+help   Help about any command
+holodeck  help build a virtual world
+indexme  generate a index.html for a directory of files
+linkulator  share links with other townies
+mail   check your local email
+motd   view the message of the day
+nicethings  print a random nice thing :)
+pairing  share a terminal with another user
+poem   get a poem
+qotd   get the quote of the day
+request-gemini request space on the town Gemini server
+request-gitea request an account on git.tilde.town
+rodo   a little todo list application
+stats   return statistics about tilde.town in json format
+tcoin   play with a virtual economy
+tilde-train view an animated train built by townies
+tron   multiplayer tron
+writo   walk around and paint in an infinite collaborative art project</p>
+
+<p>Flags:
+-h, &#8211;help help for town</p>
+
+<p>Use &#8220;town [command] &#8211;help&#8221; for more information about a command.</p>
+
+</body>
+
+<footer>
+<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="drafts://open?uuid=5405AE30-C455-4F05-9630-EC6B1AE659F0">Local</a></p>
+</footer>
+</html>

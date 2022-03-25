@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>Speedy Frames Shortcut Documentation</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: #000056;
+      --main-color: #ffe8bd;
+      --alternate-bg-color: #1c0021;
+      --alternate-color: #fff4e6;
+      --main-border-color: #f43f32;
+        --link-color: #36fd63;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #fff4e6;
+        --main-color: #00006b;
+        --alternate-bg-color: #fffdeb;
+        --alternate-color: #1c0021;
+        --main-border-color: #f43f32;
+          --link-color: #ff0000;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Speedy Frames Shortcut Documentation</h1>
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/147857864-28345864-2f32-4422-9676-68f5d0f7b8b7.png" alt="SpeedyFramesBanner" />
+<figcaption>SpeedyFramesBanner</figcaption>
+</figure>
+
+<ul>
+<li>[[Speedy Frames Share Meta]]</li>
+<li><a href="https://github.com/extratone/i/issues/117">Speedy Frames · Issue #117 · extratone/i</a></li>
+<li><a href="https://www.icloud.com/shortcuts/0f089f2719824fffbf7d565f93df481d">iCloud Share Link</a></li>
+<li><a href="https://routinehub.co/shortcut/10775/">RoutineHub Page</a></li>
+<li><a href="https://showcuts.app/share/view/0f089f2719824fffbf7d565f93df481d">Showcuts</a></li>
+<li><a href="https://shareshortcuts.com/shortcuts/1557-speedy-frames.html">ShareShortcuts</a></li>
+<li><a href="https://twitter.com/NeoYokel/status/1477408365999501314">Tweet</a></li>
+<li><a href="https://www.reddit.com/r/shortcuts/comments/rtut17/the_speediest_iphone_mockups_in_the_world_via_a/">Reddit</a></li>
+</ul>
+
+<h2>Video</h2>
+
+<ul>
+<li><a href="https://user-images.githubusercontent.com/43663476/147857501-a00835cc-f623-4b5b-804f-44c2c6a490ec.mov">Short Demo</a></li>
+<li><a href="https://youtu.be/zEoXIF3gPnw">YouTube</a></li>
+<li><a href="https://imgur.com/gallery/dwn4CnX">Imgur</a></li>
+</ul>
+
+<h2>Social</h2>
+
+<h3>Imgur</h3>
+
+<p>I’ve done it folks… I do believe I have devised the speediest means of rendering single-capture iPhone mockups.</p>
+
+<p>I took Federico Viticci’s <a href="https://www.macstories.net/ios/apple-frames-2-0-faster-lighter-and-featuring-support-for-iphone-13-ipad-mini-ipad-10-2-imac-24-macbook-air-and-multiple-languages/">Apple Frames 2.0</a> and made the following modifications:</p>
+
+<ol>
+<li>I deleted all of the annotations in <code>Comment</code> form. They’re a testament to Federico’s diligence and huge contribution to personal automation with iOS… but they’re also just extra text.</li>
+<li>I replaced the <code>Find Photos Where</code> action with <code>Get Latest Photos</code> with the <code>Include Screenshots</code> toggle ON and the retrieval limit set to just one.</li>
+<li>I deleted the entire export preferences menu and replaced it with actions that save the result both to a specific Photos album for frames and a corresponding iCloud Drive folder.</li>
+</ol>
+
+<p>https://www.icloud.com/shortcuts/d70654c055ee41bd8f72ebf0c29e0fa5</p>
+
+<p>The resulting shortcut takes around 5&#8211;7 seconds to produce a single mocked up frame on my iPhone 12 Pro Max running iOS 15.3 beta after it’s triggered, and I think most of that is spent displaying the requisite notifications.</p>
+
+<p>See my post coming soon to https://bilge.world if you’d like to know how I rigged it up with Back Tap :)</p>
+
+<pre><code>
+- [Twitter Video/Thread](https://twitter.com/neoyokel/status/1471883295042510859)
+
+</code></pre>
+
+<p>hey y’all I had to share this with you… by far the quickest setup for creating iPhone screen mockups <em>I’ve</em> ever come up with, certainly.</p>
+
+<p>@viticci’s Apple Frames 2 Shortcuts but set to grab the last screenshot (no selection,) and triggered by a double Back Tap.</p>
+
+<p>I’ll be documenting and sharing shortly! if you need more details, this Issue is where they’ll be coming first. https://github.com/extratone/i/issues/117</p>
+
+<pre><code></code></pre>
+
+<video controls>
+  <source src="https://user-images.githubusercontent.com/43663476/146576763-f640a6ad-fc74-44cd-8437-8e3e5007406c.MOV">
+</video>
+
+<pre><code>
+- [--RoutineHub Page--](https://routinehub.co/shortcut/8994/)
+- [iCloud Share Link](https://www.icloud.com/shortcuts/5bd639a8c8894d32ba7f2a1d8fcc971b)
+- [Back Tap Quick Frames · Issue #117 · extratone/i](https://github.com/extratone/i/issues/117)
+---
+## About
+I figured I may as well share my personal Drafts web page capture Shortcut, which reliably returns Markdown-formatted Drafts headed by a given web page’s featured image (if present,) byline, and timestamp, followed by a correctly-hyperlinked source URL between quotation marks.
+
+---
+
+## Contact
+
+- [Contact Card](https://davidblue.wtf/db.vcf)
+- [Telegram](https://t.me/extratone)
+- [Email](mailto:davidblue@extratone.com) 
+- [Twitter](https://twitter.com/NeoYokel)
+- [Mastodon](https://mastodon.social/@DavidBlue)
+- [Discord](https://discord.gg/0b9KQUKP858b0iZF)
+- [-Everywhere-](https://raindrop.io/davidblue/social-directory-21059174)...</code></pre>
+
+</body>
+
+<footer>
+<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="drafts://open?uuid=B1198509-030F-4526-9721-A0FB85A799BA">Local</a></p>
+</footer>
+</html>

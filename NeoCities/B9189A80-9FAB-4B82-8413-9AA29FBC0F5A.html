@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>‽‽‽</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: #000056;
+      --main-color: #ffe8bd;
+      --alternate-bg-color: #1c0021;
+      --alternate-color: #fff4e6;
+      --main-border-color: #f43f32;
+        --link-color: #36fd63;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #fff4e6;
+        --main-color: #00006b;
+        --alternate-bg-color: #fffdeb;
+        --alternate-color: #1c0021;
+        --main-border-color: #f43f32;
+          --link-color: #ff0000;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>‽‽‽</h1>
+
+<h2>If you&#8217;re wondering how you got here, so am I!</h2>
+
+<p>This is the mirrored beta version of <a href="https://bilge.world"><em>The Psalms</em></a> meant for development and experimental purposes. None of the actual text content here should be considered finished work.</p>
+
+<p>&#8230;or considered much at all, really.</p>
+
+<h2>Custom CSS</h2>
+
+<pre><code class="css">@import url('https://use.typekit.net/kst2rrh.css');
+
+body {
+    font-family: adobe-caslon-pro, serif !important;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #FFF4E6;
+}
+
+/* old background-color: #f2f2f2 */
+
+#blog-title a {
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    /* font-style:bold !important; */
+    color: #00006b;
+}
+
+header nav a {
+    font-family: proxima-nova-condensed, sans-serif !important;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+header p.description {
+    /* font-style: italic; */
+    font-family: proxima-nova-condensed, sans-serif !important;
+    font-weight: 700;
+    line-height: 200% !important;
+    color: #00006b !important;
+    font-size: 1em;
+    margin-left: inherit;
+    margin-right: inherit;
+}
+
+body#collection header {
+    margin-bottom: 1em !important;
+}
+
+
+header nav a {
+    color: #00006b;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 900;
+    /* margin-bottom: 1em; */
+}
+
+body,
+article {
+    font-family: adobe-caslon-pro, serif !important;
+    font-weight: 400;
+    line-height: 155%;
+    font-size: 1.1em !important;
+    color: #000000;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    /* margin-top:1rem !important; */
+}
+
+
+body,
+article a:link {
+    color: #00006b;
+}
+
+body,
+article a:visited {
+    color: #FF0000;
+}
+
+h1 {
+    color: #00006b !important;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 900;
+    font-size: 2em !important;
+}
+
+h2 {
+    color: #00006b !important;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 700;
+    font-size: 1.4em !important;
+}
+
+h3 {
+    color: #1c0021 !important;
+    font-family: proxima-nova-extra-condensed, sans-serif;
+    font-weight: 600;
+    font-size: 1.3em !important;
+}
+
+h4 {
+    color: #1c0021 !important;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-size: 1em !important;
+}
+
+h5 {
+    color: #1c0021 !important;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-size: 1em !important;
+}
+
+h6 {
+    color: #1c0021 !important;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-size: .85em !important;
+}
+
+code {
+    /* background-color:#f7ff85 !important; */
+    /* border: 1px solid #da2573 !important;
+    border-radius: 1px !important; */
+    font-size: 0.85em !important;
+    color: #1c0021 !important;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 400;
+    /* padding: 0px 0px 0px 0px !important; */
+}
+
+body #post pre, body#collection pre, body#post pre, body#subpage pre {
+    background: #FFFdeb; !important;
+    border: 1px solid #da2573 !important;
+    border-radius: 1px !important;
+    font-size: 0.85em !important;
+    color: #1c0021 !important;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 400;
+    /* padding: 0px 0px 0px 0px !important; */
+}
+
+.post-title a:visited,
+.post-title a:link {
+    font-family: proxima-nova-condensed, sans-serif !important;
+    font-weight: 900;
+    color: #00006b !important;
+    font-size: 1.7rem !important;
+}
+
+body#post article time.dt-published,
+body#subpage article time.dt-published {
+    font-family: proxima-nova-condensed, sans-serif !important;
+    color: #00006b !important;
+    font-size: 1rem !important;
+}
+
+body footer nav {
+    font-family: proxima-nova-condensed, sans-serif !important;
+    color: #00006b;
+}
+
+blockquote {
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 400;
+    color: #333333 !important;
+    border-left: 2.5px solid #00006b !important;
+}
+
+table {
+    background-color: #FFFdeb !important;
+    font-size: 0.8em !important;
+    line-height: 1.2em;
+    color: #1c0021 !important;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 400;
+    border: 1px solid #f43f32 !important;
+    border-radius: 1px !important;
+}
+
+article table td, article table th {
+    border: 1px solid !important;
+    border-color: #da2573 !important;
+}
+
+
+.gist {
+    font-family: proxima-nova-condensed, sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+}
+
+.gist .gist-meta {
+    font-family: proxima-nova-extra-condensed, sans-serif !important;
+    font-weight: 600 !important;
+    color: #1c0021 !important;
+}
+
+.gist, .gist article, .gist article p {
+    font-family: proxima-nova-condensed, sans-serif !important;
+    font-weight: 400 !important;
+}
+
+
+.gist .gist-file .gist-data {
+    background: #FFFdeb; !important;
+    border: 1px solid #da2573 !important;
+    border-radius: 1px !important;
+    font-size: 0.85em !important;
+    color: #1c0021 !important;
+    font-family: proxima-nova-condensed, sans-serif !important;
+    font-weight: 400;
+}
+
+.gist, .gist article, .gist article p {
+    white-space: normal !important;
+}
+
+/* .gist .gist-hr {
+    display: hide !important;
+} */
+
+hr {
+    border: 2px solid red;
+}
+
+
+body footer a.home:link,
+body footer a.home:visited {
+    color: #00006b;
+}
+
+.action {
+    font-family: proxima-nova-condensed, sans-serif;
+}
+
+nav#manage ul a {
+    color: #00006b;
+}
+
+nav#paging a {
+    color: #00006b !important;
+    font-family: proxima-nova-condensed, sans-serif !important;
+}
+
+
+a.bt {
+    background-color: #0d0d0d !important;
+    color: #00006b !important;
+}
+
+a.hashtag {
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 700;
+    color: #00006b !important;
+}
+
+body#collection #wrapper time,
+body#subpage #wrapper time,
+body#post article time.dt-published,
+body#subpage article time.dt-published {
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 700;
+    font-size: 0.95em;
+    color: #00006b !important;
+}
+
+
+.custom-nav {
+    text-align: center;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 700;
+    color: red;
+}
+
+.custom-nav a:link,
+.custom-nav a:visited,
+.custom-nav a:hover,
+.custom-nav a:active {
+    color: #00006b;
+}
+
+.custom-nav a:hover,
+.custom-nav a:active {
+    text-decoration: underline;
+}
+
+#subscribe-btn {
+    border: 1px #FF0000;
+    background: #00006b;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    color: #FFF4E6;
+}
+
+#emailsub {
+    font-family: proxima-nova-condensed, sans-serif !important;
+    font-weight: 700;
+}
+
+sup {
+    vertical-align: auto !important;
+}
+
+.footnote {
+    font-family: proxima-nova-condensed, sans-serif !important;
+    font-weight: 700;
+    /*vertical-align: sub !important; */
+    margin: -4px 0px 0 0 !important;
+    color: #da2573 !important;
+    font-size: 0.8em;
+    line-height: 0.1em !important;
+    text-decoration:underline #FF0000;
+}
+
+.footnote-ref {
+    margin-left:15px;
+    font-family: proxima-nova-condensed, sans-serif !important;
+    font-weight: 700;
+    /* margin-left:2.5px; */
+    color: #da2573 !important;
+    font-size: 1.15em;
+    /* text-decoration:underline #FF0000; */
+}
+
+.footnote-ref-text {
+    font-family: proxima-nova-condensed, sans-serif !important;
+    font-weight: 400;
+    color: #1c0021 !important;
+    font-size: 1em;
+    /* border-top: #00006b dotted 1px; */
+}
+
+---
+
+## Custom Javascript
+
+</code></pre>
+
+<pre><code class="js">var topP = document.createElement(&quot;p&quot;);
+//topP.style.textAlign = &quot;center&quot;;
+topP.innerHTML = '&lt;hr&gt;&lt;div class=&quot;custom-nav&quot;&gt;&lt;a rel=&quot;me&quot; href=&quot;https://tiny.write.as/chaff&quot;&gt;Tiny&lt;/a&gt; ※ &lt;a href=&quot;https://chaff.writeas.com/.epub&quot;&gt;Epub&lt;/a&gt; ※ &lt;a href=&quot;https://extratone.github.io/up/&quot;&gt;Status&lt;/a&gt; ※ &lt;a href=&quot;https://github.com/extratone/bilge&quot;&gt;GitHub&lt;/a&gt; ※ &lt;a href=&quot;https://gist.github.com/extratone/140a11428b5dd1dda500b3928e0438b1&quot;&gt;License&lt;/a&gt;&lt;/div&gt;';
+var cont = document.getElementById(&quot;wrapper&quot;);
+if (cont !== null) {
+    // Add to blog index and tag pages
+    cont.appendChild(topP);
+} else {
+    // Add to individual blog post page
+    cont = document.getElementById(&quot;post-body&quot;);
+    cont.insertAdjacentHTML(&quot;afterend&quot;, topP.outerHTML);
+}
+
+// src: https://platform.twitter.com/widgets.js
+
+// src: https://hypothes.is/embed.js
+
+window.hypothesisConfig = function () {
+  return {
+    &quot;openSidebar&quot;: false, 
+    &quot;theme&quot;: &quot;clean&quot;,
+    branding: {
+      appBackgroundColor: '#e6f7ff',
+      ctaBackgroundColor: '#da2573',
+      ctaTextColor: '#00006b',
+      selectionFontFamily: 'Georgia, serif'
+    }
+  };
+};
+
+// Footnote hyperlinks in the body.
+var notePattern = /\[\^(\d+)\]/g;
+var noteText = &quot;&lt;a name=\&quot;fn$1\&quot;&gt;&lt;/a&gt;&lt;sup&gt;&lt;a class=\&quot;footnote\&quot; href=\&quot;#fnref$1\&quot;&gt;$1&lt;/a&gt;&lt;/sup&gt;&quot;;
+
+// Footnote references at the bottom.
+var refPattern = /\[(\d+)\](.*)/g;
+var refText = &quot;&lt;a name=\&quot;fnref$1\&quot;&gt;&lt;/a&gt;&lt;sup&gt;&lt;a class=\&quot;footnote-ref\&quot; href=\&quot;#fn$1\&quot;&gt;$1&lt;/a&gt;&lt;/sup&gt;&lt;span class=\&quot;footnote-ref-text\&quot;&gt;$2&lt;/span&gt;&quot;;
+
+var postContent = document.getElementById(&quot;post-body&quot;).innerHTML;
+postContent = postContent.replace(notePattern, noteText);
+postContent = postContent.replace(refPattern, refText);
+document.getElementById(&quot;post-body&quot;).innerHTML = postContent;
+</code></pre>
+
+</body>
+
+<footer>
+<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="drafts://open?uuid=B9189A80-9FAB-4B82-8413-9AA29FBC0F5A">Local</a></p>
+</footer>
+</html>

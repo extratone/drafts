@@ -1,0 +1,77 @@
+Action,Command
+Markdown Header,⌃⌘H
+Markdown Bold,⌘B
+Code Block,⌃⌘C
+Preview,⌥⌘P
+Markdown Emphasis (*),⌘I
+Markdown List,⌃L
+Markdown Link,⌘K
+Replace URLs by MD links,⇧⌘U
+Markdown Footnote (Variation),⌃F
+Send to Saved Messages (Telegram),⌃G
+Strikethrough,⌃S
+Keyboard Shortcuts Export,⇧⌃K
+Timestamp,⇧⌃T
+Selection Word Count,⌃W
+Toggle Last,⌃⇥
+Drafts Link,⇧⌃C
+Draft Info,⌃I
+Dark/Light Toggle,⇧⌃L
+Typewriter Toggle,⌥T
+Load The Psalms,⌥.
+Preview MMD,⌥⌘/
+Copy,⌃C
+Clipboard…,⌥C
+Find,⇧⌥F
+Tasks,⌃T
+Copy Tags,⌃⌥T
+Written Workspace,⌘2
+Documentation Workspace,⌘3
+Hole Workspace,⌘9
+Copy as Rich Text,⌃⌥C
+Share as File: Markdown,⇧⌃S
+Push Draft to GitHub Repo,⇧⌃G
+Trash Note,⌃-
+Search Actions,⌘/
+Duplicate Draft and Load,⌃D
+Prime Preview MMD,⌃P
+Preview with Marked2,⇧⌃⌥P
+Replace with Synonym,⌃⌥S
+Markdown Header,⌃⌘H
+Markdown Bold,⌘B
+Code Block,⌃⌘C
+Preview,⌥⌘P
+Markdown Emphasis (*),⌘I
+Markdown List,⌃L
+Markdown Link,⌘K
+Replace URLs by MD links,⇧⌘U
+Markdown Footnote (Variation),⌃F
+Send to Saved Messages (Telegram),⌃G
+Strikethrough,⌃S
+Keyboard Shortcuts Export,⇧⌃K
+Timestamp,⇧⌃T
+Selection Word Count,⌃W
+Toggle Last,⌃⇥
+Drafts Link,⇧⌃C
+Draft Info,⌃I
+Dark/Light Toggle,⇧⌃L
+Typewriter Toggle,⌥T
+Load The Psalms,⌥.
+Preview MMD,⌥⌘/
+Copy,⌃C
+Clipboard…,⌥C
+Find,⇧⌥F
+Tasks,⌃T
+Copy Tags,⌃⌥T
+Written Workspace,⌘2
+Documentation Workspace,⌘3
+Hole Workspace,⌘9
+Copy as Rich Text,⌃⌥C
+Share as File: Markdown,⇧⌃S
+Push Draft to GitHub Repo,⇧⌃G
+Trash Note,⌃-
+Search Actions,⌘/
+Duplicate Draft and Load,⌃D
+Prime Preview MMD,⌃P
+Preview with Marked2,⇧⌃⌥P
+Replace with Synonym,⌃⌥S

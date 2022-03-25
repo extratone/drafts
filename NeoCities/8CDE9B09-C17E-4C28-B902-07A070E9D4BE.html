@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>top-brew-packages</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: #000056;
+      --main-color: #ffe8bd;
+      --alternate-bg-color: #1c0021;
+      --alternate-color: #fff4e6;
+      --main-border-color: #f43f32;
+        --link-color: #36fd63;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #fff4e6;
+        --main-color: #00006b;
+        --alternate-bg-color: #fffdeb;
+        --alternate-color: #1c0021;
+        --main-border-color: #f43f32;
+          --link-color: #ff0000;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>top-brew-packages</h1>
+
+<ul>
+<li>node: Platform built on V8 to build network applications</li>
+<li>git: Distributed revision control system</li>
+<li>wget: Internet file retriever</li>
+<li>yarn: JavaScript package manager</li>
+<li>python3: Interpreted, interactive, object-oriented programming language</li>
+<li>coreutils: GNU File, Shell, and Text utilities</li>
+<li>pkg-config: Manage compile and link flags for libraries</li>
+<li>chromedriver: Tool for automated testing of webapps across many browsers</li>
+<li>awscli: Official Amazon AWS command-line interface</li>
+<li>automake: Tool for generating GNU Standards-compliant Makefiles</li>
+<li>youtube-dl: Download YouTube videos from the command-line</li>
+<li>libtool: Generic library support script</li>
+<li>cmake: Cross-platform make</li>
+<li>readline: Library for command-line editing</li>
+<li>maven: Java-based project management</li>
+<li>libyaml: YAML Parser</li>
+<li>autoconf: Automatic configure script builder</li>
+<li>redis: Persistent key-value database, with built-in net interface</li>
+<li>heroku: Command-line client for the cloud PaaS</li>
+<li>rbenv: Ruby version manager</li>
+<li>libksba: X.509 and CMS library</li>
+<li>pidof: Display the PID number for a given process name</li>
+<li>selenium-server-standalone: Browser automation for testing purposes</li>
+<li>carthage: Decentralized dependency manager for Cocoa</li>
+<li>tree: Display directories as trees (with optional color/HTML output)</li>
+<li>jq: Lightweight and flexible command-line JSON processor</li>
+<li>docker: Pack, ship and run any application as a lightweight container</li>
+<li>nmap: Port scanning utility for large networks</li>
+<li>htop: Improved top (interactive process viewer)</li>
+<li>nvm: Manage multiple Node.js versions</li>
+<li>pyenv: Python version management</li>
+<li>ansible: Automate deployment, configuration, and upgrading</li>
+<li>sbt: Build tool for Scala projects</li>
+<li>terraform: Tool to build, change, and version infrastructure</li>
+<li>graphviz: Graph visualization software from AT&amp;T and Bell Labs</li>
+<li>zsh-completions: Additional completion definitions for zsh</li>
+<li>mercurial: Scalable distributed version control system</li>
+<li>unrar: Extract, view, and test RAR archives</li>
+<li>git-lfs: Git extension for versioning large files</li>
+<li>the_silver_searcher: Code-search similar to ack</li>
+<li>kubernetes-cli: Kubernetes command-line interface</li>
+<li>bash: Bourne-Again SHell, a UNIX command interpreter</li>
+<li>dnsmasq: Lightweight DNS forwarder and DHCP server</li>
+<li>mariadb: Drop-in replacement for MySQL</li>
+<li>ant: Java build tool</li>
+<li>ruby-build: Install various Ruby versions and implementations</li>
+<li>gdb: GNU debugger</li>
+<li>sqlite: Command-line interface for SQLite</li>
+<li>phantomjs: Headless WebKit scriptable with a JavaScript API</li>
+<li>hugo: Configurable static site generator</li>
+<li>elixir: Functional metaprogramming aware language built on Erlang VM</li>
+<li>fish: User-friendly command-line shell for UNIX-like operating systems</li>
+<li>watch: Executes a program periodically, showing output fullscreen</li>
+<li>swiftlint: Tool to enforce Swift style and conventions</li>
+<li>ghostscript: Interpreter for PostScript and PDF</li>
+<li>rabbitmq: Messaging broker</li>
+<li>p7zip: 7-Zip (high compression file archiver) implementation</li>
+<li>flow: Static type checker for JavaScript</li>
+<li>httpie: User-friendly cURL replacement (command-line HTTP client)</li>
+<li>docker-compose: Isolated development environments using Docker</li>
+<li>mono: Cross platform, open source .NET development framework</li>
+<li>ctags: Reimplementation of ctags(1)</li>
+<li>pandoc: Swiss-army knife of markup format conversion</li>
+<li>bazel: Google&#8217;s own build tool</li>
+<li>libpng: Library for manipulating PNG images</li>
+<li>libffi: Portable Foreign Function Interface library</li>
+<li>tig: Text interface for Git repositories</li>
+<li>llvm: Next-gen compiler infrastructure</li>
+<li>memcached: High performance, distributed memory object caching system</li>
+<li>ack: Search tool like grep, but optimized for programmers</li>
+<li>xz: General-purpose data compression with high compression ratio</li>
+<li>docker-machine: Create Docker hosts locally and on cloud providers</li>
+<li>jpeg: Image manipulation library</li>
+<li>sdl2: Low-level access to audio, keyboard, mouse, joystick, and graphics</li>
+<li>midnight-commander: Terminal-based visual file manager</li>
+<li>pyenv-virtualenv: Pyenv plugin to manage virtualenv</li>
+<li>capstone: Multi-platform, multi-architecture disassembly framework</li>
+<li>putty: Implementation of Telnet and SSH</li>
+<li>hub: Add GitHub support to git on the command-line</li>
+<li>thefuck: Programatically correct mistyped console commands</li>
+<li>gnutls: GNU Transport Layer Security (TLS) Library</li>
+<li>emacs: GNU Emacs text editor</li>
+<li>highlight: Convert source code to formatted text with syntax highlighting</li>
+<li>reattach-to-user-namespace: Reattach process (e.g., tmux) to background</li>
+<li>ssh-copy-id: Add a public key to a remote machine&#8217;s authorized_keys file</li>
+<li>jenkins: Extendable open source continuous integration server</li>
+<li>certbot: Tool to obtain certs from Let&#8217;s Encrypt and autoenable HTTPS</li>
+<li>fzf: Command-line fuzzy finder written in Go</li>
+<li>dos2unix: Convert text between DOS, UNIX, and Mac formats</li>
+<li>rust: Safe, concurrent, practical language</li>
+<li>packer: Tool for creating identical machine images for multiple platforms</li>
+<li>graphicsmagick: Image processing tools collection</li>
+<li>libtiff: TIFF library and utilities</li>
+<li>cocoapods: Dependency manager for Cocoa projects</li>
+<li>mtr: &#8216;traceroute&#8217; and &#8216;ping&#8217; in a single tool</li>
+<li>doxygen: Generate documentation for several programming languages</li>
+<li>groovy: Java-based scripting language</li>
+<li>winetricks: Download and install various runtime libraries</li>
+<li>freetype: Software library to render fonts</li>
+<li>apache-spark: Engine for large-scale data processing</li>
+<li>pcre: Perl compatible regular expressions library</li>
+<li>swig: Generate scripting interfaces to C/C++ code</li>
+<li>sdl: Low-level access to audio, keyboard, mouse, joystick and graphics</li>
+<li>nginx: HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server</li>
+<li>git-flow: Extensions to follow Vincent Driessen&#8217;s branching model</li>
+<li>pv: Monitor data&#8217;s progress through a pipe</li>
+<li>gawk: GNU awk utility</li>
+<li>qemu: x86 and PowerPC Emulator</li>
+<li>cairo: Vector graphics library with cross-device output support</li>
+<li>docker-machine-driver-xhyve: Docker Machine driver for xhyve</li>
+<li>zsh-syntax-highlighting: Fish shell like syntax highlighting for zsh</li>
+<li>socat: netcat on steroids</li>
+<li>zeromq: High-performance, asynchronous messaging library</li>
+<li>cask: Emacs dependency management</li>
+<li>autojump: Shell extension to jump to frequently used directories</li>
+<li>geckodriver: WebDriver &lt;-&gt; Marionette proxy</li>
+<li>tbb: Rich and complete approach to parallelism in C++</li>
+<li>mobile-shell: Remote terminal application</li>
+<li>gettext: GNU internationalization (i18n) and localization (l10n) library</li>
+<li>libxslt: C XSLT library for GNOME</li>
+<li>glib: Core application library for C</li>
+<li>kotlin: Statically typed programming language for the JVM</li>
+<li>gdbm: GNU database manager</li>
+<li>hadoop: Framework for distributed processing of large data sets</li>
+<li>eigen: C++ template library for linear algebra</li>
+<li>kubernetes-helm: The Kubernetes package manager</li>
+<li>exiftool: Perl lib for reading and writing EXIF metadata</li>
+<li>aria2: Download with resuming and segmented downloading</li>
+<li>libevent: Asynchronous event library</li>
+<li>binutils: FSF/GNU ld, ar, readelf, etc. for native development</li>
+<li>zlib: General-purpose lossless data-compression library</li>
+<li>bison: Parser generator</li>
+<li>rename: Perl-powered file rename script with many helpful built-ins</li>
+<li>snappy: Compression/decompression library aiming for high speed</li>
+<li>poppler: PDF rendering library (based on the xpdf-3.0 code base)</li>
+<li>lynx: Text-based web browser</li>
+<li>erlang: Programming language for highly scalable real-time systems</li>
+<li>mitmproxy: Intercept, modify, replay, save HTTP/S traffic</li>
+<li>openvpn: SSL/TLS VPN implementing OSI layer 2 or 3 secure network extension</li>
+<li>tor: Anonymizing overlay network for TCP</li>
+<li>cowsay: Configurable talking characters in ASCII art</li>
+<li>icu4c: C/C++ and Java libraries for Unicode and globalization</li>
+<li>aws-elasticbeanstalk: Client for Amazon Elastic Beanstalk web service</li>
+<li>ios-webkit-debug-proxy: DevTools proxy for iOS devices</li>
+<li>jenv: Manage your Java environment</li>
+<li>ripgrep: Search tool like grep and The Silver Searcher.</li>
+<li>cloc: Statistics utility to count lines of code</li>
+<li>sdl_image: Image file loading library</li>
+<li>gnu-sed: GNU implementation of the famous stream editor</li>
+<li>mas: Mac App Store command-line interface</li>
+<li>parallel: Shell command parallelization utility</li>
+<li>glog: Application-level logging library</li>
+<li>speedtest-cli: Command-line interface for https://speedtest.net bandwidth tests</li>
+<li>shellcheck: Static analysis and lint tool, for (ba)sh scripts</li>
+<li>sdl_mixer: Sample multi-channel audio mixer library</li>
+<li>bower: Package manager for the web</li>
+<li>sdl_ttf: Library for using TrueType fonts in SDL applications</li>
+<li>glide: Simplified Go project management, dependency management, and vendoring</li>
+<li>postgis: Adds support for geographic objects to PostgreSQL</li>
+<li>ntfs-3g: Read-write NTFS driver for FUSE</li>
+<li>kafka: Publish-subscribe messaging rethought as a distributed commit log</li>
+<li>portmidi: Cross-platform library for real-time MIDI I/O</li>
+<li>mysql-connector-c: MySQL database connector for C applications</li>
+<li>irssi: Modular IRC client</li>
+<li>leveldb: Key-value storage library with ordered mapping</li>
+<li>exercism: Command-line tool to interact with exercism.io</li>
+<li>fswatch: Monitor a directory for changes and run a shell command</li>
+<li>yasm: Modular BSD reimplementation of NASM</li>
+<li>kibana: Analytics and search dashboard for Elasticsearch</li>
+<li>libdvdcss: Access DVDs as block devices without the decryption</li>
+<li>gflags: Library for processing command-line flags</li>
+<li>aircrack-ng: Next-generation aircrack with lots of new features</li>
+<li>gd: Graphics library to dynamically manipulate images</li>
+<li>pango: Framework for layout and rendering of i18n text</li>
+<li>portaudio: Cross-platform library for audio I/O</li>
+<li>httrack: Website copier/offline browser</li>
+<li>boot2docker: Lightweight Linux for Docker</li>
+<li>mcrypt: Replacement for the old crypt package and crypt(1) command</li>
+<li>cassandra: Eventually consistent, distributed key-value store</li>
+<li>clang-format: Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript</li>
+<li>nodebrew: Node.js version manager</li>
+<li>direnv: Load/unload environment variables based on $PWD</li>
+<li>s3cmd: Command-line tool for the Amazon S3 service</li>
+<li>perl: Highly capable, feature-rich programming language</li>
+<li>libusb: Library for USB device access</li>
+<li>gdal: Geospatial Data Abstraction Library</li>
+<li>leiningen: Build tool for Clojure</li>
+<li>git-flow-avh: AVH edition of git-flow</li>
+<li>webp: Image format providing lossless and lossy compression for web images</li>
+<li>terminal-notifier: Send macOS User Notifications from the command-line</li>
+<li>fortune: Infamous electronic fortune-cookie generator</li>
+<li>openssh: OpenBSD freely-licensed SSH connectivity tools</li>
+<li>lmdb: Lightning memory-mapped database: key-value data store</li>
+<li>grafana: Gorgeous metric visualizations and dashboards for timeseries databases.</li>
+<li>fontconfig: XML-based font configuration API for X Windows</li>
+<li>sox: SOund eXchange: universal sound sample translator</li>
+<li>syncthing: Open source continuous file synchronization application</li>
+<li>open-mpi: High performance message passing library</li>
+<li>colordiff: Color-highlighted diff(1) output</li>
+<li>pwgen: Password generator</li>
+<li>swagger-codegen: Generation of client and server from Swagger definition</li>
+<li>md5sha1sum: Hash utilities</li>
+<li>consul: Tool for service discovery, monitoring and configuration</li>
+<li>guetzli: Perceptual JPEG encoder</li>
+<li>iperf: Tool to measure maximum TCP and UDP bandwidth</li>
+<li>watchman: Watch files and take action when they change</li>
+<li>libimobiledevice: Library to communicate with iOS devices natively</li>
+<li>glfw: Multi-platform library for OpenGL applications</li>
+<li>rsync: Utility that provides fast incremental file transfer</li>
+<li>gtk+: GUI toolkit</li>
+<li>libmagic: Implementation of the file(1) command</li>
+<li>gifsicle: GIF image/animation creator/editor</li>
+<li>sl: Prints a steam locomotive if you type sl instead of ls</li>
+<li>vault: Secures, stores, and tightly controls access to secrets</li>
+<li>sshfs: File system client based on SSH File Transfer Protocol</li>
+<li>libav: Audio and video processing tools</li>
+<li>libunistring: C string library for manipulating Unicode strings</li>
+<li>influxdb: Time series, events, and metrics database</li>
+<li>iperf3: Update of iperf: measures TCP, UDP, and SCTP bandwidth</li>
+<li>scipy: Software for mathematics, science, and engineering</li>
+<li>netcat: Utility for managing network connections</li>
+<li>peco: Simplistic interactive filtering tool</li>
+<li>haskell-stack: The Haskell Tool Stack</li>
+<li>unison: File synchronization tool for OSX</li>
+<li>nano: Free (GNU) replacement for the Pico text editor</li>
+<li>pstree: Show ps output as a tree</li>
+<li>logstash: Tool for managing events and logs</li>
+<li>gstreamer: Development framework for multimedia applications</li>
+<li>glew: OpenGL Extension Wrangler Library</li>
+<li>libgcrypt: Cryptographic library based on the code from GnuPG</li>
+<li>sdl2_image: Library for loading images as SDL surfaces and textures</li>
+<li>rpm: Standard unix software packaging tool</li>
+<li>xcproj: Manipulate Xcode project files</li>
+<li>gsl: Numerical library for C and C++</li>
+<li>opam: Package manager for OCaml</li>
+<li>unixodbc: ODBC 3 connectivity for UNIX</li>
+<li>sqlmap: Penetration testing for SQL injection and database servers</li>
+<li>thrift: Framework for scalable cross-language services development</li>
+<li>mplayer: UNIX movie player</li>
+<li>z: Tracks most-used directories to make cd smarter</li>
+<li>mosquitto: Message broker implementing the MQTT protocol</li>
+<li>libzip: C library for reading, creating, and modifying zip archives</li>
+<li>gtk+3: Toolkit for creating graphical user interfaces</li>
+<li>nkf: Network Kanji code conversion Filter (NKF)</li>
+<li>openexr: High dynamic-range image file format</li>
+<li>git-extras: Small git utilities</li>
+<li>ninja: Small build system for use with gyp or CMake</li>
+<li>dpkg: Debian package management system</li>
+<li>lftp: Sophisticated file transfer program</li>
+<li>bash-git-prompt: Informative, fancy bash prompt for Git users</li>
+<li>sdl2_mixer: Sample multi-channel audio mixer library</li>
+<li>pass: Password manager</li>
+<li>proxychains-ng: Hook preloader</li>
+<li>mutt: Mongrel of mail user agents (part elm, pine, mush, mh, etc.)</li>
+<li>media-info: Unified display of technical and tag data for audio/video</li>
+<li>openconnect: Open client for Cisco AnyConnect VPN</li>
+<li>minicom: Menu-driven communications program</li>
+<li>npth: New GNU portable threads library</li>
+<li>sdl2_ttf: Library for using TrueType fonts in SDL applications</li>
+<li>ccache: Object-file caching compiler wrapper</li>
+<li>screen: Terminal multiplexer with VT100/ANSI terminal emulation</li>
+<li>neovim: Ambitious Vim-fork focused on extensibility and agility</li>
+<li>ncdu: NCurses Disk Usage</li>
+<li>make: Utility for directing compilation</li>
+<li>geoip: This library is for the GeoIP Legacy format (dat)</li>
+<li>nasm: Netwide Assembler (NASM) is an 80x86 assembler</li>
+<li>giflib: Library and utilities for processing GIFs</li>
+<li>vagrant-completion: Bash completion for Vagrant</li>
+<li>ruby-install: Install Ruby, JRuby, Rubinius, MagLev, or mruby</li>
+<li>harfbuzz: OpenType text shaping engine</li>
+<li>fontforge: Command-line outline and bitmap font editor/converter</li>
+<li>brew-cask-completion: Bash &amp; Fish completion for brew-cask</li>
+<li>upx: Compress/expand executable files</li>
+<li>apktool: Tool for reverse engineering 3rd party, closed, binary Android apps</li>
+<li>rlwrap: Readline wrapper: adds readline support to tools that lack it</li>
+<li>lrzsz: Tools for zmodem/xmodem/ymodem file transfer</li>
+<li>librsvg: Library to render SVG files using Cairo</li>
+<li>szip: Implementation of extended-Rice lossless compression algorithm</li>
+<li>wxpython: Python bindings for wxWidgets</li>
+<li>moreutils: Collection of tools that nobody wrote when UNIX was young</li>
+<li>ghc: Glorious Glasgow Haskell Compilation System</li>
+<li>ocaml: General purpose programming language in the ML family</li>
+<li>valgrind: Dynamic analysis tools (memory, debug, profiling)</li>
+<li>chruby: Ruby environment tool</li>
+<li>libiconv: Conversion library</li>
+<li>atool: Archival front-end</li>
+<li>screenfetch: Generate ASCII art with terminal, shell, and OS info</li>
+<li>adns: C/C++ resolver library and DNS resolver utilities</li>
+<li>diff-so-fancy: Good-lookin' diffs with diff-highlight and more</li>
+<li>siege: HTTP regression testing and benchmarking utility</li>
+<li>apr-util: Companion library to apr, the Apache Portable Runtime library</li>
+<li>figlet: Banner-like program prints strings as ASCII art</li>
+<li>zookeeper: Centralized server for distributed coordination of services</li>
+<li>libuv: Multi-platform support library with a focus on asynchronous I/O</li>
+<li>crystal-lang: Fast and statically typed, compiled language with Ruby-like syntax</li>
+<li>grc: Colorize logfiles and command output</li>
+<li>docker-completion: Bash, Zsh and Fish completion for Docker</li>
+<li>curl: Get a file from an HTTP, HTTPS or FTP server</li>
+<li>mysql: Open source relational database management system</li>
+<li>sbcl: Steel Bank Common Lisp system</li>
+<li>gpg-agent: GPG key agent</li>
+<li>fftw: C routines to compute the Discrete Fourier Transform</li>
+<li>mycli: CLI for MySQL with auto-completion and syntax highlighting</li>
+<li>isl: Integer Set Library for the polyhedral model</li>
+<li>asciinema: Record and share terminal sessions</li>
+<li>w3m: Pager/text based browser</li>
+<li>libmemcached: C and C++ client library to the memcached server</li>
+<li>aspell: Spell checker with better logic than ispell</li>
+<li>rethinkdb: The open-source database for the realtime web</li>
+<li>postgresql: Object-relational database system</li>
+<li>little-cms2: Color management engine supporting ICC profiles</li>
+<li>xctool: Drop-in replacement for xcodebuild with a few extra features</li>
+<li>pypy: Highly performant implementation of Python 2 in Python</li>
+<li>opus: Audio codec</li>
+<li>neo4j: Robust (fully ACID) transactional property graph database</li>
+<li>libvorbis: Vorbis General Audio Compression Codec</li>
+<li>apr: Apache Portable Runtime library</li>
+<li>dockutil: Tool for managing dock items</li>
+<li>pyenv-virtualenvwrapper: Alternative to pyenv for managing virtualenvs</li>
+<li>htop-osx: Improved top (interactive process viewer) for macOS</li>
+<li>iftop: Display an interface&#8217;s bandwidth usage</li>
+<li>ideviceinstaller: Cross-platform library for communicating with iOS devices</li>
+<li>wrk: HTTP benchmarking tool</li>
+<li>lame: High quality MPEG Audio Layer III (MP3) encoder</li>
+<li>spark: Sparklines for the shell</li>
+<li>smpeg: SDL MPEG Player Library</li>
+<li>ctop: Top-like interface for container metrics</li>
+<li>cmatrix: Console Matrix</li>
+<li>gnu-tar: GNU version of the tar archiving utility</li>
+<li>plantuml: Draw UML diagrams</li>
+<li>sphinx-doc: Tool to create intelligent and beautiful documentation</li>
+<li>trash: CLI tool that moves files or folder to the trash</li>
+<li>neofetch: Fast, highly customisable system info script</li>
+<li>pngquant: PNG image optimizing utility</li>
+<li>md5deep: Recursively compute digests on files/directories</li>
+<li>optipng: PNG file optimizer</li>
+<li>cabextract: Extract files from Microsoft cabinet files</li>
+<li>findutils: Collection of GNU find, xargs, and locate</li>
+<li>you-get: Dumb downloader that scrapes the web</li>
+<li>hydra: Network logon cracker which supports many services</li>
+<li>wxmac: Cross-platform C++ GUI toolkit (wxWidgets for macOS)</li>
+<li>libsodium: NaCl networking and cryptography library</li>
+<li>pgcli: CLI for Postgres with auto-completion and syntax highlighting</li>
+<li>csshx: Cluster ssh tool for Terminal.app</li>
+<li>grep: GNU grep, egrep and fgrep</li>
+<li>autoenv: Per-project, per-directory shell environments</li>
+<li>antigen: Plugin manager for zsh, inspired by oh-my-zsh and vundle.</li>
+<li>lolcat: Rainbows and unicorns in your console!</li>
+<li>gedit: The GNOME text editor</li>
+<li>shadowsocks-libev: Libev port of shadowsocks</li>
+<li>swi-prolog: ISO/Edinburgh-style Prolog interpreter</li>
+<li>axel: Light UNIX download accelerator</li>
+<li>typesafe-activator: Tools for working with Lightbend Reactive Platform</li>
+<li>gnu-getopt: Command-line option parsing library</li>
+<li>smartmontools: SMART hard drive monitoring</li>
+<li>n: Node version management</li>
+<li>e2fsprogs: Utilities for the ext2, ext3, and ext4 file systems</li>
+<li>iproute2mac: CLI wrapper for basic network utilities on macOS - ip command</li>
+<li>dfu-util: USB programmer</li>
+<li>pygtk: GTK+ bindings for Python</li>
+<li>gobject-introspection: Generate introspection data for GObject libraries</li>
+<li>libssh2: C library implementing the SSH2 protocol</li>
+<li>casperjs: Navigation scripting and testing tool for PhantomJS</li>
+<li>ios-deploy: Install and debug iPhone apps from the command-line</li>
+<li>handbrake: Open-source video transcoder available for Linux, Mac, and Windows.</li>
+<li>oniguruma: Regular expressions library</li>
+<li>etcd: Key value store for shared configuration and service discovery</li>
+<li>tidy-html5: Granddaddy of HTML tools, with support for modern standards</li>
+<li>flex: Fast Lexical Analyzer, generates Scanners (tokenizers)</li>
+<li>hashcat: World&#8217;s fastest and most advanced password recovery utility</li>
+<li>uncrustify: Source code beautifier</li>
+<li>bash-completion: Programmable completion for Bash 3.2</li>
+<li>sip: Tool to create Python bindings for C and C++ libraries</li>
+<li>libusb-compat: Library for USB device access</li>
+<li>swiftformat: Formatting tool for reformatting Swift code</li>
+<li>pinentry-mac: Pinentry for GPG on Mac</li>
+<li>ranger: File browser</li>
+<li>geos: Geometry Engine</li>
+<li>scons: Substitute for classic &#8216;make&#8217; tool with autoconf/automake functionality</li>
+<li>mackup: Keep your Mac&#8217;s application settings in sync</li>
+<li>shared-mime-info: Database of common MIME types</li>
+<li>jpegoptim: Utility to optimize JPEG files</li>
+<li>solr: Enterprise search platform from the Apache Lucene project</li>
+<li>tcptraceroute: Traceroute implementation using TCP packets</li>
+<li>tesseract: OCR (Optical Character Recognition) engine</li>
+<li>gdk-pixbuf: Toolkit for image loading and pixel buffer manipulation</li>
+<li>libplist: Library for Apple Binary- and XML-Property Lists</li>
+<li>tmate: Instant terminal sharing</li>
+<li>weechat: Extensible IRC client</li>
+<li>sshuttle: Proxy server that works as a poor man&#8217;s VPN</li>
+<li>nodenv: Manage multiple NodeJS versions</li>
+<li>subversion: Version control system designed to be a better CVS</li>
+<li>zsh-autosuggestions: Fish-like fast/unobtrusive autosuggestions for zsh.</li>
+<li>gource: Version Control Visualization Tool</li>
+<li>wakeonlan: Sends magic packets to wake up network-devices</li>
+<li>sonar-scanner: Launcher to analyze a project with SonarQube</li>
+<li>azure-cli: Official Azure CLI</li>
+<li>bfg: Remove large files or passwords from Git history like git-filter-branch</li>
+<li>ext4fuse: Read-only implementation of ext4 for FUSE</li>
+<li>webpack: Bundler for JavaScript and friends</li>
+<li>openshift-cli: OpenShift command-line interface tools</li>
+<li>intltool: String tool</li>
+<li>msgpack: Library for a binary-based efficient data interchange format</li>
+<li>markdown: Text-to-HTML conversion tool</li>
+<li>luajit: Just-In-Time Compiler (JIT) for the Lua programming language</li>
+<li>gnuradio: SDK providing the signal processing runtime and processing blocks</li>
+<li>cscope: Tool for browsing source code</li>
+<li>cabal-install: Command-line interface for Cabal and Hackage</li>
+<li>unzip: Extraction utility for .zip compressed archives</li>
+<li>algol68g: Algol 68 compiler-interpreter</li>
+<li>mecab: Yet another part-of-speech and morphological analyzer</li>
+<li>binwalk: Searches a binary image for embedded files and executable code</li>
+<li>cpanminus: Get, unpack, build, and install modules from CPAN</li>
+<li>autossh: Automatically restart SSH sessions and tunnels</li>
+<li>activemq: Apache ActiveMQ: powerful open source messaging server</li>
+<li>typescript: Language for application scale JavaScript development</li>
+<li>ipcalc: Calculate various network masks, etc. from a given IP address</li>
+<li>jpeg-turbo: JPEG image codec that aids compression and decompression</li>
+<li>byobu: Text-based window manager and terminal multiplexer</li>
+<li>haproxy: Reliable, high performance TCP/HTTP load balancer</li>
+<li>hive: Hadoop-based data summarization, query, and analysis</li>
+<li>osquery: SQL powered operating system instrumentation and analytics</li>
+<li>augeas: Configuration editing tool and API</li>
+<li>qcachegrind: Visualize data generated by Cachegrind and Calltree</li>
+<li>docker-compose-completion: Docker-compose completion script</li>
+<li>jasper: Library for manipulating JPEG-2000 images</li>
+<li>pinentry: Passphrase entry dialog utilizing the Assuan protocol</li>
+<li>jmeter: Load testing and performance measurement application</li>
+<li>arp-scan: ARP scanning and fingerprinting tool</li>
+<li>fabric: Library and command-line tool for SSH</li>
+<li>links: Lynx-like WWW browser that supports tables, menus, etc.</li>
+<li>rbenv-gemset: Adds basic gemset support to rbenv</li>
+<li>jansson: C library for encoding, decoding, and manipulating JSON</li>
+<li>archey: Graphical system information display for macOS</li>
+<li>mecab-ipadic: IPA dictionary compiled for MeCab</li>
+<li>libsndfile: C library for files containing sampled sound</li>
+<li>ossp-uuid: ISO-C API and CLI for generating UUIDs</li>
+<li>sonarqube: Manage code quality</li>
+<li>ncurses: Text-based UI library</li>
+<li>couchdb: Document database server</li>
+<li>git-crypt: Enable transparent encryption/decryption of files in a git repo</li>
+<li>fdupes: Identify or delete duplicate files</li>
+<li>hping: Command-line oriented TCP/IP packet assembler/analyzer</li>
+<li>transmission: Lightweight BitTorrent client</li>
+<li>diffutils: File comparison utilities</li>
+<li>jemalloc: malloc implementation emphasizing fragmentation avoidance</li>
+<li>grpc: Next generation open source RPC library and framework</li>
+<li>pigz: Parallel gzip</li>
+<li>grails: Web application framework for the Groovy language</li>
+<li>dbus: Message bus system, providing inter-application communication</li>
+<li>ispell: International Ispell</li>
+<li>terragrunt: Thin wrapper for Terraform e.g. for locking state</li>
+<li>zenity: GTK+ dialog boxes for the command-line</li>
+<li>node-build: Install NodeJS versions</li>
+<li>x264: H.264/AVC encoder</li>
+<li>avrdude: Atmel AVR MCU programmer</li>
+<li>mpg123: MP3 player for Linux and UNIX</li>
+<li>flyway: Database version control to control migrations</li>
+<li>lz4: Extremely Fast Compression algorithm</li>
+<li>xmlstarlet: XML command-line utilities</li>
+<li>libdnet: Portable low-level networking library</li>
+<li>fping: Scriptable ping program for checking if multiple hosts are up</li>
+<li>gnu-which: GNU implementation of which utility</li>
+<li>tldr: Simplified and community-driven man pages</li>
+<li>numpy: Package for scientific computing with Python</li>
+<li>libvpx: VP8/VP9 video codec</li>
+<li>libev: Asynchronous event library</li>
+<li>dex2jar: Tools to work with Android .dex and Java .class files</li>
+<li>gzip: Popular GNU data compression program</li>
+<li>boost: Collection of portable C++ source libraries</li>
+<li>clisp: GNU CLISP, a Common Lisp implementation</li>
+<li>netpbm: Image manipulation</li>
+<li>cppcheck: Static analysis of C and C++ code</li>
+<li>tcpreplay: Replay saved tcpdump files at arbitrary speeds</li>
+<li>caddy: Alternative general-purpose HTTP/2 web server</li>
+<li>xpdf: PDF viewer</li>
+<li>bazaar: Friendly powerful distributed version control system</li>
+<li>clamav: Anti-virus software</li>
+<li>stunnel: SSL tunneling program</li>
+<li>fasd: CLI tool for quick access to files and directories</li>
+<li>usbmuxd: USB multiplexor daemon for iPhone and iPod Touch devices</li>
+<li>elinks: Text mode web browser</li>
+<li>infer: Static analyzer for Java, C and Objective-C</li>
+<li>cryptopp: Free C++ class library of cryptographic schemes</li>
+<li>libogg: Ogg Bitstream Library</li>
+<li>gmp: GNU multiple precision arithmetic library</li>
+<li>mpfr: C library for multiple-precision floating-point computations</li>
+<li>flac: Free lossless audio codec</li>
+<li>tcl-tk: Tool Command Language</li>
+<li>gitlab-ci-multi-runner: The official GitLab CI runner written in Go</li>
+<li>pngcrush: Optimizer for PNG files</li>
+<li>ddrescue: GNU data recovery tool</li>
+<li>zplug: The next-generation plugin manager for zsh</li>
+<li>fcrackzip: Zip password cracker</li>
+<li>ldid: Lets you manipulate the signature block in a Mach-O binary</li>
+<li>kafkacat: Generic command-line non-JVM Apache Kafka producer and consumer</li>
+<li>polipo: Web caching proxy</li>
+<li>swiftgen: Swift code generator for assets, storyboards, Localizable.strings, …</li>
+<li>icdiff: Improved colored diff</li>
+<li>glm: C++ mathematics library for graphics software</li>
+<li>privoxy: Advanced filtering web proxy</li>
+<li>repo: Repository tool for Android development</li>
+<li>libmpc: C library for the arithmetic of high precision complex numbers</li>
+<li>libassuan: Assuan IPC Library</li>
+<li>rclone: Rsync for cloud storage</li>
+<li>webkit2png: Create screenshots of webpages from the terminal</li>
+<li>nghttp2: HTTP/2 C Library</li>
+<li>elm: Functional programming language for building browser-based GUIs</li>
+<li>xhyve: xhyve, lightweight macOS virtualization solution based on FreeBSD&#8217;s bhyve</li>
+<li>gperftools: Multi-threaded malloc() and performance analysis tools</li>
+<li>oath-toolkit: Tools for one-time password authentication systems</li>
+<li>supervisor: Process Control System</li>
+<li>chisel: Collection of LLDB commands to assist debugging iOS apps</li>
+<li>sourcekitten: Framework and command-line tool for interacting with SourceKit</li>
+<li>terminator: Multiple terminals in one window</li>
+<li>libsass: C implementation of a Sass compiler</li>
+<li>libgpg-error: Common error values for all GnuPG components</li>
+<li>x265: H.265/HEVC encoder</li>
+<li>c-ares: Asynchronous DNS library</li>
+<li>libxmlsec1: XML security library</li>
+<li>reaver: Implements brute force attack to recover WPA/WPA2 passkeys</li>
+<li>pssh: Parallel versions of OpenSSH and related tools</li>
+<li>astyle: Source code beautifier for C, C++, C#, and Java</li>
+<li>cvs: Version control system</li>
+<li>goaccess: Log analyzer and interactive viewer for the Apache Webserver</li>
+<li>libressl: Version of the SSL/TLS protocol forked from OpenSSL</li>
+<li>john: Featureful UNIX password cracker</li>
+<li>scala: JVM-based programming language</li>
+<li>librdkafka: The Apache Kafka C/C++ library</li>
+<li>less: Pager program similar to more</li>
+<li>conan: Distributed, open source, package manager for C/C++</li>
+<li>rtmpdump: Tool for downloading RTMP streaming media</li>
+<li>megatools: Command-line client for Mega.co.nz</li>
+<li>telegraf: Server-level metric gathering agent for InfluxDB</li>
+<li>dialog: Display user-friendly message boxes from shell scripts</li>
+<li>testssl: Tool which checks for the support of TLS/SSL ciphers and flaws</li>
+<li>jetty: Java servlet engine and webserver</li>
+<li>mpich: Implementation of the MPI Message Passing Interface standard</li>
+<li>freetds: Libraries to talk to Microsoft SQL Server and Sybase databases</li>
+<li>libgit2: C library of Git core methods that is re-entrant and linkable</li>
+<li>lzlib: Data compression library</li>
+<li>wireshark: Graphical network analyzer and capture tool</li>
+<li>gnuplot: Command-driven, interactive function plotting</li>
+<li>miniupnpc: UPnP IGD client library and daemon</li>
+<li>sslscan: Test SSL/TLS enabled services to discover supported cipher suites.</li>
+<li>wdiff: Display word differences between text files</li>
+<li>libass: Subtitle renderer for the ASS/SSA subtitle format</li>
+<li>ipython: Interactive computing in Python</li>
+<li>mongodb: High-performance, schema-free, document-oriented database</li>
+<li>gist: Command-line utility for uploading Gists</li>
+<li>py2cairo: Python 2 bindings for the Cairo graphics library</li>
+<li>pypy3: Implementation of Python 3 in Python</li>
+<li>micro: Modern and intuitive terminal-based text editor</li>
+<li>calc: Arbitrary precision calculator</li>
+<li>gpac: Multimedia framework for research and academic purposes</li>
+<li>percona-server: Drop-in MySQL replacement</li>
+<li>ammonite-repl: Ammonite is a cleanroom re-implementation of the Scala REPL</li>
+<li>pidcat: Colored logcat script to show entries only for specified app</li>
+<li>pre-commit: Framework for managing multi-language pre-commit hooks</li>
+<li>procmail: Autonomous mail processor</li>
+<li>fdk-aac: Standalone library of the Fraunhofer FDK AAC code from Android</li>
+<li>pandoc-citeproc: Library and executable for using citeproc with pandoc</li>
+<li>makedepend: Creates dependencies in makefiles</li>
+<li>qpdf: Tools for and transforming and inspecting PDF files</li>
+<li>aws-sdk-cpp: AWS SDK for C++</li>
+<li>aws-shell: Integrated shell for working with the AWS CLI.</li>
+<li>net-snmp: Implements SNMP v1, v2c, and v3, using IPv4 and IPv6</li>
+<li>kops: Production Grade K8s Installation, Upgrades, and Management</li>
+<li>dark-mode: Control the macOS dark mode from the command-line</li>
+<li>pcre2: Perl compatible regular expressions library with a new API</li>
+<li>ettercap: Multipurpose sniffer/interceptor/logger for switched LAN</li>
+<li>docker-machine-completion: Docker-machine completion script</li>
+<li>pidgin: Multi-protocol chat client</li>
+<li>ruby: Powerful, clean, object-oriented scripting language</li>
+<li>squid: Advanced proxy caching server for HTTP, HTTPS, FTP, and Gopher</li>
+<li>mit-scheme: MIT/GNU Scheme development tools and runtime library</li>
+<li>task: Feature-rich console based todo list manager</li>
+<li>mpv: Media player based on MPlayer and mplayer2</li>
+<li>saltstack: Dynamic infrastructure communication bus</li>
+<li>elasticsearch: Distributed search &amp; analytics engine</li>
+<li>ngrep: Network grep</li>
+<li>ipmitool: Utility for IPMI control with kernel driver or LAN interface</li>
+<li>pdf2htmlex: PDF to HTML converter</li>
+<li>giter8: Generate files and directories from templates in a git repo</li>
+<li>m-cli: Swiss Army Knife for macOS</li>
+<li>shtool: GNU&#8217;s portable shell tool</li>
+<li>theora: Open video compression format</li>
+<li>fltk: Cross-platform C++ GUI toolkit</li>
+<li>radare2: Reverse engineering framework</li>
+<li>tcpflow: TCP flow recorder</li>
+<li>source-highlight: Source-code syntax highlighter</li>
+<li>imagemagick: Tools and libraries to manipulate images in many formats</li>
+<li>gdrive: Google Drive CLI Client</li>
+<li>m4: Macro processing language</li>
+<li>rbenv-default-gems: Auto-installs gems for Ruby installs</li>
+<li>texinfo: Official documentation format of the GNU project</li>
+<li>pixman: Low-level library for pixel manipulation</li>
+<li>percona-toolkit: Percona Toolkit for MySQL</li>
+<li>offlineimap: Synchronizes emails between two repositories</li>
+<li>cntlm: NTLM authentication proxy with tunneling</li>
+<li>asciidoc: Formatter/translator for text files to numerous formats. Includes a2x.</li>
+<li>hyper: Client for HyperHQ&#8217;s cloud service</li>
+<li>libcouchbase: C library for Couchbase</li>
+<li>macvim: GUI for vim, made for macOS</li>
+<li>git-credential-manager: Stores Git credentials for Visual Studio Team Services</li>
+<li>re2c: Generate C-based recognizers from regular expressions</li>
+<li>lnav: Curses-based tool for viewing and analyzing log files</li>
+<li>tmux: Terminal multiplexer</li>
+<li>lua: Powerful, lightweight programming language</li>
+<li>guile: GNU Ubiquitous Intelligent Language for Extensions</li>
+<li>zbar: Suite of barcodes-reading tools</li>
+<li>cmus: Music player with an ncurses based interface</li>
+<li>berkeley-db: High performance key/value database</li>
+<li>git-standup: Git extension to generate reports for standup meetings</li>
+<li>jruby: Ruby implementation in pure Java</li>
+<li>arping: Utility to check whether MAC addresses are already taken on a LAN</li>
+<li>imagesnap: Tool to capture still images from an iSight or other video source</li>
+<li>grunt-cli: JavaScript Task Runner</li>
+<li>libvirt: C virtualization API</li>
+<li>stow: Organize software neatly under a single directory tree (e.g. /usr/local)</li>
+<li>mysql-utilities: Tools for maintaining and administering MySQL servers</li>
+<li>godep: Dependency tool for go</li>
+<li>hbase: Hadoop database: a distributed, scalable, big data store</li>
+<li>zopfli: New zlib (gzip, deflate) compatible compressor</li>
+<li>expect: Program that can automate interactive applications</li>
+<li>hunspell: Spell checker and morphological analyzer</li>
+<li>filebeat: File harvester to ship log files to Elasticsearch or Logstash</li>
+<li>v8: Google&#8217;s JavaScript engine</li>
+<li>libpqxx: C++ connector for PostgreSQL</li>
+<li>tomcat: Implementation of Java Servlet and JavaServer Pages</li>
+<li>nikto: Web server scanner</li>
+<li>cloog: Generate code for scanning Z-polyhedra</li>
+<li>googler: Google Search and News from the command-line</li>
+<li>libmicrohttpd: Light HTTP/1.1 server library</li>
+<li>autoconf-archive: Collection of over 500 reusable autoconf macros</li>
+<li>libtasn1: ASN.1 structure parser library</li>
+<li>expat: XML 1.0 parser</li>
+<li>vegeta: HTTP load testing tool and library</li>
+<li>lastpass-cli: LastPass command-line interface tool</li>
+<li>mpd: Music Player Daemon</li>
+<li>protobuf: Protocol buffers (Google&#8217;s data interchange format)</li>
+<li>rocksdb: Embeddable, persistent key-value store for fast storage</li>
+<li>global: Source code tag system</li>
+<li>zsh: UNIX shell (command interpreter)</li>
+<li>qrencode: QR Code generation</li>
+<li>p11-kit: Library to load and enumerate PKCS#11 modules</li>
+<li>arangodb: The Multi-Model NoSQL Database.</li>
+<li>ccat: Like cat but displays content with syntax highlighting</li>
+<li>wine: Run Windows applications without a copy of Microsoft Windows</li>
+<li>sassc: Wrapper around libsass that helps to create command-line apps</li>
+<li>docker-machine-nfs: Activates NFS on docker-machine</li>
+<li>freerdp: X11 implementation of the Remote Desktop Protocol (RDP)</li>
+<li>lcov: Graphical front-end for GCC&#8217;s coverage testing tool (gcov)</li>
+<li>lzip: LZMA-based compression program similar to gzip or bzip2</li>
+<li>pyqt: Python bindings for v5 of Qt</li>
+<li>testdisk: Powerful free data recovery utility</li>
+<li>gnupg: GNU Pretty Good Privacy (PGP) package</li>
+<li>libpcap: Portable library for network traffic capture</li>
+<li>multitail: Tail multiple files in one terminal simultaneously</li>
+<li>duti: Select default apps for documents and URL schemes on macOS</li>
+<li>libtermkey: Library for processing keyboard entry from the terminal</li>
+<li>git-review: Submit git branches to gerrit for review</li>
+<li>grace: WYSIWYG 2D plotting tool for X11</li>
+<li>jsoncpp: Library for interacting with JSON</li>
+<li>autogen: Automated text file generator</li>
+<li>sloccount: Count lines of code in many languages</li>
+<li>bind: Implementation of the DNS protocols</li>
+<li>foremost: Console program to recover files based on their headers and footers</li>
+<li>texi2html: Convert TeXinfo files to HTML</li>
+<li>gradle: Build system based on the Groovy language</li>
+<li>doctl: Command-line tool for DigitalOcean</li>
+<li>gst-plugins-good: GStreamer plugins (well-supported, under the LGPL)</li>
+<li>nuget: Package manager for Microsoft development platform including .NET</li>
+<li>prometheus: Service monitoring system and time series database</li>
+<li>gauge: Test automation tool that supports executable documentation</li>
+<li>enca: Charset analyzer and converter</li>
+<li>qt: Cross-platform application and UI framework</li>
+<li>gst-plugins-bad: GStreamer plugins less supported, not fully tested</li>
+<li>vim: Vi &#8216;workalike&#8217; with many additional features</li>
+<li>purescript: Strongly typed programming language that compiles to JavaScript</li>
+<li>lzo: Real-time data compression library</li>
+<li>ncftp: FTP client with an advanced user interface</li>
+<li>atk: GNOME accessibility toolkit</li>
+<li>mkvtoolnix: Matroska media files manipulation tools</li>
+<li>freeglut: Open-source alternative to the OpenGL Utility Toolkit (GLUT) library</li>
+<li>git-cola: Highly caffeinated git GUI</li>
+<li>ta-lib: Tools for market analysis</li>
+<li>libtensorflow: C interface for Google&#8217;s OS library for Machine Intelligence</li>
+<li>assimp: Portable library for importing many well-known 3D model formats</li>
+<li>grip: GitHub Markdown previewer</li>
+<li>minio: Amazon S3 compatible object storage server</li>
+<li>ffmpeg: Play, record, convert, and stream audio and video</li>
+<li>libxml2: GNOME XML library</li>
+<li>flake8: Lint your Python code for style and logical errors</li>
+<li>sysdig: System-level exploration and troubleshooting tool</li>
+<li>emscripten: LLVM bytecode to JavaScript compiler</li>
+<li>rdesktop: UNIX client for connecting to Windows Remote Desktop Services</li>
+<li>planck: Stand-alone ClojureScript REPL</li>
+<li>dfu-programmer: Device firmware update based USB programmer for Atmel chips</li>
+<li>pygobject3: GNOME Python bindings (based on GObject Introspection)</li>
+<li>ipfs: Peer-to-peer hypermedia protocol</li>
+<li>openjpeg: Library for JPEG-2000 image manipulation</li>
+<li>open-ocd: On-chip debugging, in-system programming and boundary-scan testing</li>
+<li>platformio: Ecosystem for IoT development (Arduino and ARM mbed compatible)</li>
+<li>gnu-indent: C code prettifier</li>
+<li>sfml: Multi-media library with bindings for multiple languages</li>
+<li>rhino: JavaScript engine</li>
+<li>dmd: D programming language compiler for macOS</li>
+<li>minimal-racket: Modern programming language in the Lisp/Scheme family</li>
+<li>sysbench: System performance benchmark tool</li>
+<li>git-quick-stats: Simple and efficient way to access statistics in git.</li>
+<li>go: Open source programming language to build simple/reliable/efficient software</li>
+<li>gcc: GNU compiler collection</li>
+<li>ios-sim: Command-line application launcher for the iOS Simulator</li>
+<li>git-town: High-level command-line interface for Git</li>
+<li>rpm2cpio: Tool to convert RPM package to CPIO archive</li>
+<li>gibo: Access GitHub&#8217;s .gitignore boilerplates</li>
+<li>rbenv-bundler: Makes shims aware of bundle install paths</li>
+<li>python: Interpreted, interactive, object-oriented programming language</li>
+<li>cgal: Computational Geometry Algorithm Library</li>
+<li>boost-python: C++ library for C++/Python interoperability</li>
+<li>ghq: Remote repository management made easy</li>
+<li>libconfig: Configuration file processing library</li>
+<li>ed: Classic UNIX line editor</li>
+<li>openssl: SSL/TLS cryptography library</li>
+<li>sphinx: Full-text search engine</li>
+<li>mvnvm: Maven version manager</li>
+<li>amazon-ecs-cli: CLI for Amazon ECS to manage clusters and tasks for development.</li>
+</ul>
+
+</body>
+
+<footer>
+<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="drafts://open?uuid=8CDE9B09-C17E-4C28-B902-07A070E9D4BE">Local</a></p>
+</footer>
+</html>

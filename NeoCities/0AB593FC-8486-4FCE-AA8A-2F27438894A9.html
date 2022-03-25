@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>zachary7829‘s Blog</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: #000056;
+      --main-color: #ffe8bd;
+      --alternate-bg-color: #1c0021;
+      --alternate-color: #fff4e6;
+      --main-border-color: #f43f32;
+        --link-color: #36fd63;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #fff4e6;
+        --main-color: #00006b;
+        --alternate-bg-color: #fffdeb;
+        --alternate-color: #1c0021;
+        --main-border-color: #f43f32;
+          --link-color: #ff0000;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>zachary7829‘s Blog</h1>
+
+<ul>
+<li><a href="https://zachary7829.github.io/blog">Source</a></li>
+<li><a href="https://davidblue.wtf/drafts/0AB593FC-8486-4FCE-AA8A-2F27438894A9.html">zachary7829‘s Blog</a></li>
+<li><a href="https://tilde.town/~extratone/misc/zachary7829">Tilde</a></li>
+</ul>
+
+<h1>Extract Archive Arbitrary Write bug</h1>
+
+<p>Works on iOS 13, 14, and (at the time of writing) 15. Well, somewhat iOS 15. Found by me, Zachary Keffaber (zachary7829)</p>
+
+<h3>iOS 15 / macOS Monterey Mitigation</h3>
+
+<p>The bug is still technically there in iOS 15, but much more limited. Thanks to iOS 15 changes: Built-in shortcut actions may have different privileges than the shortcuts app itself now, so even though Shortcuts has write access to directories like <code>/var/mobile/Library/WebClips</code>, the actions do not and can only write to iCloud<sub>is</sub>workflow<sub>my</sub>workflows (tmk). Creating a symlink to a directory shortcuts has access to from iCloud<sub>is</sub>workflow<sub>my</sub>workflows does not work either. With this restriction in mind, there is still one bad thing you can do with this: write to iCloud<sub>is</sub>workflow<sub>my</sub>workflows without needing the Save File permission. However you can only do inital write, not overwrite, and even then it&#8217;s limited to only initial write folders.</p>
+
+<h3>The bug</h3>
+
+<p>Extract archive allows you to do dot notation in the name of the archive. You can create a zip, use set name to <code>../../../../../../../../../../private/var/mobile/Library/WebClips/testingzip.zip</code>, use extract archive and create a folder named &#8220;testingzip&#8221; to the WebClips directory. This will be auto-deleted upon shortcut ending execution, however if the shortcut doesn&#8217;t end execution normally (ex crash bug or user closes app before shortcut finishes) it will stay. The Make GIF from Video action has a similar bug, but unlike Extract Archive deletes the files upon finishing the GIF. While you can&#8217;t use this to overwrite or write files themselves rather than folders that contain files, since .webclip is basically just a folder anyway it works. Example: <a href="https://www.icloud.com/shortcuts/6df21b1b953747cda16752f838377bd9">https://www.icloud.com/shortcuts/6df21b1b953747cda16752f838377bd9</a></p>
+
+<h3>Special Thanks</h3>
+
+<p>Special thanks to the Shortcuts Hacking discord.</p>
+
+<h2><a href="https://zachary7829.github.io/blog/shortcuts/ExtractArchiveArbitraryWrite.html">Extract Archive Arbitrary Write bug</a> #archive #capture</h2>
+
+<h1>Shortcuts File Format Documentation</h1>
+
+<p>Credits:</p>
+
+<p>Thanks to:</p>
+
+<ul>
+<li>u/Shoculad (Learned about iCloud API from them)</li>
+<li>Various people from r/Shortcuts and RoutineHub discord</li>
+<li>sebj for <a href="https://github.com/sebj/iOS-Shortcuts-Reference">https://github.com/sebj/iOS-Shortcuts-Reference</a></li>
+<li>ActuallyZach (Magic Variables)</li>
+<li>marcusrbrown (Re-enabling shorcut importing on iOS 13/14)</li>
+</ul>
+
+<p>(This guide is mainly intended for iOS 13/14, however there is still some stuff here that applies to iOS 15 and iOS 12-)</p>
+
+<h3>How shortcuts are stored</h3>
+
+<p>On iOS 13, shortcuts are stored in /var/mobile/Library/Shortcuts/Shortcuts.realm. However, iOS 14 changes this to be in Shortcuts.sqlite. You don&#8217;t need to worry about this at the moment though - what you do need to understand however is the .shortcut format. On iOS 12/13/14 devices, a shortcut that&#8217;s stored on a device can be exported as an unsigned .shortcut file by using the Get My Shortcuts action (You can use a Save File action to save the output). iOS 15 is slightly different, however: you can&#8217;t export shortcuts on device as unsigned shortcuts using Get My Shortcuts, only signed. You can, however, get a unsigned .shortcut from the iCloud API. Let&#8217;s upload a shortcut to iCloud, and imagine our link is <a href="https://www.icloud.com/shortcuts/77dfe31578ac4f6fb084ebb418b34a49">https://www.icloud.com/shortcuts/77dfe31578ac4f6fb084ebb418b34a49</a>. Change /shortcuts/ to /shortcuts/api/records/ ( <a href="https://www.icloud.com/shortcuts/api/records/77dfe31578ac4f6fb084ebb418b34a49">https://www.icloud.com/shortcuts/api/records/77dfe31578ac4f6fb084ebb418b34a49</a> ). The value for fields.shortcut.value.downloadURL should be the URL for the unsigned .shortcut (Note: If you opened in Safari, change / to / in the URL). After getting the unsigned .shortcut, rename this to a plist and you should be able to easily open this in Xcode (or, use set name to rename to something.plist with Do Not Include File Extension on, and Get Text from that).</p>
+
+<p>So, now lets go over the keys:</p>
+
+<ul>
+<li>WFWorkflowClientVersion - This is the number that represents the client version that the shortcut was shared on.</li>
+<li>WFWorkflowImportQuestions - The import questions for the shortcut</li>
+<li>WFWorkflowName - Name of the shortcut</li>
+<li>WFWorkflowMinimumClientVersion - The minimum client version the shortcut can be imported in.</li>
+<li>WFWorkflowMinimumClientVersionString - Same thing as WFWorkflowMinimumClientVersion but a string.</li>
+<li>WFWorkflowIcon - The Icon</li>
+<li>WFWorkflowInputContentItemClasses - What the shortcut accepts as input</li>
+<li>WFWorkflowTypes - Hard to explain, use sebj&#8217;s documentation instead if you want this explained, but you likely won&#8217;t touch this anyway</li>
+<li>WFWorkflowActions - this is the big one that matters. It&#8217;s an array of the different shortcut actions.</li>
+</ul>
+
+<h3>Actions</h3>
+
+<p>We&#8217;re going to have a shortcut with a comment action that contains &#8220;Chocolate&#8221;. Let’s take a look at a simple comment action:</p>
+
+<pre><code>&lt;dict&gt; &lt;key&gt;WFWorkflowActionIdentifier&lt;/key&gt; &lt;string&gt;is.workflow.actions.comment&lt;/string&gt; &lt;key&gt;WFWorkflowActionParameters&lt;/key&gt; &lt;dict&gt; &lt;key&gt;WFCommentActionText&lt;/key&gt; &lt;string&gt;Chocolate&lt;/string&gt; &lt;/dict&gt; &lt;/dict&gt;
+</code></pre>
+
+<p>The value “is.workflow.actions.comment” in the WFWorkflowActionIdentifier indicates that it’s a comment action, and the Chocolate value in the WFCommentActionText key indicates that the Comment action contains the text &#8220;Chocolate&#8221;.</p>
+
+<p>Just a warning for magic variables: these contain an invisible character. Be careful not to accidentally remove it. Here’s an example of what it looks like, with the invisible character replaced with &#8220;(INVISIBLE CHARACTER)&#8221; (Thanks to ActuallyZach for sending me this and helping me figure out where it was!):</p>
+
+<pre><code>&lt;dict&gt; &lt;key&gt;WFWorkflowActionIdentifier&lt;/key&gt; &lt;string&gt;is.workflow.actions.gettext&lt;/string&gt; &lt;key&gt;WFWorkflowActionParameters&lt;/key&gt; &lt;dict&gt; &lt;key&gt;WFTextActionText&lt;/key&gt; &lt;dict&gt; &lt;key&gt;Value&lt;/key&gt; &lt;dict&gt; &lt;key&gt;attachmentsByRange&lt;/key&gt; &lt;dict&gt; &lt;key&gt;{15, 1}&lt;/key&gt; &lt;dict&gt; &lt;key&gt;Aggrandizements&lt;/key&gt; &lt;array/&gt; &lt;key&gt;Type&lt;/key&gt; &lt;string&gt;ExtensionInput&lt;/string&gt; &lt;/dict&gt; &lt;/dict&gt; &lt;key&gt;string&lt;/key&gt; &lt;string&gt;Shortcut Input (INVISIBLE CHARACTER)&lt;/string&gt; &lt;/dict&gt; &lt;key&gt;WFSerializationType&lt;/key&gt; &lt;string&gt;WFTextTokenString&lt;/string&gt; &lt;/dict&gt; &lt;/dict&gt; &lt;/dict&gt;
+</code></pre>
+
+<h3>Importing</h3>
+
+<p>On iOS 12, you could just import .shortcuts from files no issue. However, this was disabled on iOS 13. It&#8217;s still fairly easy to work around this though - you could have a shortcut that passes a .shortcut file into the Get Link to File action, and it should generate an iCloud link to this .shortcut in which you can import. Similar behavior on iOS 14. (Fun fact: While this is disabled, the code for it is still there: you can actually make a backup, edit a boolean in a plist, restore from said backup and you can import .shortcuts again. Apple actually accidentally enabled it again in iOS 14b1, though quickly realized their mistake and disabled it again.)</p>
+
+<p>On iOS 15, however, Apple introduced shortcuts signing, as well as removed the special treatment for Get Link to File regarding .shortcut/.wflow files. This means that you need to sign a shortcut file if you want to import it on an iOS 15 device - and no, you can&#8217;t do it on device. (Note: There was a way to bypass signing and import unsigned shortcuts files on iOS 15b1, but it was quickly patched.) You need either a Mac or an iOS 12/13/14 device to sign said shortcut file. (To sign on macOS - use the shortcuts CLI tool. To sign on an iOS 12/13/14 device, have a shortcut get the iOS 15 shortcut you want to sign, and use the Get Link to File action to upload to iCloud and sign it. The link to the signed shortcut file should be in fields.signedShortcut.value.downloadURL. However, you /could/ set up a shortcuts signing server if you have a Mac if you really want to - but be aware that if someone uploads a malicious shortcut, Apple could ban it.</p>
+
+<h3>iOS 15b1 shortcuts signing bypass</h3>
+
+<p>On iOS 15b1, Apple forgot to enforce signing to *.wflow files (the old file extension that Workflow used before it became shortcuts, basically the same as the unsigned .shortcut file format) This means you could easily rename a .shortcut to .wflow and import it. Apple patched this in 15b2.</p>
+
+<h3>Re-enabling shortcut importing on iOS 13/14:</h3>
+
+<p>As I mentioned earlier, while shortcut importing is disabled in iOS 13/14, the code for it is still there. By changing the WFShortcutsFileSharingEnabled boolean to true in Shortcut&#8217;s Preferences plist, you can re-enable file importing. It&#8217;s /private/var/mobile/Library/Preferences/com.apple.siri.shortcuts.plist if you want to edit it on a jailbroken device, or you could modify /HomeDomain/Library/Preferences/com.apple.siri.shortcuts.plist in a backup.</p>
+
+<p><a href="https://zachary7829.github.io/blog/shortcuts/fileformat.html">Shortcuts File Format Documentation</a> #archive #capture</p>
+
+</body>
+
+<footer>
+<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="drafts://open?uuid=0AB593FC-8486-4FCE-AA8A-2F27438894A9">Local</a></p>
+</footer>
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>Twitter</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: #000056;
+      --main-color: #ffe8bd;
+      --alternate-bg-color: #1c0021;
+      --alternate-color: #fff4e6;
+      --main-border-color: #f43f32;
+        --link-color: #36fd63;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #fff4e6;
+        --main-color: #00006b;
+        --alternate-bg-color: #fffdeb;
+        --alternate-color: #1c0021;
+        --main-border-color: #f43f32;
+          --link-color: #ff0000;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Twitter</h2>
+
+<h3>Load Twitter Workspace</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> tweet<br />
+<strong>Colour:</strong> gray<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 34777651&#8211;781F-4477-AF11&#8211;6849C2EE1C58<br />
+<strong>Description:</strong><br />
+loads the Twitter Workspace. Used in combination with the <a href="https://docs.getdrafts.com/docs/automation/urlschemes#create">URL Scheme for Creeating a draft</a></p>
+
+<h3>Compose</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong><br />
+<strong>Colour:</strong> none<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 0<br />
+<strong>Unique ID:</strong> 88B1D900&#8211;24B2&#8211;4CC4-B626&#8211;880A8CC99BE6<br />
+<strong>Description:</strong></p>
+
+<h3>Compose New Tweet</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> action_twitter<br />
+<strong>Colour:</strong> green<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> None<br />
+<strong>Log Level:</strong> None<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> B66BF619&#8211;581F-4796&#8211;979D-12F845958F2D<br />
+<strong>Description:</strong></p>
+
+<h3>insert</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> action_at<br />
+<strong>Colour:</strong> violet<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> None<br />
+<strong>Log Level:</strong> None<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 39CBBD51&#8211;86EE-47D8-AA53-F06A0A9C99D9<br />
+<strong>Description:</strong><br />
+inserts an @ for usernames (for mobile)</p>
+
+<h3>insert</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> hashtag<br />
+<strong>Colour:</strong> violet<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> None<br />
+<strong>Log Level:</strong> None<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> D89C47AF-E5CE-4AE0&#8211;9004-E09CF56F83B6<br />
+<strong>Description:</strong><br />
+inserts a hashtag (for mobile)</p>
+
+<h3>Emojify</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 672-emoticon-wink<br />
+<strong>Colour:</strong> violet<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> 40C74493&#8211;42EF-4D3D-9ACF-932C0B4BFE9F<br />
+<strong>Description:</strong><br />
+Swap common words with their matching emoji characters, or reverse the process.</p>
+
+<p>Emoji matches are defined in a variable in the first step of the action, and can be easily modified to support other emoji. Only a few emoji are included as examples, like “pizza”, “dog”, “cat”, “shrug”. Add addition ones by editing the “emojis” variable with other values.</p>
+
+<p>The action also supports the option to require the word be followed by the word “emoji” when the “Require ‘emoji’ keyword is enabled. This works well with dictation to allow you to say, “Do you want to eat pizza emoji?” and later convert only the words you marked with “emoji”.</p>
+
+<h3>Shorten Text</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> arrow-shrink<br />
+<strong>Colour:</strong> violet<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 2F96643B-21B9&#8211;4486&#8211;9154&#8211;071FF97898F7<br />
+<strong>Description:</strong><br />
+Several automatic replacements to shorten the length for a tweet, like &#8220;with&#8221; ➞ &#8220;w/&#8221; or &#8220;something&#8221; ➞ &#8220;sth&#8221;</p>
+
+<p>Contains common abbreviations for Englich and German.
+Submit your own suggestions (or additional languages) via pull request at the <a href="https://github.com/chrisgrieser/twitter-workspace-for-drafts">Github project for the Twitter Workspace</a></p>
+
+<h3>Send One Tweet</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong><br />
+<strong>Colour:</strong> none<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 0<br />
+<strong>Unique ID:</strong> 9DFBA02C-D366&#8211;420D-8A3F-D5D227FCA1AC<br />
+<strong>Description:</strong></p>
+
+<h3>Show 280 char Limit</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> stop-sign<br />
+<strong>Colour:</strong> yellow<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 84CCCC06&#8211;7161&#8211;4B26-B37B-E3477CC1D4B7<br />
+<strong>Description:</strong><br />
+puts a marker at the 280 character limit of Twitter</p>
+
+<h3>Tweet</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> action_twitter_filled<br />
+<strong>Colour:</strong> blue<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> F5958AC2&#8211;5DAE-4926&#8211;927A-4490F56D532A<br />
+<strong>Description:</strong><br />
+Post draft to Twitter. 280 characters max.</p>
+
+<h3>Tweet with #Hashtag</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> action_twitter_filled<br />
+<strong>Colour:</strong> blue<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> 337763E7&#8211;41B1&#8211;441F-8B80&#8211;0B0039465649<br />
+<strong>Description:</strong><br />
+Post draft to Twitter automatically appending a hashtag and archiving the draft after posting.</p>
+
+<h3>Send Multiple Tweets</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong><br />
+<strong>Colour:</strong> none<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 0<br />
+<strong>Unique ID:</strong> FC658682&#8211;2E2A-4E77-B283-DF3D3F759C29<br />
+<strong>Description:</strong></p>
+
+<h3>Suggest Split</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> arrow-diverge<br />
+<strong>Colour:</strong> yellow<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> D97853A4&#8211;439F-4E97-A99F-0715DE171439<br />
+<strong>Description:</strong><br />
+Splits the text into blocks of at most 250 characters (depending on the position of the space), which allows for indexing.</p>
+
+<h3>Tweet Storm</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> action_twitter_filled<br />
+<strong>Colour:</strong> blue<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 4<br />
+<strong>Unique ID:</strong> BF4F8D64&#8211;3B99&#8211;401B-8E62&#8211;31D4A2DF644C<br />
+<strong>Description:</strong><br />
+Divide up a draft into separate tweets by seperator &#8220;==&#8221;.</p>
+
+<p>Build a preview of the tweets as they will be posted and display it. If “Continue” tapped from preview, post each of the tweets as a threaded tweet storm.</p>
+
+<h3>Read</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong><br />
+<strong>Colour:</strong> none<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 0<br />
+<strong>Unique ID:</strong> C09552B0-FB89&#8211;493C-ADBD-4ED8E18AAB36<br />
+<strong>Description:</strong></p>
+
+<h3>Favs of an User</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> heart<br />
+<strong>Colour:</strong> red<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> 17DCF32D-E4C6&#8211;4688-BA44&#8211;2674A02652F7<br />
+<strong>Description:</strong><br />
+Prompt for a Twitter handle, the request a list of their recent likes from the Twitter API. Build a Markdown version of those tweets, put them in a new draft and open it in the editor.</p>
+
+<p>Demonstrates use of the <a href="https://github.com/agiletortoise/drafts-documentation/wiki/Twitter">Twitter object</a> request method to make arbitrary requests to the Twitter API.</p>
+
+<h3>Search Twitter for&#8230;</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> page-search-alt<br />
+<strong>Colour:</strong> red<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> BDB88CD8&#8211;1CA0&#8211;49A6&#8211;8733&#8211;8DAF0EF34EC3<br />
+<strong>Description:</strong><br />
+Prompt for a Twitter search query. Can be for any text string and supports the same syntax used in Twitter web search.</p>
+
+<p>Use Twitter API to get a list of tweets matching the search and import them into a new draft as a Markdown list, with screen name and link to the tweet included.</p>
+
+<p>Posted as an example of Twitter API use in Drafts.</p>
+
+<h3>Preview &amp; Print</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 534-eye<br />
+<strong>Colour:</strong> red<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> 4E38365E-F743&#8211;46E6&#8211;8220&#8211;697A942F4A32<br />
+<strong>Description:</strong><br />
+Markdown preview, print by pressing continue</p>
+
+</body>
+
+<footer>
+<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="drafts://open?uuid=E157F907-69BC-4EA5-8865-C6C805BED45B">Local</a></p>
+</footer>
+</html>

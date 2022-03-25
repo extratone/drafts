@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>[My iPad Setup](https   nipunbatra.github.io blog setup 2021 06 14 setup-ipad.html)</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: #000056;
+      --main-color: #ffe8bd;
+      --alternate-bg-color: #1c0021;
+      --alternate-color: #fff4e6;
+      --main-border-color: #f43f32;
+        --link-color: #36fd63;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #fff4e6;
+        --main-color: #00006b;
+        --alternate-bg-color: #fffdeb;
+        --alternate-color: #1c0021;
+        --main-border-color: #f43f32;
+          --link-color: #ff0000;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1><a href="https://nipunbatra.github.io/blog/setup/2021/06/14/setup-ipad.html">My iPad Setup</a></h1>
+
+<h1>Caveats and Story</h1>
+
+<p>My laptop is broken. I am away from office. I have an iPad Pro 2020. I got my office desktop&#8217;s magic keyboard and trackpad. In this post I am discussing if iPad can help given that I do not have (physical) access to my main computers. Would I recommend this over a main computer - No! But, can you do some things on the iPad reasonably well enough given keyboard and trackpad - Yes!</p>
+
+<h1>The Hardware</h1>
+
+<p>The magic keyboard and the magic trackpad greatly increase the iPad experience and make it programmer friendly.</p>
+
+<figure>
+<img src="%20site.baseurl%20/images/IPAD-Photo.jpeg" alt="" title="Magic Keyboard and Trackpad" />
+<figcaption></figcaption>
+</figure>
+
+<h1>Setting up an iPad for programming</h1>
+
+<h2>Setting up the terminal app (a-Shell)</h2>
+
+<h3>Configuration</h3>
+
+<p>First, after installing a-Shell, I like to set the font size, terminal background and foreground color. Here is how the a-shell app looks like</p>
+
+<figure>
+<img src="%20site.baseurl%20/images/A-shell-initial.png" alt="" title="a-shell on the iPad is my favourite app!" />
+<figcaption></figcaption>
+</figure>
+
+<p><code>config -b black -f white -s 20</code></p>
+
+<h3>Text editing and bookmarks</h3>
+
+<p>Sometimes I like using vim for editing documents and interfacing with WorkingCopy. a-Shell provides vim!</p>
+
+<p>I like to setup a <code>bookmark</code> to the WorkingCopy folder so that I can direcly edit files in that location.</p>
+
+<p>I do so by:
+writing <code>pickFolder</code> in a-Shell and setting it to WorkingCopy folder. Now I can set a bookmark to this location. I do so by:
+<code>bookmark git</code> in the current location (set by pickFolder)</p>
+
+<figure>
+<img src="%20site.baseurl%20/images/Bookmark-Git.png" alt="" title="Setting Bookmark location to WorkingApp -> git" />
+<figcaption></figcaption>
+</figure>
+
+<h3>Git</h3>
+
+<p>Interestingly, the latest testflight version of a-shell also provides a &#8220;Git-like&#8221; interface called <code>libgit2</code>. Configuring it requires specific steps that I&#8217;m writing below. Some of these steps are borrowed from this <a href="https://devmarketer.io/learn/set-ssh-key-github/">nice tutorial</a> and some are specific to a-shell that I was able to get working courtesy a Twitter discussion with the creator of a-shell.</p>
+
+<figure>
+<img src="%20site.baseurl%20/images/Twitter.png" alt="" title="Twitter discussion with the creator of a-shell" />
+<figcaption></figcaption>
+</figure>
+
+<p>Now, the steps.</p>
+
+<p>First, we need to create a new ssh key.</p>
+
+<p>We do so by</p>
+
+<pre><code class="bash">ssh-keygen -t rsa -b 4096 -C &quot;email@domain.com&quot;
+
+</code></pre>
+
+<p>While configuring I did not setup the passphrase.</p>
+
+<p>The private and public keys are stored in <code>.ssh</code> with the name id_rsa</p>
+
+<pre><code class="bash">$ ls -lah .ssh|grep &quot;id&quot;
+-rw-------   1 mobile  mobile   3.3K Jun 14 15:43 id_rsa
+-rw-------   1 mobile  mobile   747B Jun 14 15:43 id_rsa.pub
+</code></pre>
+
+<p>Next, I copied the public key in a newly generated ssh key in Github and gave it a name.</p>
+
+<p>Next, I modified <code>.gitconfig</code> as follows</p>
+
+<pre><code class="bash">$ cat .gitconfig 
+[user]
+        email = MY EMAIL ID
+        name = MY NAME
+        identityFile =  id_rsa 
+</code></pre>
+
+<p>Now, I was almost done!</p>
+
+<p>I was able to push and pull from some old Github repositories but the same did not work with the newer repositories. Again, after a discussion with the creator of a-shell, I figured, this was due to the fact that Github changed the name of the default branch as &#8220;main&#8221; instead of the earlier &#8220;master&#8221; whereas libgit2 implementation was expecting &#8220;master&#8221;.</p>
+
+<p>As a quickfix I renamed the branch on my Github repo as &#8220;master&#8221; and for now set the default branch to be named &#8220;master&#8221;.</p>
+
+<p>Finally, I am able to pull and push to the repositories. The next image infact is showing commits and pushes made to the repository generating the blog post you are reading.</p>
+
+<figure>
+<img src="%20site.baseurl%20/images/libgit-2.png" alt="" title="libgit2 push and commiting" />
+<figcaption></figcaption>
+</figure>
+
+<h3>SSH/SFTP</h3>
+
+<p>There are a couple of amazing apps: Termius and SecureShell. Both have very neat interfaces. I found the intergrations with the Files app very good!</p>
+
+<p>The GIF below shows the SecureShell app in action where I transfer a file from my local storage (iPad) to remote server, process that file, and quickly copy the processed file back to local storage.</p>
+
+<figure>
+<img src="%20site.baseurl%20/images/SecureShell.gif" alt="" title="Working with SecureShell is amazing!" />
+<figcaption></figcaption>
+</figure>
+
+<p>Another great functionality of the SecureShell is the &#8220;Offline&#8221; folder.</p>
+
+<p>Another setting that I use is the Powerline fonts on my remote systems. Using Fontcase, I installed the corresponding powerline fonts on the iPad so that my SecureShell session looks great.</p>
+
+<p>![](%20site.baseurl%20/images/powerline-combined.png &quot;Powerline fonts installed via Fontcase allow special characters on the remote terminalls (above image without powerline font on iPad, below one with powerline font&quot;)</p>
+
+<h3>Some other amazing tools</h3>
+
+<p>I like the &#8220;view&#8221; utility in a-shell a lot. It can quickly help you preview various filetypes.</p>
+
+<figure>
+<img src="%20site.baseurl%20/images/view.gif" alt="" title="The view utility in a-shell" />
+<figcaption></figcaption>
+</figure>
+
+<p>Also, as a quick tip, one can use Command + W to quickly exit the preview and use the back and forward keys to cycle through the files. This is very useful!</p>
+
+<p>I also like the fact that the <code>convert</code> tool now comes in inbuilt. It can convert between a variety of formats easily.</p>
+
+<p><code>pbcopy</code> and <code>pbpaste</code> are very convenient utilities to copy to and from the clipboard. Here is how I copied the content of factorial.py into the clipboard.</p>
+
+<pre><code class="bash">pbcopy &lt; factorial.py  
+</code></pre>
+
+<h3>Shortcuts</h3>
+
+<p>a-Shell interfaces nicely with Shortcuts. The following gif shows an interface where I take an input from Shortcuts app -&gt; Pass it to a Python script and execute it inside a-shell -&gt; Store the results in a text file -&gt; View the content of the text file in Shortcuts.</p>
+
+<figure>
+<img src="%20site.baseurl%20/images/shortcuts.gif" alt="" title="Using shortcuts in a-shell with Python!" />
+<figcaption></figcaption>
+</figure>
+
+<p>The link to this shortcut is <a href="https://www.icloud.com/shortcuts/a04946a553df4e9790b2c352c5663b0a">here</a></p>
+
+<p>The following is the simple Python script I used called factorial.py</p>
+
+<pre><code class="python">import math
+import sys
+
+num = int(sys.argv[1])
+print(f&quot;The factorial of {num} is {math.factorial(num)}&quot;)
+</code></pre>
+
+<p>The following is an image of the shortcut.</p>
+
+<figure>
+<img src="%20site.baseurl%20/images/Shortcut-Working.png" alt="" title="Using shortcuts in a-shell with Python!" />
+<figcaption></figcaption>
+</figure>
+
+<p>Based on the suggestion <a href="https://github.com/holzschu/a-shell/issues/74#issuecomment-861416673">here</a>, I used pbcopy to copy the content to the clipboard and use it directly. It reduces the number of lines!</p>
+
+<figure>
+<img src="%20site.baseurl%20/images/Shortcut-2.png" alt="" title="More efficient version using clipboard" />
+<figcaption></figcaption>
+</figure>
+
+<h2>Using the WorkingCopy App</h2>
+
+<p>WorkingCopy is a very nicely made Git app on the iPad. It is one of the best made apps I have used!</p>
+
+<p>I&#8217;ll let the pictures do the talking.</p>
+
+<figure>
+<img src="%20site.baseurl%20/images/Working-Copy-1.png" alt="" title="WorkingCopy App interface" />
+<figcaption></figcaption>
+</figure>
+
+<figure>
+<img src="%20site.baseurl%20/images/Working-Copy-2.png" alt="" title="WorkingCopy App interfaces nicely with the Files app!" />
+<figcaption></figcaption>
+</figure>
+
+<figure>
+<img src="%20site.baseurl%20/images/Working-Copy-3.png" alt="" title="WorkingCopy App can nicely show the diffs" />
+<figcaption></figcaption>
+</figure>
+
+<h2>Editors</h2>
+
+<p>I use one of the following for editing:</p>
+
+<ul>
+<li>Koder App</li>
+<li>WorkingCopy App</li>
+<li>vim (in a-Shell)</li>
+<li>Textastic</li>
+<li>Typewriter for Markdown — is an editor only for markdown but gives a nice quick preview. The image below shows the screenshot from Typewriter for Markdown app.</li>
+</ul>
+
+<h1>Setting Linux/Mac machine and iPad for Python programming (via Jupyter notebooks)</h1>
+
+<p>On the Linux/Mac (remote server) machines I set up Jupyter notebooks as follows:</p>
+
+<p>First, I create the configuration file via: <code>jupyter notebook --generate-config</code></p>
+
+<p>Next, In <code>~/.jupyter/jupyter_notebook_config.py</code> change</p>
+
+<pre><code class="python">
+c.NotebookApp.ip = '0.0.0.0'
+c.NotebookApp.allow_origin = '*'
+c.NotebookApp.port = SET YOUR PORT
+c.NotebookApp.open_browser = False
+</code></pre>
+
+<p>Set password using:</p>
+
+<pre><code>jupyter notebook password 
+</code></pre>
+
+<p>Run notebook as:</p>
+
+<pre><code class="bash">nohup jupyter notebook&amp; 
+</code></pre>
+
+<p>On the client end (iPad in this case), I use one of the following two ways to access remote Jupyter instances:</p>
+
+<ul>
+<li><p>Using the Juno Connect app
+Juno connectly nicely saves all the configuration and can do the necessary port forwarding</p></li>
+<li><p>Using Safari and opening the remote Jupyter URL
+Just open the remote URL with the set port number. I use my workplace recommended VPN client to get into my workplace network and access non-public IP based servers.</p></li>
+</ul>
+
+<h1>VNC connection</h1>
+
+<p>I tried a few VNC software and found AnyDesk to work fairly well. I did a bunch of small settings tweak.</p>
+
+<ul>
+<li>I setup a password on my remote machine for uninterruped access</li>
+<li>I put AnyDesk in the login items on my remote machine so that it starts when the system boots</li>
+</ul>
+
+<h1>Email client</h1>
+
+<p>I like the Spark app.</p>
+
+<ul>
+<li>The interface is pretty clean.</li>
+<li>It has a bunch of keyboard shortcuts making it nice to use with an external keyboard.</li>
+<li>It is trivial to interface with various cloud providers.</li>
+<li>It is trivial to save an email as a PDF.</li>
+<li>It is trivial to create a &#8220;link&#8221; to an email for sharing.</li>
+</ul>
+
+<h1>PDF management</h1>
+
+<p>The iPad Files app is a fairly well made app. Perhaps not as functional as the Mac Preview app, but, does some things well.</p>
+
+<p>For instance, merging multiple PDFs is easier (for me) than doing the same on Mac. One just needs to select multiple files and then &#8220;right&#8221; click to &#8220;Create PDF&#8221;</p>
+
+<figure>
+<img src="%20site.baseurl%20/images/CombinePDF.gif" alt="" title="Combining PDFs is trivial on the iPad using Files app" />
+<figcaption></figcaption>
+</figure>
+
+<p>I use the following ffmpeg command (inside a-Shell) to create this GIF courtesy this excellent tutorial from <a href="https://engineering.giphy.com/how-to-make-gifs-with-ffmpeg/">GIPHY folks</a></p>
+
+<h1>PDF viewing</h1>
+
+<p>The Documents app has a very nice pdf viewing experience. It gives the &#8220;full-screen&#8221; experience on connected displays and can potentially be an excellent pdf viewer for showing my slides on the projector in the classroom setting.</p>
+
+<figure>
+<img src="%20site.baseurl%20/images/PDF-view.png" alt="" title="Documents app is an excellent PDF viewer!" />
+<figcaption></figcaption>
+</figure>
+
+<p>Another advantage of the Documents app PDF viewer is that we can change the tone to Sepia or Dark. The following image shows the view I get when I change the tone to Dark.</p>
+
+<figure>
+<img src="%20site.baseurl%20/images/PDF-view-dark.png" alt="" title="The dark tone with the click of a button is an amazing feature!" />
+<figcaption></figcaption>
+</figure>
+
+<p>When connected to an external display, the PDF viewer gives various options. In the next image, I show the view when I &#8220;focus&#8221; on a part of the slide.</p>
+
+<figure>
+<img src="%20site.baseurl%20/images/PDF-view-focus.png" alt="" title="Focusing on parts of pdf" />
+<figcaption></figcaption>
+</figure>
+
+<p>Finally, the image below shows the &#8220;focused&#8221; slide on the external display.</p>
+
+<figure>
+<img src="%20site.baseurl%20/images/PDF-screen-focus.jpeg" alt="" title="Focusing on parts of pdf on external display" />
+<figcaption></figcaption>
+</figure>
+
+<pre><code class="bash">ffmpeg -i Video.MP4  -filter_complex &quot;[0:v]  fps=12,scale=720:-1,split [a][b];[a] palettegen [p];[b][p] palette
+use&quot; CombinePDF.gif
+</code></pre>
+
+<p>Another alternative is to use the <a href="https://www.icloud.com/shortcuts/f9a9c2cc6e61476abf2e35f654869553&amp;xcust=1-1-232739-0-0-0&amp;">following shortcut</a> to convert the screen recorded video into a GIF</p>
+
+<h1>Some Safari keyboard shortcuts</h1>
+
+<ul>
+<li>Command + W for closing a tab</li>
+<li>Command + L for going to the address bar (sometimes on tabs I am not automatically on the address bar)</li>
+</ul>
+
+<h1>Conclusions (and rants)</h1>
+
+<p>For the long run, ofcourse, I would not recommend this kind of a setup. There is some learning and fun in getting a &#8220;resticted&#8221; device to function well, but as a main machine, probably no, at least not for the next few months. A comparably priced laptop (say M1 Macbook Air) would offer a lot more.</p>
+
+<p>There are many things I&#8217;m missing:</p>
+
+<ul>
+<li>Projection to a projector and screen recording do not work at the same time.</li>
+<li>No proper dev environment like VSCode</li>
+<li>A lot of screen size is &#8220;wasted&#8221; due to the OS</li>
+<li>A lot of the apps are not as good as I&#8217;d like. For instance, perhaps a minor thing, but the Youtube app doesn&#8217;t have a keyboard shortcut for full screen. One can ofcourse do the same on Safari. iMovie in Mac has a remove background noise feature that works very well. The iPad version does not have the same.</li>
+<li>Safari though much improved over the years is not as functional as Safari on the Mac</li>
+<li>While quicklook/Files is good, the functionality of something like Preview is hard to beat</li>
+<li>The files app can not show hidden files and folders</li>
+<li>Powerpoint does not have features like audio recording (though can play)</li>
+<li>Keynote, Pages, Numbers require additional clicks than their Mac counterparts</li>
+<li>When I connect to an external display, I get thick black bars and moreover, if the monitor does not give me an HDMI out, I can not hear audio as the audio is also routed. As good as the iPad&#8217;s display is, it is not huge and strains my eyes after a while.</li>
+<li>Copy pasting using the keyboard is a hit and miss. For instance, it fails several times for me when copying from a pdf. Right clicking and copy seems to always work, but, it is more steps than Command C, Command V.</li>
+<li>I miss some quality apps like OBS Studio, especially being an academic teaching remotely due to the pandemic.</li>
+<li>While a-shell is amazing, it is limited by what webassembly can do. At the time of writing, it does not support multithreading and thus the performance of utilities like <code>ffmpeg</code> is severely limited. Also, a-shell programs can not be stopped intermediate in their execution. See the following two bugs on Github related to this:
+
+<ul>
+<li>https://github.com/holzschu/a-shell/issues/270</li>
+<li>https://github.com/holzschu/a-shell/issues/269</li>
+</ul></li>
+</ul>
+
+<p>Some of the above may be resolved over the next updates and the major iPadOS15 updates. Though, I do not expect most of them to be resolved anytime soon.</p>
+
+</body>
+
+<footer>
+<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="drafts://open?uuid=058D531A-69F5-4218-93D2-D3395F380789">Local</a></p>
+</footer>
+</html>

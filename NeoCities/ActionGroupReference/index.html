@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>ActionGroupReference</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: #fff4e6;
+      --main-color: #000000;
+      --alternate-bg-color: #efefef;
+      --alternate-color: #222222;
+      --main-border-color: #BBBBBB;
+        --link-color: #627EC9;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #222222;
+        --main-color: #eeeeee;
+        --alternate-bg-color: #444444;
+        --alternate-color: #cccccc;
+        --main-border-color: #AAAAAA;
+          --link-color: #627EC9;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>ActionGroupReference</h1>
+
+<ul>
+<li><a href="https://actions.getdrafts.com/g/1uF">Drafts Directory</a></li>
+<li><a href="https://github.com/extratone/drafts/issues/13">NeoCities/WebDAV Action Group · Issue #13 · extratone/drafts</a></li>
+<li>[[WebDAV Service - Drafts User Guide]]</li>
+</ul>
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/150894801-5e536946-969f-4910-a22a-24cde4c4c6e1.png" alt="NeoCitiesActionGroupPreview" />
+<figcaption>NeoCitiesActionGroupPreview</figcaption>
+</figure>
+
+<h2>Social</h2>
+
+<ul>
+<li><a href="https://canary.discord.com/channels/763850583823482880/763850583823482883/935415154022187038">NeoCities Chatroom Discord Message Link</a></li>
+<li><a href="x-apple-reminderkit://REMCDReminder/D89261F2-BDA9-4A5E-AC12-BFF14F04FF61">Reminder</a></li>
+</ul>
+
+<h3>Suggestions/Requests for a WebDAV (NeoCities, in my case) Action Group</h3>
+
+<p><a href="https://forums.getdrafts.com/t/suggestions-requests-for-a-webdav-neocities-in-my-case-action-group/11994">Suggestions/Requests for a WebDAV (NeoCities, in my case) Action Group - Actions - Share What You&#8217;ve Made - Drafts Community</a></p>
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/150894801-5e536946-969f-4910-a22a-24cde4c4c6e1.png" alt="NeoCitiesActionGroupPreview" />
+<figcaption>NeoCitiesActionGroupPreview</figcaption>
+</figure>
+
+<p>Howdy folks! After discovering that Drafts includes <a href="https://docs.getdrafts.com/docs/actions/steps/services#webdav">a WebDAV service</a> a few days ago, I&#8217;ve been toying around with my first attempt at Action development from scratch. I&#8217;ve long fantasized about a more direct way to interact with my NeoCities site(s) - (NeoCities supports WebDAV as its exclusive means of remote file management.) The end goal for the Action Group would be to utilize Drafts' WebDAV support to its absolute fullest extent to interact with/manage files on a web server over WebDAV.</p>
+
+<p>So far, I&#8217;ve been able to push drafts to the server successfully but only when titled by UUID or Timestamp. (<code>[[uuid]].html/[[time]].html</code>) When I try to use <code># ActionGroupReference</code> or <code>ActionGroupReference</code>, the resulting path is unreadable for some reason.</p>
+
+<p>Anywho, I thought I&#8217;d open a thread here. Any suggestions/tips from those of you with more experience developing actions are more than welcome!</p>
+
+<p>Here&#8217;s <a href="https://actions.getdrafts.com/g/1uF">the (unlisted) Action Directory link</a> for those with the time/curiosity to check on my progress.</p>
+
+</body>
+
+<footer>
+ 2022-01-25-2022-01-25-01-09-36
+`3BA64907-441A-4F34-9F4D-DB39E6EFF898`
+```
+meta, drafts, dev, duplicate
+```
+</footer>
+</footer>
+</html>

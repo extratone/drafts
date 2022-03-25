@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>Data Jar List</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: #000056;
+      --main-color: #ffe8bd;
+      --alternate-bg-color: #1c0021;
+      --alternate-color: #fff4e6;
+      --main-border-color: #f43f32;
+        --link-color: #36fd63;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #fff4e6;
+        --main-color: #00006b;
+        --alternate-bg-color: #fffdeb;
+        --alternate-color: #1c0021;
+        --main-border-color: #f43f32;
+          --link-color: #ff0000;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Data Jar List</h1>
+
+<h2>Add a list of text or URLs to a List in Data Jar.</h2>
+
+<ul>
+<li><a href="https://routinehub.co/shortcut/10730/">RoutineHub Page</a></li>
+<li><a href="https://www.icloud.com/shortcuts/5ba8519fad7d468cacc62e4b2d86b8bd">iCloud Share Link</a></li>
+<li><a href="https://github.com/extratone/i/issues/118">Data Jar Utility · Issue #118 · extratone/i</a></li>
+<li><a href="https://showcuts.app/share/view/5ba8519fad7d468cacc62e4b2d86b8bd">Showcuts</a>	</li>
+<li><a href="https://shareshortcuts.com/shortcuts/1554-data-jar-list.html">ShareShortcuts</a></li>
+</ul>
+
+<pre><code>https://user-images.githubusercontent.com/43663476/147396567-e36fa240-b271-4e9e-993c-1be4ee997b3e.png
+https://user-images.githubusercontent.com/43663476/147396569-23e09219-dbeb-4274-a8b9-71f803937b84.png
+https://user-images.githubusercontent.com/43663476/147396570-8b94437f-33df-4e09-b176-913fad175740.png
+</code></pre>
+
+<hr />
+
+<h2>About</h2>
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/147396658-155425cb-eb8c-40ea-a729-ff7ae90644b3.png" alt="Data Jar Logo" />
+<figcaption>Data Jar Logo</figcaption>
+</figure>
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/147396580-959bcc02-55da-4a62-b892-5fb02cfcf57d.png" alt="Data Jar List Shortcut Actions" />
+<figcaption>Data Jar List Shortcut Actions</figcaption>
+</figure>
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/147396552-09cfa316-48fb-4f50-80f5-426842d67e98.png" alt="Data Jar List Result" />
+<figcaption>Data Jar List Result</figcaption>
+</figure>
+
+<p>There are many other, far more capable Shortcuts available <a href="https://routinehub.co/app/1453273600/">on RoutineHub</a> and elsewhere which accomplish the entire function of this one as well as a whole bunch more. It&#8217;s largely for those like myself who&#8217;ve struggled to learn <code>Repeat With Each</code>. It took me way too long, so I feel y&#8217;all.</p>
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/147396545-2ca3f3e8-c614-43c8-9002-5a269fb9c6b9.png" alt="Data Jar List Source" />
+<figcaption>Data Jar List Source</figcaption>
+</figure>
+
+<h3>Steps</h3>
+
+<ol>
+<li>Text or URLs are received as input or the clipboard is retrieved.</li>
+<li><a href="https://www.matthewcassinelli.com/actions/split-text/">Split Text</a> parses said input by <code>New Lines</code>.</li>
+<li><a href="https://www.matthewcassinelli.com/actions/ask-for-input/">Ask for Input</a> asks you for the name (&#8220;key&#8221;) of the Data Jar you&#8217;d like to add to. It&#8217;ll always be lowercase.</li>
+<li><a href="https://www.matthewcassinelli.com/actions/set-variable/">Set Variable</a> sets variable <code>key</code> to said input.</li>
+<li>Each item in the result from step 2 is added to the beginning of the list specified by step 3.</li>
+</ol>
+
+<h2>Video Demo</h2>
+
+<ul>
+<li><a href="https://youtu.be/c_XeTCD3nuY">YouTube</a></li>
+<li><a href="https://twitter.com/NeoYokel/status/1474930736977223681">David Blue ※ (𝙶 𝚄 𝚁 𝚄 𝙼𝙾𝙳𝙴) on Twitter: &#8220;surprisingly, I hadn&#8217;t been able to find a simple, flexible Data Jar list shortcut on RoutineHub so here ya go! https://t.co/UyHirD8ZC0 https://t.co/IJa5amWE9A&#8221; / Twitter</a></li>
+<li><a href="https://diode.zone/w/xzu2WXthdT9ttXUXqRGu7U">Diode Zone</a></li>
+</ul>
+
+<pre><code>&lt;iframe title=&quot;Data Jar Utility Demo&quot; width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://diode.zone/videos/embed/ffb81e82-507a-4ff9-ae83-5e456602b990&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot; sandbox=&quot;allow-same-origin allow-scripts allow-popups&quot;&gt;&lt;/iframe&gt;
+</code></pre>
+
+<h2>Other Links/Resources</h2>
+
+<ul>
+<li><a href="https://support.apple.com/en-lk/guide/shortcuts/apd9ba41d21b/ios">Handling lists in Shortcuts on iPhone or iPad)</a> | Apple Support</li>
+<li><a href="https://support.apple.com/en-lk/guide/shortcuts/apdc11deb2c1/ios">Use Repeat actions in Shortcuts on iPhone or iPad)</a> | Apple Support</li>
+<li><a href="https://routinehub.co/app/1453273600/">Other Shortcuts that use Data Jar</a></li>
+</ul>
+
+</body>
+
+<footer>
+<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="drafts://open?uuid=C8D51156-F8D8-4856-932A-FAB2188687C6">Local</a></p>
+</footer>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>Notes - Mastodon for iOS (The “Official” App)</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: #000056;
+      --main-color: #ffe8bd;
+      --alternate-bg-color: #1c0021;
+      --alternate-color: #fff4e6;
+      --main-border-color: #f43f32;
+        --link-color: #36fd63;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #fff4e6;
+        --main-color: #00006b;
+        --alternate-bg-color: #fffdeb;
+        --alternate-color: #1c0021;
+        --main-border-color: #f43f32;
+          --link-color: #ff0000;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Notes - Mastodon for iOS (The “Official” App)</h1>
+
+<p>[[Mastodon for iOS Review]]</p>
+
+<p><code>![Mastodon for iOS](https://i.snap.as/sHTDx8AV.png)</code></p>
+
+<figure>
+<img src="https://i.snap.as/hqmcJQGx.jpg" alt="Mastodon for iOS QR Code" />
+<figcaption>Mastodon for iOS QR Code</figcaption>
+</figure>
+
+<p>&#8220;<a href="https://www.theverge.com/2021/7/30/22602275/mastodon-decentralized-social-network-official-ios-app-launches">Mastodon now has an official iPhone app</a>&#8221; | <em>The Verge</em></p>
+
+<ul>
+<li><a href="https://apps.apple.com/us/app/mastodon-for-iphone/id1571998974"><strong>App Store Page</strong></a> - <code>https://apps.apple.com/us/app/mastodon-for-iphone/id1571998974</code></li>
+<li><a href="https://tools.applemediaservices.com/app/1571998974">Media Services App Store Page</a></li>
+<li><a href="https://github.com/mastodon/mastodon-ios">GitHub Repository</a></li>
+<li><a href="https://github.com/extratone/bilge/issues/195">The GitHub Issue</a></li>
+<li><a href="https://www.patreon.com/mastodon">The Mastodon Project Patreon page</a></li>
+<li><a href="https://developer.apple.com/documentation/Xcode/supporting-associated-domains">Supporting Associated Domains</a> | Apple Developer Documentation</li>
+<li><a href="https://github.com/extratone/bilge/blob/main/curation/mastodonfollowing.csv">List of my followed accounts</a></li>
+</ul>
+
+<h2>Siri Shortcuts</h2>
+
+<ul>
+<li><a href="https://routinehub.co/shortcut/9776/">Mastodon Share</a> - <code>https://routinehub.co/shortcut/9776/</code></li>
+<li><a href="https://routinehub.co/shortcut/9781/">Mastgur</a> - <code>https://routinehub.co/shortcut/9781/</code></li>
+</ul>
+
+<h2>Video</h2>
+
+<ul>
+<li><a href="https://youtu.be/bD8GQvNrE7E">My onboarding demo</a></li>
+<li><a href="https://mastodon.online/@keys">The account I created in the demo</a> - <code>https://mastodon.online/@keys</code></li>
+</ul>
+
+<h2>Mastodon for iOS Keyboard Shortcuts</h2>
+
+<table>
+<colgroup>
+<col style="text-align:center;"/>
+<col style="text-align:center;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:center;"> Action       </th>
+	<th style="text-align:center;"> Key  </th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:center;"> Open Compose Window   </td>
+	<td style="text-align:center;"> ⌘ + N  </td>
+</tr>
+<tr>
+	<td style="text-align:center;"> Send Toot      </td>
+	<td style="text-align:center;"> ⌘ + Return </td>
+</tr>
+<tr>
+	<td style="text-align:center;"> Home Timeline/Refresh Timeline </td>
+	<td style="text-align:center;"> ⌘ + 1  </td>
+</tr>
+<tr>
+	<td style="text-align:center;"> Explore Tab     </td>
+	<td style="text-align:center;"> ⌘ + 2  </td>
+</tr>
+<tr>
+	<td style="text-align:center;"> Notifications     </td>
+	<td style="text-align:center;"> ⌘ + 3  </td>
+</tr>
+<tr>
+	<td style="text-align:center;"> Favorites      </td>
+	<td style="text-align:center;"> ⌘ + F  </td>
+</tr>
+<tr>
+	<td style="text-align:center;"> Settings      </td>
+	<td style="text-align:center;"> ⌘ + ,  </td>
+</tr>
+</tbody>
+</table>
+
+<p>(<a href="https://github.com/extratone/bilge/blob/main/documentation/Masto/MastodonKeys.md">Markdown file in the Repo</a>)</p>
+
+<h2>Photos</h2>
+
+<ul>
+<li><code>![Onboarding in Mastodon for iOS](https://i.snap.as/P5oxTAg9.png)</code></li>
+<li><code>![Trending &amp; Profile Editing in Mastodon for iOS](https://i.snap.as/F21Jm29Q.png)</code></li>
+<li><code>![Mastodon for iOS Audio Player](https://i.snap.as/IRzEOzXl.png)</code></li>
+<li><code>![Polling in Mastodon for iOS](https://i.snap.as/NKHk8e1W.png)</code></li>
+<li><code>![Elephants at Play - Mastodon for iOS](https://i.snap.as/P092W1IO.png)</code></li>
+<li><code>![Mastodon Share Siri Shortcut](https://i.snap.as/rzxVoniy.png)</code></li>
+<li><code>![Composition Details in Mastodon for iOS](https://i.snap.as/3PreFFPx.png)</code></li>
+<li><code>![Mastodon for iPhone - Universal Clacker Award](https://i.snap.as/H7NjCvd7.png)</code></li>
+<li><code>![Composition Details in Mastodon for iOS](https://i.snap.as/7UTf6Qyx.png)</code></li>
+</ul>
+
+<p><strong>Custom Audio players!</strong>
+<code>![Custom Audio Players](https://user-images.githubusercontent.com/43663476/123793971-f49d0000-d8a7-11eb-80cf-d5423992468e.png)</code></p>
+
+<pre><code>&lt;audio controls&gt;
+  &lt;source src=&quot;https://github.com/extratone/bilge/raw/main/audio/MastodonBoop.mp3&quot;&gt;
+&lt;/audio&gt;
+</code></pre>
+
+</body>
+
+<footer>
+<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="drafts://open?uuid=DE4D9E6C-08EE-4CA1-B4F0-DD5332A6D64F">Local</a></p>
+</footer>
+</html>

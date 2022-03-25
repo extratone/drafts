@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>Notes - Min Browser Review</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: #000056;
+      --main-color: #ffe8bd;
+      --alternate-bg-color: #1c0021;
+      --alternate-color: #fff4e6;
+      --main-border-color: #f43f32;
+        --link-color: #36fd63;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #fff4e6;
+        --main-color: #00006b;
+        --alternate-bg-color: #fffdeb;
+        --alternate-color: #1c0021;
+        --main-border-color: #f43f32;
+          --link-color: #ff0000;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Notes - Min Browser Review</h1>
+
+<ul>
+<li><a href="https://github.com/extratone/bilge/issues/10">&#8220;Min Browser Review&#8221; · Issue #10 · extratone/bilge</a></li>
+<li><a href="https://discord.com/channels/764269005195968512/764560513668612166/908950896925372436">Logo Alteration Request</a></li>
+<li>Yes, it&#8217;s an Electron app&#8230; Except without any of the disadvantages/problems I&#8217;ve ever encountered in other Electron apps.</li>
+</ul>
+
+<h2>References</h2>
+
+<ul>
+<li>[ ] <a href="https://www.theverge.com/2021/11/15/22782802/microsoft-block-edgedeflector-windows-11">Microsoft blocks EdgeDeflector to force Windows 11 users into Edge</a> | <em>The Verge</em></li>
+</ul>
+
+<hr />
+
+<h2>Legacy</h2>
+
+<ul>
+<li><p>[ ] Min blocks ads by default.</p></li>
+<li><p>[ ] &#8220;<a href="https://tedium.co/2020/05/12/minimal-web-browser-argument/">Browse Minimally</a>&#8221; | <em>Tedium</em></p></li>
+</ul>
+
+<blockquote>
+<p> Around for a couple of years, this browser essentially takes out as much cruft as it possibly can from the experience. (&#8230;)
+
+ I think the reason why the browser is so effective at its goal of minimalism is because of <em>how</em> it manages tab overload. Rather than simply letting tabs fill up, you’re encouraged to create “tasks” that let you divide different use cases up. As a writer, the way I’ve been using tasks has been to create a new one for every story I write and research, so that I can separate those ideas out without them getting in the way of everything else. (I can also hide the usual junk that sits in the pinned tabs in its own task.)</p>
+</blockquote>
+
+<ul>
+<li>[ ] &#8220;<a href="https://slate.com/technology/2018/09/browser-tab-mangement-strategy-plugins.html">Let Your Unread Tabs Pile Up</a>&#8221; | <em>Slate</em></li>
+</ul>
+
+<blockquote>
+<p> An overabundance of tabs is a well-established problem among those who spend their entire days combing the internet, where distraction reigns king.</p>
+</blockquote>
+
+<ul>
+<li><p>[ ] &#8220;<a href="https://linuxinsider.com/story/Min-Browser-Muffles-the-Webs-Noise-84212.html">Min Browser Muffles the Web’s Noise</a>&#8221; | <em>Linux Insider</em></p></li>
+<li><p>[ ] &#8220;<a href="https://itsfoss.com/min-an-open-source-web-browser-for-minimalists/">Min: An Open Source Web Browser for Minimalists</a>&#8221; | <em>It&#8217;s FOSS</em></p></li>
+<li><p>[ ] &#8220;<a href="https://opensource.com/article/18/10/min-web-browser">Browsing the web with Min, a minimalist open source web browser</a>&#8221; | <em>OpenSource.com</em></p></li>
+<li><p>[ ] &#8220;<a href="https://dev.to/wangonya/minimalist-browsing-with-min-browser-1p0c">Minimalist browsing with Min browser</a>&#8221; | <em>Dev</em></p></li>
+<li><p>[ ] Reading view is a little slow.</p></li>
+<li><p>[ ] &#8220;Return to your previous task&#8221; is a lot more useful than &#8220;open where you left off.&#8221;</p></li>
+<li><p>[ ] Browsing entirely centered around the search bar.</p></li>
+<li><p>[ ] It would be nice to be able to preview hyperlinks in the left-bottom corner just by hovering on them instead of having to right-click.</p></li>
+<li><p>[ ] Customizable hotkeys are brilliant.</p></li>
+<li><p>[ ] You cannot move tabs around, which supports Min&#8217;s minimal tab argument.</p></li>
+<li><p>[ ] “<a href="https://youtu.be/DgFS1Do_1As">I’m leaving Firefox</a>” video</p></li>
+</ul>
+
+</body>
+
+<footer>
+<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="drafts://open?uuid=C08A29C7-39AF-4CEC-A54B-09EA663AD450">Local</a></p>
+</footer>
+</html>

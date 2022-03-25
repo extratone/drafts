@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>Examples (Mac)  AppleScript & Shell Script</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: #000056;
+      --main-color: #ffe8bd;
+      --alternate-bg-color: #1c0021;
+      --alternate-color: #fff4e6;
+      --main-border-color: #f43f32;
+        --link-color: #36fd63;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #fff4e6;
+        --main-color: #00006b;
+        --alternate-bg-color: #fffdeb;
+        --alternate-color: #1c0021;
+        --main-border-color: #f43f32;
+          --link-color: #ff0000;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Examples (Mac): AppleScript &amp; Shell Script</h2>
+
+<h3>AppleScript: Show Draft</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> script<br />
+<strong>Colour:</strong> blue<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> BE045E85-F99E-4B8C-A43F-B9A4F73498D3<br />
+<strong>Description:</strong><br />
+Example action which demonstrates using an AppleScript in Drafts. This version just displays a dialog with the contents of the current draft, which are passed to the Run AppleScript step.</p>
+
+<h3>AppleScript: Handle Response</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> script<br />
+<strong>Colour:</strong> blue<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> 73868FD4-D7AE-4F9A-B3D8&#8211;44DAC5D3EBF1<br />
+<strong>Description:</strong><br />
+Example action demonstrating how to get response data from an AppleScript in subsequent script steps.</p>
+
+<h3>AppleScript: Run From Script</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> script<br />
+<strong>Colour:</strong> orange<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> AB69CCD0&#8211;2E8D-4E7B-A0C7&#8211;6D169C61FDFA<br />
+<strong>Description:</strong><br />
+Demonstrates calling AppleScript from JavaScript in a Script step.</p>
+
+<h3>ShellScript: Bash Example</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> code-alt<br />
+<strong>Colour:</strong> none<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> 4BAA2DE4&#8211;0A19&#8211;4B9F-A78A-525C562BF300<br />
+<strong>Description:</strong><br />
+Run simple bash shell script via script. Mac only.</p>
+
+<h3>ShellScript: Ruby Example</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> code-alt<br />
+<strong>Colour:</strong> none<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> 5E6300B2&#8211;7A93&#8211;4990-AED5-DFDD4681E2C5<br />
+<strong>Description:</strong><br />
+Run simple shell Ruby shell script. Mac only.</p>
+
+<h3>Demo</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong><br />
+<strong>Colour:</strong> none<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 0<br />
+<strong>Unique ID:</strong> 04A11404&#8211;4EB4&#8211;4A1E-AD3E-8D6462DDF81D<br />
+<strong>Description:</strong></p>
+
+<h3>New Draft with Safari Tabs</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> script<br />
+<strong>Colour:</strong> blue<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 2<br />
+<strong>Unique ID:</strong> 7834EBC2&#8211;84A4&#8211;4361&#8211;9468&#8211;5C7A8A58B22B<br />
+<strong>Description:</strong><br />
+Use AppleScript to gather all current tabs open in Safari and create a Markdown list in a new draft containing the title and URL of the pages in each tab.</p>
+
+</body>
+
+<footer>
+<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="drafts://open?uuid=39E1C378-D9B7-441C-8CE3-B45EBDC6A181">Local</a></p>
+</footer>
+</html>

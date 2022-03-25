@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>Telegram Extras</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: #000056;
+      --main-color: #ffe8bd;
+      --alternate-bg-color: #1c0021;
+      --alternate-color: #fff4e6;
+      --main-border-color: #f43f32;
+        --link-color: #36fd63;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #fff4e6;
+        --main-color: #00006b;
+        --alternate-bg-color: #fffdeb;
+        --alternate-color: #1c0021;
+        --main-border-color: #f43f32;
+          --link-color: #ff0000;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Telegram Extras</h1>
+
+<p>[[Notes-Telegram Extras]]</p>
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/151065307-88e3eaa0-ce93-4a89-b91c-c50fb649cc4d.png" alt="TelegramShortcuts" />
+<figcaption>TelegramShortcuts</figcaption>
+</figure>
+
+<h2>Shortcuts, bots, and some other methodologies discovered since my Big Telegram Post.</h2>
+
+<!--more-->
+
+<p>Since I published “<a href="https://bilge.world/telegram">I Trust Telegram</a>,” the messenging service has been <em>in the news</em>. Their launch of <a href="https://t.me/s/durov/172">Sponsored Messages</a> predated its publication, but I omitted any mention of them because I’d yet to see any meaningful effects on my own use of the service. All I’ll say now: nearly four months of daily use later, <strong>this is still the case</strong>. I’ve published a few Siri Shortcuts and a Drafts action in the interim, though, and thought these a few additional discoveries worth another post.</p>
+
+<h2>Siri Shortcuts</h2>
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/152031447-334443d7-f038-4518-b65c-2e3305597bdd.png" alt="SeekTelegramMessagebyID" />
+<figcaption>SeekTelegramMessagebyID</figcaption>
+</figure>
+
+<h3><a href="https://routinehub.co/shortcut/10930">Seek Telegram Message by ID</a></h3>
+
+<p>As <a href="https://hyp.is/miMJ-oOQEeyVkGegS1hLbw/bilge.world/telegram">I noted in the Big Telegram Post</a>, navigating to/referencing specific messages in Telegram is ridiculously easy due to its URL format: <code>https://t.me/[Channel@]/[Chronological Message ID]</code> My Seek Messages by ID shortcut will prompt you to set defaults for both Channel @ and message number upon installation. This could be useful for channel/group administrators who need to reference/update a message containing community rules, but specifying them is entirely optional. Otherwise, the shortcut will prompt you to enter a channel or group’s @ (minus the symbol itself,) followed by the numeric ID of the message you’re looking for. It will then copy the complete URL to the clipboard and open it in <a href="https://apps.apple.com/us/app/telegram-messenger/id686449807">Telegram Messenger for iOS</a>. I’ve found it handy when joining a new channnel/group to quickly indulge my curiosity about its first few messages.</p>
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/152036933-ec106c9c-474d-4c5a-ab0e-ad7da6a97f7a.png" alt="URLListtoTelegram" />
+<figcaption>URLListtoTelegram</figcaption>
+</figure>
+
+<h3><a href="https://routinehub.co/shortcut/10926">URL List ⇨ Telegram</a></h3>
+
+<p>Effectively, this shortcut allows you to send links to a set of Safari 15 tabs to a contact of your choice in Telegram. It’s the singular one of the shortcuts shared in this Post that makes use of Telegram Messenger for iOS’ native Siri Shortcuts actions, and is therefore the most finnicky. In the first take of <a href="https://t.me/extratone/9978">my video demo</a>, it timed out trying to send 200+ links to my Saved Messages channel, but was successful in the second (the take I published) in sending just four links. Upon each run, the shortcut will prompt you to select a contact. The selection <em>must</em> be a phone number, ideally in International Format.<a href="#fn:1" id="fnref:1" title="see footnote" class="footnote"><sup>1</sup></a> It will then parse a list of URLs in your clipboard and send them one at a time via Telegram’s native action without opening the app.</p>
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/152039638-f5e6e817-3b36-4cc2-bf74-184ad6dde9c4.png" alt="ClipboardtoTelegramMessage" />
+<figcaption>ClipboardtoTelegramMessage</figcaption>
+</figure>
+
+<h3><a href="https://routinehub.co/shortcut/10929">Clipboard ⇨ Telegram Message</a></h3>
+
+<p>This one makes use of Telegram Messenger for iOS’ URL scheme, which isn’t really documented properly anywhere.</p>
+
+<p><code>tg://msg?text=[Content]&amp;to=[TargetPhone#]</code></p>
+
+<p>Upon installation, the shortcut will prompt you to specify a target phone number in International Format. In the following runs, the shortcut will open Telegram to the conversation with the phone number you’ve specified (use your own phone number to set it to your personal Saved Messages channel) with the contents of your clipboard in the text entry field. You’ll need to hit <code>Enter</code> or tap the Send Message button to actually send the content.</p>
+
+<h2>Other Integrations</h2>
+
+<h3>Drafts</h3>
+
+<p>Users of Agile Tortoise’s <a href="https://apps.apple.com/us/app/drafts/id1236254471">Drafts for iOS</a> can use my <a href="https://actions.getdrafts.com/a/1u5">Send Draft to Telegram Saved Messages action</a> to do exactly that.</p>
+
+<p>https://twitter.com/NeoYokel/status/1488573937223094275</p>
+
+<p>Like the last Siri Shortcut above, the action utilizes Telegram’s URL scheme to send the contents of your current draft to a Telegram conversation with a phone number of your choosing. (Remember to change the action’s placeholder!)</p>
+
+<p>If you’d like to specify a different conversation, <a href="https://actions.getdrafts.com/a/18E">this action</a> published to the Action Directory by user maique omits the phone number bit of the URL scheme - <code>tg://msg?=[DraftContent]</code>.</p>
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/152044387-3302150d-a9b1-44a4-a2fa-a48d35d29faa.png" alt="TelegramTextExpanderGroup" />
+<figcaption>TelegramTextExpanderGroup</figcaption>
+</figure>
+
+<h3>TextExpander</h3>
+
+<p>Group and/or channel administrators, especially, might find my public <a href="https://app.textexpander.com/public/de52c54ef169a96393d50cb4752706ce">Telegram-specific TextExpander snippet group</a> to contain some useful inspiration. <code>.tid</code>, for example, will help you construct a Telegram message link by ID just as the first Shortcut in this Post will, while <code>.scheme</code> will replicate the app’s URL scheme.</p>
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/152045888-b10c1a1a-d924-479d-8f04-24d4efa688a1.png" alt="TotandTelegram" />
+<figcaption>TotandTelegram</figcaption>
+</figure>
+
+<h3>Tot</h3>
+
+<p>If you happen to have <a href="https://apps.apple.com/us/app/tot-pocket/id1498235191">Tot Pocket</a> on your iOS device already, I’ve found it a particularly ideal place to compose Telegram messages with formatting and hyperlinks considering its similar format limitations. Drafts users can use my <a href="https://actions.getdrafts.com/a/1uL">Append to 7th Tot Dot action</a> to send draft content to the last Dot directly. Some markdown formatting will need to be altered - #-headings aren’t supported by either Tot or Telegram, for instance - but formatting can be directly carried over to Telegram in Rich Text format by selecting all in Tot and copying, as displayed in the screenshots embedded above.</p>
+
+<h2>Bots</h2>
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/152048357-bba6ddb6-eb0d-4139-ba6e-79b69ef9651a.png" alt="TelegramRaindropBot" />
+<figcaption>TelegramRaindropBot</figcaption>
+</figure>
+
+<h3><a href="https://t.me/raindropiobot">Raindrop.io Bot</a></h3>
+
+<p>As far as I’m concerned, @OlegWock’s <a href="https://github.com/OlegWock/raindrop-telegram-bot">Raindrop Telegram Bot</a> is an absolute must for any users of the Raindrop.io bookmarking service. Not only does it allow one to send Raindrop bookmarks directly to a chat when in inline mode (as demonstrated in the above screenshots) - it is also <em>the</em> quickest method of saving images, videos, and documents to one’s Unsorted Bookmarks list on an iOS-running device. As I <a href="https://hyp.is/bGmFuoOgEeyp5F9tAvJq-w/bilge.world/telegram">mentioned in the Big Post</a>, Telegram’s sharesheet integration remains by far the least discriminate of any such integration on iOS.</p>
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/152051128-e6a3d557-e2d5-4c84-b881-a35825b73375.png" alt="RoseTelegramBot" />
+<figcaption>RoseTelegramBot</figcaption>
+</figure>
+
+<h3><a href="https://t.me/MissRose_bot">Rose</a></h3>
+
+<p>I’ve gone through the standard gauntlet of freemium administration bots for <a href="https://t.me/columbiamo">my experimental local Telegram group</a>. The one I think I’ve settled on, though, is by far the <a href="https://missrose.org/guide/getting-started/adding-rose/">best documented</a> and most inuitive I’ve come across. Miss Rose comes conservatively-configured of the box in a sense that one will experience better results than its “competitors” in moderating a small group like mine just be leaving the defaults in place. My personal favorite functions are <code>/notes</code> - which allows one to save group documents that can be recalled with <code>/</code>or <code>#</code> - and <code>/export</code>, which exports the entirety of one’s options (including those notes) as a .txt file. (See the rightmost screenshot embedded above.)</p>
+
+<h2>Other Insights</h2>
+
+<video controls>
+  <source src="https://user-images.githubusercontent.com/43663476/152056943-3fc9970f-491f-4060-bfb4-ba45731b4bc9.MOV">
+</video>
+
+<h3>Telegram as Task Manager</h3>
+
+<p>I had absolutely no idea that <a href="https://telegram.org/blog/scheduled-reminders-themes">Reminders</a> existed in Telegram until a few weeks ago. When sending to one’s Saved Messages channel, holding down on the Send Message button will display the option to <code>Set a Reminder</code>. Anything that can be sent can be added as a reminder, including - in my case - .exe files of programs I’d like to install on my PC later. Frankly, I can’t think of any other task management/reminders application that offers this ability - paid or otherwise.</p>
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/152087363-ab3fb744-d905-4128-ad9b-80a5a2e9530c.png" alt="Telegram for macOS" />
+<figcaption>Telegram for macOS</figcaption>
+</figure>
+
+<h3>The macOS App</h3>
+
+<p>A recent update to the <a href="https://apps.app.com/us/app/telegram/id747648890">Telegram for macOS app</a> has rendered it by far the most beautiful way to use the service.</p>
+
+<h2>Themes</h2>
+
+<p>I’ve spent quite a bit of time archiving third-party Telegram themes, lately. Below is a list of installation links to some of my favorites which I’ll do my best to keep updated. Otherwise, refer to <a href="https://telegra.ph/Superb-Telegram-Themes-for-iOS-01-27">this Telegraph post</a> or type <code>#themes</code> in <a href="https://t.me/extratoe"><em>Extratone</em>’s group chat</a>.</p>
+
+<ol>
+<li><a href="https://t.me/addtheme/windowseternal">𝘞𝘐𝘕𝘋𝘖𝘞𝘚</a> <a href="https://t.me/addtheme/windowseternal">𝘌𝘛𝘌𝘙𝘕𝘈𝘓</a></li>
+<li><a href="https://t.me/addtheme/allo4life">Allo4Life</a></li>
+<li><a href="https://t.me/addtheme/freshmint">Fresh Mint - Tweetbot 6</a></li>
+<li><a href="https://t.me/addtheme/greyhound">Greyhound</a></li>
+<li><a href="https://t.me/addtheme/spacepiss">Space Piss</a></li>
+<li><a href="https://t.me/addtheme/vampirereference">Vampire Reference</a></li>
+<li><a href="https://t.me/addtheme/signals2022">Signals</a></li>
+<li><a href="https://t.me/addtheme/futuretab2022">Futuretab</a></li>
+<li><a href="https://t.me/addtheme/slandercrimson">Slander Crimson</a></li>
+<li><a href="https://t.me/addtheme/academia2022">Academia</a></li>
+<li><a href="https://t.me/addtheme/hermitage2022">Hermitage</a></li>
+<li><a href="https://t.me/addtheme/navier2022">Divorced Empress Navier</a></li>
+<li><a href="https://t.me/addtheme/rorojump2022">Roro Jump</a></li>
+<li><a href="https://t.me/addtheme/postacademia">Dark, Post-Academia</a></li>
+<li><a href="https://t.me/addtheme/uorange">UOrange</a></li>
+<li><a href="https://t.me/addtheme/vaporfucked">Vaporfucked</a></li>
+<li><a href="https://t.me/addtheme/darkshell2022">Dark Shell</a></li>
+<li><a href="https://t.me/addtheme/HoneyHighlight2021">Honey Highlight</a></li>
+<li><a href="https://t.me/addtheme/miragekimberly">Mirage on Kimberly</a></li>
+<li><a href="https://t.me/addtheme/lynchrhino">Lynch on Rhino</a></li>
+<li><a href="https://t.me/addtheme/marsorange">Mars Orange</a></li>
+<li><a href="https://t.me/addtheme/sepiablues2022">Sepia Blues</a></li>
+<li><a href="https://t.me/addtheme/StrawberryNight2022">Strawberry Night</a></li>
+<li><a href="https://t.me/addtheme/tapbots">Tapbots</a></li>
+<li><a href="https://t.me/addtheme/greendark2022">Green Dark</a></li>
+<li><a href="https://t.me/addtheme/puaro2022">Puaro</a></li>
+<li><a href="https://t.me/addtheme/darkqd2022">DarkQD</a></li>
+<li><a href="https://t.me/addtheme/mineshaftgold2022">Mineshaft Gold</a></li>
+<li><a href="https://t.me/addtheme/jellygram2022">Jellygram</a></li>
+<li><a href="https://t.me/addtheme/japanserenity2022">Japan Serenity</a></li>
+</ol>
+
+<p>[1] Ex: <code>+1 (573) 823-4380</code></p>
+
+<p>#software #automation</p>
+
+<div class="footnotes">
+<hr />
+<ol>
+
+<li id="fn:1">
+<p>1 <a href="#fnref:1" title="return to body" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+
+</body>
+
+<footer>
+<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="drafts://open?uuid=F8A964A8-E7B2-44DA-B3A8-1832C485F3AD">Local</a></p>
+</footer>
+</html>

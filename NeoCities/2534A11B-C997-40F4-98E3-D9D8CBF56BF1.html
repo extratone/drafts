@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>iOS 15.2 Considerations</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: #000056;
+      --main-color: #ffe8bd;
+      --alternate-bg-color: #1c0021;
+      --alternate-color: #fff4e6;
+      --main-border-color: #f43f32;
+        --link-color: #36fd63;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #fff4e6;
+        --main-color: #00006b;
+        --alternate-bg-color: #fffdeb;
+        --alternate-color: #1c0021;
+        --main-border-color: #f43f32;
+          --link-color: #ff0000;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>iOS 15.2 Considerations</h1>
+
+<p>iOS and iPadOS 15.2 Overview: Music, Privacy, Security, and Safety, and a Grab Bag of Other Additions and Refinements - MacStories</p>
+
+<p>It’s probably just because I’ve been reading them all year, but I really think the MacStories overview of the update, above, is the most succinct and well-presented.</p>
+
+<p>The 3D Bullshit is back.</p>
+
+<ol>
+<li>Apple Music Playlists are now searchable within themselves.</li>
+<li>App Privacy Report is now available in a visually-parsed format.</li>
+</ol>
+
+<blockquote>
+<p>First announced in June, the Settings app has added App Privacy Reports. The new feature can be found in the Privacy section of Settings at the bottom of the screen. By default, App Privacy Reports are turned off, but once turned on, you’ll begin to see data on how your apps are using your location, photos, camera, microphone, and contacts during the past seven days. The report also lists the domains to which an app reports the data it collects. Once turned on, you’ll begin to see results immediately. For example, after I turned App Privacy Reports on, but before I opened a single app, I already had entries for Health and Photos, two Apple apps that work with iCloud in the background. For an even deeper look at what’s going on, you can use the share button to export the details of the App Privacy Report as an NDJSON file, a JSON format that separates entries by new lines.</p>
+</blockquote>
+
+<h2><a href="https://apps.apple.com/us/app/app-privacy-report/id1590652377">App Privacy Report</a></h2>
+
+</body>
+
+<footer>
+<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="drafts://open?uuid=2534A11B-C997-40F4-98E3-D9D8CBF56BF1">Local</a></p>
+</footer>
+</html>

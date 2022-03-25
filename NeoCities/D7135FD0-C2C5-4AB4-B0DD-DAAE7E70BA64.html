@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>Drafts Autocompletes</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: #000056;
+      --main-color: #ffe8bd;
+      --alternate-bg-color: #1c0021;
+      --alternate-color: #fff4e6;
+      --main-border-color: #f43f32;
+        --link-color: #36fd63;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #fff4e6;
+        --main-color: #00006b;
+        --alternate-bg-color: #fffdeb;
+        --alternate-color: #1c0021;
+        --main-border-color: #f43f32;
+          --link-color: #ff0000;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Drafts Autocompletes</h1>
+
+<ul>
+<li><a href="https://github.com/extratone/drafts/issues/31">GitHub Issue</a></li>
+<li><a href="https://github.com/extratone/drafts/blob/main/autocomplete">Directory of install URLS in the repo</a></li>
+<li><a href="https://tilde.town/~extratone/drafts/autocompletes/">Tilde</a></li>
+<li><a href="https://davidblue.wtf/drafts/D7135FD0-C2C5-4AB4-B0DD-DAAE7E70BA64.html">WTF</a></li>
+</ul>
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/159809109-ef35410c-d052-4ed4-9388-aa7895d1c434.png" alt="Drafts Autocompletes" />
+<figcaption>Drafts Autocompletes</figcaption>
+</figure>
+
+<p>This is a collection of my personal “<a href="https://docs.getdrafts.com/docs/editor/autocomplete">Autocomplete Suggestions</a>” (identical to what <a href="https://apps.apple.com/us/app/textexpander-keyboard/id1075927186">TextExpander</a> calls “snippets”) for Drafts, and they <em>are</em> installable, if you’d like.</p>
+
+<p><em>Definitely read <a href="https://nahumck.me/drafts-29-autocomplete/">Tim Nahumck’s work on this feature</a> if you’re curious about it.</em></p>
+
+<h4>Install</h4>
+
+<p>The hyperlinks on the expansion triggers will take you a corresponding plain text file containing the installation URL (which is, of course, the entire contents of each, encoded in a string.) Copy the full text of the URL, paste it in your web browser, and tap/click “Go” (or your equivalent)/key <code>RETURN</code> or <code>ENTER</code>. Regardless of platform, you should receive a prompt asking if you’d like to open it in Drafts.</p>
+
+<p>Here’s a wee <a href="https://user-images.githubusercontent.com/43663476/159810974-fa1531df-c0a5-4f1b-82f8-3fe11e31f36d.MOV">demo video</a>:</p>
+
+<video controls>
+  <source src="https://user-images.githubusercontent.com/43663476/159810974-fa1531df-c0a5-4f1b-82f8-3fe11e31f36d.MOV">
+</video>
+
+<hr />
+
+<ul>
+<li><a href="https://raw.githubusercontent.com/extratone/drafts/main/snippets/wtf.txt"><strong>wtf</strong></a></li>
+</ul>
+
+<pre><code>https://davidblue.wtf/drafts/[[uuid]].html
+</code></pre>
+
+<ul>
+<li><a href="https://raw.githubusercontent.com/extratone/drafts/main/snippets/x.txt"><strong>x</strong></a></li>
+</ul>
+
+<pre><code>[[[display_title]]]([[draft_open_url]])
+</code></pre>
+
+<ul>
+<li><a href="https://raw.githubusercontent.com/extratone/drafts/main/snippets/latlong.txt"><strong>latlong</strong></a></li>
+</ul>
+
+<pre><code>`38.934008--92.387972-[[date|%m%d%Y-%H%M%S]]`
+</code></pre>
+
+<ul>
+<li><a href="https://raw.githubusercontent.com/extratone/drafts/main/snippets/img.txt"><strong>img</strong></a></li>
+</ul>
+
+<pre><code>![]()
+</code></pre>
+
+<ul>
+<li><a href="https://raw.githubusercontent.com/extratone/drafts/main/snippets/code.txt"><strong>code</strong></a></li>
+</ul>
+
+<pre><code>[[clipboard]]
+</code></pre>
+
+<ul>
+<li><a href="https://raw.githubusercontent.com/extratone/drafts/main/snippets/snap.txt"><strong>snap</strong></a></li>
+</ul>
+
+<pre><code>[[clipboard]]
+</code></pre>
+
+<ul>
+<li><a href="https://raw.githubusercontent.com/extratone/drafts/main/snippets/video.txt"><strong>video</strong></a></li>
+</ul>
+
+<pre><code>&lt;video controls&gt;
+  &lt;source src=&quot;[[clipboard]]&quot;&gt;
+&lt;/video&gt;
+</code></pre>
+
+<ul>
+<li><a href="https://raw.githubusercontent.com/extratone/drafts/main/snippets/audio.txt"><strong>audio</strong></a></li>
+</ul>
+
+<pre><code>&lt;audio controls&gt;
+  &lt;source src=“”&gt;
+&lt;/audio&gt;
+</code></pre>
+
+</body>
+
+<footer>
+<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="drafts://open?uuid=D7135FD0-C2C5-4AB4-B0DD-DAAE7E70BA64">Local</a></p>
+</footer>
+</html>

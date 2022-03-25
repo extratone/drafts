@@ -1,0 +1,52 @@
+<ul>
+<li><a href="https://routinehub.co/shortcut/10953"><strong>RoutineHub Page</strong></a></li>
+<li><a href="https://www.icloud.com/shortcuts/d31637ae5c9b4a32ac00e86d0e5db616">PRENOTIFiCloud Share Link</a></li>
+<li><a href="https://www.icloud.com/shortcuts/4acf31b1002e404ba15b0900b49d1dc0">iCloud Share Link</a></li>
+<li><a href="https://github.com/extratone/i/issues/132">GitHub Issue</a></li>
+</ul>
+
+<h2>Social</h2>
+
+<ul>
+<li><a href="https://t.me/extratone/9964">Telegram</a></li>
+<li><a href="https://twitter.com/NeoYokel/status/1487144867889303557">Twitter</a></li>
+<li><a href="https://reddit.com/r/shortcuts/comments/seys18/average_speed_mph_of_your_last_drivey_trip/">r/Shortcuts</a></li>
+</ul>
+
+<p>finally got around to making a shortcut for @DriveyApp that calculates the average speed (in mph) of your last trip. https://routinehub.co/shortcut/10953</p>
+
+<h2>Calculates the average speed of the most recent trip in Drivey, displays and logs the result.</h2>
+
+<h3>Requirements</h3>
+
+<ul>
+<li><a href="https://apps.apple.com/us/app/drivey/id1590360678"><strong>Drivey for iOS</strong></a></li>
+</ul>
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/151585041-838746ff-c646-45ff-8e82-c55681f692f3.png" alt="DriveySide-by-Side" />
+<figcaption>DriveySide-by-Side</figcaption>
+</figure>
+
+<p><a href="https://user-images.githubusercontent.com/43663476/151585091-7e28c94f-7cda-496b-8b6f-d97bd46f372c.MOV"><strong>V i d e o D e m o</strong></a></p>
+
+<p>Using exclusively native actions, this shortcut calculates the average speed of your last drivey trip in miles per hour.</p>
+
+<ol>
+<li>Uses the difference between the two results provided by Drivey’s <code>Get time stamps</code> action to calculate the total time elapsed in seconds. <em>(This doesn’t appear to make it any more accurate because Drivey seems to natively return the result in minutes as its smallest unit.)</em></li>
+<li>Divides the result of Drivey’s <code>Get last trip distance</code> action by said time elapsed.</li>
+<li>The result (in miles per second) is multiplied by 3600 to calculate the desired output in miles per hour.</li>
+<li>The output is logged via an <a href="https://www.matthewcassinelli.com/actions/append-to-file/">Append to File</a> action pointed toward a directory specified by the user at installation.</li>
+</ol>
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/151585842-b13f5ab1-c130-496f-845c-973ba471fe86.png" alt="DriveyQR" />
+<figcaption>DriveyQR</figcaption>
+</figure>
+
+<hr />
+
+<figure>
+<img src="https://user-images.githubusercontent.com/43663476/151585567-a3de2314-4ddc-4b27-a821-54ff225ed44c.png" alt="DriveyIcon" />
+<figcaption>DriveyIcon</figcaption>
+</figure>

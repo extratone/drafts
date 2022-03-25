@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>Using Drafts Templates</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: #000056;
+      --main-color: #ffe8bd;
+      --alternate-bg-color: #1c0021;
+      --alternate-color: #fff4e6;
+      --main-border-color: #f43f32;
+        --link-color: #36fd63;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #fff4e6;
+        --main-color: #00006b;
+        --alternate-bg-color: #fffdeb;
+        --alternate-color: #1c0021;
+        --main-border-color: #f43f32;
+          --link-color: #ff0000;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>&#8220;Using Drafts Templates&#8221;</h1>
+
+<h1>Template Basics</h1>
+
+<p>Drafts actions consist of “steps.” <a href="https://docs.getdrafts.com/actions/steps/">Action steps</a> are available for a wide range of functions and services: Sending messages, mail, saving files, and much more. Regardless of the purpose of the step, any step that output information has some fields that allow you to control what text the step uses, and (with a few minor exceptions) use templates to dynamically generate that text.</p>
+
+<p>If you have poked around in the action editor and wondered what some of those <code>[[title]]</code> and <code>[[body]]</code> things are, this article is for you.</p>
+
+<p>Templates are plain text combined with tags. Consider tags placeholders for some piece of information you want to be inserted when the action is run. Drafts tags are identified by double square brackets (<code>[[ ]]</code>), surrounding the tag name and options. Most tags insert some content or meta data related to the current draft on which an action is being performed.</p>
+
+<h2>Common Content Tags</h2>
+
+<p>The tags that get the most use, and which you are likely to see as defaults in many action steps, are:</p>
+
+<ul>
+<li> <strong><code>[[draft]]</code></strong> : Replaced with full text of the current draft.</li>
+<li> <strong><code>[[title]]</code></strong> : Replaced with text of the first line of a draft.</li>
+<li> <strong><code>[[body]]</code></strong> : Replace with everything <em>but</em> the first line of the draft.</li>
+</ul>
+
+<p>Take the “Copy” action, which ships with Drafts in the “Basic” action group. The action places the contents of the current draft in the clipboard. The action itself consists of one <a href="https://docs.getdrafts.com/docs/actions/steps/system#clipboard">Clipboard action step</a>, with the template <code>[[draft]]</code>. If you wanted an action that copied just the first line of the draft to the clipboard, you could change the template of the clipboard action step to <code>[[title]]</code>.</p>
+
+<p>The default “Mail” action, which ships with the app, uses the <code>[[title]]</code> tag for the subject line of the email, and <code>[[body]]</code> as the content of the email.</p>
+
+<figure>
+<img src="https://forums.getdrafts.com/uploads/default/optimized/2X/c/c6401fdeec9efe8693616b4fde9e5f23ce336ac8_2_345x184.jpeg" alt="1%202019-01-31%2016-39-17" />
+<figcaption>1%202019&#8211;01&#8211;31%2016&#8211;39&#8211;17</figcaption>
+</figure>
+
+<p>You can mix tags with static text in templates, so you could also have the template string <code>Title: [[title]]</code>, which would produce the first line of the draft, with the prefix <code>Title:</code>.</p>
+
+<p>There is a handy <code>[[line|n]]</code> tag that lets you extract individual or ranges of lines from the content of a draft. The <code>line</code> tag is an example of a tag with a formatting option, separated from the tag name by a <code>|</code> pipe character. In this case, that option takes line number (1 for the first, 2 for the second, etc.), or range, like <code>1..3</code> for first through the third line. If you omit the beginning or end line number, the range will assume beginning or end, so <code>..4</code> is the first four lines, and <code>5..</code> is the fifth line to the end of the draft. Negative indexes which count back from the end can also be used, so <code>[[line|-1]]</code> would get you just the last line.</p>
+
+<p>The <code>linke</code> can be very useful in splitting up values from a draft into separate values. Say you want an action that saves to a folder in Dropbox, but you want to specify that in the draft itself. You could type the following draft:</p>
+
+<pre><code>My File Name
+Personal
+    
+The content of the draft.
+    
+    
+    
+    
+    
+Then have an action configured with a [Dropbox action step](https://docs.getdrafts.com/docs/actions/steps/services#dropbox) using the following template values for its fields:
+    
+    
+    
+    
+    
+    
+  * 
+**Name**: [[line|1]].txt
+    
+    
+    
+  * 
+**Path**: /[[line|2]]/
+    
+    
+    
+  * 
+**Template**: [[line|3..]]
+    
+    
+    
+    
+    
+![1%202019-01-31%2016-42-01](https://forums.getdrafts.com/uploads/default/optimized/2X/7/749ea3cbd1093d34902dff048de0115e3a18de10_2_304x250.jpeg)
+    
+    
+    
+    
+Using this action, on the draft sample text above would result in a file on Dropbox named “My File Name.txt” in the folder “Personal”, with the content “The content of the draft.”
+    
+    
+    
+    
+## 
+Date and Time Tags
+    
+    
+    
+    
+Another commonly used set of tags are date-related tags. The available date tags are:
+    
+    
+    
+    
+    
+    
+  * 
+**2022-03-24**: Current date, defaulting to the format %Y-%m-%d, which is equivalent to YYYY-MM-DD.
+    
+    
+  * 
+**2021-12-08**: The date the current draft was created.
+    
+    
+  * 
+**[[modified]]**: The date the content of the current draft was last modified.
+    
+    
+    
+    
+Each of these tags can also take a formatting string, after the | separator, using [strftime](https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man3/strftime.3.html) formatting. There are formatting characters to allow configuration of almost any possible date and time string - including year, month names, day names, and much more. The [Apple strftime reference](https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man3/strftime.3.html) has details on all the available options. A few commonly used format examples:
+    
+    
+    
+    
+    
+    
+  * 
+[[date|%Y-%m-%d]] : _Result:_ 2019-01-31
+    
+    
+  * 
+[[date|%I:%M %p]] : _Result:_ 06:19 PM
+    
+    
+  * 
+[[date|%d %B %Y %H:%M:%S]] : _Result:_ 31 January 2019 21:19:20
+    
+    
+    
+    
+Dr. Drang wrote an [excellent blog post about date tags in Drafts](http://www.leancrew.com/all-this/2013/02/new-flexible-timestamps-in-drafts/) which is an excellent resource as well.
+    
+    
+    
+    
+To test formats, we also recommend [strftime.net](http://strftime.net), an online format builder which previews the output of format strings.
+    
+    
+    
+    
+The most common use case for date tags is timestamping when appending to a daily journal file, or starting a draft from a template.
+    
+    
+    
+    
+## 
+Additional Tags
+    
+    
+    
+    
+Visit the [template tag reference](https://docs.getdrafts.com/docs/actions/templates) for a complete list of available built-in tags. Using tags you can access information like location data stored with a draft, its UUID and permalink, tags, and more.
+    
+    
+    
+    
+## 
+No Tags Required
+    
+    
+    
+    
+Keep in mind that just because templates in actions can contain tags to dynamically insert text, they don’t need to. Many times you just want plain static text in a template to add boilerplate snippets,
+    
+    
+    
+    
+## 
+Special Template Markup
+    
+    
+    
+    
+In addition to tags, there are a couple of special markup conventions used in templates for convenience, they are:
+    
+    
+    
+    
+    
+    
+  * 
+**%20** : Any text between double curly braces will be URL encoded for use in URL query parameters. This is typically used in [Open URL action steps](https://getdrafts.com/actions/steps/openurl) to properly encode text to be included in a URL.
+    
+    
+  * 
+**</code></pre>
+ <p>** : Any text between double percent signs will be converted from Markdown to HTML using your default <a href="https://getdrafts.com/settings/markdown">Markdown options</a>. Useful when publishing to locations that want HTML input.</p>
+
+<pre><code>  * 
+**&lt;&lt;textexpander-shortcut&gt;&gt;** _[iOS Only]_ : If you use [TextExpander](https://textexpander.com/), it is possible to dynamically expand a TextExpander snippet when a template is evaluated. Generally useful for snippets you do not want to be expanded until the action is run because they contain dates or other output which is time-sensitive. To expand a snippet in a template, wrap the snippet’s shortcut text in &lt;&lt; &gt;&gt;.
+    
+    
+    
+    
+## 
+Conclusion
+    
+    
+    
+    
+With just a few tweaks to templates, you can create an array of useful actions that save time and formatting.
+</code></pre>
+
+<p>-&#8220;<a href="https://forums.getdrafts.com/t/using-drafts-templates/3728/print">Using Drafts Templates</a>&#8221;</p>
+
+</body>
+
+<footer>
+<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="drafts://open?uuid=6E922D1C-84B4-4BA7-95D8-49F8D5D7FA45">Local</a></p>
+</footer>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title># Custom Keyboard Shortcuts on macOS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: white;
+      --main-color: black;
+      --alternate-bg-color: #efefef;
+      --alternate-color: #222222;
+      --main-border-color: #BBBBBB;
+        --link-color: #627EC9;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #222222;
+        --main-color: #eeeeee;
+        --alternate-bg-color: #444444;
+        --alternate-color: #cccccc;
+        --main-border-color: #AAAAAA;
+          --link-color: #627EC9;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Custom Keyboard Shortcuts on macOS</h1>
+
+<h2>Siri Shortcuts</h2>
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> Action  </th>
+	<th> Command </th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td> sleepnow  </td>
+	<td> ⌥+PrtScn </td>
+</tr>
+<tr>
+	<td> Light Odette </td>
+	<td> ⌃⌥⌘🌐︎↑ </td>
+</tr>
+<tr>
+	<td> Dark Odette </td>
+	<td> ⌃⌥⌘🌐︎↓ </td>
+</tr>
+</tbody>
+</table>
+
+<figure>
+<img src="Capture%202022-01-10%20at%2008.01.06.png" alt="" />
+<figcaption></figcaption>
+</figure>
+
+<h2>Misc System</h2>
+
+<table>
+<colgroup>
+<col style="text-align:center;"/>
+<col style="text-align:center;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:center;"> Action      </th>
+	<th style="text-align:center;"> Command   </th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:center;"> Toggle Dock Hiding   </td>
+	<td style="text-align:center;"> ⌥ ⌘ D   </td>
+</tr>
+<tr>
+	<td style="text-align:center;"> Launchpad     </td>
+	<td style="text-align:center;"> F7    </td>
+</tr>
+<tr>
+	<td style="text-align:center;"> Show Desktop    </td>
+	<td style="text-align:center;"> F16 (Media Key) </td>
+</tr>
+<tr>
+	<td style="text-align:center;"> Preview Selection in Marked </td>
+	<td style="text-align:center;"> <sup>⌥P</sup>    </td>
+</tr>
+<tr>
+	<td style="text-align:center;"> ==Look Up in Dictionary== </td>
+	<td style="text-align:center;"> PrtScn   </td>
+</tr>
+</tbody>
+</table>
+
+<figure>
+<img src="Capture%202022-01-10%20at%2008.28.33.png" alt="" />
+<figcaption></figcaption>
+</figure>
+
+<h2>Safari</h2>
+
+<table>
+<colgroup>
+<col style="text-align:center;"/>
+<col style="text-align:center;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:center;"> <strong>Action</strong>    </th>
+	<th style="text-align:center;"> <strong>Command</strong> </th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:center;"> File-&gt;Share-&gt;Telegram </td>
+	<td style="text-align:center;"> ⌥F1   </td>
+</tr>
+<tr>
+	<td style="text-align:center;"> File-&gt;Share-&gt;Copy  </td>
+	<td style="text-align:center;"> ⌥C   </td>
+</tr>
+<tr>
+	<td style="text-align:center;"> Duplicate Tab   </td>
+	<td style="text-align:center;"> ⇧⌘K   </td>
+</tr>
+<tr>
+	<td style="text-align:center;"> File-&gt;Share-&gt;Reminders </td>
+	<td style="text-align:center;"> ⌥⌘R   </td>
+</tr>
+<tr>
+	<td style="text-align:center;"> File-&gt;Share-&gt;Tweetbot </td>
+	<td style="text-align:center;"> ⌥Tz   </td>
+</tr>
+</tbody>
+</table>
+
+<h2>Finder</h2>
+
+<table>
+<colgroup>
+<col style="text-align:center;"/>
+<col style="text-align:center;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:center;"> <strong>Action</strong>     </th>
+	<th style="text-align:center;"> <strong>Command</strong> </th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:center;"> File-&gt;Share-&gt;Add to Photos </td>
+	<td style="text-align:center;"> ⌥⌘P   </td>
+</tr>
+<tr>
+	<td style="text-align:center;"> File-&gt;Share-&gt;AirDrop  </td>
+	<td style="text-align:center;"> ⇧⌘S   </td>
+</tr>
+</tbody>
+</table>
+
+<p>#keys #documentation </p>
+
+</body>
+
+<footer>
+ 2022-01-21-2022-01-21-14-59-17
+`5E02100D-964D-44C8-B662-5BE1F92D88CB`
+```
+keys, configuration, documentation, macos
+```
+</footer>
+</footer>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>[Building my first app - tooot](https   xmflsct.com 2021 tooot )    Zhiyuan' Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: #000056;
+      --main-color: #ffe8bd;
+      --alternate-bg-color: #1c0021;
+      --alternate-color: #fff4e6;
+      --main-border-color: #f43f32;
+        --link-color: #36fd63;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #fff4e6;
+        --main-color: #00006b;
+        --alternate-bg-color: #fffdeb;
+        --alternate-color: #1c0021;
+        --main-border-color: #f43f32;
+          --link-color: #ff0000;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>&#8220;<a href="https://xmflsct.com/2021/tooot/">Building my first app - tooot</a>&#8221; | Zhiyuan' Portfolio</h1>
+
+<blockquote>
+<h3>📱 download</h3>
+
+<p><a href="https://tooot.app/">tooot.app</a></p>
+
+<h3>Source code</h3>
+
+<p><a href="https://github.com/tooot-app">on GitHub</a></p>
+</blockquote>
+
+<h2>Background</h2>
+
+<p>2020, it was the year of breakout of Covid-19, that forced all of us to rely on digital platform no matter how critical some of us were towards digital addiction. We connect, we share, we emphaempathize with each other through various platforms on the digital world.</p>
+
+<p>Still, censorship of content has been tightened unfortunately in mainland China. One of the social media platform named Douban which dedicates to discussions of movie, music, book, etc. also seen highly unpredictable taken down of user generated contents. This triggers a flow called <a href="https://zh.wikipedia.org/wiki/%E8%B1%86%E7%93%A3#%E4%BA%89%E8%AE%AE">Douban Refugee</a> that many start to abandon social media platforms in mainland China, seeking alternative solutions to share freely.</p>
+
+<p>This brings a boom of introduction of <a href="https://joinmastodon.org/">Mastodon</a>, a decentralized social media platform that not only is free from censorship, but also maximize controlling of each’s data. Although a decentralized platform like <a href="https://joinmastodon.org/">Mastodon</a> does require more involvement such as setting up own servers, many take the courage, following tutorials, some even without any technical background, setting up their own platforms to welcome Douban Refugees.</p>
+
+<p>In light of this movement, it is evident back in 2020 that there are almost none user friendly mobile clients for <a href="https://joinmastodon.org/">Mastodon</a>. There are few solutions with good designs but charges, and only exists within Apple’s ecosystem. With the aim of contributing to the community and to this movement, I decided to take my quarantine time to build an enjoyable mobile client for Douban Refugees.</p>
+
+<h2>Process</h2>
+
+<p>My spare time of building <a href="/2020/covid-response/">multiple web solutions for SMEs</a> allows me to level up on using React and JavaScript based technologies. <a href="https://reactnative.dev/">React Native</a> thus becomes the top choice, after evaluating the benefits of other frameworks such as <a href="https://flutter.dev/">Flutter</a>. In a mobile application environment where users’ tolerance of failures and glitches is much less compared with website environment, a familiar framework contributes to the stableness of the final outcome.</p>
+
+<h3><strong>De-</strong>centralized platform</h3>
+
+<p>Over past years, several addictive centralized platforms stick with many users in various forms. Based on their dominance, users are forced to accept whatever information they provide even though this has always been a hot topic. I remember when LinkedIn joined Facebook-alike to make their timeline not “timeline” anymore but suggestion based, as a user, I have no choice but to continue using their service in professional settings.</p>
+
+<p>Decentralized platforms, on the other end, take a different standpoint that data belongs to all users, and there is no more “recommendation” by harvesting user data. Technically, without centralized computing power, such recommendation service is also not that feasible. From users perspective, how can we adapt ourselves <strong>back</strong> to a no recommendation based digital workld? And how can I design information display that still invites users to explore inside a linear timeline?</p>
+
+<h3>Open API yet “closed”</h3>
+
+<p>Platforms like Mastodon are open source, and have existed for some years where many people continues to improve it. Though there is hardly one solution or design that satisfies everyone. In open source world, this easily leads to complicated service offerings, similar to a corporate environment.</p>
+
+<p>To build an application that connects to an existing protocol, understanding how data is structured and shared is crucial. While exploring Mastodon’s API, difficult decisions need to be made on what data is essential to be included, and why are they meaningful. By trying out existing third party mobile apps, immersing myself in its ecosystem, observing how other users are using it, I aggregate my learnings into practice, setting up tooot’s foundation structure.</p>
+
+<h3>Where am I in the app</h3>
+
+<p>My previous experience of <a href="/2019/hm-app-experience/">cleaning up H&amp;M’s app</a> sets a clear starting point to define tooot app’s structure. The core consits of 3 needs: 1) what I can read; 2) what I can write; 3) what I have done. Bottom tab navigation is by far the best navigation approach when above purposes can be defined clearly.</p>
+
+<p>In tooot, 2 tabs on the left dedicates to different timelines that a decentralized platform normally offers: my timeline, timeline on this particular server, and federated timeline. During closed and open beta period currently, there are user feedbacks suggesting to open up customization possibility of these timelines. This is yet to be discovered further after MVP.</p>
+
+<p>The main tab in the center is where users can post updates. Unlike centralized platform that encourages users to post in order to retain his/her connections, observation suggests that, at least within Chinese community, willingness of posting or sharing is high when you feel you can connect to others easier without the worry of being censored.</p>
+
+<p>The last 2 tabs focus on what a user has act upon, such as notifications, bookmarks, etc.</p>
+
+<p>Technically, there are many “pages” that are shared between all these tabs such as the page to view a specific post. When building it, I learn a lot about that most times, it is not as simple as saying “let’s build a new page”. In order not to break above core navigation principles, retaining the scalability as well as user needs, threads need to be connected among all these considerations; or translating into a corporate setting, it is the true sharing and connecting between business, technology and design.</p>
+
+<h2>Practice</h2>
+
+<p>Currently at open beta stage, aiming at releasing first production version in April. Bugs fixing and minor experience improvements are being focused.</p>
+
+<p>Main user feedbacks during this stage suggest below 3 key points:</p>
+
+<ol>
+<li> Various browsing needs</li>
+<li> Timeline refreshing behaviour improvement</li>
+<li> Support of similar decentralized platforms</li>
+</ol>
+
+<p>Mastodon has followed a similar approach to Twitter that offers customized listing views. Furthermore Mastodon’s API as well as its official web client offers much more freedom to define customized way of filtering a timeline, such as based on certain saved hashtags, excluding fediverse, etc. There is no motivation from my perspective to provide a “main timeline” where like Twitter that personalized feed as well as inserting advertisements, still, what kind of structure and interaction pattern that can support such highly dynamic need will be explored after version 1.0.</p>
+
+<p>Stay tuned!</p>
+
+<figure>
+<img src="/static/c0611557dc7a62595f3bc2cafdd73cbc/b4ad3/tooot-01.png" alt="tooot image 1" />
+<figcaption>tooot image 1</figcaption>
+</figure>
+
+<figure>
+<img src="/static/a72e5bb2fa7942673b496db404faa8b6/b4ad3/tooot-02.png" alt="tooot image 2" />
+<figcaption>tooot image 2</figcaption>
+</figure>
+
+<figure>
+<img src="/static/ddcde5091857a24e77e014ba2be8bf79/b4ad3/tooot-03.png" alt="tooot image 3" />
+<figcaption>tooot image 3</figcaption>
+</figure>
+
+<figure>
+<img src="/static/dd13a65dc265a58403ce3b686cbda9bb/b4ad3/tooot-04.png" alt="tooot image 4" />
+<figcaption>tooot image 4</figcaption>
+</figure>
+
+<p>-&#8220;<a href="https://xmflsct.com/2021/tooot/">Building my first app - tooot | Zhiyuan' Portfolio</a>&#8221;</p>
+
+</body>
+
+<footer>
+<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="drafts://open?uuid=080D46FF-07E8-4771-9609-DD6550315E9C">Local</a></p>
+</footer>
+</html>

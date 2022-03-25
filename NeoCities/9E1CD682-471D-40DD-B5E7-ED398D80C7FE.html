@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>𝚃 𝙴 𝚂 𝚃</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: #000056;
+      --main-color: #ffe8bd;
+      --alternate-bg-color: #1c0021;
+      --alternate-color: #fff4e6;
+      --main-border-color: #f43f32;
+        --link-color: #36fd63;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #fff4e6;
+        --main-color: #00006b;
+        --alternate-bg-color: #fffdeb;
+        --alternate-color: #1c0021;
+        --main-border-color: #f43f32;
+          --link-color: #ff0000;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>𝚃 𝙴 𝚂 𝚃</h2>
+
+<h3>Send to Bear silently</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> notebook<br />
+<strong>Colour:</strong> red<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 2CABB773&#8211;755B-42BB-AF8B-A15B899FF20B<br />
+<strong>Description:</strong><br />
+Send draft to Bear Notes silently in background.</p>
+
+<h3>Email (Spark)</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> action_email_filled<br />
+<strong>Colour:</strong> blue<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 3AB018C5&#8211;75FA-4E6A-AE26&#8211;755DB1DC4C54<br />
+<strong>Description:</strong><br />
+Open Spark email with the first line of the draft as the subject and remaining content as the body.</p>
+
+<h3>New Draft with Template</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> page-add<br />
+<strong>Colour:</strong> blue<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> AF36F27E-E976&#8211;44D7-B2D1&#8211;059067C9B9CB<br />
+<strong>Description:</strong><br />
+Prompt to select from a list of existing drafts with the tag “template” assigned, then create a new draft with the content of that template.</p>
+
+<p>To create templates available in this action, simply type your template in a draft, and assigned the tag “template” to that draft. It can be in the archive or inbox. The template can contain <a href="https://reference.getdrafts.com/topics/templates.html">Drafts tags</a> to insert time stamps or other dynamic data in the template. Also, any tags other than “template” assigned to the template draft will be assigned to the new draft automatically.</p>
+
+<p>If the template contains the string <code>&lt;|&gt;</code>, the <code>&lt;|&gt;</code> will be removed, and the initial cursor position in the new draft placed at that location.</p>
+
+<blockquote>
+<p><strong>Note:</strong> This action used functionality which requires a Pro subscription.</p>
+</blockquote>
+
+<h3>Go To Bookmark</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> journal<br />
+<strong>Colour:</strong> violet<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> None<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> C40FBBB2&#8211;721B-488B-8884&#8211;4EE2641B4F23<br />
+<strong>Description:</strong><br />
+Open a bookmarked draft in the editor.</p>
+
+<p>This action will prompt you to select a draft from all drafts tagged with the “bookmarked” tag. Useful to quickly navigate to specific drafts you use often.</p>
+
+<p>Meant as an example action demonstrating the use of the “Select Draft” prompt combined with a custom, temporary workspace.</p>
+
+<p>To use a tag other than “bookmarked”, edit the <code>tag</code> variable in the ffirst line of the script.</p>
+
+<h3>Insert Workspace Link</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> layout-grid<br />
+<strong>Colour:</strong> none<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> None<br />
+<strong>Log Level:</strong> None<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 985CA6C8-A568&#8211;4205&#8211;8797-AFE8F2DD1BEC<br />
+<strong>Description:</strong><br />
+Prompt to select a workspace, and Insert a <code>[[w:Workspace]]</code> style link to the workspace at the cursor.</p>
+
+<h3>Sum of all Numbers in Draft/Selection</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> 438-equals<br />
+<strong>Colour:</strong> none<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> F00DA77B-4C01&#8211;4AA1&#8211;9D7B-8E5FE1FE61E0<br />
+<strong>Description:</strong><br />
+Calculates the sum of all numbers in the selection. If there is no selection, the entire draft is used as input.</p>
+
+<p>The sum is then displayed as notification &amp; copied to the clipboard.</p>
+
+<p>Works with &#8220;.&#8221; or &#8220;,&#8221; as decimal seperators. Also supports with negative numbers, enabling the correct parsing of sequences like <code>2-4+3</code> as well.</p>
+
+<p>Caveats: This action does not work with any kind of thousand seperator (&#8220;.&#8221;, &#8220;,&#8221;, or space), as they would introduce ambigious cases.</p>
+
+<h3>Refresh Theme or Syntax</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> sync<br />
+<strong>Colour:</strong> blue<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> Errors<br />
+<strong>Log Level:</strong> Errors<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> A7E4094F-4251&#8211;4AAF-8888-C1FD8B6AD680<br />
+<strong>Description:</strong><br />
+Refresh Drafts’s current theme and syntax.</p>
+
+<p>See https://www.thoughtasylum.com/2021/10/24/drafts-syntax-development-tip/ for details.</p>
+
+<h3>Fake Wordle</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> type-square<br />
+<strong>Colour:</strong> green<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 1F8C41BD-DA4E-48D7-B2AB-F789EE7F4A20<br />
+<strong>Description:</strong><br />
+Extremely naive action to generate a fake <a href="https://www.powerlanguage.co.uk/wordle/">Wordle</a> result grid based on the number of guesses provided in the prompt.</p>
+
+<h3>FTS</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> chat<br />
+<strong>Colour:</strong> green<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 88ABEFD2&#8211;1A49&#8211;4934&#8211;934D-B444D392A8F7<br />
+<strong>Description:</strong><br />
+Updated action to message the Family Tech Support iMessage group.</p>
+
+<h3>Mail ⇨ David Blue</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> action_email_filled<br />
+<strong>Colour:</strong> blue<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> DA517665&#8211;8C6D-4D75&#8211;976F-681BBB37A295<br />
+<strong>Description:</strong></p>
+
+<h3>Post to WordPress</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> inkwell<br />
+<strong>Colour:</strong> none<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 0D30D414&#8211;8CB1&#8211;42AF-BC94&#8211;261FCED56AC6<br />
+<strong>Description:</strong><br />
+Post to a WordPress site. This basic example creates a new post with “Draft” status (not published). The first time you run this action you will be prompted to enter site credentials.</p>
+
+<h3>WordPress - Get Recent Posts</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> send-down<br />
+<strong>Colour:</strong> none<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> A4C9888D-2490&#8211;4519&#8211;9BB7&#8211;8E09168247A1<br />
+<strong>Description:</strong><br />
+Use WordPress API to retrieve recent posts from a WordPress blog and make a list of titles and links. Meant as an example only. More advanced options are available via additional parameters as documented in WordPress XML-RPC API docs.</p>
+
+<h3>WordPress - New Post</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> inkwell<br />
+<strong>Colour:</strong> green<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> 1C9453A6-D1B8&#8211;4081-BC64&#8211;1278A9E1A0B1<br />
+<strong>Description:</strong><br />
+Create a new post on a WordPress blog using XML-RPC API through Drafts scripting. Additional options can be configured using parameters documented in Wordpress XML-RPC api docs. This example will create the post as a draft.</p>
+
+<h3>Box via WebDAV</h3>
+
+<p><strong>Type:</strong> Action<br />
+<strong>Keyboard Shortcut:</strong><br />
+<strong>Icon:</strong> action_box<br />
+<strong>Colour:</strong> none<br />
+<strong>Confirm to Run:</strong> false<br />
+<strong>Notifications:</strong> All<br />
+<strong>Log Level:</strong> All<br />
+<strong>Number of Steps:</strong> 1<br />
+<strong>Unique ID:</strong> DA460E0B-34FA-4A98&#8211;9C4B-40AE5F9EA2EA<br />
+<strong>Description:</strong><br />
+This is a demo WebDAV action step, which can be configured to send to Box.com.</p>
+
+<p>The first time the action is run, you will be prompted for configuration information. Complete the information as follows:</p>
+
+<ul>
+<li><strong>Host</strong>: https://dav.box.com/dav</li>
+<li><strong>User</strong>: Your box account email.</li>
+<li><strong>Password</strong>: Your box account password.</li>
+</ul>
+
+<p>If you duplicate this action, and reconfigure it you can setup multiple actions to append/pretend/create files as needed which will share the same “Box” credentials.</p>
+
+<p>More details on the <a href="https://community.box.com/t5/Upload-and-Download-Files-and/WebDav-with-Box/ta-p/310">Box WebDAV interface</a>.</p>
+
+</body>
+
+<footer>
+<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="drafts://open?uuid=9E1CD682-471D-40DD-B5E7-ED398D80C7FE">Local</a></p>
+</footer>
+</html>
