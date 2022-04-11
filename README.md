@@ -1,4 +1,5 @@
 # David Blue‘s Drafts Configs
+Updated `03242022-161147`
 
 ![DraftsTeal](https://user-images.githubusercontent.com/43663476/148675995-eaa6458a-f0af-4592-bc5e-798f72719576.png)
 
@@ -24,6 +25,7 @@ Please feel free to use/distribute anything in here - including original content
 
 ## Index
 
+  * [Telegram Group](#telegram-group)
   * [Written Work](#written-work)
   * [Siri Shortcuts](#siri-shortcuts)
   * [David Blue’s Drafts Action Directory Contributions](#david-blue-s-drafts-action-directory-contributions)
@@ -42,6 +44,12 @@ Please feel free to use/distribute anything in here - including original content
       - [Install](#install)
   * [Drafts Keyboard Shortcuts (iOS Export)](#drafts-keyboard-shortcuts--ios-export-)
   * [External](#external)
+
+## Telegram Group (New!)
+
+![Drafts Cult Telegram Group QR Code](https://github.com/extratone/drafts/raw/main/telegram/qr.jpg)
+
+I have long pondered creating an ***unofficial*** chat-format space for the Drafts community and finally decided to just have a go! [**@draftsapp**](https://t.me/s/draftsapp) is a public [Telegram Group](https://telegram.org/tour/groups) for anyone and everyone to discuss Drafts. See [its corresponding issue in this repo](https://github.com/extratone/drafts/issues/33) for more details.
 
 ## Written Work
 
