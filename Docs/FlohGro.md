@@ -1,7 +1,11 @@
 # FlohGro’s Drafts Actions
 - [Root](https://flohgro.com/drafts-actions)
 - [GitHub Issue](https://github.com/extratone/drafts/issues/35)
+- [GitHub Wiki](https://github.com/extratone/drafts/wiki/FlohGro’s-Drafts-Actions)
 - [FlohGro’s Drafts Forum profile](https://forums.getdrafts.com/u/FlohGro)
+
+This list can be called as a note in the [Telegram Group](https://t.me/draftsapp) by either `#flohgro` or `/get flohgro`.
+ 
 ---
 
 - [On My Mind Action Group](https://flohgro.com/drafts-actions/on-my-mind-action-group/)
