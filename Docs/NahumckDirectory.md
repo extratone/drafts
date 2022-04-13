@@ -2,8 +2,11 @@
 - [Page 1](https://actions.getdrafts.com/search?utf8=✓&q=%40nahumck)
 - [Page 2](https://actions.getdrafts.com/search?page=2&q=%40nahumck&utf8=✓)
 - [GitHub Issue](https://github.com/extratone/drafts/issues/36)
+- [GitHub Wiki](https://github.com/extratone/drafts/wiki/Tim-Nahumck)
 - [WTF](https://davidblue.wtf/drafts/0805F202-93E4-4CC9-B93A-983110B1B1F0.html)
 - [Tim Nahumck on Drafts](drafts://open?uuid=02F87FC4-521E-4863-A362-E7F6A79AE780)
+
+This list can be called as a note in the [Telegram Group](https://t.me/draftsapp) by either `#nahumckdirectory` or `/get nahumckdirectory`.
 
 ---
 
