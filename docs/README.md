@@ -26,6 +26,7 @@ Please feel free to use/distribute anything in here - including original content
 ## Index
 
   * [Telegram Group](#telegram-group)
+  * [Raindrop Collection](#raindrop-collection)
   * [Written Work](#written-work)
   * [Siri Shortcuts](#siri-shortcuts)
   * [David Blue’s Drafts Action Directory Contributions](#david-blue-s-drafts-action-directory-contributions)
@@ -50,6 +51,10 @@ Please feel free to use/distribute anything in here - including original content
 ![Drafts Cult Telegram Group QR Code](https://github.com/extratone/drafts/raw/main/telegram/qr.jpg)
 
 I have long pondered creating an ***unofficial*** chat-format space for the Drafts community and finally decided to just have a go! [**@draftsapp**](https://t.me/s/draftsapp) is a public [Telegram Group](https://telegram.org/tour/groups) for anyone and everyone to discuss Drafts. See [its corresponding issue in this repo](https://github.com/extratone/drafts/issues/33) for more details.
+
+## Raindrop Collection
+
+<iframe style="border: 0; width: 100%; height: 650px;" allowfullscreen frameborder="0" src="https://raindrop.io/davidblue/drafts-24187416/embed/sort=-created&theme=auto"></iframe>
 
 ## Written Work
 
