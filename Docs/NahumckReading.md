@@ -3,7 +3,10 @@
 - [nahumck.me - Search result for: Drafts](https://www.nahumck.me/?s=drafts)
 - [Tim Nahumck - Drafts Directory](drafts://open?uuid=0805F202-93E4-4CC9-B93A-983110B1B1F0)
 - [GitHub Issue](https://github.com/extratone/drafts/issues/36)
+- [GitHub Wiki](https://github.com/extratone/drafts/wiki/Tim-Nahumck)
 - [WTF](https://davidblue.wtf/drafts/02F87FC4-521E-4863-A362-E7F6A79AE780.html)
+
+This list can be called as a note in the [Telegram Group](https://t.me/draftsapp) by either `#nahumckreading` or `/get nahumckreading`.
 
 ---
 ![D56-Hero](https://i0.wp.com/www.nahumck.me/wp-content/uploads/2019/01/D56-Hero.png)
