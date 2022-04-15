@@ -1,5 +1,5 @@
 # David Blue‘s Drafts Configs
-Updated `03242022-161147`
+Updated `04142022-230220`
 
 ![DraftsTeal](https://user-images.githubusercontent.com/43663476/148675995-eaa6458a-f0af-4592-bc5e-798f72719576.png)
 
@@ -235,17 +235,17 @@ Here’s a wee [demo video](https://user-images.githubusercontent.com/43663476/1
 
 - [**wtf**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/wtf.txt)
 ```
-https://davidblue.wtf/drafts/[[uuid]].html
+https://davidblue.wtf/drafts/38A942A2-33C4-4630-9CDE-B005989F4E3A.html
 ```
 
 - [**x**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/x.txt)
 ```
-[[[display_title]]]([[draft_open_url]])
+[David Blue‘s Drafts Configs](drafts://open?uuid=38A942A2-33C4-4630-9CDE-B005989F4E3A)
 ```
 
 - [**latlong**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/latlong.txt)
 ```
-`[[latitude]]-[[longitude]]-[[date|%m%d%Y-%H%M%S]]`
+`[[latitude]]--92.387976-[[date|%m%d%Y-%H%M%S]]`
 ```
 
 - [**img**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/img.txt)
@@ -255,18 +255,18 @@ https://davidblue.wtf/drafts/[[uuid]].html
 
 - [**code**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/code.txt)
 ```
-[[clipboard]]
+
 ```
 
 - [**snap**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/snap.txt)
 ```
-[[clipboard]]
+
 ```
 
 - [**video**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/video.txt)
 ```
 <video controls>
-  <source src=“[[clipboard]]”>
+  <source src=“”>
 </video>
 ```
 
@@ -277,109 +277,145 @@ https://davidblue.wtf/drafts/[[uuid]].html
 </audio>
 ```
 
+- [**work**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/work.txt)
+```
+[](drafts://x-callback-url/workspace?name=)
+```
 ---
 
-[Gist - I hope to properly maintain a public list of my keyboard shortcuts in Drafts.](https://gist.github.com/extratone/2e54243a2123ccfa6a37c6e8cc1057e2)
+[Gist - draftcuts.md](https://gist.github.com/extratone/2e54243a2123ccfa6a37c6e8cc1057e2)
 
 ## Drafts Keyboard Shortcuts (iOS Export)
-`03012022-025847`
-- **Toggle Editing Mode** - ⌘ Return
-- **Toggle Flagged** - ⌘ ⇧ L
-- **Quick Search** - ⌘ ⇧ F
-- **Quick Navigation** - ⌘ \
-- **Markdown Capture Selected** URL - ⌥O
-- Copy Draft Link as MD link - ⇧⌃C
-- Tot5 Draft Link as MD link - ⇧⌃E
-- Append Selection to 7th Tot Dot - ⌃⌥7
-- Append to 7th Tot Dot - ⌥7
-- Prepend to 7th Tot Dot - ⇧⌥7
-- Tweetbot Selection - ⌥P
-- Post Selection to Mastodon - ⇧⌥P
-- DraftsImageSmall - ⇧⌃⌥I
-- Post to Mastodon - ⇧⌃⌥M
-- DraftsImage - ⇧⌃I
-- Telegram Extratone with Rich Text Copied - ⇧⌃G
-- Send to Saved Messages (Telegram) (copy) - ⌃G
-- Drakesville - ⌃M
-- SMS Drakesville - ⌥M
-- Post to Write.as Blog - ⇧⌃⌥W
-- ~ Town Copy HTML - ⇧⌃⌥C
-- Insert DavodTime™  timestamp. - ⇧⌃⌥T
-- Simplenote - ⇧⌃W
-- Export Psalms Notes - ⇧⌃⌥N
-- Export Psalms Drafts - ⇧⌃⌥D
-- Keyboard Shortcuts Export - ⇧⌃K
-- **Selection Word Count** - ⌃W
-- Draft Info - ⌃I
-- Dark/Light Toggle - ⇧⌃L
-- **Load The Psalms** - ⌥.
-- **Preview MMD** - ⌥⌘/
-- **TAD-Toggle Last Two Modified Drafts** - ⇧⇥
-- **Store Page URLs** - ⇧⌃U
-- Print Text - ⌃⌥P
-- **Lookup in Terminology** - ⇧⌃D
-- **Text Modifier…** - ⇧⌥t
-- Zalgos - ⇧⌃Z
-- **RandoDraft** - ⇧⌃⌥R
-- Save to Written folder as .md - ⌥⌘S
-- **Create Bear Note From Webpage** - ⇧⌃B
-- **Markdown Header (#)** - ⌃⌘H
-- Markdown Bold (**) - ⌘B
-- **Markdown Quotation (>)** - ⌃Q
-- **Code Block (```)** - ⌃⌘C
-- Markdown Emphasis (*) - ⌘I
-- Markdown List - ⌃L
-- Markdown Link - ⌘K
-- Replace URLs by MD links - ⇧⌘U
-- Markdown Footnote (Variation) - ⌃F
-- **Strikethrough** - ⌃S
-- Copy - ⌃C
-- New Draft with Template - ⇧⌘N
-- **Clipboard…** - ⌥C
-- ~~Find - ⇧⌥F~~
-- Tasks - ⌃T
-- **Copy Tags** - ⌃⌥T
-- Save Version - ⇧⌘S
-- **Copy Draft Open Link** - ⇧⌘E
-- Open URL - ⇧⌃O
-- **Synonym** - ⌃⌥S
-- Tweet Selection - ⇧⌃⌥P
-- NeoCities HTML Preview - ⌥⌘P
-- Open NeoCities Workspace - ⇧⌃N
-- ~~Format JavaScript - ⌥⌘F~~
-- ~~Drafts 5 JavaScript API list - ⌘D~~
-- **Clipboard Folder as txt** - ⇧⌃⌥⌘C
-- Error - ⇧⌃⌥↓
-- **GitHub Issue** - ⌃⌥I
-- Refresh TextExpander Snippets - ⇧⌘R
-- TAD-Trash Note - ⌃-
-- TAD-Load Previous Workspace - ⇧⌥⌘⇥
-- TAD-Load Next Workspace - ⌥⌘⇥
-- TAD-Search Actions - ⌘/
-- TAD-Duplicate Draft and Load - ⌃D
-- **TAD-Prime Preview MMD** - ⌃P
-- TAD-Preview with Marked2 - ⇧⌃P
-- ~~TAD-Update TextExpander - ⌥⌘R~~
-- Written Workspace - ⌘2
-- Documentation Workspace - ⌘3
-- Hole Workspace - ⌘9
-- Testing - ⌥0
-- Current Work Draft - ⌥1
-- Current Work Notes - ⌥2
-- Three - ⌥3
-- Four - ⌥4
-- Five - ⌥5
-- Six - ⌥6
-- Seven - ⇧⌥1
-- Eight - ⇧⌥2
-- Nine - ⇧⌥3
-- Ten - ⇧⌥4
-- Eleven - ⇧⌥5
-- Twelve - ⇧⌥6
-- Clear Clipboard - ⌥⇥
-- Copy as Rich Text - ⌃⌥C
-- **Share as File: Markdown** - ⇧⌃S
-- **Push Draft to GitHub Repo** - ⌥G
+`04132022-210245`
+- ⇧^\ - Go To Bookmark
+- ⌥P - Tweetbot Selection
+- ⇧⌥P - Post Selection to Mastodon
+- ⇧^⌥I - DraftsImageSmall
+- ⇧^I - DraftsImage
+- ⇧^⌥M - Post to Mastodon
+- ⇧^G - Telegram Extratone with Rich Text Copied
+- ^G - Send to Saved Messages (Telegram) (copy)
+- ^~,~ Townie Link
+- ^M - Drakesville
+- ⌥M - SMS Drakesville
+- ⇧^⌥C - ~ Town Copy HTML
+- ⇧^⌥T - Insert DavodTime™  timestamp.
+- ⇧⌘- - Deduplicate All (Lines)
+- ⇧^⌥N - Export Psalms Notes
+- ⇧^⌥D - Export Psalms Drafts
+- ⇧^K - Keyboard Shortcuts Export
+- ⌥O - Markdown Capture Selected URL
+- ⇧^E - Tot5 Draft Link as MD link (Shortcut)
+- ⇧^* - DotAppend
+- ⇧^⌥W - Post to Write.as Blog
+- ⇧^W - Simplenote
+- ⌥⌘S - Save to Written folder as .md
+- ⇧^B - Create Bear Note From Webpage
+- ^⌥R - Drop
+- ⌥7,To7 Shortcut
+- ^I - Current Draft Info
+- ⇧^C - Copy Draft Link as MD link
+- ⇧^= - Run Shortcut
+- ⌥. - Load The Psalms
+- ⌘D - Preview MMD
+- ⇧TAB - Toggle Last Two Modified Drafts
+- ⇧^U - Store Page URLs
+- ^⌥P - Print Text
+- ⇧^D - Lookup in Terminology
+- ⇧⌥t - Text Modifier…
+- ⇧^H - DraftsHex
+- ⇧^L - Dark/Light Toggle
+- ^B - Blink Selection
+- ⇧^Z - Zalgos
+- ⇧^+ - Selection to Snippet .txt File
+- ^⌥N - Draftstion
+- ⇧^M - DraftsOdette
+- ^⌥⌘O - Random Draft
+- ^⌘H - Markdown Header (#)
+- ⌘B - Markdown Bold (**)
+- ^Q - Markdown Quotation (>)
+- ^⌘C - Code Block (```)
+- ⌘I - Markdown Emphasis (*)
+- ^L - Markdown List
+- ⌘K - Markdown Link
+- ⇧⌘U - Replace URLs by MD links
+- ^F - Markdown Footnote (Variation)
+- ^S - Strikethrough
+- ^C - Copy
+- ⌥G - Google Search
+- ⇧⌘N - New Draft with Template
+- ⌥C - Clipboard…
+- ^T - Tasks
+- ^⌥T - Copy Tags
+- ⇧⌘S - Save Version
+- ⇧⌘E - Copy Draft Open Link
+- ⇧^O - Open URL
+- ^⌥O - Open URL (Chrome Incognito)
+- ^- - Trash
+- ^⌥S - Synonym
+- ⇧⌥O - Import Folder
+- ⌘U - Toggle Link Mode
+- ⌥U - Share Selection
+- ⇧^⌥P - Tweet Selection
+- ⇧^⌥L - Linky Selection
+- ⇧^⌥* - Draft to /drafts as UUID.html
+- ^⌥⌘* - Draft to /drafts as UUID.txt
+- ⇧^⌥/ - Open pushed /drafts file by UUID.
+- ^⌥⌘/ - Open pushed /drafts TXT file by UUID.
+- ⌥⌘P - NeoCities HTML Preview
+- ⇧^N - Open NeoCities Workspace
+- ⇧^⌥F - Copy WTF Markdown Link to Clipboard
+- ⇧⌥⌘R - Create Redirect
+- ⌥⌘R - Refresh Theme or Syntax
+- ^⌥W - Post to WordPress
+- ^⌥M - Post to Medium
+- ^⌥B - Draftsblr
+- ⌥⌘G - Save Instagram Posts
+- ⌥w - Insert Text Element…
+- ⇧^⌥R - Raindrop Text
+- ⇧^⌥⌘C - Clipboard Folder as txt
+- ⇧^⌥⇩ - Error
+- ⇧^⌥0 - Run Shell Command
+- ^⌥I - GitHub Issue
+- ⇧⌘R - Refresh TextExpander Snippets
+- ⇧⌥⌘S - Share as File: Markdown
+- ⇧^⌥S - Share as File: HTML
+- ⇧⌥⌘G - Create GitHub Gist from Draft
+- ⇧⌥⌘TAB - Load Previous Workspace
+- ⌥⌘TAB - Load Next Workspace
+- ⇧^R - URL Encode Selection
+- ⌘/ - Search Actions
+- ⇧^A - Sort All - Alphabetic
+- ⇧^⌥A - Sort All - Reverse Alphabetic
+- ⌥⌘A - Select All Content
+- ^D - Duplicate Draft and Load
+- ⇧^⌥O - Load New Draft from Selection
+- ^P - Prime Preview MMD
+- ⇧^P - Preview with Marked2
+- ⇧⌥⌘T - Draft to TextExpander Snippet
+- ⌘2 - Written Workspace
+- ⌘3 - Documentation Workspace
+- ⌘4 - Correspondence Workspace
+- ⌘5 - Library Workspace
+- ⇧^V - Vocabulary Workspace
+- ⌘9 - Hole Workspace
+- ⌥0 - Testing
+- ⌥1 - Current Work Draft
+- ⌥2 - Current Work Notes
+- ⌥3 - Three
+- ⌥4 - Four
+- ⌥5 - Five
+- ⌥6 - Six
+- ⇧⌥1 - Seven
+- ⇧⌥2 - Eight
+- ⇧⌥3 - Nine
+- ⇧⌥4 - Ten
+- ⇧⌥5 - Eleven
+- ⇧⌥6 - Twelve
+- ⇧⌥7 - Thirteen
+- ⌥TAB - Clear Clipboard
+- ^⌥C - Copy as Rich Text
+- ⇧^S - Share as File: Markdown
 
 ## External 
 
