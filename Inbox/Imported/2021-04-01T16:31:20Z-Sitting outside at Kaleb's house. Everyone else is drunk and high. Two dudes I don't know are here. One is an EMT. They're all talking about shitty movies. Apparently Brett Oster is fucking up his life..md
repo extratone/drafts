@@ -1,1 +1,0 @@
-Sitting outside at Kaleb's house. Everyone else is drunk and high. Two dudes I don't know are here. One is an EMT. They're all talking about shitty movies. Apparently Brett Oster is fucking up his life.

@@ -1,1 +1,0 @@
-Cooling off at Meagan's before literature. Just took the chapter 3 test and got a 51%..... So that sucks. Hopefully going to play at the Yamaha place today and ask them about possibly recording in the future.

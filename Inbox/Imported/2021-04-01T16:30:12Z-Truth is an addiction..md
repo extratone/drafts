@@ -1,1 +1,0 @@
-Truth is an addiction.

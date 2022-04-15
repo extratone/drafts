@@ -1,1 +1,0 @@
-Because Coventry's services are closed over the weekend, I've just paid $140 cash value for my Adderall refill.

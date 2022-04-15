@@ -1,3 +1,0 @@
-I dreamt that Dad and I were on vacation somewhere. There was a lake but I wasn't the lake of the ozarks. It was surrounded by flat land, speckled with dark 90s log/wood paneled houses and fairly old trees. We were in some sort of automated vehicle. Mary Lupo was there with a friend and they were overly excited about spending time with me. I remember feeling like I had to go to school the next day. The same sort of feeling as that time Meagan and I were at the lake but I had to work at harbor freight. We also had an autonomous car/vehicle.
-
-#legacy

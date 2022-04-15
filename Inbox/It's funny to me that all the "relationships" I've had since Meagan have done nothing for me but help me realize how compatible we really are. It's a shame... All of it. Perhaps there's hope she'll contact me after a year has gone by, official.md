@@ -1,1 +1,0 @@
-It's funny to me that all the "relationships" I've had since Meagan have done nothing for me but help me realize how compatible we really are. It's a shame... All of it. Perhaps there's hope she'll contact me after a year has gone by, officially. Probably not, though.

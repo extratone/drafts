@@ -1,1 +1,0 @@
-Though Abby is moving out today, mom was quite upset and called her a "slob." She sold the bed Gary died in (with the removable posts I used to remove) and the buyers stepped in and spread Raven's poop. Repeatedly, she exclaimed "I just need to live alone."

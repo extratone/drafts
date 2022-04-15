@@ -1,3 +1,0 @@
-Here's the most newsworthy sentence you'll ever read: I am a "Redditor" now. A Redditist. In /r/OCPoetry, I've found satisfaction and subsequent addiction. Because I am this way, you may even expect me to reference something like "...live long enough to see yourself become the... [Reddit user,]" but I am not actually of that kin. A weekend guest in their house, at most.
-
-Is Reddit relevant? Enough for you to sympathize with my want to abstractly understand the culture, at the least. Ideologically, I always thought it'd finally display to the masses the true destructive habits of the democratic construct.
