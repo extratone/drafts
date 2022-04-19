@@ -1,5 +1,5 @@
 // setup and request credentials
-let credential = Credential.create("Writeas", "Enter the base URL of your Mastodon instance (like: https://mastodon.social), and a valid access token for an application you have created in your account.");
+let credential = Credential.create("Writeas", "Enter the base URL of the Write.as API.");
 
 credential.addTextField("host", "Base URL");
 credential.addPasswordField("token", "Access Token");
@@ -16,8 +16,8 @@ var id_key = new Date().toISOString();
 // for more info on options see:
 // https://docs.joinmastodon.org/methods/statuses/
 let data = {
-	"status": draft.content,
-	"visibility": "public"
+	"body": draft.content,
+	"title": draft.displayTitle
 };
 
 // create and post HTTP request
@@ -34,9 +34,9 @@ var response = http.request({
 });
 
 if (response.statusCode == 200) {
-	console.log("Posted to Mastodon, ID: " + response.responseData.id);
+	console.log("Posted to Write.as, ID: " + response.responseData.id);
 }
 else {
-	console.log("Mastodon Error: " + response.error);
+	console.log("Write.as Error: " + response.error);
 	context.fail();
 }
