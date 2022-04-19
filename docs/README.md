@@ -1,5 +1,5 @@
 # David Blue‘s Drafts Configs
-Updated `04192022-074327`
+Updated `04192022-102129`
 
 ![DraftsTeal](https://user-images.githubusercontent.com/43663476/148675995-eaa6458a-f0af-4592-bc5e-798f72719576.png)
 
@@ -61,11 +61,12 @@ I have long pondered creating an ***unofficial*** chat-format space for the Draf
 
 ## Siri Shortcuts
 
-- [RoutineHub • List .md Drafts Open Links by Tag](https://routinehub.co/shortcut/11085/)
-- [RoutineHub • Capture Web Page to Drafts](https://routinehub.co/shortcut/8994/)
-- [RoutineHub • Overcast Show Notes ⇨ Drafts](https://routinehub.co/shortcut/8944/)
-- [RoutineHub • Safari Tabs List to Drafts](https://routinehub.co/shortcut/11024/)
-- [RoutineHub • Capture Webpage to Drafts (macOS)](https://routinehub.co/shortcut/11078/)
+- [Drafts Workspace ⇨ Apple Notes](https://routinehub.co/shortcut/11622)
+- [List .md Drafts Open Links by Tag](https://routinehub.co/shortcut/11085/)
+- [Capture Web Page to Drafts](https://routinehub.co/shortcut/8994/)
+- [Overcast Show Notes ⇨ Drafts](https://routinehub.co/shortcut/8944/)
+- [Safari Tabs List to Drafts](https://routinehub.co/shortcut/11024/)
+- [Capture Webpage to Drafts (macOS)](https://routinehub.co/shortcut/11078/)
 
 ⇨[**David Blue on the Drafts Action Directory**](https://actions.getdrafts.com/search?utf8=%E2%9C%93&q=David+Blue)
 
