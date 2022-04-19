@@ -1,5 +1,5 @@
-![tldraw](assets/f6Jfwa.svg)# David Blue‘s Drafts Configs
-Updated `04142022-230220`
+# David Blue‘s Drafts Configs
+Updated `04182022-220543`
 
 ![DraftsTeal](https://user-images.githubusercontent.com/43663476/148675995-eaa6458a-f0af-4592-bc5e-798f72719576.png)
 
@@ -98,7 +98,8 @@ I have long pondered creating an ***unofficial*** chat-format space for the Draf
 - [Copy Drafts Link as MD link](https://actions.getdrafts.com/a/1v5)
 - [Tweet Selection](https://actions.getdrafts.com/a/1v6)
 - [Insert DavodTime™ timestamp](https://actions.getdrafts.com/a/1uG)
-- [Google Search](https://directory.getdrafts.com/a/1yu) 
+- [Google Search](https://directory.getdrafts.com/a/1yu)
+- [Club MacStories Search](https://directory.getdrafts.com/a/1yv) 
 
 ### Themes
 
