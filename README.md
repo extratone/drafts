@@ -71,6 +71,9 @@ I have long pondered creating an ***unofficial*** chat-format space for the Draf
 
 ## David Blue’s Drafts Action Directory Contributions
 
+- [Typefully](https://actions.getdrafts.com/a/1yn)
+- [Current Draft Info](https://actions.getdrafts.com/a/1yg)
+- [Clear Clipboard](https://actions.getdrafts.com/a/1vP)
 - [Query SnippetsLab | Drafts Directory](https://directory.getdrafts.com/a/1xe)
 - [Run Shortcut | Drafts Directory](https://directory.getdrafts.com/a/1xP)
 - [Clear Clipboard | Drafts Directory](https://directory.getdrafts.com/a/1vP)
@@ -91,11 +94,11 @@ I have long pondered creating an ***unofficial*** chat-format space for the Draf
 
 ### Actions
 
-- [Clear Clipboard](https://actions.getdrafts.com/a/1vP)
 - [Open URL](https://actions.getdrafts.com/a/1v4)
 - [Copy Drafts Link as MD link](https://actions.getdrafts.com/a/1v5)
 - [Tweet Selection](https://actions.getdrafts.com/a/1v6)
-- [Insert DavodTime™ timestamp](https://actions.getdrafts.com/a/1uG) 
+- [Insert DavodTime™ timestamp](https://actions.getdrafts.com/a/1uG)
+- [Google Search](https://directory.getdrafts.com/a/1yu) 
 
 ### Themes
 
