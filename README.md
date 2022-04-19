@@ -1,5 +1,5 @@
 # David Blue‘s Drafts Configs
-Updated `04192022-073850`
+Updated `04192022-074327`
 
 ![DraftsTeal](https://user-images.githubusercontent.com/43663476/148675995-eaa6458a-f0af-4592-bc5e-798f72719576.png)
 
@@ -250,7 +250,7 @@ https://davidblue.wtf/drafts/38A942A2-33C4-4630-9CDE-B005989F4E3A.html
 
 - [**latlong**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/latlong.txt)
 ```
-`38.934005--92.387976-[[date|%m%d%Y-%H%M%S]]`
+`[[latitude]]--92.387976-[[date|%m%d%Y-%H%M%S]]`
 ```
 
 - [**img**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/img.txt)
