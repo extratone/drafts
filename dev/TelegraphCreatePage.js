@@ -9,9 +9,9 @@ const token = credential.getValue("token");
 const collection = credential.getValue("account");
 
 // make post
-let endpoint = `https://write.as/api/collections/${collection}/posts`;
+let endpoint = `https://api.telegra.ph/createPage/access_token=${token}&author_name=${account}`
 
-https://api.telegra.ph/createPage?access_token=ecaa11b2eba4e4fa89a641d86d29415acb89c19cf232b8eb2d54642fec49&title=Sample+Page&author_name=Anonymous&content=[{"tag":"p","children":["Hello,+world!"]}]&return_content=tru
+?access_token=ecaa11b2eba4e4fa89a641d86d29415acb89c19cf232b8eb2d54642fec49&title=Sample+Page&author_name=Anonymous&content=[{"tag":"p","children":["Hello,+world!"]}]&return_content=tru
 
 // configure post details
 // for more information, see:
