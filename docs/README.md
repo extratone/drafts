@@ -1,7 +1,7 @@
 # David Blue‘s Drafts Configs
 Updated `05032022-060957`
 
-![DraftsTeal](https://user-images.githubusercontent.com/43663476/148675995-eaa6458a-f0af-4592-bc5e-798f72719576.png)
+![IconViolet](https://user-images.githubusercontent.com/43663476/166443931-d3c50634-1061-45b4-b4dd-f1f95f8dc959.png)
 
 ## Where Text Starts™ and David Blue Ends. 
 
