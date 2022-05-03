@@ -1,5 +1,5 @@
 # David Blue‘s Drafts Configs
-Updated `05032022-014836`
+Updated `05032022-060957`
 
 ![DraftsTeal](https://user-images.githubusercontent.com/43663476/148675995-eaa6458a-f0af-4592-bc5e-798f72719576.png)
 
@@ -145,12 +145,20 @@ I have long pondered creating an ***unofficial*** chat-format space for the Draf
 
 ## Themes
 
+### Homebrew
+
+![Main Preview](https://i.snap.as/VhuvNlmy.png)
+
+- [**Drafts Directory**](https://directory.getdrafts.com/t/1z2)
+- [GitHub Issue](https://github.com/extratone/drafts/issues/48)
+- [WTF](https://davidblue.wtf/drafts/BD5DFCED-4D9B-4217-9F41-D87582D21DE2.html)
+
 ### Windows Eternal
 
 ![WindowsEternal-iPadPro](https://user-images.githubusercontent.com/43663476/154896941-f15cfe59-dd8f-4310-b4be-fe55ee4e4bc7.PNG)
 
 - [Windows Eternal Theme · Issue #26 · extratone/drafts](https://github.com/extratone/drafts/issues/26)
-- [**Drafts Directory Link**](https://actions.getdrafts.com/t/1wT)
+- [**Drafts Directory**](https://actions.getdrafts.com/t/1wT)
 - [Blog Post](https://bilge.world/windows-eternal)
 - [Shortlink](https://bit.ly/windowseternal) - `https://bit.ly/windowseternal`
 - [Tilde](https://tilde.town/~extratone/windowseternal)
