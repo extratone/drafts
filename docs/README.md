@@ -1,5 +1,5 @@
 # David Blue‘s Drafts Configs
-Updated `04252022-181015`
+Updated `05022022-192956`
 
 ![DraftsTeal](https://user-images.githubusercontent.com/43663476/148675995-eaa6458a-f0af-4592-bc5e-798f72719576.png)
 
@@ -72,6 +72,7 @@ I have long pondered creating an ***unofficial*** chat-format space for the Draf
 
 ## David Blue’s Drafts Action Directory Contributions
 
+- [Post to Writeas Blog](https://directory.getdrafts.com/a/1zW)
 - [Post to Writeas](https://directory.getdrafts.com/a/1zO)
 - [Capture with Bear](https://directory.getdrafts.com/a/1zG)
 - [Open URL (Firefox)](https://directory.getdrafts.com/a/1zD)
