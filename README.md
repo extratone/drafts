@@ -1,5 +1,5 @@
 # David Blue‘s Drafts Configs
-Updated `05032022-060957`
+Updated `05032022-154816`
 
 ![IconViolet](https://user-images.githubusercontent.com/43663476/166443931-d3c50634-1061-45b4-b4dd-f1f95f8dc959.png)
 
@@ -72,6 +72,7 @@ I have long pondered creating an ***unofficial*** chat-format space for the Draf
 
 ## David Blue’s Drafts Action Directory Contributions
 
+- [Blink Selection](https://directory.getdrafts.com/a/1z5)
 - [App Store Search](https://directory.getdrafts.com/a/1z1)
 - [Post to Writeas Blog](https://directory.getdrafts.com/a/1zW)
 - [Post to Writeas](https://directory.getdrafts.com/a/1zO)
