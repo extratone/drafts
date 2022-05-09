@@ -248,9 +248,9 @@
       }
     },
     {
-      "match": "((?<![\\\\\\*_])(\\*|_)(?![\\\\\\*_])([\\S?].*?)(?<![\\\\|\\*])(\\2)(?![\\\\|\\*]))",
+      "match": "((?<![\\\\_\\w])(_)(?![\\\\_])([\\S?].*?)(?<![\\\\_])(\\2)(?![\\\\_\\w]))",
       "exclusive": false,
-      "comment": "Markdown emphasis like *italic* or _italic_",
+      "comment": "Markdown emphasis like _italic_, require surrounding white space",
       "captures": {
         "2": {
           "scope": "markup"
@@ -264,9 +264,41 @@
       }
     },
     {
-      "match": "(((?<!\\\\)\\*\\*|__)([\\S?].*?)(\\2))",
+      "match": "((?<![\\\\\\*])(\\*)(?![\\\\\\*])([\\S?].*?)(?<![\\\\\\*])(\\2)(?![\\\\\\*]))",
       "exclusive": false,
-      "comment": "Markdown bold like **bold** or __bold__",
+      "comment": "Markdown emphasis like *italic* in the middle of a word only",
+      "captures": {
+        "2": {
+          "scope": "markup"
+        },
+        "3": {
+          "scope": "text.italic"
+        },
+        "4": {
+          "scope": "markup"
+        }
+      }
+    },
+    {
+      "match": "(((?<![\\\\\\w])__)([\\S?].*?)(\\2)(?![\\\\\\*\\w]))",
+      "exclusive": false,
+      "comment": "Markdown bold like __bold__, require surrounding white space",
+      "captures": {
+        "2": {
+          "scope": "markup"
+        },
+        "3": {
+          "scope": "text.bold"
+        },
+        "4": {
+          "scope": "markup"
+        }
+      }
+    },
+    {
+      "match": "(((?<![\\\\])\\*\\*)([\\S?].*?)(\\2)(?![\\\\|\\*]))",
+      "exclusive": false,
+      "comment": "Markdown bold like **bold**, allow in middle of word",
       "captures": {
         "2": {
           "scope": "markup"
