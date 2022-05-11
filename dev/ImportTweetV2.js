@@ -31,6 +31,8 @@ var response = twitter.request({
     "parameters": params,
 });
 */
+// create and post HTTP request
+var http = HTTP.create();
 
 var response = http.request({
     "url": baseURL,
