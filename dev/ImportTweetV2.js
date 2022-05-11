@@ -10,14 +10,11 @@ const token = credential.getValue("token");
 
 let selected = editor.getSelectedRange()[1] > 0 ? editor.getSelectedText() : editor.getText();
 
-
 var id = selected.substring(selected.lastIndexOf('/') + 1);
 
 let baseURL = `https://api.twitter.com/2/tweets`;
 
 var params = {"ids": id, "expansions": "geo.place_id, attachments.media_keys, entities.mentions.username", "tweet.fields": "created_at, text, referenced_tweets, attachments, geo, entities, context_annotations, conversation_id, reply_settings", "user.fields": "username, verified, profile_image_url, location, url, description", "media.fields": "url", "place.fields": "geo"};
-
-let head = `Authorization: Bearer ${token}`;
 
 var http = HTTP.create();
 
@@ -31,8 +28,7 @@ var response = http.request({
 });
 
 if (response.statusCode == 200 || response.statusCode == 201) {
-    let data = response.responseData.data;
- /*   mdlink.push(`${text}\n${mdlink}`); */
+    let data = response.responseText;
     let d = Draft.create();
     d.content = data;
     d.update();
