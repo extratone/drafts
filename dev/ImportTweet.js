@@ -23,7 +23,7 @@ if (response.statusCode == 200 || response.statusCode == 201) {
     d.update();
     editor.load(d);
     console.log("Tweet retrieved:" + text);
-    app.SetClipboard(responseData);
+    app.SetClipboard(response.responseData);
 }
 
 else {
