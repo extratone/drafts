@@ -8,30 +8,17 @@ credential.authorize();
 const uname = credential.getValue("username");
 const token = credential.getValue("token");
 
-
-var twitter = Twitter.create();
-
 let selected = editor.getSelectedRange()[1] > 0 ? editor.getSelectedText() : editor.getText();
 
-/*let mdlink = [`[Tweet](${selected})`,""]; */
 
 var id = selected.substring(selected.lastIndexOf('/') + 1);
 
 let baseURL = `https://api.twitter.com/2/tweets`;
 
-var params = {"ids": id, "expansions": "author_id,referenced_tweets.id,in_reply_to_user_id,geo.place_id,attachments.media_keys,attachments.poll_ids,entities.mentions.username,referenced_tweets.id.author_id", "tweet.fields": "id,created_at,text,author_id,in_reply_to_user_id,referenced_tweets,attachments,withheld,geo,entities,public_metrics,lang,context_annotations,conversation_id,reply_settings"};
+var params = {"ids": id, "expansions": "geo.place_id, attachments.media_keys, entities.mentions.username", "tweet.fields": "created_at, text, referenced_tweets, attachments, geo, entities, context_annotations, conversation_id, reply_settings", "user.fields": "username, verified, profile_image_url, location, url, description", "media.fields": "url", "place.fields": "geo"};
 
 let head = `Authorization: Bearer ${token}`;
 
-/*
-var response = twitter.request({
-	"url": baseURL,
-	"method": "GET",
-    "headers:": head,
-    "parameters": params,
-});
-*/
-// create and post HTTP request
 var http = HTTP.create();
 
 var response = http.request({
@@ -44,10 +31,10 @@ var response = http.request({
 });
 
 if (response.statusCode == 200 || response.statusCode == 201) {
-    let text = response.responseData.text;
+    let data = response.responseData.data;
  /*   mdlink.push(`${text}\n${mdlink}`); */
     let d = Draft.create();
-    d.content = text;
+    d.content = data;
     d.update();
     editor.load(d);
     console.log("Tweet retrieved:" + text);
