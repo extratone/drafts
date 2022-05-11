@@ -14,7 +14,7 @@ var id = selected.substring(selected.lastIndexOf('/') + 1);
 
 let baseURL = `https://api.twitter.com/2/tweets`;
 
-var params = {"ids": id, "expansions": "geo.place_id, attachments.media_keys, entities.mentions.username", "tweet.fields": "created_at, text, referenced_tweets, attachments, geo, entities, context_annotations, conversation_id, reply_settings", "user.fields": "username, verified, profile_image_url, location, url, description", "media.fields": "url", "place.fields": "geo"};
+var params = {"ids": id, "expansions": "geo.place_id,attachments.media_keys,entities.mentions.username", "tweet.fields": "created_at,text,referenced_tweets,attachments,geo,entities,context_annotations,conversation_id,reply_settings", "user.fields": "username,verified,profile_image_url,location,url,description", "media.fields": "url", "place.fields": "geo"};
 
 var http = HTTP.create();
 
