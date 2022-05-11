@@ -37,19 +37,21 @@ var http = HTTP.create();
 var response = http.request({
     "url": baseURL,
     "method": "GET",
-    "headers": head,
-    "parameters": params,
+    "headers": {
+		"Authorization" : "Bearer " + token,
+    },
+    "parameters": "tweet.fields=" + params,
 });
 
 if (response.statusCode == 200 || response.statusCode == 201) {
-    let text = response.responseData;
+    let text = response.responseData.text;
  /*   mdlink.push(`${text}\n${mdlink}`); */
     let d = Draft.create();
     d.content = text;
     d.update();
     editor.load(d);
     console.log("Tweet retrieved:" + text);
-    app.SetClipboard(response.responseData);
+    app.setClipboard(response.responseText);
 }
 
 else {
