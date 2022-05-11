@@ -28,12 +28,13 @@ var response = http.request({
 });
 
 if (response.statusCode == 200 || response.statusCode == 201) {
-    let data = response.responseText;
+    let data = JSON.parse(response.responseText);
+    let image = data.data[0].attachments.media[0].url;
     let d = Draft.create();
     d.content = data;
     d.update();
     editor.load(d);
-    console.log("Tweet retrieved:" + text);
+    console.log("Tweet retrieved:" + data);
     app.setClipboard(response.responseText);
 }
 
