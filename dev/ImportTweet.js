@@ -1,6 +1,10 @@
 var twitter = Twitter.create();
 
-let id = editor.getSelectedRange()[1] > 0 ? editor.getSelectedText() : editor.getText();
+let selected = editor.getSelectedRange()[1] > 0 ? editor.getSelectedText() : editor.getText();
+
+let mdlink = [`[Tweet](${selected})`,""];
+
+var id = selected => selected.substring(selected.lastIndexOf('/') + 1);
 
 var baseURL = "https://api.twitter.com/1.1/";
 var url = baseURL + "statuses/show.json";
@@ -13,11 +17,13 @@ var response = twitter.request({
 
 if (response.statusCode == 200 || response.statusCode == 201) {
     let text = response.responseData.text;
+    mdlink.push(`${text}\n${content}`);
     let d = Draft.create();
-    d.content = text
+    d.content = mdlink.join("\n");
     d.update();
     editor.load(d);
-    console.log("Tweet retrieved");
+    console.log("Tweet retrieved:" + text);
+    app.SetClipboard(responseData);
 }
 
 else {
