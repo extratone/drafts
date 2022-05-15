@@ -1,7 +1,0 @@
-# Remark.as is Now Enabled on This Blog
-
-![Remark.asIntegration](https://user-images.githubusercontent.com/43663476/152924311-717173c8-e089-4369-8794-1a1bff8e07cb.jpeg)
-
-Hey Write.as Pro users!
-
-I just wanted to let you know that Remark.as

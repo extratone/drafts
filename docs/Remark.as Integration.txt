@@ -1,5 +1,0 @@
-# Remark.as Integration
-- [Remark.as Integration · Issue #300 · extratone/bilge](https://github.com/extratone/bilge/issues/300)
-- [Remark.as - privacy-first, portable comments - Feedback / Future products - Discuss Write.as](https://discuss.write.as/t/remark-as-privacy-first-portable-comments/25)
-- [[Remark.as is Now Enabled on This Blog]]
-- `![Remark.asIntegration](https://user-images.githubusercontent.com/43663476/152924311-717173c8-e089-4369-8794-1a1bff8e07cb.jpeg)`

@@ -1,9 +1,0 @@
-# Radio Station Shortcuts
-- [Telegram Link](https://t.me/columbiamo/11239)
-
-[**KBIA Shortcut**](https://www.icloud.com/shortcuts/b48038b265ba4633a7dbe8d7d31b857b)
-when I wake up, all I have to do to start NPR is type “KBIA” to Siri (or say “KBIA”) and the TuneIn stream automatically starts playing at 41% volume on my phone lol.
-
-I don’t know why, but I use this and the one I have for KCOU more than any other shortcuts I’ve ever seen or made.
-
-let me know if you guys have a favorite radio station and I’ll make you one.

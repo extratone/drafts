@@ -1,8 +1,0 @@
-# Drafts Wish List
-
-![DraftsTeal](https://user-images.githubusercontent.com/43663476/148675995-eaa6458a-f0af-4592-bc5e-798f72719576.png)
-
-- [ ] Clean unnecessary/never-going-to-be-used TAD actions.
-- [ ] [[Greyhound Telegram Theme (iOS Palette)]] ⇨ Drafts Theme
-- [ ] Drafts Configuration Equilibrium Post
-- [ ] [Drafts Repo](https://github.com/extratone/drafts) Renovation

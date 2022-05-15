@@ -1,7 +1,0 @@
-# 02122022-194602 | Tilde Blog
-
-An excerpt from my upcoming “[How to Fuck Text](https://github.com/extratone/bilge/issues/222)” guide:
-
-> …I believe my Text Fucking career began somewhere around the 7th grade, at 13-14 years old. It was my second or third time flunking MS02 - the Microsoft Office II course - taken on fairly outdated school desktop machines in the 2007-2008 era, all running Windows XP. Because of some inexplicable ability to simply do what I was told, I would spend class periods trying to create the largest possible text file in Notepad by copying and pasting huge, exponentially-growing globs. Eventually, I did crash a machine at least once. Though it could very well be simply the self-exaggerated recollection of preteendom, I even remember crashing the school server with one of those files.
-
-I was delighted by Drafts developer Greg when he shared [a Zalgotext Drafts Action](https://bilge.world/drafts-zalgo-action) in response to a request on Twitter earlier this afternoon.

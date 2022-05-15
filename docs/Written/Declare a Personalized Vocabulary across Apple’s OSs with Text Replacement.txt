@@ -1,2 +1,0 @@
-# Declare a Personalized Vocabulary across Apple’s OSs with Text Replacement
-If you’re like me, your cumulative experience of typing on iPhones for more than a decade is probably saturated with needlessly disruptive, unsolicited, and inaccurate autocorrection. Certain proper nouns and a dozen or so quasi-localized dialectal terms in our day-to-day writing/speech have been treated as  

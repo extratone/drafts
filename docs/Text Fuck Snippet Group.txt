@@ -1,6 +1,0 @@
-# Text Fuck Snippet Group
-- [Share URL](https://app.textexpander.com/public/12c50fb2360617d3cc66d757cf26383b)
-- fuckshare
-
-## Description
-This snippet group is made to coincide with my general endeavors to become a personally more powerful [Text Fucker](https://github.com/extratone/bilge/wiki/Text-Fucking) as well as my upcoming guide: "[How to Fuck Text](https://github.com/extratone/bilge/issues/222)."
