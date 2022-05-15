@@ -9,7 +9,7 @@ const token = credential.getValue("token");
 const collection = credential.getValue("collection");
 
 // make post
-let endpoint = `https://write.as/api/collections/chaff/posts`;
+let endpoint = `https://write.as/api/collections/${collection}/posts`;
 
 // configure post details
 // for more information, see:
