@@ -1,0 +1,959 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ThoughtAsylum Drafts Library</title>
+	<meta name="description" content="Documentation for ThoughtAsylum Drafts Library">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- OpenGraph Data Starts -->
+	<meta property="og:title" content="ThoughtAsylum Drafts Library" />
+	<meta property="og:url" content="https://tadpole.thoughtasylum.com/index.html" />
+	<meta property="og:image" content="https://tadpole.thoughtasylum.com/assets/images/logo.png" />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="ThoughtAsylum Drafts Library" />
+	<meta property="og:description" content="Documentation for ThoughtAsylum Drafts LibraryThoughtAsylum Drafts Library" />
+	<meta property="twitter:card" content="summary" />
+	<meta property="twitter:image" content="https://tadpole.thoughtasylum.com/assets/images/logo.png" />
+	<!-- <meta property="twitter:site" content="@sylumer" /> -->
+	<meta property="twitter:creator" content="@sylumer" />
+	<!-- OpenGraph Data Ends -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="shortcut icon" href="assets/images/favicon.ico">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172382354-1"></script>
+	<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-172382354-1');
+</script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">ThoughtAsylum Drafts Library</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="index.html#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="index.html#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container" style="display: inline-block">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1>ThoughtAsylum Drafts Library</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<img src="assets/images/logo.png" height="250" style="float: right">
+				<a href="index.html#welcome" id="welcome" style="color: inherit; text-decoration: none;">
+					<h1>Welcome</h1>
+				</a>
+				<ol>
+					<li><a href="index.html#overview">Overview</a></li>
+					<li><a href="index.html#howtoinformation">How-To Information</a></li>
+					<li><a href="index.html#faq">FAQ</a></li>
+					<li><a href="index.html#licensing">Licensing</a></li>
+					<li><a href="index.html#authors">Authors</a></li>
+					<li><a href="index.html#legaldisclaimer">Legal Disclaimer</a></li>
+					<li><a href="index.html#changelog">Change Log</a></li>
+				</ol>
+				<p><a name="overview"></a></p>
+				<a href="index.html#overview" id="overview" style="color: inherit; text-decoration: none;">
+					<h2>Overview</h2>
+				</a>
+				<p>The ThoughtAsylum Drafts Library, also known as <em>TADpoLe</em>, is a collection of JavaScript for working with the <a href="https://getdrafts.com">Drafts</a> application.  They cover a broad range of areas, and will no doubt continue to grow over time.  The library was built over the course of several years to meet the author&#39;s personal needs to build out more functionality in the Drafts application through it&#39;s actions framework, and in particular through the script (JavaScript) action step.</p>
+				<p>Being a JavaScript developer is not his day job (nor has it ever been); so it is very much a piece of work that is provided <em>as-is</em> and perhaps doesn&#39;t adhere to the coding styles and structures that others may use.</p>
+				<p>The library began construction in 2018 when Drafts 5 was released, and has been reworked several times and grown substantially in the intervening years. The expectation is that it will continue to grow and updates will be posted here when they are suitable for a public release.</p>
+				<p>At initial release in July 2020, the library contents came in at over 300 functions associated with standard JavaScript objects, Drafts objects, and some TADpoLe specific classes.</p>
+				<p><a name="howtoinformation"></a></p>
+				<a href="index.html#how-to-information" id="how-to-information" style="color: inherit; text-decoration: none;">
+					<h2>How-To Information</h2>
+				</a>
+				<a href="index.html#using-this-site" id="using-this-site" style="color: inherit; text-decoration: none;">
+					<h3>Using this Site</h3>
+				</a>
+				<p>This site provides the documentation for the TADpoLe library as well as the library file itself.  It is purposefully provided in a similar format to the Drafts scripting resource, and in a similar way you can review each class by selecting one of the links.  Within each you will find a variety of properties and functions.  Many of the functions are extensions of existing JavaScript or Drafts objects, and all library functions are prefixed <code>TA_</code> as an identifier.</p>
+				<p>Functions provide details of the functionality, parameters, returns, and a simple example.  Some functions also provide some more detailed sets of information about their use.  Properties and classes unique to the library are similarly described with what we hope is enough detail for them to make sense and be used.</p>
+				<a href="index.html#additional-information" id="additional-information" style="color: inherit; text-decoration: none;">
+					<h3>Additional Information</h3>
+				</a>
+				<p>Additional pages of information on how to use specific parts of the library will be published over time at <a href="https://www.thoughtasylum.com">ThoughtAsylum.com</a>.  Links back to the most relevant posts and pages on ThoughtAsylum will be added here.  In addition if you come up with any interesting use cases or how-to guides utilising the library, <a href="https://forums.getdrafts.com/u/sylumer/summary">direct message @sylumer on the Drafts forums</a> with the details, and they might just get included here.</p>
+				<p><a name="actiongroup"></a></p>
+				<a href="index.html#action-group-suite" id="action-group-suite" style="color: inherit; text-decoration: none;">
+					<h3>Action Group Suite</h3>
+				</a>
+				<p>The main way that most users will gain access to the library will be through the use of the suite of <strong>ThoughtAsylum Action Groups</strong>, available from the <em>Drafts Action Directory</em>.</p>
+				<p>
+					<ul>
+						<li><a href="https://actions.getdrafts.com/g/1aM"><i class="fa fa-bars"></i> Install Action Group: ThoughtAsylum</a> - the core group that is a pre-requisite of the other action groups.</li>
+						<li><a href="https://actions.getdrafts.com/g/1cu"><i class="fa fa-bars"></i> Install Action Group: ThoughtAsylum - Writing</a> - used for creating content in Drafts.</li>
+						<li><a href="https://actions.getdrafts.com/g/1cv"><i class="fa fa-bars"></i> Install Action Group: ThoughtAsylum - Management</a> - used for managing and navigating Drafts.</li>
+						<li><a href="https://actions.getdrafts.com/g/1cw"><i class="fa fa-bars"></i> Install Action Group: ThoughtAsylum - Export/Import/Share</a> - used for getting data into and out of Drafts.</li>
+						<li><a href="https://actions.getdrafts.com/g/1cy"><i class="fa fa-bars"></i> Install Action Group: ThoughtAsylum - Tasks & lists</a> - used for working wigth lists and checklists in Drafts.</li>
+						<li><a href="https://actions.getdrafts.com/g/1ct"><i class="fa fa-bars"></i> Install Action Group: ThoughtAsylum - Power User</a> - used for scripting and advanced functionality.</li>
+						<li><a href="https://actions.getdrafts.com/g/1cx"><i class="fa fa-bars"></i> Install Action Group: ThoughtAsylum - Trove</a> - used for a variety of things such as controlling Drafts settings.</li>
+					</ul>
+				</p>
+				<a href="index.html#typescript-declaration-file" id="typescript-declaration-file" style="color: inherit; text-decoration: none;">
+					<h3>TypeScript Declaration File</h3>
+				</a>
+				<p>Many editors and IDEs accept TypeScript declaration files as inputs to allow intellitype-style features.  A TypeScript definition file for this library is available for download.  It should always match the details in the latest version.</p>
+				<p><a href="https://tadpole.thoughtasylum.com/assets/library/tad-d.ts" download="tad.d.ts"><i class="fa fa-download"></i> Download TypeScript Declaration File</a></p>
+				<a href="index.html#javascript-file" id="javascript-file" style="color: inherit; text-decoration: none;">
+					<h3>JavaScript File</h3>
+				</a>
+				<p>The JavaScript file that contains all of the code for the library can be downloaded directly from this site, but generally we would advise utilising the <a href="index.html#actiongroup">ThoughtAsylum Action Group</a> to get the latest copy of the library.</p>
+				<p><a href="assets/library/tad.js" download="tad.js"><i class="fa fa-download"></i> Download JavaScript File</a></p>
+				<a href="index.html#configuration-file" id="configuration-file" style="color: inherit; text-decoration: none;">
+					<h3>Configuration File</h3>
+				</a>
+				<p>The library makes use of a configuration file that applies across many of the functions and directly influences the way some functions operate, and the data available to other functions.  The configuration file is in <a href="https://en.wikipedia.org/wiki/JSON">JSON format</a>, and the details can be found in the <a href="classes/tadlibrary.html">TadLibrary class</a> section in regards to what all of the library settings/TadLibrary properties are.  The file itself is stored by convention in <code>/Library/Scripts/tad.json</code> in the Drafts iCloud directory structure.</p>
+				<p>If you wish to tailor a value from it&#39;s current value, simply edit the value as you might any other JSON file.</p>
+				<a href="index.html#javascript-beautifier-configuration" id="javascript-beautifier-configuration" style="color: inherit; text-decoration: none;">
+					<h3>JavaScript Beautifier Configuration</h3>
+				</a>
+				<p>The JavaScript beautifier functioality relies on the <a href="https://github.com/beautify-web/js-beautify">js-beautify library</a>, and utilises the settings associated with that.  </p>
+				<p>For additional details, take a look at the <a href="classes/tadmiscellaneous.html#ta_devbeautifyjsdraft">TA_devBeautifyJSDraft</a> function documentation.</p>
+				<p><a name="faq"></a></p>
+				<a href="index.html#faq" id="faq" style="color: inherit; text-decoration: none;">
+					<h2>FAQ</h2>
+				</a>
+				<p><strong>1. Why is the library called &quot;tadpole&quot;?</strong><br>The library name is &quot;<strong>TAD</strong>po<strong>L</strong>e&quot;.  The &quot;<strong>TA</strong>&quot; refers to <a href="https://www.thoughtasylum.com">thoughtasylum.com</a>, the personal website of the author.  The &quot;<strong>D</strong>&quot; is for Drafts, and the &quot;<strong>L</strong>&quot; is for library.  The other letters just fill in some gaps to make it easier to reference, and hopefully make it a little more memorable.</p>
+				<p><strong>2. Why do the functions start &quot;TA&quot; rather than &quot;TAD&quot;, or &quot;TADL&quot; then?</strong>
+				Honestly, the library came later and at first it was just going to be a &quot;ThoughtAsylum&quot; library, so it started out as TA.  The library naming came much (years) later, and so the &quot;TA&quot; prefix has been kept, and it&#39;s also just a little bit shorter for people to type.</p>
+				<p>The point of having it in the first place is to hopefully avoid namespace clashes with functions users might already have written that would otherwise have the potential of genearting namespace clashes.</p>
+				<p><strong>3. What is the licensing for this library?</strong><br>See the <a href="index.html#licensing">licensing section</a> section below, but basically it is free to use and re-use.</p>
+				<p><strong>4. Are there any actions you could share that use the library?</strong><br>Why yes there are, I guess you skipped over the <a href="index.html#actiongroup">action group</a> section above.  Go back and take a look.</p>
+				<p><strong>5. I&#39;ve found a bug, what should I do?</strong><br>The library is shared on a best efforts basis, and is provided as is.  If you have an honest to goodness bug, post to the <a href="https://forums.getdrafts.com">Drafts forum</a> and tag <code>@sylumer</code> with a simple example that can allow anyone to reproduce the issue.  Be sure to provide any example content to prime the example, well formatted code (i.e. put your JavaScript between triple backticks) or a link to a shared action, along with a description of what you are seeing and what you would expect to see.</p>
+				<p><strong>6. I&#39;d like a function to work differently, what should I do?</strong><br>Take a copy of the TADpoLe function, change it to do what you want it to, and then include it in your own projects.</p>
+				<p>Make sure that you save this in your own library file, otherwise, if you update the TADpoLe library, you&#39;ll lose your code as the file is oevrwritten.  This also stops any issue of mis-attribution if you subsequently share your code.</p>
+				<p><strong>6. I&#39;d like some help on using the library functions, what should I do?</strong><br>If you can&#39;t figure it out yourself, consider posting to the <a href="https://forums.getdrafts.com">Drafts forum</a> and seeing if someone there can help you.  Be sure to be make your request specific and not boundless or asking for someone else to do all the work for you.</p>
+				<p><a name="licensing"></a></p>
+				<a href="index.html#licensing" id="licensing" style="color: inherit; text-decoration: none;">
+					<h2>Licensing</h2>
+				</a>
+				<p>TADpoLe is <strong>Coffeeware</strong>.  You are free to make use of this library as long as you like and as much as you like. You owe us nothing.</p>
+				<p>But, if you do want to give a little, all development is fuelled by coffee, and you can make a donation to the author&#39;s coffee fund.</p>
+				<style>.bmc-button img{height: 34px !important;width: 35px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{padding: 7px 15px 7px 10px !important;line-height: 35px !important;height:51px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#79D6B5 !important;border-radius: 5px !important;border: 1px solid transparent !important;padding: 7px 15px 7px 10px !important;font-size: 28px !important;letter-spacing:0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/sylumer"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Donate a coffee"><span style="margin-left:5px;font-size:28px !important;">Donate a coffee</span></a>
+				<p>Please also take the time to read the <a href="index.html#legaldisclaimer">legal disclaimer</a> below.</p>
+				<p><a name="thirdpartyadditions"></a></p>
+				<a href="index.html#third-party-additions" id="third-party-additions" style="color: inherit; text-decoration: none;">
+					<h3>Third Party Additions</h3>
+				</a>
+				<p>There are a handful of additional components used by this library, and we would thank the authors for making their code available, and we provide further information about their licensing details here.</p>
+				<a href="index.html#crypto-js" id="crypto-js" style="color: inherit; text-decoration: none;">
+					<h4>Crypto-JS</h4>
+				</a>
+				<p>Crypto-JS is used within some of the encryption/decryption helper functionality.</p>
+				<blockquote>
+					<p>Crypto-JS (minified)
+					<a href="https://github.com/brix/crypto-js">https://github.com/brix/crypto-js</a></p>
+					<p><a href="http://opensource.org/licenses/MIT">The MIT License (MIT)</a></p>
+					<p>Copyright (c) 2009-2013 Jeff Mott<br>Copyright (c) 2013-2016 Evan Vosberg</p>
+					<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+						of this software and associated documentation files (the &quot;Software&quot;), to deal
+						in the Software without restriction, including without limitation the rights
+						to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+						copies of the Software, and to permit persons to whom the Software is
+					furnished to do so, subject to the following conditions:</p>
+					<p>The above copyright notice and this permission notice shall be included in
+					all copies or substantial portions of the Software.</p>
+					<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+						IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+						FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+						AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+						LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+						OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+					THE SOFTWARE.</p>
+				</blockquote>
+				<a href="index.html#highlighter" id="highlighter" style="color: inherit; text-decoration: none;">
+					<h4>Highlighter</h4>
+				</a>
+				<p>Highlighter is used to apply syntax highlighting to code blocks.</p>
+				<blockquote>
+					<p>BSD 3-Clause License</p>
+					<p>Copyright (c) 2006, Ivan Sagalaev.
+					All rights reserved.</p>
+					<p>Redistribution and use in source and binary forms, with or without
+					modification, are permitted provided that the following conditions are met:</p>
+					<ul>
+						<li><p>Redistributions of source code must retain the above copyright notice, this
+							list of conditions and the following disclaimer.</p>
+						</li>
+						<li><p>Redistributions in binary form must reproduce the above copyright notice,
+								this list of conditions and the following disclaimer in the documentation
+							and/or other materials provided with the distribution.</p>
+						</li>
+						<li><p>Neither the name of the copyright holder nor the names of its
+								contributors may be used to endorse or promote products derived from
+							this software without specific prior written permission.</p>
+						</li>
+					</ul>
+					<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot;
+						AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+						IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+						DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+						FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+						DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+						SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+						CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+						OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+					OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+				</blockquote>
+				<a href="index.html#js-beautifier" id="js-beautifier" style="color: inherit; text-decoration: none;">
+					<h4>JS Beautifier</h4>
+				</a>
+				<p>JavaScript Beautifier is used for the JavaScript formatting functionality.</p>
+				<blockquote>
+					<p>JS Beautifier (minified)
+					<a href="https://github.com/beautify-web/js-beautify">https://github.com/beautify-web/js-beautify</a></p>
+					<p><a href="http://opensource.org/licenses/MIT">The MIT License (MIT)</a></p>
+					<p>Copyright (c) 2007-2017 Einar Lielmanis, Liam Newman, and contributors.</p>
+					<p>Permission is hereby granted, free of charge, to any person
+						obtaining a copy of this software and associated documentation files
+						(the &quot;Software&quot;), to deal in the Software without restriction,
+						including without limitation the rights to use, copy, modify, merge,
+						publish, distribute, sublicense, and/or sell copies of the Software,
+						and to permit persons to whom the Software is furnished to do so,
+					subject to the following conditions:</p>
+					<p>The above copyright notice and this permission notice shall be
+					included in all copies or substantial portions of the Software.</p>
+					<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+						EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+						MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+						NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+						BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+						ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+						CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+					SOFTWARE.</p>
+				</blockquote>
+				<a href="index.html#mermaid" id="mermaid" style="color: inherit; text-decoration: none;">
+					<h4>Mermaid</h4>
+				</a>
+				<p>Mermaid is used for the diagramming in HTML previews.</p>
+				<blockquote>
+					<p>The MIT License (MIT)</p>
+					<p>Copyright (c) 2014 - 2020 Knut Sveidqvist</p>
+					<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+						of this software and associated documentation files (the &quot;Software&quot;), to deal
+						in the Software without restriction, including without limitation the rights
+						to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+						copies of the Software, and to permit persons to whom the Software is
+					furnished to do so, subject to the following conditions:</p>
+					<p>The above copyright notice and this permission notice shall be included in all
+					copies or substantial portions of the Software.</p>
+					<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+						IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+						FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+						AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+						LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+						OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+					SOFTWARE.</p>
+				</blockquote>
+				<a href="index.html#to-title-case" id="to-title-case" style="color: inherit; text-decoration: none;">
+					<h4>To Title Case</h4>
+				</a>
+				<p>The String extensions section include a function to convert to title case.  This function is a slightly modified version of the <a href="http://individed.com/code/to-title-case/">To Title Case</a> (v2.1) by David Gouch.</p>
+				<blockquote>
+					<p>To Title Case 2.1 – <a href="http://individed.com/code/to-title-case/">http://individed.com/code/to-title-case/</a><br>Copyright © 2008–2013 David Gouch. Licensed under <a href="http://opensource.org/licenses/MIT">the MIT License</a>.</p>
+				</blockquote>
+				<a href="index.html#authors" id="authors" style="color: inherit; text-decoration: none;">
+					<h2>Authors</h2>
+				</a>
+				<p><a name="authors"></a></p>
+				<table>
+					<thead>
+						<tr>
+							<th>Author</th>
+							<th>Web Site</th>
+							<th>E-mail</th>
+							<th>Twitter Handle</th>
+							<th>Drafts Forum Handle</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td>Stephen Millard</td>
+							<td><a href="https://www.thoughtasylum.com">thoughtasylum.com</a></td>
+							<td>Rarely checked 😬</td>
+							<td><a href="https://twitter.com/sylumer">@sylumer</a></td>
+							<td><a href="https://forums.getdrafts.com/u/sylumer/summary">@sylumer</a></td>
+						</tr>
+				</tbody></table>
+				<p><a name="legaldisclaimer"></a></p>
+				<a href="index.html#legal-disclaimer" id="legal-disclaimer" style="color: inherit; text-decoration: none;">
+					<h2>Legal Disclaimer</h2>
+				</a>
+				<p>This library is shared publicly to help others and to contribute back to the wider Drafts community. You may use, and copy small (up to five functions) amounts and distribute it with your own code without any need to reference (though references are appreciated).  Anything larger and you should distribute with the library and appropriate references back to it so as to enable the recipient to keep up to date with the original content.</p>
+				<p>Any modifications or derivative works based on any proportion of this library, must carry a notice stating that you changed the software and should note the date and nature of any such change. Please explicitly acknowledge this site as the original source of the library.</p>
+				<p>This library is expressly provided &quot;AS IS.&quot; WE MAKE NO WARRANTY OF ANY KIND, EXPRESS, IMPLIED, IN FACT OR ARISING BY OPERATION OF LAW, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT AND DATA ACCURACY. WE NEITHER REPRESENTS NOR WARRANT THAT THE OPERATION OF THE CODE WILL BE UNINTERRUPTED OR ERROR-FREE, OR THAT ANY DEFECTS WILL BE CORRECTED. NIST DOES NOT WARRANT OR MAKE ANY REPRESENTATIONS REGARDING THE USE OF THE SOFTWARE OR THE RESULTS THEREOF, INCLUDING BUT NOT LIMITED TO THE CORRECTNESS, ACCURACY, RELIABILITY, OR USEFULNESS OF THE CODE.</p>
+				<p>You are solely responsible for determining the appropriateness of using the library and you assume all risks associated with its use, including but not limited to the risks and costs of errors, compliance with applicable laws, damage to or loss of data, programs or equipment, and the unavailability or interruption of operation. This library is not intended to be used in any situation where a failure could cause risk of injury or damage to property.</p>
+				<p><em>Basically, we use this ourselves, we&#39;re sharing it publicly so others may benefit, please don&#39;t pass the effort put into this off as your own, and while we guarantee nothing regarding use, we really hope that you find it useful in processing your drafts, and remember to always keep good backups just in case.</em></p>
+				<p><a name="changelog"></a></p>
+				<a href="index.html#change-log" id="change-log" style="color: inherit; text-decoration: none;">
+					<h2>Change Log</h2>
+				</a>
+				<a href="index.html#2021-05-08" id="2021-05-08" style="color: inherit; text-decoration: none;">
+					<h3>2021-05-08</h3>
+				</a>
+				<ul>
+					<li>New: <code>Draft</code> - functions for setting syntax - <code>TA_setSyntaxByName()</code>, <code>TA_setSyntaxOfType()</code>, <code>TA_setSyntaxBuiltIn()</code>, <code>TA_setSyntaxCustom()</code>, and <code>TA_setSyntaxFile()</code>.</li>
+					<li>Modified: <code>Draft</code> - <code>TA_split()</code> - switched from using <code>TA_addTag()</code> to using <code>TA_addTagArray()</code>.</li>
+					<li>Modified: <code>Draft</code> - <code>TA_draftSetUp()</code> - switched from using <code>TA_addTag()</code> to using <code>TA_addTagArray()</code>.</li>
+					<li>Modified: <code>HTTP</code> - <code>TA_downloadLibrary()</code> - enforce creation of Drafts scripts directory in case it is not present for some reason.</li>
+					<li>Bug Fix: <code>TadMisc</code> - <code>TA_devSetRunDraft()</code> - modified to use new syntax setting function.</li>
+					<li>Bug Fix: <code>App</code> - <code>TA_removeRunTagFromArchive()</code> - corrected <code>tagRun</code> to <code>runTag</code> as property of <code>TadLibrary</code>.</li>
+					<li>Bug Fix: <code>App</code> - <code>TA_processCrossLink()</code> - added missing <code>length</code> property ofr an array property calculation.</li>
+					<li>Bug Fix: <code>Draft</code> - <code>TA_setSyntax()</code> - modified to use new syntax setting function.</li>
+					<li>Bug Fix: <code>Draft</code> - <code>TA_draftNew_ContentSyntax()</code> - modified to use new syntax setting function.</li>
+					<li>Bug Fix: <code>Draft</code> - <code>TA_draftNew()</code> - modified to use new syntax setting function.</li>
+					<li>Bug Fix: <code>Draft</code> - <code>TA_draftSetUp()</code> - modified to use new syntax setting function.</li>
+					<li>Bug Fix: <code>Draft</code> - <code>TA_dictateList()</code> - modified to set syntax rather than name.</li>
+					<li>Bug Fix: <code>Draft</code> - <code>TA_draftNewFromTemplateDraft()</code> - modified to set syntax rather than name.</li>
+					<li>Bug Fix: <code>Draft</code> - <code>TA_wordCount()</code> - fixed broken function call.</li>
+					<li>Bug Fix: <code>Draft</code> - <code>TA_lineCount()</code> - fixed broken function call.</li>
+					<li>Bug Fix: <code>Draft</code> - <code>TA_trashInboxDraftsTagged()</code> - corrected variable definition.</li>
+					<li>Bug Fix: <code>Draft</code> - <code>TA_archiveInboxDraftsTagged()</code> - corrected variable definition.</li>
+					<li>Bug Fix: <code>Draft</code> - <code>TA_transcludeWikiLinks_$()</code> - corrected typo.</li>
+					<li>Bug Fix: <code>Draft</code> - <code>TA_transcludeWikiLinks_d()</code> - corrected typo.</li>
+					<li>Bug Fix: <code>Draft</code> - <code>TA_selectRecentTagRename()</code> - <code>Prompt</code> related fix.</li>
+					<li>Bug Fix: <code>Draft</code> - <code>TA_postBodyToPastebin()</code> - fixed function call typo.</li>
+					<li>Bug Fix: <code>Draft</code> - <code>TA_backLinkAdHoc()</code> - fixed sort functyion date property and calculation issues.</li>
+					<li>Bug Fix: <code>Editor</code> - <code>TA_navigateToMarkerByName()</code> - added a void return on a &#39;not found&#39; completion path.</li>
+					<li>Bug Fix: <code>Editor</code> - <code>TA_discourseHideDetails()</code> - added explicit <code>let</code> for a variable where it had been implicit.</li>
+					<li>Bug Fix: <code>Editor</code> - <code>TA_deleteNextChar()</code> - added explicit <code>let</code> for a variable where it had been implicit.</li>
+					<li>Bug Fix: <code>Editor</code> - <code>TA_insertTimestampyyyyMMddhhmmss()</code> - added missing <code>tadMisc</code> reference.</li>
+					<li>Bug Fix: <code>Editor</code> - <code>TA_mdTitleLinkFromClipboardURL()</code> - added missing <code>HTTP</code> reference.</li>
+					<li>Bug Fix: <code>Editor</code> - <code>TA_mdTitleLinkFromSelectedURL()</code> - added missing <code>HTTP</code> reference.</li>
+					<li>Bug Fix: <code>Editor</code> - <code>TA_copyPreviousLine()</code> - added missing period in class.function reference.</li>
+					<li>Bug Fix: <code>Editor</code> - <code>TA_copyNextLine()</code> - added missing period in class.function reference.</li>
+					<li>Bug Fix: <code>Editor</code> - <code>TA_getCurrentLine()</code> - removed unused variable reference in return.</li>
+					<li>Bug Fix: <code>Editor</code> - <code>TA_sectionGetContentByHeading()</code> - modified to enforce string coercion to number.</li>
+					<li>Bug Fix: <code>Editor</code> - <code>TA_repeatDuplicateCurrentLineAsk()</code> - modified to enforce string coercion to number.</li>
+					<li>Bug Fix: <code>String</code> - <code>TA_boxer()</code> - added explicit <code>let</code> for some variables where it had been implicit.</li>
+					<li>Bug Fix: <code>String</code> - <code>TA_regexLastIndexOf()</code> - added explicit <code>let</code> for a variable where it had been implicit.</li>
+					<li>Bug Fix: <code>String</code> - <code>TA_mdTitleLinks()</code> - added explicit <code>let</code> for a variable where it had been implicit.</li>
+					<li>Bug Fix: <code>String</code> - <code>TA_mistypeSlipQWERTY()</code> - added explicit <code>let</code> for a variable where it had been implicit.</li>
+					<li>Bug Fix: <code>String</code> - <code>TA_frontMatterIncluded()</code> - added explicit <code>let</code> for a variable where it had been implicit.</li>
+					<li>Bug Fix: <code>String</code> - <code>TA_switchWordMarkers()</code> - added explicit <code>let</code> for some variables where it had been implicit.</li>
+					<li>Bug Fix: <code>String</code> - <code>TA_csvWrap()</code> - fix for return on condition to return original string.</li>
+					<li>Doc Fix: <code>TadLibrary</code> - <code>backlink_delimiter</code> property name typo.</li>
+					<li>Doc Fix: <code>TadLibrary</code> - changed type from <em>string</em> to <em>JSON</em> - <code>draft_discourse</code>, <code>draft_javascript</code>, <code>draft_markdown</code>, <code>draft_multimarkdown</code>, <code>draft_taskpaper</code>, <code>draft_plain_text</code>, <code>draft_simple_list</code>, and <code>draft_github_markdown</code>;</li>
+					<li>Doc Fix: <code>Draft</code> - <code>TA_dictateListAndLoad()</code> - added missing parameters.</li>
+					<li>Doc Fix: <code>App</code> - <code>TA_processCrossLink()</code> - parameter was only partially defined.</li>
+					<li>Doc Fix: <code>Draft</code> - <code>TA_removeSpaceTabTrailing()</code> - added missing documentation for this function.</li>
+					<li>Doc Fix: <code>Draft</code> - <code>TA_removeSpaceTabLeadingTrailing()</code> - added missing documentation for this function.</li>
+					<li>Doc Fix: <code>Editor</code> - <code>TA_navigateToMarkerByName()</code> - added missing documentation for this function.</li>
+					<li>Doc Fix: <code>Editor</code> - <code>TA_loadNewDraftWithContent()</code> - added missing documentation for this function.</li>
+					<li>Doc Fix: <code>Editor</code> - <code>TA_taskpaperModifyCurrentLineProject()</code> - added missing documentation for this function.</li>
+					<li>Doc Fix: <code>Editor</code> - <code>TA_taskpaperToggleCurrentLineProject()</code> - added missing documentation for this function.</li>
+					<li>Doc Fix: <code>Editor</code> - <code>TA_taskpaperSetCurrentLineToProject()</code> - added missing documentation for this function.</li>
+					<li>Doc Fix: <code>Editor</code> - <code>TA_taskpaperSetCurrentLineToNotProject()</code> - added missing documentation for this function.</li>
+					<li>Doc Fix: <code>Editor</code> - <code>TA_taskpaperToggleSelectedProject()</code> - added missing documentation for this function.</li>
+					<li>Doc Fix: <code>Editor</code> - <code>TA_taskpaperToggleExtendedProject()</code> - added missing documentation for this function.</li>
+					<li>Doc Fix: <code>Editor</code> - <code>TA_taskpaperSetSelectedToProject()</code> - added missing documentation for this function.</li>
+					<li>Doc Fix: <code>Editor</code> - <code>TA_taskpaperSetExtendedToProject()</code> - added missing documentation for this function.</li>
+					<li>Doc Fix: <code>Editor</code> - <code>TA_taskpaperSetSelectedToNotProject()</code> - added missing documentation for this function.</li>
+					<li>Doc Fix: <code>Editor</code> - <code>TA_taskpaperSetExtendedToNotProject()</code> - added missing documentation for this function.</li>
+					<li>Doc Fix: <code>Editor</code> - <code>TA_cursorToStartOfPreviousSentence()</code> - name typo in the function title.</li>
+					<li>Doc Fix: <code>Editor</code> - <code>TA_sortAllAlphabetic()</code> - name typo in the example and the function title.</li>
+					<li>Doc Fix: <code>Editor</code> - <code>TA_sortAllNumeric()</code> - name typo in the example and the function title.</li>
+					<li>Doc Fix: <code>Editor</code> - <code>TA_sortAllReverseNumeric()</code> - name typo in the example and the function title.</li>
+					<li>Doc Fix: <code>Editor</code> - <code>TA_textToLineEnd()</code> - name typo in the example and the function title.</li>
+					<li>Doc Fix: <code>Editor</code> - <code>TA_sectionPrependByHeading()</code> - removed reference to erroneous parameter.</li>
+					<li>Doc Fix: <code>Editor</code> - <code>TA_sectionGetContentByHeading()</code> - fixed typo in description.</li>
+					<li>Doc Fix: <code>HTTP</code> - <code>TA_downloadLibrary()</code> - added missing documentation for this function.</li>
+					<li>Doc Fix: <code>HTTP</code> - <code>TA_updateTadpoleLibrary()</code> - added missing documentation for this function.</li>
+					<li>Doc Fix: <code>HTTP</code> - <code>TA_quoteSimpsons()</code> - corrected return type.</li>
+					<li>Doc Fix: <code>String</code> - <code>TA_removeWhitespaceLeadingTrailing()</code> - added missing documentation for this function.</li>
+					<li>Doc Fix: <code>String</code> - <code>TA_removeLinesNotContaining()</code> - added missing documentation for this function.</li>
+					<li>Doc Fix: <code>String</code> - <code>TA_mdCodeBlockSH()</code> - corrected typo in function name.</li>
+					<li>Doc Fix: Correction of change log heading levels and re-standardised change types.</li>
+					<li>Deprecate: <code>Draft</code> - <code>TA_tagAdd()</code> - removed undocumented function.</li>
+				</ul>
+				<a href="index.html#2021-05-03" id="2021-05-03" style="color: inherit; text-decoration: none;">
+					<h3>2021-05-03</h3>
+				</a>
+				<ul>
+					<li>New: <code>Editor</code> - <code>TA_mdToText()</code> - strip Markdown from a Markdown string.</li>
+					<li>New: <code>String</code> - <code>TA_getURLAtCursor()</code> and <code>TA_openURLAtCursor()</code> - functions for getting and opening URLs at the current cursor location.</li>
+					<li>New: <code>FileManager</code> - <code>TA_devSetRunDraft()</code> - filter a standard content listing with a regular expression match on the file name.</li>
+					<li>Update: <code>TadMiscellaneous</code> - <code>TA_setSyntax()</code> was modified to use <code>syntax.name</code> rather than the deprecated <code>languageGrammar</code> property.</li>
+					<li>Update: <code>Draft</code> - <code>TA_setSyntax()</code> was modified to use <code>syntax.name</code> rather than the deprecated <code>languageGrammar</code> property.</li>
+					<li>Update: <code>Draft</code> - <code>TA_draftNew_ContentSyntax()</code> was modified to use <code>syntax.name</code> rather than the deprecated <code>languageGrammar</code> property.</li>
+					<li>Update: <code>Draft</code> - <code>TA_duplicate()</code> was modified to use <code>syntax.name</code> rather than the deprecated <code>languageGrammar</code> property.</li>
+					<li>Update: <code>Draft</code> - <code>TA_dictateList()</code> was modified to use <code>syntax.name</code> rather than the deprecated <code>languageGrammar</code> property.</li>
+					<li>Update: <code>Draft</code> - <code>TA_draftNew()</code> was modified to use <code>syntax.name</code> rather than the deprecated <code>languageGrammar</code> property.</li>
+					<li>Update: <code>Draft</code> - <code>TA_shareFileBasedOnSyntax()</code> was modified to use <code>syntax.name</code> rather than the deprecated <code>languageGrammar</code> property.</li>
+					<li>Update: <code>Draft</code> - <code>TA_draftSetUp()</code> was modified to use <code>syntax.name</code> rather than the deprecated <code>languageGrammar</code> property.</li>
+					<li>Update: <code>Draft</code> - <code>TA_infoDump()</code> was modified to use <code>syntax.name</code> rather than the deprecated <code>languageGrammar</code> property.</li>
+					<li>Update: <code>Draft</code> - <code>TA_draftNewFromTemplateDraft()</code> was modified to use <code>syntax.name</code> rather than the deprecated <code>languageGrammar</code> property.</li>
+					<li>Update: <code>Draft</code> - <code>TA_draftCountSummary()</code> was modified to add some reformatted information to the basic draft count summary.</li>
+					<li>Update: <code>Draft</code> - <code>TA_draftCountSummary()</code> was modified to include syntax count summary.</li>
+					<li>Doc Fix: <code>TadLibrary</code> - <code>cryptoURL</code> added to documentation.</li>
+					<li>Doc Fix: <code>TadLibrary</code> - <code>cryptoLibName</code> added to documentation.</li>
+				</ul>
+				<a href="index.html#2021-04-02" id="2021-04-02" style="color: inherit; text-decoration: none;">
+					<h3>2021-04-02</h3>
+				</a>
+				<ul>
+					<li>New: <code>TadPastebin</code> class for working with pastebin.com.</li>
+					<li>New: <code>Draft</code> - <code>TA_postToPastebin()</code> and <code>TA_postBodyToPastebin()</code> - convenience <em>draft</em> functions for working with pastebin.com.</li>
+					<li>New: <code>Editor</code> - <code>TA_replaceInSelection()</code> - carry out a find and replace in the current selection.</li>
+					<li>New: <code>Math</code> - <code>TA_integerToRoman()</code> - convert a positive integer to a Roman numeral equivalent.</li>
+					<li>Doc Update: Added OpenGraph content to site.</li>
+					<li>Doc Fix: <code>TadGitHub</code> - <code>constructor</code> - fixed a typo in the description.</li>
+					<li>Doc Fix: <code>Workspace</code> - <code>TA_selectWorkspace</code> - fixed description.</li>
+				</ul>
+				<a href="index.html#2021-03-18" id="2021-03-18" style="color: inherit; text-decoration: none;">
+					<h3>2021-03-18</h3>
+				</a>
+				<ul>
+					<li>Fix: <code>TadBear</code> - <code>TA_deviceUUIDforBear()</code> fixed an incorrect function call. (<em>sz_coding</em>)</li>
+				</ul>
+				<a href="index.html#2021-02-28" id="2021-02-28" style="color: inherit; text-decoration: none;">
+					<h3>2021-02-28</h3>
+				</a>
+				<ul>
+					<li>New: <code>Draft</code> - <code>TA_getEmailAddresses()</code> return an array of e-mail addresses found in a draft.</li>
+					<li>New: <code>Editor</code> - functions to move the cursor between marked field entries - <code>TA_cursorMoveAfterNextOpenMarker()</code>, <code>TA_cursorMoveBeforeNextCloseMarker()</code>, <code>TA_cursorMoveAfterPreviousOpenMarker()</code>, and <code>TA_cursorMoveBeforePreviousCloseMarker()</code>.</li>
+					<li>New: <code>Editor</code> - functions to reduce selections andplace the cursor to the start/end of the current selection - <code>TA_selectionReduceToStart()</code> and <code>TA_selectionReduceToEnd()</code>.</li>
+					<li>New: <code>HTMLPrompt</code> - <code>TA_draft</code> (very) simple prompt based editor for creating and editing drafts, setting tags and flagged status.</li>
+					<li>New: <code>String</code> - <code>TA_getEmailAddresses()</code> return an array of e-mail addresses found in a string.</li>
+					<li>Update: <code>HTMLPrompt</code> - updated <code>TA_textFieldLarge</code> to accept an optional initial content parameter.</li>
+					<li>Bug Fix: <code>TadGitHub</code> - <code>TA_accountGetRepos()</code> corrected use of function parameters.</li>
+					<li>Doc Fix: <code>TadBear</code> - <code>TA_create()</code> and <code>TA_openNote()</code> - correction of &quot;option&quot; to &quot;optional&quot;.</li>
+					<li>Doc Fix: <code>TadHTMLPrompt</code> - <code>TA_textFieldLarge()</code> - correction of &quot;unspecified&quot; typo.</li>
+				</ul>
+				<a href="index.html#2021-01-16" id="2021-01-16" style="color: inherit; text-decoration: none;">
+					<h3>2021-01-16</h3>
+				</a>
+				<ul>
+					<li>Fix: <code>TadGitHub</code> - <code>TA_fileGetSHA()</code> and <code>TA_fileUpdate()</code> - updated to include URI encoding of some URL components that could otherwise result in an <em>undefined</em> error.</li>
+				</ul>
+				<a href="index.html#2020-01-10" id="2020-01-10" style="color: inherit; text-decoration: none;">
+					<h3>2020-01-10</h3>
+				</a>
+				<ul>
+					<li>New: Added <code>mermaid</code> set-up on refresh to support diagramming in some new preview actions in the ThoughtAsylum Action Group Suite.</li>
+					<li>New: Added <code>highlight</code> set-up on refresh to support syntax highlighting in some new preview actions in the ThoughtAsylum Action Group Suite.</li>
+					<li>New: <code>TadGitHub</code> - new class for working with the GitHub API.</li>
+					<li>New: <code>Draft</code> - <code>TA_MDPreviewAdvanced()</code> a new advanced preview function that supports, well, a lot of stuff.</li>
+					<li>Bug Fix: <code>TadLib</code> - <code>TA_displayVersionInfo()</code> fixed mismatch in heading HTML.</li>
+				</ul>
+				<a href="index.html#2020-12-31" id="2020-12-31" style="color: inherit; text-decoration: none;">
+					<h3>2020-12-31</h3>
+				</a>
+				<ul>
+					<li>New: Added <code>crypto-js</code> dependency to library for crypto helper functions; all crypto handled by that library, not by TADpoLe. TADpoLe just offers up a set of Drafts focused convenience functions to get easier access to some crypto functionality.</li>
+					<li>New: <code>TadBear</code> - new class for interactions with Bear app via URL scheme.</li>
+					<li>New: <code>TadLib</code> - added new crypto library details to the TADpoLe properties - <code>cryptoURL</code> and <code>cryptoName</code>.</li>
+					<li>New: <code>TadLib</code> - <code>TA_displayVersionInfo()</code> display version information in an HTML prompt window.</li>
+					<li>New: <code>TadHTMLPrompt</code> - <code>TA_message()</code> equivalent to a JavaScript alert, but with HTML styling and layout options.</li>
+					<li>New: <code>TadMisc</code> - functions to generate truly random strings and integers - <code>TA_randomStrings()</code> and <code>TA_randomInteger()</code>.</li>
+					<li>New: <code>TadMisc</code> - functions to generate keys - <code>TA_random128BitKey()</code>, <code>TA_random192BitKey()</code>, and <code>TA_random256BitKey()</code>.</li>
+					<li>New: <code>TadMisc</code> - functions to work with AES encryption - <code>TA_encryptAES()</code> and <code>TA_decryptAES()</code>.</li>
+					<li>New: <code>TadMisc</code> - <code>TA_randomorgQuotaCheck()</code> for checking remaining IP address quota at <a href="https://random.org">random.org</a>.</li>
+					<li>New: <code>Prompt</code> - <code>TA_encryptionPromptAES()</code> for capturing or generating an AES encryption key.</li>
+					<li>New: <code>Prompt</code> - <code>TA_decryptionPromptAES()</code> for capturing an AES decryption key.</li>
+					<li>New: <code>Prompt</code> - created a new object <code>TadKey</code> for holding crypto key geneartion information during a script run.</li>
+					<li>New: <code>App</code> - added a couple of clipboard AES crypto functions - <code>TA_encryptAESOntoClipboard()</code> and <code>TA_decryptAESOntoClipboard()</code>.</li>
+					<li>New: <code>Draft</code> - added several AES crypto functions - <code>TA_encryptAES()</code>, <code>TA_decryptAES()</code>, <code>TA_encryptAESNew()</code>, <code>TA_decryptAESNew()</code>, <code>TA_encryptAESSelf()</code>, <code>TA_decryptAESSelf()</code>, <code>TA_encryptAESOntoClipboard()</code>, and <code>TA_decryptAESOntoClipboard()</code>.</li>
+					<li>New: <code>Draft</code> - added some content obfuscation/deobfuscation functions -  <code>TA_obfuscate()</code> and <code>TA_deobfuscate()</code>.</li>
+					<li>New: <code>Draft</code> - <code>TA_addTags()</code> adds all tags from an array to a draft.</li>
+					<li>New: <code>Editor</code> - <code>TA_getSelectionWide()</code> returns selected text, or all text if no selection.</li>
+					<li>New: <code>String</code> - added a couple of AES crypto functions - <code>TA_encryptAES()</code> and <code>TA_decryptAES()</code>.</li>
+					<li>Fix: <code>Editor</code> - <code>TA_unprependLinesRetainSelection()</code> corrected to fix the case of outdenting the first line where the first line selection began at the start of an indented line.</li>
+					<li>Fix: <code>HTMLPrompt</code> - updated <code>constructor</code> to enforce UTF-8 compatibility.</li>
+					<li>Doc Fix: <code>Prompt</code> - added return information for <code>TA_promptButtonArray()</code> and <code>TA_singleTextFieldPrompt()</code>.</li>
+					<li>Doc Fix: <code>String</code> - Added &#39;//Example&#39; to several example scripts where the intro line was missing.</li>
+				</ul>
+				<a href="index.html#2020-11-28" id="2020-11-28" style="color: inherit; text-decoration: none;">
+					<h3>2020-11-28</h3>
+				</a>
+				<ul>
+					<li>New: <code>App</code> - action group loading by name functions - <code>TA_loadActionListByName()</code> and <code>TA_loadActionBarByName()</code>.</li>
+					<li>New: <code>Array</code> - return the length of the longest element in an array - <code>TA_maxElementLength()</code>.</li>
+					<li>New: <code>Editor</code> - <code>TA_cutLine()</code> for cutting current line(s).</li>
+					<li>New: <code>Editor</code> - <code>TA_setCurrentLineNoNewLine()</code> replaces current line selection, but leaves any trailing newline untouched.</li>
+					<li>New: <code>Editor</code> - functions for getting the content of the previous and next lines - <code>TA_getPreviousLineContent()</code>, <code>TA_getNextLineContent()</code>.</li>
+					<li>New: <code>Editor</code> - functions for deleting, selecting, copying and cutting previous line - <code>TA_deletePreviousLine()</code>, <code>TA_selectPreviousLine()</code>, <code>TA_copyPreviousLine()</code>, <code>TA_cutPreviousLine()</code>.</li>
+					<li>New: <code>Editor</code> - functions for deleting, selecting, copying and cutting next line - <code>TA_deleteNextLine()</code>, <code>TA_selectNextLine()</code>, <code>TA_copyNextLine()</code>, <code>TA_cutNextLine()</code>.</li>
+					<li>New: <code>Editor</code> - functions for moving the current line selection up and down in the editor - <code>TA_moveLinesUp()</code>, <code>TA_moveLinesDown()</code>, <code>TA_moveLinesToStart()</code>, <code>TA_moveLinesToEnd()</code>.</li>
+					<li>New: <code>String</code> - functions for generating character-based boxes around text - <code>TA_boxer()</code>, <code>TA_boxerSingle()</code>, <code>TA_boxerDouble()</code>.</li>
+					<li>New: <code>String</code> - <code>TA_switchWordMarkers()</code> makes regular expression based updates to translate word markers such as opening and closing quotes, and contraction markers (apostrophe).</li>
+					<li>New: <code>String</code> - <code>TA_mdSimpleRenumber()</code> function for renumbering Markdown numbered entries in a string - but only top level numbering of a continuous numbered list.</li>
+					<li>Update: <code>Draft</code> - <code>TA_draftNew()</code> added optional grammar parameter.</li>
+					<li>Update: <code>Editor</code> - minor amendment of <code>editor</code> references to <code>this</code> in <code>TA_taskpaperToggleSelectedTask()</code>, <code>TA_taskpaperToggleExtendedTask()</code>, <code>TA_taskpaperSetSelectedToTask()</code>, <code>TA_taskpaperSetExtendedToTask()</code>, <code>TA_taskpaperSetSelectedToNotTask()</code>, <code>TA_taskpaperSetExtendedToNotTask()</code>.</li>
+					<li>Fix: <code>Editor</code> - corrected  <code>TA_taskpaperModifyCurrentLineTask()</code> calls to <code>TA_taskpaperModifyTask()</code> calls in <code>TA_taskpaperToggleSelectedTask()</code>, <code>TA_taskpaperToggleExtendedTask()</code>, <code>TA_taskpaperSetSelectedToTask()</code>, <code>TA_taskpaperSetExtendedToTask()</code>, <code>TA_taskpaperSetSelectedToNotTask()</code>, <code>TA_taskpaperSetExtendedToNotTask()</code>.</li>
+					<li>Doc Fix: <code>App</code> - <code>TA_processCrossLink()</code> corrected reference to <code>editor</code> in example to be <code>app</code>.</li>
+					<li>Doc Fix: <code>Draft</code> - <code>TA_processLinesFunctionRetain()</code> removed duplicate semicolon in example code.</li>
+					<li>Doc Fix: <code>Draft</code> - <code>TA_setSyntaxAllStandard()</code> corrected typo in description.</li>
+					<li>Doc Fix: <code>String</code> - <code>TA_csvWrapDoubleQuotes()</code> correction of function name and parameters - <em>I was not having a good copy &amp; paste day on the 14th</em>.</li>
+					<li>Doc Fix: corrected a 2020-11-14 change log entry to have the correct function name: <code>TA_navigationMarkersGet()</code>.</li>
+					<li>Doc Fix: corrected a 2020-11-14 change log entry to remove duplicate line for <code>TA_csvWrap()</code>.</li>
+				</ul>
+				<a href="index.html#2020-11-15" id="2020-11-15" style="color: inherit; text-decoration: none;">
+					<h3>2020-11-15</h3>
+				</a>
+				<ul>
+					<li>Fix: <code>String</code> - fixed escaping function calls <code>TA_removeLinesContaining()</code> and <code>TA_removeLinesNotContaining()</code>. (<em>Andreas_Haberle</em>)</li>
+				</ul>
+				<a href="index.html#2020-11-14" id="2020-11-14" style="color: inherit; text-decoration: none;">
+					<h3>2020-11-14</h3>
+				</a>
+				<ul>
+					<li>New:<code>TadLibrary</code> - <code>TA_versionOnline()</code> returns the version number of the last published TADpoLe version.</li>
+					<li>New <code>App</code> - <code>TA_processCrossLink()</code> script version of clicking/tapping on a wiki-style cross link.</li>
+					<li>New <code>App</code> - <code>TA_queueActionByName()</code> for queueing an action by name on a draft.</li>
+					<li>New <code>Draft</code> - <code>TA_chooseAndOpenMDLink()</code> displays a list of Markdown links in the draft and then opens the one selected by the user.</li>
+					<li>New <code>Draft</code> - <code>TA_exportFileMac()</code> export the content of the draft to a file in a location in the Mac file system (includes locations outside of the usual sandbox).</li>
+					<li>New <code>Draft</code> - <code>TA_matchMDLinks()</code>returns an arry of Markdown links in the draft.</li>
+					<li>New <code>Draft</code> - <code>TA_mergeLines()</code> merge content into one line, allowing for various configuration options.</li>
+					<li>New <code>Draft</code> - <code>TA_navigationMarkersGet()</code> get the navigation markers for a draft.</li>
+					<li>New <code>Draft</code> - <code>TA_queueActionByName()</code> for queueing an action by name on the draft.</li>
+					<li>New <code>Draft</code> - <code>TA_wikiLinkContent()</code> fetch an array of Drafts wiki links from a draft.</li>
+					<li>New <code>Editor</code> - wrap substrings with text strings for every line in an extended selection, with matching based on regex determination of what comes before and after the substring - <code>TA_lineSubstringWrapInsertion()</code>, <code>TA_lineSubstringWrapInsertions()</code>.</li>
+					<li>New <code>Editor</code> - <code>TA_mergeSelectedLines()</code> merge selected lines into one line, allowing for various configuration options.</li>
+					<li>New <code>Editor</code> - <code>TA_processMDXLink()</code> process (open/run/trigger) any Markdown link or cross link the cursor is currently in.</li>
+					<li>New <code>String</code> - <code>TA_afterFirstOccurrence()</code> return the text in a string that appears after the first occurrence of a substring in that string.</li>
+					<li>New <code>String</code> - <code>TA_chooseAndOpenMDLink()</code> displays a list of Markdown links in the string and then opens the one selected by the user.</li>
+					<li>New <code>String</code> - <code>TA_countOccurrences()</code> count the occurrences in the string of another string.</li>
+					<li>New <code>String</code> - <code>TA_csvWrap()</code> puts strings before and after each entry in a CSV string, with accounting for double quotes and inter value padding.</li>
+					<li>New <code>String</code> - <code>TA_csvWrapDoubleQuotes()</code> wraps each entry in a CSV string in double quotes, with accounting for existing double quotes and inter value padding.</li>
+					<li>New <code>String</code> - <code>TA_exportFileMac()</code> export the string to a file in a location in the Mac file system (includes locations outside of the usual sandbox).</li>
+					<li>New <code>String</code> - <code>TA_matchMDLinks()</code>returns an arry of Markdown links in the string.</li>
+					<li>New <code>String</code> - <code>TA_mergeLines()</code> merge lines into one line, allowing for various configuration options.</li>
+					<li>New <code>String</code> - <code>TA_wikiLinkContent()</code> fetch an array of Drafts wiki links from a string.</li>
+					<li>Doc Fix: Corrected an error in <code>Editor</code> for the <code>TA_loadAc()</code> function&#39;s example.</li>
+					<li>Doc Fix: Typo in <code>TadMiscellaneous</code> functions <code>TA_sleep()</code>, <code>TA_sleepMS()</code>, and <code>TA_sleepMSDisplay()</code> descriptions.</li>
+					<li>Doc Fix: Error in <code>String</code> documentation, remove accidentally added (duplicate) <code>Editor</code> Taskpaper function information.</li>
+					<li>Doc Fix: Added details around regular expression use to <code>String</code> functions <code>TA_removeLinesContaining()</code> and <code>TA_removeLinesNotContaining()</code>. (<em>Andreas_Haberle</em>)</li>
+					<li>Doc Fix: Typo in <code>RegExp</code> function <code>TA_escape()</code>.</li>
+					<li>Doc Fix: Fixed missing parameter details and JavaScript example not being displayed in <code>RegExp</code> function <code>TA_escape()</code>.</li>
+				</ul>
+				<a href="index.html#2020-10-31" id="2020-10-31" style="color: inherit; text-decoration: none;">
+					<h3>2020-10-31</h3>
+				</a>
+				<ul>
+					<li>Bug Fix: <code>tadMisc</code> - renamed <code>fixPoorDiscourseJavaScriptOnClipboard()</code> to <code>TA_fixPoorDiscourseJavaScriptOnClipboard()</code>.</li>
+					<li>Bug Fix: <code>tadMisc</code> - applied a workaround for a race condition on updating tags in <code>TA_devSetRunDraft()</code>. (<em>Andreas_Haberle</em>)</li>
+					<li>Bug Fix: <code>App</code> - renamed <code>fileImporterBasic()</code> and <code>fileImporterTagEnabled()</code> to <code>TA_fileImporterBasic()</code> and <code>TA_fileImporterTagEnabled()</code> respectively.</li>
+					<li>Bug Fix: <code>String</code> - removed debugging code from <code>TA_fixPoorDiscourseJavascript()</code>.</li>
+				</ul>
+				<a href="index.html#2020-10-26" id="2020-10-26" style="color: inherit; text-decoration: none;">
+					<h3>2020-10-26</h3>
+				</a>
+				<ul>
+					<li>New: <code>TadHTMLPrompt</code> - <code>TA_textFieldLarge()</code> for displaying a large text entry field with count up/down and max length limitation.</li>
+					<li>New: <code>TadMiscellaneous</code> - <code>fixPoorDiscourseJavaScriptOnClipboard()</code> for fixing JavaScript from Discourse on the clipboard.</li>
+					<li>New: <code>Draft</code> - <code>TA_devBeautifyJSDraft()</code> format a draft containining JavaScript using the JS Beautifier library.</li>
+					<li>New: <code>Draft</code> - <code>TA_exportOutsideMacSandbox()</code> exports a file outside of the iCloud sandbox on macOS (utilises a shell script).</li>
+					<li>New: <code>Draft</code> - <code>TA_randomLine()</code> return a random line of text from a draft.</li>
+					<li>New: <code>Draft</code> - functions for function processing all content lines - <code>TA_processLinesFunctionRetain()</code>, <code>TA_processLinesFunctionReplace()</code>.</li>
+					<li>New: <code>Editor</code> - functions for function processing all selected content as lines - <code>TA_processExtendedLinesFunctionRetain()</code>, <code>TA_processSelectedLinesFunctionReplace()</code>.</li>
+					<li>New: <code>Editor</code> - functions for function processing the extended selection as lines - <code>TA_processSelectedLinesFunctionReplace()</code>, <code>TA_processExtendedLinesFunctionReplace()</code>.</li>
+					<li>New: <code>Editor</code> - functions for Taskpaper task project management - <code>TA_taskpaperModifyCurrentLineProject()</code>, <code>TA_taskpaperToggleCurrentLineProject()</code>, <code>TA_taskpaperSetCurrentLineToProject()</code>, <code>TA_taskpaperSetCurrentLineToNotProject()</code>, <code>TA_taskpaperToggleSelectedProject()</code>, <code>TA_taskpaperToggleExtendedProject()</code>, <code>TA_taskpaperSetSelectedToProject()</code>, <code>TA_taskpaperSetExtendedToProject()</code>, <code>TA_taskpaperSetSelectedToNotProject()</code>, <code>TA_taskpaperSetExtendedToNotProject()</code>.</li>
+					<li>New: <code>Editor</code> - functions for Taskpaper task item management - <code>TA_taskpaperModifyCurrentLineTask()</code>, <code>TA_taskpaperToggleCurrentLineTask()</code>, <code>TA_taskpaperSetCurrentLineToTask()</code>, <code>TA_taskpaperSetCurrentLineToNotTask()</code>, <code>TA_taskpaperToggleSelectedTask()</code>, <code>TA_taskpaperToggleExtendedTask()</code>, <code>TA_taskpaperSetSelectedToTask()</code>, <code>TA_taskpaperSetExtendedToTask()</code>, <code>TA_taskpaperSetSelectedToNotTask()</code>, <code>TA_taskpaperSetExtendedToNotTask()</code>.</li>
+					<li>New: <code>Prompt</code> - <code>TA_promptButtonArrayValue()</code> returns a value associated with a button for a prompt of an array of buttons.</li>
+					<li>New: <code>Prompt</code> - <code>TA_promptButtonAction()</code> returns an action name associated with a button for a prompt of an array of buttons.</li>
+					<li>New: <code>String</code> - <code>TA_devBeautifyJS()</code> format a JavaScript string using the JS Beautifier library.</li>
+					<li>New: <code>String</code> - <code>TA_fixPoorDiscourseJavascript()</code> added for fixing and formatting JavaScript posted to Discourse forums without code block wrappers.</li>
+					<li>New: <code>String</code> - <code>TA_processLinesFunction()</code> process each line in a string with another function.</li>
+					<li>New: <code>String</code> - <code>TA_randomLine()</code> return a random line of text from a string.</li>
+					<li>New: <code>String</code> - <code>TA_rot13()</code> - ROT13 cipher function, useful for <em>fcbvyref</em> (spoilers).</li>
+					<li>New: <code>String</code> - <code>TA_taskpaperModifyProject()</code> - toggle/set/remove Taskpaper project identifier on a string.</li>
+					<li>New: <code>String</code> - <code>TA_taskpaperModifyTask()</code> - toggle/set/remove Taskpaper task identifier on a string.</li>
+					<li>Update: Modified <code>TadLibrary.beautifierSettings</code> to use <code>beautifier.json</code>. (<em>chrillek</em>)</li>
+					<li>Doc Fix: Typo in <code>TadLibrary.buildLibraryAction()</code> description.</li>
+					<li>Update: Modified <code>TadMiscellaneous.TA_devBeautifyJSDraft()</code> to use <code>Draft.TA_devBeautifyJS()</code>.</li>
+					<li>Doc Fix: Typo in <code>TadHTMLPrompt.TA_textFields()</code>.</li>
+					<li>Doc Fix: Added omitted <code>TadLibrary.beautifier*</code> settings.</li>
+					<li>Doc Fix: Fixed error in example for <code>Prompt.TA_promptButtonArray()</code> and a typo.</li>
+					<li>Doc Fix: Added omitted documentation for <code>Prompt.TA_promptButtonArrayIndexed()</code>.</li>
+					<li>Doc Fix: Various typos and grammatical corrections in home page information.</li>
+					<li>Doc Fix: Incorrect metadata function names in change log for 2020-08-08.</li>
+				</ul>
+				<a href="index.html#2020-10-10" id="2020-10-10" style="color: inherit; text-decoration: none;">
+					<h3>2020-10-10</h3>
+				</a>
+				<ul>
+					<li>New: <code>Editor</code> - functions for adding and removing text to lines while retaining the same effective selection - <code>TA_prependLinesRetainSelection()</code>, <code>TA_unprependLinesRetainSelection()</code>, <code>TA_appendLinesRetainSelection()</code>, <code>TA_unappendLinesRetainSelection()</code>. </li>
+					<li>New: <code>Editor</code> - functions for working with the sections created by navigation markers - <code>TA_sectionGetContentByIndex()</code>, <code>TA_sectionGetContentByHeading()</code>, <code>TA_sectionGetIndexesForHeading()</code>, <code>TA_sectionWrapByIndex()</code>, <code>TA_sectionAppendByIndex()</code>, <code>TA_sectionPrependByIndex()</code>, <code>TA_sectionWrapByHeading()</code>, <code>TA_sectionAppendByHeading()</code>, <code>TA_sectionPrependByHeading()</code>, <code>TA_sectionHeadingByIndex()</code>, <code>TA_sectionBodyByIndex()</code>, <code>TA_sectionBodyByHeading()</code>, <code>TA_sectionGetHeadings()</code>.</li>
+					<li>New: <code>Prompt</code> - <code>TA_promptButtonArrayIndexed()</code> - get the index of selected button from an array of buttons in a prompt.</li>
+					<li>Update: <code>Prompt</code> - modifified some code to compact some <em>simple</em> conditionals down to single lines to aid readability.</li>
+					<li>Doc Fix: <code>Editor</code> - <code>TA_isTextSelected()</code> - typo in function name.</li>
+					<li>Doc Fix: <code>Editor</code> - <code>TA_mdScriptSelectedText()</code> - typo in function description.</li>
+				</ul>
+				<a href="index.html#2020-09-28" id="2020-09-28" style="color: inherit; text-decoration: none;">
+					<h3>2020-09-28</h3>
+				</a>
+				<ul>
+					<li>Doc Fix: <code>Workspace</code> - <code>TA_selectWorkspace()</code> - added some more details about return on cancel.</li>
+					<li>Bug Fix: <code>Workspace</code> - <code>TA_selectLoadWorkspaceByButton()</code> - correction of a length to a null check on cancel of workspace selection. (<em>FlohGro</em>)</li>
+				</ul>
+				<a href="index.html#2020-09-27" id="2020-09-27" style="color: inherit; text-decoration: none;">
+					<h3>2020-09-27</h3>
+				</a>
+				<ul>
+					<li>New: <code>Action</code> - <code>TA_getAllActions()</code> - class method to retrieve action objects for all installed actions.</li>
+					<li>New: <code>Action</code> - <code>TA_actionPopulateMore()</code> - populates an action with several additional properties (also documented in the class).</li>
+					<li>New: <code>App</code> - line based content insertion functions - <code>fileImporterBasic()</code>, <code>fileImporterTagEnabled()</code>.</li>
+					<li>New: <code>Draft</code> - file import functions - <code>TA_addAfterLine()</code>, <code>TA_addAtStartOfLine()</code>, <code>TA_addAtEndOfLine()</code>.</li>
+					<li>New: <code>Draft</code> - <code>TA_tagAddArray()</code> - add an array of tags to a draft.</li>
+					<li>New: <code>Math</code> - <code>TA_isOneIn()</code> - generates Boolean based on a 1 in N chance of occurrence.</li>
+					<li>New: <code>String</code> - functions for purposefully adding corruptions to text for checking spell check, etc. - <code>TA_mistypeSlip()</code>, <code>TA_mistypeSlipQWERTY()</code>, <code>TA_mistypeSwitch()</code>.</li>
+					<li>New: <code>String</code> - functions for working with simple front matter content - <code>TA_frontMatterIncluded()</code>, <code>TA_frontMatterSimpleKeyValue()</code>.</li>
+					<li>New: <code>String</code> - functions for removing text from the start and end of a string - <code>TA_startsWithRemove()</code>, <code>TA_endsWithRemove()</code>.</li>
+					<li>New: <code>String</code> - <code>TA_randChar()</code> - generates Boolean based on a 1 in N chance of occurrence.</li>
+					<li>Update: Library file now built to includes additional markers denoting what sub-module file was used in populating a section of the library file.</li>
+					<li>New: <code>String</code> - <code>TA_csvToArray()</code> - converts comma separated values to an array with better reliability than a <code>split(&quot;,&quot;)</code> alone would provide.</li>
+					<li>Update: <code>Draft</code> - <code>TA_tagAddCSV()</code> modified to utilise <code>TA_tagAddArray()</code>.</li>
+					<li>Doc Fix: Added description for <code>TadLibrary.metaPath</code>.</li>
+					<li>Doc Fix: Revised some of the descriptions around <code>Draft.TA_meta*()</code> functions.</li>
+					<li>Doc Fix: Various typo corrections across the site.</li>
+				</ul>
+				<a href="index.html#2020-09-05" id="2020-09-05" style="color: inherit; text-decoration: none;">
+					<h3>2020-09-05</h3>
+				</a>
+				<ul>
+					<li>New: <code>TadHTMLPrompt</code> - new class for displaying some standardised HTML Prompts.</li>
+					<li>New: <code>TadLibrary</code> - new back link related settings.</li>
+					<li>New: <code>ActionGroup</code> - functions for returning count information about all action groups - <code>TA_actionGroupCounts()</code>, <code>TA_actionGroupActionCount()</code>, <code>TA_actionGroupSeparatorCount()</code>.</li>
+					<li>New: <code>ActionGroup</code> - functions for returning information about an action group - <code>TA_actionNames()</code>, <code>TA_separatorNames()</code>.</li>
+					<li>New: <code>App</code> - <code>TA_toggleThemeMode()</code> - switches the app theme between light and dark.</li>
+					<li>New: <code>App</code> - functions for returning count information about all action groups - <code>TA_actionGroupCounts()</code>, <code>TA_actionGroupActionCount()</code>, <code>TA_actionGroupSeparatorCount()</code>.</li>
+					<li>New: <code>App</code> - functions for returning information about and across action groups - <code>TA_actionNames()</code>, <code>TA_actionGroupNames()</code>, <code>TA_getActionGroupActionNames()</code>, <code>TA_getActionGroupSeparatorNames()</code>.</li>
+					<li>New: <code>Draft</code> - <code>TA_backLinkAdHoc()</code> - display a list of drafts that backlink to a draft using any of the wiki-link methods, along with some draft data, and allow the user to select to load a draft.</li>
+					<li>New: <code>Draft</code> - <code>TA_backLinkSectionInsertLink()</code> - insert a draft wiki-style cross-link into a special back-link section of a draft; useful to create a back-link when also creating a fore link in another draft.</li>
+					<li>New: <code>Draft</code> - <code>TA_bodyFirstNonBlankLine()</code> - return the first non-blank line in a draft, after the title.</li>
+					<li>New: <code>Draft</code> - <code>TA_mdTitleLinks()</code> - convert unlinked URLs in a draft to Markdown links using the page title of the URL as the link text.</li>
+					<li>New: <code>Draft</code> - functions for version counts - <code>TA_versionCount()</code>, <code>TA_versionCountMax()</code>, <code>TA_versionDraftMax()</code>.</li>
+					<li>New: <code>Editor</code> - <code>TA_isTextSelected()</code> - check function for if any text is currently selected in the editor.</li>
+					<li>New: <code>Editor</code> - <code>TA_loadAcUUID()</code> - load draft with specified UUID into editor and activates.</li>
+					<li>New: <code>Editor</code> - functions for expanded copy &amp; paste - <code>TA_extendedCopy()</code>, <code>TA_extendedCut()</code>.</li>
+					<li>New: <code>String</code> - <code>TA_mdTitleLinks()</code> - convert unlinked URLs to Markdoown links using the page title of the URL as the link text.</li>
+					<li>New: <code>String</code> - <code>TA_removeMDHeader()</code> - remove Markdown heading markers from a string.</li>
+					<li>New: <code>String</code> - <code>TA_trimToSnippet()</code> - trims a string down to a maximum length and adds an ellipsis to indicate it was longer, where necessary;</li>
+					<li>Update: <code>Draft</code> - <code>TA_draftCountSummary()</code> - now includes count information for Action Groups, a little draft versions information, and a typo correction.</li>
+					<li>Update: <code>HTTP</code> - <code>TA_getTitleFromURL()</code> - now trims whitespace from the title.</li>
+					<li>Doc Fix: Various typo corrections across the site.</li>
+				</ul>
+				<a href="index.html#2020-08-08" id="2020-08-08" style="color: inherit; text-decoration: none;">
+					<h3>2020-08-08</h3>
+				</a>
+				<ul>
+					<li>New: <code>TadLibrary</code> - <code>testLibsAlert</code> - added a new property to allow the test libraries alert to be disabled as it can slow things down if you use the library functionality a lot.</li>
+					<li>New: <code>TadMiscellaneous</code> - additional code execution functions - <code>TA_devExecuteRunSelection()</code>, <code>TA_devExecuteRunSelectedLines()</code>, <code>TA_devExecuteRunCurrentDraft()</code>.</li>
+					<li>New: <code>TadMiscellaneous</code> - <code>TA_playSoundPath()</code> and  <code>TA_playMP3Data()</code> - triggering of audio playback (Mac only).</li>
+					<li>New: <code>TadMiscellaneous</code> - <code>TA_decimalSeparator()</code> - returns the decimal separatror character.</li>
+					<li>New: <code>App</code> - additional clipboard management functions - <code>TA_clipboardAppend()</code>, <code>TA_clipboardPrepend()</code>, <code>TA_clipboardEmpty()</code>.</li>
+					<li>New: <code>Draft</code> - functions for working with custom, peristent, meta data for a draft: <code>TA_metaRead()</code>, <code>TA_metaWrite()</code>, <code>TA_metaTag()</code>.</li>
+					<li>New: <code>FileManager</code> - functions to work with files where a file path is associated with a draft in its meta data - <code>TA_fileMetaPath()</code>, <code>TA_fileMetaSave()</code>, </li>
+					<li>New: <code>Math</code> - <code>TA_frac()</code> - get the fractional part of a number to &quot;reasonable&quot; precision.</li>
+					<li>New: <code>String</code> - functions for removing lines that match or don&#39;t match a substring: <code>removeLinesStarting()</code>, <code>removeLinesNotStarting()</code>, <code>removeLinesEnding()</code>, <code>removeLinesNotEnding()</code>, <code>removeLinesContaining()</code>, <code>removeLinesNotContaining()</code>, <code>TA_fileMetaLoad()</code>;</li>
+					<li>New: <code>String</code> - <code>TA_removeTrailingNewlines()</code> - removes new line characters from the end of a string.</li>
+					<li>New: <code>Workspace</code> - <code>TA_loadWorkspaceNext()</code> &amp; <code>TA_loadWorkspacePrevious()</code> - allow cycling through workspaces in the order defined in Drafts.</li>
+					<li>Update: <code>TadLibrary</code> - <code>TA_libraryTestLibLoad()</code> - now uses <code>testLibsAlert</code> to determine if testing should be alerted to on each run.</li>
+					<li>Doc Fix: <code>TadMiscellaneous</code> - <code>TA_JSONArraySorter()</code> - missing documentation added.</li>
+					<li>Doc Fix: <code>Math</code> - <code>TA_randInt()</code> - correction of example.</li>
+					<li>Doc Fix: Various typo corrections across the site.</li>
+				</ul>
+				<a href="index.html#2020-08-01" id="2020-08-01" style="color: inherit; text-decoration: none;">
+					<h3>2020-08-01</h3>
+				</a>
+				<ul>
+					<li>New: <code>TadConsole</code> - new log entry retrieval functions <code>TA_filterLog()</code>, <code>TA_filterLogEntry()</code>, <code>TA_filterLogEntries()</code>, <code>TA_logEntryFirst()</code>, <code>TA_logEntryLast()</code>, <code>TA_logEntryFirstType()</code>, <code>TA_logEntryLastType()</code>, <code>TA_logEntryFirstCode()</code>, <code>TA_logEntryLastCode()</code>, <code>TA_logEntryFormat()</code>.</li>
+					<li>New:<code>TadLibrary</code> property, <code>encodeMap</code> used to define a set of URL encoding mappings for a new string function.</li>
+					<li>New:<code>TadLibrary</code> - <code>TA_buildLibraryAction()</code> used to rebuild the libarry action from file. Doing it by hand occasionally crashes the Mac app because the script step is so large. Doing this programmatically without dabbling in the UI gives a much quicker result with vastly reduced risk of crashing.</li>
+					<li>New: <code>TadMiscellaneous</code> - <code>TA_JSONArraySorter()</code> - JSON array sort comparator function.</li>
+					<li>New: <code>Prompt</code> - <code>TA_confirm()</code> - confirmation prompt that allows the user to selecte a yes/no response.</li>
+					<li>New: <code>String</code> - new overwriting and inserting functions: <code>TA_overwriteRange0()</code>, <code>TA_overwriteRange1()</code>, <code>TA_insertAfter0()</code>, <code>TA_insertAfter1()</code>.</li>
+					<li>New: <code>String</code> - <code>TA_replaceAllMap()</code> - carries out a set of multiple text replacements based on a set of key value pairs.</li>
+					<li>New: <code>String</code> - <code>TA_encodeURI()</code> - applies a more extensive and extensible range of URL encoding than <code>encodeURIComponent()</code>.</li>
+					<li>Update: <code>Prompt</code> - <code>TA_promptButtonArray()</code> - added an optional parameter to hide the cancel button.</li>
+					<li>Bug Fix: <code>TadConsole</code> - <code>TA_saveLog()</code> - fixed attempt to capture draft version information before first draft has been created. (<em>BJB</em>)</li>
+					<li>Bug Fix: <code>Prompt</code> - <code>TA_promptButtonArray()</code> - fixed message entry not displaying.</li>
+					<li>Doc Fix: <code>TadConsole_logEntry</code> - Corrected description.</li>
+					<li>Doc Fix: Various typo corrections across the site.</li>
+				</ul>
+				<a href="index.html#2020-07-25" id="2020-07-25" style="color: inherit; text-decoration: none;">
+					<h3>2020-07-25</h3>
+				</a>
+				<ul>
+					<li>New: <code>TadConsole</code> - new class for advanced console-like logging.</li>
+					<li>New: <code>Math</code> - <code>TA_randInt()</code> - generates a random integer between two values (inclusive).</li>
+					<li>New: <code>Editor</code> - new word wrapping functions: <code>TA_selectionPrependWords()</code>, <code>TA_selectionAppendWords()</code>, <code>TA_selectionWrapWords()</code>, <code>TA_selectionDelimitWords()</code>.</li>
+					<li>New: <code>FileManager</code> - <code>TA_delete()</code> - file deletion.</li>
+					<li>New: <code>FileManager</code> - <code>TA_snapshot()</code> - timstamped file duplication.</li>
+					<li>New: <code>HTTP</code> - <code>TA_quoteSimpsons()</code> - access The Simpsons quote generator to get a random character quote.</li>
+					<li>New: <code>String</code> - new word wrapping functions: <code>TA_prependWords()</code>, <code>TA_appendWords()</code>, <code>TA_wrapWords()</code>, <code>TA_delimitWords()</code>.</li>
+					<li>New: <code>String</code> - new file path functions: <code>TA_fileNameFromPath()</code>, <code>TA_fileNameBaseFromPath()</code>, <code>TA_fileNameExtensionFromPath()</code>, <code>TA_fileNameRemoveExtensionFromPath()</code>, <code>TA_folderPathFromPath()</code>.</li>
+					<li>New: <code>TadMiscellaneous</code> - <code>TA_getTimestampyyyyMMddhhmmssxxx()</code> - generates timestamps accurate to milliseconds.</li>
+					<li>New: <code>TadMiscellaneous</code> - <code>TA_uuidv4()</code> - UUID generator.</li>
+					<li>Update: <code>TadMiscellaneous</code> - <code>TA_getTimestampyyyyMMddhhmmss()</code> - changed to use a better element padding technique.</li>
+					<li>Bug Fix: <code>Draft</code> - <code>TA_selectRecentTagRename()</code> - Corrected to include display summary information parameter described in documentaion.</li>
+					<li>Bug Fix: <code>Draft</code> - <code>TA_selectAnyTagDelete()</code> - Corrected to include display summary information parameter described in documentaion.</li>
+					<li>Bug Fix: <code>Draft</code> - <code>TA_selectRecentTagDelete()</code> - Corrected to include display summary information parameter described in documentaion.</li>
+					<li>Doc Update: Revisions across the library to display <code>Optional</code> label against optional function parameters.</li>
+					<li>Doc Fix: <code>Draft</code> - <code>TA_tagAddCSV()</code> - Corrected example to not use a single item array as the parameter.</li>
+					<li>Doc Fix: <code>Draft</code> - <code>TA_draftNew()</code> - Corrected example to include an example parameter.</li>
+					<li>Doc Fix: <code>Draft</code> - <code>TA_dictateList()</code> - Corrected to include some missing parameter definitions.</li>
+					<li>Doc Fix: <code>HTTP</code> - <code>TA_randomInteger()</code> - Added missing details about parameters.</li>
+					<li>Doc Fix: <code>Prompt</code> - <code>TA_promptButtonArray()</code> - Corrected to specify that <code>p_strMessage</code> parameter can be set to an empty string, but is not an optional parameter.</li>
+					<li>Doc Fix: <code>Prompt</code> - <code>TA_doubleTextFieldPrompt()</code> - Corrected to specify that default value parameters can be set to be empty strings, but are not optional parameters.</li>
+					<li>Doc Fix: <code>String</code> - <code>TA_capitalise()</code> - Corrected structure of the example.</li>
+				</ul>
+				<a href="index.html#2020-07-14" id="2020-07-14" style="color: inherit; text-decoration: none;">
+					<h4>2020-07-14</h4>
+				</a>
+				<ul>
+					<li>Bug Fix: Fix for duplication of &#39;.js&#39; on library naming. (<em>FlohGro</em>)</li>
+				</ul>
+				<a href="index.html#2020-07-12" id="2020-07-12" style="color: inherit; text-decoration: none;">
+					<h4>2020-07-12</h4>
+				</a>
+				<ul>
+					<li>Bug Fix: Re-added <code>TadCommand</code> class to library build scripts for rebuild and redistribution.</li>
+				</ul>
+				<a href="index.html#2020-07-10" id="2020-07-10" style="color: inherit; text-decoration: none;">
+					<h4>2020-07-10</h4>
+				</a>
+				<ul>
+					<li>Initial release.</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class">
+						<a href="classes/tadbear.html" class="tsd-kind-icon">Tad<wbr>Bear</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/tadcommand.html" class="tsd-kind-icon">Tad<wbr>Command</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/tadconsole.html" class="tsd-kind-icon">Tad<wbr>Console</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/taddata.html" class="tsd-kind-icon">Tad<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/tadgithub.html" class="tsd-kind-icon">Tad<wbr>Git<wbr>Hub</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/tadhtmlprompt.html" class="tsd-kind-icon">TadHTMLPrompt</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/tadinfo.html" class="tsd-kind-icon">Tad<wbr>Info</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/tadlibrary.html" class="tsd-kind-icon">Tad<wbr>Library</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/tadmiscellaneous.html" class="tsd-kind-icon">Tad<wbr>Miscellaneous</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/tadpastebin.html" class="tsd-kind-icon">Tad<wbr>Pastebin</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/action.html" class="tsd-kind-icon">Action</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/actiongroup.html" class="tsd-kind-icon">Action<wbr>Group</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/app.html" class="tsd-kind-icon">App</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/array.html" class="tsd-kind-icon">Array</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/console.html" class="tsd-kind-icon">Console</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/draft.html" class="tsd-kind-icon">Draft</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/editor.html" class="tsd-kind-icon">Editor</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/filemanager.html" class="tsd-kind-icon">File<wbr>Manager</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/http.html" class="tsd-kind-icon">HTTP</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/math.html" class="tsd-kind-icon">Math</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/prompt.html" class="tsd-kind-icon">Prompt</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/regexp.html" class="tsd-kind-icon">Reg<wbr>Exp</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/string.html" class="tsd-kind-icon">String</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/workspace.html" class="tsd-kind-icon">Workspace</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#bearnote" class="tsd-kind-icon">Bear<wbr>Note</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#bearnotecontent" class="tsd-kind-icon">Bear<wbr>Note<wbr>Content</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#bearnoteidentifiers" class="tsd-kind-icon">Bear<wbr>Note<wbr>Identifiers</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#bearnotemetadata" class="tsd-kind-icon">Bear<wbr>Note<wbr>Meta<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#githubfilecontent" class="tsd-kind-icon">Git<wbr>Hub<wbr>File<wbr>Content</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#type_intcountbase" class="tsd-kind-icon">TYPE_<wbr>int<wbr>Count<wbr>Base</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#type_logmode" class="tsd-kind-icon">TYPE_<wbr>log<wbr>Mode</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#type_strbearfonts" class="tsd-kind-icon">TYPE_<wbr>str<wbr>Bear<wbr>Fonts</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#type_strbearmodes" class="tsd-kind-icon">TYPE_<wbr>str<wbr>Bear<wbr>Modes</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#type_strbearthemes" class="tsd-kind-icon">TYPE_<wbr>str<wbr>Bear<wbr>Themes</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#type_strfilter" class="tsd-kind-icon">TYPE_<wbr>str<wbr>Filter</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#type_strgithubreposortorder" class="tsd-kind-icon">TYPE_<wbr>str<wbr>Git<wbr>Hub<wbr>Repo<wbr>Sort<wbr>Order</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#type_strgithubrepotype" class="tsd-kind-icon">TYPE_<wbr>str<wbr>Git<wbr>Hub<wbr>Repo<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#tadconsole_action" class="tsd-kind-icon">Tad<wbr>Console_<wbr>action</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#tadconsole_draft" class="tsd-kind-icon">Tad<wbr>Console_<wbr>draft</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#tadconsole_draftversion" class="tsd-kind-icon">Tad<wbr>Console_<wbr>draft<wbr>Version</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#tadconsole_logentry" class="tsd-kind-icon">Tad<wbr>Console_<wbr>log<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#tadkey" class="tsd-kind-icon">Tad<wbr>Key</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#navigationmarker" class="tsd-kind-icon">navigation<wbr>Marker</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#selectionrange" class="tsd-kind-icon">selection<wbr>Range</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#ta_drafts_syntax" class="tsd-kind-icon">TA_<wbr>DRAFTS_<wbr>SYNTAX</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#tadcmd" class="tsd-kind-icon">tad<wbr>Cmd</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#tadcon" class="tsd-kind-icon">tad<wbr>Con</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#taddata" class="tsd-kind-icon">tad<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#tadinfo" class="tsd-kind-icon">tad<wbr>Info</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#tadlib" class="tsd-kind-icon">tad<wbr>Lib</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#tadmisc" class="tsd-kind-icon">tad<wbr>Misc</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<style>.bmc-button img{height: 34px !important;width: 35px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{padding: 7px 15px 7px 10px !important;line-height: 35px !important;height:51px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:darkgreen !important;border-radius: 5px !important;border: 1px solid transparent !important;padding: 7px 15px 7px 10px !important;font-size: 28px !important;letter-spacing:0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/sylumer"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Donate a coffee" style="border: black"><span style="margin-left:5px;font-size:28px !important;">Donate a coffee</span></a>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="https://tadpole.thoughtasylum.com/assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
