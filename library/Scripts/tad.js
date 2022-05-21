@@ -13,7 +13,7 @@
 Action.prototype.TA_populateMore = function()
 {
 	//Get the installation data for an action from its install URL
-    let jsonActionData = JSON.parse(decodeURIComponent(this.installURL.replace("drafts5://action?data=","")));
+    let jsonActionData = JSON.parse(decodeURIComponent(this.installURL.replace("drafts://action?data=","")));
 
     //Populate the additional properties.
     //  For ease of recognition, and to avoid clashes with future updates that may
@@ -7230,7 +7230,7 @@ class TadLibrary
     // Used to quickly replace the TAD-Library action contents from the tad.js library file.
     TA_buildLibraryAction()
     {
-        const strCall = "drafts5://action?data=";
+        const strCall = "drafts://action?data=";
 
         let fmCloud = FileManager.createCloud();
         let strScript = fmCloud.readString("/Library/Scripts/tad.js");
@@ -7640,7 +7640,7 @@ class TadMiscellaneous
         let astrNames = [];
 
         //Convert action group installation link data to JSON
-        let strLink = p_strActionGroupLink.replace("drafts5://actionGroup?data=","");
+        let strLink = p_strActionGroupLink.replace("drafts://actionGroup?data=","");
         strLink = decodeURIComponent(strLink);
         let jsonData = JSON.parse(strLink);
 
@@ -7704,7 +7704,7 @@ class TadMiscellaneous
     TA_actionGroupLinkToName(p_strActionGroupLink)
     {
         //Convert action group installation link data to JSON
-        let strLink = p_strActionGroupLink.replace("drafts5://actionGroup?data=","");
+        let strLink = p_strActionGroupLink.replace("drafts://actionGroup?data=","");
         strLink = decodeURIComponent(strLink);
         return JSON.parse(strLink).name;
     }
@@ -7715,7 +7715,7 @@ class TadMiscellaneous
     TA_actionGroupLinkDocument(p_strActionGroupLink)
     {
         //Convert action group installation link data to JSON
-        let strLink = p_strActionGroupLink.replace("drafts5://actionGroup?data=","");
+        let strLink = p_strActionGroupLink.replace("drafts://actionGroup?data=","");
         strLink = decodeURIComponent(strLink);
         let jsonData = JSON.parse(strLink);
         let strDoc = "# " + jsonData.name + "\n";
