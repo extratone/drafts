@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title>Recon Select Options</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+@charset "UTF-8";
+
+:root {
+	--main-bg-color: white;
+	--main-color: black;
+	--alternate-bg-color: #efefef;
+	--alternate-color: #222222;
+	--main-border-color: #BBBBBB;
+	  --link-color: #627EC9;
+  }
+
+  @media (prefers-color-scheme: dark) {
+	:root {
+	  --main-bg-color: #222222;
+	  --main-color: #53C8D6;
+	  --alternate-bg-color: #444444;
+	  --alternate-color: #cccccc;
+	  --main-border-color: #AAAAAA;
+		--link-color: #627EC9;
+	}
+  }
+
+html {
+  font-size: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0;
+  padding: 1em;
+  background-color: var(--main-bg-color);
+  color: var(--main-color);
+}
+
+@media (max-device-width: 700px) {}
+
+@media (min-device-width: 701px) {
+  body {
+	margin: auto;
+	max-width: 600px;
+  }
+}
+
+blockquote {
+  font-style: italic;
+  margin: 1.5em 2em;
+  padding: 1em;
+  background-color: var(--alternate-bg-color);
+  color: var(--alternate-color);
+}
+
+a {
+  color: var(--link-color);
+}
+pre {
+  width: 100%;
+  background-color: var(--alternate-bg-color);
+  margin: 1em 0;
+  white-space: pre-wrap;
+}
+
+code {
+  background-color: var(--alternate-bg-color);
+  color: var(--alternate-color);
+  font-family: Menlo, Courier, sans-serif;
+  padding: 2px 3px;
+  white-space: pre-wrap;
+}
+
+strong {
+	color: white;
+  }
+
+  h1 {
+	color: orange;
+  }
+
+table {
+  margin: 1.5em 0;
+  border: 1px solid var(--main-border-color);
+  border-collapse: collapse;
+}
+
+th {
+  padding: .25em .5em;
+  background: var(--alternate-bg-color);
+  border: 1px solid var(--main-border-color);
+}
+
+td {
+  padding: .25em .5em;
+  border: 1px solid var(--main-border-color);
+}
+
+img {
+  max-width: 90%;
+}
+
+form {
+   padding: 1em;
+}
+
+.verticalLine {
+	border-left: 2px solid orange;
+	padding-left: 5px;
+	margin-bottom: 5px;
+	font-style: italic;
+  }
+</style>
+
+</head>
+<body>
+	<form id="frmSelection" autocomplete="off" autocorrect="off">
+	
+	<strong>Drafts Set-up</strong><br>
+	<input type="checkbox" id="cbDrafts"> Drafts Info<br>
+	<input type="checkbox" id="cbEditor"> Editor Info<br>
+	<input type="checkbox" id="cbWorkspaces"> Workspace Info<br>
+	<input type="checkbox" id="cbCurrentWorkspace"> Current Workspace<br>
+
+	<br><strong>Device</strong><br>
+	<input type="checkbox" id="cbDevice"> Device Info<br>
+
+	<br><strong>File System</strong><br>
+	<div class="verticalLine">Please note that file system queries on the Mac make use of the clipboard to speed up retrieval of directory listings for large and complex folder structures.</div>
+	<input type="checkbox" id="cbPreviewListing"> Directory Listing for Previews<br>
+	<input type="checkbox" id="cbScriptsListing"> Directory Listing for Scripts<br>
+	<input type="checkbox" id="cbSyntaxesListing"> Directory Listing for Syntaxes<br>
+	<input type="checkbox" id="cbTemplatesListing"> Directory Listing for Templates<br>
+	<input type="checkbox" id="cbThemesListing"> Directory Listing for Themes<br>
+	---	<br>
+	<input type="checkbox" id="cbListingIncludeDotted"> <span style="color:lightgray; font-style: italic;">Include Files Beginning with a Period in Directory Listings?</span><br>
+
+	<br><strong>Actions</strong><br>
+	<input type="checkbox" id="cbActionGroupListing"> Action Group Listing<br>
+	<input type="checkbox" id="cbActionListing"> Action Listing<br>
+	<input type="checkbox" id="cbActionKeyboardShortcutsListing"> Action Keyboard Shortcuts Listing<br>
+
+	<br><strong>Current Draft</strong><br>
+	<input type="checkbox" id="cbCurrentInfo"> Current Draft Info<br>
+	<input type="checkbox" id="cbCurrentVersions"> Current Draft's Versions<br>
+	<input type="checkbox" id="cbCurrentExample"> Current Draft Content<br>
+
+	<br><strong>External Libraries</strong><br>
+	<input type="checkbox" id="cbTADpoLe"> TADpoLe<br>
+
+	<hr>
+
+	<input type="checkbox" id="cbPreview" checked> Preview Results<br>
+
+	<p>Copy Results?
+	<select id="selClipboard">
+		<option value="no" selected="selected">No</option>
+		<option value="mmd">As MultiMarkdown</option>
+		<option value="hidden">As MultiMarkdown in a Hidden Details Section</option>
+		<option value="html">As HTML</option>
+		<option value="rich">As Rich Text</option>
+	</select>
+	</p>
+
+
+		<div style="margin: 1em 0 3em 0;">
+			<button id="sub" onclick="submitFormById('frmSelection'); return false;">Submit</button>
+			<button id ="cancel" onclick="Drafts.cancel(); return false;">Cancel</button>
+		</div>
+	</form>
+</body>
+<script>
+function serialiseForm(p_objForm)
+{
+	//Initialise
+	let objData = {};
+
+	//Add returnable items to the data object
+	for(let element of p_objForm.elements)
+	{
+		if (element.type && element.type === 'checkbox')
+		{
+			objData[element.id] = element.checked;
+		}
+		else if (element.type == 'submit')
+		{
+			//Ignore
+		}
+		else
+		{
+			objData[element.id] = element.value;
+		}
+	}
+
+	//Return the data object
+	return objData;
+};
+
+function submitFormById(p_strFormID)
+{
+	//Get the form
+	let objForm = document.getElementById(p_strFormID);
+
+	//Transform all of the returnable form elements into an object
+	let objData = serialiseForm(objForm);
+
+	//Send the object to Drafts and return a continue code
+	Drafts.send("formValues", objData);
+	Drafts.continue();
+	return;
+}
+
+
+function checkKeyPress(p_objKey)
+{
+	if (p_objKey.keyCode == '13') submitFormById('frmSelection');
+	return false;
+}
+
+</script>
+
+</html>

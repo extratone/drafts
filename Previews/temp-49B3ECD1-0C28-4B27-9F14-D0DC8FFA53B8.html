@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title># Telegram Extras</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="tad/highlight.min.css">
+<script src="tad/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script src="tad/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true});</script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+ 	<style>
+ @charset "utf-8";
+
+    :root {
+      --main-bg-color: white;
+      --main-color: black;
+      --alternate-bg-color: #efefef;
+      --alternate-color: #222222;
+      --main-border-color: #BBBBBB;
+        --link-color: #627EC9;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #222222;
+        --main-color: #eeeeee;
+        --alternate-bg-color: #444444;
+        --alternate-color: #cccccc;
+        --main-border-color: #AAAAAA;
+          --link-color: #627EC9;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+    }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+
+
+    table {
+      margin: 1.5em 0;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+
+      .mermaid
+      {
+          background-color: seashell;
+      }
+ 	</style>
+</head>
+
+<body>
+  <h1>Telegram Extras</h1>
+
+<h1>Notes-Telegram Extras</h1>
+
+<p>[[Telegram Extras]]<br/>
+- <a href="https://github.com/extratone/bilge/issues/296">Telegram Extras · Issue #296 · extratone/bilge</a></p>
+
+<ul>
+<li><input type="checkbox"> <a href="https://actions.getdrafts.com/a/1u5">Drafts Directory: Send Draft to Telegram Saved Messages</a></li>
+<li><input type="checkbox"> <a href="https://actions.getdrafts.com/a/18E">Drafts Directory: Send to Telegram</a></li>
+<li><input type="checkbox"> <a href="https://t.me/raindropiobot">TG Raindrop.io Bot</a></li>
+<li><input type="checkbox"> <a href="https://raindrop.io/davidblue/telegram-20593542">Telegram Raindrop Collection</a></li>
+<li><input type="checkbox"> <a href="https://app.textexpander.com/public/de52c54ef169a96393d50cb4752706ce">Telegram TextExpander Snippets</a></li>
+<li><input type="checkbox"> <a href="drafts://open?uuid=789C686E-116F-40D9-BD46-8D911B2BCCDA">Siri Shortcuts for Telegram</a></li>
+<li><input type="checkbox"> The macOS Client.</li>
+<li><input type="checkbox"> Reminders.</li>
+<li><input type="checkbox"> <a href="https://telegra.ph/Superb-Telegram-Themes-for-iOS-01-27">Superb Telegram Themes for iOS</a></li>
+</ul>
+
+
+<p><img src="https://user-images.githubusercontent.com/43663476/151065307-88e3eaa0-ce93-4a89-b91c-c50fb649cc4d.png" alt="TelegramShortcuts" /></p>
+
+<h2>Shortcuts, bots, and some other methodologies discovered since my Big Telegram Post.</h2>
+
+<!--more-->
+
+
+<p></p>
+
+<p>Since I published “<a href="https://bilge.world/telegram">I Trust Telegram</a>,” the messenging service has been <em>in the news</em>. Their launch of <a href="https://t.me/s/durov/172">Sponsored Messages</a> predated its publication, but I omitted any mention of them because I’d yet to see any meaningful effects on my own use of the service. All I’ll say now: nearly four months of daily use later, <strong>this is still the case</strong>. I’ve published a few Siri Shortcuts and a Drafts action in the interim, though, and thought these a few other discoveries worth an additional Post.</p>
+
+<h2>Siri Shortcuts</h2>
+
+<p><img src="https://user-images.githubusercontent.com/43663476/152031447-334443d7-f038-4518-b65c-2e3305597bdd.png" alt="SeekTelegramMessagebyID" /></p>
+
+<h3><a href="https://routinehub.co/shortcut/10930">Seek Telegram Message by ID</a></h3>
+
+<p>As <a href="https://hyp.is/miMJ-oOQEeyVkGegS1hLbw/bilge.world/telegram">I noted in the Big Telegram Post</a>, navigating to/referencing specific messages in Telegram is ridiculously easy due to its URL format: <code>https://t.me/[Channel@]/[Chronological Message ID]</code> My Seek Messages by ID shortcut will prompt you to set defaults for both Channel @ and message number upon installation. This could be useful for channel/group administrators who need to reference/update a message containing community rules, but specifying them is entirely optional. Otherwise, the shortcut will prompt you to enter a channel or group’s @ (minus the symbol itself,) followed by the numeric ID of the message you’re looking for. It will then copy the complete URL to the clipboard and open it in <a href="https://apps.apple.com/us/app/telegram-messenger/id686449807">Telegram Messenger for iOS</a>. I’ve found it handy when joining a new channnel/group to quickly indulge my curiosity about its first few messages.</p>
+
+<p><img src="https://user-images.githubusercontent.com/43663476/152036933-ec106c9c-474d-4c5a-ab0e-ad7da6a97f7a.png" alt="URLListtoTelegram" /></p>
+
+<h3><a href="https://routinehub.co/shortcut/10926">URL List ⇨ Telegram</a></h3>
+
+<p>Effectively, this shortcut allows you to send links to a set of Safari 15 tabs to a contact of your choice in Telegram. It’s the singular one of the shortcuts share in this Post that makes use of Telegram Messenger for iOS’ native Siri Shortcuts actions, and is therefore the most finnicky. In the first take of <a href="https://t.me/extratone/9978">my video demo</a>, it timed out trying to send 200+ links to my Saved Messages channel, but was successful in the second (the take I published) in sending just four links. Upon each run, the shortcut will prompt you to select a contact. The selection <em>must</em> be a phone number, ideally in International Format.[^1] It will then parse a list of URLs in your clipboard and send them one at a time via Telegram’s native action without opening the app.</p>
+
+<p><img src="https://user-images.githubusercontent.com/43663476/152039638-f5e6e817-3b36-4cc2-bf74-184ad6dde9c4.png" alt="ClipboardtoTelegramMessage" /></p>
+
+<h3><a href="https://routinehub.co/shortcut/10929">Clipboard ⇨ Telegram Message</a></h3>
+
+<p>[1] Ex: <code>+1 (573) 823-4380</code></p>
+</body>
+
+</html>

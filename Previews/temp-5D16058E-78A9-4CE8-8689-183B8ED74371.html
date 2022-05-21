@@ -1,0 +1,423 @@
+<meta charset="UTF-8"><!DOCTYPE html>
+<html dir="auto">
+<head>
+<title>Preview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Written in November 2020 by David Blue for bilge.world.
+
+`Version 3.1` https://github.com/extratone/bilge/releases/tag/3.1
+
+Full, up-to-date source code available at https://github.com/extratone/bilge/
+
+# [The Unlicense, Dave Edition](https://gist.github.com/extratone/140a11428b5dd1dda500b3928e0438b1)
+
+Considering my use of Git as a means to track revisions on my own writing, it's important to note that you should feel free to replace all instances of "software" in the above statement with "words," "writing," "expression," etc.
+
+While I appreciate tremendously the work and contribution of [Arlo Bendiken](https://ar.to/2010/01/set-your-code-free) in the form of The Unlicense, I would like to add that I see no need, personally, to make the refutation of Intellectual Property law regarding my own work into some profound ethical statement. As it stands, I have not to my knowledge been the victim of any sort of theft of any kind, and find the suggestion highly unlikely. If I *am*  made aware of such a case, there is certainly a possibility that I may change my mind on this issue, so I suppose I should highlight that **THESE TERMS ARE SUBJECT TO CHANGE**, though I suspect I would be more flattered and/or amused than actually offended. 
+
+I would also like to annotate that my use of this license should not be regarded as a suggestion that anyone else follow my example, or that I "believe in" taking such action regarding one's work, generally. While I did indeed take the time to set up [a repository](https://github.com/extratone/eoi) of John Perry Barlow's "[The Economy of Ideas](https://www.wired.com/1994/03/economy-ideas/)" in a bunch of different document formats, I do not necessarily agree with all of what he argued, especially in the context of the world 27 years later. If you *are* particularly interested in my opinion on the matter for whatever reason, here is what I have to say to you:
+
+The principled beginning of The Open Web was a great moment in history, but - like all historical principles - it is extremely important that we consider *context* and maintain an appropriate level of criticism when looking back on old manifestos written by old white guys. In general, try your best to *be reasonable*.
+
+***
+
+This is free and unencumbered software released into the public domain.
+
+Anyone is free to copy, modify, publish, use, compile, sell, or
+distribute this software, either in source code form or as a compiled
+binary, for any purpose, commercial or non-commercial, and by any
+means.
+
+In jurisdictions that recognize copyright laws, the author or authors
+of this software dedicate any and all copyright interest in the
+software to the public domain. We make this dedication for the benefit
+of the public at large and to the detriment of our heirs and
+successors. We intend this dedication to be an overt act of
+relinquishment in perpetuity of all present and future rights to this
+software under copyright law.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+For more information, please refer to <https://unlicense.org>
+
+*/
+
+@import url('https://use.typekit.net/kst2rrh.css');
+
+body {
+    font-family: adobe-caslon-pro, serif !important;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #FFF4E6;
+}
+
+/* old background-color: #f2f2f2 */
+
+#blog-title a {
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    /* font-style:bold !important; */
+    color: #00006b;
+}
+
+header nav a {
+    font-family: proxima-nova-condensed, sans-serif !important;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+header p.description {
+    /* font-style: italic; */
+    font-family: proxima-nova-condensed, sans-serif !important;
+    font-weight: 700;
+    line-height: 200% !important;
+    color: #00006b !important;
+    font-size: 1em;
+    margin-left: inherit;
+    margin-right: inherit;
+}
+
+body#collection header {
+    margin-bottom: 1em !important;
+}
+
+
+header nav a {
+    color: #00006b;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 900;
+    /* margin-bottom: 1em; */
+}
+
+body,
+article {
+    font-family: adobe-caslon-pro, serif !important;
+    font-weight: 400;
+    line-height: 155%;
+    font-size: 1.1em !important;
+    color: #000000;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    /* margin-top:1rem !important; */
+}
+
+
+body,
+article a:link {
+    color: #00006b;
+}
+
+body,
+article a:visited {
+    color: #FF0000;
+}
+
+h1 {
+    color: #00006b !important;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 900;
+    font-size: 2em !important;
+}
+
+h2 {
+    color: #00006b !important;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 700;
+    font-size: 1.4em !important;
+}
+
+h3 {
+    color: #1c0021 !important;
+    font-family: proxima-nova-extra-condensed, sans-serif;
+    font-weight: 600;
+    font-size: 1.3em !important;
+}
+
+h4 {
+    color: #1c0021 !important;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-size: 1em !important;
+}
+
+h5 {
+    color: #1c0021 !important;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-size: 1em !important;
+}
+
+h6 {
+    color: #1c0021 !important;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-size: .85em !important;
+}
+
+code {
+    /* background-color:#f7ff85 !important; */
+    /* border: 1px solid #da2573 !important;
+    border-radius: 1px !important; */
+    font-size: 0.85em !important;
+    color: #1c0021 !important;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 400;
+    /* padding: 0px 0px 0px 0px !important; */
+}
+
+body #post pre, body#collection pre, body#post pre, body#subpage pre {
+    background: #FFFdeb; !important;
+    border: 1px solid #da2573 !important;
+    border-radius: 1px !important;
+    font-size: 0.85em !important;
+    color: #1c0021 !important;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 400;
+    /* padding: 0px 0px 0px 0px !important; */
+}
+
+.post-title a:visited,
+.post-title a:link {
+    font-family: proxima-nova-condensed, sans-serif !important;
+    font-weight: 900;
+    color: #00006b !important;
+    font-size: 1.7rem !important;
+}
+
+body#post article time.dt-published,
+body#subpage article time.dt-published {
+    font-family: proxima-nova-condensed, sans-serif !important;
+    color: #00006b !important;
+    font-size: 1rem !important;
+}
+
+body footer nav {
+    font-family: proxima-nova-condensed, sans-serif !important;
+    color: #00006b;
+}
+
+blockquote {
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 400;
+    color: #333333 !important;
+    border-left: 2.5px solid #00006b !important;
+}
+
+table {
+    background-color: #FFFdeb !important;
+    font-size: 0.8em !important;
+    line-height: 1.2em;
+    color: #1c0021 !important;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 400;
+    border: 1px solid #f43f32 !important;
+    border-radius: 1px !important;
+}
+
+article table td, article table th {
+    border: 1px solid !important;
+    border-color: #da2573 !important;
+}
+
+
+.gist {
+    font-family: proxima-nova-condensed, sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+}
+
+.gist .gist-meta {
+    font-family: proxima-nova-extra-condensed, sans-serif !important;
+    font-weight: 600 !important;
+    color: #1c0021 !important;
+}
+
+.gist, .gist article, .gist article p {
+    font-family: proxima-nova-condensed, sans-serif !important;
+    font-weight: 400 !important;
+}
+
+
+.gist .gist-file .gist-data {
+    background: #FFFdeb; !important;
+    border: 1px solid #da2573 !important;
+    border-radius: 1px !important;
+    font-size: 0.85em !important;
+    color: #1c0021 !important;
+    font-family: proxima-nova-condensed, sans-serif !important;
+    font-weight: 400;
+}
+
+.gist, .gist article, .gist article p {
+    white-space: normal !important;
+}
+
+/* .gist .gist-hr {
+    display: hide !important;
+} */
+
+hr {
+    border: 2px solid red;
+}
+
+
+body footer a.home:link,
+body footer a.home:visited {
+    color: #00006b;
+}
+
+.action {
+    font-family: proxima-nova-condensed, sans-serif;
+}
+
+nav#manage ul a {
+    color: #00006b;
+}
+
+nav#paging a {
+    color: #00006b !important;
+    font-family: proxima-nova-condensed, sans-serif !important;
+}
+
+
+a.bt {
+    background-color: #0d0d0d !important;
+    color: #00006b !important;
+}
+
+a.hashtag {
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 700;
+    color: #00006b !important;
+}
+
+body#collection #wrapper time,
+body#subpage #wrapper time,
+body#post article time.dt-published,
+body#subpage article time.dt-published {
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 700;
+    font-size: 0.95em;
+    color: #00006b !important;
+}
+
+
+.custom-nav {
+    text-align: center;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 700;
+    color: red;
+}
+
+.custom-nav a:link,
+.custom-nav a:visited,
+.custom-nav a:hover,
+.custom-nav a:active {
+    color: #00006b;
+}
+
+.custom-nav a:hover,
+.custom-nav a:active {
+    text-decoration: underline;
+}
+
+#subscribe-btn {
+    border: 1px #FF0000;
+    background: #00006b;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    color: #FFF4E6;
+}
+
+#emailsub {
+    font-family: proxima-nova-condensed, sans-serif !important;
+    font-weight: 700;
+}
+
+.footnote, .footnote-ref {
+    font-family: proxima-nova-condensed, sans-serif !important;
+    font-weight: 700;
+    /* margin-left:2.5px; */
+    color: #da2573 !important;
+    font-size: 1.1em;
+    text-decoration:underline #FF0000;
+}
+
+.footnote-ref {
+    margin-left:25px;
+}
+
+.footnote-ref-text {
+    font-family: proxima-nova-condensed, sans-serif !important;
+    font-weight: 400;
+    color: #1c0021 !important;
+    font-size: 1em;
+    border-top: #00006b dotted 1px;
+}
+</style>
+</head>
+<body>
+  <h1>David Blue’s WORLD FAMOUS Fast n’ Loose™ Siri Shortcuts for 𝚂𝙲𝚁𝚄𝙱𝚂</h1>
+
+<ul>
+<li><a href="https://github.com/extratone/bilge/wiki/David-Blue%E2%80%99s-WORLD-FAMOUS-Fast-n%E2%80%99-Loose%E2%84%A2-Siri-Shortcuts-for-%F0%9D%9A%82%F0%9D%99%B2%F0%9D%9A%81%F0%9D%9A%84%F0%9D%99%B1%F0%9D%9A%82">David Blue’s WORLD FAMOUS Fast n’ Loose™ Siri Shortcuts for 𝚂𝙲𝚁𝚄𝙱𝚂 · extratone/bilge Wiki</a></li>
+<li><a href="https://bit.ly/gitscrubs">Shortlink</a> - <code>https://bit.ly/gitscrubs</code></li>
+</ul>
+
+<figure>
+<img src="https://i.snap.as/p8U6kW1g.png" alt="OMNIMEMOJI" />
+<figcaption>OMNIMEMOJI</figcaption>
+</figure>
+
+<p><strong>All</strong> of the Siri Shortcuts I’ve created or modified over the years and and thought worthy of sharing, prioritizing those which I have not shared on either my <a href="https://routinehub.co/user/blue">RoutineHub</a> or <a href="https://shareshortcuts.com/u/blue/">ShareShortcuts</a> profiles. You shouldn’t encounter share URLS from <em>any</em> Shortcuts or File Shariing services, here - I thought a commitment to generating fresh <code>icloud.com/shortcuts</code> URLs exclusively for this project would be in its best interest - I haven’t exactly been dilligently keeping track of them throughout the history of Siri Shortcuts as they’ve been exclusively shared this way…</p>
+
+<h2>Most Utilitarian (In Theory…)</h2>
+
+<ul>
+<li><a href="https://www.icloud.com/shortcuts/6fa16145d1a649ceb878f141b8e595b7"><strong>screen</strong></a> - <code>https://www.icloud.com/shortcuts/6fa16145d1a649ceb878f141b8e595b7</code></li>
+<li><a href="https://www.icloud.com/shortcuts/18eb1e77ab0b455f82da4c4c6e521368">undercovered</a> (define)</li>
+<li><a href="https://www.icloud.com/shortcuts/3a2d212cc2614202be37b0beb8276e9b">style</a> (personal styleguide reference)</li>
+</ul>
+
+<h2>Music/Audio Delights</h2>
+
+<ul>
+<li><a href="https://www.icloud.com/shortcuts/fc846ff0e9094e088a7af4c5c11c3a23"><strong>Fondren &amp; Main</strong></a></li>
+<li><a href="https://www.icloud.com/shortcuts/029dea6d90f84223ac65be98fc803e7a"><strong>SHOW ME</strong></a> - <code>https://bit.ly/showmesiri</code></li>
+<li><a href="https://www.icloud.com/shortcuts/50ea8b3e026f41668f9a2a88c702a4c4">RIDE THE STORM</a></li>
+<li><a href="https://www.icloud.com/shortcuts/0e175407850d4fcb83c64ea04c0c284f">BREAKDALAW</a></li>
+<li><a href="https://www.icloud.com/shortcuts/ce89a2fe4f444e9c973436922640a33a">Frank Ocean - Street Fighter</a></li>
+<li><a href="https://www.icloud.com/shortcuts/c6ab99cbc3d9430d87d4abbdf7714d16">HER</a></li>
+<li><a href="https://www.icloud.com/shortcuts/80fa232621df4112bd1a92a5ace8e088">GOGO</a></li>
+<li><a href="https://www.icloud.com/shortcuts/3f4efb0207ab4b0ca91606f160612273">FALTER</a></li>
+<li><a href="https://www.icloud.com/shortcuts/f9a1161ae7da41ac8dd772010be5a049">KEEPIN LIVE</a></li>
+<li><a href="https://www.icloud.com/shortcuts/351c2593d3a2405691685fa6caf869aa">TKO</a></li>
+<li><a href="https://www.icloud.com/shortcuts/3da59e509709437d90927ba65860fc3a">FUTURELAND</a></li>
+<li><a href="https://www.icloud.com/shortcuts/62afd3c029da456aa62d593de28145c4">WITNESS</a></li>
+<li><a href="https://www.icloud.com/shortcuts/a32e7771f97c43feb5e228dc2c94a868">Meow</a></li>
+</ul>
+
+<h2>Personal/Brand</h2>
+
+<ul>
+<li><a href="https://www.icloud.com/shortcuts/eff33d5e122449deb190c70992022c97">The Psalms Ebook</a></li>
+</ul>
+
+<h2>Legacy/Drywall Media</h2>
+
+<ul>
+<li><a href="https://www.icloud.com/shortcuts/7a319d5b68b84fabb8e0c0bea441bb24">trent</a></li>
+<li><a href="https://www.icloud.com/shortcuts/4c2c7fd58aa84208bce08b69936aafbf">birthday</a></li>
+<li><a href="https://www.icloud.com/shortcuts/fd519a1a72c34a3d8559779826b23353">WYGD</a></li>
+</ul>
+
+</body>
+</html>

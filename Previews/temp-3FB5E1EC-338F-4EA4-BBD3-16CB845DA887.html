@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+        <html dir="auto">
+        
+        <head>
+		  <title></title>
+		  <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <style>
+            @charset "utf-8";
+
+        :root {
+			--main-bg-color: white;
+			--main-color: black;
+			--alternate-bg-color: #efefef;
+			--alternate-color: #222222;
+			--main-border-color: #BBBBBB;
+			  --link-color: #627EC9;
+		  }
+	  
+		  @media (prefers-color-scheme: dark) {
+			:root {
+			  --main-bg-color: #222222;
+			  --main-color: #53C8D6;
+			  --alternate-bg-color: #444444;
+			  --alternate-color: #cccccc;
+			  --main-border-color: #AAAAAA;
+				--link-color: #627EC9;
+			}
+		  }
+    
+        html {
+          font-size: 100%;
+          font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+          line-height: 1.4;
+        }
+    
+        body {
+          margin: 0;
+          padding: 1em;
+          background-color: var(--main-bg-color);
+          color: var(--main-color);
+        }
+    
+        @media (max-device-width: 480px) {}
+    
+        @media (min-device-width: 481px) {
+          body {
+            margin: auto;
+            max-width: 600px;
+          }
+        }
+    
+        blockquote {
+          font-style: italic;
+          margin: 1.5em 2em;
+          padding: 1em;
+          background-color: var(--alternate-bg-color);
+          color: var(--alternate-color);
+        }
+    
+        a {
+          color: var(--link-color);
+        }
+        pre {
+          display: block;
+          overflow: scroll;
+          width: 100%;
+          background-color: var(--alternate-bg-color);
+          padding: .5em 1em;
+          margin: 1em 0;
+        }
+    
+        code {
+          background-color: var(--alternate-bg-color);
+          color: var(--alternate-color);
+          font-family: Menlo, Courier, sans-serif;
+          padding: 2px 3px;
+        }
+    
+        table {
+          margin: 1.5em 0;
+          border: 1px solid var(--main-border-color);
+          border-collapse: collapse;
+        }
+    
+        th {
+          padding: .25em .5em;
+          background: var(--alternate-bg-color);
+          border: 1px solid var(--main-border-color);
+        }
+    
+        td {
+          padding: .25em .5em;
+          border: 1px solid var(--main-border-color);
+        }
+    
+        img {
+          max-width: 90%;
+        }
+    
+        form {
+           padding: 1em;
+        }
+          </style>
+        </head>
+		<body>
+			<form id="tad-fd" autocomplete="off" autocorrect="off">
+				<h1>Conversion</h1>
+<p style="font-family: courier"></p>
+	
+				<div style="margin: 1em 0 3em 0;">
+				
+				<button id ="cancel" onclick="Drafts.cancel(); return false;">OK</button>
+				</div>
+			</form>
+		</body>
+        <script>
+	function serialiseForm(p_objForm)
+	{
+		//Initialise
+		let objData = {};
+
+		//Add returnable items to the data object
+		for(let element of p_objForm.elements)
+		{
+			if (element.type && element.type === 'checkbox')
+			{
+				objData[element.id] = element.checked;
+			}
+			else if (element.type == 'submit')
+			{
+				//Ignore
+			}
+			else
+			{
+				objData[element.id] = element.value;
+			}
+		}
+
+		//Return the data object
+		return objData;
+	};
+
+	function submitFormById(p_strFormID)
+	{
+		//Get the form
+		let objForm = document.getElementById(p_strFormID);
+
+		//Transform all of the returnable form elements into an object
+		let objData = serialiseForm(objForm);
+
+		//Send the object to Drafts and return a continue code
+		Drafts.send("formValues", objData);
+		Drafts.continue();
+		return;
+	}
+
+  
+  function checkKeyPress(p_objKey)
+	{
+		if (p_objKey.keyCode == '13') submitFormById('tad-fd');
+		return false;
+  }
+  
+
+	//document.onkeydown = checkKeyPress;
+</script>
+
+</html>

@@ -1,0 +1,939 @@
+<meta charset="UTF-8"><!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title># [Take 2] iOS 15 Reviewed for My Family</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    :root {
+      --main-bg-color: white;
+      --main-color: black;
+      --alternate-bg-color: #efefef;
+      --alternate-color: #222222;
+      --main-border-color: #BBBBBB;
+        --link-color: #627EC9;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #222222;
+        --main-color: #eeeeee;
+        --alternate-bg-color: #444444;
+        --alternate-color: #cccccc;
+        --main-border-color: #AAAAAA;
+          --link-color: #627EC9;
+      }
+    }
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+      background-color: var(--main-bg-color);
+      color: var(--main-color);
+      text-align:center;
+    }
+
+    h2 { padding: 0em; margin: 0em; }
+
+    @media (max-device-width: 480px) {}
+
+    @media (min-device-width: 481px) {
+      body {
+        margin: auto;
+        max-width: 600px;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 2em;
+      padding: 1em;
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+    }
+
+    a {
+      color: var(--link-color);
+    }
+    pre {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+      background-color: var(--alternate-bg-color);
+      padding: .5em 1em;
+      margin: 1em 0;
+    }
+
+    code {
+      background-color: var(--alternate-bg-color);
+      color: var(--alternate-color);
+      font-family: Menlo, Courier, sans-serif;
+      padding: 2px 3px;
+    }
+
+    table {
+      margin: 1em 1em;
+      border: 1px solid var(--main-border-color);
+      border-collapse: collapse;
+      font-size: .85em;
+    }
+
+    th {
+      padding: .25em .5em;
+      background: var(--alternate-bg-color);
+      border: 1px solid var(--main-border-color);
+    }
+
+    td {
+      padding: .25em .5em;
+      border: 1px solid var(--main-border-color);
+    }
+
+    img {
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Draft Library Summary</h2>
+<p>Total Drafts: <strong>1766</strong>, Flagged: <strong>30</strong>, Characters: <strong>24256452</strong></p>
+<div style="margin:auto;text-align:center;"><table style="margin:auto;">
+<tr><th>Tag</th><th>Inbox</th><th>Archive</th><th>All</th></tr>
+<tr><td></td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td></td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>#run#</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>$</td>
+<td style='text-align:right;'>8</td>
+<td style='text-align:right;'>4</td>
+<td style='text-align:right;'>12</td></tr>
+<tr><td>2021</td>
+<td style='text-align:right;'>6</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>6</td></tr>
+<tr><td>academia</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>accessibility</td>
+<td style='text-align:right;'>8</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>8</td></tr>
+<tr><td>actions</td>
+<td style='text-align:right;'>22</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>22</td></tr>
+<tr><td>admin</td>
+<td style='text-align:right;'>2</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>2</td></tr>
+<tr><td>amanda</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>anecdote</td>
+<td style='text-align:right;'>3</td>
+<td style='text-align:right;'>2</td>
+<td style='text-align:right;'>5</td></tr>
+<tr><td>annotation</td>
+<td style='text-align:right;'>9</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>10</td></tr>
+<tr><td>api</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>app store</td>
+<td style='text-align:right;'>11</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>11</td></tr>
+<tr><td>archive</td>
+<td style='text-align:right;'>17</td>
+<td style='text-align:right;'>111</td>
+<td style='text-align:right;'>128</td></tr>
+<tr><td>audio</td>
+<td style='text-align:right;'>37</td>
+<td style='text-align:right;'>4</td>
+<td style='text-align:right;'>41</td></tr>
+<tr><td>authentication</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>auto</td>
+<td style='text-align:right;'>7</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>7</td></tr>
+<tr><td>automation</td>
+<td style='text-align:right;'>68</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>69</td></tr>
+<tr><td>bear</td>
+<td style='text-align:right;'>3</td>
+<td style='text-align:right;'>3</td>
+<td style='text-align:right;'>6</td></tr>
+<tr><td>beta</td>
+<td style='text-align:right;'>7</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>8</td></tr>
+<tr><td>bilge</td>
+<td style='text-align:right;'>4</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>5</td></tr>
+<tr><td>bio</td>
+<td style='text-align:right;'>3</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>4</td></tr>
+<tr><td>birthday</td>
+<td style='text-align:right;'>19</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>19</td></tr>
+<tr><td>blink</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>blog</td>
+<td style='text-align:right;'>11</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>11</td></tr>
+<tr><td>bookmarked</td>
+<td style='text-align:right;'>35</td>
+<td style='text-align:right;'>5</td>
+<td style='text-align:right;'>40</td></tr>
+<tr><td>bot</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>brand</td>
+<td style='text-align:right;'>4</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>4</td></tr>
+<tr><td>bumble</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>calendar</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>capture</td>
+<td style='text-align:right;'>12</td>
+<td style='text-align:right;'>39</td>
+<td style='text-align:right;'>51</td></tr>
+<tr><td>chaff</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>cinema</td>
+<td style='text-align:right;'>2</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>2</td></tr>
+<tr><td>citation</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>cli</td>
+<td style='text-align:right;'>13</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>13</td></tr>
+<tr><td>cms</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>code</td>
+<td style='text-align:right;'>3</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>3</td></tr>
+<tr><td>color</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>columbia</td>
+<td style='text-align:right;'>9</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>10</td></tr>
+<tr><td>compaq</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>configuration</td>
+<td style='text-align:right;'>42</td>
+<td style='text-align:right;'>4</td>
+<td style='text-align:right;'>46</td></tr>
+<tr><td>correspondence</td>
+<td style='text-align:right;'>83</td>
+<td style='text-align:right;'>3</td>
+<td style='text-align:right;'>86</td></tr>
+<tr><td>css</td>
+<td style='text-align:right;'>5</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>6</td></tr>
+<tr><td>curation</td>
+<td style='text-align:right;'>64</td>
+<td style='text-align:right;'>2</td>
+<td style='text-align:right;'>66</td></tr>
+<tr><td>data</td>
+<td style='text-align:right;'>7</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>7</td></tr>
+<tr><td>dbi</td>
+<td style='text-align:right;'>2</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>3</td></tr>
+<tr><td>debug</td>
+<td style='text-align:right;'>7</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>7</td></tr>
+<tr><td>design</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>dev</td>
+<td style='text-align:right;'>67</td>
+<td style='text-align:right;'>4</td>
+<td style='text-align:right;'>71</td></tr>
+<tr><td>discord</td>
+<td style='text-align:right;'>23</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>24</td></tr>
+<tr><td>discourse</td>
+<td style='text-align:right;'>2</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>2</td></tr>
+<tr><td>discussions</td>
+<td style='text-align:right;'>4</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>5</td></tr>
+<tr><td>distributed</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>divison</td>
+<td style='text-align:right;'>3</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>3</td></tr>
+<tr><td>dm</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>documentation</td>
+<td style='text-align:right;'>288</td>
+<td style='text-align:right;'>26</td>
+<td style='text-align:right;'>314</td></tr>
+<tr><td>drafts</td>
+<td style='text-align:right;'>100</td>
+<td style='text-align:right;'>10</td>
+<td style='text-align:right;'>110</td></tr>
+<tr><td>dry</td>
+<td style='text-align:right;'>5</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>6</td></tr>
+<tr><td>duplicate</td>
+<td style='text-align:right;'>30</td>
+<td style='text-align:right;'>3</td>
+<td style='text-align:right;'>33</td></tr>
+<tr><td>ed</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>editorial</td>
+<td style='text-align:right;'>3</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>4</td></tr>
+<tr><td>email</td>
+<td style='text-align:right;'>42</td>
+<td style='text-align:right;'>5</td>
+<td style='text-align:right;'>47</td></tr>
+<tr><td>embed</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>end user</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>engagement</td>
+<td style='text-align:right;'>5</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>5</td></tr>
+<tr><td>essay</td>
+<td style='text-align:right;'>14</td>
+<td style='text-align:right;'>3</td>
+<td style='text-align:right;'>17</td></tr>
+<tr><td>event</td>
+<td style='text-align:right;'>5</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>6</td></tr>
+<tr><td>evernote</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>70</td>
+<td style='text-align:right;'>70</td></tr>
+<tr><td>exclusive</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>exported2obsidian</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>6</td>
+<td style='text-align:right;'>7</td></tr>
+<tr><td>extratone</td>
+<td style='text-align:right;'>3</td>
+<td style='text-align:right;'>4</td>
+<td style='text-align:right;'>7</td></tr>
+<tr><td>facebook</td>
+<td style='text-align:right;'>3</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>3</td></tr>
+<tr><td>family</td>
+<td style='text-align:right;'>35</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>35</td></tr>
+<tr><td>fantastical</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>federated</td>
+<td style='text-align:right;'>11</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>11</td></tr>
+<tr><td>feedback</td>
+<td style='text-align:right;'>29</td>
+<td style='text-align:right;'>5</td>
+<td style='text-align:right;'>34</td></tr>
+<tr><td>film</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>forums</td>
+<td style='text-align:right;'>26</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>27</td></tr>
+<tr><td>freq</td>
+<td style='text-align:right;'>2</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>2</td></tr>
+<tr><td>friends</td>
+<td style='text-align:right;'>5</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>5</td></tr>
+<tr><td>gist</td>
+<td style='text-align:right;'>6</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>6</td></tr>
+<tr><td>git</td>
+<td style='text-align:right;'>27</td>
+<td style='text-align:right;'>3</td>
+<td style='text-align:right;'>30</td></tr>
+<tr><td>goss</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>guide</td>
+<td style='text-align:right;'>9</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>10</td></tr>
+<tr><td>h</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>handset</td>
+<td style='text-align:right;'>2</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>3</td></tr>
+<tr><td>hardware</td>
+<td style='text-align:right;'>14</td>
+<td style='text-align:right;'>4</td>
+<td style='text-align:right;'>18</td></tr>
+<tr><td>hex</td>
+<td style='text-align:right;'>4</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>4</td></tr>
+<tr><td>hildur</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>home</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>2</td></tr>
+<tr><td>html</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>i</td>
+<td style='text-align:right;'>276</td>
+<td style='text-align:right;'>27</td>
+<td style='text-align:right;'>303</td></tr>
+<tr><td>images</td>
+<td style='text-align:right;'>2</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>2</td></tr>
+<tr><td>import</td>
+<td style='text-align:right;'>2</td>
+<td style='text-align:right;'>13</td>
+<td style='text-align:right;'>15</td></tr>
+<tr><td>inbox</td>
+<td style='text-align:right;'>4</td>
+<td style='text-align:right;'>105</td>
+<td style='text-align:right;'>109</td></tr>
+<tr><td>index</td>
+<td style='text-align:right;'>10</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>10</td></tr>
+<tr><td>instagram</td>
+<td style='text-align:right;'>2</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>2</td></tr>
+<tr><td>ios</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>4</td>
+<td style='text-align:right;'>5</td></tr>
+<tr><td>javascript</td>
+<td style='text-align:right;'>2</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>2</td></tr>
+<tr><td>jfa</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>2</td></tr>
+<tr><td>jorts</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>juegos</td>
+<td style='text-align:right;'>2</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>2</td></tr>
+<tr><td>kernal</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>keys</td>
+<td style='text-align:right;'>66</td>
+<td style='text-align:right;'>4</td>
+<td style='text-align:right;'>70</td></tr>
+<tr><td>krusemark</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>learn</td>
+<td style='text-align:right;'>3</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>3</td></tr>
+<tr><td>legacy</td>
+<td style='text-align:right;'>32</td>
+<td style='text-align:right;'>4</td>
+<td style='text-align:right;'>36</td></tr>
+<tr><td>legal</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>library</td>
+<td style='text-align:right;'>30</td>
+<td style='text-align:right;'>17</td>
+<td style='text-align:right;'>47</td></tr>
+<tr><td>list</td>
+<td style='text-align:right;'>3</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>3</td></tr>
+<tr><td>live</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>local</td>
+<td style='text-align:right;'>21</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>22</td></tr>
+<tr><td>log</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>macos</td>
+<td style='text-align:right;'>56</td>
+<td style='text-align:right;'>2</td>
+<td style='text-align:right;'>58</td></tr>
+<tr><td>macstories</td>
+<td style='text-align:right;'>9</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>10</td></tr>
+<tr><td>martin</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>mastodon</td>
+<td style='text-align:right;'>5</td>
+<td style='text-align:right;'>2</td>
+<td style='text-align:right;'>7</td></tr>
+<tr><td>md</td>
+<td style='text-align:right;'>3</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>3</td></tr>
+<tr><td>media</td>
+<td style='text-align:right;'>24</td>
+<td style='text-align:right;'>4</td>
+<td style='text-align:right;'>28</td></tr>
+<tr><td>meta</td>
+<td style='text-align:right;'>77</td>
+<td style='text-align:right;'>6</td>
+<td style='text-align:right;'>83</td></tr>
+<tr><td>mickey</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>2</td></tr>
+<tr><td>music</td>
+<td style='text-align:right;'>13</td>
+<td style='text-align:right;'>2</td>
+<td style='text-align:right;'>15</td></tr>
+<tr><td>neocities</td>
+<td style='text-align:right;'>17</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>17</td></tr>
+<tr><td>nina</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>notes</td>
+<td style='text-align:right;'>55</td>
+<td style='text-align:right;'>7</td>
+<td style='text-align:right;'>62</td></tr>
+<tr><td>notion</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>obsidian</td>
+<td style='text-align:right;'>4</td>
+<td style='text-align:right;'>2</td>
+<td style='text-align:right;'>6</td></tr>
+<tr><td>odette</td>
+<td style='text-align:right;'>4</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>4</td></tr>
+<tr><td>open</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>2</td></tr>
+<tr><td>os</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>pages</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>philip roth</td>
+<td style='text-align:right;'>2</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>2</td></tr>
+<tr><td>piss</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>places</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>podcasts</td>
+<td style='text-align:right;'>2</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>2</td></tr>
+<tr><td>policy</td>
+<td style='text-align:right;'>2</td>
+<td style='text-align:right;'>5</td>
+<td style='text-align:right;'>7</td></tr>
+<tr><td>pornography</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>2</td></tr>
+<tr><td>power</td>
+<td style='text-align:right;'>3</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>3</td></tr>
+<tr><td>practice</td>
+<td style='text-align:right;'>3</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>4</td></tr>
+<tr><td>print</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>priority</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>prompt</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>prose</td>
+<td style='text-align:right;'>2</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>2</td></tr>
+<tr><td>psalms</td>
+<td style='text-align:right;'>214</td>
+<td style='text-align:right;'>21</td>
+<td style='text-align:right;'>235</td></tr>
+<tr><td>quote</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>raindrop</td>
+<td style='text-align:right;'>7</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>7</td></tr>
+<tr><td>reddit</td>
+<td style='text-align:right;'>15</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>15</td></tr>
+<tr><td>reference</td>
+<td style='text-align:right;'>48</td>
+<td style='text-align:right;'>2</td>
+<td style='text-align:right;'>50</td></tr>
+<tr><td>reminders</td>
+<td style='text-align:right;'>5</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>5</td></tr>
+<tr><td>review</td>
+<td style='text-align:right;'>5</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>6</td></tr>
+<tr><td>rh</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>rolodex</td>
+<td style='text-align:right;'>3</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>3</td></tr>
+<tr><td>rss</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>scrape</td>
+<td style='text-align:right;'>2</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>2</td></tr>
+<tr><td>sent2obsidian</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>2</td></tr>
+<tr><td>sex</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>shared</td>
+<td style='text-align:right;'>3</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>3</td></tr>
+<tr><td>shell</td>
+<td style='text-align:right;'>2</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>2</td></tr>
+<tr><td>shortcut</td>
+<td style='text-align:right;'>25</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>26</td></tr>
+<tr><td>shortcuts</td>
+<td style='text-align:right;'>106</td>
+<td style='text-align:right;'>3</td>
+<td style='text-align:right;'>109</td></tr>
+<tr><td>shs</td>
+<td style='text-align:right;'>7</td>
+<td style='text-align:right;'>5</td>
+<td style='text-align:right;'>12</td></tr>
+<tr><td>sms</td>
+<td style='text-align:right;'>2</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>2</td></tr>
+<tr><td>social</td>
+<td style='text-align:right;'>75</td>
+<td style='text-align:right;'>9</td>
+<td style='text-align:right;'>84</td></tr>
+<tr><td>software</td>
+<td style='text-align:right;'>49</td>
+<td style='text-align:right;'>8</td>
+<td style='text-align:right;'>57</td></tr>
+<tr><td>sol</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>spaces</td>
+<td style='text-align:right;'>3</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>3</td></tr>
+<tr><td>spectacle</td>
+<td style='text-align:right;'>14</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>14</td></tr>
+<tr><td>spoken</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>style</td>
+<td style='text-align:right;'>16</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>16</td></tr>
+<tr><td>support</td>
+<td style='text-align:right;'>16</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>16</td></tr>
+<tr><td>swift</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>tabs</td>
+<td style='text-align:right;'>4</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>4</td></tr>
+<tr><td>tagset</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>task</td>
+<td style='text-align:right;'>8</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>8</td></tr>
+<tr><td>telegram</td>
+<td style='text-align:right;'>32</td>
+<td style='text-align:right;'>5</td>
+<td style='text-align:right;'>37</td></tr>
+<tr><td>template</td>
+<td style='text-align:right;'>10</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>10</td></tr>
+<tr><td>test</td>
+<td style='text-align:right;'>3</td>
+<td style='text-align:right;'>4</td>
+<td style='text-align:right;'>7</td></tr>
+<tr><td>testing  documentation</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>2</td>
+<td style='text-align:right;'>2</td></tr>
+<tr><td>text</td>
+<td style='text-align:right;'>9</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>9</td></tr>
+<tr><td>text manipulation</td>
+<td style='text-align:right;'>11</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>11</td></tr>
+<tr><td>textexpander</td>
+<td style='text-align:right;'>3</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>4</td></tr>
+<tr><td>theme</td>
+<td style='text-align:right;'>7</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>7</td></tr>
+<tr><td>time</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>2</td></tr>
+<tr><td>todo</td>
+<td style='text-align:right;'>5</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>5</td></tr>
+<tr><td>todoist</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>7</td>
+<td style='text-align:right;'>7</td></tr>
+<tr><td>tot</td>
+<td style='text-align:right;'>11</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>12</td></tr>
+<tr><td>transcript</td>
+<td style='text-align:right;'>12</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>12</td></tr>
+<tr><td>tts</td>
+<td style='text-align:right;'>2</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>2</td></tr>
+<tr><td>tweet</td>
+<td style='text-align:right;'>5</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>6</td></tr>
+<tr><td>twitter</td>
+<td style='text-align:right;'>45</td>
+<td style='text-align:right;'>5</td>
+<td style='text-align:right;'>50</td></tr>
+<tr><td>ulysses</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>verge</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>2</td></tr>
+<tr><td>video</td>
+<td style='text-align:right;'>10</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>10</td></tr>
+<tr><td>vocabulary</td>
+<td style='text-align:right;'>135</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>135</td></tr>
+<tr><td>web</td>
+<td style='text-align:right;'>4</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>4</td></tr>
+<tr><td>wiki</td>
+<td style='text-align:right;'>10</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>10</td></tr>
+<tr><td>windows</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>wish</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>writeas</td>
+<td style='text-align:right;'>22</td>
+<td style='text-align:right;'>2</td>
+<td style='text-align:right;'>24</td></tr>
+<tr><td>wtf</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>x</td>
+<td style='text-align:right;'>4</td>
+<td style='text-align:right;'>2</td>
+<td style='text-align:right;'>6</td></tr>
+<tr><td>youtube</td>
+<td style='text-align:right;'>4</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>4</td></tr>
+<tr><td>~</td>
+<td style='text-align:right;'>31</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>32</td></tr>
+<tr><td>¡</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+<tr><td>™</td>
+<td style='text-align:right;'>1</td>
+<td style='text-align:right;'>0</td>
+<td style='text-align:right;'>1</td></tr>
+</table></div>
+
+</body>
+
+</html>

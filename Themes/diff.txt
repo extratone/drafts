@@ -1,0 +1,292 @@
+2c2,3
+<   "name": "Windows Eternal",
+---
+>   "name": "Windows Iowa",
+>   "description": "A variant of the BSOD theme by kimonostereo. Color radicalized version of the source inspired by a fictional alpha version of Windows (Windows Iowa.)",
+4,5c5
+<   "description": "A celebration of The Winders Aesthetic. Based on one of my favorite Telegram themes.",
+<   "isDark": false,
+---
+>   "isDark": true,
+44a45
+>         "foreground": "accent08",
+78a80
+>         "foreground": "accent09",
+266a269
+>         "fontSize": "extraLarge",
+274c277,278
+<         "foreground": "accent01"
+---
+>         "fontSize": "extraLarge",
+>         "foreground": "#d886aa"
+280a285
+>         "fontSize": "large",
+288c293,294
+<         "foreground": "accent03"
+---
+>         "fontSize": "normal",
+>         "foreground": "#86a6d8"
+294,295c300,301
+<         "fontWeight": "bold",
+<         "foreground": "accent04"
+---
+>         "fontWeight": "medium",
+>         "foreground": "#b7d886"
+301,302c307,308
+<         "fontWeight": "bold",
+<         "foreground": "accent05"
+---
+>         "fontWeight": "regular",
+>         "foreground": "#86c4d8"
+308,309c314,316
+<         "fontWeight": "bold",
+<         "foreground": "accent06"
+---
+>         "fontWeight": "regular",
+>         "fontSize": "small",
+>         "foreground": "#ffd49d"
+315c322,323
+<         "foreground": "#007ee5"
+---
+>         "foreground": "#f7ff85",
+>         "fontStyle": "underline"
+321c329
+<         "foreground": "activeLink"
+---
+>         "foreground": "#f7ff85"
+328c336
+<         "foreground": "#505050"
+---
+>         "foreground": "#85fbff"
+334d341
+<         "foreground": "link",
+336c343,344
+<         "fontSize": "small"
+---
+>         "fontSize": "small",
+>         "foreground": "#85ffba"
+355,357c363
+<       "settings": {
+<         "foreground": "markup"
+<       }
+---
+>       "settings": {}
+362c368,369
+<         "foreground": "markup"
+---
+>         "fontWeight": "bold",
+>         "fontSize": "small"
+367,369c374
+<       "settings": {
+<         "foreground": "markup"
+<       }
+---
+>       "settings": {}
+373,375c378
+<       "settings": {
+<         "foreground": "markup"
+<       }
+---
+>       "settings": {}
+380c383
+<         "foreground": "markup"
+---
+>         "foreground": "#ffbb85"
+400c403
+<         "fontStyle": "italic",
+---
+>         "fontStyle": "italic, strikethrough",
+404,409d406
+<     "markup.highlight": {
+<       "name": "Highlight",
+<       "settings": {
+<         "background": "highlight"
+<       }
+<     },
+416a414,419
+>     "markup.highlight": {
+>       "name": "Highlight",
+>       "settings": {
+>         "background": "highlight"
+>       }
+>     },
+427,428c430
+<         "foreground": "code",
+<         "background": "codeBackground"
+---
+>         "foreground": "#d385ff"
+471c473
+<         "foreground": "#cf3030"
+---
+>         "foreground": "#fc9fc8"
+477c479
+<         "foreground": "#dd4b39"
+---
+>         "foreground": "accent02"
+482,484c484
+<       "settings": {
+<         "foreground": "#000da6"
+<       }
+---
+>       "settings": {}
+489c489
+<         "foreground": "#004bad"
+---
+>         "foreground": "accent04"
+495c495
+<         "foreground": "#00a700"
+---
+>         "foreground": "accent05"
+501c501
+<         "foreground": "#00c900"
+---
+>         "foreground": "accent06"
+546,548c546
+<       "settings": {
+<         "foreground": "#bfc0c1"
+<       }
+---
+>       "settings": {}
+553,575c551,580
+<       "foreground": "#000001",
+<       "background": "#bfc0c1",
+<       "heading": "#cf3030",
+<       "strikethrough": "#696a6b",
+<       "comment": "#696a6b",
+<       "link": "#000ea7",
+<       "activeLink": "#000ea7",
+<       "code": "#444444",
+<       "codeBackground": "#bfc0c1",
+<       "literal": "#32812b",
+<       "keyword": "#813631",
+<       "markup": "#327c7d",
+<       "addition": "#46c139",
+<       "deletion": "#ee0000",
+<       "substitution": "#f3a536",
+<       "highlight": "#fffd80",
+<       "invisibles": "#cccccc",
+<       "accent01": "#000da6",
+<       "accent02": "#dd4b39",
+<       "accent03": "#00a700",
+<       "accent04": "#327c7d",
+<       "accent05": "#4892f2",
+<       "accent06": "#2dba45"
+---
+>       "foreground": "#ffffff",
+>       "background": "#ff00aa",
+>       "heading": "#da2573",
+>       "headingMarkup": "#5861c1",
+>       "strikethrough": "#aaaaaa",
+>       "comment": "#2c34ad",
+>       "link": "#f7ff85",
+>       "activeLink": "#5861c1",
+>       "code": "#ffffff",
+>       "codeBackground": "#5861c1",
+>       "literal": "#ffe549",
+>       "keyword": "#53dc87",
+>       "markup": "#5861c1",
+>       "addition": "#66ff07",
+>       "deletion": "#ff0000",
+>       "substitution": "#5861c1",
+>       "highlight": "#da2575",
+>       "invisibles": "#666666",
+>       "accent01": "#fffdeb",
+>       "accent02": "#f7ff85",
+>       "accent03": "#f9fbff",
+>       "accent04": "#ffffff",
+>       "accent05": "#ffffff",
+>       "accent06": "#ffffff",
+>       "accent07": "#5861c1",
+>       "accent08": "#ffffff",
+>       "accent09": "#fdb1c2",
+>       "accent10": "#5861c1",
+>       "accent11": "#ffffff",
+>       "accent12": "#5861c1"
+578,609c583,614
+<       "tint": "#000da6",
+<       "tintAlternate": "#007ee5",
+<       "textCaret": "#000da6",
+<       "textSelection": "#327c7d",
+<       "textHighlight": "#b1d3d4",
+<       "textBackground": "#bfc0c1",
+<       "textForeground": "#000001",
+<       "background": "#bfc0c1",
+<       "backgroundCollection": "#bfc0c1",
+<       "promptBackground": "#bfc0c1",
+<       "promptButtonBackground": "#327c7d",
+<       "promptButtonForeground": "#bfc0c1",
+<       "promptButtonDestructiveBackground": "#ff0000",
+<       "promptButtonDestructiveForeground": "#cecece",
+<       "foreground": "#000001",
+<       "caption": "#7b7b81",
+<       "actionBarBackground": "#bfc0c1",
+<       "actionBarKeyBackground": "#327c7d",
+<       "actionBarKeyForeground": "#cecece",
+<       "flagged": "#f09a37",
+<       "move": "#bbde9f",
+<       "delete": "#cf3030",
+<       "tagForeground": "#cecece",
+<       "tagBackground": "#327c7d",
+<       "tagAddHighlight": "#bbde9f",
+<       "tagRemoveHighlight": "#72d5fd",
+<       "border": "#327c7d",
+<       "messageForeground": "#cecece",
+<       "messageSuccess": "#327c7d",
+<       "messageInfo": "#327c7d",
+<       "messageWarning": "#ffe438",
+<       "messageError": "#fe3824",
+---
+>       "foreground": "#ffffff",
+>       "textForeground": "#ffffff",
+>       "background": "#00006b",
+>       "backgroundCollection": "#00006b",
+>       "tint": "#f7ff85",
+>       "tintAlternate": "#d5d5d5",
+>       "textBackground": "#00006b",
+>       "textCaret": "#ffffff",
+>       "textSelection": "#a4a3a5",
+>       "textHighlight": "#050482",
+>       "promptBackground": "#2c1269",
+>       "promptButtonBackground": "#3e7f1b",
+>       "promptButtonForeground": "#ffffff",
+>       "promptButtonDestructiveBackground": "#f43f32",
+>       "promptButtonDestructiveForeground": "#ffffff",
+>       "caption": "#cff6f9",
+>       "actionBarBackground": "#00006b",
+>       "actionBarKeyBackground": "#6969eb",
+>       "actionBarKeyForeground": "#fffdeb",
+>       "flagged": "#fff700",
+>       "move": "#2c1269",
+>       "delete": "#f43f32",
+>       "tagForeground": "#fbf5d5",
+>       "tagBackground": "#00004e",
+>       "tagAddHighlight": "#e9fff4",
+>       "tagRemoveHighlight": "#ffd5e1",
+>       "border": "#da2573",
+>       "messageForeground": "#fffbfb",
+>       "messageSuccess": "#9adf67",
+>       "messageInfo": "#666b71",
+>       "messageWarning": "#ff8c42",
+>       "messageError": "#ff0000",
+611c616
+<       "tintRed": "#ff0000",
+---
+>       "tintRed": "#ae0300",
+613,615c618,620
+<       "tintOrange": "#e59a28",
+<       "tintYellow": "#e8d21e",
+<       "tintGreen": "#46c138",
+---
+>       "tintOrange": "#ff8c42",
+>       "tintYellow": "#f7ff85",
+>       "tintGreen": "#9adf67",
+617,618c622,623
+<       "tintBlue": "#0874a0",
+<       "tintViolet": "#1c0021",
+---
+>       "tintBlue": "#1083ff",
+>       "tintViolet": "#4c0d58",
+621c626
+<       "widgetForegroundAlternate": "#000da6",
+---
+>       "widgetForegroundAlternate": "#1c0021",

@@ -1,0 +1,145 @@
+{
+  "name": "Shell",
+  "description": "Basic Shell Syntax Highlighting",
+  "sampleText": "# Shell Syntax\nvar='Hello World'\necho -n $value",
+  "author": "Chris Grieser (armenation)",
+  "scopeName": "text.shell",
+  "rangeExtensionType": {
+    "default": "lookAround1000"
+  },
+  "fileExtensions": [
+    "sh",
+    "zsh"
+  ],
+  "patterns": [
+    {
+      "match": "^(#.*)$",
+      "exclusive": true,
+      "comment": "Comment",
+      "captures": {
+        "1": {
+          "scope": "code.comment"
+        }
+      }
+    },
+    {
+      "match": "(\\$\\w+)",
+      "exclusive": false,
+      "comment": "Variables",
+      "captures": {
+        "0": {
+          "scope": "color.blue"
+        }
+      }
+    },
+     {
+      "match": "(?:^)(\\w+)(?:\\=)",
+      "exclusive": false,
+      "comment": "Variables",
+      "captures": {
+        "1": {
+          "scope": "color.blue"
+        }
+      }
+    },
+    {
+      "match": "([`])(?:(?!(?:\\\\|\\1)).|\\\\.|\\n)*\\1",
+      "exclusive": true,
+      "comment": "backtick literal",
+      "captures": {
+        "0": {
+          "scope": "code.literal"
+        }
+      }
+    },
+    {
+      "match": "(['\"])(?:(?!(?:\\\\|\\1)).|\\\\.)*\\1",
+      "exclusive": true,
+      "comment": "String literal",
+      "captures": {
+        "0": {
+          "scope": "code.literal"
+        }
+      }
+    },
+    {
+      "match": "([\\/])(?:(?!(?:\\\\|\\1)).|\\\\.)*\\1([gmi]*)",
+      "exclusive": true,
+      "comment": "Regex literal",
+      "captures": {
+        "0": {
+          "scope": "code.literal"
+        }
+      }
+    },
+    {
+      "match": "\\b(true|false)\\b",
+      "exclusive": true,
+      "comment": "Boolean literal",
+      "captures": {
+        "0": {
+          "scope": "code.literal"
+        }
+      }
+    },
+    {
+      "match": "\\b-?(?:0x[\\da-f]+|\\d*\\.?\\d+(?:e[+-]?\\d+)?)\\b",
+      "exclusive": true,
+      "comment": "Number",
+      "captures": {
+        "0": {
+          "scope": "code.literal"
+        }
+      }
+    },
+    {
+      "match": "\\+\\+?|!=?=?|<=?|>=?|==?=?|&&?|\\|\\|?|\\?|\\/|\\^|%",
+      "exclusive": true,
+      "comment": "Operator",
+      "captures": {
+        "0": {
+          "scope": "code.operator"
+        }
+      }
+    },
+    {
+      "match": "([{}\\[\\];()]~\\*)",
+      "exclusive": true,
+      "comment": "Punctuation",
+      "captures": {
+        "1": {
+          "scope": "code.punctuation"
+        }
+      }
+    },
+    {
+      "match": "(?!<\\w)(brew|ls|cat|grep|sed|awk|tail|head|man|tldr|history|pandoc|python|python3|node|osascript|find|rm|cp|mv|tr|egrep|open|killall|which|cut|cd|echo|pwd|touch|curl|pip|pip3|sudo|zsh|chmod|mas|htop|zip|date|npm|less|system_profiler|iconsur|export|eval|import|defaults|if|fi|then|else|for|bash|tee|test|wc|in|do|done|ping)(?!\\w|=\")",
+      "exclusive": true,
+      "comment": "Shell keyword",
+      "captures": {
+        "1": {
+          "scope": "code.keyword"
+        }
+      }
+    }
+  ],
+    "navigationPatterns": [
+    {
+      "match": "^#(.*)$",
+      "rangeCapture": "0",
+      "comment": "Comments with #",
+      "prefix": "#",
+      "labelCapture": "1",
+      "identifierCapture": "1",
+      "level": 0
+    },
+     {
+      "match": "^function (.*) \\{",
+      "comment": "Function",
+      "rangeCapture": "0",
+      "labelCapture": "1",
+      "prefix": "function",
+      "level": 1
+    }
+  ],
+}

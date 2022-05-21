@@ -1,0 +1,450 @@
+<meta charset="UTF-8"><!DOCTYPE html>
+<html dir="auto">
+<head>
+<title>Preview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Written in November 2020 by David Blue for bilge.world.
+
+`Version 3.1` https://github.com/extratone/bilge/releases/tag/3.1
+
+Full, up-to-date source code available at https://github.com/extratone/bilge/
+
+# [The Unlicense, Dave Edition](https://gist.github.com/extratone/140a11428b5dd1dda500b3928e0438b1)
+
+Considering my use of Git as a means to track revisions on my own writing, it's important to note that you should feel free to replace all instances of "software" in the above statement with "words," "writing," "expression," etc.
+
+While I appreciate tremendously the work and contribution of [Arlo Bendiken](https://ar.to/2010/01/set-your-code-free) in the form of The Unlicense, I would like to add that I see no need, personally, to make the refutation of Intellectual Property law regarding my own work into some profound ethical statement. As it stands, I have not to my knowledge been the victim of any sort of theft of any kind, and find the suggestion highly unlikely. If I *am*  made aware of such a case, there is certainly a possibility that I may change my mind on this issue, so I suppose I should highlight that **THESE TERMS ARE SUBJECT TO CHANGE**, though I suspect I would be more flattered and/or amused than actually offended. 
+
+I would also like to annotate that my use of this license should not be regarded as a suggestion that anyone else follow my example, or that I "believe in" taking such action regarding one's work, generally. While I did indeed take the time to set up [a repository](https://github.com/extratone/eoi) of John Perry Barlow's "[The Economy of Ideas](https://www.wired.com/1994/03/economy-ideas/)" in a bunch of different document formats, I do not necessarily agree with all of what he argued, especially in the context of the world 27 years later. If you *are* particularly interested in my opinion on the matter for whatever reason, here is what I have to say to you:
+
+The principled beginning of The Open Web was a great moment in history, but - like all historical principles - it is extremely important that we consider *context* and maintain an appropriate level of criticism when looking back on old manifestos written by old white guys. In general, try your best to *be reasonable*.
+
+***
+
+This is free and unencumbered software released into the public domain.
+
+Anyone is free to copy, modify, publish, use, compile, sell, or
+distribute this software, either in source code form or as a compiled
+binary, for any purpose, commercial or non-commercial, and by any
+means.
+
+In jurisdictions that recognize copyright laws, the author or authors
+of this software dedicate any and all copyright interest in the
+software to the public domain. We make this dedication for the benefit
+of the public at large and to the detriment of our heirs and
+successors. We intend this dedication to be an overt act of
+relinquishment in perpetuity of all present and future rights to this
+software under copyright law.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+For more information, please refer to <https://unlicense.org>
+
+*/
+
+@import url('https://use.typekit.net/kst2rrh.css');
+
+body {
+    font-family: adobe-caslon-pro, serif !important;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #FFF4E6;
+}
+
+/* old background-color: #f2f2f2 */
+
+#blog-title a {
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    /* font-style:bold !important; */
+    color: #00006b;
+}
+
+header nav a {
+    font-family: proxima-nova-condensed, sans-serif !important;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+header p.description {
+    /* font-style: italic; */
+    font-family: proxima-nova-condensed, sans-serif !important;
+    font-weight: 700;
+    line-height: 200% !important;
+    color: #00006b !important;
+    font-size: 1em;
+    margin-left: inherit;
+    margin-right: inherit;
+}
+
+body#collection header {
+    margin-bottom: 1em !important;
+}
+
+
+header nav a {
+    color: #00006b;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 900;
+    /* margin-bottom: 1em; */
+}
+
+body,
+article {
+    font-family: adobe-caslon-pro, serif !important;
+    font-weight: 400;
+    line-height: 155%;
+    font-size: 1.1em !important;
+    color: #000000;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    /* margin-top:1rem !important; */
+}
+
+
+body,
+article a:link {
+    color: #00006b;
+}
+
+body,
+article a:visited {
+    color: #FF0000;
+}
+
+h1 {
+    color: #00006b !important;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 900;
+    font-size: 2em !important;
+}
+
+h2 {
+    color: #00006b !important;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 700;
+    font-size: 1.4em !important;
+}
+
+h3 {
+    color: #1c0021 !important;
+    font-family: proxima-nova-extra-condensed, sans-serif;
+    font-weight: 600;
+    font-size: 1.3em !important;
+}
+
+h4 {
+    color: #1c0021 !important;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-size: 1em !important;
+}
+
+h5 {
+    color: #1c0021 !important;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-size: 1em !important;
+}
+
+h6 {
+    color: #1c0021 !important;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-size: .85em !important;
+}
+
+code {
+    /* background-color:#f7ff85 !important; */
+    /* border: 1px solid #da2573 !important;
+    border-radius: 1px !important; */
+    font-size: 0.85em !important;
+    color: #1c0021 !important;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 400;
+    /* padding: 0px 0px 0px 0px !important; */
+}
+
+body #post pre, body#collection pre, body#post pre, body#subpage pre {
+    background: #FFFdeb; !important;
+    border: 1px solid #da2573 !important;
+    border-radius: 1px !important;
+    font-size: 0.85em !important;
+    color: #1c0021 !important;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 400;
+    /* padding: 0px 0px 0px 0px !important; */
+}
+
+.post-title a:visited,
+.post-title a:link {
+    font-family: proxima-nova-condensed, sans-serif !important;
+    font-weight: 900;
+    color: #00006b !important;
+    font-size: 1.7rem !important;
+}
+
+body#post article time.dt-published,
+body#subpage article time.dt-published {
+    font-family: proxima-nova-condensed, sans-serif !important;
+    color: #00006b !important;
+    font-size: 1rem !important;
+}
+
+body footer nav {
+    font-family: proxima-nova-condensed, sans-serif !important;
+    color: #00006b;
+}
+
+blockquote {
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 400;
+    color: #333333 !important;
+    border-left: 2.5px solid #00006b !important;
+}
+
+table {
+    background-color: #FFFdeb !important;
+    font-size: 0.8em !important;
+    line-height: 1.2em;
+    color: #1c0021 !important;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 400;
+    border: 1px solid #f43f32 !important;
+    border-radius: 1px !important;
+}
+
+article table td, article table th {
+    border: 1px solid !important;
+    border-color: #da2573 !important;
+}
+
+
+.gist {
+    font-family: proxima-nova-condensed, sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+}
+
+.gist .gist-meta {
+    font-family: proxima-nova-extra-condensed, sans-serif !important;
+    font-weight: 600 !important;
+    color: #1c0021 !important;
+}
+
+.gist, .gist article, .gist article p {
+    font-family: proxima-nova-condensed, sans-serif !important;
+    font-weight: 400 !important;
+}
+
+
+.gist .gist-file .gist-data {
+    background: #FFFdeb; !important;
+    border: 1px solid #da2573 !important;
+    border-radius: 1px !important;
+    font-size: 0.85em !important;
+    color: #1c0021 !important;
+    font-family: proxima-nova-condensed, sans-serif !important;
+    font-weight: 400;
+}
+
+.gist, .gist article, .gist article p {
+    white-space: normal !important;
+}
+
+/* .gist .gist-hr {
+    display: hide !important;
+} */
+
+hr {
+    border: 2px solid red;
+}
+
+
+body footer a.home:link,
+body footer a.home:visited {
+    color: #00006b;
+}
+
+.action {
+    font-family: proxima-nova-condensed, sans-serif;
+}
+
+nav#manage ul a {
+    color: #00006b;
+}
+
+nav#paging a {
+    color: #00006b !important;
+    font-family: proxima-nova-condensed, sans-serif !important;
+}
+
+
+a.bt {
+    background-color: #0d0d0d !important;
+    color: #00006b !important;
+}
+
+a.hashtag {
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 700;
+    color: #00006b !important;
+}
+
+body#collection #wrapper time,
+body#subpage #wrapper time,
+body#post article time.dt-published,
+body#subpage article time.dt-published {
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 700;
+    font-size: 0.95em;
+    color: #00006b !important;
+}
+
+
+.custom-nav {
+    text-align: center;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 700;
+    color: red;
+}
+
+.custom-nav a:link,
+.custom-nav a:visited,
+.custom-nav a:hover,
+.custom-nav a:active {
+    color: #00006b;
+}
+
+.custom-nav a:hover,
+.custom-nav a:active {
+    text-decoration: underline;
+}
+
+#subscribe-btn {
+    border: 1px #FF0000;
+    background: #00006b;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    color: #FFF4E6;
+}
+
+#emailsub {
+    font-family: proxima-nova-condensed, sans-serif !important;
+    font-weight: 700;
+}
+
+.footnote, .footnote-ref {
+    font-family: proxima-nova-condensed, sans-serif !important;
+    font-weight: 700;
+    /* margin-left:2.5px; */
+    color: #da2573 !important;
+    font-size: 1.1em;
+    text-decoration:underline #FF0000;
+}
+
+.footnote-ref {
+    margin-left:25px;
+}
+
+.footnote-ref-text {
+    font-family: proxima-nova-condensed, sans-serif !important;
+    font-weight: 400;
+    color: #1c0021 !important;
+    font-size: 1em;
+    border-top: #00006b dotted 1px;
+}
+</style>
+</head>
+<body>
+  <h1 id="notes-telegram">Notes-Telegram</h1>
+
+<h2 id="generalurls">General URLs</h2>
+
+<ul>
+<li>My <a href="https://github.com/extratone/t">personal Telegram satellite GitHub Repository</a></li>
+<li><a href="https://actions.getdrafts.com/a/18E">Send to Telegram Drafts Action</a></li>
+<li>Relative link to messages that don&#8217;t involve complex scripting.</li>
+<li>Unlimited file upload limit - <strong>2GB PER FILE LIMIT</strong>.</li>
+<li>Cross-platform as all fuck.</li>
+<li>Every programming/scripting language ever has at least a few (probably unfinished and abandoned) projects in the wild building support for Telegram APIs.</li>
+<li>Drafts as a safe dependable space to compose text does not have a windows equivalent, but Telegram can sort of function in that regard, largely because it continuously saves what one types in the text field.</li>
+<li>Element … or Matrix… or whatever the actual protocol is called… is nothing but a great way to waste your time and the planet’s energy in obfuscating willy nilly.</li>
+<li>Perhaps I should have accepted long ago that my particular priorities are <em>not</em> as resonant with other users as I would like to believe.</li>
+<li>Notification management in Telegram as well considered as I’ve ever experienced, which makes a lot of sense now that I am a long time user.</li>
+<li>When I lost all my shit in Portland, much of what was saved was thanks to Telegram.</li>
+<li>The particular features that define Telegram’s competence are not immediately obvious, for the most part. Being able to quickly change the recipient of a forwarded message, for instance,</li>
+</ul>
+
+<h2 id="references">References</h2>
+
+<ul>
+<li><a href="https://actions.getdrafts.com/a/18E">Drafts Directory: Send to Telegram</a></li>
+<li><a href="https://shows.acast.com/theeasternborder/episodes/telegram">Telegram | The Eastern Border</a></li>
+</ul>
+
+<h2 id="themes">Themes</h2>
+
+<ul>
+<li><a href="https://t.me/addtheme/Tweetbot6Pro">Tweetbot 6 Pro</a></li>
+</ul>
+
+<h2 id="channels">Channels</h2>
+
+<ul>
+<li><a href="https://t.me/TelegramiOStalk">Telegram iOS Talk</a></li>
+</ul>
+
+<h2 id="images">Images</h2>
+
+<p>```markdown
+<img src="https://i.snap.as/387ADVNS.png" alt="Quartered Telegram " /></p>
+
+<p><img src="https://i.snap.as/wYNY5aVO.png" alt="Quarter Telegram" /></p>
+
+<p><img src="https://i.snap.as/aNADRjvK.png" alt="White Sapphire" /></p>
+
+<p><img src="https://i.snap.as/9Bxz27ZX.png" alt="Patel Clouds Theme in the Chat Background Tool" /></p>
+
+<p><img src="https://i.snap.as/jfBVJqyw.png" alt="Local Visibility and Voice Notes Publishing in Telegram for iOS" /></p>
+
+<p><img src="https://i.snap.as/moymK7EY.png" alt="Orange Noir Telegram Theme by Valespace" /></p>
+
+<p><img src="https://i.snap.as/cfzQk533.png" alt="iOS Old Red Theme" /></p>
+
+<p><img src="https://i.snap.as/FltrCV6Z.png" alt="Telegram for iOS Sharing and Notifications" />
+```</p>
+
+<h2 id="media">Media</h2>
+
+<ul>
+<li><a href="https://imgur.com/gallery/4laWgXj">Share Sheet animation</a> - <code>https://imgur.com/gallery/4laWgXj</code></li>
+</ul>
+
+<p><a href="https://talk.automators.fm/t/equivalent-to-drafts-but-for-windows/6159/8">Equivalent To Drafts, But For Windows?</a> - Windows - Automators Talk</p>
+
+<ul>
+<li>Shared on <a href="https://www.reddit.com/r/Telegram/comments/pvd7a4/telegram_as_universal_clipboard_manager_ultimate/">Reddit</a></li>
+</ul>
+
+<p>This is going to seem entirely out of left field, but for those looking for that OG function of Drafts&#8230; as just a safe place to compose text you intend to use elsewhere (as opposed to the Tweet compose interface, which just lost me like 15 minutes of typing, which led me here&#8230; hehe,)</p>
+
+<p>I have been using <a href="https://desktop.telegram.org/"><strong>Telegram</strong></a>, of all things for years. notably, if you hit Ctrl + 0 from <em>anywhere</em> in the Windows client, you and your cursor are taken to the compose field beneath your personal &#8220;Saved Messages&#8221; channel, which is searchable, has an extremely high per-message character limit (after which it just automatically splits,) and is ridiculously reliable in saving &#8220;drafts&#8221; live as you&#8217;re typing. as in&#8230; I have actively tried to lose characters by killing the application and then logging in on my phone and have yet to accomplish losing a single one (among other advantages: zero formatting added to plain text by default - not even line breaks - no total file limit and <em>2GB</em> per file limit uploads, absurdly cross-platform, literally more reliable than SMS in poor network conditions.) you can immediately reenter a sent message with <code>↑</code> to edit, copy it, escape with just <code>Esc</code> and then paste to start a new revision.</p>
+
+<p>my other suggestion which I would personally use for this if I wasn&#8217;t such a high-intensity clipboard user:
+God&#8217;s great gift to man, <a href="https://hluk.github.io/CopyQ/,"><strong>CopyQ</strong></a> is an extremely robust and infinitely customizable clipboard manager that supports complex scripting and&#8230;. somehow&#8230; I just managed to set up live syncing of my CopyQ clipboard over <em>iCloud for Windows</em>, and you absolutely would not believe how well it actually works.</p>
+
+<hr />
+
+<p>as far as <em>send to yourself</em> functions… Telegram’s is the absolute most capable and usable by far, I promise. here’s more explanation in the form of this response I posted yesterday (I don’t expect anyone to actually engage with it though lol.) https://talk.automators.fm/t/equivalent-to-drafts-but-for-windows/6159/8</p>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<meta charset="UTF-8"><!DOCTYPE html>
+<html dir="auto">
+
+<head>
+  <title># How to Fuck Text</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @charset "utf-8";
+
+    html {
+      font-size: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+       background-color: #ddd;
+       color: #222;
+    }
+
+    body {
+      margin: 0;
+      padding: 1em;
+    }
+
+    form {
+       padding: 1em;
+    }
+  </style>
+</head>
+
+<body>
+
+<p>Demo action showing how JavaScript in an HTML Preview can send values back to the action for use in subsequent action steps.</p>
+
+<form id="data-form" class="form">
+
+<fieldset>
+<legend>Form Values</legend>
+<div class="pure-control-group">
+    <label for="input-1">Input 1</label>
+    <input id="input-1" type="text" placeholder="Input 1" value="Sample text">
+</div>
+
+<p>
+	<label for="select-1">Select 1</label>
+	<select id="select-1">
+		<option>0</option>
+		<option>1</option>
+		<option>2</option>
+	</select>
+</p>
+
+<p>
+    <label for="checkbox-1">
+    <input type="checkbox" id="checkbox-1" />&nbsp;Checkbox 1</label>
+</p>
+
+</fieldset>
+
+<div style="margin: 1em 0 3em 0;">
+<button onclick="submitFormById('data-form');return false;">
+    Submit
+</button>
+</div>
+
+</body>
+
+<script>
+// load form values to an object
+let serialize = (form) => {
+    let data = {};
+    for(let e of form.elements) {
+        if (e.type && e.type === 'checkbox') {
+            data[e.id] = e.checked;
+        }
+        else {
+            data[e.id] = e.value;
+        }
+    }
+    return data;
+};
+
+// send values to Drafts action, then continue...
+let submitFormById = (id) => {
+	let f = document.getElementById(id);
+	let data = serialize(f);
+	Drafts.send("formValues", data);
+	Drafts.continue();
+}
+</script>
+
+</html>

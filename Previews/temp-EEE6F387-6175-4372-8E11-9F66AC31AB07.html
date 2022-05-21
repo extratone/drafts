@@ -1,0 +1,146 @@
+<meta charset="UTF-8"><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>table-magic</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/showdownjs/showdown/1.2.2/dist/showdown.min.js"></script>
+    <script src="https://config.agiletortoise.com/drafts-action-resources/magic.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/primer/2.3.3/primer.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://config.agiletortoise.com/drafts-action-resources/magic-styles.css">
+</head>
+
+<body onload="initialValues();">
+
+    <div class="masthead">
+        <div class="container">
+            <div class="title">table-magic</div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="tabnav">
+            <nav class="tabnav-tabs">
+                <a href="#" class="tabnav-tab selected" id="tab-csv" onclick="changeTab('csv');"><span
+                        class="octicon octicon-file-text"></span> CSV/TSV</a>
+                <a href="#" class="tabnav-tab" id="tab-md" onclick="changeTab('md');"><span
+                        class="octicon octicon-code"></span> Markdown</a>
+                <a href="#" class="tabnav-tab" id="tab-sql" onclick="changeTab('sql');"><span
+                        class="octicon octicon-database"></span> SQL</a>
+                <a href="#" class="tabnav-tab" id="tab-html" onclick="changeTab('html');"><span
+                        class="octicon octicon-file-code"></span> HTML</a>
+                <a href="#" class="tabnav-tab" id="tab-form" onclick="changeTab('form');"><span
+                        class="octicon octicon-pencil"></span> Form</a>
+                <a href="#" class="tabnav-tab" id="tab-preview" onclick="changeTab('preview');"><span
+                        class="octicon octicon-browser"></span> Preview</a>
+            </nav>
+        </div>
+
+        <div class="form-tools">
+
+            <div class="form-button" id="tablebuilder-start" title="Drag out a new table">
+                <span class="octicon octicon-plus"></span> New table
+            </div>
+
+            <div class="form-button" id="new-row" title="Add a row to the bottom">
+                <span class="octicon octicon-triangle-down"></span> Add row
+            </div>
+
+            <div class="form-button" id="new-column" title="Add a column to the right">
+                <span class="octicon octicon-triangle-right"></span> Add column
+            </div>
+
+            <div class="form-button" id="toggle-delete" title="Toggle deletion of rows and columns">
+                <span class="octicon octicon-trashcan"></span> Enable deletion
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container" id="viewport">
+
+        <div id="display"></div>
+
+    </div>
+    <div class="container">
+
+        <div id="csv-options" class="options">
+            <p>
+                <!--
+                <button class="btn" type="button" onclick="downloadCsv();"><span
+                        class="octicon octicon-cloud-download"></span> Download</button>
+                        -->
+            </p>
+        </div>
+
+        <div id="md-options" class="options">
+            <div class="form-checkbox">
+                <label>
+                    <input type="checkbox" checked="checked" id="check-formatter">
+                    Table formatter
+                </label>
+                <p class="note">
+                    Makes markdown more legible.
+                </p>
+            </div>
+        </div>
+
+        <div id="sql-info" class="options">
+            <p class="note">
+                Read about the SQL function <a href="https://github.com/stevecat/table-magic/pull/20">in this pull
+                    request</a>.
+            </p>
+        </div>
+
+        <div class="footer">
+            <div style="margin: 1em; padding: 1em;">
+                <button onclick="cancel();" style='font-size: 1.5em;'>Cancel</button>&nbsp;
+                <button onclick="submit();"  style='font-size: 1.5em;color: black;'>Save Changes</button>
+            </div>
+
+
+
+            built using table-magic | <a href="http://www.github.com/stevecat/table-magic">repo</a>
+        </div>
+
+    </div>
+
+    <script>
+
+        const initialMarkdown = `https://tilde.town/~extratone/`;
+
+        function initialValues() {
+            layout(false);
+            $('textarea').removeClass('md');
+            $('#md-options').hide();
+
+            let array = md2array(initialMarkdown);
+            let html = array2preview(array);
+            array_storge = array; // Store the array
+            $('.preview').html(html);
+
+            $('.tabnav-tab').removeClass('selected');
+            $('#tab-preview').addClass('selected');
+
+            // Update variables
+            tab = 'preview';
+        }
+
+        function submit() {
+            changeTab('md');
+            let text = $('textarea').val();
+            Drafts.send('markdown', text);
+            Drafts.continue();
+        }
+
+        function cancel() {
+            Drafts.cancel();
+        }
+
+    </script>
+</body>
+</html>
