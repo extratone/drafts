@@ -10,3 +10,16 @@ Action.TA_getAllActions().forEach(function(acCurrent)
 
 //Output to a new draft
 draft.TA_draftNew(astrOutput.join("\n"), "Plain Text");
+
+//Initialise
+let astrOutput = [];
+
+//Process each action
+Action.TA_getAllActions().forEach(function(acCurrent)
+{
+	acCurrent.TA_populateMore();
+	if (acCurrent._keyShortcut != "") astrOutput.push(`- ${acCurrent._keyShortcut}----${acCurrent.name}`);
+});	
+
+//Output to a new draft
+draft.setTemplateTag(("klist", (astrOutput.join("\n"), "Plain Text"));
