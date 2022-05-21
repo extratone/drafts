@@ -1,0 +1,47 @@
+# OBSIDIAN SMACKDOWN Video
+- [**YouTube**](https://youtu.be/Q8vkBuYJOz8) - `https://youtu.be/Q8vkBuYJOz8`
+- [HardLimit](https://video.hardlimit.com/w/9FtbJQ68Y4b9KA8KY27SgH?loop=1&autoplay=1&warningTitle=0&controls=0&peertubeLink=0)
+- [WTF](https://davidblue.wtf/drafts/BB1A3BC3-AD77-4AF2-8088-1818E05A63B5.html)
+
+<canvas height="212" width="212" style="box-sizing: border-box; caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-family: &quot;Source Sans Pro&quot;, sans-serif; font-size: 14px; font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); -webkit-text-size-adjust: 100%; -webkit-text-stroke-width: 0px; text-decoration: none; height: 212px; width: 212px;"></canvas>
+
+## Title
+OBSIDIAN SMACKDOWN: Electron is a FALSE IDOL
+
+## Description
+
+Honestly I’m not sure if I actually communicated any coherent argument in this video, looking back, but I really just wanted to make sure I got myself in my new Drafts shirt and PJs taunting Obsidian users with violence because it’s kinda funny. 
+
+One of these days, though, I might actually finish this thing: https://github.com/extratone/bilge/issues/301
+
+※⃣   ※⃣   ※⃣   ※⃣   ※⃣   ※⃣   ※⃣   ※⃣   ※⃣   ※⃣
+World Wide Web: https://bilge.world 
+Contact Card: https://davidblue.wtf/db.vcf
+Twitter: https://twitter.com/NeoYokel 
+Mastodon: https://mastodon.social/@DavidBlue 
+Instagram: https://instagram.com/asphaltapostle
+davidblue@extratone.com 
+
+【※】【※】【※】【※】【※】【※】【※】【※】【※】【※】
+
+『※』『※』『※』『※』『※』『※』『※』『※』『※』『※』
+
+≋※≋※≋※≋※≋※≋※≋※≋※≋※≋※≋
+
+░※░※░※░※░※░※░※░※░※░※░
+
+## Tags
+
+```
+obsidian,drafts,editorial,sirishortcuts,python,electron,technology,media,software,ios,smartphones,tech blog,tech vlog,tech,siri shortcut,personal automation,macos,desktop automation,macos big sur,ios 15
+```
+
+## Embed
+
+<iframe width="auto" height="auto" src="https://www.youtube.com/embed/Q8vkBuYJOz8?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+```
+<iframe width=“auto” height=“auto” src=“https://www.youtube.com/embed/Q8vkBuYJOz8?controls=0” title=“YouTube video player” frameborder=“0” allow=“accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture” allowfullscreen></iframe>
+```
+
+<iframe title="OBSIDIAN SMACKDOWN: Electron is a FALSE IDOL" width="560" height="315" src="https://video.hardlimit.com/videos/embed/464bdea8-00b1-4efc-99a5-30cec468efd7?loop=1&amp;autoplay=1&amp;warningTitle=0&amp;controls=0&amp;peertubeLink=0" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>.
