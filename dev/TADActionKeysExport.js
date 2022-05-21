@@ -22,4 +22,4 @@ Action.TA_getAllActions().forEach(function(acCurrent)
 });	
 
 //Output to a new draft
-draft.setTemplateTag(("klist", (astrOutput.join("\n"), "Plain Text"));
+draft.setTemplateTag("klist",((astrOutput.join("\n"), "Plain Text"));
