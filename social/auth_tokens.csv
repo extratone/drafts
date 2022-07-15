@@ -1,5 +1,0 @@
-id,auth_token_hash,prev_auth_token_hash,auth_token_seen,client_ip,user_agent,seen_at,rotated_at,created_at,updated_at
-20164,2NCg8...,2NCg8...,true,50.83.78.7,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",2022-07-15 16:42:12 UTC,2022-07-15 16:42:12 UTC,2022-07-15 16:42:12 UTC,2022-07-15 16:42:12 UTC
-19193,jIoCr...,pN0l5...,true,50.83.78.7,"Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1",2022-06-07 00:16:27 UTC,2022-06-07 00:16:26 UTC,2022-04-11 16:40:54 UTC,2022-04-11 16:40:54 UTC
-19387,avl5m...,J8qcq...,true,50.83.78.7,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.5 Safari/605.1.15",2022-05-24 07:51:37 UTC,2022-05-24 07:51:36 UTC,2022-04-29 10:32:46 UTC,2022-04-29 10:32:46 UTC
-19926,pFD3w...,qK+6L...,true,50.83.78.7,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6 Safari/605.1.15",2022-07-15 10:00:55 UTC,2022-07-15 10:00:54 UTC,2022-06-15 01:39:12 UTC,2022-06-15 01:39:12 UTC
