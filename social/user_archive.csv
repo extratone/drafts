@@ -1,0 +1,387 @@
+topic_title,categories,is_pm,post,like_count,reply_count,url,created_at
+Does keyboard shortcuts cheatsheet exists?,Drafts for Mac,No,"Of the many things I have to thank you for (that I’ve been experimenting with lately,) this is the most significant, but for reasons not entirely related to just Drafts. Without being too wordy:
+
+I’ve been using a bluetooth keyboard with my iPhone since it was introduced with iPhone 4. (It began as a conscious experiment - I chose a new phone instead of a new laptop to take to my first year of college.) 
+
+I have accumulated a lot of evidence to suggest that number of *iPhone* users who’ve used a hardware keyboard with their phone is *extremely* tiny, but I think it’s a dynamic that’s still worth documenting properly. As you’ve probably observed, even the association of iPad and keyboard in the past few years has actually made it worse - lookup any given iOS app’s keyboard shortcuts and you’ll return a list *for iPad* and nothing else. Over the years, I’ve maintained a habit of going down the iPad list, testing each shortcut on iPhone, noting down the results in a table, and then emailing said list to the developers. (Naturally, they almost never respond. Shout out to Tapbots for being the only recent exception.)
+
+Basically, I have come to the conclusion that the responsibility of writing the definitive **iPhone x Bluetooth Keyboard** guide/reference/documentation is my own. 
+
+I'm posting this response here because I want to invte past, present, and future users to please share any thoughts they have on this if they so desire, but I'd very much like to consult you privately if you can spare the time and energy. 
+
+Thanks!",0,1,https://forums.getdrafts.com/t/does-keyboard-shortcuts-cheatsheet-exists/8503/13,2021-04-02T22:02:13.808Z
+Does keyboard shortcuts cheatsheet exists?,Drafts for Mac,No,"> from a developer perspective I would think it would be harder to make them not work on iPhone than to just let them be the same.
+
+Thank you for confirming that! I've always suspected, but I am ultimately not a developer. 
+
+the answer to your question, in my experience, is **yes**…
+
+I would go so far as to say the _majority_ of the cross-platform apps which have bluetooth keyboard support have incongruities between the devices.
+
+Depending on how much you know about Tweetbot 6, you might find it interesting to know that its two remaining essential shortcuts (F to favorite a Tweet and ⌘ + R to reply) are no longer supported, though there was a point where I had both Tweetbot 5 and Tweetbot 6 on my phone when those shortcuts were still working on the former. As I said, they did actually respond to me about this! First with doubt:
+
+> Which ones do you think you are missing, don't think that should've changed.
+
+Then - in the interest of thoroughness - I did one more systematic run through of Tweetbot’s iPad shortcuts list just to make sure, sent the results to them, and heard back a week later: “thanks! we’ll take a look at these.”
+
+I consider myself pretty competent at finding documentation on any given obscure, dated issue, but never with proprietary Apple stuff before lol.
+
+I would kill for an actual look at the code involved - I’ve been seriously considering buying a used Mac Mini just so I could poke around Xcode myself.",0,2,https://forums.getdrafts.com/t/does-keyboard-shortcuts-cheatsheet-exists/8503/15,2021-04-03T19:56:29.921Z
+"iOS Shortcut ""Run Action with Text"" (magic variable?)",Actions - Help & Questions,No,"[quote=""agiletortoise, post:10, topic:7319""]
+There are many ways to get a result back to Shortcuts. The Drafts action could put text in the cllpboard, as @sylumer mentioned, but also write to files, or store results in a draft which could be fetched. Lots of options.
+[/quote]
+
+(Hopefully I’m reviving this thread in a way that might prove useful to others.)
+
+I understand that the task the OP was hoping to accomplish can be done without Drafts, but regarding this quote about the “Run Action with Text” Shortcuts action, I’d just ask: *how*?
+
+As in, how exactly would I go about getting the action’s output into the clipboard/a file/a fetchable draft/etc?
+
+Apologies if I’m missing something here… and thank you!",0,1,https://forums.getdrafts.com/t/ios-shortcut-run-action-with-text-magic-variable/7319/12,2021-04-13T00:32:52.722Z
+"iOS Shortcut ""Run Action with Text"" (magic variable?)",Actions - Help & Questions,No,"Specifically, I was hoping to add a function to my “[Collect References](https://routinehub.co/shortcut/8913/)” Shortcut (which outputs all hyperlinks from a given article/webpage as a list of raw URLs) which grabs titles for each respective URL and formats them as proper Markdown links `([title](url))` using this “[Replace URLS by MD Links](https://actions.getdrafts.com/a/1be)” Drafts action from the action directory.
+
+As per the screenshot below, I suppose I’m looking for the correct action in place of “Copy to Clipboard” which handles the result of said Drafts action, if possible. 
+
+![Collect References Shortcut](upload://rsLtnz8Jzr2vIA3CdYrtSCVOGCc.jpeg)",0,1,https://forums.getdrafts.com/t/ios-shortcut-run-action-with-text-magic-variable/7319/14,2021-04-13T04:59:29.736Z
+Worth submitting this problematic Draft as a bug report?,Issues,No,"I’ve been working on composing a longform post for the first time in Drafts, which has resulted in a near-5000-word, embed-heavy Draft with some 186 versions that now crashes the app (iPhone 12 Pro Max running iOS 14.5 Beta 8.)
+
+I’ve tried:
+* Purging iCloud transactions (which appeared to work ~1500 words ago but isn’t currently.)
+* Duplicating the Draft (it crashes the app too.)
+* Copying the Draft’s contents and pasting into a new Draft (which also crashes the app.)
+* Clearing my handset’s RAM
+* Rebooting my handset
+
+My real question for this thread: **is it worth formally submitting feedback regarding this Draft? Would it be helpful at all?** If so, I will gladly do so, but I don’t want to add to what I imagine is a pretty big queue of bug reports, if not.",0,0,https://forums.getdrafts.com/t/worth-submitting-this-problematic-draft-as-a-bug-report/10272/1,2021-04-19T19:35:59.595Z
+Worth submitting this problematic Draft as a bug report?,Issues,No,"I was able to extract it just fine via the first method you listed - copying the contents from the Info menu. 
+
+Of course, I appreciate your time, but it sounds like this thread might be redundant, then. Should I delete it?",0,1,https://forums.getdrafts.com/t/worth-submitting-this-problematic-draft-as-a-bug-report/10272/3,2021-04-19T22:29:46.492Z
+ANN: Drafts Web Capture! Add to Drafts from any browser,News & Updates,No,"*THIS* is the solution those of us with Windows desktop machines and iOS-running handsets  have been asking for from writing apps... What's odd is that I only speak to one other person regularly who uses Drafts and *we were just talking at length this morning about this*.. 
+
+So I see it's not Facebook or Alexa who's been listening to my conversations all this time....But Drafts!! :bowing_man: :raised_hands: :wink:",1,0,https://forums.getdrafts.com/t/ann-drafts-web-capture-add-to-drafts-from-any-browser/10350/12,2021-04-29T03:48:57.271Z
+"Now that you’ve been promoted, it’s time to learn about some advanced features!",-,Yes,"[quote=""discobot, post:1, topic:10360""]
+@discobot start advanced tutorial
+[/quote]
+
+@discobot start advanced tutorial",0,0,https://forums.getdrafts.com/t/now-that-you-ve-been-promoted-it-s-time-to-learn-about-some-advanced-features/10360/2,2021-05-01T08:30:19.046Z
+"Now that you’ve been promoted, it’s time to learn about some advanced features!",-,Yes,"@discobot is, by far, the coolest bot I know :wink:",0,0,https://forums.getdrafts.com/t/now-that-you-ve-been-promoted-it-s-time-to-learn-about-some-advanced-features/10360/4,2021-05-01T08:30:25.654Z
+Keyboard shortcuts on iPad?,General Discussion,No,"[quote=""sylumer, post:2, topic:10389, full:true""]
+Hold down the CMD key in any app and you should get an overlay of keyboard shortcuts.
+[/quote]
+
+This is definitely *the* place to start, but Drafts is incredibly unique on iOS in that you can pretty much customize keyboard shortcuts entirely, by way of custom shortcuts *per Action*.
+
+The best way to illustrate this might be to simply share my current list of keyboard shortcuts, which I’ve also published in a [GitHub Gist](https://gist.github.com/extratone/2e54243a2123ccfa6a37c6e8cc1057e2).
+
+- ` Embed <audio> Element: ⌥A `
+- Strikethrough: ⌥S
+- The Psalms Custom Preview: ⌘P
+- TAD-Trash Note: ⌃-
+- TAD-Toggle Last Two Modified Drafts: ⌃⇥
+- TAD-Load Previous Workspace: ⌥⌘←
+- TAD-Load Next Workspace: ⌥⌘→
+- TAD-Link for Draft (Title): ⇧⌘K
+- Find: ⇧⌥F
+- Tasks: ⌃T
+- Indent: ⌘]
+- Outdent: ⌘[
+- Toggle Theme: ⌥/
+- Markdown Header (#): ⌃⌘H
+- Markdown Bold (**): ⌘B
+- Code Block (```): ⌃⌘C
+- Preview: ⌥⌘P
+- Markdown Emphasis (_): ⌘I
+- Markdown List: ⇧⌘L
+- Markdown Link: ⌘K
+- Replace URLs by MD links: ⇧⌘U
+- Markdown Footnote: ⌃F
+- TAD-Selection Word Count: ⌥⌘W
+- TAD-Show Draft Info: ⌥I
+- TAD-Toggle App Theme: ⌥\
+- TAD-Toggle Typewriter Mode: ⌥T
+- TAD-Search Actions: ⌘/
+- TAD-Fetch URL Content to New Draft: ⇧⌘D
+- TAD-Copy Draft Link: ⇧⌃C
+- TAD-File Import With Tags: ⌘O
+- Copy: ⌥C
+- Email to myself: ⇧⌥M
+- Save to Files as...: ⌘S
+- Send to Bear: ⇧⌘B
+- Save to OneNote: ⇧⌥O
+- Clipboard…: ⌥C
+- TAD-Move Checked to End: ⇧⌃↓
+- Switch to The Psalms’ Workplace Shortcut: ⌘2
+- Switch to Documentation Workplace: ⌘3
+- Workspace Shortcut ⌘4: ⌘4
+- Open Keys Workspace: ⌘5
+
+The majority of these are Actions I downloaded via the [Action Directory](https://actions.getdrafts.com/) and manually set/altered their respective keyboard shortcut as per [this documentation](https://docs.getdrafts.com/docs/actions/editing-actions).
+
+
+@Felciano I would be more than happy to speak directly about this if you need further help - my big life project right now literally involves documenting Bluetooth keyboard support on iPhone, so it’s pretty darn fresh in my mind.",2,2,https://forums.getdrafts.com/t/keyboard-shortcuts-on-ipad/10389/3,2021-05-07T15:31:10.424Z
+Keyboard shortcuts on iPad?,General Discussion,No,"[quote=""sylumer, post:4, topic:10389""]
+The recommendation is instead to create your own actions with the icon, name and keyboard shortcut of your choice, and then have a single action step to include the `TAD-*` action.
+[/quote]
+
+To be honest, I had been fiddling with them so much, my plan was to just reconfigure them one-by-one if/when I ended up clearing them with an update but this solution is far too smart to ignore lol. Thank you!
+
+[quote=""sylumer, post:4, topic:10389""]
+You may also be interested in the `TAD-Export Action Shortcut Keys`/`TAD-List Action Shortcuts`.
+[/quote]
+
+The list you see above was exported with the latter (`TAD-List Action Shortcuts,`) which lists the name of the action first, then the command.  `TAD-Export Action Shortcut Keys` is identical as far as can tell except it lists the commands first, then the action. I thought there was a third one which pasted the list into the current Draft instead of creating a new one, but I can’t seem to find it now. Could’ve been dreaming lol.",0,0,https://forums.getdrafts.com/t/keyboard-shortcuts-on-ipad/10389/5,2021-05-07T16:36:20.922Z
+Drafts ios best practices,General Discussion,No,"The best place to start is probably with [**Screencasts**](https://docs.getdrafts.com/docs/gettingstarted/screencasts) - they're very concise and honed, these days. I linked you to the main directory, there, but [here is video #1 on iOS, specifically](https://vimeo.com/263943764).",4,0,https://forums.getdrafts.com/t/drafts-ios-best-practices/10496/2,2021-05-16T08:53:16.252Z
+Keyboard shortcuts on iPad?,General Discussion,No,"Sorta petty I suppose but I finally finished this process - precisely 31 days later lol - and wow! Definitely an illuminating/educational experience. So much so , in fact, that I would absolutely recommend anyone wanting a better familiarity with how Actions work do what I did - create an Action Group just to collect your favorite TAD actions you’ve come across. Even if keyboard shortcuts aren’t involved.
+
+(In case you were wondering, my favorite Action at the moment is [**Load Most Changed Draft**](https://www.thoughtasylum.com/taagd/#tad-load-most-changed-draft) lol.)",0,0,https://forums.getdrafts.com/t/keyboard-shortcuts-on-ipad/10389/7,2021-06-24T09:06:13.764Z
+"Drafts 28 Released - Ready for new iOS/macOS, Folder Bookmarks, and More",News & Updates,No,(post deleted by author),0,0,https://forums.getdrafts.com/t/drafts-28-released-ready-for-new-ios-macos-folder-bookmarks-and-more/11201/7,2021-09-17T16:11:35.478Z
+"Drafts 28 Released - Ready for new iOS/macOS, Folder Bookmarks, and More",News & Updates,No,"So I originally thought it was a problem with my Search Actions action but actually it would appear that it’s actually **the bluetooth keyboard command** `⌘ + /` is no longer functioning with the update.
+
+I can do a formal ticket if you’d like.
+
+Drafts Version: 28.0.40
+OS Version: iOS 15.0
+Device: iPhone 12 Pro Max
+Pro Licensed: Yes",0,1,https://forums.getdrafts.com/t/drafts-28-released-ready-for-new-ios-macos-folder-bookmarks-and-more/11201/8,2021-09-17T16:16:59.974Z
+"Drafts 28 Released - Ready for new iOS/macOS, Folder Bookmarks, and More",News & Updates,No,"Yup! I had it attached to the TAD-Search Actions action, but I can’t seem to get it to respond at all (attaching it to other actions to test,) along with a few others I’ve discovered in the past few hours:
+
+* ^ + -
+* Option + /
+
+Getting fairly worried - [I sent you, Tim, and Snell a Tweet reply thread about this](https://twitter.com/NeoYokel/status/1438902417660289027) - because I suspect it’s not your error but an omission of the iPhone from whatever’s changed with “Universal Keyboard Support” (ironically, given that title.)",0,1,https://forums.getdrafts.com/t/drafts-28-released-ready-for-new-ios-macos-folder-bookmarks-and-more/11201/12,2021-09-17T18:07:53.219Z
+"Drafts 28 Released - Ready for new iOS/macOS, Folder Bookmarks, and More",News & Updates,No,"You’re correct! I’m running the Release Candidate of 15 on a Dev profile, but was able to get the shortcuts to respond again after restarting my handset. Sorry about that…
+
+Though on the subject, since iPhone users do not have the benefit of the keyboard shortcut guide/panel that appears when holding `⌘` on iPad, is there any way you could publish the contents of that panel for Drafts in a table format?
+
+I will literally make it for you if you send me screenshots.",0,2,https://forums.getdrafts.com/t/drafts-28-released-ready-for-new-ios-macos-folder-bookmarks-and-more/11201/14,2021-09-17T19:19:05.936Z
+"Drafts 28 Released - Ready for new iOS/macOS, Folder Bookmarks, and More",News & Updates,No,"Yes! We’ve actually had that conversation before but I appreciate your suggestions. 
+
+That screenshot is *precisely* what I need thank you so much. 
+
+(I’ve been using iPads on display at my local best buy to grab screenshots but obviously I can’t install Drafts on those.)",0,0,https://forums.getdrafts.com/t/drafts-28-released-ready-for-new-ios-macos-folder-bookmarks-and-more/11201/17,2021-09-17T20:03:03.593Z
+"Drafts 28 Released - Ready for new iOS/macOS, Folder Bookmarks, and More",News & Updates,No,"Actually… Looks like ‘⌘ + ,` no longer opens Settings. (This is why having the full list would be handy.)
+
+Edit: `⌘ + Option + ,` no longer opens the Editing menu.",0,1,https://forums.getdrafts.com/t/drafts-28-released-ready-for-new-ios-macos-folder-bookmarks-and-more/11201/18,2021-09-17T20:56:58.640Z
+RE: Does keyboard shortcuts cheatsheet exists?,-,Yes,"https://forums.getdrafts.com/t/does-keyboard-shortcuts-cheatsheet-exists/8503/18
+
+Hello! I’m still not very good at these cold contacts so please forgive me if I get too verbose..
+
+…*but*, **I am also an iPhone keyboarder**. in fact, I’ve spent virtually all of 2021 seeking to become the ultimate authority on the subject in the interest of producing *The Definitive Guide to iPhone and the Bluetooth Keyboard*. 
+
+Your post is literally the first remotely recent proclamation of iPhone keyboarding I’ve come across that was *not from me* lol. (If you look at my profile on this forum, it is literally just me bothering Greg about it… Which I have been doing since Drafts 3????)
+
+Anyway, all I’m really trying to do is consolidate documentation which Apple patently refuses to do. (See [this thread of mine in the Apple Developer Forums](https://developer.apple.com/forums/thread/685201) but only if you’d like to get activated lol.)
+
+Ultimately, I just wanted to reach out and say hey! I would also like to express a sincere offer/request that you come to me first with issues/questions/bugs/general confusion on this subject. My whole life purpose has somehow entered orbit of this issue - helping people is my new drug, if you need to frame it as doing me a favor. 
+
+If you’re curious, I have set up [a rather unsubstantial landing page on NeoCities](https://uikeycommand.neocities.org) and a [GitHub org](https://github.com/ExtraKeys) (which I’ve gotten behind in keeping parallel with my ever growing pile of docs.)
+
+apologies for the wall of text! thank you for your time :)",0,0,https://forums.getdrafts.com/t/re-does-keyboard-shortcuts-cheatsheet-exists/11500/1,2021-11-01T06:05:32.492Z
+Grammarly Now Supports Drafts for Mac (and more),Tips & Tricks,No,(post deleted by author),0,0,https://forums.getdrafts.com/t/grammarly-now-supports-drafts-for-mac-and-more/11596/4,2021-11-16T19:14:44.814Z
+"Drafts 30 Released - Transcribe Audio-Video, Extract Text from PDFs",News & Updates,No,Two more features I don’t have to look elsewhere to accomplish. Thank you! I especially love how the transcription is visible *as it’s processing*.,1,0,https://forums.getdrafts.com/t/drafts-30-released-transcribe-audio-video-extract-text-from-pdfs/11677/9,2021-12-05T04:06:25.225Z
+Keyboard shortcuts on iPad?,General Discussion,No,(post deleted by author),0,0,https://forums.getdrafts.com/t/keyboard-shortcuts-on-ipad/10389/9,2022-01-09T04:47:29.991Z
+Keyboard shortcuts on iPad?,General Discussion,No,"Are you on iPhone (iOS,) iPadOS, or macOS?
+
+Just did a brief test:
+
+`⌘ + ⌥ + ⇧, ⇩`
+
+On macOS: 
+- When Inbox is in focus, navigates between the beginning and end of the list.
+- In the editor and when the Actions List is in focus, macOS gives me the ""nope"" sound.
+
+On iOS (iPhone 12 PM):
+I was not able to get the shortcut to respond whatsoever.",1,1,https://forums.getdrafts.com/t/keyboard-shortcuts-on-ipad/10389/10,2022-01-09T04:47:50.566Z
+Keyboard shortcuts on iPad?,General Discussion,No,"@martinpacker 
+
+or, if you'd prefer, my slight modification that results in a comma-delimited list! 
+
+[List Action Shortcuts, Comma-Delimited | Drafts Directory](https://actions.getdrafts.com/a/1s7)
+
+Ex:
+
+```
+Markdown Header (#),⌃⌘H
+Markdown Bold (**),⌘B
+Code Block (```),⌃⌘C
+Preview,⌥⌘P
+Markdown Emphasis (*),⌘I
+```",1,0,https://forums.getdrafts.com/t/keyboard-shortcuts-on-ipad/10389/13,2022-01-09T11:57:32.945Z
+Update All Actions,Feature Requests,No,"Forgive me if this question has already been addressed here and/or within the documentation, but I was unable to find anything with a search.
+
+I was wondering how difficult it would be to implement a function within Drafts that checks the current installed version of all Actions with the latest version available in the Action Directory and offers an option to update all outdated actions in bulk.",0,0,https://forums.getdrafts.com/t/update-all-actions/11941/1,2022-01-15T10:56:02.220Z
+How to access actions quickly by keyboard shortcut?,General Discussion,No,"Just want to make sure someone points out that `⌘ + 0` will dismiss an Action Search (right sidebar) and `⌘ + 1` will dismiss a Drafts Search (left sidebar.)
+
+These two apply on all platforms.",0,1,https://forums.getdrafts.com/t/how-to-access-actions-quickly-by-keyboard-shortcut/11944/9,2022-01-17T21:39:18.641Z
+How to access actions quickly by keyboard shortcut?,General Discussion,No,You’re right… I guess they’re one in the same in my psyche lol. I’d used Drafts for most of my adult life *exclusively on iPhone* up until this year hehe.,0,0,https://forums.getdrafts.com/t/how-to-access-actions-quickly-by-keyboard-shortcut/11944/11,2022-01-17T22:21:51.970Z
+"Suggestions/Requests for a WebDAV (NeoCities, in my case) Action Group",Actions - Share What You've Made,No,"![NeoCitiesActionGroupPreview](upload://l4oMdR4a7YjTza5mQETswOgkM4E.png)
+
+Howdy folks! After discovering that Drafts includes [a WebDAV service](https://docs.getdrafts.com/docs/actions/steps/services#webdav) a few days ago, I've been toying around with my first attempt at Action development from scratch. I've long fantasized about a more direct way to interact with my NeoCities site(s) - (NeoCities supports WebDAV as its exclusive means of remote file management.)    The end goal for the Action Group would be to utilize Drafts' WebDAV support to its absolute fullest extent to interact with/manage files on a web server over WebDAV.
+
+So far, I've been able to push drafts to the server successfully but only when titled by UUID or Timestamp. (`[[uuid]].html/[[time]].html`)  When I try to use `[[title]]` or `[[display_title]]`, the resulting path is unreadable for some reason.
+
+Anywho, I thought I'd open a thread here. Any suggestions/tips from those of you with more experience developing actions are more than welcome!
+
+Here's [the (unlisted) Action Directory link](https://actions.getdrafts.com/g/1uF) for those with the time/curiosity to check on my progress.",0,0,https://forums.getdrafts.com/t/suggestions-requests-for-a-webdav-neocities-in-my-case-action-group/11994/1,2022-01-25T05:58:59.335Z
+"Suggestions/Requests for a WebDAV (NeoCities, in my case) Action Group",Actions - Share What You've Made,No,"Thank you, Greg, that solved it!
+
+I’ve just now [publicly published](https://actions.getdrafts.com/g/1uF) what I have so far.",0,0,https://forums.getdrafts.com/t/suggestions-requests-for-a-webdav-neocities-in-my-case-action-group/11994/3,2022-02-01T22:40:01.348Z
+Automatically Add Created Date and Time To All New Drafts,General Discussion,No,There’s also definitely a way to do this with Siri Shortcuts but it could very easily turn into a nightmare depending.,0,0,https://forums.getdrafts.com/t/automatically-add-created-date-and-time-to-all-new-drafts/12062/3,2022-02-11T16:10:41.477Z
+Posting to Mastodon from Drafts (Native Action Service),Feature Requests,No,"I realize this is probably a big ask, but I was wondering how possible it'd be to see [native services integration](https://docs.getdrafts.com/docs/actions/steps/services) for actions with [Mastodon](https://joinmastodon.org) in the near future. I'm not a developer - so what I'm about to speculate might be BS - but I would think it'd be pretty easy given how thoroughly documented Mastodon's API is + perhaps even that the infrastructure, itself is coded in Ruby?",1,0,https://forums.getdrafts.com/t/posting-to-mastodon-from-drafts-native-action-service/12089/1,2022-02-13T09:15:14.413Z
+Posting to Mastodon from Drafts (Native Action Service),Feature Requests,No,Ah yeah I didn't think about that... But thank you so much! Day made yet again! <3,0,0,https://forums.getdrafts.com/t/posting-to-mastodon-from-drafts-native-action-service/12089/4,2022-02-13T15:05:04.477Z
+Re-sharing another’s de-listed theme to the Directory?,Actions - Help & Questions,No,"I’ve found myself in possession of a drafts theme entitled “Black & Yellow” which has apparently become homeless.
+
+![Black & Yellow Theme](upload://ezaWDFokQ7EoshZu74YpNCWdUOw.png)
+
+It’s actually been one of my favorite dark themes in the past few months. I’m just wondering: was this a default theme? Would anyone like to claim it? And if not... would it be inappropriate for me to put it back on the Directory with this explanation?",0,0,https://forums.getdrafts.com/t/re-sharing-another-s-de-listed-theme-to-the-directory/12151/1,2022-02-22T23:40:19.439Z
+Re-sharing another’s de-listed theme to the Directory?,Actions - Help & Questions,No,Thank you for the response! I’ve [listed it](https://directory.getdrafts.com/t/1vm) for those interested.,0,0,https://forums.getdrafts.com/t/re-sharing-another-s-de-listed-theme-to-the-directory/12151/3,2022-02-25T17:33:44.896Z
+"Drafts 31 Released: Interface Refresh, Notion Support",News & Updates,No,"I’ve been getting the following error when trying to run any ThoughtAsylum actions since the update: 
+
+![TAD Error](upload://UTimlEZ3QHcxMa2FCCmXJrm7FC.jpeg)",0,1,https://forums.getdrafts.com/t/drafts-31-released-interface-refresh-notion-support/12165/9,2022-02-25T23:26:32.455Z
+"Drafts 31 Released: Interface Refresh, Notion Support",News & Updates,No,"Thank you for the detailed reply, Stephen. Is there anything I could do to help? I would send you my logs but I’m afraid TA actions are the only way I know of accessing them hehe. 
+
+Send me a DM on Twitter if you’d like - I’m [@NeoYokel](https://twitter.com/NeoYokel). I’d suggest email but I’m still getting used to Spark hehe.
+
+Here’s my system information for starters
+**Handset**: iPhone 12 Pro Max
+**OS**: 15.4 (19E5235a)
+
+I’ll also get back on the Slack group.",0,0,https://forums.getdrafts.com/t/drafts-31-released-interface-refresh-notion-support/12165/15,2022-02-26T16:05:04.249Z
+"Script Error: SyntaxError: JSON Parse error: Unexpected identifier ""drafts"" Line number: 53, Column 35",Scripting,No,I just made this one change and it appears to have fixed my library. Thank you guys :slight_smile:,1,0,https://forums.getdrafts.com/t/script-error-syntaxerror-json-parse-error-unexpected-identifier-drafts-line-number-53-column-35/12187/5,2022-02-27T21:07:10.689Z
+Index by Tag with Drafts Open Links via Siri Shortcuts,Tips & Tricks,No,"Howdy folks. I’ve published a few Drafts-specific Siri Shortcuts [on RoutineHub](https://routinehub.co/user/blue) over the (now) years, but I’ve come to realize that one in particular - called [**List .md Drafts Open Links by Tag**](https://routinehub.co/shortcut/11085) - might provide a function not so easily serviced by native actions, especially on iOS. I think I’ve also unintentionally stumbled upon the fastest method by far of simply listing all drafts by a single tag *aside from a dedicated workspace* configured to do so.
+
+The end result looks like this - an unordered markdown list of every draft in a tag specified at run, including a markdown-formatted hyperlink of each draft’s draft open link:
+
+![Shortcuts Tag Index](upload://iIVUYvpqWZyYTThuvZGVjxdngp6.png)
+
+## Steps 
+
+1. An [Ask for Input](https://www.matthewcassinelli.com/actions/ask-for-input/) action prompts for the case-sensitive name of the tag you’d like to index.
+2. A [Search Drafts](https://docs.getdrafts.com/docs/automation/shortcuts#search-drafts) action retrieves up to 100 drafts (by default) with that tag, sorted (by default) by modified date. Obviously, every option in this action is configurable to your needs.
+3. For each draft result, an item is created in the format `- [Title](Open Link)`.
+4. A [Combine Text](https://www.matthewcassinelli.com/actions/combine-text/) action combines the resulting items with new lines.
+5. A [Create Draft](https://docs.getdrafts.com/docs/automation/shortcuts#create-draft) action creates a new draft with the formatted list entitled `[tag] - [timestamp]`.
+
+I hope you all give it a try at least once just to experience how little time the whole cycle takes. Remember that drafts open links work anywhere a hyperlink works, not just in Drafts. 
+
+I’ve personally found [Tot Pocket](https://apps.apple.com/us/app/tot-pocket/id1498235191) to be a particularly apt place for this, seen here:
+
+![Drafts Index in Tot Pocket](upload://jL6rXf2WcDRmRLg53Td9BtxniOO.png)",1,1,https://forums.getdrafts.com/t/index-by-tag-with-drafts-open-links-via-siri-shortcuts/12296/1,2022-03-14T21:58:13.133Z
+I have too many drafts to handle!,General Discussion,No,This is not helpful but I couldn’t help myself… *How many drafts* are we actually talking about here? I’m a little over 2000 atm but I’ve been over 5000 before with zero issues.,0,1,https://forums.getdrafts.com/t/i-have-too-many-drafts-to-handle/12428/5,2022-04-10T22:13:29.555Z
+I have too many drafts to handle!,General Discussion,No,"To be honest, brilliantly! In so many different ways! It’s one of the reasons I love/depend on Drafts so much - it’s the only space in which I feel completely free to create as many or as few separate notes/“files” as I need without consequence. (And yet I have comfortably drafted notes over 15000 words before.) If you’re interested/if it’d be of help, I’m more than willing to go over some of the particulars of what I mean either here or privately if you’d like. My contact info can be found on my profile. :)",2,1,https://forums.getdrafts.com/t/i-have-too-many-drafts-to-handle/12428/7,2022-04-11T16:39:31.775Z
+I have too many drafts to handle!,General Discussion,No,"Well shucks! For one thing, I’m flattered, @FlohGro  that someone of your familiarity/potency with Drafts would be curious about my setup hehe. I’ve been writing a lot about Drafts recently, but something as straight up as “How I Manage Drafts” sounds like something I should start right now! 
+
+As of this moment, there’s quite a bit of raw evidence of my configuration available publicly on the web. [davidblue.wtf/drafts](https://davidblue.wtf/drafts) is the main index of an experiment I’ve been doing using [my NeoCities actions](https://bilge.world/using-drafts-with-neocities). If you’re *really* curious and want to spend the time, most of my total setup is on the directory, just unlisted - you can find my best attempt at indexing its links on [my Drafts-specific GitHub repo](https://github.com/extratone/drafts).
+
+And then there’s [this WIP draft](https://davidblue.wtf/drafts/56EED87E-678E-4248-8E94-31650615C69A.html) of a thing I’ve been working on for a while but you must keep it a secret... (It’s actually more of an outline of my setup at the moment than an address of its original intended purpose lol.)",4,2,https://forums.getdrafts.com/t/i-have-too-many-drafts-to-handle/12428/9,2022-04-11T18:07:56.753Z
+Action to open random draft,Actions - Help & Questions,No,"So there’s galtenberg’s “[Open Random Draft by Tag](https://actions.getdrafts.com/a/1GC)” in the Directory. I use a siri shortcut for this that’s currently configured specific to me. If you’re interested, though, I’d be glad to rework it to make it universal.",1,1,https://forums.getdrafts.com/t/action-to-open-random-draft/12543/2,2022-04-25T10:04:55.785Z
+Action to open random draft,Actions - Help & Questions,No,"It’s actually a lot simpler than my original hehe. [Here’s what I came up with](https://www.icloud.com/shortcuts/4631589e04a94aa2a1599ebec9445ffa). I’m going to assume you’ve got less than 999 drafts in your library.
+
+![Random Draft Shortcut](https://i.snap.as/ccv8EKoc.png)",1,1,https://forums.getdrafts.com/t/action-to-open-random-draft/12543/4,2022-04-25T11:12:55.547Z
+Lost control of group in Directory ; how to retrieve it?,Issues,No,"I've always wondered this too. 
+
+> After posting, Drafts will keep a secret reference, and the same item can be updated to fix issues or update the description - or it can be removed from the Directory. Only the user who originally posted the action can update or remove it – though the identifier and secret will be synced through iCloud.
+
+And now... I happened to have caused the same issue for myself again.",0,1,https://forums.getdrafts.com/t/lost-control-of-group-in-directory-how-to-retrieve-it/4302/2,2022-04-29T10:37:00.316Z
+"Script Error: SyntaxError: JSON Parse error: Unexpected identifier ""drafts"" Line number: 53, Column 35",Scripting,No,"I was still having issues with a few actions - namely the ones that export keyboard shortcuts… but I’m almost positive **I have the definite fix.** A total of 5 changes to `tad.js`.
+
+Idk how useful the Working Copy commit output below might be, but `drafts5` was still present on lines:
+- 16
+- 7233
+- 7643
+- 7707
+- 7718
+
+![TAD Library Fix Diff](https://i.snap.as/suuS35Ev.png)
+
+- [#64](https://github.com/extratone/drafts/issues/64)
+- git@github.com:extratone/drafts.git [**1cf16d7**](https://github.com/extratone/drafts/commit/1cf16d7a42c69034eb3b01bf7a4a1e1a3dbb25cb)
+
+```js
+From 1cf16d7a42c69034eb3b01bf7a4a1e1a3dbb25cb Mon Sep 17 00:00:00 2001
+From: David Blue <davidblue@extratone.com>
+Date: Sat, 21 May 2022 09:39:48 -0500
+Subject: [PATCH] #64
+
+> This is the fix for my TAD Library issues! I’ve got a handy screenshot to comment on the issue.
+---
+ library/Scripts/tad.js | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+diff --git a/library/Scripts/tad.js b/library/Scripts/tad.js
+index 43e7ef8..959f2e9 100644
+--- a/library/Scripts/tad.js
++++ b/library/Scripts/tad.js
+@@ -13,7 +13,7 @@
+ Action.prototype.TA_populateMore = function()
+ {
+ 	//Get the installation data for an action from its install URL
+-    let jsonActionData = JSON.parse(decodeURIComponent(this.installURL.replace(“drafts5://action?data=“,””)));
++    let jsonActionData = JSON.parse(decodeURIComponent(this.installURL.replace(“drafts://action?data=“,””)));
+ 
+     //Populate the additional properties.
+     //  For ease of recognition, and to avoid clashes with future updates that may
+@@ -7230,7 +7230,7 @@ class TadLibrary
+     // Used to quickly replace the TAD-Library action contents from the tad.js library file.
+     TA_buildLibraryAction()
+     {
+-        const strCall = “drafts5://action?data=“;
++        const strCall = “drafts://action?data=“;
+ 
+         let fmCloud = FileManager.createCloud();
+         let strScript = fmCloud.readString(“/Library/Scripts/tad.js”);
+@@ -7640,7 +7640,7 @@ class TadMiscellaneous
+         let astrNames = [];
+ 
+         //Convert action group installation link data to JSON
+-        let strLink = p_strActionGroupLink.replace(“drafts5://actionGroup?data=“,””);
++        let strLink = p_strActionGroupLink.replace(“drafts://actionGroup?data=“,””);
+         strLink = decodeURIComponent(strLink);
+         let jsonData = JSON.parse(strLink);
+ 
+@@ -7704,7 +7704,7 @@ class TadMiscellaneous
+     TA_actionGroupLinkToName(p_strActionGroupLink)
+     {
+         //Convert action group installation link data to JSON
+-        let strLink = p_strActionGroupLink.replace(“drafts5://actionGroup?data=“,””);
++        let strLink = p_strActionGroupLink.replace(“drafts://actionGroup?data=“,””);
+         strLink = decodeURIComponent(strLink);
+         return JSON.parse(strLink).name;
+     }
+@@ -7715,7 +7715,7 @@ class TadMiscellaneous
+     TA_actionGroupLinkDocument(p_strActionGroupLink)
+     {
+         //Convert action group installation link data to JSON
+-        let strLink = p_strActionGroupLink.replace(“drafts5://actionGroup?data=“,””);
++        let strLink = p_strActionGroupLink.replace(“drafts://actionGroup?data=“,””);
+         strLink = decodeURIComponent(strLink);
+         let jsonData = JSON.parse(strLink);
+         let strDoc = “# “ + jsonData.name + “\n”;
+--
+Working Copy 5.2.1
+```",1,1,https://forums.getdrafts.com/t/script-error-syntaxerror-json-parse-error-unexpected-identifier-drafts-line-number-53-column-35/12187/14,2022-05-21T14:52:06.956Z
+Represent Nothing (null) in Actions,Actions - Help & Questions,No,"I've come to love and depend upon my [Clear Clipboard action](https://actions.getdrafts.com/a/1vP) as *the* single simplest/quickest way to clear my iPhone's system clipboard with a paired keyboard shortcut. It uses a single, empty clipboard action. Since either 32.0 or 32.1, however, it appears that empty templates are now automatically filled with `[[draft]]`. As you can imagine, this managed to confuse the heck out of me for an embarrassingly long time before I realized what was happening.
+
+I appreciate looking out but - if I may - I think this change has major potential to cause confusion for others as well. My case is unusual, I'm sure, but I would imagine empty actions are something folks use regularly in action development.
+
+And as far as I can tell... All the ways of doing this in JavaScript are overcomplicated, and unfortunately, `app.setClipboard()` returns ""undefined.""",0,0,https://forums.getdrafts.com/t/represent-nothing-null-in-actions/12745/1,2022-05-24T00:41:16.130Z
+Forward iMessage to drafts,General Discussion,No,"Bizarrely, the only method of automatically retrieving content from messages in the history of iMessage (as far as I know) is through Siri Shortcuts automations.
+
+![iMessage ⇨ Drafts Automation](https://i.snap.as/bidI7B6g.png)
+
+Using the `Received Message From:` trigger, you have a few different types of content that are passed in the form of `Shortcut Input` (note the third screenshot above.)
+
+I just tested it and it still works! Though there's no way for me to share the configuration directly, unfortunately.",5,0,https://forums.getdrafts.com/t/forward-imessage-to-drafts/12755/3,2022-05-24T18:53:57.187Z
+Represent Nothing (null) in Actions,Actions - Help & Questions,No,"![32.2 Fix](https://i.snap.as/YJUjEPq8.png)
+
+Bless! Thank you!",0,0,https://forums.getdrafts.com/t/represent-nothing-null-in-actions/12745/2,2022-06-07T00:16:36.497Z
+Assign a keyboard shortcut to a specific commonly-used draft?,Drafts for Mac,No,"Just wanted to offer some working examples of this in the form of [**this action group**](https://directory.getdrafts.com/g/1ue) of mine. (They will not actually function for you as configured out of the box, just case that's not obvious.)",1,0,https://forums.getdrafts.com/t/assign-a-keyboard-shortcut-to-a-specific-commonly-used-draft/12940/3,2022-07-07T15:12:02.536Z
+Question regarding TADpooLe,Actions - Help & Questions,No,"For one thing, I just want to say that this is 110% a legitimate, reasonable, and constructive question to ask here! I can't speak for Stephen, but - as a relatively longtime user of his library - I think I might have some worthwhile touchpoints depending on how long you've used Drafts, itself.
+
+I know you sorta mentioned it, but one great comfort you can take regarding privacy in Drafts is that - basically without exception - actions with external integration have to [ask you for credentials](https://docs.getdrafts.com/docs/settings/credentials) before they can do anything via a very specific type of dialog, and you can always see a list of said credentials (the titles, anyway) in Settings (Gear Menu) ⇨ Credentials (It's the sole entry under the ""Services"" subgroup.) You'll find that you can revoke any of them at any time if you feel unclear about what's happening.
+
+As far as auditing is concerned, Drafts' native [Action Log](https://docs.getdrafts.com/docs/actions/action-log) is very dependable *as long as you make sure the actions you're using aren't explicitly configured not to log*. If you've got the time, the TAD library actually includes some very impressive ""[Advanced Logging](https://www.thoughtasylum.com/2020/07/25/drafts-advanced-logging/)"" capabilities - though I must admit I'm basically just getting started with them, personally.
+
+I know my commentary was not solicited but my logline for Drafts when speaking about it for the first time is specifically ""I *trust* Drafts more deeply than any other software I've ever used."" Perhaps the biggest contributor to that is how well documented it is. (Remarkably, [the TAD Library](https://tadpole.thoughtasylum.com) is, as well.) The second is how patient and open Greg and this very community have been with me. (I *promise* you I've asked far, *far* less appropriate questions here and gotten away with it lol.)
+
+That said, welcome! I hope that was at least somewhat useful lol.",0,0,https://forums.getdrafts.com/t/question-regarding-tadpoole/12991/2,2022-07-14T17:16:11.325Z
