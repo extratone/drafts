@@ -1,0 +1,13 @@
+badge_id,badge_name,granted_at,post_id,seq,granted_manually,notification_id,featured_rank
+9,Autobiographer,2021-02-15 11:10:45 UTC,,0,false,1360709,7
+11,First Like,2021-03-04 02:41:34 UTC,17437,0,false,1368359,11
+12,First Share,2021-03-04 02:49:06 UTC,23094,0,false,1368393,5
+1,Basic,2021-03-04 02:49:54 UTC,,0,false,1368363,12
+15,First Quote,2021-04-13 00:32:52 UTC,28517,0,false,1410077,4
+10,Editor,2021-04-13 04:59:29 UTC,,0,false,1410106,9
+41,First Emoji,2021-04-29 03:48:58 UTC,28873,0,false,1433375,8
+5,Welcome,2021-04-30 07:51:56 UTC,28873,0,false,1439717,10
+2,Member,2021-04-30 19:15:27 UTC,,0,false,1442799,1
+40,First Mention,2021-05-07 15:31:10 UTC,29117,0,false,1459487,6
+21,Nice Share,2021-09-24 13:06:14 UTC,31619,0,false,1575389,3
+24,Anniversary,2022-02-15 14:53:39 UTC,,0,false,1671945,2
