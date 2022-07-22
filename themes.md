@@ -26,4 +26,6 @@ Updated `07222022-031033`
 ## Todoist Light - mHack
 
 - [**Drafts Directory**](https://actions.getdrafts.com/t/2BF)
-- 
+- [Source File](https://workingcopy.app/git/#path=showcase/TodoistLight.draftsTheme&repo=git@github.com:extratone/drafts.git)
+
+![CowsayCollected](https://gitlab.com/DavidBlue/drafts/uploads/453411a9d3d2ee0740075c1e8f91c9b0/1658480425520.jpeg)
