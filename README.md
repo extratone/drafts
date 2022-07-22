@@ -1,5 +1,5 @@
 # David Blue‘s Drafts Configs
-Updated `06182022-105906`
+Updated `07222022-083749`
 
 ![IconViolet](https://user-images.githubusercontent.com/43663476/166443931-d3c50634-1061-45b4-b4dd-f1f95f8dc959.png)
 
@@ -209,11 +209,11 @@ Version 1.0
 
 [**Drafts Directory Link**](https://actions.getdrafts.com/t/1kY)
 
-(A variant of the “[BSOD](https://actions.getdrafts.com/t/1jK)” theme by **kimonostereo**.)
+(A variant of the "[BSOD](https://actions.getdrafts.com/t/1jK)" theme by **kimonostereo**.)
 
 Color radicalized version of the source inspired by a _fictional_  alpha version of Windows (Windows Iowa.)
 
-*See: “[Windows Iowa Startup Theme](https://soundcloud.com/chordoslut/windowsiowa)”*
+*See: "[Windows Iowa Startup Theme](https://soundcloud.com/chordoslut/windowsiowa)"*
 
 [The Theme's Issue on my iOS GitHub Repo](https://github.com/extratone/i/issues/45)
 
@@ -247,12 +247,12 @@ I did not originally intend to share this theme, but I sortof accidentally ended
 - [Tilde](https://tilde.town/~extratone/drafts/autocompletes/)
 - [WTF](https://davidblue.wtf/drafts/D7135FD0-C2C5-4AB4-B0DD-DAAE7E70BA64.html)
 
-This is a collection of my personal “[Autocomplete Suggestions](https://docs.getdrafts.com/docs/editor/autocomplete)” (identical to what [TextExpander](https://apps.apple.com/us/app/textexpander-keyboard/id1075927186) calls “snippets”) for Drafts, and they *are* installable, if you’d like.
+This is a collection of my personal "[Autocomplete Suggestions](https://docs.getdrafts.com/docs/editor/autocomplete)" (identical to what [TextExpander](https://apps.apple.com/us/app/textexpander-keyboard/id1075927186) calls "snippets") for Drafts, and they *are* installable, if you’d like.
 
 *Definitely read [Tim Nahumck’s work on this feature](https://nahumck.me/drafts-29-autocomplete/) if you’re curious about it.*
 
 #### Install
-The hyperlinks on the expansion triggers will take you a corresponding plain text file containing the installation URL (which is, of course, the entire contents of each, encoded in a string.) Copy the full text of the URL, paste it in your web browser, and tap/click “Go” (or your equivalent)/key `RETURN` or `ENTER`. Regardless of platform, you should receive a prompt asking if you’d like to open it in Drafts.
+The hyperlinks on the expansion triggers will take you a corresponding plain text file containing the installation URL (which is, of course, the entire contents of each, encoded in a string.) Copy the full text of the URL, paste it in your web browser, and tap/click "Go" (or your equivalent)/key `RETURN` or `ENTER`. Regardless of platform, you should receive a prompt asking if you’d like to open it in Drafts.
 
 Here’s a wee [demo video](https://user-images.githubusercontent.com/43663476/159810974-fa1531df-c0a5-4f1b-82f8-3fe11e31f36d.MOV):
 
@@ -295,14 +295,14 @@ https://davidblue.wtf/drafts/38A942A2-33C4-4630-9CDE-B005989F4E3A.html
 - [**video**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/video.txt)
 ```
 <video controls>
-  <source src=“”>
+  <source src="">
 </video>
 ```
 
 - [**audio**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/audio.txt)
 ```
 <audio controls>
-  <source src=“”>
+  <source src="">
 </audio>
 ```
 
@@ -310,6 +310,30 @@ https://davidblue.wtf/drafts/38A942A2-33C4-4630-9CDE-B005989F4E3A.html
 ```
 [](drafts://x-callback-url/workspace?name=)
 ```
+
+- [**gist**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/gist.txt)
+```
+<script src="[[clipboard]].js"></script>
+```
+
+- [**autocomplete**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/autocomplete.txt)
+```
+- [**title**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/title.txt)
+```
+[[clipboard]]
+```
+
+- [**issue**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/issue.txt)
+```
+[GitHub Issue](https://github.com/extratone/bilge/issues/)
+```
+
+- [**embed**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/embed.txt)
+```
+<!-- [[u:[[uuid]]]] : EMBED -->
+```
+
+
 ---
 
 [Gist - draftcuts.md](https://gist.github.com/extratone/2e54243a2123ccfa6a37c6e8cc1057e2)
