@@ -8,6 +8,7 @@ Updated `07222022-031033`
 - [Simplenote Publish](http://simp.ly/publish/FcZg5S)
 - [WTF](https://davidblue.wtf/drafts/273B02DB-74E7-4613-B619-44452D2EBB69.html)
 - [Taio Image Uploader](taio://actions?action=run&name=Image%20Uploader)
+- [DraftsTemplateShowcaseFrames](shortcuts://run-shortcut?name=DraftsTemplateShowcaseFrames)
 
 ---
 
@@ -27,5 +28,11 @@ Updated `07222022-031033`
 
 - [**Drafts Directory**](https://actions.getdrafts.com/t/2BF)
 - [Source File](https://workingcopy.app/git/#path=showcase/TodoistLight.draftsTheme&repo=git@github.com:extratone/drafts.git)
+
+![Warm and Bright](https://gitlab.com/DavidBlue/drafts/uploads/5d291e97e33f1a3f43d60020fff73527/1658481241088.png)
+
+## Warm and Bright
+
+- [**Drafts Directory**](https://directory.getdrafts.com/t/1jP)
 
 ![CowsayCollected](https://gitlab.com/DavidBlue/drafts/uploads/453411a9d3d2ee0740075c1e8f91c9b0/1658480425520.jpeg)
