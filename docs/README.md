@@ -1,5 +1,5 @@
 # David Blue‘s Drafts Configs
-Updated `07232022-165957`
+Updated `07232022-170153`
 
 [Things](things:///show?id=8NHv5LrjXCb87VK7zqNTrk)
 
@@ -320,7 +320,6 @@ https://davidblue.wtf/drafts/38A942A2-33C4-4630-9CDE-B005989F4E3A.html
 ```
 
 - [**autocomplete**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/autocomplete.txt)
-```
 - [**title**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/title.txt)
 ```
 [[clipboard]]
