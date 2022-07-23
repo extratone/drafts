@@ -1,0 +1,497 @@
+[
+  {
+    "tags" : [
+      "documentation",
+      "reference",
+      "snippets",
+      "simplenote",
+      "template"
+    ],
+    "modified_longitude" : -92.387976492706329,
+    "uuid" : "3510B68D-180E-4847-A976-72BEFCADCD24",
+    "flagged" : false,
+    "created_longitude" : -92.387976492706329,
+    "content" : "# Snippets Template\nUpdated `[[date|%m%d%Y-%H%M%S]]`\n\n- [](drafts:\/\/open?uuid=CAABBB06-186C-437D-BC30-65844BDBEC2B)\n- [WTF](https:\/\/davidblue.wtf\/drafts\/CAABBB06-186C-437D-BC30-65844BDBEC2B.html)\n- Simplenote Local\n- Simplenote Publish\n- Things\n\n---",
+    "languageGrammar" : "MultiMarkdown",
+    "modified_latitude" : 38.933999378343763,
+    "modified_at" : "2022-07-23T20:51:59Z",
+    "created_latitude" : 38.933999378343763,
+    "accessed_at" : "2022-07-23T20:50:42Z",
+    "folder" : 0,
+    "created_at" : "2022-07-23T20:50:42Z"
+  },
+  {
+    "modified_at" : "2022-07-22T11:36:38Z",
+    "content" : "# WTF Template <|>\nUpdated `[[date|%m%d%Y-%H%M%S]]`\n\n- [[[display_title]]]([[draft_open_url]])\n- [WTF](https:\/\/davidblue.wtf\/drafts\/[[uuid]].html)\n- Things\n\n---",
+    "tags" : [
+      "template"
+    ],
+    "created_at" : "2022-04-11T01:09:57Z",
+    "modified_latitude" : 38.934004184330377,
+    "created_latitude" : 38.933898184236767,
+    "languageGrammar" : "MultiMarkdown",
+    "modified_longitude" : -92.387971303389278,
+    "folder" : 0,
+    "created_longitude" : -92.388273608383102,
+    "accessed_at" : "2022-07-23T20:50:30Z",
+    "flagged" : false,
+    "uuid" : "CAABBB06-186C-437D-BC30-65844BDBEC2B"
+  },
+  {
+    "created_at" : "2022-07-22T09:58:34Z",
+    "created_latitude" : 38.934004215544768,
+    "languageGrammar" : "MultiMarkdown",
+    "modified_longitude" : -92.387970717639334,
+    "accessed_at" : "2022-07-22T09:59:45Z",
+    "folder" : 0,
+    "flagged" : false,
+    "uuid" : "B6856A8E-929E-4CE4-A7D4-52170243F23C",
+    "created_longitude" : -92.387970717639334,
+    "modified_at" : "2022-07-22T10:00:05Z",
+    "modified_latitude" : 38.934004215544768,
+    "tags" : [
+      "template",
+      "anecdote"
+    ],
+    "content" : "# Anecdote Template\nUpdated `[[date|%m%d%Y-%H%M%S]]`\n\n- [display_title]([[draft_open_url]])\n- [WTF](https:\/\/davidblue.wtf\/drafts\/[[uuid]].html)\n- Things\n\n---"
+  },
+  {
+    "uuid" : "DEB4C792-DA8B-4965-AACE-E319E6588422",
+    "created_longitude" : -92.387971625176789,
+    "created_latitude" : 38.934020838307752,
+    "flagged" : false,
+    "modified_longitude" : -92.387970717639334,
+    "modified_at" : "2022-07-22T09:59:39Z",
+    "created_at" : "2022-02-12T17:26:53Z",
+    "accessed_at" : "2022-07-22T11:36:02Z",
+    "content" : "# Notes Template\nUpdated `[[date|%m%d%Y-%H%M%S]]`\n\n- [Notes- ]([[draft_open_url]])\n- [WTF](https:\/\/davidblue.wtf\/drafts\/[[uuid]].html)\n- Things\n\n---",
+    "folder" : 0,
+    "languageGrammar" : "MultiMarkdown",
+    "modified_latitude" : 38.934004215544768,
+    "tags" : [
+      "notes",
+      "psalms",
+      "template"
+    ]
+  },
+  {
+    "created_at" : "2021-05-30T16:35:49Z",
+    "flagged" : false,
+    "modified_longitude" : -92.387974122822655,
+    "languageGrammar" : "MultiMarkdown",
+    "folder" : 0,
+    "created_longitude" : -92.38820883415903,
+    "uuid" : "96FE9F39-C720-4269-ADF9-6A6AE5DABFE4",
+    "accessed_at" : "2022-07-21T18:50:13Z",
+    "modified_at" : "2022-07-21T18:50:49Z",
+    "modified_latitude" : 38.934003045753641,
+    "content" : "# RoutineHub\/Shortcut Documentation Template <|>\nUpdated `[[date|%m%d%Y-%H%M%S]]`\n\n- [GitHub Issue](https:\/\/github.com\/extratone\/i\/issues\/)\n- [**RoutineHub Page**](https:\/\/routinehub.co\/shortcut\/)\n- [iCloud Share Link]()\n- [WTF](https:\/\/davidblue.wtf\/drafts\/[[uuid]].html)\n- Things\n\n---\n\n## Social\n\n- Telegram\n\n---\n\n## Short description.\n\n\n\n---\n\n## Contact\n\n- [Contact Card](https:\/\/davidblue.wtf\/db.vcf)\n- [Telegram](https:\/\/t.me\/extratone)\n- [Email](mailto:davidblue@extratone.com) \n- [Twitter](https:\/\/twitter.com\/NeoYokel)\n- [Mastodon](https:\/\/mastodon.social\/@DavidBlue)\n- [Discord](https:\/\/discord.gg\/0b9KQUKP858b0iZF)\n- [*Everywhere*](https:\/\/raindrop.io\/davidblue\/social-directory-21059174)...",
+    "created_latitude" : 38.9339673651398,
+    "tags" : [
+      "i",
+      "template",
+      "automation",
+      "shortcuts",
+      "documentation"
+    ]
+  },
+  {
+    "accessed_at" : "2022-07-23T20:46:06Z",
+    "modified_latitude" : 38.933989748566724,
+    "languageGrammar" : "MultiMarkdown",
+    "uuid" : "56FEF823-A9DF-46F3-BDFB-A23C0273AE8F",
+    "content" : "# The Psalms Template\nUpdated `[[date|%m%d%Y-%H%M%S]]`\n\n- [**GitHub Issue**](https:\/\/github.com\/extratone\/bilge\/issues\/<|>)\n- [[display_title]]([[draft_open_url]])\n- [WTF](https:\/\/davidblue.wtf\/drafts\/[[uuid]].html)\n- Things\n\n---",
+    "created_latitude" : 38.955353940873351,
+    "tags" : [
+      "psalms",
+      "drafts",
+      "template"
+    ],
+    "modified_at" : "2022-07-21T16:24:50Z",
+    "created_longitude" : -92.381015382793109,
+    "flagged" : false,
+    "folder" : 0,
+    "created_at" : "2021-12-08T14:09:02Z",
+    "modified_longitude" : -92.388083098313729
+  },
+  {
+    "created_latitude" : 38.933991703924718,
+    "accessed_at" : "2022-07-17T16:35:56Z",
+    "uuid" : "07851DAD-4E66-4298-8026-5F22DA52E23A",
+    "folder" : 0,
+    "created_at" : "2022-05-11T08:44:13Z",
+    "flagged" : false,
+    "languageGrammar" : "MultiMarkdown",
+    "modified_latitude" : 38.933972871768056,
+    "created_longitude" : -92.387859519613968,
+    "modified_longitude" : -92.388156052045829,
+    "modified_at" : "2022-07-17T16:34:25Z",
+    "content" : "# Actions Template %|\nUpdated `[[date|%m%d%Y-%H%M%S]]`\n\n- [**Drafts Directory**](https:\/\/directory.getdrafts.com\/)\n- [GitHub Issue](https:\/\/github.com\/extratone\/drafts\/issues\/74)\n- [**Gist**](https:\/\/gist.github.com\/8e70d1c53bbf9daa5eb36e697bafa6ac)\n- [Repo File](https:\/\/github.com\/extratone\/drafts\/blob\/main\/actions\/ActionsTemplate.md)\n- [Things](things:\/\/\/show?id=VCpcBZmMmbmyFaY4XuSzy8)\n- [Simplenote Local](simplenote:\/\/note\/70f69966c6994b4f9464950d34a8fdb9)\n- [Simplenote Publish](http:\/\/simp.ly\/publish\/FcZg5S)\n- [WTF](https:\/\/davidblue.wtf\/drafts\/[[uuid]].html)\n\n<script src=\"https:\/\/gist.github.com\/extratone\/8e70d1c53bbf9daa5eb36e697bafa6ac.js\"><\/script>\n\n## Description\n\n## Directory Description\n\n---\n\n## JS\n\n```js\n```\n\n---\n\n## Install",
+    "tags" : [
+      "template",
+      "drafts",
+      "curation",
+      "meta",
+      "documentation",
+      "configuration",
+      "js",
+      "actions"
+    ]
+  },
+  {
+    "modified_longitude" : -92.33116686453107,
+    "modified_at" : "2022-07-02T16:46:58Z",
+    "flagged" : false,
+    "created_at" : "2022-07-02T16:46:07Z",
+    "created_longitude" : -92.33116686453107,
+    "modified_latitude" : 38.910221117778754,
+    "created_latitude" : 38.910221117778754,
+    "accessed_at" : "2022-07-02T16:46:07Z",
+    "content" : "# Custom Email Template<|>e\n[[clipboard]]\n---",
+    "languageGrammar" : "MultiMarkdown",
+    "uuid" : "3ABC8DD0-C035-4B6D-9304-6D662887ABB9",
+    "folder" : 0,
+    "tags" : [
+      "template",
+      "email",
+      "correspondence"
+    ]
+  },
+  {
+    "flagged" : false,
+    "created_longitude" : -92.38797696121317,
+    "content" : "# Rolodex Template\n\n- Cardhop\n\n---",
+    "tags" : [
+      "index",
+      "x",
+      "template",
+      "rolodex",
+      "reference",
+      "correspondence"
+    ],
+    "folder" : 0,
+    "languageGrammar" : "MultiMarkdown",
+    "accessed_at" : "2022-07-02T15:45:47Z",
+    "created_at" : "2022-06-24T08:51:45Z",
+    "uuid" : "FAC94ED8-CE40-4166-886C-9ED67692FA22",
+    "modified_longitude" : -92.331266768434915,
+    "modified_at" : "2022-07-02T15:45:57Z",
+    "created_latitude" : 38.934007076644662,
+    "modified_latitude" : 38.910147797349424
+  },
+  {
+    "flagged" : false,
+    "modified_at" : "2022-06-22T07:02:13Z",
+    "modified_longitude" : -92.38797696121317,
+    "tags" : [
+      "text",
+      "i",
+      "index",
+      "curation",
+      "template"
+    ],
+    "content" : "# Runestone iTextEditors Submission \n\n- [GitHub Issue](https:\/\/github.com\/extratone\/i\/issues\/204)\n- [Repository file](https:\/\/github.com\/extratone\/i\/blob\/main\/misc\/iTextEditorsSubmission.md)\n- [Gist](https:\/\/gist.github.com\/d72d11ffc4cc1b0a0e42bf4d937dd098)\n\n![DraftsExample](https:\/\/github.com\/extratone\/i\/raw\/main\/images\/itexteditorsexample.png)\n\n## Social \n\n@ttscoff hey Brett, I'm working on a submission to iTextEditors for @simonbs' Runestone and well... I'm trying not to suck lol. especially because our terminology has changed so much since file provider storage became an assumption. would it be disruptive if I mostly copy from his press kit? it's pretty succinct. https:\/\/github.com\/extratone\/Runestone\/tree\/main\/PressKit\n\nalso, somewhat separately - since I ended up making it for myself, anyway - I thought I'd share this rough template for those of us who'd feel more comfortable preparing our submissions in markdown beforehand. just in case you think it might be useful to others. https:\/\/gist.github.com\/d72d11ffc4cc1b0a0e42bf4d937dd098\n\n---\n\n### Replies\n\nIt's totally cool to re-use press material. The features that are already included in the checkboxes should be cut,  and lines longer than ~60ch should be abbreviated, but I do that on my end as necessary, too.\n-[@ttscoff](https:\/\/twitter.com\/ttscoff\/status\/1539009966861959173)\n\n\nhttps:\/\/github.com\/extratone\/Runestone\/issues\/\n\nare y'all gon shame me for using the huge icons.\n\nhttps:\/\/github.com\/extratone\/latte\/generate\n\n---\n\nSubmit a new editor or a correction to an existing listing. Correction submissions may fill out just the affected fields, your contact info and a clarification note.\n\nThis listing is for PLAIN TEXT editors only. If your app cannot edit and export plain text, it will not be listed. All submissions will be reviewed before publishing.\n\n---\n\n- **App name**: Runestone Text Editor\n- **Price**: 0.00\n*Enter the USD price for the app. If the app is free, enter 0.00.*\n- **App Store ID**: 1548193893\n- **Homepage**: https:\/\/runestone.app\n*Developer pages are preferred, App Store links may be used if none exists. App Store links will be generated automatically in the listing based on App ID.*\n\n## Platform\n*Check all that apply*\n- [x] iPhone\n- [x] iPad\n\n## Export options\n*Check all that apply*\n\n- [ ] Dropbox\n- [ ] iCloud\n- [ ] WebDAV\n- [ ] iTunes\n- [ ] Simplenote\n- [ ] Proprietary\n- [ ] Plain Text\n- [ ] Copy HTML\n- [ ] Email text\n- [ ] Email HTML\n- [ ] PDF\n- [x] Print\n- [x] Open in...\n- [x] Document Provider\n- [x] iCloud Drive\n*Add additional sync\/transport options under \"additional features\".*\n\n## Standard features\n*Check all that apply*\n\n- [ ] TextExpander\n- [ ] Markdown preview\/export\n- [ ] Markdown editing features\n- [x] Appearance options\n- [ ] Extra keyboard row\n- [x] In-document search\n- [x] Search and replace\n- [x] Full-text file search\n- [ ] Word count\n- [ ] Character count\n- [ ] Page count\n- [ ] Reading time\n- [ ] URL scheme\n- [ ] Web browser\n- [x] Syntax highlighting\n- [ ] Desktop companion\n- [x] Split Screen\n*Add unlisted features\/clarifications under \"additional features\".*\n\n---\n\n## Additional features\n*One feature per line, one line per feature, no hyphens or asterisks at the beginning. Please keep them short and concise.*\n\n...\n\n## Contact info (email) and additional comments\n\n...",
+    "uuid" : "D2697A00-6C9F-4B4F-B186-0211819C59E2",
+    "created_longitude" : -92.387974265423424,
+    "folder" : 0,
+    "created_latitude" : 38.93401276142334,
+    "modified_latitude" : 38.934007076644662,
+    "languageGrammar" : "MultiMarkdown",
+    "accessed_at" : "2022-06-19T23:54:23Z",
+    "created_at" : "2022-06-19T20:18:15Z"
+  },
+  {
+    "languageGrammar" : "MultiMarkdown",
+    "flagged" : false,
+    "modified_latitude" : 38.934010160761794,
+    "folder" : 0,
+    "modified_longitude" : -92.387973889455182,
+    "accessed_at" : "2022-06-20T10:12:29Z",
+    "content" : "# Apple Feedback Template\n\n- [GitHub Issue](https:\/\/github.com\/extratone\/i\/issues\/206)\n- [WTF](https:\/\/davidblue.wtf\/drafts\/D5638AF5-017D-47CB-9B1F-C444EFB46EEF.html)\n- [Gist](https:\/\/gist.github.com\/69fb3b553ad6259dc794a8eee27daba0)\n- [Redirect](https:\/\/davidblue.wtf\/feedback) - `https:\/\/davidblue.wtf\/feedback`\n\n![Feedback Assistant Icon](https:\/\/i.snap.as\/u7079zZ2.png)\n\n![New Feedback Draft](https:\/\/i.snap.as\/igMAJsZE.png)\n\n---\n\n### Please provide a descriptive title for your feedback:\n*Example: Unable to make phone calls from lock\nscreen*\n\n### Which area are you seeing an issue with?\n*Please select the problem area*\n\n- 3rd Party App\n- Accessibility\n- AirDrop\n- AirPlay\n- App Privacy Report\n- App Store\n- App Switcher\n- Apple Card\n- Apple Pay\n- Audio\n- Auto Unlock\n- Backup\n- Battery Life\n- Battery Life - Charging\n- Bluetooth\n- Books\n- Calendar\n- Camera\n- Car Keys\n- CarPlay\n- Cellular Service (Calls & Data)\n- Clock\n- Contacts\n- Continuity\/Handoff\n- Control Center\n- Dark Mode\n- Device Feels Warm\n- Device Syncing\n- Face ID\n- FaceTime\n- FaceTime - SharePlay\n- Feedback Assistant\n- Files app\n- Find My\n- Fitness\/Fitness+\n- Focus\n- Haptics\/Vibration\n- Health\n- Home App & HomeKit Accessories\n- Home Screen\n- iCloud\n- iCloud Private Relay\n- ¡Tunes Store\n- Keyboard\n- Lock Screen\n- Mail\n- Maps\n- Messages\n- Music\n- News\n- Notes\n- Notification Center\n- Notifications\n- Phone app\n- Photos\n- Picture in Picture\n- Podcasts\n- Printing\n- Reminders\n- Respiratory Rate\n- Rotation\n- Safari\n- Screen Recording\n- Screen Time\n- Scribble\n- Security\n- Settings\n- Share Sheet\n- Shortcuts\n- Sidecar\n- Siri\n- Sleep\n- Software Update\n- Split View\/Drag and Drop\n- Spotlight Search\n- System Crashes\n- System Crashes\n- System Slow\/Unresponsive\n- Touch ID\n- Translate app\n- Translation\/Localization\n- TV app\/Apple TV+\n- VPN\n- Wallet\n- Watch app\n- Weather\n- Wi-Fi\n- Accelerate Framework\n- Accounts Framework\n- AirPods Beta Firmware\n- App Attest\n- AppClip Framework\n- Appintents Framework\n- AppTracking Transparency Framework\n- ARKit\n- Authentication Services Framework\n- AVFoundation\n- AVKit\n- BackgroundAssets Framework\n- BackgroundTasks Framework\n- Callkit\n- CarPlay Accessory Development\n- CarPlay App Development\n- ClassKit\n- CloudKit\n- Combine Framework\n- Contacts Framework\n- Core Animation API\n- Core Audio API\n- Core Bluetooth AP\n- Core Data API\n- Core Foundation API\n- Core Graphics API\n- Core Image API\n- Core Location API\n- Core Media API\n- Core Motion API\n- Core Telephony API\n- Core Text API\n- Core Video API\n- CoreML API\n- CoreNFC API\n- DeviceActivity Framework\n- DeviceCheck\n- Eventkit\n- ExposureNotification Framework\n- ExtensionFoundation\n- Extensionkit\n- External Accessory Framework\n- FamilyControls Framework\n- FileProvider Framework\n- Foundation\n- Game Controller Framework\n- GameKit\n- GameplayKit\n- GroupActivities Framework\n- Healthkit\n- HomeKit Development\n- Image 1\/O\n- lOKit\n- JavaScriptCore\n- Local Authentication Framework\n- ManagedSettings Framework\n- MapKit\n- Media Player Framework\n- Metal\n- Metrickit\n- Model 1\/0\n- Multipeer Connectivity Framework\n- Musickit\n- Natural Language\n- NearbyInteraction Framework\n- Network Framework\n- NotificationCenter Framework\n- PassKit\n- PDFKit\n- PencilKit\n- PHASE Framework\n- PhotoKit\n- ProximityReader Framework\n- PushKit\n- PushToTalk Framework\n- QuickLook Framework\n- RealityKit\n- ReplayKit\n- RoomPlan Framework\n- Scenekit\n- Security Framework\n- Shared WithYou Framework\n- Sirikit\n- Spatial Framework\n- Speech Framework\n- SpriteKit\n- StoreKit\n- SwiftUl Framework\n- ThreadNetwork Framework\n- UIKit\n- UserNotifications Framework\n- Vision Framework\n- VisionKit\n- WatchConnectivity Framework\n- WatchKit Framework\n- WeatherKit\n- Webkit\n- Something else not on this list\n\n### What type of feedback are you reporting?\n\n*Choose...*\n- Incorrect\/Unexpected Behavior\n- Application Crash\n- Application Slow\/Unresponsive\n- Battery Life\n- Suggestion\n\n## Description\n**Please describe the issue and what steps we can take to reproduce it:**\n\n*Please include:*\n- A clear description of the problem\n- A step-by-step set of instructions to reproduce the problem (if possible)\n- What results you expected\n- What results you actually saw",
+    "created_at" : "2022-06-07T02:37:50Z",
+    "created_longitude" : -92.388022067111336,
+    "created_latitude" : 38.934063990636822,
+    "modified_at" : "2022-06-07T02:58:59Z",
+    "tags" : [
+      "documentation",
+      "template",
+      "reference",
+      "support",
+      "i",
+      "gist"
+    ],
+    "uuid" : "D5638AF5-017D-47CB-9B1F-C444EFB46EEF"
+  },
+  {
+    "modified_at" : "2022-05-24T00:55:34Z",
+    "created_at" : "2022-05-24T00:01:43Z",
+    "content" : "# iTextEditors Submission Template\n\n- [GitHub Issue](https:\/\/github.com\/extratone\/i\/issues\/204)\n- [Repository file](https:\/\/github.com\/extratone\/i\/blob\/main\/misc\/iTextEditorsSubmission.md)\n- [Gist](https:\/\/gist.github.com\/d72d11ffc4cc1b0a0e42bf4d937dd098)\n\n![DraftsExample](https:\/\/github.com\/extratone\/i\/raw\/main\/images\/itexteditorsexample.png)\n\nThis is a markdown-formatted adaptation of [**the submission form**](http:\/\/brettterpstra.wufoo.com\/forms\/ios-text-editors) for Brett Terpstra's [iTextEditors wiki](https:\/\/brettterpstra.com\/ios-text-editors), created so that one can comfortably ponder their answer in their local text editor minus the anxiety of losing their progress because of a page reload or the pressure of having to complete the entirety in one sitting.\n\n**Please note that it was *not* solicited or endorsed by Brett.**\n\n---\n\nSubmit a new editor or a correction to an existing listing. Correction submissions may fill out just the affected fields, your contact info and a clarification note.\n\nThis listing is for PLAIN TEXT editors only. If your app cannot edit and export plain text, it will not be listed. All submissions will be reviewed before publishing.\n\n---\n\n- **App name**: \n- **Price**: \n*Enter the USD price for the app. If the app is free, enter 0.00.*\n- **App Store ID**:\n- **Homepage**: \n*Developer pages are preferred, App Store links may be used if none exists. App Store links will be generated automatically in the listing based on App ID.*\n\n## Platform\n*Check all that apply*\n- [ ] iPhone\n- [ ] iPad\n\n## Export options\n*Check all that apply*\n\n- [ ] Dropbox\n- [ ] iCloud\n- [ ] WebDAV\n- [ ] iTunes\n- [ ] Simplenote\n- [ ] Proprietary\n- [ ] Plain Text\n- [ ] Copy HTML\n- [ ] Email text\n- [ ] Email HTML\n- [ ] PDF\n- [ ] Print\n- [ ] Open in...\n- [ ] Document Provider\n- [ ] iCloud Drive\n*Add additional sync\/transport options under \"additional features\".*\n\n## Standard features\n*Check all that apply*\n\n- [ ] TextExpander\n- [ ] Markdown preview\/export\n- [ ] Markdown editing features\n- [ ] Appearance options\n- [ ] Extra keyboard row\n- [ ] In-document search\n- [ ] Search and replace\n- [ ] Full-text file search\n- [ ] Word count\n- [ ] Character count\n- [ ] Page count\n- [ ] Reading time\n- [ ] URL scheme\n- [ ] Web browser\n- [ ] Syntax highlighting\n- [ ] Desktop companion\n- [ ] Split Screen\n*Add unlisted features\/clarifications under \"additional features\".*\n\n---\n\n## Additional features\n*One feature per line, one line per feature, no hyphens or asterisks at the beginning. Please keep them short and concise.*\n\n...\n\n## Contact info (email) and additional comments\n\n...",
+    "created_latitude" : 38.93400537684925,
+    "accessed_at" : "2022-05-24T00:53:35Z",
+    "modified_longitude" : -92.38797561931294,
+    "folder" : 0,
+    "created_longitude" : -92.38797561931294,
+    "languageGrammar" : "MultiMarkdown",
+    "flagged" : false,
+    "uuid" : "C68B96F5-801A-4C58-BFDA-35FC720E10D4",
+    "tags" : [
+      "text",
+      "index",
+      "i",
+      "curation",
+      "template"
+    ],
+    "modified_latitude" : 38.93400537684925
+  },
+  {
+    "created_latitude" : 38.93400537684925,
+    "folder" : 0,
+    "languageGrammar" : "MultiMarkdown",
+    "created_longitude" : -92.38797561931294,
+    "modified_latitude" : 38.93400537684925,
+    "flagged" : false,
+    "accessed_at" : "2022-07-10T01:14:28Z",
+    "tags" : [
+      "mastodon",
+      "i",
+      "federated",
+      "index",
+      "curation",
+      "documentation",
+      "template"
+    ],
+    "modified_longitude" : -92.38797561931294,
+    "modified_at" : "2022-05-23T21:53:02Z",
+    "created_at" : "2022-05-23T21:32:07Z",
+    "content" : "# mastodon-ios-apps Template\n\n![ Icon](icons\/.png)\n\n- [GitHub Issue](https:\/\/github.com\/extratone\/mastodon-ios-apps\/issues\/)\n- [**App Store**]()\n\n![ Screens](screens\/.png)\n\n- **App ID**: 1501485410\n\n## Description\n> Mastoot is a beautiful, elegant, and performant Mastodon client app.\n\n## Developer Contact\n\n## Embed\n\n```\n\n```\n\n## Data\n[App Store Tools](shortcuts:\/\/run-shortcut?name=App%20Store%20Tools)\n---\n\n---\n[Local](drafts:\/\/open?uuid=FC33BE7A-1C8C-4A49-8FBE-281A4E47A60F)",
+    "uuid" : "FC33BE7A-1C8C-4A49-8FBE-281A4E47A60F"
+  },
+  {
+    "languageGrammar" : "MultiMarkdown",
+    "uuid" : "00CB3B9B-786A-46DB-8E1D-8C40543968EC",
+    "modified_at" : "2022-05-21T15:58:10Z",
+    "folder" : 0,
+    "modified_longitude" : -92.387975070116639,
+    "accessed_at" : "2022-02-20T17:31:13Z",
+    "flagged" : false,
+    "modified_latitude" : 38.93400520218006,
+    "content" : "# App Store Review Template",
+    "created_at" : "2022-02-20T17:31:13Z",
+    "created_latitude" : 38.934018729569246,
+    "created_longitude" : -92.387973548345613,
+    "tags" : [
+      "curation",
+      "macos",
+      "software",
+      "template",
+      "i",
+      "app-store"
+    ]
+  },
+  {
+    "flagged" : false,
+    "uuid" : "D9F92E87-E682-41F5-91DD-2B493A11B5AB",
+    "folder" : 0,
+    "content" : "# Family Recommendation Template ",
+    "tags" : [
+      "i",
+      "curation",
+      "support",
+      "local",
+      "template"
+    ],
+    "languageGrammar" : "MultiMarkdown",
+    "modified_longitude" : -92.387976230997126,
+    "accessed_at" : "2022-05-15T18:00:30Z",
+    "created_latitude" : 38.934004380898813,
+    "modified_latitude" : 38.934004380898813,
+    "created_longitude" : -92.387976230997126,
+    "modified_at" : "2022-05-15T17:54:14Z",
+    "created_at" : "2022-05-15T17:53:54Z"
+  },
+  {
+    "tags" : [
+      "documentation",
+      "practice",
+      "odette",
+      "family",
+      "cheatsheets",
+      "template",
+      "local"
+    ],
+    "accessed_at" : "2022-05-09T05:46:19Z",
+    "content" : "# Cheatsheets Template",
+    "created_latitude" : 38.933877348559307,
+    "created_longitude" : -92.387833157185284,
+    "modified_longitude" : -92.387833157185284,
+    "uuid" : "CA50DD89-2AF3-49AB-B149-03A54DB94611",
+    "flagged" : false,
+    "modified_at" : "2022-05-09T05:46:46Z",
+    "modified_latitude" : 38.933877348559307,
+    "created_at" : "2022-05-09T05:46:19Z",
+    "languageGrammar" : "MultiMarkdown",
+    "folder" : 0
+  },
+  {
+    "created_at" : "2022-04-21T04:01:19Z",
+    "created_latitude" : 38.933876079381761,
+    "folder" : 0,
+    "accessed_at" : "2022-07-16T20:54:35Z",
+    "languageGrammar" : "MultiMarkdown",
+    "flagged" : false,
+    "uuid" : "466A14AF-AAC7-4170-A40F-A5E975DFDBF4",
+    "created_longitude" : -92.388269109848537,
+    "modified_latitude" : 38.933912626157998,
+    "tags" : [
+      "curation",
+      "index",
+      "raindrop",
+      "documentation",
+      "template"
+    ],
+    "modified_at" : "2022-04-21T04:11:14Z",
+    "content" : "# Raindrop Collection Template\n\n- [**URL**](https:\/\/raindrop.io\/davidblue\/)\n- [RSS](https:\/\/raindrop.io\/collection\/00000000\/feed)\n- [WTF](https:\/\/davidblue.wtf\/drafts\/[[uuid]].html)\n\n---\n\n## Description\n\n\n## Embed\n\n`header, excerpt, info, add`\n\n```\n<iframe style=“border: 0; width: 100%; height: 650px;” allowfullscreen frameborder=“0” src=“https:\/\/raindrop.io\/davidblue\/COLLECTION\/embed\/theme=auto&hide=header%2C+excerpt%2C+info%2C+add&sort=-created”><\/iframe>\n```\n\n<iframe style=\"border: 0; width: 100%; height: 450px;\" allowfullscreen frameborder=\"0\" src=\"https:\/\/raindrop.io\/davidblue\/embed\/theme=auto&hide=header%2C+excerpt%2C+info%2C+add&sort=-created\"><\/iframe>\n\n===\n\n<iframe style=\"border: 0; width: 100%; height: 1000px;\" allowfullscreen frameborder=\"0\" src=\"https:\/\/raindrop.io\/davidblue\/embed\/me\/theme=auto\"><\/iframe>",
+    "modified_longitude" : -92.388113078294097
+  },
+  {
+    "languageGrammar" : "MultiMarkdown",
+    "uuid" : "23518C1F-72FC-4A54-BA3F-D9FBA74BB7D7",
+    "created_at" : "2022-04-13T22:56:39Z",
+    "created_latitude" : 38.934003821252411,
+    "modified_longitude" : -92.38797641479951,
+    "modified_at" : "2022-04-13T22:57:45Z",
+    "flagged" : false,
+    "created_longitude" : -92.38797641479951,
+    "folder" : 0,
+    "tags" : [
+      "meta",
+      "configuration",
+      "template",
+      "drafts",
+      "documentation",
+      "curation"
+    ],
+    "content" : "# Drafts Directory Template\n- [Search](https:\/\/directory.getdrafts.com\/search?utf8=✓&q=<|>)",
+    "modified_latitude" : 38.934003821252411,
+    "accessed_at" : "2022-04-13T22:58:51Z"
+  },
+  {
+    "modified_longitude" : 0,
+    "folder" : 0,
+    "modified_latitude" : 0,
+    "accessed_at" : "2022-07-15T06:29:01Z",
+    "uuid" : "AA031693-DEC7-4BB9-B9C5-1C4526A02395",
+    "modified_at" : "2022-03-16T05:33:13Z",
+    "tags" : [
+      "i",
+      "template",
+      "keys",
+      "documentation",
+      "reference"
+    ],
+    "content" : "# Keys Template",
+    "flagged" : false,
+    "created_at" : "2022-03-16T05:32:47Z",
+    "created_latitude" : 0,
+    "created_longitude" : 0,
+    "languageGrammar" : "MultiMarkdown"
+  },
+  {
+    "created_longitude" : -92.387975081127308,
+    "modified_latitude" : 38.93400675037222,
+    "uuid" : "6D687A5C-44D8-470C-B485-A46A172B2E96",
+    "tags" : [
+      "forums",
+      "template",
+      "correspondence",
+      "support"
+    ],
+    "flagged" : false,
+    "created_at" : "2022-03-14T21:14:28Z",
+    "created_latitude" : 38.93400675037222,
+    "modified_longitude" : -92.387975081127308,
+    "modified_at" : "2022-03-15T06:47:18Z",
+    "content" : "# General Forums Template",
+    "accessed_at" : "2022-03-15T06:47:12Z",
+    "languageGrammar" : "MultiMarkdown",
+    "folder" : 0
+  },
+  {
+    "tags" : [
+      "~",
+      "template",
+      "blog"
+    ],
+    "modified_longitude" : -92.387973548345613,
+    "uuid" : "D559716B-3FEF-4516-807F-7FE08A0873AB",
+    "flagged" : false,
+    "languageGrammar" : "MultiMarkdown",
+    "modified_latitude" : 38.934018729569246,
+    "content" : "# Tilde.Town Blog Template | 02212022-055406",
+    "modified_at" : "2022-02-21T11:54:09Z",
+    "accessed_at" : "2022-02-21T11:53:26Z",
+    "folder" : 0,
+    "created_longitude" : -92.387973548345613,
+    "created_latitude" : 38.934018729569246,
+    "created_at" : "2022-02-21T11:53:26Z"
+  },
+  {
+    "created_longitude" : -92.395575543571326,
+    "folder" : 0,
+    "flagged" : false,
+    "created_at" : "2022-01-25T19:58:50Z",
+    "content" : "# ColumbiaMO Telegram Chat Template",
+    "accessed_at" : "2022-01-25T19:58:50Z",
+    "created_latitude" : 38.930588194827166,
+    "modified_at" : "2022-01-25T19:59:33Z",
+    "modified_latitude" : 38.930588194827166,
+    "uuid" : "8EFCBEBD-C0B8-4C3B-A092-61E71919F1E3",
+    "tags" : [
+      "local",
+      "telegram",
+      "template",
+      "columbia"
+    ],
+    "modified_longitude" : -92.395575543571326,
+    "languageGrammar" : "MultiMarkdown"
+  },
+  {
+    "modified_longitude" : -92.38818331582209,
+    "created_at" : "2022-01-15T06:52:27Z",
+    "tags" : [
+      "template",
+      "shortcuts"
+    ],
+    "modified_latitude" : 38.933863493176318,
+    "content" : "# Shortcut Comment Template\n\nShort description\n\nMy contact information:\n\nEmail: davidblue@extratone.com\nContact card: bit.ly\/whoisdavidblue\nRoutineHub Profile: https:\/\/routinehub.co\/user\/blue\nGitHub: https:\/\/github.com\/extratone\/i\nTelegram: t.me\/extratone\nTwitter: twitter.com\/NeoYokel\nReddit: reddit.com\/u\/asphaltapostle\nMastodon: mastodon.social\/@DavidBlue\nEVERYWHERE: bit.ly\/dbrolodex",
+    "accessed_at" : "2022-01-15T06:58:16Z",
+    "modified_at" : "2022-01-15T06:55:06Z",
+    "flagged" : false,
+    "uuid" : "8D021F9A-C7AF-4C6C-B0F7-FC5A6D28B0B4",
+    "created_longitude" : -92.38818331582209,
+    "created_latitude" : 38.933863493176318,
+    "languageGrammar" : "MultiMarkdown",
+    "folder" : 0
+  },
+  {
+    "languageGrammar" : "MultiMarkdown",
+    "modified_latitude" : 38.933917878309096,
+    "created_longitude" : -92.387898209398315,
+    "created_at" : "2021-12-12T19:59:07Z",
+    "modified_at" : "2021-12-12T19:59:57Z",
+    "modified_longitude" : -92.387898209398315,
+    "tags" : [
+      "reference",
+      "documentation",
+      "md",
+      "css",
+      "template"
+    ],
+    "flagged" : false,
+    "accessed_at" : "2021-12-12T20:14:02Z",
+    "created_latitude" : 38.933917878309096,
+    "folder" : 0,
+    "uuid" : "4F2838C4-8E3C-45B9-B477-4FBA7164C3EB",
+    "content" : "# Markup Test Template \n\n# Welcome to Tomorrow\n\nAdvice from all day The Mouse dear she knelt down in surprise. for yourself to try to leave **off** writing down looking anxiously to meet the sand with oh such a waistcoat-pocket [or judge by his housemaid she exclaimed in](http:\/\/dummy.com) a steam-engine when he would die. Sentence first idea was written up my mind what *this* young lady to move. Are they lay sprawling about half the Fish-Footman began. Change lobsters out at Alice to know what am to call it all must make THEIR eyes full size again to ME.\n\n## Tell Me My Mind and Sighing In\n\nWe quarrelled last more They were too but after a good advice though still and Derision. Ten hours to grow smaller and birds with respect. Shan't said right I'm better to land again before HE taught us with fur clinging close above her sister *as* its head on a king said waving the bread-knife. Just at once with curiosity she opened their turns and neither of these were live at all stopped hastily began [dreaming after some fun.](http:\/\/dummy.com)\n\n\n### Tell Me My Mind and Sighing In\n\n#### Tell Me My Mind and Sighing In\n\n##### Tell Me My Mind and Sighing In\n\n###### Tell me my mind and sighing in\n\nThe game's going through the top of Rome no arches. She drew a **great** dismay [*and* curiouser. I'll be afraid said What](http:\/\/dummy.com) trial.[^fn1]\n\n[^fn1]: down one old Father William and skurried away comfortably enough.\n\n * song\n * swallow\n    * behind\n        * alarm\n * beautify\n\n\nthey draw treacle out a dear. Be off this New Zealand or [the mushroom said it sad and](http:\/\/dummy.com) turning purple. Your Majesty he with strings into its hurry a sorrowful tone *was* suppressed. Somebody said So you haven't found it. IT. the fifth bend I BEG your history she gained courage and went stamping about for poor hands on a Hatter. Keep back again as **serpents.**\n\n![dummy][img1]\n\n[img1]: http:\/\/placekitten.com\/400\/300\n\n## Anything You Ever Thought It Every Door About This\n\n\nNerds love tables. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\n|wearily.|sighed||||\n|:-----:|:-----:|:-----:|:-----:|:-----:|\nbreathe|I|SAID|he|that|\nshan't.|_I_||||\nmyself|you|you|know|him|\nbeauti|Beautiful|this|into|that|\nthey|before|heard|having|for|\n\n\nSoup of WHAT. Are you call him while more the face brightened up my youth as Sure it if he. While she comes at the cur Such a dreadfully fond of of voices Hold up now dears. Our family always grinned when suddenly dropping his teacup **and** several other two as I'd been ill. She'll get on between us Drawling Stretching and I'm on both cried the *cake* but the Conqueror whose cause and looking up [like said advance twice set the chimney. ](http:\/\/dummy.com)\n\n> Pray how late much indeed Tis the pleasure of the royal children.\n> Herald read in search of having found the subject.\n\n\n 1. treacle\n 1. close\n    1. Master cleanse.\n    2. Pour-over chillwave chia,.\n        3. Quinoa swag mixtape typewriter,.\n        4. And so on.\n 1. teeth\n 1. teases\n 1. driest\n\n\nThey're putting down here and conquest. Pat what's more happened [and one crazy. Some of saying *Thank* you](http:\/\/dummy.com) Though they arrived **with** tears. Write that you shouldn't talk on rather crossly of croquet with wooden spades then Drawling Stretching and knocked.[^fn2]\n\n[^fn2]: so kind Alice again using the trouble you thinking there are the cupboards and hurried upstairs in to it\n\n\n---\n\n     Collar that part about once without a child \n     but why it made Alice or\n     Run home thought poor speaker said Get \n     up eagerly and one repeat TIS THE BOOTS either.\n     As a new pair of Mercia and sometimes shorter.\n     won't stand on yawning.\n     So he said without being alive the Lory \n     positively refused to sea of\n\n\nFirst because I DON'T know all in them called lessons and lonely andCheshire cats nasty low and\n: muttered the pig-baby was only look about cats eat one only too began with all played\n\nSilence.\n: cried.\n\nSome of thing I've fallen by\n: Here Bill.\n\nWe can go no\n: Heads below and her lap of saying lessons and bread-and butter you needn't be treated with sobs of mushroom\n\nSaid the sand with large\n: Serpent I needn't try the guests to grin thought and had hurt and don't want YOURS I wonder\n\nFetch me the dance.\n: Chorus again in custody by far down upon a moment I hardly enough yet Oh tis love that will talk\n\n```ruby\ndef wonderland(alice)\n    puts \"Cheshire Cat #{smile}\"\nend\n```"
+  }
+]
