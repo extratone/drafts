@@ -1,5 +1,5 @@
 # David Blue‘s Drafts Configs
-Updated `07232022-152817`
+Updated `07232022-165957`
 
 [Things](things:///show?id=8NHv5LrjXCb87VK7zqNTrk)
 
@@ -277,7 +277,7 @@ https://davidblue.wtf/drafts/38A942A2-33C4-4630-9CDE-B005989F4E3A.html
 
 - [**latlong**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/latlong.txt)
 ```
-`38.933999--92.387976-[[date|%m%d%Y-%H%M%S]]`
+`[[latitude]]--92.387976-[[date|%m%d%Y-%H%M%S]]`
 ```
 
 - [**img**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/img.txt)
@@ -316,14 +316,14 @@ https://davidblue.wtf/drafts/38A942A2-33C4-4630-9CDE-B005989F4E3A.html
 
 - [**gist**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/gist.txt)
 ```
-<script src=".js"></script>
+<script src="[[clipboard]].js"></script>
 ```
 
 - [**autocomplete**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/autocomplete.txt)
 ```
 - [**title**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/title.txt)
 ```
-
+[[clipboard]]
 ```
 
 - [**issue**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/issue.txt)
@@ -333,7 +333,7 @@ https://davidblue.wtf/drafts/38A942A2-33C4-4630-9CDE-B005989F4E3A.html
 
 - [**embed**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/embed.txt)
 ```
-<!-- [[u:38A942A2-33C4-4630-9CDE-B005989F4E3A]] : EMBED -->
+<!-- [[u:[[uuid]]]] : EMBED -->
 ```
 
 
@@ -517,6 +517,17 @@ Updated `07232022-152614`
 | Action                           | Command |
 |:--------------------------------:|:-------:|
 | Actions->Manage Actions...       |  ^A     |
+
+---
+
+## Template Drafts
+
+- [Repo Directory](https://github.com/extratone/drafts/tree/main/drafttemplates)
+- [CSV](https://github.com/extratone/drafts/blob/main/drafttemplates/drafttemplates.csv)
+- [JSON](https://github.com/extratone/drafts/blob/main/drafttemplates/drafttemplates.json)
+- [Combined Text](https://github.com/extratone/drafts/blob/main/drafttemplates/drafttemplates.txt)
+
+<script src="https://gist.github.com/f5097e818f63cc960abf5e63efd6d2ac.js"></script>
 
 ---
 
