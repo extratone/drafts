@@ -2,35 +2,40 @@
 <html dir="auto">
 
 <head>
-  <title>[[display_title]]</title>
+  <title>[[safe_title]]</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+    @import url("https://use.typekit.net/vxn4qnp.css");
     @charset "utf-8";
 
     :root {
-      --main-bg-color: #fff4e6;
-      --main-color: black;
-      --alternate-bg-color: #efefef;
-      --alternate-color: #222222;
-      --main-border-color: #BBBBBB;
-        --link-color: #627EC9;
+      --main-bg-color: #f4b254;
+      --main-color: #000000;
+      --alternate-bg-color: #b09243;
+      --alternate-color: #333333;
+      --main-border-color: #bb612d;
+      --link-color: #bb612d;
+      
     }
 
     @media (prefers-color-scheme: dark) {
       :root {
-        --main-bg-color: #222222;
-        --main-color: #eeeeee;
-        --alternate-bg-color: #444444;
-        --alternate-color: #cccccc;
-        --main-border-color: #AAAAAA;
-          --link-color: #627EC9;
+      --main-bg-color: #000056;
+      --main-color: #ffe8bd;
+      --alternate-bg-color: #1c0021;
+      --alternate-color: #fff4e6;
+      --main-border-color: #f43f32;
+      --link-color: #36fd63;
       }
     }
 
     html {
       font-size: 100%;
-      font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+      /* font-family: adobe-caslon-pro, serif; */
+      font-family: aktiv-grotesk, sans-serif; font-weight: 400;
+      font-weight: 400;
+      /* font-style: normal; */
       line-height: 1.4;
     }
 
@@ -51,6 +56,7 @@
     }
 
     blockquote {
+      font-family: aktiv-grotesk, sans-serif; font-weight: 300;
       font-style: italic;
       margin: 1.5em 2em;
       padding: 1em;
@@ -73,11 +79,12 @@
     code {
       background-color: var(--alternate-bg-color);
       color: var(--alternate-color);
-      font-family: Menlo, Courier, sans-serif;
+      font-family: aktiv-grotesk, sans-serif; font-weight: 300;
       padding: 2px 3px;
     }
 
     table {
+      font-family: aktiv-grotesk, sans-serif; font-weight: 400;
       margin: 1.5em 0;
       border: 1px solid var(--main-border-color);
       border-collapse: collapse;
@@ -97,19 +104,18 @@
     img {
       max-width: 90%;
     }
+    footer {
+      font-family: aktiv-grotesk-condensed, sans-serif; font-weight: 700;
+      font-size: 9px;
+    }
   </style>
+<script note="" src="https://cdn.jsdelivr.net/gh/Blogger-Peer-Review/quotebacks@1/quoteback.js"></script>
 </head>
 
 <body>
   %%[[draft]]%%
-</body>
-
 <footer>
- [[date]]-[[time]]
-`[[uuid]]`
-```
-[[tags]]
-```
+<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="[[draft_open_url]]">Local</a></p><code>[[latitude]]∆[[longitude]]-[[date|%m%d%Y-%H%M%S]]</code>
 </footer>
-</footer>
+</body>
 </html>
