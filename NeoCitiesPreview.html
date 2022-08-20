@@ -10,20 +10,20 @@
     @charset "utf-8";
 
     :root {
-      --main-bg-color: #f4b254;
+      --main-bg-color: #fff4e6;
       --main-color: #000000;
-      --alternate-bg-color: #b09243;
-      --alternate-color: #333333;
-      --main-border-color: #bb612d;
-      --link-color: #bb612d;
+      --alternate-bg-color: #fffdeb;
+      --alternate-color: #00006b;
+      --main-border-color: #f43f32;
+      --link-color: #ff0000;
       
     }
 
     @media (prefers-color-scheme: dark) {
       :root {
-      --main-bg-color: #000056;
+      --main-bg-color: #020003;
       --main-color: #ffe8bd;
-      --alternate-bg-color: #1c0021;
+      --alternate-bg-color: #000056;
       --alternate-color: #fff4e6;
       --main-border-color: #f43f32;
       --link-color: #36fd63;
@@ -41,7 +41,7 @@
 
     body {
       margin: 0;
-      padding: 1em;
+      padding: 0.6em;
       background-color: var(--main-bg-color);
       color: var(--main-color);
     }
@@ -58,7 +58,7 @@
     blockquote {
       font-family: aktiv-grotesk, sans-serif; font-weight: 300;
       font-style: italic;
-      margin: 1.5em 2em;
+      margin: 1.5em 1.5em;
       padding: 1em;
       background-color: var(--alternate-bg-color);
       color: var(--alternate-color);
@@ -102,7 +102,7 @@
     }
 
     img {
-      max-width: 90%;
+      max-width: 96%;
     }
     footer {
       font-family: aktiv-grotesk-condensed, sans-serif; font-weight: 700;
@@ -115,7 +115,7 @@
 <body>
   %%[[draft]]%%
 <footer>
-<p><a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="[[draft_open_url]]">Local</a></p><code>[[latitude]]∆[[longitude]]-[[date|%m%d%Y-%H%M%S]]</code>
+<p><a href="https://davidblue.wtf/drafts">Index</a> - <a href="https://twitter.com/NeoYokel">Twitter</a> - <a href="https://mastodon.social/@DavidBlue">Mastodon</a> - <a href="https://t.me/davidblue">Telegram</a> - <a href="[[draft_open_url]]">Local</a></p><code>[[latitude]]∆[[longitude]]-[[date|%m%d%Y-%H%M%S]]</code>
 </footer>
 </body>
 </html>
