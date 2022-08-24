@@ -360,7 +360,9 @@
     },
     "markup": {
       "name": "Markup",
-      "settings": {}
+      "settings": {
+
+      }
     },
     "markup.heading": {
       "name": "Markup",
@@ -371,11 +373,15 @@
     },
     "markup.quotation": {
       "name": "Markup",
-      "settings": {}
+      "settings": {
+
+      }
     },
     "markup.list": {
       "name": "Markup",
-      "settings": {}
+      "settings": {
+
+      }
     },
     "markup.link": {
       "name": "Markup",
@@ -481,7 +487,9 @@
     },
     "color.accent03": {
       "name": "Accent color",
-      "settings": {}
+      "settings": {
+
+      }
     },
     "color.accent04": {
       "name": "Accent color",
@@ -503,47 +511,69 @@
     },
     "color.blue": {
       "name": "Blue color",
-      "settings": {}
+      "settings": {
+
+      }
     },
     "color.indigo": {
       "name": "Blue color",
-      "settings": {}
+      "settings": {
+
+      }
     },
     "color.purple": {
       "name": "Purple color",
-      "settings": {}
+      "settings": {
+
+      }
     },
     "color.pink": {
       "name": "Pink color",
-      "settings": {}
+      "settings": {
+
+      }
     },
     "color.red": {
       "name": "Red color",
-      "settings": {}
+      "settings": {
+
+      }
     },
     "color.orange": {
       "name": "Orange color",
-      "settings": {}
+      "settings": {
+
+      }
     },
     "color.yellow": {
       "name": "Yellow color",
-      "settings": {}
+      "settings": {
+
+      }
     },
     "color.green": {
       "name": "Green color",
-      "settings": {}
+      "settings": {
+
+      }
     },
     "color.black": {
       "name": "Black color",
-      "settings": {}
+      "settings": {
+
+      }
     },
     "color.white": {
       "name": "White color",
-      "settings": {}
+      "settings": {
+
+      }
     },
     "color.gray": {
       "name": "Gray color",
-      "settings": {}
+      "settings": {
+
+      }
     }
   },
   "colors": {
