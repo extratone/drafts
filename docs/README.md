@@ -1,7 +1,8 @@
 # David Blue‘s Drafts Configs
-Updated `07232022-170153`
+Updated `09082022-061451`
 
-[Things](things:///show?id=8NHv5LrjXCb87VK7zqNTrk)
+- [**Drafts README Update**](shortcuts://run-shortcut?name=Drafts%20README%20Update)
+- [Things](things:///show?id=8NHv5LrjXCb87VK7zqNTrk)
 
 ![IconViolet](https://user-images.githubusercontent.com/43663476/166443931-d3c50634-1061-45b4-b4dd-f1f95f8dc959.png)
 
@@ -15,13 +16,14 @@ Please feel free to use/distribute anything in here - including original content
 
 ### Contact
 
-* [Contact Card](https://davidblue.wtf/db.vcf)
-* [Telegram](https://t.me/extratone)
-* [Email](mailto:davidblue@extratone.com) 
-* [Twitter](https://twitter.com/NeoYokel)
-* [Mastodon](https://mastodon.social/@DavidBlue)
-* [Discord](https://discord.gg/0b9KQUKP858b0iZF)
-* [*Everywhere*](https://raindrop.io/davidblue/social-directory-21059174)...
+- [**Drafts Community Forums Profile**](https://forums.getdrafts.com/u/blue)
+- [Contact Card](https://davidblue.wtf/db.vcf)
+- [Telegram](https://t.me/extratone)
+- [Email](mailto:davidblue@extratone.com) 
+- [Twitter](https://twitter.com/NeoYokel)
+- [Mastodon](https://mastodon.social/@DavidBlue)
+- [Discord](https://discord.gg/0b9KQUKP858b0iZF)
+- [*Everywhere*](https://raindrop.io/davidblue/social-directory-21059174)...
 
 ---
 
@@ -53,8 +55,9 @@ Please feel free to use/distribute anything in here - including original content
 
 I have long pondered creating an ***unofficial*** chat-format space for the Drafts community and finally decided to just have a go! [**@draftsapp**](https://t.me/s/draftsapp) is a public [Telegram Group](https://telegram.org/tour/groups) for anyone and everyone to discuss Drafts. See [its corresponding issue in this repo](https://github.com/extratone/drafts/issues/33) for more details.
 
-## Written Work
+## Written Work on Drafts
 
+- [How I Maintain a Vocabulary List in Drafts with Terminology](https://bilge.world/drafts-terminology-vocabulary)
 - [**Using Drafts with NeoCities**](https://bilge.world/using-drafts-with-neocities)
 - [Run Siri Shortcuts with Hyperlinks](https://bilge.world/run-siri-shortcuts-with-hyperlinks)
 - [Windows Eternal Drafts Theme](https://bilge.world/windows-eternal)
@@ -74,13 +77,15 @@ I have long pondered creating an ***unofficial*** chat-format space for the Draf
 
 ## David Blue’s Drafts Action Directory Contributions
 
-- [Twitter Publish Tool](https://directory.getdrafts.com/a/2Ah)
-- [Stream with VLC](https://directory.getdrafts.com/a/1zn)
-- [Search RoutineHub](https://directory.getdrafts.com/a/1zm)
-- [Telegram Bot Post](https://directory.getdrafts.com/a/1zl)
-- [Tumblr Text Post](https://directory.getdrafts.com/a/1zk)
-- [Call](https://directory.getdrafts.com/a/1zi)
-- [Blink Selection](https://directory.getdrafts.com/a/1z5)
+- [Discord Spoiler Tags (||)](https://directory.getdrafts.com/a/2CA) #85
+- [Esse Selection](https://directory.getdrafts.com/a/2Bn) #82
+- [Twitter Publish Tool](https://directory.getdrafts.com/a/2Ah) #66
+- [Stream with VLC](https://directory.getdrafts.com/a/1zn) #55
+- [Search RoutineHub](https://directory.getdrafts.com/a/1zm) #54
+- [Telegram Bot Post](https://directory.getdrafts.com/a/1zl) #53
+- [Tumblr Text Post](https://directory.getdrafts.com/a/1zk) #52
+- [Call](https://directory.getdrafts.com/a/1zi) #51
+- [Blink Selection](https://directory.getdrafts.com/a/1z5) #50
 - [App Store Search](https://directory.getdrafts.com/a/1z1)
 - [Post to Writeas Blog](https://directory.getdrafts.com/a/1zW)
 - [Post to Writeas](https://directory.getdrafts.com/a/1zO)
@@ -92,21 +97,21 @@ I have long pondered creating an ***unofficial*** chat-format space for the Draf
 - [Typefully](https://actions.getdrafts.com/a/1yn)
 - [Current Draft Info](https://actions.getdrafts.com/a/1yg)
 - [Clear Clipboard](https://actions.getdrafts.com/a/1vP)
-- [Query SnippetsLab | Drafts Directory](https://directory.getdrafts.com/a/1xe)
-- [Run Shortcut | Drafts Directory](https://directory.getdrafts.com/a/1xP)
-- [Clear Clipboard | Drafts Directory](https://directory.getdrafts.com/a/1vP)
-- [Linky Selection | Drafts Directory](https://directory.getdrafts.com/a/1wa)
-- [Error | Drafts Directory](https://actions.getdrafts.com/a/1wV)
-- [Fetch contents of # Tot Dot | Drafts Directory](https://actions.getdrafts.com/a/1ub)
-- [Send Draft to Telegram Saved Messages | Drafts Directory](https://actions.getdrafts.com/a/1u5)
-- [Append to 7th Tot Dot | Drafts Directory](https://actions.getdrafts.com/a/1uL)
-- [List Action Shortcuts, Comma-Delimited | Drafts Directory](https://actions.getdrafts.com/a/1s7)
-- [Markdown Footnote (Variation) | Drafts Directory](https://actions.getdrafts.com/a/1q9)
-- [Markdown Emphasis (*) | Drafts Directory](https://actions.getdrafts.com/a/1pa)
-- [Embed &lt;audio&gt; Element | Drafts Directory](https://actions.getdrafts.com/a/1lM)
-- [NeoCities | Drafts Directory](https://actions.getdrafts.com/g/1uF)
-- [The Psalms | Drafts Directory](https://actions.getdrafts.com/t/1km)
-- [Windows Iowa | Drafts Directory](https://actions.getdrafts.com/t/1kY)
+- [Query SnippetsLab](https://directory.getdrafts.com/a/1xe)
+- [Run Shortcut](https://directory.getdrafts.com/a/1xP)
+- [Clear Clipboard](https://directory.getdrafts.com/a/1vP)
+- [Linky Selection](https://directory.getdrafts.com/a/1wa)
+- [Error](https://actions.getdrafts.com/a/1wV)
+- [Fetch contents of # Tot Dot](https://actions.getdrafts.com/a/1ub)
+- [Send Draft to Telegram Saved Messages](https://actions.getdrafts.com/a/1u5)
+- [Append to 7th Tot Dot](https://actions.getdrafts.com/a/1uL)
+- [List Action Shortcuts, Comma-Delimited](https://actions.getdrafts.com/a/1s7)
+- [Markdown Footnote (Variation)](https://actions.getdrafts.com/a/1q9)
+- [Markdown Emphasis (*)](https://actions.getdrafts.com/a/1pa)
+- [Embed <audio> Element](https://actions.getdrafts.com/a/1lM)
+- [NeoCities](https://actions.getdrafts.com/g/1uF)
+- [The Psalms](https://actions.getdrafts.com/t/1km)
+- [Windows Iowa](https://actions.getdrafts.com/t/1kY)
 
 ## Unlisted Drafts Directory Links
 
@@ -244,7 +249,8 @@ I did not originally intend to share this theme, but I sortof accidentally ended
 
 ![Drafts Autocompletes](https://user-images.githubusercontent.com/43663476/159809109-ef35410c-d052-4ed4-9388-aa7895d1c434.png)
 
-## Autocompletes
+## Autocompletes #31
+
 - [GitHub Issue](https://github.com/extratone/drafts/issues/31)
 - [Directory of install URLS in the repo](https://github.com/extratone/drafts/blob/main/autocomplete)
 - [Tilde](https://tilde.town/~extratone/drafts/autocompletes/)
@@ -526,8 +532,4 @@ Updated `07232022-152614`
 - [JSON](https://github.com/extratone/drafts/blob/main/drafttemplates/drafttemplates.json)
 - [Combined Text](https://github.com/extratone/drafts/blob/main/drafttemplates/drafttemplates.txt)
 
-<script src="https://gist.github.com/f5097e818f63cc960abf5e63efd6d2ac.js"></script>
-
----
-
-[Drafts README Update](shortcuts://run-shortcut?name=Drafts%20README%20Update)
+<script src="https://gist.github.com/extratone/1071d39ab60401cb1fbbff20e14e1d2a.js"></script>
