@@ -1,78 +1,3 @@
-# Snippets Template
-Updated `[[date|%m%d%Y-%H%M%S]]`
-
-- [](drafts://open?uuid=CAABBB06-186C-437D-BC30-65844BDBEC2B)
-- [WTF](https://davidblue.wtf/drafts/CAABBB06-186C-437D-BC30-65844BDBEC2B.html)
-- Simplenote Local
-- Simplenote Publish
-- Things
-
----
-# WTF Template <|>
-Updated `[[date|%m%d%Y-%H%M%S]]`
-
-- [[[display_title]]]([[draft_open_url]])
-- [WTF](https://davidblue.wtf/drafts/[[uuid]].html)
-- Things
-
----
-# Anecdote Template
-Updated `[[date|%m%d%Y-%H%M%S]]`
-
-- [display_title]([[draft_open_url]])
-- [WTF](https://davidblue.wtf/drafts/[[uuid]].html)
-- Things
-
----
-# Notes Template
-Updated `[[date|%m%d%Y-%H%M%S]]`
-
-- [Notes- ]([[draft_open_url]])
-- [WTF](https://davidblue.wtf/drafts/[[uuid]].html)
-- Things
-
----
-# RoutineHub/Shortcut Documentation Template <|>
-Updated `[[date|%m%d%Y-%H%M%S]]`
-
-- [GitHub Issue](https://github.com/extratone/i/issues/)
-- [**RoutineHub Page**](https://routinehub.co/shortcut/)
-- [iCloud Share Link]()
-- [WTF](https://davidblue.wtf/drafts/[[uuid]].html)
-- Things
-
----
-
-## Social
-
-- Telegram
-
----
-
-## Short description.
-
-
-
----
-
-## Contact
-
-- [Contact Card](https://davidblue.wtf/db.vcf)
-- [Telegram](https://t.me/extratone)
-- [Email](mailto:davidblue@extratone.com) 
-- [Twitter](https://twitter.com/NeoYokel)
-- [Mastodon](https://mastodon.social/@DavidBlue)
-- [Discord](https://discord.gg/0b9KQUKP858b0iZF)
-- [*Everywhere*](https://raindrop.io/davidblue/social-directory-21059174)...
-# The Psalms Template
-Updated `[[date|%m%d%Y-%H%M%S]]`
-
-- [**GitHub Issue**](https://github.com/extratone/bilge/issues/<|>)
-- [[display_title]]([[draft_open_url]])
-- [WTF](https://davidblue.wtf/drafts/[[uuid]].html)
-- Things
-
----
 # Actions Template %|
 Updated `[[date|%m%d%Y-%H%M%S]]`
 
@@ -84,6 +9,7 @@ Updated `[[date|%m%d%Y-%H%M%S]]`
 - [Simplenote Local](simplenote://note/70f69966c6994b4f9464950d34a8fdb9)
 - [Simplenote Publish](http://simp.ly/publish/FcZg5S)
 - [WTF](https://davidblue.wtf/drafts/[[uuid]].html)
+- [Local](shareddocuments:///private/var/mobile/Library/Mobile%20Documents/com~apple~CloudDocs/Written/[[uuid]].md)
 
 <script src="https://gist.github.com/extratone/8e70d1c53bbf9daa5eb36e697bafa6ac.js"></script>
 
@@ -101,118 +27,22 @@ Updated `[[date|%m%d%Y-%H%M%S]]`
 ---
 
 ## Install
-# Custom Email Template<|>e
-[[clipboard]]
----
-# Rolodex Template
+# Anecdote Template
+Updated `[[date|%m%d%Y-%H%M%S]]`
 
-- Cardhop
-
----
-# Runestone iTextEditors Submission 
-
-- [GitHub Issue](https://github.com/extratone/i/issues/204)
-- [Repository file](https://github.com/extratone/i/blob/main/misc/iTextEditorsSubmission.md)
-- [Gist](https://gist.github.com/d72d11ffc4cc1b0a0e42bf4d937dd098)
-
-![DraftsExample](https://github.com/extratone/i/raw/main/images/itexteditorsexample.png)
-
-## Social 
-
-@ttscoff hey Brett, I'm working on a submission to iTextEditors for @simonbs' Runestone and well... I'm trying not to suck lol. especially because our terminology has changed so much since file provider storage became an assumption. would it be disruptive if I mostly copy from his press kit? it's pretty succinct. https://github.com/extratone/Runestone/tree/main/PressKit
-
-also, somewhat separately - since I ended up making it for myself, anyway - I thought I'd share this rough template for those of us who'd feel more comfortable preparing our submissions in markdown beforehand. just in case you think it might be useful to others. https://gist.github.com/d72d11ffc4cc1b0a0e42bf4d937dd098
+- [display_title]([[draft_open_url]])
+- [WTF](https://davidblue.wtf/drafts/[[uuid]].html)
+- [Local](shareddocuments:///private/var/mobile/Library/Mobile%20Documents/com~apple~CloudDocs/Written/[[uuid]].md)
+- Things
 
 ---
-
-### Replies
-
-It's totally cool to re-use press material. The features that are already included in the checkboxes should be cut,  and lines longer than ~60ch should be abbreviated, but I do that on my end as necessary, too.
--[@ttscoff](https://twitter.com/ttscoff/status/1539009966861959173)
-
-
-https://github.com/extratone/Runestone/issues/
-
-are y'all gon shame me for using the huge icons.
-
-https://github.com/extratone/latte/generate
-
----
-
-Submit a new editor or a correction to an existing listing. Correction submissions may fill out just the affected fields, your contact info and a clarification note.
-
-This listing is for PLAIN TEXT editors only. If your app cannot edit and export plain text, it will not be listed. All submissions will be reviewed before publishing.
-
----
-
-- **App name**: Runestone Text Editor
-- **Price**: 0.00
-*Enter the USD price for the app. If the app is free, enter 0.00.*
-- **App Store ID**: 1548193893
-- **Homepage**: https://runestone.app
-*Developer pages are preferred, App Store links may be used if none exists. App Store links will be generated automatically in the listing based on App ID.*
-
-## Platform
-*Check all that apply*
-- [x] iPhone
-- [x] iPad
-
-## Export options
-*Check all that apply*
-
-- [ ] Dropbox
-- [ ] iCloud
-- [ ] WebDAV
-- [ ] iTunes
-- [ ] Simplenote
-- [ ] Proprietary
-- [ ] Plain Text
-- [ ] Copy HTML
-- [ ] Email text
-- [ ] Email HTML
-- [ ] PDF
-- [x] Print
-- [x] Open in...
-- [x] Document Provider
-- [x] iCloud Drive
-*Add additional sync/transport options under "additional features".*
-
-## Standard features
-*Check all that apply*
-
-- [ ] TextExpander
-- [ ] Markdown preview/export
-- [ ] Markdown editing features
-- [x] Appearance options
-- [ ] Extra keyboard row
-- [x] In-document search
-- [x] Search and replace
-- [x] Full-text file search
-- [ ] Word count
-- [ ] Character count
-- [ ] Page count
-- [ ] Reading time
-- [ ] URL scheme
-- [ ] Web browser
-- [x] Syntax highlighting
-- [ ] Desktop companion
-- [x] Split Screen
-*Add unlisted features/clarifications under "additional features".*
-
----
-
-## Additional features
-*One feature per line, one line per feature, no hyphens or asterisks at the beginning. Please keep them short and concise.*
-
-...
-
-## Contact info (email) and additional comments
-
-...
+# App Store Review Template
 # Apple Feedback Template
 
+- [**[[clipboard]]**](https://feedbackassistant.apple.com/feedback/<|>)
 - [GitHub Issue](https://github.com/extratone/i/issues/206)
 - [WTF](https://davidblue.wtf/drafts/D5638AF5-017D-47CB-9B1F-C444EFB46EEF.html)
+- [Local](shareddocuments:///private/var/mobile/Library/Mobile%20Documents/com~apple~CloudDocs/Written/[[uuid]].md)
 - [Gist](https://gist.github.com/69fb3b553ad6259dc794a8eee27daba0)
 - [Redirect](https://davidblue.wtf/feedback) - `https://davidblue.wtf/feedback`
 
@@ -432,6 +262,39 @@ screen*
 - A step-by-step set of instructions to reproduce the problem (if possible)
 - What results you expected
 - What results you actually saw
+# Cheatsheets Template
+# ColumbiaMO Telegram Chat Template
+# Drafts Directory Template
+Updated `[[date|%m%d%Y-%H%M%S]]`
+
+- [GitHub Issue](https://github.com/extratone/drafts/issues/)
+- [WTF](https://davidblue.wtf/drafts/[[uuid]].html)
+- [Local](shareddocuments:///private/var/mobile/Library/Mobile%20Documents/com~apple~CloudDocs/Written/[[uuid]].md)
+- [Directory Search](https://directory.getdrafts.com/search?utf8=✓&q=<|>)
+
+---
+
+# Family Recommendation Template 
+# General Forums Template
+# Index Template
+Updated `[[date|%m%d%Y-%H%M%S]]`
+
+- [**Original Repository**](https://github.com/extratone/)
+- [WTF](https://davidblue.wtf/drafts/[[uuid]].html)
+- [Local](shareddocuments:///private/var/mobile/Library/Mobile%20Documents/com~apple~CloudDocs/Written/[[uuid]].md)
+- Simplenote Local
+- Simplenote Publish
+- Things
+
+---
+
+## Gist
+
+
+
+---
+
+<|>
 # iTextEditors Submission Template
 
 - [GitHub Issue](https://github.com/extratone/i/issues/204)
@@ -516,82 +379,146 @@ This listing is for PLAIN TEXT editors only. If your app cannot edit and export 
 ## Contact info (email) and additional comments
 
 ...
-# mastodon-ios-apps Template
+# Keys Template 
+Updated `[[date|%m%d%Y-%H%M%S]]`
 
-![ Icon](icons/.png)
-
-- [GitHub Issue](https://github.com/extratone/mastodon-ios-apps/issues/)
-- [**App Store**]()
-
-![ Screens](screens/.png)
-
-- **App ID**: 1501485410
-
-## Description
-> Mastoot is a beautiful, elegant, and performant Mastodon client app.
-
-## Developer Contact
-
-## Embed
-
-```
-
-```
-
-## Data
-[App Store Tools](shortcuts://run-shortcut?name=App%20Store%20Tools)
----
-
----
-[Local](drafts://open?uuid=FC33BE7A-1C8C-4A49-8FBE-281A4E47A60F)
-# App Store Review Template
-# Family Recommendation Template 
-# Cheatsheets Template
-# Raindrop Collection Template
-
-- [**URL**](https://raindrop.io/davidblue/)
-- [RSS](https://raindrop.io/collection/00000000/feed)
+- [**Shared Numbers Spreadsheet**](https://www.icloud.com/numbers/)
+- [GitHub Issue](https://github.com/ExtraKeys/keys/issues/)
 - [WTF](https://davidblue.wtf/drafts/[[uuid]].html)
+- [Local](shareddocuments:///private/var/mobile/Library/Mobile%20Documents/com~apple~CloudDocs/Written/[[uuid]].md)
+- [App Store Share URL](https://apps.apple.com/us/app/)
+- [Gist](https://gist.github.com/extratone/)
+- Things
+
+Hardware (bluetooth) keyboard shortcuts for [Essayist for iOS/iPadOS](https://apps.apple.com/us/app/essayist-apa-mla-more/id1537845384).
 
 ---
 
-## Description
+![Icon]()
 
+<script src=""></script>
 
-## Embed
+## Repository Files
 
-`header, excerpt, info, add`
+- [Numbers](https://github.com/ExtraKeys/keys/blob/main/essayist/EssayistKeyboardShortcuts.numbers)
+- [PDF](https://github.com/ExtraKeys/keys/blob/main/essayist/EssayistKeyboardShortcuts.pdf)
+- [CSV](https://github.com/ExtraKeys/keys/blob/main/essayist/EssayistKeyboardShortcuts.csv)
+- [Excel](https://github.com/ExtraKeys/keys/blob/main/essayist/EssayistKeyboardShortcuts.xlsx)
+- [TSV](https://github.com/ExtraKeys/keys/blob/main/essayist/EssayistKeyboardShortcuts.tsv)
 
-```
-<iframe style=“border: 0; width: 100%; height: 650px;” allowfullscreen frameborder=“0” src=“https://raindrop.io/davidblue/COLLECTION/embed/theme=auto&hide=header%2C+excerpt%2C+info%2C+add&sort=-created”></iframe>
-```
+---
 
-<iframe style="border: 0; width: 100%; height: 450px;" allowfullscreen frameborder="0" src="https://raindrop.io/davidblue/embed/theme=auto&hide=header%2C+excerpt%2C+info%2C+add&sort=-created"></iframe>
+| Action          | Command |
+|-----------------|:-------:|
+| Insert Citation | ⌘ '     |
+| Bold            | ⌘ B     |
+| Italic          | ⌘ I     |
+| Underline       | ⌘ U     |
+| Increase Indent | ⌘ }     |
+| Decrease Indent | ⌘ {     |
+| Body Text       | ⌘ 0     |
+| Block Quote     | ⌘ "     |
+| Heading 1       | ⌘ 1     |
+| Heading 2       | ⌘ 2     |
+| Heading 3       | ⌘ 3     |
+| Heading 4       | ⌘ 4     |
+| Heading 5       | ⌘ 5     |
+| Hide Word Count | ⇧ ⌘ W   |
+| Hide Page Count | ⇧ ⌘ P   |
+| Zoom In         | ^ ⌘ +   |
+| Zoom Out        | ^ ⌘ -   |
+# Leonard Template
+Updated `[[date|%m%d%Y-%H%M%S]]`--`[[latitude]]-[[longitude]]`
 
-===
+- [Issue](https://github.com/users/extratone/leonard/issues/)
+- [Project](https://github.com/users/extratone/projects/16)
 
-<iframe style="border: 0; width: 100%; height: 1000px;" allowfullscreen frameborder="0" src="https://raindrop.io/davidblue/embed/me/theme=auto"></iframe>
-# Drafts Directory Template
-- [Search](https://directory.getdrafts.com/search?utf8=✓&q=<|>)
-# Keys Template
-# General Forums Template
-# Tilde.Town Blog Template | 02212022-055406
-# ColumbiaMO Telegram Chat Template
-# Shortcut Comment Template
+---
 
-Short description
+<|>
+# Manpage Template
+Updated `[[date|%m%d%Y-%H%M%S]]`
 
-My contact information:
+- [WTF](https://davidblue.wtf/drafts/[[uuid]].html)
+- [Local](shareddocuments:///private/var/mobile/Library/Mobile%20Documents/com~apple~CloudDocs/Written/[[uuid]].md)
 
-Email: davidblue@extratone.com
-Contact card: bit.ly/whoisdavidblue
-RoutineHub Profile: https://routinehub.co/user/blue
-GitHub: https://github.com/extratone/i
-Telegram: t.me/extratone
-Twitter: twitter.com/NeoYokel
-Reddit: reddit.com/u/asphaltapostle
-Mastodon: mastodon.social/@DavidBlue
-EVERYWHERE: bit.ly/dbrolodex
+---
+
+% HELLO(1) Version 1.0 | Frivolous "Hello World" Documentation
+
+NAME
+====
+
+**hello** — prints Hello, World!
+
+SYNOPSIS
+========
+
+| **hello** \[**-o**|**--out** _file_] \[_dedication_]
+| **hello** \[**-h**|**--help**|**-v**|**--version**]
+
+DESCRIPTION
+===========
+
+Prints "Hello, _dedication_!" to the terminal. If no dedication is
+given, uses the default dedication. The default dedication is chosen by
+the following sequence:
+
+ 1. Using the environment variable *DEFAULT_HELLO_DEDICATION*
+ 2. Using the per-user configuration file, *~/.hellorc*
+ 3. Using the system-wide configuration file, */etc/hello.conf*
+ 4. Finally, using "world".
+
+Options
+-------
+
+-h, --help
+
+:   Prints brief usage information.
+
+-o, --output
+
+:   Outputs the greeting to the given filename.
+
+    The file must be an **open(2)**able and **write(2)**able file.
+
+-v, --version
+
+:   Prints the current version number.
+
+FILES
+=====
+
+*~/.hellorc*
+
+:   Per-user default dedication file.
+
+*/etc/hello.conf*
+
+:   Global default dedication file.
+
+ENVIRONMENT
+===========
+
+**DEFAULT_HELLO_DEDICATION**
+
+:   The default dedication if none is given. Has the highest precedence
+    if a dedication is not supplied on the command line.
+
+BUGS
+====
+
+See GitHub Issues: <https://github.com/[owner]/[repo]/issues>
+
+AUTHOR
+======
+
+Foobar Goodprogrammer <foo@example.org>
+
+SEE ALSO
+========
+
+**hi(1)**, **hello(3)**, **hello.conf(4)**
 # Markup Test Template 
 
 # Welcome to Tomorrow
@@ -699,3 +626,339 @@ def wonderland(alice)
     puts "Cheshire Cat #{smile}"
 end
 ```
+# mastodon-ios-apps Template
+
+![ Icon](https://github.com/extratone/mastodon-ios-apps/raw/main/icons/.png)
+
+- [GitHub Issue](https://github.com/extratone/mastodon-ios-apps/issues/)
+- [**App Store**]()
+- [WTF](https://davidblue.wtf/drafts/[[uuid]].html)
+- [Local](shareddocuments:///private/var/mobile/Library/Mobile%20Documents/com~apple~CloudDocs/Written/[[uuid]].md)
+- Home Page
+- Press Kit
+
+![ Screens](screens/.png)
+
+- **App ID**: `1501485410`
+
+## Description
+
+> Mastoot is a beautiful, elegant, and performant Mastodon client app.
+
+## Developer Contact
+
+## Embed
+
+```
+
+```
+
+## Data
+[App Store Tools](shortcuts://run-shortcut?name=App%20Store%20Tools)
+---
+
+---
+[Local](drafts://open?uuid=FC33BE7A-1C8C-4A49-8FBE-281A4E47A60F)
+# Notes Template
+Updated `[[date|%m%d%Y-%H%M%S]]`
+
+- [**GitHub Issue**](https://github.com/extratone/bilge/issues/<|>)
+- Local
+- [Notes]([[draft_open_url]])
+- [WTF](https://davidblue.wtf/drafts/[[uuid]].html)
+- Things
+
+---
+
+## Social
+
+## General
+
+## Reference
+
+## Reading
+# Raindrop Collection Template
+Updated `[[date|%m%d%Y-%H%M%S]]` 
+
+- [**URL**](https://raindrop.io/davidblue/)
+- [RSS](https://raindrop.io/collection/[[clipboard]]/feed)
+- [WTF](https://davidblue.wtf/drafts/[[uuid]].html)
+- [Local](shareddocuments:///private/var/mobile/Library/Mobile%20Documents/com~apple~CloudDocs/Written/[[uuid]].md)
+- [In-App](https://app.raindrop.io/my/[[clipboard]])
+
+**ID**: `[[clipboard]]`
+
+---
+
+## Description
+
+
+## Embed
+
+`header, excerpt, info, add`
+
+```
+<iframe style=“border: 0; width: 100%; height: 650px;” allowfullscreen frameborder=“0” src=“https://raindrop.io/davidblue/[[clipboard]]/embed/theme=auto&hide=header%2C+excerpt%2C+info%2C+add&sort=-created”></iframe>
+```
+
+<iframe style="border: 0; width: 100%; height: 450px;" allowfullscreen frameborder="0" src="https://raindrop.io/davidblue/embed/theme=auto&hide=header%2C+excerpt%2C+info%2C+add&sort=-created"></iframe>
+
+===
+
+<iframe style="border: 0; width: 100%; height: 1000px;" allowfullscreen frameborder="0" src="https://raindrop.io/davidblue/embed/me/theme=auto"></iframe>
+# Repository Template
+Updated `[[date|%m%d%Y-%H%M%S]]`
+
+- [**Repository**](https://github.com/extratone/)
+- [Raw README File](https://raw.githubusercontent.com/extratone/[REPO]/master/README.md)
+- [WTF](https://davidblue.wtf/drafts/[[uuid]].html)
+- [Local](shareddocuments:///private/var/mobile/Library/Mobile%20Documents/com~apple~CloudDocs/Written/[[uuid]].md)
+- Things
+
+---
+
+<|>
+# Rolodex Template
+Updated `[[date|%m%d%Y-%H%M%S]]`
+
+- [**Cardhop**](
+- [WTF](https://davidblue.wtf/drafts/[[uuid]].html)
+- [Local](shareddocuments:///private/var/mobile/Library/Mobile%20Documents/com~apple~CloudDocs/Written/[[uuid]].md)
+- [Email](mailto:)
+
+---
+# RoutineHub/Shortcut Documentation Template <|>
+Updated `[[date|%m%d%Y-%H%M%S]]`
+
+- [GitHub Issue](https://github.com/extratone/i/issues/)
+- [**RoutineHub Page**](https://routinehub.co/shortcut/)
+- [iCloud Share Link]()
+- [Working Copy](working-copy://open?repo=i&path=shortcuts&mode=content)
+- [Source Repo File](https://github.com/extratone/i/blob/main/shortcuts/.shortcut)
+- [WTF](https://davidblue.wtf/drafts/[[uuid]].html)
+- Things
+
+---
+
+## Social
+
+- Telegram
+
+---
+
+## Short description.
+
+
+
+---
+
+## Contact
+
+- [Contact Card](https://davidblue.wtf/db.vcf)
+- [Telegram](https://t.me/extratone)
+- [Email](mailto:davidblue@extratone.com) 
+- [Twitter](https://twitter.com/NeoYokel)
+- [Mastodon](https://mastodon.social/@DavidBlue)
+- [Discord](https://discord.gg/0b9KQUKP858b0iZF)
+- [*Everywhere*](https://raindrop.io/davidblue/social-directory-21059174)...
+# Runestone iTextEditors Submission 
+
+- [GitHub Issue](https://github.com/extratone/i/issues/204)
+- [Repository file](https://github.com/extratone/i/blob/main/misc/iTextEditorsSubmission.md)
+- [Gist](https://gist.github.com/d72d11ffc4cc1b0a0e42bf4d937dd098)
+
+![DraftsExample](https://github.com/extratone/i/raw/main/images/itexteditorsexample.png)
+
+## Social 
+
+@ttscoff hey Brett, I'm working on a submission to iTextEditors for @simonbs' Runestone and well... I'm trying not to suck lol. especially because our terminology has changed so much since file provider storage became an assumption. would it be disruptive if I mostly copy from his press kit? it's pretty succinct. https://github.com/extratone/Runestone/tree/main/PressKit
+
+also, somewhat separately - since I ended up making it for myself, anyway - I thought I'd share this rough template for those of us who'd feel more comfortable preparing our submissions in markdown beforehand. just in case you think it might be useful to others. https://gist.github.com/d72d11ffc4cc1b0a0e42bf4d937dd098
+
+---
+
+### Replies
+
+It's totally cool to re-use press material. The features that are already included in the checkboxes should be cut,  and lines longer than ~60ch should be abbreviated, but I do that on my end as necessary, too.
+-[@ttscoff](https://twitter.com/ttscoff/status/1539009966861959173)
+
+
+https://github.com/extratone/Runestone/issues/
+
+are y'all gon shame me for using the huge icons.
+
+https://github.com/extratone/latte/generate
+
+---
+
+Submit a new editor or a correction to an existing listing. Correction submissions may fill out just the affected fields, your contact info and a clarification note.
+
+This listing is for PLAIN TEXT editors only. If your app cannot edit and export plain text, it will not be listed. All submissions will be reviewed before publishing.
+
+---
+
+- **App name**: Runestone Text Editor
+- **Price**: 0.00
+*Enter the USD price for the app. If the app is free, enter 0.00.*
+- **App Store ID**: 1548193893
+- **Homepage**: https://runestone.app
+*Developer pages are preferred, App Store links may be used if none exists. App Store links will be generated automatically in the listing based on App ID.*
+
+## Platform
+*Check all that apply*
+- [x] iPhone
+- [x] iPad
+
+## Export options
+*Check all that apply*
+
+- [ ] Dropbox
+- [ ] iCloud
+- [ ] WebDAV
+- [ ] iTunes
+- [ ] Simplenote
+- [ ] Proprietary
+- [ ] Plain Text
+- [ ] Copy HTML
+- [ ] Email text
+- [ ] Email HTML
+- [ ] PDF
+- [x] Print
+- [x] Open in...
+- [x] Document Provider
+- [x] iCloud Drive
+*Add additional sync/transport options under "additional features".*
+
+## Standard features
+*Check all that apply*
+
+- [ ] TextExpander
+- [ ] Markdown preview/export
+- [ ] Markdown editing features
+- [x] Appearance options
+- [ ] Extra keyboard row
+- [x] In-document search
+- [x] Search and replace
+- [x] Full-text file search
+- [ ] Word count
+- [ ] Character count
+- [ ] Page count
+- [ ] Reading time
+- [ ] URL scheme
+- [ ] Web browser
+- [x] Syntax highlighting
+- [ ] Desktop companion
+- [x] Split Screen
+*Add unlisted features/clarifications under "additional features".*
+
+---
+
+## Additional features
+*One feature per line, one line per feature, no hyphens or asterisks at the beginning. Please keep them short and concise.*
+
+...
+
+## Contact info (email) and additional comments
+
+...
+# Shortcut Comment Template
+
+Short description
+
+My contact information:
+
+Email: davidblue@extratone.com
+Contact card: bit.ly/whoisdavidblue
+RoutineHub Profile: https://routinehub.co/user/blue
+GitHub: https://github.com/extratone/i
+Telegram: t.me/extratone
+Twitter: twitter.com/NeoYokel
+Reddit: reddit.com/u/asphaltapostle
+Mastodon: mastodon.social/@DavidBlue
+EVERYWHERE: bit.ly/dbrolodex
+# Snippets Template
+Updated `[[date|%m%d%Y-%H%M%S]]`
+
+- [Drafts](drafts://open?uuid=CAABBB06-186C-437D-BC30-65844BDBEC2B)
+- [WTF](https://davidblue.wtf/drafts/CAABBB06-186C-437D-BC30-65844BDBEC2B.html)
+- [Local](shareddocuments:///private/var/mobile/Library/Mobile%20Documents/com~apple~CloudDocs/Written/[[uuid]].md)
+- Simplenote Local
+- Simplenote Publish
+- Things
+
+---
+# The Psalms Template
+Updated `[[date|%m%d%Y-%H%M%S]]`
+
+- [**GitHub Issue**](https://github.com/extratone/bilge/issues/<|>)
+- [Local]([[draft_open_url]])
+- Notes
+- [WTF](https://davidblue.wtf/drafts/[[uuid]].html)
+- Things
+
+---
+
+## The most magical configurables I've ever created for iOS by a long way.
+
+<!--more-->
+
+
+
+<!--comment-->
+# Tilde.Town Blog Template | 02212022-055406
+# Underdocumented Template
+Updated `[[date|%m%d%Y-%H%M%S]]`
+
+- [**GitHub Issue**](https://github.com/extratone/underdocumented/issues/) 
+- [Drafts](drafts://open?uuid=CAABBB06-186C-437D-BC30-65844BDBEC2B)
+- [WTF](https://davidblue.wtf/drafts/CAABBB06-186C-437D-BC30-65844BDBEC2B.html)
+- [Local](shareddocuments:///private/var/mobile/Library/Mobile%20Documents/com~apple~CloudDocs/Written/[[uuid]].md)
+- Simplenote Local
+- Simplenote Publish
+- Things
+
+---
+# Video Template
+Updated `[[date|%m%d%Y-%H%M%S]]`
+
+- [**GitHub Issue**](https://github.com/extratone/bilge/issues/<|>)
+- Local
+- [Notes]([[draft_open_url]])
+- [WTF](https://davidblue.wtf/drafts/[[uuid]].html)
+- [Local](shareddocuments:///private/var/mobile/Library/Mobile%20Documents/com~apple~CloudDocs/Written/[[uuid]].md)
+- Things
+
+---
+
+## Social
+
+---
+
+## Meta
+
+### Description
+
+※⃣   ※⃣   ※⃣   ※⃣   ※⃣   ※⃣   ※⃣   ※⃣   ※⃣   ※⃣
+World Wide Web: https://bilge.world 
+Contact Card: https://davidblue.wtf/db.vcf
+Twitter: https://twitter.com/NeoYokel 
+Mastodon: https://mastodon.social/@DavidBlue 
+Instagram: https://instagram.com/asphaltapostle
+davidblue@extratone.com 
+
+【※】【※】【※】【※】【※】【※】【※】【※】【※】【※】
+
+『※』『※』『※』『※』『※』『※』『※』『※』『※』『※』
+
+≋※≋※≋※≋※≋※≋※≋※≋※≋※≋※≋
+
+░※░※░※░※░※░※░※░※░※░※░
+# WTF Template <|>
+Updated `[[date|%m%d%Y-%H%M%S]]`
+
+- [[[display_title]]]([[permalink]])
+- [WTF](https://davidblue.wtf/drafts/[[uuid]].html)
+- [Local](shareddocuments:///private/var/mobile/Library/Mobile%20Documents/com~apple~CloudDocs/Written/[[uuid]].md)
+- Things
+
+---
