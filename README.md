@@ -57,6 +57,7 @@ I have long pondered creating an ***unofficial*** chat-format space for the Draf
 
 ## Written Work on Drafts
 
+- [On Drafts' Mail Integration](https://bilge.world/drafts-mail-integration) #88
 - [How I Maintain a Vocabulary List in Drafts with Terminology](https://bilge.world/drafts-terminology-vocabulary)
 - [**Using Drafts with NeoCities**](https://bilge.world/using-drafts-with-neocities)
 - [Run Siri Shortcuts with Hyperlinks](https://bilge.world/run-siri-shortcuts-with-hyperlinks)
