@@ -1,5 +1,5 @@
 # David Blue‘s Drafts Configs
-Updated `09092022-060927`
+Updated `09172022-014611`
 
 - [**Drafts README Update**](shortcuts://run-shortcut?name=Drafts%20README%20Update)
 - [Things](things:///show?id=8NHv5LrjXCb87VK7zqNTrk)
@@ -51,7 +51,7 @@ Please feel free to use/distribute anything in here - including original content
 
 ## Telegram Group (New!)
 
-![Drafts Cult Telegram Group QR Code](https://github.com/extratone/drafts/raw/main/telegram/qr.jpg)
+[![Drafts Cult Telegram](https://user-images.githubusercontent.com/43663476/190844274-2ade2f69-ecef-47b6-b3a4-a8e2e5fc7376.png)](https://t.me/s/draftsapp)
 
 I have long pondered creating an ***unofficial*** chat-format space for the Drafts community and finally decided to just have a go! [**@draftsapp**](https://t.me/s/draftsapp) is a public [Telegram Group](https://telegram.org/tour/groups) for anyone and everyone to discuss Drafts. See [its corresponding issue in this repo](https://github.com/extratone/drafts/issues/33) for more details.
 
@@ -78,7 +78,8 @@ I have long pondered creating an ***unofficial*** chat-format space for the Draf
 
 ## David Blue’s Drafts Action Directory Contributions
 
-- [Discord Spoiler Tags (||)](https://directory.getdrafts.com/a/2CA) #85
+- [Draft inRoute](https://directory.getdrafts.com/a/2DH) #92
+- [Discord Spoiler Tags](https://directory.getdrafts.com/a/2CA) #85
 - [Esse Selection](https://directory.getdrafts.com/a/2Bn) #82
 - [Twitter Publish Tool](https://directory.getdrafts.com/a/2Ah) #66
 - [Stream with VLC](https://directory.getdrafts.com/a/1zn) #55
