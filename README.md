@@ -1,7 +1,9 @@
 # David Blue‘s Drafts Configs
-Updated `09172022-014611`
+Updated `09202022-132144`
 
 - [**Drafts README Update**](shortcuts://run-shortcut?name=Drafts%20README%20Update)
+- [WTF](https://davidblue.wtf/drafts/38A942A2-33C4-4630-9CDE-B005989F4E3A.html)
+- [WTF Shortlink](https://davidblue.wtf/dd) - `https://davidblue.wtf/dd`
 - [Things](things:///show?id=8NHv5LrjXCb87VK7zqNTrk)
 
 ![IconViolet](https://user-images.githubusercontent.com/43663476/166443931-d3c50634-1061-45b4-b4dd-f1f95f8dc959.png)
@@ -200,16 +202,13 @@ A celebration of The Winders™ Aesthetic. Based on [one of my favorite Telegram
 
 ### Greyhound
 
-![Greyhound on iOS](https://user-images.githubusercontent.com/43663476/152304057-7d37b8bd-d6c9-4995-8bb6-081f9e03b5e7.png)
-![Greyhound macOS](https://user-images.githubusercontent.com/43663476/152304149-24fdb181-230f-4895-8d16-067fb088b476.png)
+![Greyhound 2.0 Grid - iPad Pro](https://user-images.githubusercontent.com/43663476/191327759-dc32891c-3fb0-4f52-a2e6-c0e8350f0c5d.png)
 
-**Inspired by a Telegram Theme.**
-Version 1.0
-`02032022-020741`
-- [Greyhound Drafts Theme · Issue #19 · extratone/drafts](https://github.com/extratone/drafts/issues/19)
-- [**Themes Directory Link**](https://actions.getdrafts.com/t/1uk)
+![Greyhound 2.0 Grid - iPhone 12 Pro Max](https://user-images.githubusercontent.com/43663476/191330558-a17b7778-9fcc-4ebf-b7e1-78465bf39965.png)
 
-`https://actions.getdrafts.com/t/1uk`
+A dark theme inspired by [Greyhound for Telegram](https://t.me/addtheme/greyhound). More details can be found at [its corresponding GitHub Issue](https://github.com/extratone/drafts/issues/19).
+
+[**Drafts Directory**](https://directory.getdrafts.com/t/1uk)
 
 ### Windows Iowa
 
@@ -538,4 +537,4 @@ Updated `09092022-060844`
 - [JSON](https://github.com/extratone/drafts/blob/main/drafttemplates/drafttemplates.json)
 - [Combined Text](https://github.com/extratone/drafts/blob/main/drafttemplates/drafttemplates.txt)
 
-<script src="https://gist.github.com/extratone/1071d39ab60401cb1fbbff20e14e1d2a.js"></script>
+	<script src="https://gist.github.com/extratone/1071d39ab60401cb1fbbff20e14e1d2a.js"></script>
