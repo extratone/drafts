@@ -1,6 +1,6 @@
 {
   "name": "Greyhound",
-  "description": "Work in progress adaptation of the Greyhound for iOS Telegram theme.\n\n`01092022-0655`",
+  "description": "A dark theme inspired by a Telegram theme.",
   "author": "David Blue",
   "isDark": true,
   "scopes": {
@@ -560,9 +560,9 @@
   },
   "colors": {
     "editor": {
-      "foreground": "#fdefcd",
-      "background": "#5D5658",
-      "heading": "#fdefcd",
+      "foreground": "#fffefe",
+      "background": "#2c2c2c",
+      "heading": "#d2386c",
       "headingMarkup": "#333333",
       "strikethrough": "#4f4f4f",
       "comment": "#4867f8",
@@ -586,11 +586,11 @@
       "accent06": "#efe1ce"
     },
     "interface": {
-      "foreground": "#ECEDEE",
-      "textForeground": "#EFE1C2",
+      "foreground": "#dbdcde",
+      "textForeground": "#dbdcde",
       "background": "#222021",
       "backgroundCollection": "#2c2c2c",
-      "tint": "#F39200",
+      "tint": "#d2386c",
       "tintAlternate": "#da2573",
       "textBackground": "#222222",
       "textCaret": "#f88148",
@@ -626,7 +626,11 @@
       "tintGreen": "#1bd51b",
       "tintIndigo": "#00cad3",
       "tintBlue": "#4867f8",
-      "tintViolet": "#6c00fa"
+      "tintViolet": "#6c00fa",
+      "widgetBackground": "#222021",
+      "widgetBackgroundAlternate": "#2c2c2c",
+      "widgetForeground": "#dbdcde",
+      "widgetForegroundAlternate": "#da2573"
     }
   }
 }
