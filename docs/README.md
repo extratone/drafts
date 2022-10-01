@@ -1,5 +1,5 @@
 # David Blue‘s Drafts Configs
-Updated `09202022-132144`
+Updated `10012022-021900`
 
 - [**Drafts README Update**](shortcuts://run-shortcut?name=Drafts%20README%20Update)
 - [WTF](https://davidblue.wtf/drafts/38A942A2-33C4-4630-9CDE-B005989F4E3A.html)
@@ -80,6 +80,7 @@ I have long pondered creating an ***unofficial*** chat-format space for the Draf
 
 ## David Blue’s Drafts Action Directory Contributions
 
+- [Things Update](https://directory.getdrafts.com/a/2Ch) #96
 - [Draft inRoute](https://directory.getdrafts.com/a/2DH) #92
 - [Discord Spoiler Tags](https://directory.getdrafts.com/a/2CA) #85
 - [Esse Selection](https://directory.getdrafts.com/a/2Bn) #82
