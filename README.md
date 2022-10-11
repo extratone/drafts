@@ -80,17 +80,18 @@ I have long pondered creating an ***unofficial*** chat-format space for the Draf
 
 ## David Blue’s Drafts Action Directory Contributions
 
-- [Things Update](https://directory.getdrafts.com/a/2Ch) #96
-- [Draft inRoute](https://directory.getdrafts.com/a/2DH) #92
-- [Discord Spoiler Tags](https://directory.getdrafts.com/a/2CA) #85
-- [Esse Selection](https://directory.getdrafts.com/a/2Bn) #82
-- [Twitter Publish Tool](https://directory.getdrafts.com/a/2Ah) #66
-- [Stream with VLC](https://directory.getdrafts.com/a/1zn) #55
-- [Search RoutineHub](https://directory.getdrafts.com/a/1zm) #54
-- [Telegram Bot Post](https://directory.getdrafts.com/a/1zl) #53
-- [Tumblr Text Post](https://directory.getdrafts.com/a/1zk) #52
-- [Call](https://directory.getdrafts.com/a/1zi) #51
-- [Blink Selection](https://directory.getdrafts.com/a/1z5) #50
+- [HTML Comment](https://directory.getdrafts.com/a/2Dj) #[99](https://github.com/extratone/drafts/issues/99) 
+- [Things Update](https://directory.getdrafts.com/a/2Ch) #[96](https://github.com/extratone/drafts/issues/96)
+- [Draft inRoute](https://directory.getdrafts.com/a/2DH) #[92](https://github.com/extratone/drafts/issues/92)
+- [Discord Spoiler Tags](https://directory.getdrafts.com/a/2CA) #[85](https://github.com/extratone/drafts/issues/85)
+- [Esse Selection](https://directory.getdrafts.com/a/2Bn) #[82](https://github.com/extratone/drafts/issues/82)
+- [Twitter Publish Tool](https://directory.getdrafts.com/a/2Ah) #[66](https://github.com/extratone/drafts/issues/66)
+- [Stream with VLC](https://directory.getdrafts.com/a/1zn) #[55](https://github.com/extratone/drafts/issues/55)
+- [Search RoutineHub](https://directory.getdrafts.com/a/1zm) #[54](https://github.com/extratone/drafts/issues/54)
+- [Telegram Bot Post](https://directory.getdrafts.com/a/1zl) #[53](https://github.com/extratone/drafts/issues/53)
+- [Tumblr Text Post](https://directory.getdrafts.com/a/1zk) #[52](https://github.com/extratone/drafts/issues/52)
+- [Call](https://directory.getdrafts.com/a/1zi) #[51](https://github.com/extratone/drafts/issues/51)
+- [Blink Selection](https://directory.getdrafts.com/a/1z5) #[50](https://github.com/extratone/drafts/issues/50)
 - [App Store Search](https://directory.getdrafts.com/a/1z1)
 - [Post to Writeas Blog](https://directory.getdrafts.com/a/1zW)
 - [Post to Writeas](https://directory.getdrafts.com/a/1zO)
@@ -349,177 +350,205 @@ https://davidblue.wtf/drafts/38A942A2-33C4-4630-9CDE-B005989F4E3A.html
 <script src="https://gist.github.com/extratone/2e54243a2123ccfa6a37c6e8cc1057e2.js"></script>
 
 ## Drafts Keyboard Shortcuts
-Updated `09092022-060844`
+Updated `10112022-132400`
 
 | **Action**                                          | Command |
-|-----------------------------------------------------|:-------:|
-| **Go To Bookmark**                                  | ⇧⌃      |
-| **Discord Spoiler Tags**                            | ⌥H      |
-| **Post to Mastodon**                                | ⇧⌃⌥M    |
-| **Drakesville**                                     | ⌃M      |
-| **SMS Drakesville**                                 | ⇧⌥⌘M    |
-| **~ Town Copy HTML**                                | ⇧⌃⌥C    |
-| **Insert DavodTime™  timestamp.**                   | ⇧⌃⌥T    |
-| **TAD-Deduplicate All (Lines)**                     | ⇧⌘-     |
-| **Export Psalms Notes**                             | ⇧⌃⌥N    |
-| **Export Psalms Drafts**                            | ⇧⌃⌥D    |
-| **Keyboard Shortcuts Export**                       | ⌃⌥⌘K    |
-| **Tot5 Draft Link as MD link (Shortcut)**           | ⇧⌃E     |
-| **Simplenote**                                      | ⇧⌃W     |
-| **Save to Written folder as .md**                   | ⌥⌘S     |
-| **Save to Clipboard folder as MMddYYYY-HHmmss.txt** | ⌃⌥⌘S    |
-| **To Repo at Path**                                 | ⇧⌥⌘B    |
-| **Current Draft Info**                              | ⌃I      |
-| **Preview MMD**                                     | ⌘D      |
-| **TAD-Toggle Last Two Modified Drafts**             | ⇧⇥      |
-| **Print Text**                                      | ⌃⌥P     |
-| **Lookup in Terminology**                           | ⇧⌃D     |
-| **Blink Selection**                                 | ⌃B      |
-| **Draftstion**                                      | ⌃⌥N     |
-| **Copy**                                            | ⌃C      |
-| **Google Search**                                   | ⌥G      |
-| **Club MacStories Search**                          | ⇧⌃M     |
-| **Reminder**                                        | ⇧⌃R     |
-| **New Draft with Template**                         | ⇧⌘N     |
-| **Clipboard…**                                      | ⌥C      |
-| **Tasks**                                           | ⌃T      |
-| **Indent**                                          | ⌘]      |
-| **Outdent**                                         | ⌘[      |
-| **Toggle Theme**                                    | ⇧⌃L     |
-| **Copy Tags**                                       | ⌃⌥T     |
-| **Copy Draft Open Link**                            | ⇧⌘E     |
-| **Open URL**                                        | ⇧⌃O     |
-| **Open URL (Chrome Incognito)**                     | ⌃⌥O     |
-| **Open URL (Microsoft Edge)**                       | ⇧⌥⌘O    |
-| **Open URL (Firefox)**                              | ⇧⌃⌥O    |
-| **App Store Search**                                | ⇧⌥⌘     |
-| **Trash**                                           | ⌃-      |
-| **Synonym**                                         | ⌃⌥S     |
-| **Toggle Link Mode**                                | ⌘U      |
-| **Share Selection**                                 | ⌥U      |
-| **Copy Draft Link**                                 | ⇧⌥⌘C    |
-| **Copy Draft Link as MD link**                      | ⇧⌃C     |
-| **Action Search**                                   | ⌘/      |
-| **Copy as Rich Text**                               | ⌃⌥C     |
-| **Save Version**                                    | ⌥S      |
-| **Move Line Up**                                    | ⌥↑      |
-| **Move Line Down**                                  | ⌥↓      |
-| **Duplicate Line**                                  | ⇧⌘D     |
-| **Markdown Header (#)**                             | ⌃⌘H     |
-| **Markdown Bold (**)**                              | ⌘B      |
-| **Markdown Quotation (>)**                          | ⌃Q      |
-| **Code Block (```)**                                | ⌃`      |
-| **Markdown Emphasis (*)**                           | ⌘I      |
-| **Markdown List**                                   | ⌃L      |
-| **Markdown Link**                                   | ⌘K      |
-| **Share as Markdown File**                          | ⇧⌃⌥S    |
-| **Strikethrough**                                   | ⌃S      |
-| **Toggle numbered lists**                           | ⌃⌥L     |
-| **Mark Done**                                       | ⌘D      |
-| **Share as File: Markdown**                         | ⇧⌃S     |
-| **Markdown Footnote (Variation)**                   | ⌃F      |
-| **Post to Writeas Blog**                            | ⇧⌥⌘↑    |
-| **Version Cycle**                                   | ⇧⌘S     |
-| **Create GitHub Issue**                             | ⌃⌥I     |
-| **Append to Selected Lines**                        | ⇧⌃⌥→    |
-| **Refresh TextExpander Snippets**                   | ⇧⌘R     |
-| **TextExpander Snippet**                            | ⇧⌥⌘T    |
-| **Search on Letterboxd**                            | ⇧⌃.     |
-| **Add to Letterboxd Watchlist**                     | ⇧⌥⌘L    |
-| **GitHub Search**                                   | ⌃⌥/     |
-| **Capture with Bear**                               | ⇧⌃⌥B    |
-| **Copy UUID**                                       | ⌃⌥⌘C    |
-| **Encode...**                                       | ⇧⌥⌘E    |
-| **Store Page URLs**                                 | ⇧⌃U     |
-| **Snap.as Upload**                                  | ⇧⌥⌘U    |
-| **Run Shortcut**                                    | ⇧⌃↓     |
-| **Random Draft**                                    | ⇧⌥⌘]    |
-| **Search Web Archive**                              | ⇧⌥⌘A    |
-| **Raindrop Selection**                              | ⌃⌥⌘R    |
-| **Search RoutineHub**                               | ⌃⌥⌘     |
-| **Search Drafts Directory**                         | ⇧⌃⌥/    |
-| **Stream with VLC**                                 | ⇧⌃⌥V    |
-| **Cardhop Selection**                               | ⇧⌃⌥H    |
-| **Email (Custom)**                                  | ⌃⌘M     |
-| **Anecdote**                                        | ⇧⌃⌥A    |
-| **Download Selected URL**                           | ⌃⌥⌘D    |
-| **Query Web Archive**                               | ⌥⌘/     |
-| **Quick Open**                                      | ⌃↓      |
-| **Draft to Apple Note**                             | ⌥A      |
-| **Drafts Things**                                   | ⌥⌘T     |
-| **Drafts Things Update**                            | ⌃⌥⌘T    |
-| **Refresh Theme or Syntax**                         | ⌥⌘R     |
-| **Post to WordPress**                               | ⇧⌥⌘W    |
-| **Post to Medium**                                  | ⌃⌥M     |
-| **Event in Fantastical**                            | ⌃⌥⌘F    |
-| **Notion-Create Page**                              | ⇧⌥⌘;    |
-| **versions**                                        | ⇧⌘V     |
-| **New Linked Draft**                                | ⌃N      |
-| **DraftsImageSmall**                                | ⇧⌃⌥I    |
-| **DraftsImage**                                     | ⇧⌃I     |
-| **Text Modifier…**                                  | ⇧⌃t     |
-| **DraftsHex**                                       | ⇧⌃H     |
-| **DraftsHex (Decode)**                              | ⇧⌥⌘H    |
-| **Zalgos**                                          | ⇧⌃Z     |
-| **Replace URLs by MD links**                        | ⇧⌘U     |
-| **Case toggle**                                     | ⇧⌃+     |
-| **Search iCloud Keychain**                          | ⇧⌥⌘K    |
-| **Raindrop Text**                                   | ⇧⌃⌥R    |
-| **Clipboard Folder as txt**                         | ⇧⌃⌥⌘C   |
-| **Run Shell Command**                               | ⇧⌃⌥0    |
-| **Send to Obsidian Folder**                         | ⇧⌥⌘I    |
-| **Tumblr Text Post**                                | ⌃⌥⌘T    |
-| **Gladys URL Item from Selection**                  | ⌃⌥⌘G    |
-| **Create Gist**                                     | ⇧⌃⌥G    |
-| **Store Snippet**                                   | ⇧⌥      |
-| **Tweet Selection**                                 | ⇧⌃⌥P    |
+|-----------------------------------------------------|---------|
 | **@NeoYokel Twitter Search**                        | ⇧⌃Y     |
-| **Tweetbot Selection**                              | ⌥P      |
-| **Tweetbot Selection (Private)**                    | ⌃⌥⌘P    |
-| **Send to Saved Messages (Telegram) (copy)**        | ⌃G      |
-| **Rose Note in Telegram**                           | ⌃R      |
-| **Telegram Bot Post**                               | ⇧⌃G     |
-| **Draft to /drafts as UUID.html**                   | ⇧⌃⌥↑    |
-| **Open pushed /drafts file by UUID.**               | ⇧⌃⌥↓    |
-| **NeoCities HTML Preview**                          | ⌥⌘P     |
-| **Open NeoCities Workspace**                        | ⇧⌃N     |
+| **~ Town Copy HTML**                                | ⇧⌃⌥C    |
+| **✪ #-**                                            | ⇧⌘      |
+| **Action Search**                                   | ⌘/      |
+| **Add to Letterboxd Watchlist**                     | ⇧⌥⌘L    |
+| **Add to Letterboxd Watchlist**                     | ⇧⌥⌘L    |
+| **Alexis**                                          | ⌥⌘A     |
+| **Anecdote**                                        | ⇧⌃⌥A    |
+| **App Store Search**                                | ⇧⌃/     |
+| **App Store Search**                                | ⇧⌥⌘     |
+| **Append to Selected Lines**                        | ⇧⌃⌥→    |
+| **Better Tab**                                      | ⇥       |
+| **Blink Selection**                                 | ⌃B      |
+| **Capture with Bear**                               | ⇧⌃⌥B    |
+| **Capture with Bear**                               | ⇧⌃⌥B    |
+| **Cardhop Selection**                               | ⇧⌃⌥H    |
+| **Case toggle**                                     | ⇧⌃+     |
+| **Clear Clipboard**                                 | ⌥⇥      |
+| **Clipboard…**                                      | ⌥C      |
+| **Club MacStories Search**                          | ⇧⌃M     |
+| **Club MacStories Search**                          | ⌥M      |
+| **Code Block (```)**                                | ⌃`      |
+| **Convert YAML to JSON**                            | ⌘Y      |
+| **Copy as Rich Text**                               | ⌃⌥C     |
+| **Copy as Rich Text**                               | ⌃⌥C     |
+| **Copy Draft Link as MD link**                      | ⇧⌃C     |
+| **Copy Draft Link**                                 | ⇧⌥⌘C    |
+| **Copy Draft Open Link**                            | ⇧⌘E     |
+| **Copy Tags**                                       | ⌃⌥T     |
+| **Copy UUID**                                       | ⌃⌥⌘C    |
 | **Copy WTF Markdown Link to Clipboard**             | ⇧⌃⌥F    |
 | **Copy WTF URL to Clipboard**                       | ⇧⌥⌘F    |
-| **Create Redirect**                                 | ⇧⌥⌘R    |
-| **TAD-Sort All - Alphabetic**                       | ⇧⌃A     |
-| **TAD-Duplicate Draft and Load**                    | ⌃D      |
-| **TAD-Load New Draft from Selection**               | ⌥⌘N     |
-| **TAD-Preview Full Log**                            | ⇧⌃⌥L    |
-| **TAD-Display Base64 Decode Selection**             | ⌃⌥6     |
-| **New Draft with Safari Tabs**                      | ⇧⌥⌘+    |
-| **Edit in External Editor**                         | ⌃⌘E     |
-| **Written Workspace**                               | ⌘2      |
-| **Documentation Workspace**                         | ⌘3      |
+| **Copy**                                            | ⌃C      |
 | **Correspondence Workspace**                        | ⌘4      |
-| **Library Workspace**                               | ⌘5      |
-| **Vocabulary Workspace**                            | ⇧⌃V     |
-| **Hole Workspace**                                  | ⌘9      |
-| **Hole Workspace 2**                                | ⌥W      |
-| **Dashboard**                                       | ⌥0      |
+| **Create Gist**                                     | ⇧⌃⌥G    |
+| **Create Redirect**                                 | ⇧⌥⌘R    |
+| **Current Draft Info**                              | ⌃I      |
 | **Current Work Draft**                              | ⌥1      |
 | **Current Work Notes**                              | ⌥2      |
-| **Three**                                           | ⌥3      |
-| **Four**                                            | ⌥4      |
-| **Five**                                            | ⌥5      |
-| **Six**                                             | ⌥6      |
-| **Seven**                                           | ⇧⌥1     |
+| **Dashboard**                                       | ⌥0      |
+| **Discord Spoiler Tags (||)**                       | ⌥H      |
+| **Documentation Workspace**                         | ⌘3      |
+| **Download Selected URL**                           | ⌃⌥⌘D    |
+| **Draft to /drafts as UUID.html**                   | ⇧⌃⌥↑    |
+| **Draft to Apple Note**                             | ⌥A      |
+| **Drafts Things**                                   | ⌥⌘T     |
+| **DraftsHex (Decode)**                              | ⇧⌥⌘H    |
+| **DraftsHex**                                       | ⇧⌃H     |
+| **DraftsImage**                                     | ⇧⌃I     |
+| **DraftsImageSmall**                                | ⇧⌃⌥I    |
+| **Drakesville**                                     | ⌃M      |
+| **Duplicate Line**                                  | ⇧⌘D     |
+| **Edit in External Editor**                         | ⌃⌘E     |
 | **Eight**                                           | ⇧⌥2     |
-| **Nine**                                            | ⇧⌥3     |
-| **Ten**                                             | ⇧⌥4     |
+| **Eileen**                                          | ⌥⌘E     |
 | **Eleven**                                          | ⇧⌥5     |
-| **Twelve**                                          | ⇧⌥6     |
-| **Thirteen**                                        | ⇧⌥7     |
+| **Email (Custom)**                                  | ⌃⌘M     |
+| **Encode...**                                       | ⇧⌥⌘E    |
+| **Event in Fantastical**                            | ⌃⌥⌘F    |
+| **Export Psalms Drafts**                            | ⇧⌃⌥D    |
+| **Export Psalms Notes**                             | ⇧⌃⌥N    |
+| **Fetch URL Content to New Draft**                  | ⌃⌥↓     |
+| **Fifteen**                                         | ⇧⌥9     |
+| **Five**                                            | ⌥5      |
+| **Four**                                            | ⌥4      |
 | **Fourteen**                                        | ⇧⌥8     |
-| **Clear Clipboard**                                 | ⌥⇥      |
-| **Copy as Rich Text**                               | ⌃⌥C     |
+| **GitHub Search**                                   | ⌃⌥/     |
+| **Gladys URL Item from Selection**                  | ⌃⌥⌘G    |
+| **Go To Bookmark**                                  | ⇧⌃      |
+| **Google Search**                                   | ⌥G      |
+| **Hole Workspace**                                  | ⌘9      |
+| **HTML Comment**                                    | ⇧⌥C     |
+| **Indent**                                          | ⌘]      |
+| **Indent**                                          | ⌘]      |
+| **index.html**                                      | ⇧⌥I     |
+| **Inline Code(`)**                                 | ⇧⌃`     |
+| **Insert DavodTime™  timestamp.**                   | ⇧⌃⌥T    |
+| **Insert Highlight**                                | ⇧⌥H     |
+| **Keyboard Shortcuts Export**                       | ⌃⌥⌘K    |
+| **Leonard Workspace**                               | ⌘5      |
+| **Lookup in Terminology**                           | ⇧⌃D     |
+| **Mark Done**                                       | ⌘D      |
+| **Mark Done**                                       | ⌘D      |
+| **Markdown Bold (**)**                              | ⌘B      |
+| **Markdown Emphasis (*)**                           | ⌘I      |
+| **Markdown Emphasis (*)**                           | ⌘I      |
+| **Markdown Footnote (Variation)**                   | ⌃F      |
+| **Markdown Footnote (Variation)**                   | ⌃F      |
+| **Markdown Header (#)**                             | ⌃⌘H     |
+| **Markdown Link**                                   | ⌘K      |
+| **Markdown List**                                   | ⌃L      |
+| **Markdown Quotation (>)**                          | ⌃Q      |
+| **Move Line Down**                                  | ⌥↓      |
+| **Move Line Up**                                    | ⌥↑      |
+| **NeoCities HTML Preview**                          | ⌥⌘P     |
+| **New Draft with Safari Tabs**                      | ⇧⌥⌘+    |
+| **New Draft with Template**                         | ⇧⌘N     |
+| **New Linked Draft**                                | ⌃N      |
+| **Nine**                                            | ⇧⌥3     |
+| **Notion-Create Page**                              | ⇧⌥⌘;    |
+| **Open NeoCities Workspace**                        | ⇧⌃N     |
+| **Open pushed /drafts file by UUID.**               | ⇧⌃⌥↓    |
+| **Open URL (Chrome Incognito)**                     | ⌃⌥O     |
+| **Open URL (Firefox)**                              | ⇧⌃⌥O    |
+| **Open URL (Firefox)**                              | ⇧⌃⌥O    |
+| **Open URL (Microsoft Edge)**                       | ⇧⌥⌘O    |
+| **Open URL (Microsoft Edge)**                       | ⇧⌥⌘O    |
+| **Open URL**                                        | ⇧⌃O     |
+| **Outdent**                                         | ⌘[      |
+| **Outdent**                                         | ⌘[      |
+| **Post to Mastodon**                                | ⇧⌃⌥M    |
+| **Post to Medium**                                  | ⌃⌥M     |
+| **Post to Micro.blog (with Title)**                 | ⇧⌥⌘M    |
+| **Post to WordPress**                               | ⇧⌥⌘W    |
+| **Post to Writeas Blog**                            | ⇧⌥⌘↑    |
+| **Post to Writeas Blog**                            | ⇧⌥⌘↑    |
+| **Preview MMD**                                     | ⌘D      |
+| **Print Text**                                      | ⌃⌥P     |
+| **Query Web Archive**                               | ⌥⌘/     |
+| **Quick Open**                                      | ⌃↓      |
+| **Raindrop Selection**                              | ⌃⌥⌘R    |
+| **Raindrop Text**                                   | ⇧⌃⌥R    |
+| **Random Draft**                                    | ⇧⌥⌘]    |
+| **Refresh TextExpander Snippets**                   | ⇧⌘R     |
+| **Refresh Theme or Syntax**                         | ⌥⌘R     |
+| **Reminder**                                        | ⇧⌃R     |
+| **Replace URLs by MD links**                        | ⇧⌘U     |
+| **Rose Note in Telegram**                           | ⌃R      |
+| **Run Shortcut**                                    | ⇧⌃↓     |
+| **Run Shortcut**                                    | ⇧⌃=     |
+| **Save to Clipboard folder as MMddYYYY-HHmmss.txt** | ⌃⌥⌘S    |
+| **Save to Written folder as .md**                   | ⌥⌘S     |
+| **Save Version**                                    | ⌥S      |
+| **Search Drafts Directory**                         | ⇧⌃⌥/    |
+| **Search Drafts Directory**                         | ⌃⌥      |
+| **Search iCloud Keychain**                          | ⇧⌥⌘K    |
+| **Search on Letterboxd**                            | ⇧⌃.     |
+| **Search on Letterboxd**                            | ⇧⌃.     |
+| **Search RoutineHub**                               | ⌃⌥⌘     |
+| **Search RoutineHub**                               | ⌃⌥⌘     |
+| **Search Web Archive**                              | ⇧⌥⌘A    |
+| **Search Web Archive**                              | ⇧⌥⌘A    |
+| **Send to Obsidian Folder**                         | ⇧⌥⌘I    |
+| **Send to Saved Messages (Telegram) (copy)**        | ⌃G      |
+| **Seven**                                           | ⇧⌥1     |
 | **Share as File: Markdown**                         | ⇧⌃S     |
-| **Better Tab**                                      | ⇥       |
-| **Better Shift Tab**                                | ⇧⇥#     |
+| **Share as File: Markdown**                         | ⇧⌃S     |
+| **Share as Markdown File**                          | ⇧⌃⌥S    |
+| **Share Selection**                                 | ⌥U      |
+| **Simplenote**                                      | ⇧⌃W     |
+| **Six**                                             | ⌥6      |
+| **Snap.as Upload**                                  | ⇧⌥⌘U    |
+| **Store Page URLs**                                 | ⇧⌃U     |
+| **Store Snippet**                                   | ⇧⌥      |
+| **Stream with VLC**                                 | ⇧⌃⌥V    |
+| **Stream with VLC**                                 | ⇧⌃⌥V    |
+| **Stream with VLC**                                 | ⇧⌃⌥V    |
+| **Strikethrough**                                   | ⌃S      |
+| **Synonym**                                         | ⌃⌥S     |
+| **TAD-Deduplicate All (Lines)**                     | ⇧⌘-     |
+| **TAD-Display Base64 Decode Selection**             | ⌃⌥6     |
+| **TAD-Duplicate Draft and Load**                    | ⌃D      |
+| **TAD-Load New Draft from Selection**               | ⌃⌥N     |
+| **TAD-Preview Full Log**                            | ⇧⌃⌥L    |
+| **TAD-Sort All - Alphabetic**                       | ⇧⌃A     |
+| **TAD-Toggle Last Two Modified Drafts**             | ⇧⇥      |
+| **Tasks**                                           | ⌃T      |
+| **Telegram Bot Post**                               | ⇧⌃G     |
+| **Telegram Bot Post**                               | ⇧⌃G     |
+| **Templates Workspace**                             | ⌘8      |
+| **Ten**                                             | ⇧⌥4     |
+| **Text Modifier…**                                  | ⇧⌃t     |
+| **TextExpander Snippet**                            | ⇧⌥⌘T    |
+| **Things Update**                                   | ⌃⌥⌘T    |
+| **Thirteen**                                        | ⇧⌥7     |
+| **Three**                                           | ⌥3      |
+| **To Repo at Path**                                 | ⇧⌥⌘B    |
+| **Toggle Link Mode**                                | ⌘U      |
+| **Toggle numbered lists**                           | ⌃⌥L     |
+| **Toggle Tasks**                                    | ⌥⌘R     |
+| **Toggle Theme**                                    | ⇧⌃L     |
+| **Tot5 Draft Link as MD link (Shortcut)**           | ⇧⌃E     |
+| **Trash**                                           | ⌃-      |
+| **Tweet Selection**                                 | ⇧⌃⌥P    |
+| **Tweetbot Selection (Private)**                    | ⌃⌥⌘P    |
+| **Tweetbot Selection**                              | ⌥P      |
+| **Twelve**                                          | ⇧⌥6     |
+| **Twitter Publish Tool**                            | ⇧⌃B     |
+| **Twitter Publish Tool**                            | ⇧⌃B     |
+| **Ulysses Sheet**                                   | ⇧⌥⌘S    |
+| **Version Cycle**                                   | ⇧⌘S     |
+| **versions**                                        | ⇧⌘V     |
+| **Vocabulary Workspace**                            | ⇧⌃V     |
+| **Written Workspace**                               | ⌘2      |
+| **Zalgos**                                          | ⇧⌃Z     |
 
 ## External 
 
