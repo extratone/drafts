@@ -1,5 +1,5 @@
 # David Blue‘s Drafts Configs
-Updated `10012022-021900`
+Updated `10132022-110303`
 
 - [**Drafts README Update**](shortcuts://run-shortcut?name=Drafts%20README%20Update)
 - [WTF](https://davidblue.wtf/drafts/38A942A2-33C4-4630-9CDE-B005989F4E3A.html)
@@ -80,6 +80,7 @@ I have long pondered creating an ***unofficial*** chat-format space for the Draf
 
 ## David Blue’s Drafts Action Directory Contributions
 
+- [Gladys URL Item from Selection](https://directory.getdrafts.com/a/2Dw) #[102](https://github.com/extratone/drafts/issues/102) 
 - [HTML Comment](https://directory.getdrafts.com/a/2Dj) #[99](https://github.com/extratone/drafts/issues/99) 
 - [Things Update](https://directory.getdrafts.com/a/2Ch) #[96](https://github.com/extratone/drafts/issues/96)
 - [Draft inRoute](https://directory.getdrafts.com/a/2DH) #[92](https://github.com/extratone/drafts/issues/92)
@@ -286,7 +287,7 @@ https://davidblue.wtf/drafts/38A942A2-33C4-4630-9CDE-B005989F4E3A.html
 
 - [**latlong**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/latlong.txt)
 ```
-`[[latitude]]--92.387976-[[date|%m%d%Y-%H%M%S]]`
+`38.933966--92.387976-[[date|%m%d%Y-%H%M%S]]`
 ```
 
 - [**img**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/img.txt)
@@ -325,13 +326,13 @@ https://davidblue.wtf/drafts/38A942A2-33C4-4630-9CDE-B005989F4E3A.html
 
 - [**gist**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/gist.txt)
 ```
-<script src="[[clipboard]].js"></script>
+<script src=".js"></script>
 ```
 
 - [**autocomplete**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/autocomplete.txt)
 - [**title**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/title.txt)
 ```
-[[clipboard]]
+
 ```
 
 - [**issue**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/issue.txt)
@@ -341,7 +342,7 @@ https://davidblue.wtf/drafts/38A942A2-33C4-4630-9CDE-B005989F4E3A.html
 
 - [**embed**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/embed.txt)
 ```
-<!-- [[u:[[uuid]]]] : EMBED -->
+<!-- [[u:38A942A2-33C4-4630-9CDE-B005989F4E3A]] : EMBED -->
 ```
 
 
