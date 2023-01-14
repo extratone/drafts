@@ -1,5 +1,5 @@
 # David Blue‘s Drafts Configs
-Updated `01142023-000546`
+Updated `01142023-000651`
 
 - [**Drafts README Update**](shortcuts://run-shortcut?name=Drafts%20README%20Update)
 - [WTF](https://davidblue.wtf/drafts/38A942A2-33C4-4630-9CDE-B005989F4E3A.html)
@@ -80,8 +80,8 @@ I have long pondered creating an ***unofficial*** chat-format space for the Draf
 
 ## David Blue’s Drafts Action Directory Contributions
 
-- [Ivory Selection](https://directory.getdrafts.com/a/2Fn)
-- [Spring Selection](https://directory.getdrafts.com/a/2ES) #[103](https://github.com/extratone/drafts/issues/102) 
+- [Ivory Selection](https://directory.getdrafts.com/a/2Fn) #[107](https://github.com/extratone/drafts/issues/107)
+- [Spring Selection](https://directory.getdrafts.com/a/2ES) #[103](https://github.com/extratone/drafts/issues/103) 
 - [Gladys URL Item from Selection](https://directory.getdrafts.com/a/2Dw) #[102](https://github.com/extratone/drafts/issues/102) 
 - [HTML Comment](https://directory.getdrafts.com/a/2Dj) #[99](https://github.com/extratone/drafts/issues/99) 
 - [Things Update](https://directory.getdrafts.com/a/2Ch) #[96](https://github.com/extratone/drafts/issues/96)
