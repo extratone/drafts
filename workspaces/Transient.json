@@ -1,0 +1,64 @@
+{
+  "icon": "alarm-cancel",
+  "isChangedBacking": false,
+  "archiveSortDirection": "descending",
+  "showLastAction": true,
+  "flaggedSortMode": "created",
+  "lastClonedKey": "",
+  "backingFlaggedStatus": 3,
+  "showTags": false,
+  "queryString": "",
+  "archiveIncludesFlagged": true,
+  "allSortFlaggedToTop": true,
+  "dateRangeSpecifier": {
+    "startSpecifier": {
+      "specifierType": "relative",
+      "absolute": 698262573.567573,
+      "isEnabled": true,
+      "field": "created_at",
+      "relativeDays": -14
+    },
+    "endSpecifier": {
+      "specifierType": "relative",
+      "absolute": 698262573.567573,
+      "isEnabled": false,
+      "field": "created_at",
+      "relativeDays": 0
+    }
+  },
+  "key": "B24299B7-5221-4E53-99F5-42BAC9BFED4C",
+  "preferredDarkTheme": "",
+  "inboxSortMode": "modified",
+  "tagFilterMode": "all",
+  "showQueryPreview": true,
+  "tintColor": "red",
+  "allSortMode": "created",
+  "tagFilter": {
+    "omittedTags": [],
+    "requiredTags": [{
+      "hidden": false,
+      "changeTag": "",
+      "name": "untagged",
+      "isVirtual": true,
+      "createdAt": 698267574.991505
+    }]
+  },
+  "inboxSortDirection": "descending",
+  "allSortDirection": "descending",
+  "name": "Transient",
+  "loadKeyboardGroupUUIDString": "",
+  "isHidden": false,
+  "preferredLightTheme": "",
+  "loadActionGroupUUIDString": "",
+  "showDate": true,
+  "isTemporary": false,
+  "loadQueryFolder": 10001,
+  "archiveSortMode": "created",
+  "flaggedSortDirection": "descending",
+  "sortIndex": 1564522058.607283,
+  "visibility": 96,
+  "inboxIncludesFlagged": false,
+  "showPreview": true,
+  "archiveSortFlaggedToTop": false,
+  "inboxSortFlaggedToTop": true
+}
