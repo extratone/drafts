@@ -80,6 +80,7 @@ I have long pondered creating an ***unofficial*** chat-format space for the Draf
 
 ## David Blue’s Drafts Action Directory Contributions
 
+- [Selection to Mastodon](https://directory.getdrafts.com/a/2HG) #[109](https://github.com/extratone/drafts/issues/109)
 - [Ivory Selection](https://directory.getdrafts.com/a/2Fn) #[107](https://github.com/extratone/drafts/issues/107)
 - [Spring Selection](https://directory.getdrafts.com/a/2ES) #[103](https://github.com/extratone/drafts/issues/103) 
 - [Gladys URL Item from Selection](https://directory.getdrafts.com/a/2Dw) #[102](https://github.com/extratone/drafts/issues/102) 
