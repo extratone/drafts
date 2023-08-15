@@ -1,1 +1,0 @@
-x-drafts://importautocompleteitem?data=%7B%22value%22:%22%3C!--%20%5B%5Bu:%5B%5Buuid%5D%5D%5D%5D%20:%20EMBED%20--%3E%22,%22label%22:%22embed%22,%22prefix%22:%22%22,%22suffix%22:%22%22,%22includesSuffix%22:true,%22identifier%22:%22582BC781-5FFD-48E8-9121-16AB15D6DDCB%22%7D

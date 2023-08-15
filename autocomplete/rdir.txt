@@ -1,0 +1,1 @@
+x-drafts://importautocompleteitem?data=%7B%22suffix%22:%22%22,%22value%22:%22%5B**%5C/%5B%5Bclipboard%5D%5D**%5D(https:%5C/%5C/davidblue.wtf%5C/%5B%5Bclipboard%5D%5D),%20%25%7C%22,%22identifier%22:%225C490A4F-A7C6-4333-9F3B-753CFF31D62F%22,%22label%22:%22rdir%22,%22prefix%22:%22%22,%22includesSuffix%22:true%7D

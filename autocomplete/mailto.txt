@@ -1,0 +1,1 @@
+x-drafts://importautocompleteitem?data=%7B%22includesSuffix%22:true,%22value%22:%22%5B%3C%7C%3E%5D(mailto:%5Bclipboard%5D)%22,%22prefix%22:%22%22,%22identifier%22:%228C9F4803-6FAA-410B-A8DB-CC0FCA97979F%22,%22label%22:%22mailto%22,%22suffix%22:%22%22%7D

@@ -1,1 +1,0 @@
-x-drafts://importautocompleteitem?data=%7B%22value%22:%22%3Cscript%20src%3D%5C%22%5B%5Bclipboard%5D%5D.js%5C%22%3E%3C%5C/script%3E%22,%22label%22:%22gist%22,%22prefix%22:%22%22,%22suffix%22:%22%22,%22includesSuffix%22:true,%22identifier%22:%2251C83B4D-6129-4E70-B90C-7C1B2C8FFFC4%22%7D

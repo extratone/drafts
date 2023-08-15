@@ -1,1 +1,0 @@
-x-drafts://importautocompleteitem?data=%7B%22value%22:%22%5B%5B%5Bdisplay_title%5D%5D%5D(%5B%5Bdraft_open_url%5D%5D)%22,%22label%22:%22x%22,%22prefix%22:%22%22,%22suffix%22:%22%22,%22includesSuffix%22:true,%22identifier%22:%2223CB503F-8578-4F2D-AC21-5CAB5B73B4C3%22%7D
