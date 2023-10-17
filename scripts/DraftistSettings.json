@@ -1,0 +1,14 @@
+{
+  "taskLinkTypes" : [
+    "app",
+    "web"
+  ],
+  "dataStoreUpdateInterval" : 24,
+  "taskImportContents" : [
+    "appLink",
+    "webLink",
+    "projectName",
+    "priority",
+    "labels"
+  ]
+}
