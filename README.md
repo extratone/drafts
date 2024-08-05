@@ -1,5 +1,5 @@
 # David Blue‘s Drafts Configs
-Updated `03082023-110132`
+Updated `08042024-193526`
 
 - [**Drafts README Update**](shortcuts://run-shortcut?name=Drafts%20README%20Update)
 - [WTF](https://davidblue.wtf/drafts/38A942A2-33C4-4630-9CDE-B005989F4E3A.html)
@@ -80,6 +80,7 @@ I have long pondered creating an ***unofficial*** chat-format space for the Draf
 
 ## David Blue’s Drafts Action Directory Contributions
 
+- [Markdown Lists Reformat (*⇨-)](https://directory.getdrafts.com/a/2Tt) #[115](https://github.com/extratone/drafts/issues/116)
 - [Search with Orion Browser](https://directory.getdrafts.com/a/2Oq) #[115](https://github.com/extratone/drafts/issues/115)
 - [Open URL (Orion Browser)](https://directory.getdrafts.com/a/2Op) #[114](https://github.com/extratone/drafts/issues/114)
 - [Google Translate](https://directory.getdrafts.com/a/2HV) #[110](https://github.com/extratone/drafts/issues/110)
@@ -293,7 +294,7 @@ https://davidblue.wtf/drafts/38A942A2-33C4-4630-9CDE-B005989F4E3A.html
 
 - [**latlong**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/latlong.txt)
 ```
-`[[latitude]]--92.387976-[[date|%m%d%Y-%H%M%S]]`
+`38.933967--92.387976-[[date|%m%d%Y-%H%M%S]]`
 ```
 
 - [**img**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/img.txt)
@@ -332,13 +333,13 @@ https://davidblue.wtf/drafts/38A942A2-33C4-4630-9CDE-B005989F4E3A.html
 
 - [**gist**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/gist.txt)
 ```
-<script src="[[clipboard]].js"></script>
+<script src=".js"></script>
 ```
 
 - [**autocomplete**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/autocomplete.txt)
 - [**title**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/title.txt)
 ```
-[[clipboard]]
+
 ```
 
 - [**issue**](https://raw.githubusercontent.com/extratone/drafts/main/snippets/issue.txt)
