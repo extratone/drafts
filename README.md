@@ -80,7 +80,7 @@ I have long pondered creating an ***unofficial*** chat-format space for the Draf
 
 ## David Blue’s Drafts Action Directory Contributions
 
-- [Markdown Lists Reformat (*⇨-)](https://directory.getdrafts.com/a/2Tt) #[115](https://github.com/extratone/drafts/issues/116)
+- [Markdown Lists Reformat (*⇨-)](https://directory.getdrafts.com/a/2Tt) #[116](https://github.com/extratone/drafts/issues/116)
 - [Search with Orion Browser](https://directory.getdrafts.com/a/2Oq) #[115](https://github.com/extratone/drafts/issues/115)
 - [Open URL (Orion Browser)](https://directory.getdrafts.com/a/2Op) #[114](https://github.com/extratone/drafts/issues/114)
 - [Google Translate](https://directory.getdrafts.com/a/2HV) #[110](https://github.com/extratone/drafts/issues/110)
